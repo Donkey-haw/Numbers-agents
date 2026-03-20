@@ -1,0 +1,11 @@
+.DS_Store
+__pycache__/
+*.pyc
+
+*.pdf
+
+assets/
+html/
+
+output/*
+!output/6-1-2. 2단원 도입과 민주주의와 선거.numbers

@@ -1,0 +1,100 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-03-20T10:10:00+09:00",
+  "lesson_id": "2차시",
+  "activities": [
+    {
+      "activity_id": "act-learning-note-1",
+      "lesson_id": "2차시",
+      "activity_type": "learning_note",
+      "level": "on-level",
+      "learning_goal": "선거의 뜻과 민주주의에서의 의미를 정리할 수 있다.",
+      "prompt_text": "교과서를 읽고 선거의 뜻과 민주주의에서 중요한 이유를 배움 노트에 정리해 봅시다.",
+      "layout_template": "learning_note",
+      "source_refs": [56, 57],
+      "teacher_notes": "핵심 낱말인 선거, 대표자, 주권이 학생 정리에 포함되는지 확인한다.",
+      "student_writing_zones": [
+        {
+          "zone_id": "summary",
+          "label": "오늘 내용 요약",
+          "input_area_type": "lined",
+          "min_height": 520
+        },
+        {
+          "zone_id": "question",
+          "label": "질문 / 메모",
+          "input_area_type": "free-writing",
+          "min_height": 110
+        }
+      ],
+      "estimated_minutes": 12,
+      "review_status": "approved"
+    },
+    {
+      "activity_id": "act-stw-1",
+      "lesson_id": "2차시",
+      "activity_type": "see_think_wonder",
+      "level": "core",
+      "learning_goal": "선거 장면을 관찰하고 자신의 생각과 질문을 정리할 수 있다.",
+      "prompt_text": "선거와 관련된 사진이나 장면을 보고 보이는 것, 생각나는 것, 궁금한 것을 정리해 봅시다.",
+      "layout_template": "see_think_wonder",
+      "source_refs": [56],
+      "teacher_notes": "관찰과 해석을 구분해서 쓰는지 확인한다.",
+      "student_writing_zones": [
+        {
+          "zone_id": "see",
+          "label": "무엇이 보이나요?",
+          "input_area_type": "free-writing",
+          "min_height": 340
+        },
+        {
+          "zone_id": "think",
+          "label": "어떤 생각이 드나요?",
+          "input_area_type": "free-writing",
+          "min_height": 340
+        },
+        {
+          "zone_id": "wonder",
+          "label": "무엇이 궁금한가요?",
+          "input_area_type": "free-writing",
+          "min_height": 340
+        }
+      ],
+      "estimated_minutes": 10,
+      "review_status": "approved"
+    },
+    {
+      "activity_id": "act-worksheet-1",
+      "lesson_id": "2차시",
+      "activity_type": "worksheet",
+      "level": "extension",
+      "learning_goal": "선거의 의미를 자신의 말로 설명하고 근거를 들어 정리할 수 있다.",
+      "prompt_text": "핵심 개념을 정리하고, 선거가 왜 중요한지 자신의 생각을 근거와 함께 써 봅시다.",
+      "layout_template": "worksheet",
+      "source_refs": [56, 57],
+      "teacher_notes": "선거가 단순 선출 절차가 아니라 민주주의의 주권 행사라는 점을 언급하는지 본다.",
+      "student_writing_zones": [
+        {
+          "zone_id": "short-a",
+          "label": "핵심 개념 정리",
+          "input_area_type": "inline-answer",
+          "min_height": 72
+        },
+        {
+          "zone_id": "short-b",
+          "label": "대표자와 주권 연결",
+          "input_area_type": "inline-answer",
+          "min_height": 72
+        },
+        {
+          "zone_id": "extended",
+          "label": "근거를 들어 자신의 생각 쓰기",
+          "input_area_type": "free-writing",
+          "min_height": 120
+        }
+      ],
+      "estimated_minutes": 15,
+      "review_status": "approved"
+    }
+  ]
+}

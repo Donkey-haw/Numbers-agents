@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>Worksheet Template</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Noto Sans KR', sans-serif; width: 1600px; background: transparent; }
+.sheet { background: #E3F2FD; border-radius: 24px; padding: 32px; }
+.badge { display: inline-flex; align-items: center; gap: 8px; background: #42A5F5; color: #fff; font-size: 15px; font-weight: 700; padding: 8px 20px; border-radius: 999px; margin-bottom: 18px; }
+.paper { background: #FFFDE7; border: 2px solid #333; border-radius: 16px; overflow: hidden; }
+.paper-header { padding: 20px 24px; border-bottom: 2px solid #333; background: linear-gradient(135deg, #FFF9C4, #FFF59D); }
+.paper-title { font-size: 20px; font-weight: 900; color: #333; text-align: center; margin: 6px 0; }
+.paper-meta { display: flex; justify-content: flex-end; font-size: 13px; color: #666; }
+.questions { padding: 20px 24px; display: flex; flex-direction: column; gap: 18px; }
+.question { display: flex; flex-direction: column; gap: 8px; }
+.q-text { font-size: 14px; color: #333; line-height: 1.6; }
+.answer-line { border-bottom: 1.5px solid #333; min-width: 60px; display: inline-block; }
+.answer-box { background: #fff; border: 2px solid #333; border-radius: 10px; min-height: 120px; padding: 12px; }
+.short-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; }
+.short-item { background: #fff; border: 2px solid #333; border-radius: 10px; min-height: 72px; padding: 12px; }
+</style>
+</head>
+<body>
+  <div class="sheet">
+    <div class="badge">📋 활동지</div>
+    <div class="paper">
+      <div class="paper-header">
+        <div class="paper-meta">학년 / 반 / 이름</div>
+        <div class="paper-title">확인 활동지</div>
+      </div>
+      <div class="questions">
+        <div class="question">
+          <div class="q-text">1. 핵심 개념을 한 문장으로 정리해 봅시다. <span class="answer-line"></span></div>
+        </div>
+        <div class="question">
+          <div class="q-text">2. 아래 질문에 답해 봅시다.</div>
+          <div class="short-grid">
+            <div class="short-item">질문 A</div>
+            <div class="short-item">질문 B</div>
+          </div>
+        </div>
+        <div class="question">
+          <div class="q-text">3. 근거를 들어 자신의 생각을 써 봅시다.</div>
+          <div class="answer-box"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,49 @@
+{
+  "project_root": "/Users/jonyeock/Desktop/Tool/NumbersAuto",
+  "pdf_path": "[사회]6_1_교과서.pdf",
+  "template_path": "빈 넘버스 파일.numbers",
+  "output_file": "output/6-1-2. 2단원 도입과 민주주의와 선거.numbers",
+  "footer": "사회 6-1 · 2단원 · 민주주의와 시민 참여",
+  "textbook_page_offset": 2,
+  "search_start_page": 52,
+  "end_before_query": "국가기관이 하는 일",
+  "sections": [
+    {
+      "sheet_name": "1차시",
+      "card_file": "democracy_intro_1차시",
+      "title": "단원·주제 도입",
+      "title_query": "민주주의와 시민 참여",
+      "badge": "1차시",
+      "accent": ["#6366f1", "#818cf8"]
+    },
+    {
+      "sheet_name": "2차시",
+      "card_file": "democracy_election_2차시",
+      "title": "선거란 무엇일까요?",
+      "badge": "2차시",
+      "accent": ["#4f46e5", "#7c3aed"]
+    },
+    {
+      "sheet_name": "3차시",
+      "card_file": "democracy_election_3차시",
+      "title": "민주주의에서 선거는 어떤 역할을 할까요?",
+      "badge": "3차시",
+      "accent": ["#0f766e", "#14b8a6"]
+    },
+    {
+      "sheet_name": "4-5차시",
+      "card_file": "democracy_election_4-5차시",
+      "title": "민주주의에서 선거는 어떻게 이루어질까요?",
+      "badge": "4-5차시",
+      "accent": ["#1d4ed8", "#3b82f6"]
+    },
+    {
+      "sheet_name": "6-7차시",
+      "card_file": "democracy_election_6-7차시",
+      "title": "선거에 참여하는 바람직한 태도는 무엇일까요? / 주제 마무리",
+      "title_query": "선거에 참여하는 바람직한 태도는 무엇일까요?",
+      "badge": "6-7차시",
+      "accent": ["#d97706", "#f59e0b"]
+    }
+  ]
+}

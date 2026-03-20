@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>See Think Wonder Template</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Noto Sans KR', sans-serif; width: 1600px; background: transparent; }
+.sheet { background: #FFE4E8; border-radius: 24px; padding: 32px; }
+.badge-row { display: flex; gap: 10px; margin-bottom: 16px; }
+.badge { display: inline-flex; align-items: center; gap: 8px; color: #fff; font-size: 15px; font-weight: 700; padding: 8px 20px; border-radius: 999px; }
+.badge-think { background: #FF6B8A; }
+.badge-app { background: #4CAF50; }
+.instruction { font-size: 16px; color: #444; margin-bottom: 16px; }
+.reference { background: #fff; border: 2px solid #333; border-radius: 16px; min-height: 230px; margin-bottom: 20px; display: flex; align-items: center; justify-content: center; color: #999; }
+.grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+.card { background: #fff; border: 2px solid #333; border-radius: 12px; overflow: hidden; }
+.label { color: #fff; text-align: center; font-size: 16px; font-weight: 700; padding: 10px 16px; }
+.purple { background: #C5B3E6; }
+.pink { background: #F4A5B8; }
+.green { background: #A8E6A3; }
+.writing { min-height: 340px; padding: 16px; }
+</style>
+</head>
+<body>
+  <div class="sheet">
+    <div class="badge-row">
+      <div class="badge badge-think">💡 생각 톡톡</div>
+      <div class="badge badge-app">📊 Numbers 앱 활동</div>
+    </div>
+    <div class="instruction">자료를 보고 관찰한 것, 생각한 것, 궁금한 것을 정리합니다.</div>
+    <div class="reference">자료 / 이미지 / 영상 썸네일</div>
+    <div class="grid">
+      <div class="card">
+        <div class="label purple">무엇이 보이나요?</div>
+        <div class="writing"></div>
+      </div>
+      <div class="card">
+        <div class="label pink">어떤 생각이 드나요?</div>
+        <div class="writing"></div>
+      </div>
+      <div class="card">
+        <div class="label green">무엇이 궁금한가요?</div>
+        <div class="writing"></div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

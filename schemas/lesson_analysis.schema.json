@@ -1,0 +1,154 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://numbersauto.local/schemas/lesson_analysis.schema.json",
+  "title": "Lesson Analysis",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "generated_at",
+    "lesson_id",
+    "sheet_name",
+    "lesson_title",
+    "pdf_pages",
+    "essential_question",
+    "learning_goals",
+    "key_concepts",
+    "vocabulary",
+    "misconceptions",
+    "content_chunks",
+    "source_page_refs",
+    "analysis_confidence"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string"
+    },
+    "generated_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "lesson_id": {
+      "type": "string"
+    },
+    "sheet_name": {
+      "type": "string"
+    },
+    "lesson_title": {
+      "type": "string"
+    },
+    "lesson_type": {
+      "type": "string",
+      "enum": ["intro", "core", "review", "summary", "mixed"]
+    },
+    "pdf_pages": {
+      "type": "array",
+      "items": {
+        "type": "integer",
+        "minimum": 1
+      },
+      "minItems": 1
+    },
+    "essential_question": {
+      "type": "string"
+    },
+    "learning_goals": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1
+    },
+    "key_concepts": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1
+    },
+    "vocabulary": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "misconceptions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "difficulty_band": {
+      "type": "string",
+      "enum": ["core", "on-level", "extension", "mixed"]
+    },
+    "content_chunks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "chunk_id",
+          "label",
+          "content_type",
+          "knowledge_type",
+          "summary",
+          "source_pages"
+        ],
+        "properties": {
+          "chunk_id": {
+            "type": "string"
+          },
+          "label": {
+            "type": "string"
+          },
+          "content_type": {
+            "type": "string",
+            "enum": ["text", "image", "diagram", "map", "activity", "summary", "mixed"]
+          },
+          "knowledge_type": {
+            "type": "string",
+            "enum": ["fact", "concept", "procedure", "comparison", "cause-effect", "opinion", "application", "mixed"]
+          },
+          "summary": {
+            "type": "string"
+          },
+          "source_pages": {
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "minimum": 1
+            },
+            "minItems": 1
+          },
+          "suggested_activity_types": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "source_page_refs": {
+      "type": "array",
+      "items": {
+        "type": "integer",
+        "minimum": 1
+      },
+      "minItems": 1
+    },
+    "analysis_confidence": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "review_status": {
+      "type": "string",
+      "enum": ["draft", "reviewed", "approved", "rejected"]
+    },
+    "notes": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": false
+}

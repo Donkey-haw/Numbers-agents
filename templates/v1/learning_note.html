@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>Learning Note Template</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Noto Sans KR', sans-serif; width: 1600px; background: transparent; }
+.sheet { background: #FFF8E7; border-radius: 24px; padding: 32px; }
+.badge { display: inline-flex; align-items: center; gap: 8px; background: #F5C842; color: #fff; font-size: 15px; font-weight: 700; padding: 8px 20px; border-radius: 999px; margin-bottom: 20px; }
+.header { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 16px; }
+.title { font-size: 28px; font-weight: 900; color: #333; }
+.meta { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 18px; }
+.meta-box { background: #fff; border: 2px solid #333; border-radius: 10px; min-height: 54px; padding: 12px; }
+.lined-area { background: #fff; border: 2px solid #333; border-radius: 12px; min-height: 520px; padding: 20px 24px; background-image: repeating-linear-gradient(transparent, transparent 31px, #D5D0C8 31px, #D5D0C8 32px); background-position: 0 20px; }
+.footer { display: grid; grid-template-columns: 1.4fr 1fr; gap: 16px; margin-top: 18px; }
+.section-title { font-size: 14px; font-weight: 700; color: #555; margin-bottom: 6px; }
+.box { background: #fff; border: 2px solid #333; border-radius: 10px; min-height: 110px; padding: 12px; }
+</style>
+</head>
+<body>
+  <div class="sheet">
+    <div class="badge">📝 노트 정리</div>
+    <div class="header">
+      <div class="title">배움 노트</div>
+      <div style="font-size:14px;color:#666;">날짜 / 이름</div>
+    </div>
+    <div class="meta">
+      <div class="meta-box">단원 / 차시</div>
+      <div class="meta-box">학습 문제</div>
+    </div>
+    <div class="lined-area"></div>
+    <div class="footer">
+      <div>
+        <div class="section-title">오늘 내용 요약</div>
+        <div class="box"></div>
+      </div>
+      <div>
+        <div class="section-title">질문 / 메모</div>
+        <div class="box"></div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

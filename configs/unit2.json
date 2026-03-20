@@ -1,0 +1,50 @@
+{
+  "project_root": "/Users/jonyeock/Desktop/Tool/NumbersAuto",
+  "pdf_path": "[사회]6_1_교과서.pdf",
+  "template_path": "빈 넘버스 파일.numbers",
+  "output_file": "output/6-1-2. 민주화와 산업화로 달라진 생활 문화.numbers",
+  "footer": "사회 6-1 · 1단원 · 민주화와 산업화로 달라진 생활 문화",
+  "textbook_page_offset": 2,
+  "sections": [
+    {
+      "sheet_name": "7차시",
+      "card_file": "unit2_7차시",
+      "title": "주제 도입 / 민주화 운동은 왜 일어났을까요?",
+      "badge": "7차시 · 사회 26~29쪽",
+      "pdf_pages": [28, 29, 30, 31],
+      "accent": ["#6366f1", "#818cf8"]
+    },
+    {
+      "sheet_name": "8-9차시",
+      "card_file": "unit2_8-9차시",
+      "title": "민주화를 위한 노력을 살펴볼까요?",
+      "badge": "8-9차시 · 사회 30~35쪽",
+      "pdf_pages": [32, 33, 34, 35, 36, 37],
+      "accent": ["#4f46e5", "#7c3aed"]
+    },
+    {
+      "sheet_name": "10차시",
+      "card_file": "unit2_10차시",
+      "title": "민주화 이후 사회는 어떻게 달라졌을까요?",
+      "badge": "10차시 · 사회 36~37쪽",
+      "pdf_pages": [38, 39],
+      "accent": ["#0f766e", "#14b8a6"]
+    },
+    {
+      "sheet_name": "11차시",
+      "card_file": "unit2_11차시",
+      "title": "우리나라는 어떻게 산업화를 이루었을까요?",
+      "badge": "11차시 · 사회 38~41쪽",
+      "pdf_pages": [40, 41, 42, 43],
+      "accent": ["#1d4ed8", "#3b82f6"]
+    },
+    {
+      "sheet_name": "12-13차시",
+      "card_file": "unit2_12-13차시",
+      "title": "산업화로 사람들의 생활은 어떻게 달라졌을까요? / 주제 마무리",
+      "badge": "12-13차시 · 사회 42~47쪽",
+      "pdf_pages": [44, 45, 46, 47, 48, 49],
+      "accent": ["#d97706", "#f59e0b"]
+    }
+  ]
+}

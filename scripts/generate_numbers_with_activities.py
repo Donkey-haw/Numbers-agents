@@ -208,6 +208,11 @@ tell application "Numbers"
 \tactivate
 \tset myDoc to open sourceFile
 \tdelay 2
+\ttry
+\t\trepeat while (count of sheets of myDoc) > 1
+\t\t\tdelete last sheet of myDoc
+\t\tend repeat
+\tend try
 {''.join(blocks)}
 \tsave myDoc
 \tclose myDoc

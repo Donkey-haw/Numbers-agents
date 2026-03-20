@@ -6,6 +6,7 @@ __pycache__/
 
 assets/
 html/
+artifacts/
 
 output/*
 !output/6-1-2. 2단원 도입과 민주주의와 선거.numbers

@@ -99,6 +99,18 @@
   - 조사 제거를 통한 핵심 개념 정제
   - 질문형 차시명을 설명형 학습목표 문장으로 정규화
   - 예: `선거란 무엇일까요?` -> `선거의 핵심 내용을 설명할 수 있다.`
+- `Gemini CLI` 연동 계획 문서 [GEMINI_CLI_LINK_PLAN.md](/Users/jonyeock/Desktop/Tool/NumbersAuto/GEMINI_CLI_LINK_PLAN.md) 를 추가했다.
+- 실제 Gemini CLI 래퍼 [scripts/run_gemini_cli_pipeline.py](/Users/jonyeock/Desktop/Tool/NumbersAuto/scripts/run_gemini_cli_pipeline.py) 를 추가했다.
+  - 로컬 preextract
+  - Gemini headless JSON 호출
+  - 응답 wrapper/raw/stderr 저장
+  - lesson/activity JSON 정규화 및 기본 검증
+  - 기존 `generate_numbers_with_activities.py`와 연결 가능한 구조
+- Gemini 프롬프트 파일을 [prompts/gemini/system_analyze.md](/Users/jonyeock/Desktop/Tool/NumbersAuto/prompts/gemini/system_analyze.md), [prompts/gemini/user_analyze.md](/Users/jonyeock/Desktop/Tool/NumbersAuto/prompts/gemini/user_analyze.md), [prompts/gemini/system_plan.md](/Users/jonyeock/Desktop/Tool/NumbersAuto/prompts/gemini/system_plan.md), [prompts/gemini/user_plan.md](/Users/jonyeock/Desktop/Tool/NumbersAuto/prompts/gemini/user_plan.md) 로 분리했다.
+- 로컬에서 `gemini --help`와 headless JSON 출력을 확인했다.
+  - `--output-format json`은 최상위 wrapper JSON을 반환하고, 실제 모델 응답은 `response` 문자열 안에 들어간다.
+  - `response` 안에도 설명 문장이 섞일 수 있어 trailing JSON 추출 로직을 추가했다.
+- `configs/democracy_election_with_intro.json` 기준으로 Gemini dry-run을 수행해 차시 5개에 대한 `lesson_analysis_ai.response.json`, `activity_plan_ai.response.json` 생성까지 검증했다.
 
 ### 현재 남아 있는 한계
 - `진도표.png`의 내용을 OCR 없이 사람이 읽어 `configs/unit2.json`에 반영했다.

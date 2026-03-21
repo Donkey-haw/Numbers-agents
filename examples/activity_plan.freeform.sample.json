@@ -1,0 +1,22 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-03-20T02:20:00+00:00",
+  "lesson_id": "2차시",
+  "activities": [
+    {
+      "activity_id": "2차시-freeform-1",
+      "lesson_id": "2차시",
+      "activity_type": "freeform_html",
+      "level": "on-level",
+      "learning_goal": "선거의 의미와 필요성을 설명할 수 있다.",
+      "prompt_text": "선거가 왜 필요한지 핵심 단어를 사용하여 정리해 봅시다.",
+      "layout_template": "freeform_html",
+      "html_content": "<!DOCTYPE html><html lang=\"ko\"><head><meta charset=\"UTF-8\"><title>freeform</title><link href=\"https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700;900&display=swap\" rel=\"stylesheet\"><style>*{margin:0;padding:0;box-sizing:border-box;}body{font-family:'Noto Sans KR',sans-serif;width:1600px;background:transparent;} .sheet{background:#FFF8E7;border-radius:24px;padding:36px;} .badge{display:inline-flex;align-items:center;gap:8px;background:#F5C842;color:#fff;font-size:15px;font-weight:700;padding:8px 20px;border-radius:999px;margin-bottom:18px;} .title{font-size:30px;font-weight:900;color:#333;margin-bottom:12px;} .prompt{font-size:17px;line-height:1.7;color:#444;margin-bottom:20px;} .grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;} .box{background:#fff;border:2px solid #333;border-radius:14px;padding:16px;min-height:260px;} .main{margin-top:18px;background:#fff;border:2px solid #333;border-radius:16px;min-height:640px;padding:20px;}</style></head><body><div class=\"sheet\"><div class=\"badge\">📝 자유 활동 카드 · 기본</div><div class=\"title\">선거의 필요성 정리</div><div class=\"prompt\">교과서를 읽고 선거가 공동체에 왜 필요한지, 대표를 뽑는 일이 어떤 의미를 가지는지 써 봅시다.</div><div class=\"grid\"><div class=\"box\"></div><div class=\"box\"></div></div><div class=\"main\"></div></div></body></html>",
+      "source_refs": [56, 57],
+      "teacher_notes": "핵심 개념이 포함되는지 확인한다.",
+      "student_writing_zones": [],
+      "estimated_minutes": 15,
+      "review_status": "draft"
+    }
+  ]
+}

@@ -175,6 +175,8 @@ def validate_activity_plan(payload: dict) -> None:
     activity_required = schema["properties"]["activities"]["items"]["required"]
     for index, activity in enumerate(payload["activities"], start=1):
         ensure_required_fields(activity, activity_required, f"activity[{index}]")
+        if activity.get("activity_type") == "freeform_html" and not activity.get("html_content"):
+            raise ValueError(f"activity[{index}] freeform_html requires html_content")
 
 
 def build_schedule_draft(config: dict, chart_path: Path | None) -> dict:
@@ -314,6 +316,11 @@ def normalize_activity_plan(ai_payload: dict, analysis: dict) -> dict:
         activity.setdefault("source_refs", analysis["source_page_refs"])
         activity.setdefault("teacher_notes", "")
         activity.setdefault("review_status", "draft")
+        if activity.get("html_content"):
+            activity["activity_type"] = "freeform_html"
+            activity["layout_template"] = "freeform_html"
+            activity.setdefault("student_writing_zones", [])
+            activity.setdefault("estimated_minutes", 15)
     validate_activity_plan(normalized)
     return normalized
 

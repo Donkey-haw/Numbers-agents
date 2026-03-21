@@ -1,6 +1,7 @@
 import argparse
 import html
 import json
+import re
 from pathlib import Path
 
 
@@ -27,6 +28,40 @@ def level_label(level: str) -> str:
         "extension": "심화",
     }
     return mapping.get(level, level)
+
+
+def extract_html_document(text: str) -> str:
+    stripped = text.strip()
+    if stripped.startswith("```"):
+        lines = stripped.splitlines()
+        if lines and lines[0].startswith("```"):
+            lines = lines[1:]
+        if lines and lines[-1].strip() == "```":
+            lines = lines[:-1]
+        stripped = "\n".join(lines).strip()
+    return normalize_freeform_html(stripped)
+
+
+def normalize_freeform_html(document: str) -> str:
+    body_rule_pattern = re.compile(r"(body\s*\{)(.*?)(\})", re.IGNORECASE | re.DOTALL)
+
+    def replace_body_rule(match: re.Match[str]) -> str:
+        prefix, content, suffix = match.groups()
+        cleaned = re.sub(r"background-color\s*:\s*[^;]+;?", "", content, flags=re.IGNORECASE)
+        cleaned = re.sub(r"background\s*:\s*[^;]+;?", "", cleaned, flags=re.IGNORECASE)
+        cleaned = cleaned.strip()
+        if cleaned and not cleaned.endswith(";"):
+            cleaned += ";"
+        cleaned += " background: transparent !important;"
+        return f"{prefix}{cleaned}{suffix}"
+
+    if body_rule_pattern.search(document):
+        return body_rule_pattern.sub(replace_body_rule, document, count=1)
+
+    if "</style>" in document:
+        return document.replace("</style>", "body { background: transparent !important; }\n</style>", 1)
+
+    return document
 
 
 def render_learning_note(activity: dict) -> str:
@@ -216,10 +251,13 @@ def main() -> int:
     for activity in plan["activities"]:
         if activity["review_status"] not in args.include_status:
             continue
-        renderer = RENDERERS.get(activity["activity_type"])
-        if renderer is None:
-            continue
-        html_text = renderer(activity)
+        if activity.get("html_content"):
+            html_text = extract_html_document(activity["html_content"])
+        else:
+            renderer = RENDERERS.get(activity["activity_type"])
+            if renderer is None:
+                continue
+            html_text = renderer(activity)
         out_path = output_dir / f"{activity['activity_id']}.html"
         out_path.write_text(html_text, encoding="utf-8")
         print(out_path)

@@ -62,3 +62,5 @@ python3 scripts/draft_config_from_progress_chart.py \
 - 자동 생성된 활동은 기본적으로 `draft` 상태이며, `generate_numbers_with_auto_activities.py`는 이 초안도 바로 렌더할 수 있게 설계했다.
 - Gemini CLI 연동은 `로컬 preextract -> Gemini JSON -> 로컬 normalize/validate -> 기존 Numbers 합성` 구조다.
 - Gemini 프롬프트는 [prompts/gemini/system_analyze.md](/Users/jonyeock/Desktop/Tool/NumbersAuto/prompts/gemini/system_analyze.md), [prompts/gemini/user_analyze.md](/Users/jonyeock/Desktop/Tool/NumbersAuto/prompts/gemini/user_analyze.md), [prompts/gemini/system_plan.md](/Users/jonyeock/Desktop/Tool/NumbersAuto/prompts/gemini/system_plan.md), [prompts/gemini/user_plan.md](/Users/jonyeock/Desktop/Tool/NumbersAuto/prompts/gemini/user_plan.md)에 분리했다.
+- `geminiCLI-freeactivity` 기준으로는 활동을 기존 템플릿 enum에 맞춰 추천받는 것이 아니라, Gemini가 [NumbersDesign.md](/Users/jonyeock/Desktop/Tool/NumbersAuto/NumbersDesign.md) 원칙에 따라 `html_content`를 직접 생성한다.
+- 렌더러는 `html_content`가 있으면 그 HTML을 그대로 카드로 사용하고, 없으면 기존 템플릿 렌더 fallback을 사용한다.

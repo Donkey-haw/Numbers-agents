@@ -48,6 +48,7 @@
           "activity_type": {
             "type": "string",
             "enum": [
+              "freeform_html",
               "learning_note",
               "see_think_wonder",
               "worksheet",
@@ -67,6 +68,9 @@
             "type": "string"
           },
           "layout_template": {
+            "type": "string"
+          },
+          "html_content": {
             "type": "string"
           },
           "source_refs": {

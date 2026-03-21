@@ -111,8 +111,40 @@
   - `--output-format json`은 최상위 wrapper JSON을 반환하고, 실제 모델 응답은 `response` 문자열 안에 들어간다.
   - `response` 안에도 설명 문장이 섞일 수 있어 trailing JSON 추출 로직을 추가했다.
 - `configs/democracy_election_with_intro.json` 기준으로 Gemini dry-run을 수행해 차시 5개에 대한 `lesson_analysis_ai.response.json`, `activity_plan_ai.response.json` 생성까지 검증했다.
+- `geminiCLI-freeactivity` 브랜치에서 활동 생성 구조를 변경했다.
+  - 기존: Gemini가 템플릿 유형과 내용만 제안
+  - 변경: Gemini가 [NumbersDesign.md](/Users/jonyeock/Desktop/Tool/NumbersAuto/NumbersDesign.md) 원칙을 따르는 `html_content`를 직접 생성
+- [schemas/activity_plan.schema.json](/Users/jonyeock/Desktop/Tool/NumbersAuto/schemas/activity_plan.schema.json) 에 `freeform_html` 타입과 `html_content` 필드를 추가했다.
+- [scripts/render_activity_html.py](/Users/jonyeock/Desktop/Tool/NumbersAuto/scripts/render_activity_html.py) 와 [scripts/generate_numbers_with_activities.py](/Users/jonyeock/Desktop/Tool/NumbersAuto/scripts/generate_numbers_with_activities.py) 는 `html_content`가 있으면 자유 HTML 카드를 그대로 렌더하도록 수정했다.
+- [prompts/gemini/system_plan.md](/Users/jonyeock/Desktop/Tool/NumbersAuto/prompts/gemini/system_plan.md), [prompts/gemini/user_plan.md](/Users/jonyeock/Desktop/Tool/NumbersAuto/prompts/gemini/user_plan.md) 를 자유 HTML 생성 방식으로 바꿨다.
+- [NumbersDesign.md](/Users/jonyeock/Desktop/Tool/NumbersAuto/NumbersDesign.md) 에 자유 생성 HTML 규칙과 확대된 세로 필기 공간 기준을 반영했다.
+- 검증 결과:
+  - Gemini dry-run에서 실제 `activity_plan_ai.response.json` 안에 `activity_type: freeform_html` + `html_content`가 생성되는 것을 확인했다.
+  - 생성된 freeform plan을 [scripts/render_activity_html.py](/Users/jonyeock/Desktop/Tool/NumbersAuto/scripts/render_activity_html.py) 로 렌더해 HTML 파일 생성까지 확인했다.
+  - 생성된 freeform plan 1차시 기준으로 [output/freeform-one-lesson-validate.numbers](/Users/jonyeock/Desktop/Tool/NumbersAuto/output/freeform-one-lesson-validate.numbers) 를 만들어 Numbers 합성 및 시트 검증을 통과했다.
+- 전체 단원 단위의 freeform Gemini 실행도 검증했다.
+  - 대상 설정: [configs/peace_unification.json](/Users/jonyeock/Desktop/Tool/NumbersAuto/configs/peace_unification.json)
+  - 결과 파일: [output/1-1. 평화 통일을 위한 노력.numbers](/Users/jonyeock/Desktop/Tool/NumbersAuto/output/1-1.%20평화%20통일을%20위한%20노력.numbers)
+  - 실행 루트: `/tmp/numbersauto_freeactivity_unit1_fullrun`
+  - 실행 시간: `real 807.62s`, `user 137.34s`, `sys 14.95s`
+  - 실제 체감 기준으로는 `약 13분 28초`가 걸렸다.
+  - 시트 검증 결과: `1차시, 2차시, 3차시, 4차시, 5-6차시`
+  - manifest 기준 asset 수: 총 `19개`
+  - 차시별 asset 수:
+    - `1차시 4개`
+    - `2차시 4개`
+    - `3차시 4개`
+    - `4차시 3개`
+    - `5-6차시 4개`
+  - 종료 후 cleanup 확인:
+    - `assets/pages 0`
+    - `assets/cards 0`
+    - `html 0`
+  - 해석:
+    - Gemini 자유 HTML 생성까지 포함한 전체 단원 실행은 현재 로컬 환경에서 `약 13~14분`으로 보면 된다.
+    - 병목은 PDF 분석보다 Gemini 응답 대기와 카드 이미지 캡처/Numbers 삽입 단계에 가깝다.
 
 ### 현재 남아 있는 한계
 - `진도표.png`의 내용을 OCR 없이 사람이 읽어 `configs/unit2.json`에 반영했다.
 - Numbers 삽입 위치와 크기는 현재 고정값이라 다양한 카드 높이에 대해 추가 튜닝 여지가 있다.
-- 이전 실험용 HTML 파일이 `html/` 디렉토리에 일부 남아 있어 정리가 필요하다.
+- 전체 단원 기준 소요 시간이 아직 길어, Gemini 호출과 카드 캡처 단계를 줄이는 최적화가 필요하다.

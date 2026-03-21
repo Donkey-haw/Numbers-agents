@@ -12,6 +12,11 @@ from playwright.async_api import async_playwright
 
 Image.MAX_IMAGE_PIXELS = None
 
+CARD_TARGET_WIDTH = 360
+CARD_GAP = 24
+CARD_START_X = 20
+CARD_START_Y = 20
+
 SCRIPT_DIR = Path(__file__).resolve().parent
 if str(SCRIPT_DIR) not in sys.path:
     sys.path.insert(0, str(SCRIPT_DIR))
@@ -62,10 +67,13 @@ def render_activity_html_files(
         for activity in plan["activities"]:
             if activity["review_status"] not in include_status:
                 continue
-            renderer = activity_html.RENDERERS.get(activity["activity_type"])
-            if renderer is None:
-                continue
-            html_text = renderer(activity)
+            if activity.get("html_content"):
+                html_text = activity_html.extract_html_document(activity["html_content"])
+            else:
+                renderer = activity_html.RENDERERS.get(activity["activity_type"])
+                if renderer is None:
+                    continue
+                html_text = renderer(activity)
             html_path = config["html_dir"] / f"activity_{activity['activity_id']}.html"
             html_path.write_text(html_text, encoding="utf-8")
             rendered.append((activity, html_path, plan_path))
@@ -122,7 +130,10 @@ def build_manifest(
                 "insert_order": order_by_sheet[section["sheet_name"]],
                 "html_path": str(html_path),
                 "image_path": str(image_path),
-                "dimensions": {"width": 980, "height": compute_scaled_height(image_path, 980)},
+                "dimensions": {
+                    "width": CARD_TARGET_WIDTH,
+                    "height": compute_scaled_height(image_path, CARD_TARGET_WIDTH),
+                },
             }
         )
 
@@ -141,7 +152,10 @@ def build_manifest(
                 "html_path": str(html_path),
                 "image_path": str(image_path),
                 "source_json": str(plan_path.resolve()),
-                "dimensions": {"width": 980, "height": compute_scaled_height(image_path, 980)},
+                "dimensions": {
+                    "width": CARD_TARGET_WIDTH,
+                    "height": compute_scaled_height(image_path, CARD_TARGET_WIDTH),
+                },
             }
         )
 
@@ -187,17 +201,19 @@ def build_applescript(config: dict, manifest: dict) -> str:
 \t\t\ttry
 \t\t\t\tdelete every shape
 \t\t\tend try
-\t\t\tset currentY to 20
+\t\t\tset currentX to {CARD_START_X}
+\t\t\tset currentY to {CARD_START_Y}
 """
         asset_lines = []
         for asset in assets:
             image_path = asset["image_path"]
+            width = asset["dimensions"]["width"]
             height = asset["dimensions"]["height"]
             asset_lines.append(
                 f"""\t\t\tset nextImage to make new image with properties {{file:POSIX file "{image_path}"}}\n"""
-                f"""\t\t\tset position of nextImage to {{20, currentY}}\n"""
-                f"""\t\t\tset width of nextImage to 980\n"""
-                f"""\t\t\tset currentY to currentY + {height} + 24\n"""
+                f"""\t\t\tset position of nextImage to {{currentX, currentY}}\n"""
+                f"""\t\t\tset width of nextImage to {width}\n"""
+                f"""\t\t\tset currentX to currentX + {width} + {CARD_GAP}\n"""
             )
         close_sheet_block = "\t\tend tell\n"
         blocks.append(open_sheet_block + "".join(asset_lines) + close_sheet_block)

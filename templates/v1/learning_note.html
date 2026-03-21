@@ -3,42 +3,174 @@
 <head>
 <meta charset="UTF-8">
 <title>Learning Note Template</title>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css" />
 <style>
+:root {
+  --badge-note: #F5C842;
+  --bg-cream: #FFF8E7;
+  --text-primary: #333333;
+  --border-writing: 2px solid #333333;
+  --font-primary: 'Pretendard', 'Apple SD Gothic Neo', sans-serif;
+}
+
 * { margin: 0; padding: 0; box-sizing: border-box; }
-body { font-family: 'Noto Sans KR', sans-serif; width: 1600px; background: transparent; }
-.sheet { background: #FFF8E7; border-radius: 24px; padding: 32px; }
-.badge { display: inline-flex; align-items: center; gap: 8px; background: #F5C842; color: #fff; font-size: 15px; font-weight: 700; padding: 8px 20px; border-radius: 999px; margin-bottom: 20px; }
-.header { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 16px; }
-.title { font-size: 28px; font-weight: 900; color: #333; }
-.meta { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 18px; }
-.meta-box { background: #fff; border: 2px solid #333; border-radius: 10px; min-height: 54px; padding: 12px; }
-.lined-area { background: #fff; border: 2px solid #333; border-radius: 12px; min-height: 520px; padding: 20px 24px; background-image: repeating-linear-gradient(transparent, transparent 31px, #D5D0C8 31px, #D5D0C8 32px); background-position: 0 20px; }
-.footer { display: grid; grid-template-columns: 1.4fr 1fr; gap: 16px; margin-top: 18px; }
-.section-title { font-size: 14px; font-weight: 700; color: #555; margin-bottom: 6px; }
-.box { background: #fff; border: 2px solid #333; border-radius: 10px; min-height: 110px; padding: 12px; }
+body { font-family: var(--font-primary); width: 1600px; background: transparent; padding: 40px 20px; }
+
+.activity-container {
+  position: relative;
+  background: var(--bg-cream);
+  border-radius: 24px;
+  padding: 40px 32px 32px 32px;
+  margin-top: 20px;
+}
+
+.activity-badge {
+  position: absolute;
+  top: -20px;
+  left: 32px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--badge-note);
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 10px 24px;
+  border-radius: 999px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  z-index: 10;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: 900;
+  color: var(--text-primary);
+}
+
+.meta-info {
+  display: flex;
+  gap: 20px;
+  font-size: 16px;
+  color: #666;
+}
+
+.answer-line {
+  border-bottom: 2px solid #333;
+  min-width: 150px;
+  display: inline-block;
+  margin-left: 8px;
+  height: 24px;
+}
+
+.meta-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.meta-box {
+  background: #fff;
+  border: var(--border-writing);
+  border-radius: 12px;
+  padding: 16px;
+  min-height: 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.label-small {
+  font-size: 14px;
+  font-weight: 700;
+  color: #888;
+}
+
+.writing-area-main {
+  background: #fff;
+  border: var(--border-writing);
+  border-radius: 16px;
+  min-height: 600px;
+  padding: 30px;
+  background-image: repeating-linear-gradient(transparent, transparent 34px, #E0E0E0 34px, #E0E0E0 35px);
+  background-position: 0 10px;
+  line-height: 35px;
+  font-size: 18px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 20px;
+  margin-top: 24px;
+}
+
+.footer-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.section-label {
+  font-size: 16px;
+  font-weight: 700;
+  color: #555;
+  padding-left: 4px;
+}
+
+.writing-area-footer {
+  background: #fff;
+  border: var(--border-writing);
+  border-radius: 12px;
+  min-height: 220px;
+  padding: 16px;
+}
+
 </style>
 </head>
 <body>
-  <div class="sheet">
-    <div class="badge">📝 노트 정리</div>
+  <div class="activity-container">
+    <div class="activity-badge">
+      <span>📝</span>
+      <span>노트 정리</span>
+    </div>
+    
     <div class="header">
       <div class="title">배움 노트</div>
-      <div style="font-size:14px;color:#666;">날짜 / 이름</div>
-    </div>
-    <div class="meta">
-      <div class="meta-box">단원 / 차시</div>
-      <div class="meta-box">학습 문제</div>
-    </div>
-    <div class="lined-area"></div>
-    <div class="footer">
-      <div>
-        <div class="section-title">오늘 내용 요약</div>
-        <div class="box"></div>
+      <div class="meta-info">
+        <div>날짜 <span class="answer-line"></span></div>
+        <div>이름 <span class="answer-line"></span></div>
       </div>
-      <div>
-        <div class="section-title">질문 / 메모</div>
-        <div class="box"></div>
+    </div>
+    
+    <div class="meta-grid">
+      <div class="meta-box">
+        <span class="label-small">단원 / 차시</span>
+        <div contenteditable="true"></div>
+      </div>
+      <div class="meta-box">
+        <span class="label-small">학습 문제</span>
+        <div contenteditable="true"></div>
+      </div>
+    </div>
+    
+    <div class="writing-area-main" contenteditable="true"></div>
+    
+    <div class="footer-grid">
+      <div class="footer-section">
+        <span class="section-label">오늘 내용 요약</span>
+        <div class="writing-area-footer" contenteditable="true"></div>
+      </div>
+      <div class="footer-section">
+        <span class="section-label">질문 / 메모</span>
+        <div class="writing-area-footer" contenteditable="true"></div>
       </div>
     </div>
   </div>

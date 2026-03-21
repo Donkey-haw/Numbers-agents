@@ -10,6 +10,7 @@ import tempfile
 from pathlib import Path
 
 import fitz
+from playwright.async_api import TimeoutError as PlaywrightTimeoutError
 from playwright.async_api import async_playwright
 
 
@@ -195,13 +196,41 @@ async def capture_cards(config: dict) -> list[Path]:
             card_path = config["cards_dir"] / f"{section['card_file']}.png"
             html_path.write_text(render_html(section, config), encoding="utf-8")
             page = await browser.new_page(viewport={"width": 1700, "height": 2600}, device_scale_factor=2)
-            await page.goto(html_path.as_uri())
-            await page.wait_for_timeout(1200)
+            await page.goto(html_path.as_uri(), wait_until="domcontentloaded")
+            await wait_for_render_ready(page, ".card")
             await page.screenshot(path=str(card_path), full_page=True)
             await page.close()
             generated.append(card_path)
         await browser.close()
     return generated
+
+
+async def wait_for_render_ready(page, root_selector: str) -> None:
+    try:
+        await page.wait_for_selector(root_selector, state="visible", timeout=5000)
+    except PlaywrightTimeoutError:
+        await page.wait_for_selector("body", state="visible")
+        await page.wait_for_function(
+            """() => {
+                const body = document.body;
+                return body && body.children && body.children.length > 0;
+            }""",
+            timeout=5000,
+        )
+    try:
+        await page.wait_for_load_state("networkidle", timeout=5000)
+    except PlaywrightTimeoutError:
+        pass
+    try:
+        await page.evaluate(
+            """async () => {
+                if (document.fonts && document.fonts.ready) {
+                    await document.fonts.ready;
+                }
+            }"""
+        )
+    except Exception:
+        pass
 
 
 def generated_html_paths(config: dict) -> list[Path]:

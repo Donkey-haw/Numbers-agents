@@ -1,5 +1,6 @@
 import argparse
 import asyncio
+import concurrent.futures
 import json
 import subprocess
 import sys
@@ -34,6 +35,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--gemini-model", help="Gemini model name")
     parser.add_argument("--output-root", help="Artifact root directory")
     parser.add_argument("--approval-mode", default="yolo", help="Gemini CLI approval mode")
+    parser.add_argument("--max-workers", type=int, default=2, help="Max concurrent lesson workers for Gemini stages")
     parser.add_argument("--keep-artifacts", action="store_true", help="Keep generated assets from downstream renderer")
     parser.add_argument("--dry-run", action="store_true", help="Stop after AI JSON generation")
     parser.add_argument(
@@ -249,7 +251,49 @@ def build_textbook_context(config: dict, artifact_dir: Path) -> tuple[list[dict]
     return analyses, analysis_paths
 
 
-def build_lesson_prompt(section: dict, baseline_analysis: dict, schedule_draft: dict, textbook_context: dict) -> str:
+def build_section_prompt_context(textbook_context: dict, target_sheet_name: str) -> dict:
+    sections = textbook_context["sections"]
+    index = next(
+        (position for position, item in enumerate(sections) if item["sheet_name"] == target_sheet_name),
+        None,
+    )
+    if index is None:
+        raise ValueError(f"Could not find section context for '{target_sheet_name}'")
+
+    current = dict(sections[index])
+    compact_current = {
+        "sheet_name": current["sheet_name"],
+        "lesson_title": current["lesson_title"],
+        "title_query": current["title_query"],
+        "pdf_pages": current["pdf_pages"],
+        "baseline_analysis_path": current["baseline_analysis_path"],
+        "extracted_text": current["extracted_text"],
+    }
+
+    neighbors = []
+    for neighbor_index in (index - 1, index + 1):
+        if 0 <= neighbor_index < len(sections):
+            neighbor = sections[neighbor_index]
+            neighbors.append(
+                {
+                    "relation": "previous" if neighbor_index < index else "next",
+                    "sheet_name": neighbor["sheet_name"],
+                    "lesson_title": neighbor["lesson_title"],
+                    "title_query": neighbor["title_query"],
+                    "pdf_pages": neighbor["pdf_pages"],
+                }
+            )
+
+    return {
+        "schema_version": textbook_context.get("schema_version", "1.0.0"),
+        "generated_at": utc_now(),
+        "pdf_path": textbook_context["pdf_path"],
+        "current_section": compact_current,
+        "neighbor_sections": neighbors,
+    }
+
+
+def build_lesson_prompt(section: dict, baseline_analysis: dict, schedule_draft: dict, prompt_context: dict) -> str:
     return (
         read_prompt("system_analyze.md")
         + "\n\n"
@@ -257,7 +301,7 @@ def build_lesson_prompt(section: dict, baseline_analysis: dict, schedule_draft: 
             section_json=json.dumps(section, ensure_ascii=False, indent=2),
             baseline_json=json.dumps(baseline_analysis, ensure_ascii=False, indent=2),
             schedule_json=json.dumps(schedule_draft, ensure_ascii=False, indent=2),
-            context_json=json.dumps(textbook_context, ensure_ascii=False, indent=2),
+            context_json=json.dumps(prompt_context, ensure_ascii=False, indent=2),
             schema_json=read_text(PROJECT_ROOT / "schemas" / "lesson_analysis.schema.json"),
         )
     )
@@ -341,6 +385,63 @@ def build_artifact_root(config_path: Path, requested_root: str | None) -> Path:
     return root
 
 
+def process_section(
+    index: int,
+    section: dict,
+    baseline_analysis: dict,
+    schedule_draft: dict,
+    textbook_context: dict,
+    artifact_root: Path,
+    args: argparse.Namespace,
+) -> tuple[int, Path, Path]:
+    section_stem = sanitize_name(section["card_file"])
+    lesson_dir = artifact_root / "sections" / section_stem
+    lesson_dir.mkdir(parents=True, exist_ok=True)
+
+    try:
+        section_prompt_context = build_section_prompt_context(textbook_context, section["sheet_name"])
+        write_json(lesson_dir / "lesson_analysis.context.json", section_prompt_context)
+        lesson_prompt = build_lesson_prompt(section, baseline_analysis, schedule_draft, section_prompt_context)
+        (lesson_dir / "lesson_analysis.prompt.md").write_text(lesson_prompt, encoding="utf-8")
+        lesson_ai, _ = invoke_gemini_json(
+            prompt=lesson_prompt,
+            artifact_dir=lesson_dir,
+            stem="lesson_analysis_ai",
+            gemini_bin=args.gemini_bin,
+            gemini_model=args.gemini_model,
+            approval_mode=args.approval_mode,
+        )
+        normalized_analysis = normalize_lesson_analysis(lesson_ai, baseline_analysis)
+    except Exception as exc:
+        (lesson_dir / "lesson_analysis.error.txt").write_text(str(exc), encoding="utf-8")
+        normalized_analysis = json.loads(json.dumps(baseline_analysis, ensure_ascii=False))
+        normalized_analysis["notes"] = f"{normalized_analysis.get('notes', '')} Gemini fallback used: {exc}".strip()
+
+    analysis_path = lesson_dir / "lesson_analysis.json"
+    write_json(analysis_path, normalized_analysis)
+
+    try:
+        activity_prompt = build_activity_prompt(normalized_analysis)
+        (lesson_dir / "activity_plan.prompt.md").write_text(activity_prompt, encoding="utf-8")
+        activity_ai, _ = invoke_gemini_json(
+            prompt=activity_prompt,
+            artifact_dir=lesson_dir,
+            stem="activity_plan_ai",
+            gemini_bin=args.gemini_bin,
+            gemini_model=args.gemini_model,
+            approval_mode=args.approval_mode,
+        )
+        normalized_plan = normalize_activity_plan(activity_ai, normalized_analysis)
+    except Exception as exc:
+        (lesson_dir / "activity_plan.error.txt").write_text(str(exc), encoding="utf-8")
+        normalized_plan = activity_plan_builder.build_activity_plan(normalized_analysis)
+        normalized_plan["notes"] = f"Gemini fallback used: {exc}"
+
+    plan_path = lesson_dir / "activity_plan.json"
+    write_json(plan_path, normalized_plan)
+    return index, analysis_path, plan_path
+
+
 def main() -> int:
     args = parse_args()
     config_path = Path(args.config).resolve()
@@ -363,55 +464,29 @@ def main() -> int:
     baseline_analyses, _ = build_textbook_context(config, artifact_root)
     textbook_context = json.loads((artifact_root / "textbook_context.json").read_text(encoding="utf-8"))
 
-    lesson_analysis_paths: list[Path] = []
-    activity_plan_paths: list[Path] = []
-
-    for section, baseline_analysis in zip(config["sections"], baseline_analyses):
-        section_stem = sanitize_name(section["card_file"])
-        lesson_dir = artifact_root / "sections" / section_stem
-        lesson_dir.mkdir(parents=True, exist_ok=True)
-
-        try:
-            lesson_prompt = build_lesson_prompt(section, baseline_analysis, schedule_draft, textbook_context)
-            (lesson_dir / "lesson_analysis.prompt.md").write_text(lesson_prompt, encoding="utf-8")
-            lesson_ai, _ = invoke_gemini_json(
-                prompt=lesson_prompt,
-                artifact_dir=lesson_dir,
-                stem="lesson_analysis_ai",
-                gemini_bin=args.gemini_bin,
-                gemini_model=args.gemini_model,
-                approval_mode=args.approval_mode,
+    ordered_results: dict[int, tuple[Path, Path]] = {}
+    max_workers = max(1, args.max_workers)
+    section_inputs = list(enumerate(zip(config["sections"], baseline_analyses)))
+    with concurrent.futures.ThreadPoolExecutor(max_workers=max_workers) as executor:
+        futures = [
+            executor.submit(
+                process_section,
+                index,
+                section,
+                baseline_analysis,
+                schedule_draft,
+                textbook_context,
+                artifact_root,
+                args,
             )
-            normalized_analysis = normalize_lesson_analysis(lesson_ai, baseline_analysis)
-        except Exception as exc:
-            (lesson_dir / "lesson_analysis.error.txt").write_text(str(exc), encoding="utf-8")
-            normalized_analysis = baseline_analysis
-            normalized_analysis["notes"] = f"{normalized_analysis.get('notes', '')} Gemini fallback used: {exc}".strip()
+            for index, (section, baseline_analysis) in section_inputs
+        ]
+        for future in concurrent.futures.as_completed(futures):
+            index, analysis_path, plan_path = future.result()
+            ordered_results[index] = (analysis_path, plan_path)
 
-        analysis_path = lesson_dir / "lesson_analysis.json"
-        write_json(analysis_path, normalized_analysis)
-        lesson_analysis_paths.append(analysis_path)
-
-        try:
-            activity_prompt = build_activity_prompt(normalized_analysis)
-            (lesson_dir / "activity_plan.prompt.md").write_text(activity_prompt, encoding="utf-8")
-            activity_ai, _ = invoke_gemini_json(
-                prompt=activity_prompt,
-                artifact_dir=lesson_dir,
-                stem="activity_plan_ai",
-                gemini_bin=args.gemini_bin,
-                gemini_model=args.gemini_model,
-                approval_mode=args.approval_mode,
-            )
-            normalized_plan = normalize_activity_plan(activity_ai, normalized_analysis)
-        except Exception as exc:
-            (lesson_dir / "activity_plan.error.txt").write_text(str(exc), encoding="utf-8")
-            normalized_plan = activity_plan_builder.build_activity_plan(normalized_analysis)
-            normalized_plan["notes"] = f"Gemini fallback used: {exc}"
-
-        plan_path = lesson_dir / "activity_plan.json"
-        write_json(plan_path, normalized_plan)
-        activity_plan_paths.append(plan_path)
+    lesson_analysis_paths = [ordered_results[index][0] for index in range(len(section_inputs))]
+    activity_plan_paths = [ordered_results[index][1] for index in range(len(section_inputs))]
 
     summary = {
         "schema_version": "1.0.0",

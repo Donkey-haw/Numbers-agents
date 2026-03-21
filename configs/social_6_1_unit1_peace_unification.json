@@ -1,0 +1,40 @@
+{
+  "project_root": "/Users/jonyeock/Desktop/Tool/NumbersAuto",
+  "pdf_path": "[사회]6_1_교과서.pdf",
+  "template_path": "빈 넘버스 파일.numbers",
+  "output_file": "output/6-1-1-1. 평화 통일을 위한 노력.numbers",
+  "footer": "사회 6-1 · 1단원 · 평화 통일을 위한 노력",
+  "search_start_page": 8,
+  "end_before_query": "민주화 운동은 왜 일어났을까요?",
+  "source_chart": "configs/social_6_1_progress_chart.json",
+  "sections": [
+    {
+      "sheet_name": "2차시",
+      "card_file": "social_6_1_unit1_peace_2차시",
+      "title": "분단으로 어떤 문제가 발생했을까요?",
+      "badge": "2차시",
+      "accent": ["#6366f1", "#818cf8"]
+    },
+    {
+      "sheet_name": "3차시",
+      "card_file": "social_6_1_unit1_peace_3차시",
+      "title": "분단의 흔적이 남아 있는 장소를 찾아볼까요?",
+      "badge": "3차시",
+      "accent": ["#4f46e5", "#7c3aed"]
+    },
+    {
+      "sheet_name": "4차시",
+      "card_file": "social_6_1_unit1_peace_4차시",
+      "title": "분단의 장소를 평화의 장소로 바꾸려는 노력을 살펴볼까요?",
+      "badge": "4차시",
+      "accent": ["#0f766e", "#14b8a6"]
+    },
+    {
+      "sheet_name": "5-6차시",
+      "card_file": "social_6_1_unit1_peace_5-6차시",
+      "title": "평화 통일을 위해 어떤 노력을 해야 할까요?",
+      "badge": "5-6차시",
+      "accent": ["#1d4ed8", "#3b82f6"]
+    }
+  ]
+}

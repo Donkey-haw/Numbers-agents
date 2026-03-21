@@ -148,3 +148,88 @@
 - `진도표.png`의 내용을 OCR 없이 사람이 읽어 `configs/unit2.json`에 반영했다.
 - Numbers 삽입 위치와 크기는 현재 고정값이라 다양한 카드 높이에 대해 추가 튜닝 여지가 있다.
 - 전체 단원 기준 소요 시간이 아직 길어, Gemini 호출과 카드 캡처 단계를 줄이는 최적화가 필요하다.
+- 최적화 1단계로 `lesson_analysis` 프롬프트를 `단원 전체 컨텍스트`에서 `현재 차시 + 인접 차시 경계 정보` 중심으로 축소했다.
+  - 변경 파일:
+    - [scripts/run_gemini_cli_pipeline.py](/Users/jonyeock/Desktop/Tool/NumbersAuto/scripts/run_gemini_cli_pipeline.py)
+    - [prompts/gemini/system_analyze.md](/Users/jonyeock/Desktop/Tool/NumbersAuto/prompts/gemini/system_analyze.md)
+    - [prompts/gemini/user_analyze.md](/Users/jonyeock/Desktop/Tool/NumbersAuto/prompts/gemini/user_analyze.md)
+  - 검증:
+    - `python3 -m py_compile scripts/run_gemini_cli_pipeline.py` 통과
+    - `configs/democracy_election_with_intro.json` 기준 dry-run에서 첫 차시 `lesson_analysis_ai.response.json` 생성 확인
+    - 첫 차시 기준 prompt context 크기 비교:
+    - 기존 전체 컨텍스트: `10,568 bytes`
+    - 새 차시 컨텍스트: `1,312 bytes`
+    - 비율: 약 `12.4%`
+- 최적화 2단계로 Gemini 차시 처리를 worker pool 기반 병렬 실행으로 변경했다.
+  - 변경 파일:
+    - [scripts/run_gemini_cli_pipeline.py](/Users/jonyeock/Desktop/Tool/NumbersAuto/scripts/run_gemini_cli_pipeline.py)
+    - [scripts/README.md](/Users/jonyeock/Desktop/Tool/NumbersAuto/scripts/README.md)
+  - 변경 내용:
+    - 새 옵션 `--max-workers` 추가
+    - 차시 내부는 `lesson_analysis -> activity_plan` 순서를 유지
+    - 차시 간은 `ThreadPoolExecutor`로 병렬 실행
+    - 결과 파일 경로는 기존 차시 순서대로 다시 정렬해 downstream 파이프라인과 호환 유지
+  - 검증:
+    - `python3 -m py_compile scripts/run_gemini_cli_pipeline.py` 통과
+    - `--max-workers 2` dry-run에서 `/tmp/numbersauto_opt_step2_dryrun/sections/` 아래에 동시에 `democracy_intro_1차시`, `democracy_election_2차시` 차시 디렉토리가 생성되는 것 확인
+    - 각 디렉토리에서 `lesson_analysis.prompt.md`, `lesson_analysis_ai.response.json` 등이 병렬로 생성되는 것 확인
+- 최적화 3단계로 Playwright 카드 캡처의 고정 `1200ms` sleep을 제거했다.
+  - 변경 파일:
+    - [scripts/generate_numbers_lesson.py](/Users/jonyeock/Desktop/Tool/NumbersAuto/scripts/generate_numbers_lesson.py)
+    - [scripts/generate_numbers_with_activities.py](/Users/jonyeock/Desktop/Tool/NumbersAuto/scripts/generate_numbers_with_activities.py)
+  - 변경 내용:
+    - 공통 렌더 대기 함수 `wait_for_render_ready()` 추가
+    - `page.goto(..., wait_until="domcontentloaded")` 이후
+      - 카드 root selector visible 대기
+      - `networkidle` 대기
+      - `document.fonts.ready` 대기
+    - 활동 카드 캡처도 같은 대기 함수를 재사용
+  - 검증:
+    - `python3 -m py_compile scripts/generate_numbers_lesson.py scripts/generate_numbers_with_activities.py` 통과
+    - 임시 1차시 config와 [examples/activity_plan.freeform.sample.json](/Users/jonyeock/Desktop/Tool/NumbersAuto/examples/activity_plan.freeform.sample.json) 으로 통합 생성 테스트 통과
+    - `generate_numbers_lesson.verify_output()` 결과 `verified`
+    - 종료 후 cleanup 확인:
+      - `assets/pages 0`
+      - `assets/cards 0`
+      - `html 0`
+- 진도표 입력 기준을 이미지 OCR 중심에서 PDF 파싱 중심으로 재정리했다.
+  - 추가 파일:
+    - [scripts/parse_progress_chart_pdf.py](/Users/jonyeock/Desktop/Tool/NumbersAuto/scripts/parse_progress_chart_pdf.py)
+    - [configs/social_6_1_progress_chart.json](/Users/jonyeock/Desktop/Tool/NumbersAuto/configs/social_6_1_progress_chart.json)
+  - 새 파서는 [6학년 1학기 사회 진도표.pdf](/Users/jonyeock/Desktop/Tool/NumbersAuto/6%E1%84%92%E1%85%A1%E1%86%A8%E1%84%82%E1%85%A7%E1%86%AB%201%E1%84%92%E1%85%A1%E1%86%A8%E1%84%80%E1%85%B5%20%E1%84%89%E1%85%A1%E1%84%92%E1%85%AC%20%E1%84%8C%E1%85%B5%E1%86%AB%E1%84%83%E1%85%A9%E1%84%91%E1%85%AD.pdf) 의 텍스트를 직접 읽어 `unit -> topic -> lesson` 구조 JSON으로 정리한다.
+  - `국가기관이 하는 일` 항목은 다음과 같이 구조화되는 것을 확인했다.
+    - `8차시`
+    - `9-10차시`
+    - `11차시`
+    - `12차시`
+    - `13차시`
+- config 구조도 정리했다.
+  - 기존 실험용 config는 [configs/legacy](/Users/jonyeock/Desktop/Tool/NumbersAuto/configs/legacy) 로 이동했다.
+  - 새 표준 config를 추가했다.
+    - [configs/social_6_1_unit1_peace_unification.json](/Users/jonyeock/Desktop/Tool/NumbersAuto/configs/social_6_1_unit1_peace_unification.json)
+    - [configs/social_6_1_unit1_democratization_industrialization.json](/Users/jonyeock/Desktop/Tool/NumbersAuto/configs/social_6_1_unit1_democratization_industrialization.json)
+    - [configs/social_6_1_unit2_democracy_election.json](/Users/jonyeock/Desktop/Tool/NumbersAuto/configs/social_6_1_unit2_democracy_election.json)
+    - [configs/social_6_1_unit2_state_agencies.json](/Users/jonyeock/Desktop/Tool/NumbersAuto/configs/social_6_1_unit2_state_agencies.json)
+- `국가기관이 하는 일` 주제를 새 표준 config 기준으로 자동 생성했다.
+  - 사용 config: [configs/social_6_1_unit2_state_agencies.json](/Users/jonyeock/Desktop/Tool/NumbersAuto/configs/social_6_1_unit2_state_agencies.json)
+  - 결과 파일: [output/6-1-2-2. 국가기관이 하는 일.numbers](/Users/jonyeock/Desktop/Tool/NumbersAuto/output/6-1-2-2.%20국가기관이%20하는%20일.numbers)
+  - 실행 루트: `/tmp/numbersauto_state_agencies_fullrun_retry`
+  - 실행 시간: `real 415.16s`, `user 104.47s`, `sys 13.26s`
+  - 시트 검증 결과:
+    - `8차시`
+    - `9-10차시`
+    - `11차시`
+    - `12차시`
+    - `13차시`
+  - manifest 기준 asset 수: 총 `19개`
+    - `8차시 3개`
+    - `9-10차시 4개`
+    - `11차시 4개`
+    - `12차시 4개`
+    - `13차시 4개`
+  - cleanup 확인:
+    - `assets/pages 0`
+    - `assets/cards 0`
+  - 참고:
+    - `html` 디렉토리의 파일 5개는 기존 템플릿/보존용 파일이며, 생성 중간 산출물은 정리됐다.
+    - `13차시`의 Gemini activity plan은 `Could not find trailing JSON object in Gemini CLI output`로 실패했지만, 로컬 fallback activity plan으로 정상 합성됐다.

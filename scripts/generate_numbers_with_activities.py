@@ -92,8 +92,8 @@ async def capture_html_files(
         for activity, html_path, plan_path in html_pairs:
             image_path = config["cards_dir"] / f"activity_{activity['activity_id']}.png"
             page = await browser.new_page(viewport={"width": 1700, "height": 2600}, device_scale_factor=2)
-            await page.goto(html_path.as_uri())
-            await page.wait_for_timeout(1200)
+            await page.goto(html_path.as_uri(), wait_until="domcontentloaded")
+            await textbook.wait_for_render_ready(page, ".sheet")
             await page.screenshot(path=str(image_path), full_page=True)
             await page.close()
             captured.append((activity, html_path, image_path, plan_path))

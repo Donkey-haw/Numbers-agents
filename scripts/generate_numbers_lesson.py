@@ -7,6 +7,7 @@ import shutil
 import subprocess
 import sys
 import tempfile
+import time
 from pathlib import Path
 
 import fitz
@@ -592,13 +593,40 @@ def parse_sheet_info(stdout: str) -> list[str]:
     return [item.strip() for item in stdout.strip().split(",") if item.strip()]
 
 
+def run_osascript_command(
+    command: list[str],
+    *,
+    attempts: int = 3,
+    retry_delay_seconds: float = 1.5,
+) -> subprocess.CompletedProcess[str]:
+    last_exc: subprocess.CalledProcessError | None = None
+    for attempt in range(1, attempts + 1):
+        try:
+            return subprocess.run(command, check=True, capture_output=True, text=True)
+        except subprocess.CalledProcessError as exc:
+            last_exc = exc
+            if attempt >= attempts:
+                break
+            time.sleep(retry_delay_seconds * attempt)
+    assert last_exc is not None
+    stderr = (last_exc.stderr or "").strip()
+    stdout = (last_exc.stdout or "").strip()
+    detail_parts = []
+    if stderr:
+        detail_parts.append(f"stderr={stderr}")
+    if stdout:
+        detail_parts.append(f"stdout={stdout}")
+    detail = " | ".join(detail_parts) if detail_parts else "no output"
+    raise RuntimeError(f"osascript failed after {attempts} attempts: {detail}") from last_exc
+
+
 def insert_into_numbers(config: dict, card_assets: list[dict]) -> list[str]:
     script = build_applescript(config, card_assets)
     with tempfile.NamedTemporaryFile("w", suffix=".scpt", delete=False, encoding="utf-8") as handle:
         handle.write(script)
         script_path = Path(handle.name)
     try:
-        result = subprocess.run(["osascript", str(script_path)], check=True, capture_output=True, text=True)
+        result = run_osascript_command(["osascript", str(script_path)])
     finally:
         script_path.unlink(missing_ok=True)
     return parse_sheet_info(result.stdout)
@@ -623,7 +651,7 @@ tell application "Numbers"
     end tell
 end tell
 """
-        result = subprocess.run(["osascript", "-e", script], check=True, capture_output=True, text=True)
+        result = run_osascript_command(["osascript", "-e", script])
         actual = parse_sheet_info(result.stdout)
     else:
         actual = actual_sheet_names

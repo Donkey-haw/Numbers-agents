@@ -292,14 +292,12 @@ end tell
 
 
 def insert_manifest_into_numbers(config: dict, manifest: dict) -> list[str]:
-    import subprocess
-
     script = build_applescript(config, manifest)
     with tempfile.NamedTemporaryFile("w", suffix=".scpt", delete=False, encoding="utf-8") as handle:
         handle.write(script)
         script_path = Path(handle.name)
     try:
-        result = subprocess.run(["osascript", str(script_path)], check=True, capture_output=True, text=True)
+        result = textbook.run_osascript_command(["osascript", str(script_path)])
     finally:
         script_path.unlink(missing_ok=True)
     return textbook.parse_sheet_info(result.stdout)

@@ -24,6 +24,9 @@ import generate_numbers_with_activities as numbers_with_activities  # noqa: E402
 
 PROMPTS_DIR = PROJECT_ROOT / "prompts" / "gemini"
 WORKSPACE_PROMPT_DIR = PROJECT_ROOT / "artifacts" / "_gemini_prompts"
+PROMPT_CACHE: dict[str, str] = {}
+TEXT_CACHE: dict[Path, str] = {}
+SCHEMA_CACHE: dict[Path, dict] = {}
 
 
 def parse_args() -> argparse.Namespace:
@@ -37,6 +40,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--approval-mode", default="yolo", help="Gemini CLI approval mode")
     parser.add_argument("--max-workers", type=int, default=2, help="Max concurrent lesson workers for Gemini stages")
     parser.add_argument("--keep-artifacts", action="store_true", help="Keep generated assets from downstream renderer")
+    parser.add_argument("--debug-artifacts", action="store_true", help="Keep Gemini prompt/raw/wrapper debug artifacts")
     parser.add_argument("--dry-run", action="store_true", help="Stop after AI JSON generation")
     parser.add_argument(
         "--include-status",
@@ -65,7 +69,11 @@ def sanitize_name(value: str) -> str:
 
 
 def read_text(path: Path) -> str:
-    return path.read_text(encoding="utf-8")
+    cached = TEXT_CACHE.get(path)
+    if cached is None:
+        cached = path.read_text(encoding="utf-8")
+        TEXT_CACHE[path] = cached
+    return cached
 
 
 def write_json(path: Path, payload: dict | list) -> None:
@@ -74,7 +82,11 @@ def write_json(path: Path, payload: dict | list) -> None:
 
 
 def read_prompt(name: str) -> str:
-    return read_text(PROMPTS_DIR / name)
+    cached = PROMPT_CACHE.get(name)
+    if cached is None:
+        cached = read_text(PROMPTS_DIR / name)
+        PROMPT_CACHE[name] = cached
+    return cached
 
 
 def extract_last_json_object(text: str) -> dict:
@@ -111,49 +123,50 @@ def invoke_gemini_json(
     gemini_bin: str,
     gemini_model: str | None,
     approval_mode: str,
+    debug_artifacts: bool,
 ) -> tuple[dict, str]:
-    WORKSPACE_PROMPT_DIR.mkdir(parents=True, exist_ok=True)
-    prompt_path = WORKSPACE_PROMPT_DIR / f"{sanitize_name(artifact_dir.name)}-{stem}.md"
-    prompt_path.write_text(prompt, encoding="utf-8")
-
-    command = [
-        gemini_bin,
-        "-p",
-        f"Read {prompt_path} and follow it exactly. Return JSON only.",
-        "-o",
-        "json",
-        "--approval-mode",
-        approval_mode,
-    ]
+    command = [gemini_bin, "-o", "json", "--approval-mode", approval_mode]
     if gemini_model:
         command.extend(["-m", gemini_model])
+    if debug_artifacts:
+        WORKSPACE_PROMPT_DIR.mkdir(parents=True, exist_ok=True)
+        prompt_path = WORKSPACE_PROMPT_DIR / f"{sanitize_name(artifact_dir.name)}-{stem}.md"
+        prompt_path.write_text(prompt, encoding="utf-8")
+        command.extend(["-p", f"Read {prompt_path} and follow it exactly. Return JSON only."])
+    else:
+        command.extend(["-p", prompt])
 
     try:
         result = subprocess.run(command, capture_output=True, text=True, check=True)
     except subprocess.CalledProcessError as exc:
-        (artifact_dir / f"{stem}.stdout.txt").write_text(exc.stdout or "", encoding="utf-8")
+        if debug_artifacts:
+            (artifact_dir / f"{stem}.stdout.txt").write_text(exc.stdout or "", encoding="utf-8")
         (artifact_dir / f"{stem}.stderr.txt").write_text(exc.stderr or "", encoding="utf-8")
         raise
 
     raw_output = result.stdout
-    raw_path = artifact_dir / f"{stem}.raw.txt"
-    raw_path.write_text(raw_output, encoding="utf-8")
     stderr_path = artifact_dir / f"{stem}.stderr.txt"
     stderr_path.write_text(result.stderr, encoding="utf-8")
 
     wrapper = extract_last_json_object(raw_output)
-    wrapper_path = artifact_dir / f"{stem}.wrapper.json"
-    write_json(wrapper_path, wrapper)
-
     response_text = wrapper.get("response", "")
     parsed = extract_json_from_response_text(response_text)
-    parsed_path = artifact_dir / f"{stem}.response.json"
-    write_json(parsed_path, parsed)
+    if debug_artifacts:
+        raw_path = artifact_dir / f"{stem}.raw.txt"
+        raw_path.write_text(raw_output, encoding="utf-8")
+        wrapper_path = artifact_dir / f"{stem}.wrapper.json"
+        write_json(wrapper_path, wrapper)
+        parsed_path = artifact_dir / f"{stem}.response.json"
+        write_json(parsed_path, parsed)
     return parsed, raw_output
 
 
 def load_schema(path: Path) -> dict:
-    return json.loads(path.read_text(encoding="utf-8"))
+    cached = SCHEMA_CACHE.get(path)
+    if cached is None:
+        cached = json.loads(read_text(path))
+        SCHEMA_CACHE[path] = cached
+    return cached
 
 
 def ensure_required_fields(payload: dict, required_fields: list[str], label: str) -> None:
@@ -410,6 +423,7 @@ def process_section(
             gemini_bin=args.gemini_bin,
             gemini_model=args.gemini_model,
             approval_mode=args.approval_mode,
+            debug_artifacts=args.debug_artifacts,
         )
         normalized_analysis = normalize_lesson_analysis(lesson_ai, baseline_analysis)
     except Exception as exc:
@@ -430,6 +444,7 @@ def process_section(
             gemini_bin=args.gemini_bin,
             gemini_model=args.gemini_model,
             approval_mode=args.approval_mode,
+            debug_artifacts=args.debug_artifacts,
         )
         normalized_plan = normalize_activity_plan(activity_ai, normalized_analysis)
     except Exception as exc:

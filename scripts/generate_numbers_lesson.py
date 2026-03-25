@@ -14,6 +14,10 @@ from playwright.async_api import TimeoutError as PlaywrightTimeoutError
 from playwright.async_api import async_playwright
 
 
+TEXT_CACHE_KEY = "_pdf_text_cache"
+NORMALIZED_TEXT_CACHE_KEY = "_pdf_normalized_text_cache"
+
+
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser()
     parser.add_argument("--config", required=True, help="Path to JSON config file")
@@ -39,12 +43,40 @@ def normalize_text(text: str) -> str:
     return re.sub(r"[^0-9A-Za-z가-힣]", "", text)
 
 
+def get_page_text(
+    doc: fitz.Document,
+    page_num: int,
+    text_cache: dict[int, str],
+    normalized_cache: dict[int, str] | None = None,
+) -> str:
+    text = text_cache.get(page_num)
+    if text is None:
+        text = doc[page_num - 1].get_text("text")
+        text_cache[page_num] = text
+    if normalized_cache is None:
+        return text
+    normalized = normalized_cache.get(page_num)
+    if normalized is None:
+        normalized = normalize_text(text)
+        normalized_cache[page_num] = normalized
+    return normalized
+
+
 def find_query_pages(doc: fitz.Document, query: str, start_page: int = 1) -> list[int]:
+    text_cache = getattr(doc, TEXT_CACHE_KEY, None)
+    if text_cache is None:
+        text_cache = {}
+        setattr(doc, TEXT_CACHE_KEY, text_cache)
+    normalized_cache = getattr(doc, NORMALIZED_TEXT_CACHE_KEY, None)
+    if normalized_cache is None:
+        normalized_cache = {}
+        setattr(doc, NORMALIZED_TEXT_CACHE_KEY, normalized_cache)
+
     normalized_query = normalize_text(query)
     hits = []
     for page_num in range(start_page, doc.page_count + 1):
-        text = doc[page_num - 1].get_text("text")
-        if normalized_query and normalized_query in normalize_text(text):
+        normalized_text = get_page_text(doc, page_num, text_cache, normalized_cache)
+        if normalized_query and normalized_query in normalized_text:
             hits.append(page_num)
     return hits
 
@@ -125,6 +157,9 @@ def extract_pages(config: dict) -> list[Path]:
     target_pages = sorted({page for section in config["sections"] for page in section["pdf_pages"]})
     for page_num in target_pages:
         output_path = config["pages_dir"] / f"p{page_num}.png"
+        if output_path.exists():
+            generated.append(output_path)
+            continue
         page = doc[page_num - 1]
         pix = page.get_pixmap(matrix=fitz.Matrix(3, 3), alpha=False)
         pix.save(output_path)
@@ -187,8 +222,8 @@ body {{ font-family: 'Noto Sans KR', sans-serif; width: 1600px; background: tran
 """
 
 
-async def capture_cards(config: dict) -> list[Path]:
-    generated = []
+async def capture_cards(config: dict) -> list[dict]:
+    generated: list[dict] = []
     async with async_playwright() as playwright:
         browser = await playwright.chromium.launch()
         for section in config["sections"]:
@@ -198,9 +233,15 @@ async def capture_cards(config: dict) -> list[Path]:
             page = await browser.new_page(viewport={"width": 1700, "height": 2600}, device_scale_factor=2)
             await page.goto(html_path.as_uri(), wait_until="domcontentloaded")
             await wait_for_render_ready(page, ".card")
-            await page.screenshot(path=str(card_path), full_page=True)
+            capture = await screenshot_capture_root(page, card_path, [".card"])
             await page.close()
-            generated.append(card_path)
+            generated.append(
+                {
+                    "asset_id": section["card_file"],
+                    "image_path": card_path,
+                    "capture_size": capture,
+                }
+            )
         await browser.close()
     return generated
 
@@ -231,6 +272,30 @@ async def wait_for_render_ready(page, root_selector: str) -> None:
         )
     except Exception:
         pass
+
+
+async def screenshot_capture_root(page, output_path: Path, selectors: list[str]) -> dict[str, int]:
+    for selector in selectors:
+        locator = page.locator(selector).first
+        try:
+            count = await page.locator(selector).count()
+        except Exception:
+            count = 0
+        if count < 1:
+            continue
+        try:
+            await locator.scroll_into_view_if_needed(timeout=3000)
+        except Exception:
+            pass
+        box = await locator.bounding_box()
+        await locator.screenshot(path=str(output_path))
+        if not box:
+            raise RuntimeError(f"Could not measure capture root for selector: {selector}")
+        return {
+            "width": max(1, round(box["width"])),
+            "height": max(1, round(box["height"])),
+        }
+    raise RuntimeError(f"Could not find capture root from selectors: {selectors}")
 
 
 def generated_html_paths(config: dict) -> list[Path]:
@@ -284,26 +349,38 @@ tell application "Numbers"
 \t\tend tell
 \tend repeat
 \tsave myDoc
+\tset sheetInfo to {{}}
+\trepeat with s in sheets of myDoc
+\t\tcopy (name of s) to end of sheetInfo
+\tend repeat
 \tclose myDoc
+\treturn sheetInfo
 end tell
 """
 
 
-def insert_into_numbers(config: dict) -> None:
+def parse_sheet_info(stdout: str) -> list[str]:
+    return [item.strip() for item in stdout.strip().split(",") if item.strip()]
+
+
+def insert_into_numbers(config: dict) -> list[str]:
     script = build_applescript(config)
     with tempfile.NamedTemporaryFile("w", suffix=".scpt", delete=False, encoding="utf-8") as handle:
         handle.write(script)
         script_path = Path(handle.name)
     try:
-        subprocess.run(["osascript", str(script_path)], check=True)
+        result = subprocess.run(["osascript", str(script_path)], check=True, capture_output=True, text=True)
     finally:
         script_path.unlink(missing_ok=True)
+    return parse_sheet_info(result.stdout)
 
 
-def verify_output(config: dict) -> None:
+def verify_output(config: dict, actual_sheet_names: list[str] | None = None) -> None:
     if not config["output_file"].exists():
         raise RuntimeError("Output .numbers file was not created")
-    script = f"""
+    expected = [section["sheet_name"] for section in config["sections"]]
+    if actual_sheet_names is None:
+        script = f"""
 tell application "Numbers"
     set myDoc to open POSIX file "{config["output_file"].as_posix()}"
     delay 2
@@ -317,9 +394,10 @@ tell application "Numbers"
     end tell
 end tell
 """
-    result = subprocess.run(["osascript", "-e", script], check=True, capture_output=True, text=True)
-    actual = [item.strip() for item in result.stdout.strip().split(",") if item.strip()]
-    expected = [section["sheet_name"] for section in config["sections"]]
+        result = subprocess.run(["osascript", "-e", script], check=True, capture_output=True, text=True)
+        actual = parse_sheet_info(result.stdout)
+    else:
+        actual = actual_sheet_names
     if actual != expected:
         raise RuntimeError(f"Sheet verification failed: expected {expected}, got {actual}")
 
@@ -340,10 +418,10 @@ def main() -> int:
     card_assets = asyncio.run(capture_cards(config))
     html_assets = generated_html_paths(config)
     if not args.skip_numbers:
-        insert_into_numbers(config)
-        verify_output(config)
+        inserted_sheets = insert_into_numbers(config)
+        verify_output(config, inserted_sheets)
     if not args.keep_assets:
-        cleanup(page_assets + card_assets + html_assets)
+        cleanup(page_assets + [asset["image_path"] for asset in card_assets] + html_assets)
     print(config["output_file"])
     return 0
 

@@ -7,10 +7,7 @@ from collections import defaultdict
 from datetime import datetime, timezone
 from pathlib import Path
 
-from PIL import Image
 from playwright.async_api import async_playwright
-
-Image.MAX_IMAGE_PIXELS = None
 
 CARD_TARGET_WIDTH = 360
 CARD_GAP = 24
@@ -85,42 +82,58 @@ def render_activity_html_files(
 async def capture_html_files(
     html_pairs: list[tuple[dict, Path, Path]],
     config: dict,
-) -> list[tuple[dict, Path, Path, Path]]:
-    captured: list[tuple[dict, Path, Path, Path]] = []
+) -> list[dict]:
+    captured: list[dict] = []
     async with async_playwright() as playwright:
         browser = await playwright.chromium.launch()
         for activity, html_path, plan_path in html_pairs:
             image_path = config["cards_dir"] / f"activity_{activity['activity_id']}.png"
-            page = await browser.new_page(viewport={"width": 1700, "height": 2600}, device_scale_factor=2)
+            page = await browser.new_page(viewport={"width": 1700, "height": 3200}, device_scale_factor=2)
             await page.goto(html_path.as_uri(), wait_until="domcontentloaded")
-            await textbook.wait_for_render_ready(page, ".sheet")
-            await page.screenshot(path=str(image_path), full_page=True)
+            capture_selectors = [
+                ".numbers-card-root",
+                ".sheet",
+                ".card",
+                "main",
+                "section",
+                "body > *",
+            ]
+            await textbook.wait_for_render_ready(page, ", ".join(capture_selectors))
+            capture_size = await textbook.screenshot_capture_root(page, image_path, capture_selectors)
             await page.close()
-            captured.append((activity, html_path, image_path, plan_path))
+            captured.append(
+                {
+                    "activity": activity,
+                    "html_path": html_path,
+                    "image_path": image_path,
+                    "plan_path": plan_path,
+                    "capture_size": capture_size,
+                }
+            )
         await browser.close()
     return captured
 
 
-def compute_scaled_height(image_path: Path, target_width: int) -> int:
-    with Image.open(image_path) as image:
-        width, height = image.size
+def compute_scaled_height(capture_size: dict[str, int], target_width: int) -> int:
+    width = capture_size["width"]
+    height = capture_size["height"]
     return round(height * (target_width / width))
 
 
 def build_manifest(
     config: dict,
     textbook_html_paths: list[Path],
-    textbook_card_paths: list[Path],
-    activity_assets: list[tuple[dict, Path, Path, Path]],
+    textbook_card_assets: list[dict],
+    activity_assets: list[dict],
 ) -> dict:
     html_by_name = {path.stem: path for path in textbook_html_paths}
+    textbook_asset_by_name = {asset["asset_id"]: asset for asset in textbook_card_assets}
     assets = []
     order_by_sheet = defaultdict(int)
 
     for section in config["sections"]:
         order_by_sheet[section["sheet_name"]] += 1
-        card_name = f"{section['card_file']}.png"
-        image_path = next(path for path in textbook_card_paths if path.name == card_name)
+        textbook_asset = textbook_asset_by_name[section["card_file"]]
         html_path = html_by_name[section["card_file"]]
         assets.append(
             {
@@ -129,16 +142,17 @@ def build_manifest(
                 "sheet_name": section["sheet_name"],
                 "insert_order": order_by_sheet[section["sheet_name"]],
                 "html_path": str(html_path),
-                "image_path": str(image_path),
+                "image_path": str(textbook_asset["image_path"]),
                 "dimensions": {
                     "width": CARD_TARGET_WIDTH,
-                    "height": compute_scaled_height(image_path, CARD_TARGET_WIDTH),
+                    "height": compute_scaled_height(textbook_asset["capture_size"], CARD_TARGET_WIDTH),
                 },
             }
         )
 
     section_by_key = {lesson_key(section): section["sheet_name"] for section in config["sections"]}
-    for activity, html_path, image_path, plan_path in activity_assets:
+    for activity_asset in activity_assets:
+        activity = activity_asset["activity"]
         sheet_name = section_by_key.get(activity["lesson_id"])
         if sheet_name is None:
             raise RuntimeError(f"Activity lesson_id '{activity['lesson_id']}' does not match any section")
@@ -149,12 +163,12 @@ def build_manifest(
                 "asset_type": "activity_sheet",
                 "sheet_name": sheet_name,
                 "insert_order": order_by_sheet[sheet_name],
-                "html_path": str(html_path),
-                "image_path": str(image_path),
-                "source_json": str(plan_path.resolve()),
+                "html_path": str(activity_asset["html_path"]),
+                "image_path": str(activity_asset["image_path"]),
+                "source_json": str(activity_asset["plan_path"].resolve()),
                 "dimensions": {
                     "width": CARD_TARGET_WIDTH,
-                    "height": compute_scaled_height(image_path, CARD_TARGET_WIDTH),
+                    "height": compute_scaled_height(activity_asset["capture_size"], CARD_TARGET_WIDTH),
                 },
             }
         )
@@ -231,12 +245,17 @@ tell application "Numbers"
 \tend try
 {''.join(blocks)}
 \tsave myDoc
+\tset sheetInfo to {{}}
+\trepeat with s in sheets of myDoc
+\t\tcopy (name of s) to end of sheetInfo
+\tend repeat
 \tclose myDoc
+\treturn sheetInfo
 end tell
 """
 
 
-def insert_manifest_into_numbers(config: dict, manifest: dict) -> None:
+def insert_manifest_into_numbers(config: dict, manifest: dict) -> list[str]:
     import subprocess
 
     script = build_applescript(config, manifest)
@@ -244,13 +263,14 @@ def insert_manifest_into_numbers(config: dict, manifest: dict) -> None:
         handle.write(script)
         script_path = Path(handle.name)
     try:
-        subprocess.run(["osascript", str(script_path)], check=True)
+        result = subprocess.run(["osascript", str(script_path)], check=True, capture_output=True, text=True)
     finally:
         script_path.unlink(missing_ok=True)
+    return textbook.parse_sheet_info(result.stdout)
 
 
-def verify_manifest_output(config: dict) -> None:
-    textbook.verify_output(config)
+def verify_manifest_output(config: dict, actual_sheet_names: list[str]) -> None:
+    textbook.verify_output(config, actual_sheet_names)
 
 
 def cleanup(paths: list[Path]) -> None:
@@ -271,7 +291,7 @@ def main(cli_args: argparse.Namespace | None = None) -> int:
     textbook.copy_template(config)
 
     page_assets = textbook.extract_pages(config)
-    textbook_card_paths = asyncio.run(textbook.capture_cards(config))
+    textbook_card_assets = asyncio.run(textbook.capture_cards(config))
     textbook_html_paths = textbook.generated_html_paths(config)
 
     activity_plan_paths = [Path(path) for path in args.activity_plan]
@@ -279,20 +299,20 @@ def main(cli_args: argparse.Namespace | None = None) -> int:
     activity_html_pairs = render_activity_html_files(plans, config, set(args.include_status))
     activity_assets = asyncio.run(capture_html_files(activity_html_pairs, config))
 
-    manifest = build_manifest(config, textbook_html_paths, textbook_card_paths, activity_assets)
+    manifest = build_manifest(config, textbook_html_paths, textbook_card_assets, activity_assets)
     manifest_output = Path(args.manifest_output) if args.manifest_output else default_manifest_output(config)
     manifest_output.write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
-    insert_manifest_into_numbers(config, manifest)
-    verify_manifest_output(config)
+    inserted_sheets = insert_manifest_into_numbers(config, manifest)
+    verify_manifest_output(config, inserted_sheets)
 
     if not args.keep_assets:
         cleanup(
             page_assets
-            + textbook_card_paths
+            + [asset["image_path"] for asset in textbook_card_assets]
             + textbook_html_paths
             + [html_path for _, html_path, _ in activity_html_pairs]
-            + [image_path for _, _, image_path, _ in activity_assets]
+            + [asset["image_path"] for asset in activity_assets]
         )
 
     print(config["output_file"])

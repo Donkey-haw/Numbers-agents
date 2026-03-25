@@ -3,11 +3,19 @@
   "pdf_path": "[사회]6_1_교과서.pdf",
   "template_path": "빈 넘버스 파일.numbers",
   "output_file": "output/6-1-1-1. 평화 통일을 위한 노력.numbers",
-  "footer": "사회 6-1 · 1단원 · 평화 통일을 위한 노력",
-  "search_start_page": 8,
+  "footer": "사회 6-1 · 1단원 · 평화 통일을 위한 노력, 민주화와 산업화",
+  "search_start_page": 10,
   "end_before_query": "민주화 운동은 왜 일어났을까요?",
   "source_chart": "configs/social_6_1_progress_chart.json",
   "sections": [
+    {
+      "sheet_name": "1차시",
+      "card_file": "social_6_1_unit1_intro_1차시",
+      "title": "단원·주제 도입",
+      "title_query": "평화 통일을 위한 노력, 민주화와 산업화",
+      "badge": "1차시",
+      "accent": ["#9333ea", "#c084fc"]
+    },
     {
       "sheet_name": "2차시",
       "card_file": "social_6_1_unit1_peace_2차시",

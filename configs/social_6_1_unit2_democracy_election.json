@@ -3,11 +3,19 @@
   "pdf_path": "[사회]6_1_교과서.pdf",
   "template_path": "빈 넘버스 파일.numbers",
   "output_file": "output/6-1-2-1. 민주주의와 선거.numbers",
-  "footer": "사회 6-1 · 2단원 · 민주주의와 선거",
-  "search_start_page": 56,
+  "footer": "사회 6-1 · 2단원 · 민주주의와 시민 참여",
+  "search_start_page": 52,
   "end_before_query": "국가기관이 하는 일",
   "source_chart": "configs/social_6_1_progress_chart.json",
   "sections": [
+    {
+      "sheet_name": "1차시",
+      "card_file": "social_6_1_unit2_intro_1차시",
+      "title": "단원·주제 도입",
+      "title_query": "민주주의와 시민 참여",
+      "badge": "1차시",
+      "accent": ["#6366f1", "#818cf8"]
+    },
     {
       "sheet_name": "2차시",
       "card_file": "social_6_1_unit2_election_2차시",

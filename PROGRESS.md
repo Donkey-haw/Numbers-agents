@@ -218,6 +218,56 @@
   - 시트 검증 결과:
     - `8차시`
     - `9-10차시`
+
+## 2026-03-21
+
+### 자유 활동 생성 원칙 보정
+- 활동이 교과서 질문을 형태만 바꿔 반복하지 않도록 Gemini planning 프롬프트를 보강했다.
+  - 변경 파일:
+    - [prompts/gemini/system_plan.md](/Users/jonyeock/Desktop/Tool/NumbersAuto/prompts/gemini/system_plan.md)
+    - [prompts/gemini/user_plan.md](/Users/jonyeock/Desktop/Tool/NumbersAuto/prompts/gemini/user_plan.md)
+  - 새 기준:
+    - 활동은 `보완`, `심화`, `확장` 중 하나 이상의 기능을 가져야 한다.
+    - 교과서 문단, 질문, 활동을 문장만 바꿔 반복하지 않는다.
+    - 같은 학습 목표로 가더라도 다른 사고 경로, 비교, 판단, 설계, 적용, 자기 경험 연결을 우선한다.
+- 결정론적 fallback 활동 생성기도 같은 원칙으로 수정했다.
+  - 변경 파일:
+    - [scripts/generate_activity_plan.py](/Users/jonyeock/Desktop/Tool/NumbersAuto/scripts/generate_activity_plan.py)
+  - 변경 내용:
+    - `learning_note`는 교과서 요약이 아니라 `수업시간에 들은 내용 정리 + 오개념 바로잡기`로 변경
+    - `see_think_wonder`는 교과서 장면 관찰이 아니라 `생활 속 사례 확장`으로 변경
+    - `worksheet`는 개념 정리형에서 `새 사례 적용 + 근거 판단형`으로 변경
+
+### 카드 캡처 크롭 개선
+- 카드 캡처를 페이지 전체 스크린샷에서 카드 루트 기준 element screenshot 방식으로 변경했다.
+  - 변경 파일:
+    - [scripts/generate_numbers_lesson.py](/Users/jonyeock/Desktop/Tool/NumbersAuto/scripts/generate_numbers_lesson.py)
+    - [scripts/generate_numbers_with_activities.py](/Users/jonyeock/Desktop/Tool/NumbersAuto/scripts/generate_numbers_with_activities.py)
+  - 변경 내용:
+    - 교과서 카드는 `.card` 루트 기준으로 직접 캡처
+    - 활동 카드는 `.numbers-card-root -> .sheet -> .card -> main -> section -> body > *` 순으로 루트를 찾아 캡처
+    - 불필요한 하단 회색/빈 여백 대신 실제 카드 외곽 기준으로 PNG를 생성
+
+### `민주주의와 미디어` 재검증
+- 사용 config: [configs/social_6_1_unit2_democracy_media.json](/Users/jonyeock/Desktop/Tool/NumbersAuto/configs/social_6_1_unit2_democracy_media.json)
+- 결과 파일: [output/6-1-2-3. 민주주의와 미디어.numbers](/Users/jonyeock/Desktop/Tool/NumbersAuto/output/6-1-2-3.%20민주주의와%20미디어.numbers)
+- 실행 루트: `/tmp/numbersauto_democracy_media_improved`
+- 실행 시간: `real 265.77s`, `user 75.57s`, `sys 11.49s`
+- 시트 검증 결과:
+  - `14차시`
+  - `15차시`
+  - `16차시`
+  - `17-18차시`
+- render manifest 기준 asset 수: 총 `15개`
+- 크롭 전후 비교:
+  - 이전 실행은 거의 모든 카드가 `height 551`로 동일해 페이지 여백이 함께 캡처된 상태였다.
+  - 개선 후 실행은 카드 내용에 따라 `131~509` 범위로 달라져 카드 외곽 기준 캡처가 적용된 것을 확인했다.
+- 활동 내용 확인:
+  - `14차시`에서 `나의 하루 미디어 타임라인`, `텔레비전 vs SNS 비교`, `나만의 미디어 정의 사전`처럼 교과서 반복이 아닌 확장형 활동이 생성되었다.
+  - `15차시`에서도 알고리즘 편향과 다양한 시각 확보처럼 교과서 바깥 사례 연결 활동이 생성되었다.
+- 남은 이슈:
+  - `17-18차시` activity planning은 Gemini raw 응답 안에 fenced JSON이 있었지만 trailing JSON 추출에 실패해 fallback plan이 사용되었다.
+  - 이 문제는 활동 설계 원칙과 크롭 개선과는 별개로, Gemini 응답 파서 강건성 보완이 필요하다.
     - `11차시`
     - `12차시`
     - `13차시`
@@ -233,3 +283,39 @@
   - 참고:
     - `html` 디렉토리의 파일 5개는 기존 템플릿/보존용 파일이며, 생성 중간 산출물은 정리됐다.
     - `13차시`의 Gemini activity plan은 `Could not find trailing JSON object in Gemini CLI output`로 실패했지만, 로컬 fallback activity plan으로 정상 합성됐다.
+- [NumbersDesign.md](/Users/jonyeock/Desktop/Tool/NumbersAuto/NumbersDesign.md) 를 전면 개편했다.
+  - 기존: 활동 유형 taxonomy + 배지 체계 + HTML 구조 예시 중심의 템플릿 성격 문서
+  - 변경: 자유 생성 HTML을 위한 상위 제약 문서
+  - 새 구조:
+    - 문서의 역할
+    - 최상위 목표
+    - 절대 제약
+    - 객체 중심 설계
+    - 시트 배치 원칙
+    - 객체별 필수 요소
+    - 자유 생성 HTML 규칙
+    - 배지와 색상 시스템
+    - 레이아웃 패밀리
+    - `templateplan.md`와의 관계
+  - 핵심 변화:
+    - 고정 템플릿 복제를 유도하는 문구를 제거
+    - [ACTIVITY_RULE.md](/Users/jonyeock/Desktop/Tool/NumbersAuto/ACTIVITY_RULE.md) 의 객체 구조와 수업 전/중/후 흐름을 상위 원칙으로 반영
+    - `templateplan.md`는 상위 규칙 문서가 아니라 참고용 템플릿 개선 문서로 위치를 재정의
+    - Gemini가 기존 템플릿과 다르더라도 객체 역할, 필기 공간, 학습 기능을 만족하면 허용하는 방향으로 변경
+- 새 [NumbersDesign.md](/Users/jonyeock/Desktop/Tool/NumbersAuto/NumbersDesign.md) 기준이 실제 생성에 반영되도록 Gemini 활동 프롬프트도 개편했다.
+  - 변경 파일:
+    - [prompts/gemini/system_plan.md](/Users/jonyeock/Desktop/Tool/NumbersAuto/prompts/gemini/system_plan.md)
+    - [prompts/gemini/user_plan.md](/Users/jonyeock/Desktop/Tool/NumbersAuto/prompts/gemini/user_plan.md)
+  - 변경 방향:
+    - 기존의 `badge`, `light background`, `three-box pattern` 유도형 문구를 약화
+    - 객체 역할, 수업 전/중/후 흐름, 학습 기능, 학생의 실제 Pencil 행위를 먼저 판단하게 변경
+    - 창작형/사고형/기초형 활동 각각에 필요한 구조적 조건을 텍스트로 명시
+    - 기존 템플릿 복제를 피하고 새 레이아웃을 설계해도 된다는 점을 명확히 함
+  - 검증:
+    - 단일 차시 dry-run 실행: `/tmp/numbersauto_prompt_refresh_test`
+    - `activity_plan.prompt.md` 안에 `object role`, `before-class`, `creative expression`, `same repeated badge` 관련 문구가 반영된 것 확인
+    - 생성 결과:
+      - `activity_plan.json` 생성 성공
+      - 활동 2개 모두 `freeform_html`
+      - `html_content` 포함
+      - `activity_plan.error.txt` 없음

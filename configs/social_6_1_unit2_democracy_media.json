@@ -1,0 +1,42 @@
+{
+  "project_root": "/Users/jonyeock/Desktop/Tool/NumbersAuto",
+  "pdf_path": "[사회]6_1_교과서.pdf",
+  "template_path": "빈 넘버스 파일.numbers",
+  "output_file": "output/6-1-2-3. 민주주의와 미디어.numbers",
+  "footer": "사회 6-1 · 2단원 · 민주주의와 미디어",
+  "search_start_page": 90,
+  "end_before_query": "단원마무리",
+  "source_chart": "configs/social_6_1_progress_chart.json",
+  "sections": [
+    {
+      "sheet_name": "14차시",
+      "card_file": "social_6_1_unit2_media_14차시",
+      "title": "미디어란 무엇일까요?",
+      "title_query": "민주주의와 미디어",
+      "badge": "14차시",
+      "accent": ["#6366f1", "#818cf8"]
+    },
+    {
+      "sheet_name": "15차시",
+      "card_file": "social_6_1_unit2_media_15차시",
+      "title": "민주주의에서 미디어는 어떤 역할을 할까요?",
+      "badge": "15차시",
+      "accent": ["#4f46e5", "#7c3aed"]
+    },
+    {
+      "sheet_name": "16차시",
+      "card_file": "social_6_1_unit2_media_16차시",
+      "title": "미디어의 내용을 왜 비판적으로 분석해야 할까요?",
+      "badge": "16차시",
+      "accent": ["#0f766e", "#14b8a6"]
+    },
+    {
+      "sheet_name": "17-18차시",
+      "card_file": "social_6_1_unit2_media_17-18차시",
+      "title": "미디어를 올바르게 이용하는 방법을 알아볼까요? / 주제 마무리",
+      "title_query": "미디어를 올바르게 이용하는 방법을 알아볼까요?",
+      "badge": "17-18차시",
+      "accent": ["#d97706", "#f59e0b"]
+    }
+  ]
+}

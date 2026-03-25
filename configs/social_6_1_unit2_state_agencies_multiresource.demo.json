@@ -1,0 +1,100 @@
+{
+  "project_root": "/Users/jonyeock/Desktop/Tool/NumbersAuto",
+  "template_path": "빈 넘버스 파일.numbers",
+  "output_file": "output/6-1-2-2. 국가기관이 하는 일-멀티리소스 데모.numbers",
+  "footer": "사회 6-1 · 2단원 · 국가기관이 하는 일",
+  "search_start_page": 70,
+  "end_before_query": "민주주의와 미디어",
+  "source_chart": "configs/social_6_1_progress_chart.json",
+  "resources": [
+    {
+      "resource_id": "social_textbook",
+      "label": "사회",
+      "kind": "textbook",
+      "pdf_path": "[사회]6_1_교과서.pdf"
+    },
+    {
+      "resource_id": "social_atlas",
+      "label": "사회과부도",
+      "kind": "supplement",
+      "pdf_path": "[사회]6_사회과 부도.pdf"
+    }
+  ],
+  "sections": [
+    {
+      "sheet_name": "8차시",
+      "card_file": "social_6_1_unit2_state_8차시",
+      "title": "국가기관의 의미와 종류를 알아볼까요?",
+      "badge": "8차시",
+      "accent": ["#6366f1", "#818cf8"],
+      "sources": [
+        {
+          "resource_id": "social_textbook",
+          "role": "textbook",
+          "title_query": "민주 국가는 어떻게 운영될까요?"
+        },
+        {
+          "resource_id": "social_atlas",
+          "role": "supplement",
+          "pdf_pages": [47, 48]
+        }
+      ]
+    },
+    {
+      "sheet_name": "9-10차시",
+      "card_file": "social_6_1_unit2_state_9-10차시",
+      "title": "국회의 구성과 하는 일을 알아볼까요?",
+      "badge": "9-10차시",
+      "accent": ["#4f46e5", "#7c3aed"],
+      "sources": [
+        {
+          "resource_id": "social_textbook",
+          "role": "textbook",
+          "title_query": "국회는 어떤 일을 할까요?"
+        }
+      ]
+    },
+    {
+      "sheet_name": "11차시",
+      "card_file": "social_6_1_unit2_state_11차시",
+      "title": "행정부의 구성과 하는 일을 알아볼까요?",
+      "badge": "11차시",
+      "accent": ["#0f766e", "#14b8a6"],
+      "sources": [
+        {
+          "resource_id": "social_textbook",
+          "role": "textbook",
+          "title_query": "행정부는 어떤 일을 할까요?"
+        }
+      ]
+    },
+    {
+      "sheet_name": "12차시",
+      "card_file": "social_6_1_unit2_state_12차시",
+      "title": "법원의 구성과 하는 일을 알아볼까요?",
+      "badge": "12차시",
+      "accent": ["#1d4ed8", "#3b82f6"],
+      "sources": [
+        {
+          "resource_id": "social_textbook",
+          "role": "textbook",
+          "title_query": "법원은 어떤 일을 할까요?"
+        }
+      ]
+    },
+    {
+      "sheet_name": "13차시",
+      "card_file": "social_6_1_unit2_state_13차시",
+      "title": "권력 분립과 국가기관의 견제를 알아볼까요? / 주제 마무리",
+      "badge": "13차시",
+      "accent": ["#d97706", "#f59e0b"],
+      "sources": [
+        {
+          "resource_id": "social_textbook",
+          "role": "textbook",
+          "title_query": "국가의 권력을 왜 나누어야 할까요?"
+        }
+      ]
+    }
+  ]
+}

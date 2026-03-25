@@ -1,170 +1,158 @@
 # Optimization Analysis
 
 ## 목적
-- 현재 기능은 그대로 유지하면서 전체 단원 생성 시간을 줄일 수 있는 지점을 정리한다.
+- 현재 파이프라인의 실행 시간 병목을 정리하고, 이미 반영된 최적화와 남은 최적화를 구분한다.
 - 기준 파이프라인:
-  1. 교과서 분석 및 차시 범위 추론
+  1. 교과서/보조교재 분석 및 차시 범위 추론
   2. Gemini CLI로 `lesson_analysis` / `activity_plan` 생성
-  3. 교과서 카드 + 활동 HTML 렌더 및 PNG 캡처
+  3. 교과서 카드 + 보조자료 카드 + 활동 HTML 렌더 및 PNG 캡처
   4. AppleScript로 Numbers 삽입
   5. 결과 검증 및 cleanup
 
 ## 최근 실측 기준
-- 전체 단원 실행: 약 `13분 28초`
-- 결과 파일: [1-1. 평화 통일을 위한 노력.numbers](/Users/jonyeock/Desktop/Tool/NumbersAuto/output/1-1.%20평화%20통일을%20위한%20노력.numbers)
-- 현재 병목 후보는 크게 `Gemini 호출`, `Playwright 캡처`, `Numbers AppleScript 삽입` 세 구간이다.
+- 사회 `민주주의와 선거` 교과서만:
+  - 전체 파이프라인 약 `155.34s`
+  - Gemini/전처리 구간 약 `126.40s`
+  - 렌더 + Numbers 삽입 구간 약 `28.94s`
+- 사회 `민주화와 산업화로 달라진 생활 문화` 교과서 + 사회과부도:
+  - 교과서/보조교재만 Numbers 생성 약 `39.17s`
+  - 활동 포함 최종 합성 단계 약 `52.90s`
+- 수학 `각기둥과 각뿔` 교과서 + 수학익힘:
+  - 렌더 자체는 정상
+  - Numbers 자동 삽입은 간헐적으로 AppleScript 호출 실패가 남아 있음
 
-## 우선순위 높은 최적화
+## 현재 병목
+- 1순위: Gemini 차시별 호출 시간
+- 2순위: Playwright 캡처 시간
+- 3순위: Numbers AppleScript 삽입 안정성
 
-### 1. Gemini 프롬프트 중복 축소
-- 영향도: 매우 큼
-- 현재 문제:
-  - [run_gemini_cli_pipeline.py](/Users/jonyeock/Desktop/Tool/NumbersAuto/scripts/run_gemini_cli_pipeline.py#L211) 에서 단원 전체 `textbook_context`를 만들고
-  - [run_gemini_cli_pipeline.py](/Users/jonyeock/Desktop/Tool/NumbersAuto/scripts/run_gemini_cli_pipeline.py#L252) 에서 그 전체 컨텍스트를 각 차시 프롬프트마다 다시 주입한다.
-  - 차시 수가 `N`개면, 단원 전체 텍스트가 사실상 `N`번 반복 전송된다.
-- 최적화 방향:
-  - 현재 차시에 해당하는 `extracted_text`만 프롬프트에 넣는다.
-  - 필요하면 앞뒤 차시 제목 정도만 경계 정보로 추가한다.
-  - 전체 `ocr_lines` 같은 원시 데이터는 제외한다.
-- 기능 유지 근거:
-  - 최종 결과는 여전히 각 차시별 분석/활동 생성이다.
-  - 차시 외 텍스트를 반복 제공하지 않아도 요구 기능은 동일하다.
+## 권장 실행 순서 상태
 
-### 2. Gemini 호출 병렬화
-- 영향도: 매우 큼
-- 현재 문제:
-  - [run_gemini_cli_pipeline.py](/Users/jonyeock/Desktop/Tool/NumbersAuto/scripts/run_gemini_cli_pipeline.py#L344) 이후 루프가 차시별로 완전히 직렬 실행된다.
-  - `lesson_analysis -> activity_plan`은 같은 차시 안에서는 순서가 필요하지만, 차시 간에는 독립적이다.
-- 최적화 방향:
-  - 차시 단위 worker pool을 두고 2~3개씩 병렬 실행한다.
-  - 각 worker 안에서는 `lesson_analysis -> activity_plan` 순서를 유지한다.
-- 기능 유지 근거:
-  - 차시 간 데이터 의존성이 없어 출력 의미가 바뀌지 않는다.
-  - 단지 wall-clock 시간만 줄어든다.
+### 1. Gemini 프롬프트 축소
+- 상태: 완료
+- 반영 내용:
+  - [run_gemini_cli_pipeline.py](/Users/jonyeock/Desktop/Tool/NumbersAuto/scripts/run_gemini_cli_pipeline.py) 는 차시별 `current_section.extracted_text` 중심으로 프롬프트를 구성한다.
+  - 전체 단원 본문을 차시마다 반복 전송하지 않는다.
 
-### 3. Playwright 캡처의 고정 대기 제거
-- 영향도: 큼
-- 현재 문제:
-  - [generate_numbers_lesson.py](/Users/jonyeock/Desktop/Tool/NumbersAuto/scripts/generate_numbers_lesson.py#L189) 과 [generate_numbers_with_activities.py](/Users/jonyeock/Desktop/Tool/NumbersAuto/scripts/generate_numbers_with_activities.py#L85) 에서 카드마다 `wait_for_timeout(1200)`를 사용한다.
-  - 카드 수만큼 최소 `1.2초`가 누적된다.
-- 최적화 방향:
-  - `page.wait_for_load_state("networkidle")`
-  - `document.fonts.ready`
-  - 필요하면 `.sheet` 또는 `.card` 렌더 완료 sentinel
-  - 위 조건을 만족하면 바로 screenshot
-- 기능 유지 근거:
-  - “충분히 렌더된 뒤 캡처”라는 조건은 유지된다.
-  - 고정 sleep만 제거한다.
+### 2. 차시 단위 Gemini 병렬화
+- 상태: 완료
+- 반영 내용:
+  - [run_gemini_cli_pipeline.py](/Users/jonyeock/Desktop/Tool/NumbersAuto/scripts/run_gemini_cli_pipeline.py) 에 `ThreadPoolExecutor(max_workers=...)`가 들어가 있다.
+  - 차시 간 병렬, 차시 내부 `lesson_analysis -> activity_plan` 순서는 유지한다.
+
+### 3. Playwright 고정 sleep 제거
+- 상태: 완료
+- 반영 내용:
+  - [generate_numbers_lesson.py](/Users/jonyeock/Desktop/Tool/NumbersAuto/scripts/generate_numbers_lesson.py)
+  - [generate_numbers_with_activities.py](/Users/jonyeock/Desktop/Tool/NumbersAuto/scripts/generate_numbers_with_activities.py)
+  - 위 두 경로 모두 `networkidle`, `document.fonts.ready`, selector visible 기반으로 대기한다.
 
 ### 4. 브라우저 캡처 단일 세션화
-- 영향도: 큼
-- 현재 문제:
-  - [generate_numbers_with_activities.py](/Users/jonyeock/Desktop/Tool/NumbersAuto/scripts/generate_numbers_with_activities.py#L273) 에서 교과서 카드 캡처
-  - [generate_numbers_with_activities.py](/Users/jonyeock/Desktop/Tool/NumbersAuto/scripts/generate_numbers_with_activities.py#L280) 에서 활동 카드 캡처
-  - 두 번의 별도 Chromium 루프를 돈다.
-- 최적화 방향:
-  - 교과서 카드와 활동 카드를 하나의 capture queue로 합친다.
-  - 하나의 browser session과 소수의 page worker만 사용한다.
-- 기능 유지 근거:
-  - 입력 HTML과 출력 PNG는 동일하다.
-  - 브라우저 시작/종료와 직렬 루프만 줄인다.
+- 상태: 부분 완료
+- 반영 내용:
+  - 교과서 카드 캡처 루프 내부에서는 browser 세션을 하나로 유지한다.
+  - 활동 카드 캡처 루프 내부에서도 browser 세션을 하나로 유지한다.
+- 아직 남은 점:
+  - 교과서 카드와 활동 카드를 하나의 capture queue로 완전히 통합하지는 않았다.
+  - 즉 `generate_numbers_with_activities.py` 기준으로는 두 번의 별도 캡처 단계가 남아 있다.
 
 ### 5. Numbers 검증 재오픈 제거
-- 영향도: 중간 이상
-- 현재 문제:
-  - [generate_numbers_with_activities.py](/Users/jonyeock/Desktop/Tool/NumbersAuto/scripts/generate_numbers_with_activities.py#L286) 에서 삽입 후
-  - [generate_numbers_lesson.py](/Users/jonyeock/Desktop/Tool/NumbersAuto/scripts/generate_numbers_lesson.py#L274) 의 별도 open/verify/close를 다시 탄다.
-- 최적화 방향:
-  - 삽입 AppleScript 안에서 마지막에 sheet names를 읽어 반환한다.
-  - 저장 후 닫기 전에 검증까지 끝낸다.
-- 기능 유지 근거:
-  - 검증은 그대로 유지된다.
-  - Numbers open/close 한 번을 제거한다.
+- 상태: 완료
+- 반영 내용:
+  - 삽입 AppleScript가 마지막에 시트명을 반환한다.
+  - [generate_numbers_lesson.py](/Users/jonyeock/Desktop/Tool/NumbersAuto/scripts/generate_numbers_lesson.py) 와 [generate_numbers_with_activities.py](/Users/jonyeock/Desktop/Tool/NumbersAuto/scripts/generate_numbers_with_activities.py) 는 반환된 시트명으로 검증한다.
+  - 기본 경로에서 별도 reopen/verify/close 한 사이클은 제거됐다.
 
-## 중간 우선순위 최적화
+### 6. PDF 텍스트/이미지 캐시
+- 상태: 부분 완료
+- 텍스트 캐시:
+  - 완료
+  - [generate_numbers_lesson.py](/Users/jonyeock/Desktop/Tool/NumbersAuto/scripts/generate_numbers_lesson.py) 에 `TEXT_CACHE_KEY`, `NORMALIZED_TEXT_CACHE_KEY`가 있다.
+- 이미지 캐시:
+  - 부분 완료
+  - 같은 출력 PNG가 있으면 재사용한다.
+  - [build_resource_index.py](/Users/jonyeock/Desktop/Tool/NumbersAuto/scripts/build_resource_index.py) 도 재사용 스캔 구조를 만든다.
+- 아직 남은 점:
+  - `pdf path + page number + scale` 기준의 영속 이미지 캐시 체계를 전체 렌더 경로가 완전히 공유하진 않는다.
 
-### 6. PDF 페이지 텍스트 캐시
-- 현재 문제:
-  - [generate_numbers_lesson.py](/Users/jonyeock/Desktop/Tool/NumbersAuto/scripts/generate_numbers_lesson.py#L41) 의 `find_query_pages()`가 검색 때마다 각 페이지 텍스트를 다시 읽는다.
-  - [run_gemini_cli_pipeline.py](/Users/jonyeock/Desktop/Tool/NumbersAuto/scripts/run_gemini_cli_pipeline.py#L225) 에서도 페이지 텍스트를 다시 읽는다.
-- 최적화 방향:
-  - `page_num -> normalized_text`
-  - `page_num -> raw_text`
-  - 둘 다 문서 단위로 메모리 캐시
-- 기능 유지 근거:
-  - 동일 텍스트를 재사용할 뿐이므로 결과는 바뀌지 않는다.
+## 중간 우선순위 상태
 
 ### 7. PDF 페이지 이미지 캐시
-- 현재 문제:
-  - [generate_numbers_lesson.py](/Users/jonyeock/Desktop/Tool/NumbersAuto/scripts/generate_numbers_lesson.py#L121) 의 `extract_pages()`가 매번 동일 페이지를 다시 rasterize한다.
-- 최적화 방향:
-  - 캐시 키: `pdf path + page number + render scale`
-  - 기존 PNG가 유효하면 재생성 생략
-- 기능 유지 근거:
-  - 같은 PDF와 같은 렌더 옵션이면 이미지 결과는 동일하다.
+- 상태: 부분 완료
+- 현재:
+  - `extract_pages()`는 기존 PNG가 있으면 재생성하지 않는다.
+- 남은 점:
+  - 전역 캐시 정책과 무효화 규칙이 아직 없다.
 
 ### 8. 이미지 크기 재측정 제거
-- 현재 문제:
-  - [generate_numbers_with_activities.py](/Users/jonyeock/Desktop/Tool/NumbersAuto/scripts/generate_numbers_with_activities.py#L104) 의 `compute_scaled_height()`가 PNG를 다시 열어 높이를 계산한다.
-- 최적화 방향:
-  - screenshot 직후 width/height를 같이 기록
-  - manifest는 그 메타데이터를 재사용
-- 기능 유지 근거:
-  - 같은 이미지의 치수만 전달 방식만 바뀐다.
+- 상태: 완료
+- 반영 내용:
+  - 캡처 직후 `capture_size`를 저장한다.
+  - [generate_numbers_with_activities.py](/Users/jonyeock/Desktop/Tool/NumbersAuto/scripts/generate_numbers_with_activities.py) 는 이 메타데이터를 사용해 scaled height를 계산한다.
 
 ### 9. 프롬프트/스키마 로드 캐시
-- 현재 문제:
-  - [run_gemini_cli_pipeline.py](/Users/jonyeock/Desktop/Tool/NumbersAuto/scripts/run_gemini_cli_pipeline.py#L74), [run_gemini_cli_pipeline.py](/Users/jonyeock/Desktop/Tool/NumbersAuto/scripts/run_gemini_cli_pipeline.py#L153), [run_gemini_cli_pipeline.py](/Users/jonyeock/Desktop/Tool/NumbersAuto/scripts/run_gemini_cli_pipeline.py#L163), [run_gemini_cli_pipeline.py](/Users/jonyeock/Desktop/Tool/NumbersAuto/scripts/run_gemini_cli_pipeline.py#L170) 에서 파일을 반복 읽는다.
-- 최적화 방향:
-  - 프로세스 시작 시 prompt text와 schema를 한 번만 load
-- 기능 유지 근거:
-  - 내용은 동일하고 I/O만 감소한다.
+- 상태: 완료
+- 반영 내용:
+  - [run_gemini_cli_pipeline.py](/Users/jonyeock/Desktop/Tool/NumbersAuto/scripts/run_gemini_cli_pipeline.py) 에 `PROMPT_CACHE`, `TEXT_CACHE`, `SCHEMA_CACHE`가 있다.
 
 ### 10. OCR payload 축소
-- 현재 문제:
-  - [run_gemini_cli_pipeline.py](/Users/jonyeock/Desktop/Tool/NumbersAuto/scripts/run_gemini_cli_pipeline.py#L182) 에서 chart가 있으면 `ocr_lines`와 `ocr_sections`를 모두 싣는다.
-- 최적화 방향:
-  - `ocr_sections`만 유지
-  - config에 차시명 정보가 이미 있으면 OCR 자체를 skip
-- 기능 유지 근거:
-  - 현재 규칙상 쪽수는 무시하고 차시명 중심이므로 기능과 일치한다.
+- 상태: 부분 완료
+- 현재:
+  - chart 입력은 선택적이다.
+  - config만으로도 다수 실행 경로가 동작한다.
+- 남은 점:
+  - chart를 붙였을 때 payload 최소화 규칙은 더 정리할 수 있다.
 
-## 낮은 우선순위 최적화
+## 낮은 우선순위 상태
 
 ### 11. JSON 추출 파서 단순화
-- 현재 문제:
-  - [run_gemini_cli_pipeline.py](/Users/jonyeock/Desktop/Tool/NumbersAuto/scripts/run_gemini_cli_pipeline.py#L78) 에서 여러 후보에 대해 `json.loads()`를 반복 시도한다.
-- 최적화 방향:
-  - wrapper JSON을 먼저 파싱
-  - `response` 내부는 brace-balanced tail parser로 마지막 객체만 추출
-- 기능 유지 근거:
-  - 반환 JSON 해석 규칙은 동일하다.
+- 상태: 부분 완료
+- 현재:
+  - wrapper JSON과 trailing JSON object 파서를 사용한다.
+- 남은 점:
+  - brace-balanced tail parser로 더 단순화할 여지는 있다.
 
 ### 12. artifact 기록 레벨 분리
-- 현재 문제:
-  - [run_gemini_cli_pipeline.py](/Users/jonyeock/Desktop/Tool/NumbersAuto/scripts/run_gemini_cli_pipeline.py#L105) 가 prompt/raw/wrapper/parsed를 모두 기록한다.
-- 최적화 방향:
-  - 기본 실행은 parsed JSON + stderr만 저장
-  - 상세 기록은 `--debug-artifacts`에서만 저장
-- 기능 유지 근거:
-  - 핵심 산출물은 유지되고 디버그 부가 산출물만 줄어든다.
+- 상태: 완료
+- 반영 내용:
+  - [run_gemini_cli_pipeline.py](/Users/jonyeock/Desktop/Tool/NumbersAuto/scripts/run_gemini_cli_pipeline.py) 의 `--debug-artifacts`가 있을 때만 raw/wrapper/response를 상세 저장한다.
 
 ### 13. Numbers 템플릿 복사 재사용 모드
-- 현재 문제:
-  - [generate_numbers_lesson.py](/Users/jonyeock/Desktop/Tool/NumbersAuto/scripts/generate_numbers_lesson.py#L107) 의 `copy_template()`가 항상 전체 `.numbers` 번들을 새로 복사한다.
-- 최적화 방향:
-  - 프로파일링/반복 실행용 `--reuse-output` 모드 추가
-- 기능 유지 근거:
-  - 반복 개발 시에만 쓰고, 기본 동작은 유지할 수 있다.
+- 상태: 미완료
+- 현재:
+  - [generate_numbers_lesson.py](/Users/jonyeock/Desktop/Tool/NumbersAuto/scripts/generate_numbers_lesson.py) 의 `copy_template()`는 기본적으로 항상 새 복사를 수행한다.
 
-## 권장 실행 순서
-1. Gemini 프롬프트 축소
-2. 차시 단위 Gemini 병렬화
-3. Playwright 고정 sleep 제거
-4. 브라우저 캡처 단일 세션화
-5. Numbers 검증 재오픈 제거
-6. PDF 텍스트/이미지 캐시
+## 다교재 확장과 성능
+- 다교재 자체는 렌더/합성 경로에 반영되었다.
+- 보조교재는 `supplement_card`로 관리되고, 교과서 아래에 배치된다.
+- 활동 생성은 현재 원칙상 주교과서 중심으로 유지하고 있어, Gemini 토큰 폭증을 막는다.
+- 재사용 스캔 구조는 아래 단계까지 구축되었다.
+  - [build_resource_index.py](/Users/jonyeock/Desktop/Tool/NumbersAuto/scripts/build_resource_index.py)
+  - [build_unit_bundle.py](/Users/jonyeock/Desktop/Tool/NumbersAuto/scripts/build_unit_bundle.py)
+  - [build_runtime_config.py](/Users/jonyeock/Desktop/Tool/NumbersAuto/scripts/build_runtime_config.py)
+  - [generate_numbers_from_bundle.py](/Users/jonyeock/Desktop/Tool/NumbersAuto/scripts/generate_numbers_from_bundle.py)
 
-## 예상 효과
-- 1~4번만 적용해도 현재 `13분대` 실행을 가장 크게 줄일 가능성이 높다.
-- 특히 전체 단원 실행에서는 `Gemini 호출 직렬화`와 `카드별 1.2초 sleep`이 가장 먼저 손봐야 할 지점이다.
+## 현재 남은 핵심 과제
+1. Numbers AppleScript 호출 안정화
+- 사회/수학 모두에서 간헐적인 `osascript` 실패가 남아 있다.
+- 자산/스크립트 자체는 정상이어도 첫 호출이 실패하고, 재시도나 수동 스크립트 실행은 통과하는 경우가 있다.
+
+2. 교과서 카드와 활동 카드 캡처 완전 통합
+- 현재는 교과서 캡처와 활동 캡처가 분리돼 있다.
+- 하나의 capture queue로 합치면 브라우저 시작/종료 비용을 더 줄일 수 있다.
+
+3. 재사용 캐시의 영속성 강화
+- `resource_index`, `unit_bundle`, generated config는 갖췄다.
+- 하지만 페이지 raster cache와 render cache까지 완전히 재사용되는 구조는 아직 아니다.
+
+## 현재 판단 요약
+- 문서의 권장 실행 순서 기준으로 핵심 큰 항목은 대부분 반영됐다.
+- 상태를 한 줄로 요약하면:
+  - 완료: `1, 2, 3, 5`
+  - 부분 완료: `4, 6`
+  - 미완료: `13`
+
+## 다음 권장 작업
+1. `run_gemini_cli_pipeline.py` 와 `generate_numbers_lesson.py` 의 Numbers 자동 삽입 실패를 재현 가능하게 고정
+2. 교과서 카드/활동 카드 캡처를 하나의 browser queue로 통합
+3. render cache 정책을 명시하고 재사용 경로를 강화

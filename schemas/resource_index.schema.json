@@ -1,0 +1,80 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://numbersauto.local/schemas/resource_index.schema.json",
+  "title": "Resource Index",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "generated_at",
+    "resource_id",
+    "label",
+    "kind",
+    "pdf_path",
+    "page_count",
+    "pages"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string"
+    },
+    "generated_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "resource_id": {
+      "type": "string"
+    },
+    "label": {
+      "type": "string"
+    },
+    "kind": {
+      "type": "string",
+      "enum": ["textbook", "supplement", "reference", "worksheet", "courseware"]
+    },
+    "subject": {
+      "type": "string"
+    },
+    "pdf_path": {
+      "type": "string"
+    },
+    "page_count": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "pages": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["page_num", "raw_text", "normalized_text", "page_type"],
+        "properties": {
+          "page_num": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "raw_text": {
+            "type": "string"
+          },
+          "normalized_text": {
+            "type": "string"
+          },
+          "page_type": {
+            "type": "string",
+            "enum": ["front_matter", "table_of_contents", "content", "activity", "index", "appendix", "unknown"]
+          },
+          "title_candidates": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "image_cache_key": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

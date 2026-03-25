@@ -1,0 +1,138 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://numbersauto.local/schemas/unit_bundle.schema.json",
+  "title": "Unit Bundle",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "generated_at",
+    "unit_id",
+    "unit_title",
+    "subject",
+    "resources",
+    "sections"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string"
+    },
+    "generated_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "unit_id": {
+      "type": "string"
+    },
+    "unit_title": {
+      "type": "string"
+    },
+    "subject": {
+      "type": "string"
+    },
+    "source_chart": {
+      "type": "string"
+    },
+    "resources": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["resource_id", "label", "kind", "pdf_path"],
+        "properties": {
+          "resource_id": {
+            "type": "string"
+          },
+          "label": {
+            "type": "string"
+          },
+          "kind": {
+            "type": "string",
+            "enum": ["textbook", "supplement", "reference", "worksheet", "courseware"]
+          },
+          "pdf_path": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "sections": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "sheet_name",
+          "section_type",
+          "lesson_title",
+          "sources"
+        ],
+        "properties": {
+          "sheet_name": {
+            "type": "string"
+          },
+          "section_type": {
+            "type": "string",
+            "enum": ["unit_intro", "topic", "unit_summary"]
+          },
+          "lesson_title": {
+            "type": "string"
+          },
+          "topic_title": {
+            "type": "string"
+          },
+          "sources": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "object",
+              "required": [
+                "resource_id",
+                "role"
+              ],
+              "properties": {
+                "resource_id": {
+                  "type": "string"
+                },
+                "role": {
+                  "type": "string",
+                  "enum": ["textbook", "supplement", "reference"]
+                },
+                "title_query": {
+                  "type": "string"
+                },
+                "pdf_pages": {
+                  "type": "array",
+                  "items": {
+                    "type": "integer",
+                    "minimum": 1
+                  }
+                },
+                "candidate_pages": {
+                  "type": "array",
+                  "items": {
+                    "type": "integer",
+                    "minimum": 1
+                  }
+                },
+                "match_status": {
+                  "type": "string",
+                  "enum": ["matched", "not_found", "needs_review"]
+                },
+                "optional": {
+                  "type": "boolean"
+                },
+                "notes": {
+                  "type": "string"
+                }
+              },
+              "additionalProperties": false
+            }
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

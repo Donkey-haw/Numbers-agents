@@ -13,6 +13,8 @@ CARD_TARGET_WIDTH = 360
 CARD_GAP = 24
 CARD_START_X = 20
 CARD_START_Y = 20
+SUPPLEMENT_START_Y = 420
+ACTIVITY_START_X = 620
 
 SCRIPT_DIR = Path(__file__).resolve().parent
 if str(SCRIPT_DIR) not in sys.path:
@@ -122,27 +124,23 @@ def compute_scaled_height(capture_size: dict[str, int], target_width: int) -> in
 
 def build_manifest(
     config: dict,
-    textbook_html_paths: list[Path],
     textbook_card_assets: list[dict],
     activity_assets: list[dict],
 ) -> dict:
-    html_by_name = {path.stem: path for path in textbook_html_paths}
-    textbook_asset_by_name = {asset["asset_id"]: asset for asset in textbook_card_assets}
     assets = []
     order_by_sheet = defaultdict(int)
 
-    for section in config["sections"]:
-        order_by_sheet[section["sheet_name"]] += 1
-        textbook_asset = textbook_asset_by_name[section["card_file"]]
-        html_path = html_by_name[section["card_file"]]
+    for textbook_asset in sorted(textbook_card_assets, key=lambda item: (item["sheet_name"], item["insert_order"])):
+        order_by_sheet[textbook_asset["sheet_name"]] += 1
         assets.append(
             {
-                "asset_id": section["card_file"],
-                "asset_type": "textbook_card",
-                "sheet_name": section["sheet_name"],
-                "insert_order": order_by_sheet[section["sheet_name"]],
-                "html_path": str(html_path),
+                "asset_id": textbook_asset["asset_id"],
+                "asset_type": textbook_asset["asset_type"],
+                "sheet_name": textbook_asset["sheet_name"],
+                "insert_order": order_by_sheet[textbook_asset["sheet_name"]],
+                "html_path": str(textbook_asset["html_path"]),
                 "image_path": str(textbook_asset["image_path"]),
+                "resource_id": textbook_asset.get("resource_id"),
                 "dimensions": {
                     "width": CARD_TARGET_WIDTH,
                     "height": compute_scaled_height(textbook_asset["capture_size"], CARD_TARGET_WIDTH),
@@ -219,16 +217,54 @@ def build_applescript(config: dict, manifest: dict) -> str:
 \t\t\tset currentY to {CARD_START_Y}
 """
         asset_lines = []
-        for asset in assets:
+        textbook_assets = [asset for asset in assets if asset["asset_type"] == "textbook_card"]
+        supplement_assets = [asset for asset in assets if asset["asset_type"] == "supplement_card"]
+        activity_cards = [asset for asset in assets if asset["asset_type"] == "activity_sheet"]
+
+        currentX = CARD_START_X
+        textbookBottom = CARD_START_Y
+        textbookPositions = []
+        for asset in textbook_assets:
             image_path = asset["image_path"]
             width = asset["dimensions"]["width"]
             height = asset["dimensions"]["height"]
             asset_lines.append(
                 f"""\t\t\tset nextImage to make new image with properties {{file:POSIX file "{image_path}"}}\n"""
-                f"""\t\t\tset position of nextImage to {{currentX, currentY}}\n"""
+                f"""\t\t\tset position of nextImage to {{{currentX}, {CARD_START_Y}}}\n"""
                 f"""\t\t\tset width of nextImage to {width}\n"""
-                f"""\t\t\tset currentX to currentX + {width} + {CARD_GAP}\n"""
             )
+            textbookPositions.append(currentX)
+            currentX += width + CARD_GAP
+            textbookBottom = max(textbookBottom, CARD_START_Y + height)
+
+        supplementY = textbookBottom + 24
+        fallbackSupplementX = CARD_START_X
+        for supplementIndex, asset in enumerate(supplement_assets):
+            image_path = asset["image_path"]
+            width = asset["dimensions"]["width"]
+            if textbookPositions:
+                supplementX = textbookPositions[min(supplementIndex, len(textbookPositions) - 1)]
+            else:
+                supplementX = fallbackSupplementX
+            asset_lines.append(
+                f"""\t\t\tset nextImage to make new image with properties {{file:POSIX file "{image_path}"}}\n"""
+                f"""\t\t\tset position of nextImage to {{{supplementX}, {supplementY}}}\n"""
+                f"""\t\t\tset width of nextImage to {width}\n"""
+            )
+            if not textbookPositions:
+                fallbackSupplementX += width + CARD_GAP
+
+        activityX = max(ACTIVITY_START_X, currentX + 200)
+        for asset in activity_cards:
+            image_path = asset["image_path"]
+            width = asset["dimensions"]["width"]
+            asset_lines.append(
+                f"""\t\t\tset nextImage to make new image with properties {{file:POSIX file "{image_path}"}}\n"""
+                f"""\t\t\tset position of nextImage to {{{activityX}, {CARD_START_Y}}}\n"""
+                f"""\t\t\tset width of nextImage to {width}\n"""
+            )
+            activityX += width + CARD_GAP
+
         close_sheet_block = "\t\tend tell\n"
         blocks.append(open_sheet_block + "".join(asset_lines) + close_sheet_block)
 
@@ -292,28 +328,27 @@ def main(cli_args: argparse.Namespace | None = None) -> int:
 
     page_assets = textbook.extract_pages(config)
     textbook_card_assets = asyncio.run(textbook.capture_cards(config))
-    textbook_html_paths = textbook.generated_html_paths(config)
-
     activity_plan_paths = [Path(path) for path in args.activity_plan]
     plans = [(path, load_activity_plan(path)) for path in activity_plan_paths]
     activity_html_pairs = render_activity_html_files(plans, config, set(args.include_status))
     activity_assets = asyncio.run(capture_html_files(activity_html_pairs, config))
 
-    manifest = build_manifest(config, textbook_html_paths, textbook_card_assets, activity_assets)
+    manifest = build_manifest(config, textbook_card_assets, activity_assets)
     manifest_output = Path(args.manifest_output) if args.manifest_output else default_manifest_output(config)
     manifest_output.write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
-    inserted_sheets = insert_manifest_into_numbers(config, manifest)
-    verify_manifest_output(config, inserted_sheets)
-
-    if not args.keep_assets:
-        cleanup(
-            page_assets
-            + [asset["image_path"] for asset in textbook_card_assets]
-            + textbook_html_paths
-            + [html_path for _, html_path, _ in activity_html_pairs]
-            + [asset["image_path"] for asset in activity_assets]
-        )
+    try:
+        inserted_sheets = insert_manifest_into_numbers(config, manifest)
+        verify_manifest_output(config, inserted_sheets)
+    finally:
+        if not args.keep_assets:
+            cleanup(
+                page_assets
+                + [asset["image_path"] for asset in textbook_card_assets]
+                + [asset["html_path"] for asset in textbook_card_assets]
+                + [html_path for _, html_path, _ in activity_html_pairs]
+                + [asset["image_path"] for asset in activity_assets]
+            )
 
     print(config["output_file"])
     print(manifest_output)

@@ -1,0 +1,80 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://numbersauto.local/schemas/stage_status.schema.json",
+  "title": "Stage Status",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "stage",
+    "status",
+    "run_id",
+    "started_at",
+    "finished_at",
+    "input_refs",
+    "output_refs",
+    "warnings",
+    "errors"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string"
+    },
+    "stage": {
+      "type": "string"
+    },
+    "lesson_id": {
+      "type": ["string", "null"]
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "pending",
+        "running",
+        "succeeded",
+        "succeeded_with_warning",
+        "failed",
+        "failed_fallback_used",
+        "blocked"
+      ]
+    },
+    "run_id": {
+      "type": "string"
+    },
+    "started_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "finished_at": {
+      "type": ["string", "null"],
+      "format": "date-time"
+    },
+    "input_refs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "output_refs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "fallback_used": {
+      "type": "boolean"
+    },
+    "warnings": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "errors": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "additionalProperties": false
+}

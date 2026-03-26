@@ -33,6 +33,8 @@ def build_learning_note(analysis: dict) -> dict:
     return {
         "activity_id": f"{analysis['lesson_id']}-learning-note",
         "lesson_id": analysis["lesson_id"],
+        "object_role": "learning_note",
+        "lesson_flow_stage": "during",
         "activity_type": "learning_note",
         "level": "on-level",
         "learning_goal": analysis["learning_goals"][0],
@@ -55,6 +57,8 @@ def build_stw(analysis: dict) -> dict:
     return {
         "activity_id": f"{analysis['lesson_id']}-see-think-wonder",
         "lesson_id": analysis["lesson_id"],
+        "object_role": "activity_area",
+        "lesson_flow_stage": "during",
         "activity_type": "see_think_wonder",
         "level": "core",
         "learning_goal": f"{analysis['lesson_title']}를 생활 속 사례와 연결해 해석하고 새로운 질문을 만들 수 있다.",
@@ -80,6 +84,8 @@ def build_worksheet(analysis: dict) -> dict:
     return {
         "activity_id": f"{analysis['lesson_id']}-worksheet",
         "lesson_id": analysis["lesson_id"],
+        "object_role": "worksheet",
+        "lesson_flow_stage": "after",
         "activity_type": "worksheet",
         "level": "extension",
         "learning_goal": f"{analysis['lesson_title']}의 핵심 개념을 새로운 사례에 적용하고 근거를 들어 판단할 수 있다.",

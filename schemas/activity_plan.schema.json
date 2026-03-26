@@ -45,6 +45,14 @@
           "lesson_id": {
             "type": "string"
           },
+          "object_role": {
+            "type": "string",
+            "enum": ["learning_note", "activity_area", "reference_material", "worksheet", "ai_courseware"]
+          },
+          "lesson_flow_stage": {
+            "type": "string",
+            "enum": ["before", "during", "after"]
+          },
           "activity_type": {
             "type": "string",
             "enum": [

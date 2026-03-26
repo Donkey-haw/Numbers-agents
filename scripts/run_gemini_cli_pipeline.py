@@ -2,6 +2,7 @@ import argparse
 import asyncio
 import concurrent.futures
 import json
+import re
 import subprocess
 import sys
 from datetime import datetime, timezone
@@ -27,6 +28,38 @@ WORKSPACE_PROMPT_DIR = PROJECT_ROOT / "artifacts" / "_gemini_prompts"
 PROMPT_CACHE: dict[str, str] = {}
 TEXT_CACHE: dict[Path, str] = {}
 SCHEMA_CACHE: dict[Path, dict] = {}
+LAST_ARTIFACT_ROOT: Path | None = None
+ACTIVITY_PLAN_EXAMPLE = {
+    "schema_version": "1.0.0",
+    "generated_at": "2026-01-01T00:00:00+00:00",
+    "lesson_id": "2차시",
+    "activities": [
+        {
+            "activity_id": "act-2-1",
+            "lesson_id": "2차시",
+            "object_role": "activity_area",
+            "lesson_flow_stage": "during",
+            "activity_type": "freeform_html",
+            "level": "core",
+            "learning_goal": "핵심 개념을 새로운 상황에 적용해 설명할 수 있다.",
+            "prompt_text": "새로운 사례를 보고 핵심 개념이 왜 필요한지 설명해 봅시다.",
+            "layout_template": "freeform_html",
+            "html_content": "<!DOCTYPE html><html lang='ko'><head><meta charset='UTF-8'><style>body{width:1600px;background:transparent;font-family:\"Noto Sans KR\",sans-serif;}.card{background:#fff;padding:32px;border-radius:24px;}.writing{background:#fff;border:2px solid #333;min-height:520px;border-radius:16px;}</style></head><body><div class='card'><h1>활동 제목</h1><div class='writing'></div></div></body></html>",
+            "source_refs": [56, 57],
+            "teacher_notes": "",
+            "student_writing_zones": [
+                {
+                    "zone_id": "main_response",
+                    "label": "핵심 생각 쓰기",
+                    "input_area_type": "free-writing",
+                    "min_height": 520,
+                }
+            ],
+            "estimated_minutes": 12,
+            "review_status": "draft",
+        }
+    ],
+}
 
 
 def parse_args() -> argparse.Namespace:
@@ -36,11 +69,18 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--chart", help="Optional progress chart image path")
     parser.add_argument("--gemini-bin", default="gemini", help="Gemini CLI binary path")
     parser.add_argument("--gemini-model", help="Gemini model name")
+    parser.add_argument(
+        "--gemini-extensions",
+        nargs="*",
+        default=["stitch-skills"],
+        help="Gemini extensions to enable for headless runs",
+    )
     parser.add_argument("--output-root", help="Artifact root directory")
     parser.add_argument("--approval-mode", default="yolo", help="Gemini CLI approval mode")
     parser.add_argument("--max-workers", type=int, default=2, help="Max concurrent lesson workers for Gemini stages")
     parser.add_argument("--keep-artifacts", action="store_true", help="Keep generated assets from downstream renderer")
     parser.add_argument("--debug-artifacts", action="store_true", help="Keep Gemini prompt/raw/wrapper debug artifacts")
+    parser.add_argument("--gemini-timeout-sec", type=int, default=90, help="Timeout for each Gemini CLI call")
     parser.add_argument("--dry-run", action="store_true", help="Stop after AI JSON generation")
     parser.add_argument(
         "--include-status",
@@ -122,27 +162,43 @@ def invoke_gemini_json(
     stem: str,
     gemini_bin: str,
     gemini_model: str | None,
+    gemini_extensions: list[str],
     approval_mode: str,
     debug_artifacts: bool,
+    timeout_sec: int,
 ) -> tuple[dict, str]:
     command = [gemini_bin, "-o", "json", "--approval-mode", approval_mode]
     if gemini_model:
         command.extend(["-m", gemini_model])
+    for extension_name in gemini_extensions:
+        command.extend(["-e", extension_name])
     if debug_artifacts:
         WORKSPACE_PROMPT_DIR.mkdir(parents=True, exist_ok=True)
         prompt_path = WORKSPACE_PROMPT_DIR / f"{sanitize_name(artifact_dir.name)}-{stem}.md"
         prompt_path.write_text(prompt, encoding="utf-8")
-        command.extend(["-p", f"Read {prompt_path} and follow it exactly. Return JSON only."])
-    else:
-        command.extend(["-p", prompt])
+    command.extend(["-p", prompt])
 
     try:
-        result = subprocess.run(command, capture_output=True, text=True, check=True)
+        result = subprocess.run(command, capture_output=True, text=True, check=True, timeout=timeout_sec)
     except subprocess.CalledProcessError as exc:
         if debug_artifacts:
             (artifact_dir / f"{stem}.stdout.txt").write_text(exc.stdout or "", encoding="utf-8")
         (artifact_dir / f"{stem}.stderr.txt").write_text(exc.stderr or "", encoding="utf-8")
         raise
+    except subprocess.TimeoutExpired as exc:
+        stdout = exc.stdout or ""
+        stderr = exc.stderr or ""
+        if isinstance(stdout, bytes):
+            stdout = stdout.decode("utf-8", errors="replace")
+        if isinstance(stderr, bytes):
+            stderr = stderr.decode("utf-8", errors="replace")
+        if debug_artifacts and stdout:
+            (artifact_dir / f"{stem}.stdout.txt").write_text(stdout, encoding="utf-8")
+        (artifact_dir / f"{stem}.stderr.txt").write_text(
+            (stderr + f"\n\nTimed out after {timeout_sec} seconds.").strip() + "\n",
+            encoding="utf-8",
+        )
+        raise TimeoutError(f"Gemini CLI timed out after {timeout_sec} seconds for {stem}")
 
     raw_output = result.stdout
     stderr_path = artifact_dir / f"{stem}.stderr.txt"
@@ -192,6 +248,58 @@ def validate_activity_plan(payload: dict) -> None:
         ensure_required_fields(activity, activity_required, f"activity[{index}]")
         if activity.get("activity_type") == "freeform_html" and not activity.get("html_content"):
             raise ValueError(f"activity[{index}] freeform_html requires html_content")
+        validate_activity_metadata(activity, index)
+        validate_activity_writing_zones(activity, index)
+        if activity.get("activity_type") == "freeform_html":
+            validate_freeform_html(activity, index)
+
+
+def validate_activity_metadata(activity: dict, index: int) -> None:
+    if activity.get("object_role") not in {
+        "learning_note",
+        "activity_area",
+        "reference_material",
+        "worksheet",
+        "ai_courseware",
+    }:
+        raise ValueError(f"activity[{index}] has invalid object_role")
+    if activity.get("lesson_flow_stage") not in {"before", "during", "after"}:
+        raise ValueError(f"activity[{index}] has invalid lesson_flow_stage")
+
+
+def validate_activity_writing_zones(activity: dict, index: int) -> None:
+    zones = activity.get("student_writing_zones")
+    if not isinstance(zones, list):
+        raise ValueError(f"activity[{index}] student_writing_zones must be a list")
+    if not zones:
+        raise ValueError(f"activity[{index}] must describe at least one student_writing_zone")
+    for zone_index, zone in enumerate(zones, start=1):
+        required = {"zone_id", "label", "input_area_type", "min_height"}
+        missing = sorted(required.difference(zone))
+        if missing:
+            raise ValueError(
+                f"activity[{index}].student_writing_zones[{zone_index}] missing required fields: {', '.join(missing)}"
+            )
+
+
+def validate_freeform_html(activity: dict, index: int) -> None:
+    html_content = activity.get("html_content", "")
+    normalized_html = html_content.lower().replace(" ", "")
+    if "<html" not in normalized_html or "<body" not in normalized_html:
+        raise ValueError(f"activity[{index}] freeform_html must be a full standalone HTML document")
+    if "1600px" not in normalized_html:
+        raise ValueError(f"activity[{index}] freeform_html should target a 1600px-wide Numbers canvas")
+    zone_heights = [
+        int(zone.get("min_height", 0))
+        for zone in activity.get("student_writing_zones", [])
+        if str(zone.get("min_height", "")).isdigit() or isinstance(zone.get("min_height"), int)
+    ]
+    css_min_heights = [int(match) for match in re.findall(r"min-height\s*:\s*(\d+)px", html_content, flags=re.IGNORECASE)]
+    tall_zone = max(zone_heights + css_min_heights, default=0)
+    if tall_zone < 220:
+        raise ValueError(f"activity[{index}] freeform_html must include a writing zone at least 220px tall")
+    if activity.get("lesson_flow_stage") in {"during", "after"} and tall_zone < 420:
+        raise ValueError(f"activity[{index}] {activity['lesson_flow_stage']} freeform_html needs a main writing zone of 420px+")
 
 
 def build_schedule_draft(config: dict, chart_path: Path | None) -> dict:
@@ -321,13 +429,81 @@ def build_lesson_prompt(section: dict, baseline_analysis: dict, schedule_draft: 
 
 
 def build_activity_prompt(analysis: dict) -> str:
+    compact_analysis = {
+        "lesson_id": analysis["lesson_id"],
+        "sheet_name": analysis["sheet_name"],
+        "lesson_title": analysis["lesson_title"],
+        "lesson_type": analysis.get("lesson_type", "core"),
+        "pdf_pages": analysis["pdf_pages"],
+        "essential_question": analysis["essential_question"],
+        "learning_goals": analysis["learning_goals"][:3],
+        "key_concepts": analysis["key_concepts"][:5],
+        "vocabulary": analysis.get("vocabulary", [])[:8],
+        "misconceptions": analysis.get("misconceptions", [])[:4],
+        "content_chunks": [
+            {
+                "chunk_id": chunk["chunk_id"],
+                "label": chunk["label"],
+                "knowledge_type": chunk["knowledge_type"],
+                "summary": chunk["summary"],
+                "source_pages": chunk["source_pages"],
+            }
+            for chunk in analysis.get("content_chunks", [])[:4]
+        ],
+        "source_page_refs": analysis["source_page_refs"],
+    }
+    compact_schema = {
+        "required_root_fields": ["schema_version", "generated_at", "lesson_id", "activities"],
+        "required_activity_fields": [
+            "activity_id",
+            "lesson_id",
+            "object_role",
+            "lesson_flow_stage",
+            "activity_type",
+            "level",
+            "learning_goal",
+            "prompt_text",
+            "layout_template",
+            "html_content",
+            "source_refs",
+            "student_writing_zones",
+            "estimated_minutes",
+            "review_status",
+        ],
+        "activity_type_enum": [
+            "freeform_html",
+            "learning_note",
+            "see_think_wonder",
+            "worksheet",
+            "frayer_model",
+            "reference_response",
+            "spectrum_sorting",
+        ],
+        "level_enum": ["core", "on-level", "extension"],
+        "input_area_type_enum": ["lined", "free-writing", "inline-answer", "grid", "spectrum"],
+    }
     return (
         read_prompt("system_plan.md")
         + "\n\n"
         + read_prompt("user_plan.md").format(
-            analysis_json=json.dumps(analysis, ensure_ascii=False, indent=2),
-            schema_json=read_text(PROJECT_ROOT / "schemas" / "activity_plan.schema.json"),
+            analysis_json=json.dumps(compact_analysis, ensure_ascii=False, indent=2),
+            schema_json=json.dumps(compact_schema, ensure_ascii=False, indent=2),
+            example_json=json.dumps(ACTIVITY_PLAN_EXAMPLE, ensure_ascii=False, indent=2),
         )
+    )
+
+
+def build_activity_repair_prompt(analysis: dict, candidate_payload: dict, validation_error: str) -> str:
+    return (
+        build_activity_prompt(analysis)
+        + "\n\n"
+        + "Validation failed for your previous candidate.\n"
+        + f"Failure reason: {validation_error}\n\n"
+        + "Previous candidate JSON:\n"
+        + json.dumps(candidate_payload, ensure_ascii=False, indent=2)
+        + "\n\n"
+        + "Rewrite the full activity_plan JSON so it passes the schema and keeps the lesson intent.\n"
+        + "Do not explain. Return one corrected JSON object only.\n"
     )
 
 
@@ -369,17 +545,50 @@ def normalize_activity_plan(ai_payload: dict, analysis: dict) -> dict:
     for index, activity in enumerate(activities, start=1):
         activity.setdefault("activity_id", f"{analysis['lesson_id']}-activity-{index}")
         activity.setdefault("lesson_id", analysis["lesson_id"])
+        activity.setdefault("object_role", infer_object_role(activity))
+        activity.setdefault("lesson_flow_stage", infer_lesson_flow_stage(activity))
         activity.setdefault("learning_goal", analysis["learning_goals"][0])
         activity.setdefault("source_refs", analysis["source_page_refs"])
         activity.setdefault("teacher_notes", "")
         activity.setdefault("review_status", "draft")
+        normalize_student_writing_zones(activity)
         if activity.get("html_content"):
             activity["activity_type"] = "freeform_html"
             activity["layout_template"] = "freeform_html"
-            activity.setdefault("student_writing_zones", [])
             activity.setdefault("estimated_minutes", 15)
-    validate_activity_plan(normalized)
     return normalized
+
+
+def infer_object_role(activity: dict) -> str:
+    activity_type = activity.get("activity_type")
+    if activity_type == "learning_note":
+        return "learning_note"
+    if activity_type == "worksheet":
+        return "worksheet"
+    if activity_type == "reference_response":
+        return "reference_material"
+    return "activity_area"
+
+
+def infer_lesson_flow_stage(activity: dict) -> str:
+    role = activity.get("object_role")
+    if role in {"reference_material"}:
+        return "before"
+    if role in {"worksheet", "ai_courseware"}:
+        return "after"
+    return "during"
+
+
+def normalize_student_writing_zones(activity: dict) -> None:
+    zones = activity.get("student_writing_zones")
+    if not isinstance(zones, list):
+        activity["student_writing_zones"] = []
+        zones = activity["student_writing_zones"]
+    for zone in zones:
+        if "input_area_type" not in zone and "type" in zone:
+            zone["input_area_type"] = zone.pop("type")
+        zone.setdefault("input_area_type", "free-writing")
+        zone.setdefault("min_height", 420 if activity.get("lesson_flow_stage") in {"during", "after"} else 220)
 
 
 def invoke_textbook_only(config_path: Path) -> None:
@@ -422,8 +631,10 @@ def process_section(
             stem="lesson_analysis_ai",
             gemini_bin=args.gemini_bin,
             gemini_model=args.gemini_model,
+            gemini_extensions=args.gemini_extensions,
             approval_mode=args.approval_mode,
             debug_artifacts=args.debug_artifacts,
+            timeout_sec=args.gemini_timeout_sec,
         )
         normalized_analysis = normalize_lesson_analysis(lesson_ai, baseline_analysis)
     except Exception as exc:
@@ -443,10 +654,28 @@ def process_section(
             stem="activity_plan_ai",
             gemini_bin=args.gemini_bin,
             gemini_model=args.gemini_model,
+            gemini_extensions=args.gemini_extensions,
             approval_mode=args.approval_mode,
             debug_artifacts=args.debug_artifacts,
+            timeout_sec=args.gemini_timeout_sec,
         )
-        normalized_plan = normalize_activity_plan(activity_ai, normalized_analysis)
+        try:
+            normalized_plan = normalize_activity_plan(activity_ai, normalized_analysis)
+        except Exception as validation_exc:
+            repair_prompt = build_activity_repair_prompt(normalized_analysis, activity_ai, str(validation_exc))
+            (lesson_dir / "activity_plan.repair.prompt.md").write_text(repair_prompt, encoding="utf-8")
+            repaired_ai, _ = invoke_gemini_json(
+                prompt=repair_prompt,
+                artifact_dir=lesson_dir,
+                stem="activity_plan_ai_repair",
+                gemini_bin=args.gemini_bin,
+                gemini_model=args.gemini_model,
+                gemini_extensions=args.gemini_extensions,
+                approval_mode=args.approval_mode,
+                debug_artifacts=args.debug_artifacts,
+                timeout_sec=args.gemini_timeout_sec,
+            )
+            normalized_plan = normalize_activity_plan(repaired_ai, normalized_analysis)
     except Exception as exc:
         (lesson_dir / "activity_plan.error.txt").write_text(str(exc), encoding="utf-8")
         normalized_plan = activity_plan_builder.build_activity_plan(normalized_analysis)
@@ -457,10 +686,11 @@ def process_section(
     return index, analysis_path, plan_path
 
 
-def main() -> int:
-    args = parse_args()
+def main_with_args(args: argparse.Namespace) -> int:
+    global LAST_ARTIFACT_ROOT
     config_path = Path(args.config).resolve()
     artifact_root = build_artifact_root(config_path, args.output_root)
+    LAST_ARTIFACT_ROOT = artifact_root
 
     config = textbook.load_config(config_path)
     effective_config_path = config_path
@@ -535,6 +765,10 @@ def main() -> int:
     print(config["output_file"])
     print(artifact_root)
     return 0
+
+
+def main() -> int:
+    return main_with_args(parse_args())
 
 
 if __name__ == "__main__":

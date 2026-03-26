@@ -1,0 +1,78 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://numbersauto.local/schemas/review_result.schema.json",
+  "title": "Review Result",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "stage",
+    "status",
+    "decision",
+    "findings",
+    "blocking_issues",
+    "warnings"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string"
+    },
+    "stage": {
+      "type": "string"
+    },
+    "lesson_id": {
+      "type": ["string", "null"]
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "pending",
+        "running",
+        "succeeded",
+        "succeeded_with_warning",
+        "failed",
+        "failed_fallback_used",
+        "blocked"
+      ]
+    },
+    "decision": {
+      "type": "string",
+      "enum": ["pass", "pass_with_warning", "needs_revision", "blocked"]
+    },
+    "findings": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["severity", "message", "evidence_refs"],
+        "properties": {
+          "severity": {
+            "type": "string",
+            "enum": ["info", "warning", "error"]
+          },
+          "message": {
+            "type": "string"
+          },
+          "evidence_refs": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "blocking_issues": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "warnings": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "additionalProperties": false
+}

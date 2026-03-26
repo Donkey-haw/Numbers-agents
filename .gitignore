@@ -3,6 +3,7 @@ __pycache__/
 *.pyc
 
 *.pdf
+textbook/
 
 assets/
 html/

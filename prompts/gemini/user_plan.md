@@ -6,10 +6,23 @@ Lesson analysis:
 Target schema:
 {schema_json}
 
+Shape example:
+{example_json}
+
 Requirements:
 - Return 1 to 3 activities.
 - Keep every activity grounded in the lesson analysis.
 - Set `lesson_id` to match the lesson analysis.
+- Set `object_role` on every activity:
+  - `learning_note`
+  - `activity_area`
+  - `reference_material`
+  - `worksheet`
+  - `ai_courseware`
+- Set `lesson_flow_stage` on every activity:
+  - `before`
+  - `during`
+  - `after`
 - Use `activity_type: "freeform_html"` unless there is a strong reason not to.
 - Put the full standalone HTML document for the card in `html_content`.
 - The HTML must be self-contained and ready for screenshot capture.
@@ -25,6 +38,7 @@ Requirements:
 - Keep the outer page background transparent or white. Do not add a gray canvas behind the card.
 - Increase vertical writing space so students can handwrite with Apple Pencil comfortably.
 - Prefer card heights that feel roomy, not compact.
+- When a card expects sustained handwriting, make at least one main writing region visibly large, usually `420px+`.
 - Use object roles from `ACTIVITY_RULE.md` implicitly:
   - learning note
   - activity area
@@ -41,7 +55,7 @@ Requirements:
 - If you generate a reasoning card, make the thinking steps writable.
 - If you generate a practice card, provide enough repeated writing space.
 - Keep prompts short enough to fit an iPad worksheet.
-- `student_writing_zones` may be an empty array when `html_content` already defines the full layout.
+- Even when `html_content` defines the full layout, include `student_writing_zones` that describe the real writable regions.
 - Make the intended student action obvious without relying on long explanation text.
 - Avoid making all cards look like the same repeated badge + intro + three-box pattern.
 - Good directions include:
@@ -54,4 +68,6 @@ Requirements:
   - rewriting textbook definitions
   - copying textbook diagrams into empty boxes
   - asking for an answer that is already directly printed on the textbook page
+- The example above is only a shape contract.
+- Do not copy its topic, wording, colors, or exact structure.
 - Output a single JSON object only.

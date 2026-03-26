@@ -14,7 +14,7 @@ CARD_GAP = 24
 CARD_START_X = 20
 CARD_START_Y = 20
 SUPPLEMENT_START_Y = 420
-ACTIVITY_START_X = 620
+STAGE_GROUP_GAP = 50
 
 SCRIPT_DIR = Path(__file__).resolve().parent
 if str(SCRIPT_DIR) not in sys.path:
@@ -164,6 +164,8 @@ def build_manifest(
                 "html_path": str(activity_asset["html_path"]),
                 "image_path": str(activity_asset["image_path"]),
                 "source_json": str(activity_asset["plan_path"].resolve()),
+                "object_role": activity.get("object_role", "activity_area"),
+                "lesson_flow_stage": activity.get("lesson_flow_stage", "during"),
                 "dimensions": {
                     "width": CARD_TARGET_WIDTH,
                     "height": compute_scaled_height(activity_asset["capture_size"], CARD_TARGET_WIDTH),
@@ -224,6 +226,7 @@ def build_applescript(config: dict, manifest: dict) -> str:
         currentX = CARD_START_X
         textbookBottom = CARD_START_Y
         textbookPositions = []
+        contentRightEdge = CARD_START_X
         for asset in textbook_assets:
             image_path = asset["image_path"]
             width = asset["dimensions"]["width"]
@@ -234,6 +237,7 @@ def build_applescript(config: dict, manifest: dict) -> str:
                 f"""\t\t\tset width of nextImage to {width}\n"""
             )
             textbookPositions.append(currentX)
+            contentRightEdge = max(contentRightEdge, currentX + width)
             currentX += width + CARD_GAP
             textbookBottom = max(textbookBottom, CARD_START_Y + height)
 
@@ -251,19 +255,26 @@ def build_applescript(config: dict, manifest: dict) -> str:
                 f"""\t\t\tset position of nextImage to {{{supplementX}, {supplementY}}}\n"""
                 f"""\t\t\tset width of nextImage to {width}\n"""
             )
+            contentRightEdge = max(contentRightEdge, supplementX + width)
             if not textbookPositions:
                 fallbackSupplementX += width + CARD_GAP
 
-        activityX = max(ACTIVITY_START_X, currentX + 200)
-        for asset in activity_cards:
-            image_path = asset["image_path"]
-            width = asset["dimensions"]["width"]
-            asset_lines.append(
-                f"""\t\t\tset nextImage to make new image with properties {{file:POSIX file "{image_path}"}}\n"""
-                f"""\t\t\tset position of nextImage to {{{activityX}, {CARD_START_Y}}}\n"""
-                f"""\t\t\tset width of nextImage to {width}\n"""
-            )
-            activityX += width + CARD_GAP
+        layoutCursor = contentRightEdge + STAGE_GROUP_GAP
+        for stage in ("before", "during", "after"):
+            stage_assets = [asset for asset in activity_cards if asset.get("lesson_flow_stage", "during") == stage]
+            if not stage_assets:
+                continue
+            stageCursor = layoutCursor
+            for asset in stage_assets:
+                image_path = asset["image_path"]
+                width = asset["dimensions"]["width"]
+                asset_lines.append(
+                    f"""\t\t\tset nextImage to make new image with properties {{file:POSIX file "{image_path}"}}\n"""
+                    f"""\t\t\tset position of nextImage to {{{stageCursor}, {CARD_START_Y}}}\n"""
+                    f"""\t\t\tset width of nextImage to {width}\n"""
+                )
+                stageCursor += width + CARD_GAP
+            layoutCursor = stageCursor - CARD_GAP + STAGE_GROUP_GAP
 
         close_sheet_block = "\t\tend tell\n"
         blocks.append(open_sheet_block + "".join(asset_lines) + close_sheet_block)

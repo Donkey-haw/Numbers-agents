@@ -8,6 +8,7 @@ import subprocess
 import sys
 import tempfile
 import time
+import unicodedata
 from pathlib import Path
 
 import fitz
@@ -22,6 +23,29 @@ ROLE_META = {
     "supplement": {"icon": "📚", "asset_type": "supplement_card", "label_suffix": "추가자료"},
     "reference": {"icon": "📎", "asset_type": "supplement_card", "label_suffix": "참고자료"},
 }
+DEFAULT_MULTI_RESOURCE_POLICIES = {
+    "social": {
+        "main_resource_id": "social_textbook",
+        "main_label": "사회",
+        "supplement_resource_id": "social_atlas",
+        "supplement_label": "사회과부도",
+        "supplement_name_hints": ["사회과 부도"],
+    },
+    "math": {
+        "main_resource_id": "math_textbook",
+        "main_label": "수학",
+        "supplement_resource_id": "math_workbook",
+        "supplement_label": "수학익힘",
+        "supplement_name_hints": ["수학익힘"],
+    },
+    "science": {
+        "main_resource_id": "science_textbook",
+        "main_label": "과학",
+        "supplement_resource_id": "science_lab",
+        "supplement_label": "실험관찰",
+        "supplement_name_hints": ["실험관찰"],
+    },
+}
 
 
 def parse_args() -> argparse.Namespace:
@@ -30,6 +54,70 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--keep-assets", action="store_true", help="Keep generated page/card assets")
     parser.add_argument("--skip-numbers", action="store_true", help="Skip AppleScript insertion step")
     return parser.parse_args()
+
+
+def infer_subject_key(data: dict) -> str | None:
+    candidates = [
+        str(data.get("pdf_path", "")),
+        str(data.get("output_file", "")),
+        str(data.get("footer", "")),
+    ]
+    joined = " ".join(candidates)
+    if "사회" in joined:
+        return "social"
+    if "수학" in joined:
+        return "math"
+    if "과학" in joined:
+        return "science"
+    return None
+
+
+def normalized_name(value: str) -> str:
+    return unicodedata.normalize("NFC", value)
+
+
+def find_first_matching_file(project_root: Path, name_hints: list[str]) -> Path | None:
+    pdfs = sorted(project_root.glob("*.pdf"))
+    for hint in name_hints:
+        normalized_hint = normalized_name(hint)
+        for path in pdfs:
+            if normalized_hint in normalized_name(path.name):
+                return path
+    return None
+
+
+def apply_default_multi_resource_policy(data: dict, resolve_project_path) -> None:
+    if data.get("resources"):
+        return
+    subject_key = infer_subject_key(data)
+    if not subject_key:
+        return
+    policy = DEFAULT_MULTI_RESOURCE_POLICIES.get(subject_key)
+    if not policy:
+        return
+
+    main_pdf = resolve_project_path(data["pdf_path"])
+    supplement_pdf = find_first_matching_file(data["project_root"], policy["supplement_name_hints"])
+    if supplement_pdf is None:
+        return
+
+    data["pdf_path"] = main_pdf
+    data["resources"] = [
+        {
+            "resource_id": policy["main_resource_id"],
+            "label": policy["main_label"],
+            "kind": "textbook",
+            "pdf_path": main_pdf,
+        },
+        {
+            "resource_id": policy["supplement_resource_id"],
+            "label": policy["supplement_label"],
+            "kind": "supplement",
+            "pdf_path": supplement_pdf,
+            "search_start_page": 1,
+        },
+    ]
+    data["_auto_resource_policy"] = subject_key
 
 
 def load_config(config_path: Path) -> dict:
@@ -48,6 +136,7 @@ def load_config(config_path: Path) -> dict:
     data["pages_dir"] = project_root / "assets" / "pages"
     data["cards_dir"] = project_root / "assets" / "cards"
     data["html_dir"] = project_root / "html"
+    apply_default_multi_resource_policy(data, resolve_project_path)
 
     resources = data.get("resources")
     if resources:
@@ -91,6 +180,20 @@ def load_config(config_path: Path) -> dict:
                     "title_query": section.get("title_query", section["title"]),
                 }
             ]
+            auto_policy = data.get("_auto_resource_policy")
+            if auto_policy:
+                policy = DEFAULT_MULTI_RESOURCE_POLICIES[auto_policy]
+                supplement_resource_id = policy["supplement_resource_id"]
+                if supplement_resource_id in resources_by_id:
+                    sources.append(
+                        {
+                            "resource_id": supplement_resource_id,
+                            "role": "supplement",
+                            "title_query": section.get("title_query", section["title"]),
+                            "optional": True,
+                            "end_before_query": section.get("end_before_query", data.get("end_before_query")),
+                        }
+                    )
         normalized_sources = []
         for source in sources:
             normalized_source = dict(source)
@@ -150,11 +253,63 @@ def find_query_pages(doc: fitz.Document, query: str, start_page: int = 1) -> lis
     return hits
 
 
+def looks_like_topic_intro_page(
+    doc: fitz.Document,
+    page_num: int,
+    current_query: str,
+    text_cache: dict[int, str],
+) -> bool:
+    page_text = get_page_text(doc, page_num, text_cache)
+    normalized_page_text = normalize_text(page_text)
+    normalized_current_query = normalize_text(current_query)
+    intro_signals = (
+        "이주제를배우면나는",
+        "낱말구름",
+        "빙고놀이",
+    )
+    if normalized_current_query and normalized_current_query in normalized_page_text:
+        return False
+    return any(signal in normalized_page_text for signal in intro_signals)
+
+
+def infer_earlier_topic_intro_boundary(
+    doc: fitz.Document,
+    *,
+    start_page: int,
+    end_match_page: int,
+    current_query: str,
+) -> int | None:
+    text_cache = getattr(doc, TEXT_CACHE_KEY, None)
+    if text_cache is None:
+        text_cache = {}
+        setattr(doc, TEXT_CACHE_KEY, text_cache)
+    search_start = max(start_page + 1, 1)
+    search_end = max(end_match_page - 1, search_start - 1)
+    for page_num in range(search_start, search_end + 1):
+        if looks_like_topic_intro_page(doc, page_num, current_query, text_cache):
+            return page_num
+    return None
+
+
 def infer_section_pages(config: dict) -> None:
     sections = config["sections"]
     if all("source_ranges" in section for section in sections):
         return
     if all("pdf_pages" in section for section in sections) and all("sources" not in section or len(section["sources"]) == 1 for section in sections):
+        for section in sections:
+            if "source_ranges" in section:
+                continue
+            section["source_ranges"] = []
+            for source in section.get("sources", []):
+                source_pages = list(source.get("pdf_pages", section["pdf_pages"]))
+                source["pdf_pages"] = source_pages
+                section["source_ranges"].append(
+                    {
+                        "resource_id": source["resource_id"],
+                        "role": source.get("role", "textbook"),
+                        "pdf_pages": source_pages,
+                    }
+                )
         return
 
     docs = {resource["resource_id"]: fitz.open(resource["pdf_path"]) for resource in config["resources"]}
@@ -169,15 +324,40 @@ def infer_section_pages(config: dict) -> None:
             for source in section["sources"]:
                 resource_id = source["resource_id"]
                 doc = docs[resource_id]
+                query = None
+                matches = []
+                end_strategy = None
+                end_reference_query = None
+                intro_boundary = None
 
                 if "pdf_pages" in source:
                     start_page = min(source["pdf_pages"])
                     end_page = max(source["pdf_pages"])
+                    source["_inference"] = {
+                        "status": "explicit_pages",
+                        "start_page": start_page,
+                        "end_page": end_page,
+                        "start_query": None,
+                        "start_match_pages": [start_page],
+                        "start_match_count": 1,
+                        "end_strategy": "explicit_pages",
+                        "end_reference_query": None,
+                    }
                 else:
                     current_search_start = int(source.get("search_start_page", resource_search_starts[resource_id]))
                     query = source.get("title_query") or section.get("title_query") or section["title"]
                     matches = find_query_pages(doc, query, current_search_start)
                     if not matches:
+                        source["_inference"] = {
+                            "status": "optional_not_found" if source.get("optional") else "not_found",
+                            "start_page": None,
+                            "end_page": None,
+                            "start_query": query,
+                            "start_match_pages": [],
+                            "start_match_count": 0,
+                            "end_strategy": None,
+                            "end_reference_query": None,
+                        }
                         if source.get("optional"):
                             continue
                         raise RuntimeError(
@@ -205,6 +385,9 @@ def infer_section_pages(config: dict) -> None:
                                 f"Could not infer next section start for resource '{resource_id}' from query '{next_query}'"
                             )
                         end_page = next_matches[0] - 1
+                        end_strategy = "next_query"
+                        end_reference_query = next_query
+                        intro_boundary = None
                     else:
                         end_query = source.get("end_before_query") or config.get("end_before_query")
                         if end_query:
@@ -215,9 +398,25 @@ def infer_section_pages(config: dict) -> None:
                                 raise RuntimeError(
                                     f"Could not infer end_before_query for resource '{resource_id}' from '{end_query}'"
                                 )
-                            end_page = end_matches[0] - 1
+                            end_match_page = end_matches[0]
+                            intro_boundary = infer_earlier_topic_intro_boundary(
+                                doc,
+                                start_page=start_page,
+                                end_match_page=end_match_page,
+                                current_query=query,
+                            )
+                            if intro_boundary is not None:
+                                end_page = intro_boundary - 1
+                                end_strategy = "topic_intro_signal"
+                                end_reference_query = end_query
+                            else:
+                                end_page = end_match_page - 1
+                                end_strategy = "end_before_query"
+                                end_reference_query = end_query
                         elif source.get("unit_end_page") or config.get("unit_end_page"):
                             end_page = int(source.get("unit_end_page") or config["unit_end_page"])
+                            end_strategy = "unit_end_page"
+                            end_reference_query = None
                         else:
                             raise RuntimeError(
                                 f"Last section '{section['sheet_name']}' source '{resource_id}' needs"
@@ -231,6 +430,22 @@ def infer_section_pages(config: dict) -> None:
                     )
 
                 source["pdf_pages"] = list(range(start_page, end_page + 1))
+                if "_inference" not in source:
+                    source["_inference"] = {
+                        "status": "matched",
+                        "start_page": start_page,
+                        "end_page": end_page,
+                        "start_query": query,
+                        "start_match_pages": matches[:10],
+                        "start_match_count": len(matches),
+                        "end_strategy": end_strategy,
+                        "end_reference_query": end_reference_query,
+                        "intro_boundary_page": intro_boundary if "intro_boundary" in locals() else None,
+                    }
+                else:
+                    source["_inference"]["status"] = "matched"
+                    source["_inference"]["start_page"] = start_page
+                    source["_inference"]["end_page"] = end_page
                 resource_search_starts[resource_id] = end_page + 1
                 source_ranges.append(
                     {

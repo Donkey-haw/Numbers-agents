@@ -1,23 +1,49 @@
 # Scripts
 
-## Current Entry Point
+## Core Pipeline
+현재 AGENT 기반 Numbers 자동 생성에서 직접 쓰는 핵심 스크립트는 아래다.
+
+- [pipeline_orchestrator.py](/Users/jonyeock/Desktop/Tool/NumbersAuto/scripts/pipeline_orchestrator.py)
+- [source_parse_agent.py](/Users/jonyeock/Desktop/Tool/NumbersAuto/scripts/source_parse_agent.py)
+- [lesson_analysis_agent.py](/Users/jonyeock/Desktop/Tool/NumbersAuto/scripts/lesson_analysis_agent.py)
+- [activity_plan_agent.py](/Users/jonyeock/Desktop/Tool/NumbersAuto/scripts/activity_plan_agent.py)
+- [html_card_agent.py](/Users/jonyeock/Desktop/Tool/NumbersAuto/scripts/html_card_agent.py)
+- [capture_agent.py](/Users/jonyeock/Desktop/Tool/NumbersAuto/scripts/capture_agent.py)
+- [numbers_compose_agent.py](/Users/jonyeock/Desktop/Tool/NumbersAuto/scripts/numbers_compose_agent.py)
+- [review_manifest_agent.py](/Users/jonyeock/Desktop/Tool/NumbersAuto/scripts/review_manifest_agent.py)
+- [verify_agent.py](/Users/jonyeock/Desktop/Tool/NumbersAuto/scripts/verify_agent.py)
+- [pipeline_contracts.py](/Users/jonyeock/Desktop/Tool/NumbersAuto/scripts/pipeline_contracts.py)
+- [render_pipeline_support.py](/Users/jonyeock/Desktop/Tool/NumbersAuto/scripts/render_pipeline_support.py)
+
+이 파이프라인이 내부적으로 재사용하는 기반 스크립트:
+
 - [generate_numbers_lesson.py](/Users/jonyeock/Desktop/Tool/NumbersAuto/scripts/generate_numbers_lesson.py)
-- [parse_progress_chart_pdf.py](/Users/jonyeock/Desktop/Tool/NumbersAuto/scripts/parse_progress_chart_pdf.py)
-- [draft_config_from_progress_chart.py](/Users/jonyeock/Desktop/Tool/NumbersAuto/scripts/draft_config_from_progress_chart.py)
 - [generate_numbers_with_activities.py](/Users/jonyeock/Desktop/Tool/NumbersAuto/scripts/generate_numbers_with_activities.py)
 - [generate_numbers_with_auto_activities.py](/Users/jonyeock/Desktop/Tool/NumbersAuto/scripts/generate_numbers_with_auto_activities.py)
+- [generate_activity_plan.py](/Users/jonyeock/Desktop/Tool/NumbersAuto/scripts/generate_activity_plan.py)
+- [generate_lesson_analysis.py](/Users/jonyeock/Desktop/Tool/NumbersAuto/scripts/generate_lesson_analysis.py)
+- [render_activity_html.py](/Users/jonyeock/Desktop/Tool/NumbersAuto/scripts/render_activity_html.py)
 - [run_gemini_cli_pipeline.py](/Users/jonyeock/Desktop/Tool/NumbersAuto/scripts/run_gemini_cli_pipeline.py)
-- [build_resource_index.py](/Users/jonyeock/Desktop/Tool/NumbersAuto/scripts/build_resource_index.py)
-- [build_unit_bundle.py](/Users/jonyeock/Desktop/Tool/NumbersAuto/scripts/build_unit_bundle.py)
-- [build_runtime_config.py](/Users/jonyeock/Desktop/Tool/NumbersAuto/scripts/build_runtime_config.py)
-- [generate_numbers_from_bundle.py](/Users/jonyeock/Desktop/Tool/NumbersAuto/scripts/generate_numbers_from_bundle.py)
 
-이 디렉토리의 표준 실행 경로는 위 스크립트들이다.
+## Config Authoring
+현재도 유지하는 설정 초안/진도표 보조 스크립트:
+
+- [parse_progress_chart_pdf.py](/Users/jonyeock/Desktop/Tool/NumbersAuto/scripts/parse_progress_chart_pdf.py)
+- [draft_config_from_progress_chart.py](/Users/jonyeock/Desktop/Tool/NumbersAuto/scripts/draft_config_from_progress_chart.py)
+- [ocr_progress_chart.swift](/Users/jonyeock/Desktop/Tool/NumbersAuto/scripts/ocr_progress_chart.swift)
 
 예시:
 
 ```bash
-python3 scripts/generate_numbers_lesson.py --config configs/social_6_1_unit2_state_agencies.json
+python3 scripts/pipeline_orchestrator.py \
+  --config configs/social_6_1_unit2_state_agencies.json
+```
+
+기존 교과서 카드 생성기만 단독으로 실행할 때:
+
+```bash
+python3 scripts/generate_numbers_lesson.py \
+  --config configs/social_6_1_unit2_state_agencies.json
 ```
 
 교과서 카드와 이미 준비된 활동 계획을 함께 넣을 때:
@@ -33,6 +59,15 @@ python3 scripts/generate_numbers_with_activities.py \
 ```bash
 python3 scripts/generate_numbers_with_auto_activities.py \
   --config configs/democracy_election_with_intro.json
+```
+
+`gemini` CLI가 설치되어 있으면 위 명령은 기본적으로 Gemini 파이프라인을 사용한다.
+로컬 규칙 생성기로 강제하려면 `--local-only`를 사용한다.
+
+```bash
+python3 scripts/generate_numbers_with_auto_activities.py \
+  --config configs/democracy_election_with_intro.json \
+  --local-only
 ```
 
 Gemini CLI를 붙여 차시 해석과 활동 추천을 AI 보조로 생성할 때:
@@ -53,58 +88,6 @@ python3 scripts/parse_progress_chart_pdf.py \
   --output configs/social_6_1_progress_chart.json
 ```
 
-교재 PDF 전체를 재사용 가능한 resource index로 저장할 때:
-
-```bash
-python3 scripts/build_resource_index.py \
-  --pdf "[사회]6_1_교과서.pdf" \
-  --resource-id social_textbook \
-  --label "사회" \
-  --kind textbook \
-  --subject social \
-  --output artifacts/scan/social_6_1/resources/social_textbook.resource_index.json
-```
-
-재사용된 resource index와 진도표에서 단원 bundle을 만들 때:
-
-```bash
-python3 scripts/build_unit_bundle.py \
-  --chart configs/social_6_1_progress_chart.json \
-  --unit-number 2 \
-  --topic-title "민주주의와 선거" \
-  --resource-index artifacts/scan/social_6_1/resources/social_textbook.resource_index.json \
-  --primary-resource-id social_textbook \
-  --existing-config configs/social_6_1_unit2_democracy_election.json \
-  --output artifacts/scan/social_6_1/bundles/unit2_democracy_election.unit_bundle.json
-```
-
-unit bundle에서 실행용 config를 만들 때:
-
-```bash
-python3 scripts/build_runtime_config.py \
-  --bundle artifacts/scan/social_6_1/bundles/unit2_democracy_election.unit_bundle.json \
-  --project-root /absolute/path/to/project \
-  --template-path "빈 넘버스 파일.numbers" \
-  --output-file "output/unit2_democracy_election.generated.numbers" \
-  --footer "사회 6-1 · 2단원 · 민주주의와 시민 참여" \
-  --review-overrides artifacts/scan/social_6_1/reviews/unit2_democracy_election.overrides.json \
-  --review-output artifacts/scan/social_6_1/reviews/unit2_democracy_election.review.json \
-  --output artifacts/scan/social_6_1/generated_configs/unit2_democracy_election.generated.json
-```
-
-bundle에서 바로 Numbers를 만들 때:
-
-```bash
-python3 scripts/generate_numbers_from_bundle.py \
-  --bundle artifacts/scan/social_6_1/bundles/unit2_democracy_election.unit_bundle.json \
-  --project-root /absolute/path/to/project \
-  --template-path "빈 넘버스 파일.numbers" \
-  --output-file "output/unit2_democracy_election.generated.numbers" \
-  --footer "사회 6-1 · 2단원 · 민주주의와 시민 참여" \
-  --review-overrides artifacts/scan/social_6_1/reviews/unit2_democracy_election.overrides.json \
-  --review-output artifacts/scan/social_6_1/reviews/unit2_democracy_election.review.json
-```
-
 진도표 이미지에서 config 초안을 만들 때:
 
 ```bash
@@ -121,8 +104,10 @@ python3 scripts/draft_config_from_progress_chart.py \
 ```
 
 ## Notes
-- 단원 전용 또는 실험용 스크립트는 `scripts/legacy/`로 이동했다.
-- 기존 실험용 config는 [configs/legacy](/Users/jonyeock/Desktop/Tool/NumbersAuto/configs/legacy) 로 이동했고, 현재 표준 config는 `configs/social_6_1_*.json` 형식을 사용한다.
+- 현재 메인 실행 경로는 `pipeline_orchestrator.py` 기반이다.
+- bundle/index 실험 경로 스크립트는 [archive/scripts/support](/Users/jonyeock/Desktop/Tool/NumbersAuto/archive/scripts/support) 로 이동했다.
+- 단원 전용 또는 실험용 구형 스크립트는 [archive/scripts/legacy](/Users/jonyeock/Desktop/Tool/NumbersAuto/archive/scripts/legacy) 로 이동했다.
+- 기존 실험용 config는 [archive/configs/legacy](/Users/jonyeock/Desktop/Tool/NumbersAuto/archive/configs/legacy) 로 이동했고, 현재 표준 config는 `configs/social_6_1_*.json` 형식을 사용한다.
 - 새 작업은 가능하면 진도표 PDF를 먼저 [configs/social_6_1_progress_chart.json](/Users/jonyeock/Desktop/Tool/NumbersAuto/configs/social_6_1_progress_chart.json) 으로 구조화한 뒤, 주제별 config를 추가하고 범용 실행기를 호출하는 방식으로 진행한다.
 - 진도표의 쪽수는 사용하지 않는다. 차시명만 추출하고, 실제 페이지 범위는 교과서 PDF 본문 분석으로 결정한다.
 - 교과서 카드에는 해당 주제의 `주제 도입` 페이지를 반드시 포함한다.
@@ -136,4 +121,13 @@ python3 scripts/draft_config_from_progress_chart.py \
 - Gemini 프롬프트는 [prompts/gemini/system_analyze.md](/Users/jonyeock/Desktop/Tool/NumbersAuto/prompts/gemini/system_analyze.md), [prompts/gemini/user_analyze.md](/Users/jonyeock/Desktop/Tool/NumbersAuto/prompts/gemini/user_analyze.md), [prompts/gemini/system_plan.md](/Users/jonyeock/Desktop/Tool/NumbersAuto/prompts/gemini/system_plan.md), [prompts/gemini/user_plan.md](/Users/jonyeock/Desktop/Tool/NumbersAuto/prompts/gemini/user_plan.md)에 분리했다.
 - `geminiCLI-freeactivity` 기준으로는 활동을 기존 템플릿 enum에 맞춰 추천받는 것이 아니라, Gemini가 [NumbersDesign.md](/Users/jonyeock/Desktop/Tool/NumbersAuto/NumbersDesign.md) 원칙에 따라 `html_content`를 직접 생성한다.
 - 렌더러는 `html_content`가 있으면 그 HTML을 그대로 카드로 사용하고, 없으면 기존 템플릿 렌더 fallback을 사용한다.
-- `build_runtime_config.py`는 기본적으로 `supplement` 중 `matched`만 실행용 config에 포함한다. `needs_review`와 `not_found`는 review report로 빠지며, 승인하려면 `--review-overrides`를 사용하거나 `--include-needs-review-supplements`/`--include-unmatched-supplements`를 명시한다.
+- `--debug-artifacts`는 프롬프트 파일을 저장만 하고, 실제 Gemini 호출은 인라인 프롬프트를 사용한다.
+- `.gitignore`가 `artifacts/`와 대부분의 `output/`을 무시하므로, 성공 실행의 증거는 기본적으로 git에 보존되지 않는다.
+
+## Verification
+Gemini 기반 자동 활동 생성이 실제로 적용되는지 확인할 때는 아래 순서로 본다.
+
+1. `python3 scripts/generate_numbers_with_auto_activities.py --config ...` 실행
+2. `artifacts/gemini/<config stem>/<timestamp>/run_summary.json` 생성 확인
+3. `sections/*/activity_plan.json` 안에 `activity_type: "freeform_html"` 와 `html_content` 존재 확인
+4. `render_manifest.json` 또는 최종 `.numbers` 파일 생성 확인

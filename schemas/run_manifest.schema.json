@@ -1,0 +1,99 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://numbersauto.local/schemas/run_manifest.schema.json",
+  "title": "Run Manifest",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "run_id",
+    "workflow_mode",
+    "config_path",
+    "stage_order",
+    "started_at",
+    "final_status",
+    "status_summary"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string"
+    },
+    "run_id": {
+      "type": "string"
+    },
+    "workflow_mode": {
+      "type": "string",
+      "enum": ["stable", "freeform_experimental", "recovery"]
+    },
+    "config_path": {
+      "type": "string"
+    },
+    "selected_unit": {
+      "type": ["string", "null"]
+    },
+    "selected_lessons": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "stage_order": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string"
+      }
+    },
+    "started_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "finished_at": {
+      "type": ["string", "null"],
+      "format": "date-time"
+    },
+    "final_status": {
+      "type": "string",
+      "enum": ["pending", "running", "success", "partial-with-warning", "textbook-only", "failed"]
+    },
+    "final_output_file": {
+      "type": ["string", "null"]
+    },
+    "status_summary": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["stage", "status", "fallback_used", "warning_count", "error_count"],
+        "properties": {
+          "stage": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "pending",
+              "running",
+              "succeeded",
+              "succeeded_with_warning",
+              "failed",
+              "failed_fallback_used",
+              "blocked"
+            ]
+          },
+          "fallback_used": {
+            "type": "boolean"
+          },
+          "warning_count": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "error_count": {
+            "type": "integer",
+            "minimum": 0
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

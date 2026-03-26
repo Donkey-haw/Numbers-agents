@@ -105,6 +105,8 @@ python3 scripts/draft_config_from_progress_chart.py \
 
 ## Notes
 - 현재 메인 실행 경로는 `pipeline_orchestrator.py` 기반이다.
+- 성공한 full run은 기본적으로 최종 `.numbers` 파일만 config의 `output_file` 경로에 남기고, `artifacts/runs/<run_id>/`는 자동 삭제한다.
+- run artifacts를 보존하려면 `--keep-run-artifacts`를 사용한다.
 - bundle/index 실험 경로 스크립트는 [archive/scripts/support](/Users/jonyeock/Desktop/Tool/NumbersAuto/archive/scripts/support) 로 이동했다.
 - 단원 전용 또는 실험용 구형 스크립트는 [archive/scripts/legacy](/Users/jonyeock/Desktop/Tool/NumbersAuto/archive/scripts/legacy) 로 이동했다.
 - 기존 실험용 config는 [archive/configs/legacy](/Users/jonyeock/Desktop/Tool/NumbersAuto/archive/configs/legacy) 로 이동했고, 현재 표준 config는 `configs/social_6_1_*.json` 형식을 사용한다.
@@ -123,6 +125,7 @@ python3 scripts/draft_config_from_progress_chart.py \
 - 렌더러는 `html_content`가 있으면 그 HTML을 그대로 카드로 사용하고, 없으면 기존 템플릿 렌더 fallback을 사용한다.
 - `--debug-artifacts`는 프롬프트 파일을 저장만 하고, 실제 Gemini 호출은 인라인 프롬프트를 사용한다.
 - `.gitignore`가 `artifacts/`와 대부분의 `output/`을 무시하므로, 성공 실행의 증거는 기본적으로 git에 보존되지 않는다.
+- 산출물 보관 규칙은 [RUN_OUTPUT_POLICY.md](/Users/jonyeock/Desktop/Tool/NumbersAuto/RUN_OUTPUT_POLICY.md) 를 따른다.
 
 ## Verification
 Gemini 기반 자동 활동 생성이 실제로 적용되는지 확인할 때는 아래 순서로 본다.

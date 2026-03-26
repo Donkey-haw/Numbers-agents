@@ -1,5 +1,6 @@
 import argparse
 import json
+import shutil
 import sys
 from pathlib import Path
 
@@ -38,6 +39,11 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--debug-artifacts", action="store_true", help="Keep Gemini prompt/raw artifacts")
     parser.add_argument("--gemini-timeout-sec", type=int, default=60, help="Timeout for each Gemini CLI call")
     parser.add_argument("--max-workers", type=int, default=2, help="Max parallel Gemini lesson/activity workers")
+    parser.add_argument(
+        "--keep-run-artifacts",
+        action="store_true",
+        help="Preserve artifacts/runs/<run_id> even after a successful full run",
+    )
     parser.add_argument(
         "--stop-after",
         choices=contracts.DEFAULT_STAGE_ORDER,
@@ -85,10 +91,33 @@ def finalize_run_manifest(run_root: Path, final_status: str, final_output_file: 
     contracts.write_json(manifest_path, manifest)
 
 
+def should_keep_run_artifacts(args: argparse.Namespace, final_status: str) -> bool:
+    if final_status != "success":
+        return True
+    if args.keep_run_artifacts:
+        return True
+    if args.debug_artifacts:
+        return True
+    if args.stop_after:
+        return True
+    if args.run_root:
+        return True
+    return False
+
+
+def promote_final_output_and_cleanup(*, run_root: Path, produced_output: Path, configured_output: Path) -> None:
+    configured_output.parent.mkdir(parents=True, exist_ok=True)
+    if configured_output.exists():
+        configured_output.unlink()
+    shutil.copy2(produced_output, configured_output)
+    shutil.rmtree(run_root)
+
+
 def main() -> int:
     args = parse_args()
     config_path = Path(args.config).resolve()
     config = textbook.load_config(config_path)
+    configured_output_file = Path(config["output_file"]).resolve()
 
     if args.run_root:
         run_root = Path(args.run_root).resolve()
@@ -327,7 +356,14 @@ def main() -> int:
             run_id=run_id,
         )
         update_run_manifest_for_stage(run_root, "verify_agent", "succeeded")
-        finalize_run_manifest(run_root, "success", str(verify_result["output_file"]))
+        final_output_path = Path(verify_result["output_file"]).resolve()
+        finalize_run_manifest(run_root, "success", str(final_output_path))
+        if not should_keep_run_artifacts(args, "success"):
+            promote_final_output_and_cleanup(
+                run_root=run_root,
+                produced_output=final_output_path,
+                configured_output=configured_output_file,
+            )
         return 0
     except Exception:
         update_run_manifest_for_stage(run_root, "verify_agent", "failed", error_count=1)

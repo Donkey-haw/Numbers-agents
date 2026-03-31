@@ -1,0 +1,24 @@
+{
+  "project_root": "/Users/jonyeock/Desktop/Tool/NumbersAuto",
+  "template_path": "html/notes/Blank Notes.numbers",
+  "output_file": "dist/test_curriculum.numbers",
+  "pdf_path": "textbook/사회/[사회]6_1_교과서.pdf",
+  "chart_path": "textbook/사회/6학년 1학기 사회 진도표.pdf",
+  "selected_unit": "사회 탐구",
+  "selected_lessons": [
+    "4.19 혁명과 시민들의 노력 알아보기"
+  ],
+  "start_page": 2,
+  "end_page": 10,
+  "sections": [
+    {
+       "sheet_name": "4.19 혁명 알아보기",
+       "title": "4.19 혁명 알아보기",
+       "title_query": "4.19",
+       "badge": "사회",
+       "accent": ["#ffffff", "#ffffff"],
+       "card_file": "test_card",
+       "pdf_pages": [2, 3]
+    }
+  ]
+}

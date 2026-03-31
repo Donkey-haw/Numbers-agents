@@ -1,0 +1,60 @@
+{
+  "project_root": "/Users/jonyeock/Desktop/Tool/NumbersAuto",
+  "pdf_path": "textbook/미술/[미술]6_교과서.pdf",
+  "template_path": "빈 넘버스 파일.numbers",
+  "output_file": "output/미술_[미술]6_교과서.numbers",
+  "footer": "미술 · [미술]6_교과서",
+  "sections": [
+    {
+      "sheet_name": "1차시",
+      "card_file": "미술_1차시",
+      "title": "테스트1",
+      "badge": "1차시",
+      "accent": [
+        "#6366f1",
+        "#818cf8"
+      ],
+      "pdf_pages": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "lesson_id": "미술_1차시__테스트1"
+    },
+    {
+      "sheet_name": "2차시",
+      "card_file": "미술_2차시",
+      "title": "테스트2",
+      "badge": "2차시",
+      "accent": [
+        "#4f46e5",
+        "#7c3aed"
+      ],
+      "pdf_pages": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "lesson_id": "미술_2차시__테스트2"
+    },
+    {
+      "sheet_name": "3차시",
+      "card_file": "미술_3차시",
+      "title": "테스트3",
+      "badge": "3차시",
+      "accent": [
+        "#0f766e",
+        "#14b8a6"
+      ],
+      "pdf_pages": [
+        9,
+        10,
+        11,
+        12
+      ],
+      "lesson_id": "미술_3차시__테스트3"
+    }
+  ]
+}

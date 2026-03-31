@@ -264,6 +264,7 @@ def invoke_gemini_json(
         prompt_path.write_text(prompt, encoding="utf-8")
     command.extend(["-p", prompt])
 
+
     try:
         process = subprocess.Popen(
             command,
@@ -747,26 +748,39 @@ def compact_lesson_schema_for_prompt() -> dict:
     }
 
 
-def build_lesson_prompt(section: dict, baseline_analysis: dict, schedule_draft: dict, prompt_context: dict) -> str:
+def build_lesson_prompt(
+    section: dict,
+    baseline_analysis: dict,
+    schedule_draft: dict,
+    prompt_context: dict,
+    curriculum_context: dict | None = None,
+) -> str:
     compact_section = compact_section_for_prompt(section)
     compact_baseline = compact_baseline_for_prompt(baseline_analysis)
     compact_schedule = compact_schedule_draft_for_prompt(schedule_draft, section)
     compact_schema = compact_lesson_schema_for_prompt()
-    task_prompt = (
-        read_prompt("system_analyze.md")
-        + "\n\n"
-        + read_prompt("user_analyze.md").format(
-            section_json=json.dumps(compact_section, ensure_ascii=False, indent=2),
-            baseline_json=json.dumps(compact_baseline, ensure_ascii=False, indent=2),
-            schedule_json=json.dumps(compact_schedule, ensure_ascii=False, indent=2),
-            context_json=json.dumps(prompt_context, ensure_ascii=False, indent=2),
-            schema_json=json.dumps(compact_schema, ensure_ascii=False, indent=2),
-        )
+
+    user_prompt = read_prompt("user_analyze.md").format(
+        section_json=json.dumps(compact_section, ensure_ascii=False, indent=2),
+        baseline_json=json.dumps(compact_baseline, ensure_ascii=False, indent=2),
+        schedule_json=json.dumps(compact_schedule, ensure_ascii=False, indent=2),
+        context_json=json.dumps(prompt_context, ensure_ascii=False, indent=2),
+        schema_json=json.dumps(compact_schema, ensure_ascii=False, indent=2),
     )
+
+    if curriculum_context:
+        user_prompt = (
+            "National Curriculum Context (Reference Standards):\n"
+            + json.dumps(curriculum_context, ensure_ascii=False, indent=2)
+            + "\n\n"
+            + user_prompt
+        )
+
+    task_prompt = read_prompt("system_analyze.md") + "\n\n" + user_prompt
     return agent_runtime.build_agent_prompt(agent_name="lesson_analysis_agent", task_prompt=task_prompt)
 
 
-def build_activity_prompt(analysis: dict) -> str:
+def build_activity_prompt(analysis: dict, curriculum_context: dict | None = None) -> str:
     compact_analysis = {
         "lesson_id": analysis["lesson_id"],
         "sheet_name": analysis["sheet_name"],
@@ -820,15 +834,22 @@ def build_activity_prompt(analysis: dict) -> str:
         "level_enum": ["core", "on-level", "extension"],
         "input_area_type_enum": ["lined", "free-writing", "inline-answer", "grid", "spectrum"],
     }
-    task_prompt = (
-        read_prompt("system_plan.md")
-        + "\n\n"
-        + read_prompt("user_plan.md").format(
-            analysis_json=json.dumps(compact_analysis, ensure_ascii=False, indent=2),
-            schema_json=json.dumps(compact_schema, ensure_ascii=False, indent=2),
-            example_json=json.dumps(ACTIVITY_PLAN_EXAMPLE, ensure_ascii=False, indent=2),
-        )
+    
+    user_prompt = read_prompt("user_plan.md").format(
+        analysis_json=json.dumps(compact_analysis, ensure_ascii=False, indent=2),
+        schema_json=json.dumps(compact_schema, ensure_ascii=False, indent=2),
+        example_json=json.dumps(ACTIVITY_PLAN_EXAMPLE, ensure_ascii=False, indent=2),
     )
+
+    if curriculum_context:
+        user_prompt = (
+            "Curriculum Alignment (Targeted Standards):\n"
+            + json.dumps(curriculum_context, ensure_ascii=False, indent=2)
+            + "\n\n"
+            + user_prompt
+        )
+
+    task_prompt = read_prompt("system_plan.md") + "\n\n" + user_prompt
     return agent_runtime.build_agent_prompt(agent_name="activity_plan_agent", task_prompt=task_prompt)
 
 

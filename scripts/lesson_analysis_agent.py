@@ -77,6 +77,7 @@ def process_section(
     debug_artifacts: bool,
     gemini_timeout_sec: int | None,
     gemini_idle_timeout_sec: int | None,
+    curriculum_context: dict | None = None,
 ) -> dict:
     lesson_dir = section_dir(run_root, section)
     started_at = contracts.utc_now()
@@ -120,7 +121,9 @@ def process_section(
             contracts.section_artifact_stem(section),
         )
         contracts.write_json(lesson_dir / "lesson_analysis.context.json", prompt_context)
-        prompt = gemini_pipeline.build_lesson_prompt(section, baseline_analysis, schedule_draft, prompt_context)
+        prompt = gemini_pipeline.build_lesson_prompt(
+            section, baseline_analysis, schedule_draft, prompt_context, curriculum_context
+        )
         (lesson_dir / "lesson_analysis.prompt.md").write_text(prompt, encoding="utf-8")
         status["attempt_count"] = 1
         lesson_ai, _ = gemini_pipeline.invoke_gemini_json(
@@ -212,6 +215,8 @@ def run_single_lesson_job(args: argparse.Namespace) -> int:
     runtime_config = read_json(source_dir / "runtime_config.json")
     schedule_draft = read_json(source_dir / "schedule_draft.json")
     textbook_context = read_json(source_dir / "textbook_context.json")
+    curriculum_path = source_dir / "curriculum_context.json"
+    curriculum_context = read_json(curriculum_path) if curriculum_path.exists() else None
     section = find_section_by_key(runtime_config, args.section_key)
     result = process_section(
         section=section,
@@ -220,6 +225,7 @@ def run_single_lesson_job(args: argparse.Namespace) -> int:
         source_dir=source_dir,
         schedule_draft=schedule_draft,
         textbook_context=textbook_context,
+        curriculum_context=curriculum_context,
         gemini_bin=args.gemini_bin,
         gemini_model=args.gemini_model,
         extensions=args.gemini_extensions,
@@ -251,6 +257,8 @@ def process_section_subprocess(
     baseline_analysis = read_json(baseline_path)
     schedule_draft = read_json(source_dir / "schedule_draft.json")
     textbook_context = read_json(source_dir / "textbook_context.json")
+    curriculum_path = source_dir / "curriculum_context.json"
+    curriculum_context = read_json(curriculum_path) if curriculum_path.exists() else None
 
     stdout_log_path = lesson_dir / "lesson_analysis.worker.stdout.log"
     stderr_log_path = lesson_dir / "lesson_analysis.worker.stderr.log"
@@ -292,7 +300,9 @@ def process_section_subprocess(
         contracts.section_artifact_stem(section),
     )
     contracts.write_json(lesson_dir / "lesson_analysis.context.json", prompt_context)
-    prompt = gemini_pipeline.build_lesson_prompt(section, baseline_analysis, schedule_draft, prompt_context)
+    prompt = gemini_pipeline.build_lesson_prompt(
+        section, baseline_analysis, schedule_draft, prompt_context, curriculum_context
+    )
     prompt_path = lesson_dir / "lesson_analysis.prompt.md"
     prompt_path.write_text(prompt, encoding="utf-8")
 

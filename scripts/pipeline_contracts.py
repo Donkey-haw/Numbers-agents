@@ -15,6 +15,21 @@ STAGE_STATUS_VALUES = {
 }
 REVIEW_DECISION_VALUES = {"pass", "pass_with_warning", "needs_revision", "blocked"}
 RUN_FINAL_STATUS_VALUES = {"pending", "running", "success", "partial-with-warning", "textbook-only", "failed"}
+JOB_STATUS_VALUES = {"pending", "ready", "running", "succeeded", "succeeded_with_warning", "failed", "blocked"}
+LESSON_LEVEL_STAGES = [
+    "lesson_analysis_agent",
+    "lesson_review_agent",
+    "curriculum_analysis_agent",
+    "activity_plan_agent",
+    "activity_review_agent",
+    "html_card_agent",
+]
+GLOBAL_STAGES = [
+    "capture_agent",
+    "numbers_compose_agent",
+    "review_manifest_agent",
+    "verify_agent",
+]
 DEFAULT_STAGE_ORDER = [
     "document_inventory_agent",
     "pdf_extract_agent",
@@ -28,6 +43,7 @@ DEFAULT_STAGE_ORDER = [
     "source_validation_agent",
     "lesson_analysis_agent",
     "lesson_review_agent",
+    "curriculum_analysis_agent",
     "activity_plan_agent",
     "activity_review_agent",
     "html_card_agent",

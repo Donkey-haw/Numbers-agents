@@ -127,6 +127,31 @@ export function RunHeader() {
         {manifest.workflow_mode}
       </div>
 
+      {/* Curriculum badge */}
+      {manifest.curriculum_pdf && (
+        <div
+          title={manifest.curriculum_pdf}
+          style={{
+            padding: '3px 10px',
+            borderRadius: 'var(--radius-sm)',
+            background: 'rgba(16, 185, 129, 0.1)',
+            border: '1px solid rgba(16, 185, 129, 0.2)',
+            color: '#6ee7b7',
+            fontSize: 11,
+            fontWeight: 600,
+            fontFamily: 'var(--font-mono)',
+            letterSpacing: '0.03em',
+            flexShrink: 0,
+            display: 'flex',
+            alignItems: 'center',
+            gap: 4,
+          }}
+        >
+          <span style={{ fontSize: 10 }}>📚</span>
+          {manifest.curriculum_pdf?.split('/').pop() || '교육과정'}
+        </div>
+      )}
+
       {/* Unit name */}
       {manifest.selected_unit && (
         <div

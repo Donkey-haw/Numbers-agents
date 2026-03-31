@@ -10,6 +10,9 @@ const EVENT_ICONS: Record<EventType, string> = {
   stage_finished: '✓',
   lesson_started: '▸',
   lesson_finished: '◂',
+  job_started: '◷',
+  job_finished: '☑',
+  lesson_pipeline_completed: '✦',
   run_finished: '■',
 };
 
@@ -20,6 +23,9 @@ const EVENT_LABELS: Record<EventType, string> = {
   stage_finished: 'Stage 종료',
   lesson_started: '차시 시작',
   lesson_finished: '차시 종료',
+  job_started: 'Job 시작',
+  job_finished: 'Job 종료',
+  lesson_pipeline_completed: '차시 파이프라인 완료',
   run_finished: 'Run 완료',
 };
 

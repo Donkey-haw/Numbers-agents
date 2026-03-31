@@ -71,21 +71,29 @@ def process_lesson_dir(
     debug_artifacts: bool,
     gemini_timeout_sec: int | None,
     gemini_idle_timeout_sec: int | None,
+    curriculum_context: dict | None = None,
 ) -> dict:
     analysis_path = lesson_dir / "lesson_analysis.json"
     analysis = read_json(analysis_path)
     lesson_id = analysis["lesson_id"]
     started_at = contracts.utc_now()
+    source_dir = lesson_dir.parent.parent / "source"
+    alignment_path = lesson_dir / "curriculum_alignment.json"
+    curriculum_alignment = read_json(alignment_path) if alignment_path.exists() else None
 
     plan_path = lesson_dir / "activity_plan.json"
     ai_path = lesson_dir / "activity_plan_ai.json"
     status_path = lesson_dir / "activity_plan.status.json"
 
+    input_refs = [str(analysis_path)]
+    if curriculum_alignment:
+        input_refs.append(str(alignment_path))
+
     status = build_activity_status(
         run_id=run_id,
         lesson_id=lesson_id,
         started_at=started_at,
-        input_refs=[str(analysis_path)],
+        input_refs=input_refs,
         output_refs=[str(ai_path), str(plan_path)],
     )
     contracts.write_json(status_path, status)
@@ -104,7 +112,7 @@ def process_lesson_dir(
 
     fallback_used = False
     try:
-        prompt = gemini_pipeline.build_activity_prompt(analysis)
+        prompt = gemini_pipeline.build_activity_prompt(analysis, curriculum_alignment)
         (lesson_dir / "activity_plan.prompt.md").write_text(prompt, encoding="utf-8")
         status["attempt_count"] = 1
         activity_ai, _ = gemini_pipeline.invoke_gemini_json(
@@ -217,6 +225,7 @@ def run_single_lesson_job(args: argparse.Namespace) -> int:
         debug_artifacts=args.debug_artifacts,
         gemini_timeout_sec=gemini_timeout_sec,
         gemini_idle_timeout_sec=gemini_idle_timeout_sec,
+        curriculum_context=curriculum_context,
     )
     print(json.dumps({"result": serialize_jsonable(result)}, ensure_ascii=False))
     return 0
@@ -233,6 +242,7 @@ def process_lesson_dir_subprocess(
     debug_artifacts: bool,
     gemini_timeout_sec: int | None,
     gemini_idle_timeout_sec: int | None,
+    curriculum_context: dict | None = None,
 ) -> dict:
     run_root = lesson_dir.parent.parent
     stdout_log_path = lesson_dir / "activity_plan.worker.stdout.log"
@@ -249,12 +259,19 @@ def process_lesson_dir_subprocess(
     analysis = read_json(lesson_dir / "lesson_analysis.json")
     lesson_id = analysis["lesson_id"]
     started_at = contracts.utc_now()
+    source_dir = run_root / "source"
+    alignment_path = lesson_dir / "curriculum_alignment.json"
+    curriculum_alignment = read_json(alignment_path) if alignment_path.exists() else None
+
+    status_input_refs = [str(lesson_dir / "lesson_analysis.json")]
+    if curriculum_alignment:
+        status_input_refs.append(str(alignment_path))
 
     status = build_activity_status(
         run_id=run_id,
         lesson_id=lesson_id,
         started_at=started_at,
-        input_refs=[str(lesson_dir / "lesson_analysis.json")],
+        input_refs=status_input_refs,
         output_refs=[str(ai_path), str(plan_path)],
     )
     contracts.write_json(status_path, status)
@@ -271,7 +288,7 @@ def process_lesson_dir_subprocess(
         },
     )
 
-    prompt = gemini_pipeline.build_activity_prompt(analysis)
+    prompt = gemini_pipeline.build_activity_prompt(analysis, curriculum_alignment)
     prompt_path = lesson_dir / "activity_plan.prompt.md"
     prompt_path.write_text(prompt, encoding="utf-8")
 

@@ -13,6 +13,7 @@ if str(SCRIPT_DIR) not in sys.path:
 import activity_plan_agent  # noqa: E402
 import activity_review_agent  # noqa: E402
 import capture_agent  # noqa: E402
+import curriculum_analysis_agent  # noqa: E402
 import generate_numbers_lesson as textbook  # noqa: E402
 import html_card_agent  # noqa: E402
 import lesson_analysis_agent  # noqa: E402
@@ -26,6 +27,7 @@ import run_gemini_cli_pipeline as gemini_pipeline  # noqa: E402
 import source_boundary_agent  # noqa: E402
 import source_validation_agent  # noqa: E402
 import verify_agent  # noqa: E402
+import lesson_pipeline_scheduler  # noqa: E402
 
 
 def parse_args() -> argparse.Namespace:
@@ -56,6 +58,7 @@ def parse_args() -> argparse.Namespace:
     )
     parser.add_argument("--lesson-max-workers", type=int, help="Override parallel workers for lesson_analysis_agent")
     parser.add_argument("--activity-max-workers", type=int, help="Override parallel workers for activity_plan/review agents")
+    parser.add_argument("--curriculum-pdf", help="Path to National Curriculum PDF")
     parser.add_argument(
         "--keep-run-artifacts",
         action="store_true",
@@ -93,6 +96,7 @@ def manual_stage_order() -> list[str]:
     return [
         "lesson_analysis_agent",
         "lesson_review_agent",
+        "curriculum_analysis_agent",
         "activity_plan_agent",
         "activity_review_agent",
         "html_card_agent",
@@ -173,6 +177,14 @@ def build_document_inventory_inputs(config: dict, config_path: Path) -> list[dic
 
 def load_json(path: Path) -> dict:
     return json.loads(path.read_text(encoding="utf-8"))
+
+
+def _find_section_by_key(runtime_config: dict, section_key: str) -> dict:
+    for section in runtime_config.get("sections", []):
+        if contracts.section_artifact_stem(section) == section_key:
+            return section
+    raise ValueError(f"Could not find section for key: {section_key}")
+
 
 
 def section_count(config: dict) -> int:
@@ -721,158 +733,164 @@ def main() -> int:
             update_run_manifest_for_stage(run_root, "source_validation_agent", "failed", error_count=1)
             finalize_run_manifest(run_root, "failed")
             raise
-    try:
-        update_run_manifest_for_stage(run_root, "lesson_analysis_agent", "running")
-        lesson_result = lesson_analysis_agent.execute_lesson_analysis(
+
+# Removed global curriculum_analysis_agent call
+    # -----------------------------------------------------------------------
+    # -----------------------------------------------------------------------
+    # Lesson-level pipelined DAG execution
+    # Each lesson independently pipelines through:
+    #   lesson_analysis → lesson_review → activity_plan → activity_review → html_card
+    # -----------------------------------------------------------------------
+    source_dir = run_root / "source"
+    runtime_config = load_json(source_dir / "runtime_config.json")
+    schedule_draft = load_json(source_dir / "schedule_draft.json")
+    textbook_context = load_json(source_dir / "textbook_context.json")
+    extensions = args.gemini_extensions or ["stitch-skills"]
+
+    def _exec_lesson_analysis(*, section_key: str) -> dict:
+        section = _find_section_by_key(runtime_config, section_key)
+        return lesson_analysis_agent.process_section_subprocess(
+            section=section,
             run_root=run_root,
             run_id=run_id,
             gemini_bin=args.gemini_bin,
             gemini_model=args.gemini_model,
-            gemini_extensions=args.gemini_extensions,
+            extensions=extensions,
             approval_mode=args.approval_mode,
             debug_artifacts=args.debug_artifacts,
             gemini_timeout_sec=lesson_gemini_timeout_sec(args),
             gemini_idle_timeout_sec=lesson_gemini_idle_timeout_sec(args),
-            max_workers=lesson_worker_count(args, config),
         )
-        lesson_stage_status = "succeeded"
-        if lesson_result["warning_count"] or lesson_result["fallback_count"]:
-            lesson_stage_status = "succeeded_with_warning"
-        update_run_manifest_for_stage(
-            run_root,
-            "lesson_analysis_agent",
-            lesson_stage_status,
-            fallback_used=lesson_result["fallback_count"] > 0,
-            warning_count=lesson_result["warning_count"],
-            error_count=0,
-            details={"fallback_category_counts": lesson_result.get("fallback_category_counts", {})},
-        )
-        write_job_manifest(run_root)
-        write_generation_diagnostics(run_root)
-        if args.stop_after == "lesson_analysis_agent":
-            finalize_run_manifest(run_root, "success")
-            return 0
-    except Exception:
-        update_run_manifest_for_stage(run_root, "lesson_analysis_agent", "failed", error_count=1)
-        write_job_manifest(run_root)
-        finalize_run_manifest(run_root, "failed")
-        raise
-    try:
-        update_run_manifest_for_stage(run_root, "lesson_review_agent", "running")
-        lesson_review_result = lesson_review_agent.execute_lesson_review(
+
+    def _exec_lesson_review(*, section_key: str) -> dict:
+        lesson_dir = run_root / "sections" / section_key
+        return lesson_review_agent.process_lesson_dir_subprocess(
+            lesson_dir=lesson_dir,
             run_root=run_root,
             run_id=run_id,
-            max_workers=lesson_worker_count(args, config),
         )
-        lesson_review_status = "succeeded"
-        if lesson_review_result["blocked_count"]:
-            lesson_review_status = "blocked"
-        elif lesson_review_result["warning_count"]:
-            lesson_review_status = "succeeded_with_warning"
-        update_run_manifest_for_stage(
-            run_root,
-            "lesson_review_agent",
-            lesson_review_status,
-            warning_count=lesson_review_result["warning_count"],
-            error_count=lesson_review_result["blocked_count"],
-        )
-        if lesson_review_result["blocked_count"]:
-            finalize_run_manifest(run_root, "failed")
-            return 1
-        if args.stop_after == "lesson_review_agent":
-            finalize_run_manifest(run_root, "success")
-            return 0
-    except Exception:
-        update_run_manifest_for_stage(run_root, "lesson_review_agent", "failed", error_count=1)
-        finalize_run_manifest(run_root, "failed")
-        raise
-    try:
-        update_run_manifest_for_stage(run_root, "activity_plan_agent", "running")
-        activity_result = activity_plan_agent.execute_activity_planning(
+
+    def _exec_curriculum_alignment(*, section_key: str) -> dict:
+        if not args.curriculum_pdf:
+            return {"status": "succeeded", "warning_count": 0, "blocked_count": 0, "notes": "No curriculum PDF provided"}
+        
+        lesson_dir = run_root / "sections" / section_key
+        curriculum_pdf_path = Path(args.curriculum_pdf).resolve()
+        section = _find_section_by_key(runtime_config, section_key)
+        
+        return curriculum_analysis_agent.execute_curriculum_analysis(
+            curriculum_pdf_path=curriculum_pdf_path,
+            subject_name=detect_selected_unit(config) or "초등 교과",
             run_root=run_root,
-            run_id=run_id,
+            section_key=section_key,
+            section_title=section.get("title", section_key),
             gemini_bin=args.gemini_bin,
             gemini_model=args.gemini_model,
             gemini_extensions=args.gemini_extensions,
             approval_mode=args.approval_mode,
             debug_artifacts=args.debug_artifacts,
+            timeout_sec=gemini_timeout_sec(args) or 300,
+        )
+
+    def _exec_activity_plan(*, section_key: str) -> dict:
+        lesson_dir = run_root / "sections" / section_key
+        return activity_plan_agent.process_lesson_dir_subprocess(
+            lesson_dir=lesson_dir,
+            run_id=run_id,
+            extensions=extensions,
+            gemini_bin=args.gemini_bin,
+            gemini_model=args.gemini_model,
+            approval_mode=args.approval_mode,
+            debug_artifacts=args.debug_artifacts,
             gemini_timeout_sec=activity_gemini_timeout_sec(args),
             gemini_idle_timeout_sec=activity_gemini_idle_timeout_sec(args),
-            max_workers=activity_worker_count(args, config),
         )
-        activity_stage_status = "succeeded"
-        if activity_result["warning_count"] or activity_result["fallback_count"]:
-            activity_stage_status = "succeeded_with_warning"
-        update_run_manifest_for_stage(
-            run_root,
-            "activity_plan_agent",
-            activity_stage_status,
-            fallback_used=activity_result["fallback_count"] > 0,
-            warning_count=activity_result["warning_count"],
-            error_count=0,
-            details={"fallback_category_counts": activity_result.get("fallback_category_counts", {})},
-        )
-        write_job_manifest(run_root)
-        write_generation_diagnostics(run_root)
-        if args.stop_after == "activity_plan_agent":
-            finalize_run_manifest(run_root, "success")
-            return 0
-    except Exception:
-        update_run_manifest_for_stage(run_root, "activity_plan_agent", "failed", error_count=1)
-        write_job_manifest(run_root)
-        finalize_run_manifest(run_root, "failed")
-        raise
-    try:
-        update_run_manifest_for_stage(run_root, "activity_review_agent", "running")
-        activity_review_result = activity_review_agent.execute_activity_review(
-            run_root=run_root,
-            run_id=run_id,
-            max_workers=activity_worker_count(args, config),
-        )
-        activity_review_status = "succeeded"
-        if activity_review_result["blocked_count"]:
-            activity_review_status = "blocked"
-        elif activity_review_result["warning_count"]:
-            activity_review_status = "succeeded_with_warning"
-        update_run_manifest_for_stage(
-            run_root,
-            "activity_review_agent",
-            activity_review_status,
-            warning_count=activity_review_result["warning_count"],
-            error_count=activity_review_result["blocked_count"],
-        )
-        write_job_manifest(run_root)
-        if activity_review_result["blocked_count"]:
-            finalize_run_manifest(run_root, "failed")
-            return 1
-        if args.stop_after == "activity_review_agent":
-            finalize_run_manifest(run_root, "success")
-            return 0
-    except Exception:
-        update_run_manifest_for_stage(run_root, "activity_review_agent", "failed", error_count=1)
-        write_job_manifest(run_root)
-        finalize_run_manifest(run_root, "failed")
-        raise
-    try:
-        update_run_manifest_for_stage(run_root, "html_card_agent", "running")
-        html_result = html_card_agent.execute_html_rendering(
+
+    def _exec_activity_review(*, section_key: str) -> dict:
+        lesson_dir = run_root / "sections" / section_key
+        return activity_review_agent.process_lesson_dir_subprocess(
+            lesson_dir=lesson_dir,
             run_root=run_root,
             run_id=run_id,
         )
-        html_status = "succeeded" if html_result["warning_count"] == 0 else "succeeded_with_warning"
-        update_run_manifest_for_stage(
-            run_root,
-            "html_card_agent",
-            html_status,
-            warning_count=html_result["warning_count"],
+
+    def _exec_html_card(*, section_key: str) -> dict:
+        return html_card_agent.execute_html_rendering_for_lesson(
+            run_root=run_root,
+            run_id=run_id,
+            section_key=section_key,
         )
-        if args.stop_after == "html_card_agent":
-            finalize_run_manifest(run_root, "success")
-            return 0
+
+    stage_executors = {
+        "lesson_analysis_agent": _exec_lesson_analysis,
+        "lesson_review_agent": _exec_lesson_review,
+        "curriculum_analysis_agent": _exec_curriculum_alignment,
+        "activity_plan_agent": _exec_activity_plan,
+        "activity_review_agent": _exec_activity_review,
+        "html_card_agent": _exec_html_card,
+    }
+
+    # Mark all lesson-level stages as running
+    for stage_name in contracts.LESSON_LEVEL_STAGES:
+        update_run_manifest_for_stage(run_root, stage_name, "running")
+
+    try:
+        dag_max_workers = max(
+            lesson_worker_count(args, config),
+            activity_worker_count(args, config),
+        )
+        scheduler = lesson_pipeline_scheduler.LessonPipelineScheduler(
+            sections=runtime_config["sections"],
+            max_workers=dag_max_workers,
+            run_root=run_root,
+            run_id=run_id,
+            stage_executors=stage_executors,
+            stop_after=args.stop_after,
+        )
+        stage_results = scheduler.run()
     except Exception:
-        update_run_manifest_for_stage(run_root, "html_card_agent", "failed", error_count=1)
+        for stage_name in contracts.LESSON_LEVEL_STAGES:
+            update_run_manifest_for_stage(run_root, stage_name, "failed", error_count=1)
+        write_job_manifest(run_root)
         finalize_run_manifest(run_root, "failed")
         raise
+
+    # Update run_manifest for each lesson-level stage from aggregated results
+    has_blocked = False
+    for stage_name in contracts.LESSON_LEVEL_STAGES:
+        sr = stage_results.get(stage_name, {})
+        blocked_count = sr.get("blocked_count", 0)
+        warning_count_val = sr.get("warning_count", 0)
+        fallback_count = sr.get("fallback_count", 0)
+
+        if blocked_count:
+            stage_status = "blocked"
+            has_blocked = True
+        elif warning_count_val or fallback_count:
+            stage_status = "succeeded_with_warning"
+        else:
+            stage_status = "succeeded"
+
+        update_run_manifest_for_stage(
+            run_root,
+            stage_name,
+            stage_status,
+            fallback_used=fallback_count > 0,
+            warning_count=warning_count_val,
+            error_count=blocked_count,
+            details={"fallback_category_counts": sr.get("fallback_category_counts", {})},
+        )
+
+    write_job_manifest(run_root)
+    write_generation_diagnostics(run_root)
+
+    if has_blocked:
+        finalize_run_manifest(run_root, "failed")
+        return 1
+
+    if args.stop_after and args.stop_after in contracts.LESSON_LEVEL_STAGES:
+        finalize_run_manifest(run_root, "success")
+        return 0
     try:
         update_run_manifest_for_stage(run_root, "capture_agent", "running")
         capture_result = capture_agent.execute_capture(

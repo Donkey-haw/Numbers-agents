@@ -17,6 +17,9 @@ export type EventType =
   | 'stage_finished'
   | 'lesson_started'
   | 'lesson_finished'
+  | 'job_started'
+  | 'job_finished'
+  | 'lesson_pipeline_completed'
   | 'run_finished';
 
 export interface RunEvent {
@@ -50,6 +53,7 @@ export interface RunManifest {
   finished_at: string | null;
   final_status: string;
   final_output_file: string | null;
+  curriculum_pdf: string | null;
   status_summary: StageSummary[];
 }
 
@@ -70,6 +74,29 @@ export interface LessonStatus {
   warning_used: boolean;
 }
 
+export interface JobGraphEntry {
+  job_id: string;
+  section_key: string;
+  stage: string;
+  status: string;
+  depends_on: string[];
+}
+
+export interface JobGraph {
+  schema_version: string;
+  run_id: string;
+  generated_at?: string;
+  jobs: JobGraphEntry[];
+}
+
+export const LESSON_LEVEL_STAGES = [
+  'lesson_analysis_agent',
+  'lesson_review_agent',
+  'activity_plan_agent',
+  'activity_review_agent',
+  'html_card_agent',
+] as const;
+
 export const GRAPH_STAGE_FOLDS: Record<string, string> = {
   lesson_review_agent: 'lesson_analysis_agent',
   activity_review_agent: 'activity_plan_agent',
@@ -86,6 +113,7 @@ export const STAGE_LABELS: Record<string, string> = {
   boundary_validation_agent: '경계 검증',
   source_boundary_agent: '교과서 경계 추론',
   source_validation_agent: '교과서 경계 검토',
+  curriculum_analysis_agent: '국가수준 교육과정 분석',
   lesson_analysis_agent: '차시 분석',
   lesson_review_agent: '차시 검토',
   activity_plan_agent: '활동 계획',

@@ -33,6 +33,7 @@ RUNS_DIR = PROJECT_ROOT / "artifacts" / "runs"
 CONFIGS_DIR = PROJECT_ROOT / "configs"
 UNIT_CONFIGS_DIR = CONFIGS_DIR / "units"
 TEXTBOOKS_DIR = PROJECT_ROOT / "textbook"
+CURRICULUMS_DIR = PROJECT_ROOT / "curriculum"
 ORCHESTRATOR_SCRIPT = SCRIPTS_DIR / "pipeline_orchestrator.py"
 
 router = APIRouter()
@@ -81,6 +82,33 @@ async def list_textbooks():
                 "pdfs": pdfs,
             })
     return subjects
+
+
+@router.get("/curriculums")
+async def list_curriculums():
+    """List national curriculum PDFs found in curriculum/ or textbook/."""
+    search_dirs = [CURRICULUMS_DIR, TEXTBOOKS_DIR]
+    curriculums = []
+    
+    for sdir in search_dirs:
+        if not sdir.exists():
+            continue
+        # Search recursively for PDFs
+        for pdf in sorted(sdir.glob("**/*.pdf")):
+            name_nfc = unicodedata.normalize('NFC', pdf.name)
+            # Identify by name or parent directory or just if it's in CURRICULUMS_DIR
+            is_curriculum = sdir == CURRICULUMS_DIR or "교육과정" in name_nfc or "curriculum" in str(pdf).lower()
+            if is_curriculum:
+                try:
+                    rel_path = pdf.relative_to(PROJECT_ROOT)
+                    curriculums.append({
+                        "filename": name_nfc,
+                        "path": str(pdf),
+                        "relative_path": str(rel_path),
+                    })
+                except Exception:
+                    continue
+    return curriculums
 
 
 def _subject_slug(value: str) -> str:
@@ -196,7 +224,8 @@ async def get_pdf_page_image(
         doc = fitz.open(resolved_path)
         try:
             if page > doc.page_count:
-                raise HTTPException(404, f"Page out of range: {page}")
+                # Return empty page or 400 instead of 404 to avoid confusing generic 404s
+                raise HTTPException(400, f"Page {page} out of range (max {doc.page_count})")
             pdf_page = doc.load_page(page - 1)
             rect = pdf_page.rect
             scale = max(width / max(rect.width, 1), 0.1)
@@ -268,6 +297,7 @@ class StartRunRequest(BaseModel):
     max_workers: int | None = None
     keep_run_artifacts: bool = True
     stop_after: str | None = None
+    curriculum_pdf: str | None = None
 
 
 class StartRunResponse(BaseModel):
@@ -331,6 +361,8 @@ async def start_run(req: StartRunRequest):
         cmd.append("--keep-run-artifacts")
     if req.stop_after:
         cmd.extend(["--stop-after", req.stop_after])
+    if req.curriculum_pdf:
+        cmd.extend(["--curriculum-pdf", req.curriculum_pdf])
 
     proc = subprocess.Popen(
         cmd,
@@ -381,6 +413,19 @@ async def get_run(run_id: str) -> dict[str, Any]:
     if not manifest:
         raise HTTPException(404, f"Manifest not found for run: {run_id}")
     return manifest
+
+
+@router.get("/runs/{run_id}/job-graph")
+async def get_job_graph(run_id: str) -> dict[str, Any]:
+    """Get the lesson-level job graph for a run."""
+    run_dir = RUNS_DIR / run_id
+    job_graph_path = run_dir / "job_graph.json"
+    if not job_graph_path.exists():
+        return {"jobs": [], "schema_version": "1.0.0", "run_id": run_id}
+    try:
+        return json.loads(job_graph_path.read_text(encoding="utf-8"))
+    except (json.JSONDecodeError, OSError):
+        return {"jobs": [], "schema_version": "1.0.0", "run_id": run_id}
 
 
 @router.post("/runs/{run_id}/cancel")

@@ -567,7 +567,7 @@ def render_html(source_card: dict, config: dict) -> str:
     grid_columns = 1 if len(source_card["pdf_pages"]) == 1 else 2
     title = html.escape(source_card["title"])
     badge = html.escape(source_card["badge"])
-    footer = html.escape(config["footer"])
+    footer = html.escape(config.get("footer", ""))
     pages = build_page_markup(source_card, config)
     resource_chip = html.escape(f"{source_card['resource_label']} · {source_card['label_suffix']}")
     icon = source_card["icon"]

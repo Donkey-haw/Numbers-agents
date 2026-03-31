@@ -12,6 +12,9 @@ EVENT_TYPES = {
     "stage_finished",
     "lesson_started",
     "lesson_finished",
+    "job_started",
+    "job_finished",
+    "lesson_pipeline_completed",
     "run_finished",
 }
 

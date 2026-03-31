@@ -57,3 +57,13 @@ export async function fetchManifest(runId: string) {
   const manifest = await res.json();
   useRunStore.getState().setManifest(manifest);
 }
+
+/**
+ * Fetches the lesson-level job graph and loads it into the store.
+ */
+export async function fetchJobGraph(runId: string) {
+  const res = await fetch(`/api/runs/${runId}/job-graph`);
+  if (!res.ok) return;
+  const jobGraph = await res.json();
+  useRunStore.getState().setJobGraph(jobGraph);
+}

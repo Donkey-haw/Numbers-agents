@@ -10,7 +10,8 @@ export function AgentJobPanel() {
 
   const stagesWithJobs = manifest.stage_order.filter((stage) => {
     const jobs = lessonStates[stage];
-    return jobs && Object.keys(jobs).length > 0;
+    const isGlobal = (manifest.status_summary || []).some(s => s.stage === stage && (s.stage === 'curriculum_analysis_agent' || s.stage === 'pdf_extract_agent'));
+    return (jobs && Object.keys(jobs).length > 0) || isGlobal;
   });
 
   return (
@@ -80,54 +81,85 @@ export function AgentJobPanel() {
                 </div>
 
                 <div style={{ padding: 8, display: 'grid', gap: 6 }}>
-                  {jobs.map((job) => {
-                    const style = STATUS_STYLES[job.status] ?? STATUS_STYLES.pending;
-                    return (
-                      <div
-                        key={`${stage}:${job.lesson_id}`}
-                        style={{
-                          display: 'flex',
-                          justifyContent: 'space-between',
-                          alignItems: 'center',
-                          gap: 8,
-                          padding: '8px 10px',
-                          borderRadius: 'var(--radius-sm)',
-                          background: style.bgGradient,
-                          border: `1px solid ${style.border}`,
-                        }}
-                      >
-                        <div style={{ minWidth: 0 }}>
+                    {jobs.length === 0 ? (
+                      (() => {
+                        const stageSummary = (manifest.status_summary || []).find(s => s.stage === stage);
+                        if (!stageSummary) return null;
+                        const style = STATUS_STYLES[stageSummary.status] ?? STATUS_STYLES.pending;
+                        return (
                           <div
                             style={{
-                              fontSize: 12,
-                              color: 'var(--text-primary)',
-                              fontWeight: 600,
-                              overflow: 'hidden',
-                              textOverflow: 'ellipsis',
-                              whiteSpace: 'nowrap',
+                              display: 'flex',
+                              justifyContent: 'space-between',
+                              alignItems: 'center',
+                              gap: 8,
+                              padding: '8px 10px',
+                              borderRadius: 'var(--radius-sm)',
+                              background: style.bgGradient,
+                              border: `1px solid ${style.border}`,
                             }}
                           >
-                            {job.lesson_id}
+                            <div style={{ minWidth: 0 }}>
+                              <div style={{ fontSize: 12, color: 'var(--text-primary)', fontWeight: 600 }}>
+                                전역 처리 (Global)
+                              </div>
+                            </div>
+                            <div style={{ fontSize: 10, color: style.text, fontFamily: 'var(--font-mono)', fontWeight: 700 }}>
+                              {style.icon} {style.label}
+                            </div>
                           </div>
-                          <div style={{ fontSize: 10, color: 'var(--text-muted)', fontFamily: 'var(--font-mono)' }}>
-                            {job.fallback_used ? 'fallback' : 'direct'}
-                            {job.warning_used ? ' · warning' : ''}
+                        );
+                      })()
+                    ) : (
+                      jobs.map((job) => {
+                        const style = STATUS_STYLES[job.status] ?? STATUS_STYLES.pending;
+                        return (
+                          <div
+                            key={`${stage}:${job.lesson_id}`}
+                            style={{
+                              display: 'flex',
+                              justifyContent: 'space-between',
+                              alignItems: 'center',
+                              gap: 8,
+                              padding: '8px 10px',
+                              borderRadius: 'var(--radius-sm)',
+                              background: style.bgGradient,
+                              border: `1px solid ${style.border}`,
+                            }}
+                          >
+                            <div style={{ minWidth: 0 }}>
+                              <div
+                                style={{
+                                  fontSize: 12,
+                                  color: 'var(--text-primary)',
+                                  fontWeight: 600,
+                                  overflow: 'hidden',
+                                  textOverflow: 'ellipsis',
+                                  whiteSpace: 'nowrap',
+                                }}
+                              >
+                                {job.lesson_id}
+                              </div>
+                              <div style={{ fontSize: 10, color: 'var(--text-muted)', fontFamily: 'var(--font-mono)' }}>
+                                {job.fallback_used ? 'fallback' : 'direct'}
+                                {job.warning_used ? ' · warning' : ''}
+                              </div>
+                            </div>
+                            <div
+                              style={{
+                                fontSize: 10,
+                                color: style.text,
+                                fontFamily: 'var(--font-mono)',
+                                fontWeight: 700,
+                                flexShrink: 0,
+                              }}
+                            >
+                              {style.icon} {style.label}
+                            </div>
                           </div>
-                        </div>
-                        <div
-                          style={{
-                            fontSize: 10,
-                            color: style.text,
-                            fontFamily: 'var(--font-mono)',
-                            fontWeight: 700,
-                            flexShrink: 0,
-                          }}
-                        >
-                          {style.icon} {style.label}
-                        </div>
-                      </div>
-                    );
-                  })}
+                        );
+                      })
+                    )}
                 </div>
               </div>
             );

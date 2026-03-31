@@ -57,6 +57,9 @@ export function NewRunModal({
   const [loadingSubjects, setLoadingSubjects] = useState(true);
   const [selectedSubject, setSelectedSubject] = useState<Subject | null>(null);
   const [selectedTextbook, setSelectedTextbook] = useState<PDF | null>(null);
+  const [curriculums, setCurriculums] = useState<PDF[]>([]);
+  const [selectedCurriculum, setSelectedCurriculum] = useState<PDF | null>(null);
+  const [loadingCurriculums, setLoadingCurriculums] = useState(true);
 
   const [manualLessons, setManualLessons] = useState<ManualLessonDraft[]>([
     { id: crypto.randomUUID(), sheet_name: '1차시', title: '', selected_pages: [] },
@@ -85,6 +88,23 @@ export function NewRunModal({
         }
       })
       .finally(() => setLoadingSubjects(false));
+
+    fetch('/api/curriculums')
+      .then((r) => r.ok ? r.json() : [])
+      .then((data) => {
+        const list = Array.isArray(data) ? data : [];
+        setCurriculums(list);
+        if (list.length > 0) {
+          setSelectedCurriculum(list[0]);
+        } else {
+          setSelectedCurriculum(null);
+        }
+      })
+      .catch(() => {
+        setCurriculums([]);
+        setSelectedCurriculum(null);
+      })
+      .finally(() => setLoadingCurriculums(false));
   }, []);
 
   useEffect(() => {
@@ -120,6 +140,7 @@ export function NewRunModal({
 
     let cancelled = false;
     setLoadingPdfMetadata(true);
+    setManualPdfMetadata(null); // Clear immediately to avoid rendering stale pages
 
     fetch('/api/pdf-metadata', {
       method: 'POST',
@@ -269,6 +290,7 @@ export function NewRunModal({
         config_path: configPath,
         workflow_mode: 'stable',
         keep_run_artifacts: true,
+        curriculum_pdf: selectedCurriculum?.relative_path ?? null,
       }),
     });
     if (!res.ok) {
@@ -446,6 +468,53 @@ export function NewRunModal({
                 {!loadingPdfMetadata && manualPdfMetadata && `전체 ${manualPdfMetadata.page_count}페이지`}
                 {!loadingPdfMetadata && !manualPdfMetadata && '페이지 수를 아직 불러오지 못했습니다.'}
               </div>
+            </div>
+          )}
+
+          {selectedTextbook && (
+            <div>
+              <SectionLabel>국가수준 교육과정 선택 (선택 사항)</SectionLabel>
+              {loadingCurriculums ? (
+                <div style={{ color: 'var(--text-muted)', fontSize: 12 }}>교육과정 PDF 불러오는 중...</div>
+              ) : (
+                <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8 }}>
+                  <button
+                    onClick={() => setSelectedCurriculum(null)}
+                    style={{
+                      padding: '10px 14px',
+                      borderRadius: 999,
+                      background: !selectedCurriculum ? 'rgba(239, 68, 68, 0.08)' : 'var(--bg-elevated)',
+                      border: `1px solid ${!selectedCurriculum ? 'rgba(239, 68, 68, 0.3)' : 'var(--border-subtle)'}`,
+                      color: !selectedCurriculum ? 'var(--text-primary)' : 'var(--text-secondary)',
+                      fontSize: 12,
+                      cursor: 'pointer',
+                    }}
+                  >
+                    미사용
+                  </button>
+                  {curriculums.map((pdf) => {
+                    const selected = selectedCurriculum?.path === pdf.path;
+                    return (
+                      <button
+                        key={pdf.path}
+                        onClick={() => setSelectedCurriculum(pdf)}
+                        style={{
+                          padding: '10px 14px',
+                          borderRadius: 999,
+                          background: selected ? 'rgba(139, 92, 246, 0.08)' : 'var(--bg-elevated)',
+                          border: `1px solid ${selected ? 'rgba(139, 92, 246, 0.3)' : 'var(--border-subtle)'}`,
+                          color: selected ? 'var(--text-primary)' : 'var(--text-secondary)',
+                          fontSize: 12,
+                          textAlign: 'center',
+                          cursor: 'pointer',
+                        }}
+                      >
+                        {pdf.filename}
+                      </button>
+                    );
+                  })}
+                </div>
+              )}
             </div>
           )}
 

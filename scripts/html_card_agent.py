@@ -79,3 +79,85 @@ def execute_html_rendering(*, run_root: Path, run_id: str) -> dict:
         "html_manifest_path": html_manifest_path,
         "warning_count": 0,
     }
+
+
+def execute_html_rendering_for_lesson(*, run_root: Path, run_id: str, section_key: str) -> dict:
+    """Render HTML cards for a single lesson (used by lesson-level DAG scheduler)."""
+    import json as _json
+
+    config = render_support.load_run_config(run_root)
+    textbook.ensure_dirs(config)
+    textbook.infer_section_pages(config)
+
+    # Find the target section
+    target_section = None
+    for section in config["sections"]:
+        if contracts.section_artifact_stem(section) == section_key:
+            target_section = section
+            break
+
+    if target_section is None:
+        raise ValueError(f"Section not found for key: {section_key}")
+
+    started_at = contracts.utc_now()
+    lesson_dir = run_root / "sections" / section_key
+    status_path = lesson_dir / "html_card.status.json"
+    html_manifest_path = lesson_dir / "html_manifest.json"
+
+    status = build_status(
+        run_id=run_id,
+        started_at=started_at,
+        input_refs=[str(lesson_dir / "activity_plan.json")],
+        output_refs=[str(html_manifest_path)],
+    )
+    status["lesson_id"] = target_section.get("sheet_name")
+    contracts.write_json(status_path, status)
+
+    warning_count = 0
+
+    # Extract textbook pages for this section only
+    try:
+        textbook_page_assets = textbook.extract_pages_for_section(config, target_section)
+    except AttributeError:
+        # Fallback: extract all pages if per-section method not available
+        textbook_page_assets = textbook.extract_pages(config)
+
+    # Render textbook source cards for this section
+    textbook_html_paths = []
+    for source_card in textbook.section_source_cards(target_section, config):
+        html_path = config["html_dir"] / f"{source_card['card_stem']}.html"
+        html_path.write_text(textbook.render_html(source_card, config), encoding="utf-8")
+        textbook_html_paths.append(html_path)
+
+    # Render activity HTML for this section
+    plan_path = lesson_dir / "activity_plan.json"
+    activity_html_pairs = []
+    if plan_path.exists():
+        plan = numbers_with_activities.load_activity_plan(plan_path)
+        activity_html_pairs = numbers_with_activities.render_activity_html_files(
+            [(plan_path, plan)], config, {"approved", "draft"}
+        )
+
+    html_manifest = {
+        "schema_version": contracts.SCHEMA_VERSION,
+        "run_id": run_id,
+        "section_key": section_key,
+        "generated_at": contracts.utc_now(),
+        "textbook_page_assets": [str(p) for p in textbook_page_assets] if isinstance(textbook_page_assets, list) else [],
+        "textbook_html_paths": [str(p) for p in textbook_html_paths],
+        "activity_html_paths": [str(hp) for _, hp, _ in activity_html_pairs],
+        "activity_plan_paths": [str(plan_path)] if plan_path.exists() else [],
+    }
+    contracts.write_json(html_manifest_path, html_manifest)
+
+    status["status"] = "succeeded"
+    status["finished_at"] = contracts.utc_now()
+    contracts.write_json(status_path, status)
+
+    return {
+        "html_manifest_path": html_manifest_path,
+        "section_key": section_key,
+        "lesson_id": target_section.get("sheet_name"),
+        "warning_count": warning_count,
+    }
+

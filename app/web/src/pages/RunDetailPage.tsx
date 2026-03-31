@@ -5,6 +5,7 @@ import {
   useEventStream,
   fetchAndLoadEvents,
   fetchManifest,
+  fetchJobGraph,
 } from '../hooks/useEventStream';
 import { RunHeader } from '../components/RunHeader';
 import { RunGraph } from '../components/RunGraph';
@@ -21,6 +22,7 @@ export function RunDetailPage() {
     reset();
     setRunId(runId);
     fetchManifest(runId);
+    fetchJobGraph(runId);
     fetchAndLoadEvents(runId);
   }, [runId, reset, setRunId]);
 

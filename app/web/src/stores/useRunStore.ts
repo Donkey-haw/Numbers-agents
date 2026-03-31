@@ -4,6 +4,7 @@ import type {
   RunManifest,
   StageStatus,
   LessonStatus,
+  JobGraph,
 } from '../types/events';
 
 export interface RunState {
@@ -13,6 +14,7 @@ export interface RunState {
   events: RunEvent[];
   nodeStates: Record<string, StageStatus>;
   lessonStates: Record<string, Record<string, LessonStatus>>;
+  jobGraph: JobGraph | null;
 
   /* ui state */
   selectedNode: string | null;
@@ -21,6 +23,7 @@ export interface RunState {
   /* actions */
   setRunId: (id: string | null) => void;
   setManifest: (m: RunManifest) => void;
+  setJobGraph: (g: JobGraph) => void;
   applyEvent: (evt: RunEvent) => void;
   loadEvents: (evts: RunEvent[]) => void;
   selectNode: (stage: string | null) => void;
@@ -34,6 +37,7 @@ const initialState = {
   events: [] as RunEvent[],
   nodeStates: {} as Record<string, StageStatus>,
   lessonStates: {} as Record<string, Record<string, LessonStatus>>,
+  jobGraph: null as JobGraph | null,
   selectedNode: null as string | null,
   expandedNodes: new Set<string>(),
 };
@@ -54,7 +58,9 @@ function applyEventToState(
 
   if (
     (evt.event_type === 'lesson_started' ||
-      evt.event_type === 'lesson_finished') &&
+      evt.event_type === 'lesson_finished' ||
+      evt.event_type === 'job_started' ||
+      evt.event_type === 'job_finished') &&
     evt.stage &&
     evt.lesson_id
   ) {
@@ -83,6 +89,28 @@ export const useRunStore = create<RunState>((set) => ({
     }
     set({ manifest: m, nodeStates });
   },
+
+  setJobGraph: (g) => set((prev) => {
+    const nextLessonStates = { ...prev.lessonStates };
+    
+    // Pre-populate lessonStates so pending jobs show up in the UI
+    for (const job of g.jobs) {
+      if (!nextLessonStates[job.stage]) {
+        nextLessonStates[job.stage] = {};
+      }
+      if (!nextLessonStates[job.stage][job.section_key]) {
+        nextLessonStates[job.stage][job.section_key] = {
+          lesson_id: job.section_key,
+          stage: job.stage,
+          status: (job.status as StageStatus) ?? 'pending',
+          fallback_used: false,
+          warning_used: false,
+        };
+      }
+    }
+    
+    return { jobGraph: g, lessonStates: nextLessonStates };
+  }),
 
   applyEvent: (evt) =>
     set((prev) => {

@@ -1,0 +1,88 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-03-30T15:22:41.222457+00:00",
+  "lesson_id": "9-10차시",
+  "sheet_name": "9-10차시",
+  "lesson_title": "국가기관이 하는 일 — 국회의 구성과 하는 일 파악하기",
+  "lesson_type": "core",
+  "pdf_pages": [
+    74
+  ],
+  "essential_question": "국회는 어떻게 구성되며, 국민을 위해 어떤 중요한 일을 수행하나요?",
+  "learning_goals": [
+    "국회가 국민의 대표 기관임을 이해하고 국회의원의 구성과 임기를 설명할 수 있다.",
+    "국회가 법을 만들고 고치는 입법 활동의 중요성을 설명할 수 있다.",
+    "국회 본회의장의 구조와 기능을 통해 국회의 의사 결정 과정을 파악할 수 있다."
+  ],
+  "key_concepts": [
+    "국민의 대표 기관",
+    "국회의원",
+    "입법",
+    "본회의",
+    "국회 의사당"
+  ],
+  "vocabulary": [
+    "국회",
+    "국회의원",
+    "임기",
+    "본회의",
+    "발언대",
+    "전광판",
+    "전자 투표"
+  ],
+  "misconceptions": [
+    "국회가 단순히 회의만 하는 곳이라고 생각할 수 있으나, 법을 만드는 입법권이 핵심임을 강조해야 함.",
+    "국회의원이 국민의 뜻과 상관없이 법을 만든다고 오해할 수 있으나, 선거로 선출된 대표임을 명시함."
+  ],
+  "difficulty_band": "on-level",
+  "content_chunks": [
+    {
+      "chunk_id": "9-10차시-chunk-1",
+      "label": "국회의 의미와 구성",
+      "content_type": "text",
+      "knowledge_type": "concept",
+      "summary": "국회는 선거로 선출된 국민의 대표인 국회의원(임기 4년)으로 구성된 국민의 대표 기관이다.",
+      "source_pages": [
+        74
+      ],
+      "suggested_activity_types": [
+        "정의 정리",
+        "수치 확인(임기)"
+      ]
+    },
+    {
+      "chunk_id": "9-10차시-chunk-2",
+      "label": "국회가 하는 일(입법)",
+      "content_type": "text",
+      "knowledge_type": "fact",
+      "summary": "국회는 법을 만들고 고치는 일을 하며, 이는 국가 권력 행사의 근거가 되는 가장 중요한 역할이다.",
+      "source_pages": [
+        74
+      ],
+      "suggested_activity_types": [
+        "사례 분석",
+        "토론"
+      ]
+    },
+    {
+      "chunk_id": "9-10차시-chunk-3",
+      "label": "국회 본회의장 구조",
+      "content_type": "diagram",
+      "knowledge_type": "procedure",
+      "summary": "본회의장은 국회의 의사를 최종적으로 결정하는 곳으로 발언대, 전광판, 국회의원석 등으로 구성되어 전자 투표와 회의가 이루어진다.",
+      "source_pages": [
+        74
+      ],
+      "suggested_activity_types": [
+        "시각적 분석",
+        "역할극"
+      ]
+    }
+  ],
+  "source_page_refs": [
+    74
+  ],
+  "analysis_confidence": 0.95,
+  "review_status": "draft",
+  "notes": "텍스트북 추출 내용(74쪽)을 바탕으로 국회의 구성, 주요 임무(입법), 본회의장 구조를 상세화함. 11차시(행정부)와 경계가 명확함."
+}

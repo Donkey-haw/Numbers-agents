@@ -1,0 +1,124 @@
+{
+  "schema_version": "1.0.0",
+  "stage": "review_source_boundary",
+  "lesson_id": null,
+  "status": "succeeded",
+  "decision": "pass",
+  "findings": [],
+  "blocking_issues": [],
+  "warnings": [],
+  "entries": [
+    {
+      "lesson_id": "1차시",
+      "resource_id": "main",
+      "role": "textbook",
+      "title_query": "배울 내용 살펴보기",
+      "start_page": 1,
+      "end_page": 4,
+      "start_match_pages": [
+        1
+      ],
+      "start_match_count": 1,
+      "end_strategy": "explicit_pages",
+      "end_reference_query": null,
+      "intro_boundary_page": null,
+      "status": "matched"
+    },
+    {
+      "lesson_id": "2-3차시",
+      "resource_id": "main",
+      "role": "textbook",
+      "title_query": "전기문을 읽고 인물이 추구하는 가치 알기",
+      "start_page": 5,
+      "end_page": 14,
+      "start_match_pages": [
+        5
+      ],
+      "start_match_count": 1,
+      "end_strategy": "explicit_pages",
+      "end_reference_query": null,
+      "intro_boundary_page": null,
+      "status": "matched"
+    },
+    {
+      "lesson_id": "4-6차시",
+      "resource_id": "main",
+      "role": "textbook",
+      "title_query": "작품을 읽고 시대적 상황과 인물이 추구하는 가치에 대하여 질문하기",
+      "start_page": 15,
+      "end_page": 26,
+      "start_match_pages": [
+        15
+      ],
+      "start_match_count": 1,
+      "end_strategy": "explicit_pages",
+      "end_reference_query": null,
+      "intro_boundary_page": null,
+      "status": "matched"
+    },
+    {
+      "lesson_id": "7-8차시",
+      "resource_id": "main",
+      "role": "textbook",
+      "title_query": "인물이 추구하는 가치를 자신의 삶과 관련짓기",
+      "start_page": 27,
+      "end_page": 38,
+      "start_match_pages": [
+        27
+      ],
+      "start_match_count": 1,
+      "end_strategy": "explicit_pages",
+      "end_reference_query": null,
+      "intro_boundary_page": null,
+      "status": "matched"
+    },
+    {
+      "lesson_id": "9-11차시",
+      "resource_id": "main",
+      "role": "textbook",
+      "title_query": "작품을 읽고 독서 감상문 쓰기",
+      "start_page": 39,
+      "end_page": 48,
+      "start_match_pages": [
+        39
+      ],
+      "start_match_count": 1,
+      "end_strategy": "explicit_pages",
+      "end_reference_query": null,
+      "intro_boundary_page": null,
+      "status": "matched"
+    },
+    {
+      "lesson_id": "12-13차시",
+      "resource_id": "main",
+      "role": "textbook",
+      "title_query": "배운 내용 실천하기",
+      "start_page": 49,
+      "end_page": 50,
+      "start_match_pages": [
+        49
+      ],
+      "start_match_count": 1,
+      "end_strategy": "explicit_pages",
+      "end_reference_query": null,
+      "intro_boundary_page": null,
+      "status": "matched"
+    },
+    {
+      "lesson_id": "14차시",
+      "resource_id": "main",
+      "role": "textbook",
+      "title_query": "마무리하기",
+      "start_page": 51,
+      "end_page": 54,
+      "start_match_pages": [
+        51
+      ],
+      "start_match_count": 1,
+      "end_strategy": "explicit_pages",
+      "end_reference_query": null,
+      "intro_boundary_page": null,
+      "status": "matched"
+    }
+  ]
+}

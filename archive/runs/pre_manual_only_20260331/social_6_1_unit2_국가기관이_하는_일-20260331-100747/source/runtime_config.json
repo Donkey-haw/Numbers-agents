@@ -1,0 +1,339 @@
+{
+  "project_root": "/Users/jonyeock/Desktop/Tool/NumbersAuto",
+  "pdf_path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/textbook/사회/[사회]6_1_교과서.pdf",
+  "template_path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/빈 넘버스 파일.numbers",
+  "output_file": "/Users/jonyeock/Desktop/Tool/NumbersAuto/output/social_6_1_unit2_국가기관이_하는_일.numbers",
+  "footer": "사회 6-1 · 2단원 · 국가기관이 하는 일",
+  "source_chart": "configs/charts/social_6_1_progress_chart.json",
+  "sections": [
+    {
+      "sheet_name": "8차시",
+      "card_file": "social_6_1_unit2_국가기관이_하는_일_8차시",
+      "title": "국가기관의 의미 알아보기",
+      "title_query": "국가기관의 의미 알아보기",
+      "badge": "8차시",
+      "accent": [
+        "#6366f1",
+        "#818cf8"
+      ],
+      "sources": [
+        {
+          "resource_id": "main",
+          "role": "textbook",
+          "title_query": "국가기관의 의미 알아보기",
+          "_inference": {
+            "status": "matched",
+            "start_page": 54,
+            "end_page": 73,
+            "start_query": "국가기관의 의미 알아보기",
+            "start_match_pages": [
+              54,
+              83,
+              88,
+              114,
+              118
+            ],
+            "start_match_count": 5,
+            "end_strategy": "boundary_decision_agent",
+            "end_reference_query": null,
+            "intro_boundary_page": null,
+            "reason": "Transitional heuristic: choose highest-ranked candidate and cut before next lesson candidate",
+            "confidence": 0.55
+          },
+          "pdf_pages": [
+            54,
+            55,
+            56,
+            57,
+            58,
+            59,
+            60,
+            61,
+            62,
+            63,
+            64,
+            65,
+            66,
+            67,
+            68,
+            69,
+            70,
+            71,
+            72,
+            73
+          ]
+        }
+      ],
+      "source_ranges": [
+        {
+          "resource_id": "main",
+          "role": "textbook",
+          "pdf_pages": [
+            54,
+            55,
+            56,
+            57,
+            58,
+            59,
+            60,
+            61,
+            62,
+            63,
+            64,
+            65,
+            66,
+            67,
+            68,
+            69,
+            70,
+            71,
+            72,
+            73
+          ]
+        }
+      ],
+      "pdf_pages": [
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73
+      ]
+    },
+    {
+      "sheet_name": "9-10차시",
+      "card_file": "social_6_1_unit2_국가기관이_하는_일_9_10차시",
+      "title": "국회의 구성과 하는 일 파악하기",
+      "title_query": "국회의 구성과 하는 일 파악하기",
+      "badge": "9-10차시",
+      "accent": [
+        "#4f46e5",
+        "#7c3aed"
+      ],
+      "sources": [
+        {
+          "resource_id": "main",
+          "role": "textbook",
+          "title_query": "국회의 구성과 하는 일 파악하기",
+          "_inference": {
+            "status": "matched",
+            "start_page": 74,
+            "end_page": 74,
+            "start_query": "국회의 구성과 하는 일 파악하기",
+            "start_match_pages": [
+              74,
+              80,
+              81,
+              82,
+              87
+            ],
+            "start_match_count": 5,
+            "end_strategy": "boundary_decision_agent",
+            "end_reference_query": null,
+            "intro_boundary_page": null,
+            "reason": "Transitional heuristic: choose highest-ranked candidate and cut before next lesson candidate",
+            "confidence": 0.45
+          },
+          "pdf_pages": [
+            74
+          ]
+        }
+      ],
+      "source_ranges": [
+        {
+          "resource_id": "main",
+          "role": "textbook",
+          "pdf_pages": [
+            74
+          ]
+        }
+      ],
+      "pdf_pages": [
+        74
+      ]
+    },
+    {
+      "sheet_name": "11차시",
+      "card_file": "social_6_1_unit2_국가기관이_하는_일_11차시",
+      "title": "행정부의 구성과 하는 일 파악하기",
+      "title_query": "행정부의 구성과 하는 일 파악하기",
+      "badge": "11차시",
+      "accent": [
+        "#0f766e",
+        "#14b8a6"
+      ],
+      "sources": [
+        {
+          "resource_id": "main",
+          "role": "textbook",
+          "title_query": "행정부의 구성과 하는 일 파악하기",
+          "_inference": {
+            "status": "matched",
+            "start_page": 74,
+            "end_page": 74,
+            "start_query": "행정부의 구성과 하는 일 파악하기",
+            "start_match_pages": [
+              74,
+              80,
+              81,
+              82,
+              87
+            ],
+            "start_match_count": 5,
+            "end_strategy": "boundary_decision_agent",
+            "end_reference_query": null,
+            "intro_boundary_page": null,
+            "reason": "Transitional heuristic: choose highest-ranked candidate and cut before next lesson candidate",
+            "confidence": 0.45
+          },
+          "pdf_pages": [
+            74
+          ]
+        }
+      ],
+      "source_ranges": [
+        {
+          "resource_id": "main",
+          "role": "textbook",
+          "pdf_pages": [
+            74
+          ]
+        }
+      ],
+      "pdf_pages": [
+        74
+      ]
+    },
+    {
+      "sheet_name": "12차시",
+      "card_file": "social_6_1_unit2_국가기관이_하는_일_12차시",
+      "title": "법원의 구성과 하는 일 파악하기",
+      "title_query": "법원의 구성과 하는 일 파악하기",
+      "badge": "12차시",
+      "accent": [
+        "#1d4ed8",
+        "#3b82f6"
+      ],
+      "sources": [
+        {
+          "resource_id": "main",
+          "role": "textbook",
+          "title_query": "법원의 구성과 하는 일 파악하기",
+          "_inference": {
+            "status": "matched",
+            "start_page": 73,
+            "end_page": 73,
+            "start_query": "법원의 구성과 하는 일 파악하기",
+            "start_match_pages": [
+              73,
+              74,
+              80,
+              81,
+              82
+            ],
+            "start_match_count": 5,
+            "end_strategy": "boundary_decision_agent",
+            "end_reference_query": null,
+            "intro_boundary_page": null,
+            "reason": "Transitional heuristic: choose highest-ranked candidate and cut before next lesson candidate",
+            "confidence": 0.45
+          },
+          "pdf_pages": [
+            73
+          ]
+        }
+      ],
+      "source_ranges": [
+        {
+          "resource_id": "main",
+          "role": "textbook",
+          "pdf_pages": [
+            73
+          ]
+        }
+      ],
+      "pdf_pages": [
+        73
+      ]
+    },
+    {
+      "sheet_name": "13차시",
+      "card_file": "social_6_1_unit2_국가기관이_하는_일_13차시",
+      "title": "권력 분립의 의미와 중요성 탐구하기",
+      "title_query": "권력 분립의 의미와 중요성 탐구하기",
+      "badge": "13차시",
+      "accent": [
+        "#d97706",
+        "#f59e0b"
+      ],
+      "sources": [
+        {
+          "resource_id": "main",
+          "role": "textbook",
+          "title_query": "권력 분립의 의미와 중요성 탐구하기",
+          "_inference": {
+            "status": "matched",
+            "start_page": 54,
+            "end_page": 54,
+            "start_query": "권력 분립의 의미와 중요성 탐구하기",
+            "start_match_pages": [
+              54,
+              71,
+              86,
+              87,
+              90
+            ],
+            "start_match_count": 5,
+            "end_strategy": "boundary_decision_agent",
+            "end_reference_query": null,
+            "intro_boundary_page": null,
+            "reason": "Transitional heuristic: choose highest-ranked candidate and cut before next lesson candidate",
+            "confidence": 0.45
+          },
+          "pdf_pages": [
+            54
+          ]
+        }
+      ],
+      "source_ranges": [
+        {
+          "resource_id": "main",
+          "role": "textbook",
+          "pdf_pages": [
+            54
+          ]
+        }
+      ],
+      "pdf_pages": [
+        54
+      ]
+    }
+  ],
+  "end_before_query": "미디어의 의미 알아보기",
+  "pages_dir": "/Users/jonyeock/Desktop/Tool/NumbersAuto/assets/pages",
+  "cards_dir": "/Users/jonyeock/Desktop/Tool/NumbersAuto/assets/cards",
+  "html_dir": "/Users/jonyeock/Desktop/Tool/NumbersAuto/html",
+  "resources": [
+    {
+      "resource_id": "main",
+      "label": "교과서",
+      "kind": "textbook",
+      "pdf_path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/textbook/사회/[사회]6_1_교과서.pdf"
+    }
+  ]
+}

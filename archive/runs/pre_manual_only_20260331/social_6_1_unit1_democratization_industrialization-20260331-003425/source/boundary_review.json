@@ -1,0 +1,165 @@
+{
+  "schema_version": "1.0.0",
+  "stage": "review_source_boundary",
+  "lesson_id": null,
+  "status": "succeeded_with_warning",
+  "decision": "pass_with_warning",
+  "findings": [
+    {
+      "severity": "warning",
+      "message": "7차시의 경계 판정 신뢰도가 낮습니다.",
+      "evidence_refs": [
+        "lesson-001"
+      ]
+    },
+    {
+      "severity": "warning",
+      "message": "8-9차시의 시작 페이지가 이전 차시와 겹칩니다.",
+      "evidence_refs": [
+        "lesson-002"
+      ]
+    },
+    {
+      "severity": "warning",
+      "message": "8-9차시의 경계 판정 신뢰도가 낮습니다.",
+      "evidence_refs": [
+        "lesson-002"
+      ]
+    },
+    {
+      "severity": "warning",
+      "message": "10차시의 경계 판정 신뢰도가 낮습니다.",
+      "evidence_refs": [
+        "lesson-003"
+      ]
+    },
+    {
+      "severity": "warning",
+      "message": "11차시의 경계 판정 신뢰도가 낮습니다.",
+      "evidence_refs": [
+        "lesson-004"
+      ]
+    },
+    {
+      "severity": "warning",
+      "message": "12-13차시의 시작 페이지가 이전 차시와 겹칩니다.",
+      "evidence_refs": [
+        "lesson-005"
+      ]
+    },
+    {
+      "severity": "warning",
+      "message": "12-13차시의 경계 판정 신뢰도가 낮습니다.",
+      "evidence_refs": [
+        "lesson-005"
+      ]
+    }
+  ],
+  "blocking_issues": [],
+  "warnings": [
+    "lesson-001: boundary is low_confidence",
+    "lesson-002: start_page overlaps with previous lesson boundary",
+    "lesson-002: boundary is low_confidence",
+    "lesson-003: boundary is low_confidence",
+    "lesson-004: boundary is low_confidence",
+    "lesson-005: start_page overlaps with previous lesson boundary",
+    "lesson-005: boundary is low_confidence"
+  ],
+  "entries": [
+    {
+      "lesson_id": "lesson-001",
+      "sheet_name": "7차시",
+      "resource_id": "main",
+      "role": "textbook",
+      "title_query": "민주화 운동은 왜 일어났을까요?",
+      "start_page": 28,
+      "end_page": 28,
+      "evidence_pages": [
+        28,
+        29,
+        30,
+        31,
+        50
+      ],
+      "status": "low_confidence",
+      "confidence": 0.45,
+      "reason": "Transitional heuristic: choose highest-ranked candidate and cut before next lesson candidate"
+    },
+    {
+      "lesson_id": "lesson-002",
+      "sheet_name": "8-9차시",
+      "resource_id": "main",
+      "role": "textbook",
+      "title_query": "민주화를 위한 노력을 살펴볼까요?",
+      "start_page": 10,
+      "end_page": 27,
+      "evidence_pages": [
+        10,
+        12,
+        23,
+        25,
+        28
+      ],
+      "status": "low_confidence",
+      "confidence": 0.55,
+      "reason": "Transitional heuristic: choose highest-ranked candidate and cut before next lesson candidate"
+    },
+    {
+      "lesson_id": "lesson-003",
+      "sheet_name": "10차시",
+      "resource_id": "main",
+      "role": "textbook",
+      "title_query": "민주화 이후 우리 사회는 어떻게 달라졌을까요?",
+      "start_page": 28,
+      "end_page": 40,
+      "evidence_pages": [
+        28,
+        36,
+        47,
+        50,
+        72
+      ],
+      "status": "low_confidence",
+      "confidence": 0.55,
+      "reason": "Transitional heuristic: choose highest-ranked candidate and cut before next lesson candidate"
+    },
+    {
+      "lesson_id": "lesson-004",
+      "sheet_name": "11차시",
+      "resource_id": "main",
+      "role": "textbook",
+      "title_query": "우리나라는 어떻게 산업화를 이루었을까요?",
+      "start_page": 41,
+      "end_page": 41,
+      "evidence_pages": [
+        41,
+        44,
+        50,
+        62,
+        72
+      ],
+      "status": "low_confidence",
+      "confidence": 0.45,
+      "reason": "Transitional heuristic: choose highest-ranked candidate and cut before next lesson candidate"
+    },
+    {
+      "lesson_id": "lesson-005",
+      "sheet_name": "12-13차시",
+      "resource_id": "main",
+      "role": "textbook",
+      "title_query": "산업화로 사람들의 생활은 어떻게 달라졌을까요? / 주제 마무리",
+      "start_page": 20,
+      "end_page": 20,
+      "evidence_pages": [
+        20,
+        28,
+        46,
+        50,
+        180
+      ],
+      "status": "low_confidence",
+      "confidence": 0.45,
+      "reason": "Transitional heuristic: choose highest-ranked candidate and cut before next lesson candidate"
+    }
+  ]
+}

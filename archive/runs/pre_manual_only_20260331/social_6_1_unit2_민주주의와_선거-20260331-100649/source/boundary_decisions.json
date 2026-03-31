@@ -1,0 +1,69 @@
+{
+  "schema_version": "1.0.0",
+  "boundaries": [
+    {
+      "lesson_id": "lesson-001",
+      "resource_id": "main",
+      "status": "low_confidence",
+      "start_page": 54,
+      "end_page": 54,
+      "reason": "Transitional heuristic: choose highest-ranked candidate and cut before next lesson candidate",
+      "confidence": 0.45,
+      "evidence_pages": [
+        54,
+        62,
+        63,
+        172,
+        180
+      ]
+    },
+    {
+      "lesson_id": "lesson-002",
+      "resource_id": "main",
+      "status": "low_confidence",
+      "start_page": 54,
+      "end_page": 54,
+      "reason": "Transitional heuristic: choose highest-ranked candidate and cut before next lesson candidate",
+      "confidence": 0.45,
+      "evidence_pages": [
+        54,
+        58,
+        90,
+        94,
+        172
+      ]
+    },
+    {
+      "lesson_id": "lesson-003",
+      "resource_id": "main",
+      "status": "low_confidence",
+      "start_page": 54,
+      "end_page": 54,
+      "reason": "Transitional heuristic: choose highest-ranked candidate and cut before next lesson candidate",
+      "confidence": 0.45,
+      "evidence_pages": [
+        54,
+        55,
+        56,
+        57,
+        62
+      ]
+    },
+    {
+      "lesson_id": "lesson-004",
+      "resource_id": "main",
+      "status": "low_confidence",
+      "start_page": 32,
+      "end_page": 32,
+      "reason": "Transitional heuristic: choose highest-ranked candidate and cut before next lesson candidate",
+      "confidence": 0.45,
+      "evidence_pages": [
+        32,
+        54,
+        64,
+        82,
+        104
+      ]
+    }
+  ]
+}

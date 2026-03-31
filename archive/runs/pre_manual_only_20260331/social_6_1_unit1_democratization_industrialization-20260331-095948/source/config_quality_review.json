@@ -1,0 +1,52 @@
+{
+  "schema_version": "1.0.0",
+  "stage": "review_source_config",
+  "lesson_id": null,
+  "status": "succeeded_with_warning",
+  "decision": "pass_with_warning",
+  "findings": [
+    {
+      "severity": "warning",
+      "message": "7차시의 시작 쿼리가 여러 페이지에 매칭됩니다.",
+      "evidence_refs": [
+        "민주화 운동은 왜 일어났을까요?"
+      ]
+    },
+    {
+      "severity": "warning",
+      "message": "8-9차시의 시작 쿼리가 여러 페이지에 매칭됩니다.",
+      "evidence_refs": [
+        "민주화를 위한 노력을 살펴볼까요?"
+      ]
+    },
+    {
+      "severity": "warning",
+      "message": "10차시의 시작 쿼리가 여러 페이지에 매칭됩니다.",
+      "evidence_refs": [
+        "민주화 이후 우리 사회는 어떻게 달라졌을까요?"
+      ]
+    },
+    {
+      "severity": "warning",
+      "message": "11차시의 시작 쿼리가 여러 페이지에 매칭됩니다.",
+      "evidence_refs": [
+        "우리나라는 어떻게 산업화를 이루었을까요?"
+      ]
+    },
+    {
+      "severity": "warning",
+      "message": "12-13차시의 시작 쿼리가 여러 페이지에 매칭됩니다.",
+      "evidence_refs": [
+        "산업화로 사람들의 생활은 어떻게 달라졌을까요?"
+      ]
+    }
+  ],
+  "blocking_issues": [],
+  "warnings": [
+    "7차시: source 'main' title_query matched 5 pages",
+    "8-9차시: source 'main' title_query matched 5 pages",
+    "10차시: source 'main' title_query matched 5 pages",
+    "11차시: source 'main' title_query matched 5 pages",
+    "12-13차시: source 'main' title_query matched 5 pages"
+  ]
+}

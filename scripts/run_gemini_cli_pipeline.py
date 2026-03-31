@@ -2,9 +2,13 @@ import argparse
 import asyncio
 import concurrent.futures
 import json
+import os
 import re
+import selectors
+import signal
 import subprocess
 import sys
+import time
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -17,10 +21,12 @@ if str(SCRIPT_DIR) not in sys.path:
     sys.path.insert(0, str(SCRIPT_DIR))
 
 import draft_config_from_progress_chart as chart_draft  # noqa: E402
+import agent_runtime  # noqa: E402
 import generate_activity_plan as activity_plan_builder  # noqa: E402
 import generate_lesson_analysis as lesson_analysis_builder  # noqa: E402
 import generate_numbers_lesson as textbook  # noqa: E402
 import generate_numbers_with_activities as numbers_with_activities  # noqa: E402
+import pipeline_contracts as contracts  # noqa: E402
 
 
 PROMPTS_DIR = PROJECT_ROOT / "prompts" / "gemini"
@@ -29,6 +35,12 @@ PROMPT_CACHE: dict[str, str] = {}
 TEXT_CACHE: dict[Path, str] = {}
 SCHEMA_CACHE: dict[Path, dict] = {}
 LAST_ARTIFACT_ROOT: Path | None = None
+LESSON_CONTEXT_TEXT_LIMIT = 3000
+EARLY_ABORT_PATTERNS = (
+    "exhausted your capacity on this model",
+    "quota will reset after",
+    "rate limit exceeded",
+)
 ACTIVITY_PLAN_EXAMPLE = {
     "schema_version": "1.0.0",
     "generated_at": "2026-01-01T00:00:00+00:00",
@@ -80,7 +92,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--max-workers", type=int, default=2, help="Max concurrent lesson workers for Gemini stages")
     parser.add_argument("--keep-artifacts", action="store_true", help="Keep generated assets from downstream renderer")
     parser.add_argument("--debug-artifacts", action="store_true", help="Keep Gemini prompt/raw/wrapper debug artifacts")
-    parser.add_argument("--gemini-timeout-sec", type=int, default=90, help="Timeout for each Gemini CLI call")
+    parser.add_argument("--gemini-timeout-sec", type=int, default=120, help="Timeout for each Gemini CLI call")
     parser.add_argument("--dry-run", action="store_true", help="Stop after AI JSON generation")
     parser.add_argument(
         "--include-status",
@@ -146,14 +158,83 @@ def extract_last_json_object(text: str) -> dict:
     raise ValueError("Could not find trailing JSON object in Gemini CLI output")
 
 
+def extract_json_code_fence(text: str) -> dict | None:
+    patterns = [
+        r"```json\s*(\{.*?\})\s*```",
+        r"```\s*(\{.*?\})\s*```",
+    ]
+    for pattern in patterns:
+        matches = re.findall(pattern, text, flags=re.DOTALL | re.IGNORECASE)
+        for candidate in reversed(matches):
+            try:
+                parsed = json.loads(candidate)
+            except json.JSONDecodeError:
+                continue
+            if isinstance(parsed, dict):
+                return parsed
+    return None
+
+
+def extract_any_json_object(text: str) -> dict:
+    fenced = extract_json_code_fence(text)
+    if fenced is not None:
+        return fenced
+
+    starts = [index for index, char in enumerate(text) if char == "{"]  # nosec B105
+    decoder = json.JSONDecoder()
+    for start in starts:
+        try:
+            parsed, _ = decoder.raw_decode(text[start:])
+        except json.JSONDecodeError:
+            continue
+        if isinstance(parsed, dict):
+            return parsed
+    raise ValueError("Could not find any JSON object in Gemini CLI output")
+
+
 def extract_json_from_response_text(text: str) -> dict:
     try:
         parsed = json.loads(text)
     except json.JSONDecodeError:
-        parsed = extract_last_json_object(text)
+        try:
+            parsed = extract_last_json_object(text)
+        except ValueError:
+            parsed = extract_any_json_object(text)
+    if isinstance(parsed, dict) and isinstance(parsed.get("response"), str):
+        response_text = parsed.get("response", "").strip()
+        if response_text:
+            try:
+                nested = json.loads(response_text)
+            except json.JSONDecodeError:
+                try:
+                    nested = extract_last_json_object(response_text)
+                except ValueError:
+                    nested = extract_any_json_object(response_text)
+            if isinstance(nested, dict):
+                parsed = nested
     if not isinstance(parsed, dict):
         raise ValueError("Gemini response did not contain a JSON object")
     return parsed
+
+
+def classify_gemini_failure(exc: Exception) -> tuple[str, str]:
+    message = str(exc).strip()
+    lowered = message.lower()
+    if "aborterror" in lowered or "the user aborted a request" in lowered:
+        return "aborted", message
+    if "timed out" in lowered:
+        return "timeout", message
+    if "capacity/rate-limit condition" in lowered:
+        return "capacity_or_rate_limit", message
+    if "exhausted your capacity" in lowered or "quota will reset after" in lowered or "rate limit exceeded" in lowered:
+        return "capacity_or_rate_limit", message
+    if "did not contain a json object" in lowered or "could not find any json object" in lowered:
+        return "invalid_json", message
+    if "json" in lowered:
+        return "invalid_json", message
+    if "field" in lowered or "schema" in lowered or "validation" in lowered:
+        return "validation_error", message
+    return "unknown", message
 
 
 def invoke_gemini_json(
@@ -165,8 +246,13 @@ def invoke_gemini_json(
     gemini_extensions: list[str],
     approval_mode: str,
     debug_artifacts: bool,
-    timeout_sec: int,
+    timeout_sec: int | None,
+    idle_timeout_sec: int | None = None,
 ) -> tuple[dict, str]:
+    if timeout_sec is not None and timeout_sec <= 0:
+        timeout_sec = None
+    if idle_timeout_sec is not None and idle_timeout_sec <= 0:
+        idle_timeout_sec = None
     command = [gemini_bin, "-o", "json", "--approval-mode", approval_mode]
     if gemini_model:
         command.extend(["-m", gemini_model])
@@ -179,32 +265,104 @@ def invoke_gemini_json(
     command.extend(["-p", prompt])
 
     try:
-        result = subprocess.run(command, capture_output=True, text=True, check=True, timeout=timeout_sec)
+        process = subprocess.Popen(
+            command,
+            stdout=subprocess.PIPE,
+            stderr=subprocess.PIPE,
+            start_new_session=True,
+        )
+        stdout_chunks: list[bytes] = []
+        stderr_chunks: list[bytes] = []
+        selector = selectors.DefaultSelector()
+        if process.stdout is not None:
+            selector.register(process.stdout, selectors.EVENT_READ)
+        if process.stderr is not None:
+            selector.register(process.stderr, selectors.EVENT_READ)
+        deadline = None if timeout_sec is None else time.monotonic() + timeout_sec
+        last_activity_at = time.monotonic()
+        try:
+            while selector.get_map():
+                if deadline is None:
+                    events = selector.select(timeout=0.5)
+                else:
+                    remaining = max(0.0, deadline - time.monotonic())
+                    if remaining == 0:
+                        raise subprocess.TimeoutExpired(command, timeout_sec)
+                    events = selector.select(timeout=min(0.5, remaining))
+                if idle_timeout_sec is not None and (time.monotonic() - last_activity_at) >= idle_timeout_sec:
+                    raise RuntimeError(f"Gemini CLI idle timeout after {idle_timeout_sec} seconds for {stem}")
+                if not events and process.poll() is not None:
+                    break
+                for key, _ in events:
+                    chunk = os.read(key.fd, 65536)
+                    if not chunk:
+                        selector.unregister(key.fileobj)
+                        continue
+                    last_activity_at = time.monotonic()
+                    if key.fileobj is process.stdout:
+                        stdout_chunks.append(chunk)
+                    else:
+                        stderr_chunks.append(chunk)
+                        stderr_text = b"".join(stderr_chunks).decode("utf-8", errors="replace").lower()
+                        if any(pattern in stderr_text for pattern in EARLY_ABORT_PATTERNS):
+                            raise RuntimeError("Gemini CLI capacity/rate-limit condition detected")
+            process.wait(timeout=1)
+            stdout = b"".join(stdout_chunks).decode("utf-8", errors="replace")
+            stderr = b"".join(stderr_chunks).decode("utf-8", errors="replace")
+        except subprocess.TimeoutExpired as exc:
+            os.killpg(process.pid, signal.SIGTERM)
+            try:
+                process.wait(timeout=5)
+            except subprocess.TimeoutExpired:
+                os.killpg(process.pid, signal.SIGKILL)
+                process.wait()
+            stdout = b"".join(stdout_chunks).decode("utf-8", errors="replace")
+            stderr = b"".join(stderr_chunks).decode("utf-8", errors="replace")
+            if debug_artifacts and stdout:
+                (artifact_dir / f"{stem}.stdout.txt").write_text(stdout, encoding="utf-8")
+            (artifact_dir / f"{stem}.stderr.txt").write_text(
+                ((stderr or "") + f"\n\nTimed out after {timeout_sec} seconds.").strip() + "\n",
+                encoding="utf-8",
+            )
+            raise TimeoutError(f"Gemini CLI timed out after {timeout_sec} seconds for {stem}") from exc
+        except RuntimeError as exc:
+            os.killpg(process.pid, signal.SIGTERM)
+            try:
+                process.wait(timeout=5)
+            except subprocess.TimeoutExpired:
+                os.killpg(process.pid, signal.SIGKILL)
+                process.wait()
+            stdout = b"".join(stdout_chunks).decode("utf-8", errors="replace")
+            stderr = b"".join(stderr_chunks).decode("utf-8", errors="replace")
+            if debug_artifacts and stdout:
+                (artifact_dir / f"{stem}.stdout.txt").write_text(stdout, encoding="utf-8")
+            (artifact_dir / f"{stem}.stderr.txt").write_text(stderr or "", encoding="utf-8")
+            message = str(exc)
+            if "idle timeout" in message.lower():
+                raise RuntimeError(message) from exc
+            raise RuntimeError(f"Gemini CLI aborted early for {stem}: capacity/rate-limit condition") from exc
+        finally:
+            selector.close()
+
+        if process.returncode != 0:
+            if debug_artifacts and stdout:
+                (artifact_dir / f"{stem}.stdout.txt").write_text(stdout, encoding="utf-8")
+            (artifact_dir / f"{stem}.stderr.txt").write_text(stderr or "", encoding="utf-8")
+            raise subprocess.CalledProcessError(process.returncode, command, output=stdout, stderr=stderr)
     except subprocess.CalledProcessError as exc:
         if debug_artifacts:
             (artifact_dir / f"{stem}.stdout.txt").write_text(exc.stdout or "", encoding="utf-8")
         (artifact_dir / f"{stem}.stderr.txt").write_text(exc.stderr or "", encoding="utf-8")
         raise
-    except subprocess.TimeoutExpired as exc:
-        stdout = exc.stdout or ""
-        stderr = exc.stderr or ""
-        if isinstance(stdout, bytes):
-            stdout = stdout.decode("utf-8", errors="replace")
-        if isinstance(stderr, bytes):
-            stderr = stderr.decode("utf-8", errors="replace")
-        if debug_artifacts and stdout:
-            (artifact_dir / f"{stem}.stdout.txt").write_text(stdout, encoding="utf-8")
-        (artifact_dir / f"{stem}.stderr.txt").write_text(
-            (stderr + f"\n\nTimed out after {timeout_sec} seconds.").strip() + "\n",
-            encoding="utf-8",
-        )
-        raise TimeoutError(f"Gemini CLI timed out after {timeout_sec} seconds for {stem}")
 
-    raw_output = result.stdout
+    raw_output = stdout
     stderr_path = artifact_dir / f"{stem}.stderr.txt"
-    stderr_path.write_text(result.stderr, encoding="utf-8")
+    stderr_path.write_text(stderr or "", encoding="utf-8")
 
-    wrapper = extract_last_json_object(raw_output)
+    try:
+        wrapper = extract_last_json_object(raw_output)
+    except ValueError:
+        wrapper = extract_any_json_object(raw_output)
     response_text = wrapper.get("response", "")
     parsed = extract_json_from_response_text(response_text)
     if debug_artifacts:
@@ -341,7 +499,8 @@ def build_textbook_context(config: dict, artifact_dir: Path) -> tuple[list[dict]
             analysis = lesson_analysis_builder.build_analysis(doc, section)
             analyses.append(analysis)
 
-            analysis_path = artifact_dir / "local_baseline" / f"{section['card_file']}.lesson_analysis.json"
+            section_key = contracts.section_artifact_stem(section)
+            analysis_path = artifact_dir / "local_baseline" / f"{section_key}.lesson_analysis.json"
             write_json(analysis_path, analysis)
             analysis_paths.append(analysis_path)
 
@@ -351,6 +510,7 @@ def build_textbook_context(config: dict, artifact_dir: Path) -> tuple[list[dict]
 
             context_sections.append(
                 {
+                    "section_key": section_key,
                     "sheet_name": section["sheet_name"],
                     "lesson_title": section["title"],
                     "title_query": section.get("title_query", section["title"]),
@@ -414,18 +574,196 @@ def build_section_prompt_context(textbook_context: dict, target_sheet_name: str)
     }
 
 
+def build_section_prompt_context_by_key(textbook_context: dict, target_section_key: str) -> dict:
+    sections = textbook_context["sections"]
+    index = next(
+        (position for position, item in enumerate(sections) if item.get("section_key") == target_section_key),
+        None,
+    )
+    if index is None:
+        raise ValueError(f"Could not find section context for '{target_section_key}'")
+
+    current = dict(sections[index])
+    compact_current = {
+        "section_key": current["section_key"],
+        "sheet_name": current["sheet_name"],
+        "lesson_title": current["lesson_title"],
+        "title_query": current["title_query"],
+        "pdf_pages": current["pdf_pages"],
+        "baseline_analysis_path": current["baseline_analysis_path"],
+        "extracted_text": current["extracted_text"][:LESSON_CONTEXT_TEXT_LIMIT],
+        "extracted_text_truncated": len(current["extracted_text"]) > LESSON_CONTEXT_TEXT_LIMIT,
+    }
+
+    neighbors = []
+    for neighbor_index in (index - 1, index + 1):
+        if 0 <= neighbor_index < len(sections):
+            neighbor = sections[neighbor_index]
+            neighbors.append(
+                {
+                    "relation": "previous" if neighbor_index < index else "next",
+                    "section_key": neighbor.get("section_key"),
+                    "sheet_name": neighbor["sheet_name"],
+                    "lesson_title": neighbor["lesson_title"],
+                    "title_query": neighbor["title_query"],
+                    "pdf_pages": neighbor["pdf_pages"],
+                }
+            )
+
+    return {
+        "schema_version": textbook_context.get("schema_version", "1.0.0"),
+        "generated_at": utc_now(),
+        "pdf_path": textbook_context["pdf_path"],
+        "current_section": compact_current,
+        "neighbor_sections": neighbors,
+    }
+
+
+def compact_baseline_for_prompt(baseline_analysis: dict) -> dict:
+    return {
+        "lesson_id": baseline_analysis.get("lesson_id"),
+        "sheet_name": baseline_analysis.get("sheet_name"),
+        "lesson_title": baseline_analysis.get("lesson_title"),
+        "lesson_type": baseline_analysis.get("lesson_type"),
+        "pdf_pages": baseline_analysis.get("pdf_pages", []),
+        "essential_question": baseline_analysis.get("essential_question"),
+        "learning_goals": baseline_analysis.get("learning_goals", [])[:4],
+        "key_concepts": baseline_analysis.get("key_concepts", [])[:6],
+        "vocabulary": baseline_analysis.get("vocabulary", [])[:10],
+        "misconceptions": baseline_analysis.get("misconceptions", [])[:6],
+        "difficulty_band": baseline_analysis.get("difficulty_band"),
+        "content_chunks": [
+            {
+                "chunk_id": chunk.get("chunk_id"),
+                "label": chunk.get("label"),
+                "knowledge_type": chunk.get("knowledge_type"),
+                "summary": chunk.get("summary"),
+                "source_pages": chunk.get("source_pages", []),
+            }
+            for chunk in baseline_analysis.get("content_chunks", [])[:5]
+        ],
+        "source_page_refs": baseline_analysis.get("source_page_refs", [])[:8],
+        "analysis_confidence": baseline_analysis.get("analysis_confidence"),
+        "notes": baseline_analysis.get("notes"),
+    }
+
+
+def compact_schedule_draft_for_prompt(schedule_draft: dict, section: dict) -> dict:
+    entries = schedule_draft.get("sections", [])
+    index = next(
+        (
+            i
+            for i, item in enumerate(entries)
+            if item.get("lesson_title") == section.get("title") and item.get("sheet_name") == section.get("sheet_name")
+        ),
+        None,
+    )
+    if index is None:
+        index = next((i for i, item in enumerate(entries) if item.get("lesson_title") == section.get("title")), None)
+
+    if index is None:
+        window = entries[:3]
+    else:
+        start = max(0, index - 1)
+        end = min(len(entries), index + 2)
+        window = entries[start:end]
+
+    return {
+        "schema_version": schedule_draft.get("schema_version", "1.0.0"),
+        "generated_at": schedule_draft.get("generated_at"),
+        "sections": window,
+    }
+
+
+def compact_section_for_prompt(section: dict) -> dict:
+    textbook_source = next(
+        (source for source in section.get("sources", []) if source.get("role", "textbook") == "textbook"),
+        section.get("sources", [{}])[0] if section.get("sources") else {},
+    )
+    inference = textbook_source.get("_inference", {}) if isinstance(textbook_source, dict) else {}
+    return {
+        "sheet_name": section.get("sheet_name"),
+        "card_file": section.get("card_file"),
+        "title": section.get("title"),
+        "badge": section.get("badge"),
+        "pdf_pages": section.get("pdf_pages", []),
+        "textbook_source": {
+            "resource_id": textbook_source.get("resource_id"),
+            "title_query": textbook_source.get("title_query"),
+            "start_page": inference.get("start_page"),
+            "end_page": inference.get("end_page"),
+            "confidence": inference.get("confidence"),
+            "status": inference.get("status"),
+        },
+    }
+
+
+def compact_lesson_schema_for_prompt() -> dict:
+    return {
+        "required_root_fields": [
+            "schema_version",
+            "generated_at",
+            "lesson_id",
+            "sheet_name",
+            "lesson_title",
+            "pdf_pages",
+            "essential_question",
+            "learning_goals",
+            "key_concepts",
+            "vocabulary",
+            "misconceptions",
+            "content_chunks",
+            "source_page_refs",
+            "analysis_confidence",
+        ],
+        "optional_root_fields": [
+            "lesson_type",
+            "difficulty_band",
+            "review_status",
+            "notes",
+        ],
+        "lesson_type_enum": ["intro", "core", "review", "summary", "mixed"],
+        "difficulty_band_enum": ["core", "on-level", "extension", "mixed"],
+        "review_status_enum": ["draft", "reviewed", "approved", "rejected"],
+        "required_content_chunk_fields": [
+            "chunk_id",
+            "label",
+            "content_type",
+            "knowledge_type",
+            "summary",
+            "source_pages",
+        ],
+        "content_type_enum": ["text", "image", "diagram", "map", "activity", "summary", "mixed"],
+        "knowledge_type_enum": ["fact", "concept", "procedure", "comparison", "cause-effect", "opinion", "application", "mixed"],
+        "constraints": {
+            "pdf_pages_min_items": 1,
+            "learning_goals_min_items": 1,
+            "key_concepts_min_items": 1,
+            "content_chunks_min_items": 1,
+            "source_page_refs_min_items": 1,
+            "analysis_confidence_range": [0, 1],
+            "additional_properties": False,
+        },
+    }
+
+
 def build_lesson_prompt(section: dict, baseline_analysis: dict, schedule_draft: dict, prompt_context: dict) -> str:
-    return (
+    compact_section = compact_section_for_prompt(section)
+    compact_baseline = compact_baseline_for_prompt(baseline_analysis)
+    compact_schedule = compact_schedule_draft_for_prompt(schedule_draft, section)
+    compact_schema = compact_lesson_schema_for_prompt()
+    task_prompt = (
         read_prompt("system_analyze.md")
         + "\n\n"
         + read_prompt("user_analyze.md").format(
-            section_json=json.dumps(section, ensure_ascii=False, indent=2),
-            baseline_json=json.dumps(baseline_analysis, ensure_ascii=False, indent=2),
-            schedule_json=json.dumps(schedule_draft, ensure_ascii=False, indent=2),
+            section_json=json.dumps(compact_section, ensure_ascii=False, indent=2),
+            baseline_json=json.dumps(compact_baseline, ensure_ascii=False, indent=2),
+            schedule_json=json.dumps(compact_schedule, ensure_ascii=False, indent=2),
             context_json=json.dumps(prompt_context, ensure_ascii=False, indent=2),
-            schema_json=read_text(PROJECT_ROOT / "schemas" / "lesson_analysis.schema.json"),
+            schema_json=json.dumps(compact_schema, ensure_ascii=False, indent=2),
         )
     )
+    return agent_runtime.build_agent_prompt(agent_name="lesson_analysis_agent", task_prompt=task_prompt)
 
 
 def build_activity_prompt(analysis: dict) -> str:
@@ -482,7 +820,7 @@ def build_activity_prompt(analysis: dict) -> str:
         "level_enum": ["core", "on-level", "extension"],
         "input_area_type_enum": ["lined", "free-writing", "inline-answer", "grid", "spectrum"],
     }
-    return (
+    task_prompt = (
         read_prompt("system_plan.md")
         + "\n\n"
         + read_prompt("user_plan.md").format(
@@ -491,6 +829,7 @@ def build_activity_prompt(analysis: dict) -> str:
             example_json=json.dumps(ACTIVITY_PLAN_EXAMPLE, ensure_ascii=False, indent=2),
         )
     )
+    return agent_runtime.build_agent_prompt(agent_name="activity_plan_agent", task_prompt=task_prompt)
 
 
 def build_activity_repair_prompt(analysis: dict, candidate_payload: dict, validation_error: str) -> str:
@@ -511,8 +850,8 @@ def normalize_lesson_analysis(ai_payload: dict, baseline: dict) -> dict:
     normalized = json.loads(json.dumps(ai_payload, ensure_ascii=False))
     normalized.setdefault("schema_version", "1.0.0")
     normalized["generated_at"] = utc_now()
+    normalized["lesson_id"] = baseline.get("lesson_id")
     for key in (
-        "lesson_id",
         "sheet_name",
         "lesson_title",
         "lesson_type",
@@ -538,13 +877,13 @@ def normalize_activity_plan(ai_payload: dict, analysis: dict) -> dict:
     normalized = json.loads(json.dumps(ai_payload, ensure_ascii=False))
     normalized.setdefault("schema_version", "1.0.0")
     normalized["generated_at"] = utc_now()
-    normalized.setdefault("lesson_id", analysis["lesson_id"])
+    normalized["lesson_id"] = analysis["lesson_id"]
     activities = normalized.get("activities")
     if not isinstance(activities, list):
         raise ValueError("activity_plan.activities must be a list")
     for index, activity in enumerate(activities, start=1):
         activity.setdefault("activity_id", f"{analysis['lesson_id']}-activity-{index}")
-        activity.setdefault("lesson_id", analysis["lesson_id"])
+        activity["lesson_id"] = analysis["lesson_id"]
         activity.setdefault("object_role", infer_object_role(activity))
         activity.setdefault("lesson_flow_stage", infer_lesson_flow_stage(activity))
         activity.setdefault("learning_goal", analysis["learning_goals"][0])
@@ -616,7 +955,7 @@ def process_section(
     artifact_root: Path,
     args: argparse.Namespace,
 ) -> tuple[int, Path, Path]:
-    section_stem = sanitize_name(section["card_file"])
+    section_stem = contracts.section_artifact_stem(section)
     lesson_dir = artifact_root / "sections" / section_stem
     lesson_dir.mkdir(parents=True, exist_ok=True)
 

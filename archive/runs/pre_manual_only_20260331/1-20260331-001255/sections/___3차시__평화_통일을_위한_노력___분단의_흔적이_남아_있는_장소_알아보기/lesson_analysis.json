@@ -1,0 +1,72 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-03-30T15:15:02.749168+00:00",
+  "lesson_id": "3차시",
+  "sheet_name": "3차시",
+  "lesson_title": "평화 통일을 위한 노력 — 분단의 흔적이 남아 있는 장소 알아보기",
+  "lesson_type": "core",
+  "pdf_pages": [
+    16
+  ],
+  "essential_question": "우리 주변에는 분단의 아픔과 흔적을 보여 주는 어떤 장소들이 남아 있을까?",
+  "learning_goals": [
+    "한반도 곳곳에 남아 있는 분단의 흔적을 찾고 그 역사적 의미를 설명할 수 있다.",
+    "비무장 지대(DMZ), 판문점, 아바이 마을 등 주요 장소의 특징을 이해한다."
+  ],
+  "key_concepts": [
+    "분단의 흔적",
+    "비무장 지대(DMZ)",
+    "군사 분계선(휴전선)",
+    "판문점",
+    "정전 협정"
+  ],
+  "vocabulary": [
+    "비무장 지대(DMZ)",
+    "용치",
+    "방호벽",
+    "정전 협정",
+    "아바이 마을"
+  ],
+  "misconceptions": [
+    "비무장 지대가 단순한 자연 공원이라고 오해할 수 있으나, 국제 조약에 의해 무장이 금지된 군사적 완충 지대임을 명확히 해야 함."
+  ],
+  "difficulty_band": "on-level",
+  "content_chunks": [
+    {
+      "chunk_id": "3차시-chunk-1",
+      "label": "생각 깨우기: 아바이 마을",
+      "content_type": "text",
+      "knowledge_type": "concept",
+      "summary": "속초 아바이 마을의 유래와 벽화를 통해 실향민의 아픔과 분단의 현실을 인식하기",
+      "source_pages": [
+        16
+      ]
+    },
+    {
+      "chunk_id": "3차시-chunk-2",
+      "label": "분단의 현장: DMZ와 판문점",
+      "content_type": "mixed",
+      "knowledge_type": "fact",
+      "summary": "정전 협정으로 설정된 비무장 지대(DMZ)의 정의와 공동 경비 구역인 판문점의 특징 알아보기",
+      "source_pages": [
+        16
+      ]
+    },
+    {
+      "chunk_id": "3차시-chunk-3",
+      "label": "멈춰 선 흔적들",
+      "content_type": "image",
+      "knowledge_type": "concept",
+      "summary": "금강산 철교, 용치, 방호벽 등 전쟁과 분단을 상징하는 시설물을 통해 분단의 아픔 확인하기",
+      "source_pages": [
+        16
+      ]
+    }
+  ],
+  "source_page_refs": [
+    16
+  ],
+  "analysis_confidence": 0.95,
+  "review_status": "draft",
+  "notes": "교과서 16쪽의 텍스트와 이미지 정보를 바탕으로 분석함. 아바이 마을, DMZ, 판문점, 용치 등 핵심 장소와 용어가 명확히 추출됨."
+}

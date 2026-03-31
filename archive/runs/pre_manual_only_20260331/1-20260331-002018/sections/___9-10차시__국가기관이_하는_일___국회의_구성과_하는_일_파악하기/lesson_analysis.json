@@ -1,0 +1,75 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-03-30T15:29:08.190784+00:00",
+  "lesson_id": "9-10차시",
+  "sheet_name": "9-10차시",
+  "lesson_title": "국가기관이 하는 일 — 국회의 구성과 하는 일 파악하기",
+  "lesson_type": "core",
+  "pdf_pages": [
+    74
+  ],
+  "essential_question": "국회는 어떤 사람들로 구성되며, 국민을 위해 어떤 중요한 일을 수행하나요?",
+  "learning_goals": [
+    "국회가 국민의 대표 기관임을 이해하고 그 구성을 설명할 수 있다.",
+    "국회가 법을 만들고 고치는 일이 왜 중요한지 그 이유를 말할 수 있다.",
+    "국회 본회의장의 구조와 기능을 통해 국회의 활동 모습을 파악할 수 있다."
+  ],
+  "key_concepts": [
+    "국민의 대표 기관",
+    "국회의원",
+    "입법(법을 만드는 일)",
+    "본회의",
+    "국회 의사당"
+  ],
+  "vocabulary": [
+    "국회",
+    "국회의원",
+    "임기",
+    "본회의",
+    "검증",
+    "발언대"
+  ],
+  "misconceptions": [
+    "국회의원은 임명되는 것이라고 오해할 수 있으나, 선거를 통해 국민이 직접 선출함을 명확히 한다.",
+    "국회가 단순히 토론만 하는 곳이라고 생각할 수 있으나, 법을 결정하는 최종 의사 결정 기구임을 강조한다."
+  ],
+  "difficulty_band": "on-level",
+  "content_chunks": [
+    {
+      "chunk_id": "9-10차시-chunk-1",
+      "label": "국회의 의미와 구성",
+      "content_type": "text",
+      "knowledge_type": "concept",
+      "summary": "국회는 선거로 선출된 임기 4년의 국회의원들로 구성된 국민의 대표 기관이다.",
+      "source_pages": [
+        74
+      ]
+    },
+    {
+      "chunk_id": "9-10차시-chunk-2",
+      "label": "국회가 하는 가장 중요한 일",
+      "content_type": "text",
+      "knowledge_type": "fact",
+      "summary": "국회는 국민의 뜻에 따라 법을 만들고 고치는 일을 하며, 이는 국가 권력 행사의 근거가 되는 가장 중요한 활동이다.",
+      "source_pages": [
+        74
+      ]
+    },
+    {
+      "chunk_id": "9-10차시-chunk-3",
+      "label": "국회 본회의장의 구조",
+      "content_type": "diagram",
+      "knowledge_type": "fact",
+      "summary": "발언대, 대형 전광판, 국회의원석 등 본회의장의 시설을 통해 국회의 의사를 최종적으로 결정하는 과정을 살펴본다.",
+      "source_pages": [
+        74
+      ]
+    }
+  ],
+  "source_page_refs": [
+    74
+  ],
+  "analysis_confidence": 0.95,
+  "review_status": "draft",
+  "notes": "교과서 74쪽 텍스트와 도판 정보를 바탕으로 국회의 구성과 입법 기능, 본회의장 구조를 상세화함."
+}

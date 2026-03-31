@@ -1,0 +1,64 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-03-30T15:37:04.835545+00:00",
+  "lesson_id": "7차시",
+  "sheet_name": "7차시",
+  "lesson_title": "지구본과 지도로 보는 세계 — 위도와 경도를 이용해 위치를 표현하는 방법 살 펴보기",
+  "pdf_pages": [
+    110
+  ],
+  "essential_question": "세계 여행을 가려면 어떤 공간 자료를 살펴봐야 하며, 위도와 경도로 위치를 어떻게 표현할 수 있을까?",
+  "learning_goals": [
+    "위도와 경도의 의미를 이해하고, 이를 활용해 위치를 표현할 수 있다.",
+    "세계를 표현하는 다양한 공간 자료의 특징을 설명할 수 있다.",
+    "다양한 공간 자료를 활용해 세계의 기초적인 지리 정보를 찾을 수 있다."
+  ],
+  "key_concepts": [
+    "위도",
+    "경도",
+    "위치 표현",
+    "공간 자료",
+    "지구본",
+    "세계 지도"
+  ],
+  "vocabulary": [
+    "위도",
+    "경도",
+    "지구본",
+    "세계 지도",
+    "공간 자료"
+  ],
+  "misconceptions": [
+    "위도와 경도를 단순히 지도상의 선으로만 이해하고, 절대적인 위치를 나타내는 좌표 체계임을 인식하지 못할 수 있음"
+  ],
+  "content_chunks": [
+    {
+      "chunk_id": "7차시-chunk-1",
+      "label": "공간 자료의 특징과 활용",
+      "content_type": "mixed",
+      "knowledge_type": "concept",
+      "summary": "지구본, 세계 지도 등 세계를 표현하는 다양한 공간 자료의 특징을 알아보고, 이를 통해 지리 정보를 찾는 방법을 살펴봅니다.",
+      "source_pages": [
+        110
+      ]
+    },
+    {
+      "chunk_id": "7차시-chunk-2",
+      "label": "위도와 경도를 통한 위치 표현",
+      "content_type": "text",
+      "knowledge_type": "procedure",
+      "summary": "위도와 경도의 개념을 이해하고, 이를 사용하여 특정 장소의 위치를 정확하게 나타내는 방법을 학습합니다.",
+      "source_pages": [
+        110
+      ]
+    }
+  ],
+  "source_page_refs": [
+    110
+  ],
+  "analysis_confidence": 0.95,
+  "lesson_type": "core",
+  "difficulty_band": "on-level",
+  "review_status": "draft",
+  "notes": "교과서 110쪽의 단원 도입 및 학습 목표 텍스트를 기반으로 핵심 질문과 학습 목표를 구체화함. 해당 페이지가 소단원 '지구본과 지도로 보는 세계'의 시작점임을 반영함."
+}

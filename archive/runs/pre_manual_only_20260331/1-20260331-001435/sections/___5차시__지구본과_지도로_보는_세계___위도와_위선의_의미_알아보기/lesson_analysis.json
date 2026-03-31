@@ -1,0 +1,65 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-03-30T15:34:20.653330+00:00",
+  "lesson_id": "5차시",
+  "sheet_name": "5차시",
+  "lesson_title": "지구본과 지도로 보는 세계 — 위도와 위선의 의미 알아보기",
+  "lesson_type": "core",
+  "pdf_pages": [
+    83
+  ],
+  "essential_question": "재판 과정과 법원에서 하는 일은 무엇일까요?",
+  "learning_goals": [
+    "재판에 참여하는 사람들(판사, 검사, 변호인, 피고인)의 역할을 구분하여 설명할 수 있다.",
+    "법원이 재판을 통해 사회적 갈등을 해결하고 법을 집행하는 역할을 함을 이해한다."
+  ],
+  "key_concepts": [
+    "법원",
+    "재판",
+    "판사",
+    "검사",
+    "변호인",
+    "피고인"
+  ],
+  "vocabulary": [
+    "피고인",
+    "변호인",
+    "검사",
+    "판사",
+    "초범",
+    "선고",
+    "구형"
+  ],
+  "misconceptions": [
+    "재판은 오직 범죄자 처벌을 위해서만 존재한다고 생각하기 쉬우나, 억울한 사람이 없도록 권리를 보호하는 역할도 중요함을 인지해야 함."
+  ],
+  "difficulty_band": "on-level",
+  "content_chunks": [
+    {
+      "chunk_id": "5차시-chunk-1",
+      "label": "재판 사례 분석",
+      "content_type": "activity",
+      "knowledge_type": "application",
+      "summary": "나물의 원산지를 속인 피고인의 재판 사례를 통해 실제 재판이 이루어지는 모습을 확인하고 문제 해결 과정을 파악함.",
+      "source_pages": [
+        83
+      ]
+    },
+    {
+      "chunk_id": "5차시-chunk-2",
+      "label": "재판 참여자의 역할",
+      "content_type": "text",
+      "knowledge_type": "concept",
+      "summary": "재판을 진행하고 판결을 내리는 판사, 수사를 담당하는 검사, 피고인의 권리를 보호하는 변호인 등 각 주체의 역할을 정리함.",
+      "source_pages": [
+        83
+      ]
+    }
+  ],
+  "source_page_refs": [
+    83
+  ],
+  "analysis_confidence": 0.85,
+  "review_status": "draft",
+  "notes": "요청된 차시명(위도와 위선)과 제공된 PDF 83쪽의 실제 텍스트(법원의 역할과 재판)가 서로 일치하지 않습니다. 지침에 따라 텍스트 증거를 우선하여 '법원의 역할'에 대한 분석을 수행하였습니다."
+}

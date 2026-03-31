@@ -1,0 +1,75 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-03-31T09:00:00Z",
+  "lesson_id": "14차시",
+  "sheet_name": "14차시",
+  "lesson_title": "1단원 정리 — [단원 마무리] 나만의 누리집 완성하기 / 창의·융 합 사고력 쑥쑥",
+  "lesson_type": "summary",
+  "pdf_pages": [
+    49
+  ],
+  "essential_question": "우리나라의 민주화와 산업화 과정을 어떻게 정리하고, 배운 내용을 바탕으로 나만의 누리집을 완성할 수 있을까?",
+  "learning_goals": [
+    "우리나라의 주요 민주화 운동(4·19, 5·18, 6월 민주 항쟁)과 지방 자치제의 의미를 정리할 수 있다.",
+    "시기별 산업화 과정과 그에 따른 사회 변화 및 문제점을 요약할 수 있다.",
+    "단원의 핵심 내용을 바탕으로 '나만의 누리집'을 기획하고 완성할 수 있다."
+  ],
+  "key_concepts": [
+    "민주화 운동",
+    "지방 자치제",
+    "산업화",
+    "경제 성장",
+    "사회 문제",
+    "누리집 완성"
+  ],
+  "vocabulary": [
+    "민주 항쟁",
+    "지방 자치제",
+    "첨단 산업",
+    "서비스 산업",
+    "누리집"
+  ],
+  "misconceptions": [
+    "산업화가 오직 경제적 풍요만을 가져왔으며 사회적 문제는 부수적인 것이라고 생각할 수 있다.",
+    "민주화 운동이 특정 시기에만 일어난 일회성 사건이라고 오해할 수 있다."
+  ],
+  "difficulty_band": "on-level",
+  "content_chunks": [
+    {
+      "chunk_id": "14차시-chunk-1",
+      "label": "단원 핵심 내용 정리",
+      "content_type": "summary",
+      "knowledge_type": "fact",
+      "summary": "민주화 운동(4·19, 5·18, 6월 민주 항쟁)과 대통령 직선제, 지방 자치제 부활 등 정치적 발전 내용과 1960년대부터 현재까지의 산업화 과정을 도표와 텍스트로 정리함.",
+      "source_pages": [
+        49
+      ]
+    },
+    {
+      "chunk_id": "14차시-chunk-2",
+      "label": "산업화로 인한 변화와 문제점",
+      "content_type": "text",
+      "knowledge_type": "cause-effect",
+      "summary": "가전제품 보급, 교통 및 통신 발달 등 긍정적 변화와 주택 부족, 교통 혼잡, 환경 오염, 노동 문제 등 산업화로 인해 발생한 사회적 문제점을 다룸.",
+      "source_pages": [
+        49
+      ]
+    },
+    {
+      "chunk_id": "14차시-chunk-3",
+      "label": "단원 마무리 활동: 나만의 누리집",
+      "content_type": "activity",
+      "knowledge_type": "application",
+      "summary": "단원에서 배운 민주화와 산업화 관련 지식을 종합하여 자신만의 디지털 누리집(웹사이트) 형태의 포트폴리오를 구상하고 마무리하는 활동.",
+      "source_pages": [
+        49
+      ]
+    }
+  ],
+  "source_page_refs": [
+    49
+  ],
+  "analysis_confidence": 0.95,
+  "review_status": "draft",
+  "notes": "49쪽 텍스트 분석 결과, 민주화 운동과 산업화 전 과정을 요약하는 '단원 마무리' 성격이 강함. baseline의 잘못된 지식 유형(procedure)을 summary 및 cause-effect로 수정하고, 구체적인 역사적 사건명과 경제 발전 단계를 반영함."
+}

@@ -1,0 +1,74 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-03-30T15:13:21.711189+00:00",
+  "lesson_id": "14차시",
+  "sheet_name": "14차시",
+  "lesson_title": "1단원 정리 — [단원 마무리] 나만의 누리집 완성하기 / 창의·융 합 사고력 쑥쑥",
+  "lesson_type": "review",
+  "pdf_pages": [
+    49
+  ],
+  "essential_question": "민주화와 산업화 과정을 통해 우리 사회는 어떻게 변화해 왔으며, 학습한 내용을 어떻게 정리할 수 있을까?",
+  "learning_goals": [
+    "4·19 혁명, 5·18 민주화 운동, 6월 민주 항쟁 등 주요 민주화 운동의 흐름을 정리할 수 있다.",
+    "대통령 직선제와 지방 자치제 부활의 의미를 설명할 수 있다.",
+    "1960년대부터 현재까지의 산업화 과정과 그로 인한 생활 모습의 변화를 요약할 수 있다.",
+    "산업화로 인해 발생한 문제점과 이를 해결하기 위한 노력을 이해하고 단원 내용을 종합할 수 있다."
+  ],
+  "key_concepts": [
+    "민주화 운동",
+    "6월 민주 항쟁",
+    "대통령 직선제",
+    "지방 자치제",
+    "산업화 과정",
+    "생활 문화 변화",
+    "산업화의 문제점"
+  ],
+  "vocabulary": [
+    "직선제",
+    "지방 자치제",
+    "산업화",
+    "첨단 산업",
+    "누리집"
+  ],
+  "misconceptions": [
+    "산업화는 경제적 풍요로움만 가져왔으며 사회적 문제는 발생하지 않았다고 오해할 수 있다.",
+    "민주주의는 단 한 번의 운동으로 완성된 것이 아니라 지속적인 노력을 통해 발전해 온 것임을 간과할 수 있다."
+  ],
+  "difficulty_band": "on-level",
+  "content_chunks": [
+    {
+      "chunk_id": "14차시-chunk-1",
+      "label": "단원 핵심 내용 정리",
+      "content_type": "summary",
+      "knowledge_type": "concept",
+      "summary": "민주화 운동(4·19, 5·18, 6월)의 결과와 민주주의의 발전, 시기별 산업화 과정 및 생활 문화의 변화, 그리고 산업화로 인한 문제점을 종합적으로 정리합니다.",
+      "source_pages": [
+        49
+      ],
+      "suggested_activity_types": [
+        "learning_note",
+        "see_think_wonder"
+      ]
+    },
+    {
+      "chunk_id": "14차시-chunk-2",
+      "label": "나만의 누리집 완성하기 및 단원 게임",
+      "content_type": "activity",
+      "knowledge_type": "application",
+      "summary": "학습한 내용을 바탕으로 나만의 누리집을 완성하고, 단원 게임을 통해 주요 개념을 즐겁게 복습합니다.",
+      "source_pages": [
+        49
+      ],
+      "suggested_activity_types": [
+        "worksheet"
+      ]
+    }
+  ],
+  "source_page_refs": [
+    49
+  ],
+  "analysis_confidence": 0.95,
+  "review_status": "draft",
+  "notes": "단원 마무리 차시로, 민주화와 산업화라는 두 축의 핵심 내용을 시각적 요약과 활동을 통해 복습하는 구성임. 추출된 텍스트의 산업화 시기별 특징과 민주화 운동의 명칭을 명확히 반영함."
+}

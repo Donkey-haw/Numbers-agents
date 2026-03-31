@@ -1,0 +1,16 @@
+{
+  "schema_version": "1.0.0",
+  "stage": "lesson_review_agent",
+  "lesson_id": "5차시",
+  "status": "succeeded",
+  "decision": "pass",
+  "findings": [
+    {
+      "severity": "info",
+      "message": "추출된 텍스트 내용이 법원과 재판에 관한 것이므로, 제목(위도와 위선)과 실제 내용 사이의 불일치가 발견됨. 본 분석은 실제 텍스트 내용인 '법원의 역할'에 집중하여 작성됨.",
+      "evidence_refs": []
+    }
+  ],
+  "blocking_issues": [],
+  "warnings": []
+}

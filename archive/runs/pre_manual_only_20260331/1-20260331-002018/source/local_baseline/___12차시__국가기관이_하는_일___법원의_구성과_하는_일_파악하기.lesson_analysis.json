@@ -1,0 +1,52 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-03-30T15:20:34.968022+00:00",
+  "lesson_id": "12차시",
+  "sheet_name": "12차시",
+  "lesson_title": "국가기관이 하는 일 — 법원의 구성과 하는 일 파악하기",
+  "lesson_type": "core",
+  "pdf_pages": [
+    73
+  ],
+  "essential_question": "국가기관이 하는 일 — 법원의 구성과 하는 일 파악하기",
+  "learning_goals": [
+    "국가기관이 하는 일 — 법원의 구성과 하는 일 파악하기의 핵심 내용을 설명할 수 있다."
+  ],
+  "key_concepts": [
+    "국가기관",
+    "하는",
+    "법원",
+    "구성",
+    "파악하기"
+  ],
+  "vocabulary": [
+    "국가기관",
+    "하는",
+    "법원"
+  ],
+  "misconceptions": [],
+  "difficulty_band": "on-level",
+  "content_chunks": [
+    {
+      "chunk_id": "12차시-chunk-1",
+      "label": "학습 덩어리 1",
+      "content_type": "mixed",
+      "knowledge_type": "cause-effect",
+      "summary": "민주 국가에서 나랏일을 하는 ㄱ ㅎ , ㅎ ㅈ ㅂ , ㅂ ㅇ 을/를 국가기관이라고 한다.",
+      "source_pages": [
+        73
+      ],
+      "suggested_activity_types": [
+        "see_think_wonder",
+        "learning_note",
+        "worksheet"
+      ]
+    }
+  ],
+  "source_page_refs": [
+    73
+  ],
+  "analysis_confidence": 0.75,
+  "review_status": "draft",
+  "notes": "자동 생성 초안. lesson title, key concepts, chunks를 검토 후 승인 필요."
+}

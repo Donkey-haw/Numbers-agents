@@ -1,0 +1,45 @@
+{
+  "schema_version": "1.0.0",
+  "lessons": [
+    {
+      "lesson_id": "lesson-001",
+      "sheet_name": "2-3차시",
+      "display_title": "지구본의 특징 살펴보기",
+      "title_query": "지구본의 특징 살펴보기",
+      "end_before_query": "디지털 공간 영상 정보의 의미 알아보기",
+      "resource_id": "main"
+    },
+    {
+      "lesson_id": "lesson-002",
+      "sheet_name": "4차시",
+      "display_title": "디지털 공간 영상 정보의 의미 알아보기",
+      "title_query": "디지털 공간 영상 정보의 의미 알아보기",
+      "end_before_query": "위도와 위선의 의미 알아보기",
+      "resource_id": "main"
+    },
+    {
+      "lesson_id": "lesson-003",
+      "sheet_name": "5차시",
+      "display_title": "위도와 위선의 의미 알아보기",
+      "title_query": "위도와 위선의 의미 알아보기",
+      "end_before_query": "경도와 경선의 의미 알아보기",
+      "resource_id": "main"
+    },
+    {
+      "lesson_id": "lesson-004",
+      "sheet_name": "6차시",
+      "display_title": "경도와 경선의 의미 알아보기",
+      "title_query": "경도와 경선의 의미 알아보기",
+      "end_before_query": "위도와 경도를 이용해 위치를 표현하는 방법 살펴보기",
+      "resource_id": "main"
+    },
+    {
+      "lesson_id": "lesson-005",
+      "sheet_name": "7차시",
+      "display_title": "위도와 경도를 이용해 위치를 표현하는 방법 살펴보기",
+      "title_query": "위도와 경도를 이용해 위치를 표현하는 방법 살펴보기",
+      "end_before_query": null,
+      "resource_id": "main"
+    }
+  ]
+}

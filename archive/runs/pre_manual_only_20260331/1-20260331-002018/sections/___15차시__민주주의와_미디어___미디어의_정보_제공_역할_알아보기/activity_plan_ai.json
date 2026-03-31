@@ -1,0 +1,77 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-03-31T10:00:00+09:00",
+  "lesson_id": "15차시",
+  "activities": [
+    {
+      "activity_id": "act-15-1",
+      "lesson_id": "15차시",
+      "object_role": "activity_area",
+      "lesson_flow_stage": "during",
+      "activity_type": "freeform_html",
+      "level": "core",
+      "learning_goal": "국민 참여 재판의 의의를 이해하고 배심원의 관점에서 사건을 분석할 수 있다.",
+      "prompt_text": "내가 국민 참여 재판의 배심원이 되었다고 가정하고, 사건의 공정함을 위해 어떤 점을 더 살펴보아야 할지 기록해 봅시다.",
+      "layout_template": "freeform_html",
+      "html_content": "<!DOCTYPE html><html lang='ko'><head><meta charset='UTF-8'><style>body{width:1600px;margin:0;padding:40px;background:transparent;font-family:'Noto Sans KR',sans-serif;box-sizing:border-box;}.card{background:#fff;padding:50px;border-radius:30px;box-shadow:0 10px 30px rgba(0,0,0,0.05);border:1px solid #eee;}.header{display:flex;align-items:center;margin-bottom:40px;}.badge{background:#4A90E2;color:#fff;padding:8px 20px;border-radius:50px;font-weight:700;font-size:1.2rem;margin-right:20px;}.title{font-size:2.2rem;font-weight:900;color:#222;}.scenario-box{background:#f8f9fa;padding:30px;border-radius:20px;border-left:8px solid #4A90E2;margin-bottom:40px;font-size:1.3rem;line-height:1.6;color:#444;}.grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;}.writing-label{font-size:1.4rem;font-weight:700;margin-bottom:15px;color:#333;display:flex;align-items:center;}.writing-label span{background:#eee;padding:4px 12px;border-radius:8px;font-size:1rem;margin-left:10px;}.writing-area{background:#fff;border:3px solid #333;border-radius:20px;min-height:550px;padding:25px;box-shadow:inset 0 2px 10px rgba(0,0,0,0.05);}</style></head><body><div class='card'><div class='header'><div class='badge'>국민 참여 재판</div><div class='title'>배심원의 판결 노트</div></div><div class='scenario-box'><strong>[사건 사례]</strong> 마트에서 원산지를 속여 물건을 판매한 혐의로 재판이 열렸습니다. 판매자는 \"직원의 실수였다\"고 주장하고, 검사는 \"이익을 위해 의도적으로 속였다\"고 주장합니다.</div><div class='grid'><div><div class='writing-label'>내가 주목한 증거와 발언 <span>Pencil로 기록하세요</span></div><div class='writing-area'></div></div><div><div class='writing-label'>나의 최종 의견과 그 이유 <span>공정함을 기준으로 작성하세요</span></div><div class='writing-area'></div></div></div></div></body></html>",
+      "source_refs": [
+        83,
+        85
+      ],
+      "student_writing_zones": [
+        {
+          "zone_id": "evidence_notes",
+          "label": "주목한 증거 기록",
+          "input_area_type": "free-writing",
+          "min_height": 550
+        },
+        {
+          "zone_id": "final_opinion",
+          "label": "최종 의견 및 사유",
+          "input_area_type": "free-writing",
+          "min_height": 550
+        }
+      ],
+      "estimated_minutes": 15,
+      "review_status": "draft"
+    },
+    {
+      "activity_id": "act-15-2",
+      "lesson_id": "15차시",
+      "object_role": "learning_note",
+      "lesson_flow_stage": "after",
+      "activity_type": "freeform_html",
+      "level": "core",
+      "learning_goal": "삼권 분립의 필요성을 이해하고 국가 기관 간의 상호 견제 방식을 도식화할 수 있다.",
+      "prompt_text": "국가 권력이 어느 한 곳에 집중되지 않도록 우리나라는 어떻게 권력을 나누고 서로 견제하고 있나요? 수업 내용을 바탕으로 핵심 관계를 정리해 봅시다.",
+      "layout_template": "freeform_html",
+      "html_content": "<!DOCTYPE html><html lang='ko'><head><meta charset='UTF-8'><style>body{width:1600px;margin:0;padding:40px;background:transparent;font-family:'Noto Sans KR',sans-serif;box-sizing:border-box;}.card{background:#fff;padding:50px;border-radius:30px;border:1px solid #eee;}.header{margin-bottom:50px;text-align:center;}.badge{background:#E67E22;color:#fff;padding:8px 25px;border-radius:50px;font-weight:700;display:inline-block;margin-bottom:15px;}.title{font-size:2.5rem;font-weight:900;color:#2c3e50;}.diagram-container{position:relative;height:800px;margin-top:20px;}.node{position:absolute;width:380px;height:220px;background:#fff;border:3px solid #2c3e50;border-radius:25px;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:20px;box-sizing:border-box;}.node-title{font-size:1.8rem;font-weight:800;margin-bottom:10px;color:#2c3e50;}.node-desc{font-size:1.1rem;color:#7f8c8d;}.arrow-zone{position:absolute;border:2px dashed #bdc3c7;border-radius:15px;background:rgba(236, 240, 241, 0.3);padding:15px;font-size:1.1rem;font-weight:600;color:#34495e;text-align:center;display:flex;align-items:center;justify-content:center;}.node.congress{top:0;left:50%;transform:translateX(-50%);border-color:#2980b9;}.node.government{bottom:0;left:0;border-color:#27ae60;}.node.court{bottom:0;right:0;border-color:#8e44ad;}.arrow-1{top:150px;left:20%;width:300px;height:120px;transform:rotate(-15deg);}.arrow-2{top:150px;right:20%;width:300px;height:120px;transform:rotate(15deg);}.arrow-3{bottom:50px;left:50%;transform:translateX(-50%);width:400px;height:100px;}</style></head><body><div class='card'><div class='header'><div class='badge'>삼권 분립 요약 노트</div><div class='title'>견제와 균형의 삼각형</div></div><div class='diagram-container'><div class='node congress'><div class='node-title'>국회</div><div class='node-desc'>(입법부)</div></div><div class='node government'><div class='node-title'>행정부</div><div class='node-desc'>(정부)</div></div><div class='node court'><div class='node-title'>법원</div><div class='node-desc'>(사법부)</div></div><div class='arrow-zone arrow-1'>국회 ↔ 정부<br>간의 견제 수단 쓰기</div><div class='arrow-zone arrow-2'>국회 ↔ 법원<br>간의 견제 수단 쓰기</div><div class='arrow-zone arrow-3'>정부 ↔ 법원 간의 견제 수단 쓰기</div></div><div style='margin-top:40px; font-size:1.3rem; font-weight:700; color:#e67e22;'>* 힌트: 거부권, 국정 감사, 대법원장 임명 동의 등</div></div></body></html>",
+      "source_refs": [
+        86,
+        87
+      ],
+      "student_writing_zones": [
+        {
+          "zone_id": "check_balance_1",
+          "label": "국회-정부 견제 수단",
+          "input_area_type": "inline-answer",
+          "min_height": 120
+        },
+        {
+          "zone_id": "check_balance_2",
+          "label": "국회-법원 견제 수단",
+          "input_area_type": "inline-answer",
+          "min_height": 120
+        },
+        {
+          "zone_id": "check_balance_3",
+          "label": "정부-법원 견제 수단",
+          "input_area_type": "inline-answer",
+          "min_height": 100
+        }
+      ],
+      "estimated_minutes": 12,
+      "review_status": "draft"
+    }
+  ]
+}

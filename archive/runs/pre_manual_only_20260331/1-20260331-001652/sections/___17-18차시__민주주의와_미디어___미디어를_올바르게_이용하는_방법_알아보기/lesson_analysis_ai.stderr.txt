@@ -1,0 +1,12 @@
+YOLO mode is enabled. All tool calls will be automatically approved.
+Loaded cached credentials.
+YOLO mode is enabled. All tool calls will be automatically approved.
+Loading extension: stitch-skills
+Scheduling MCP context refresh...
+Executing MCP context refresh...
+MCP context refresh complete.
+YOLO mode is enabled. All tool calls will be automatically approved.
+Loaded cached credentials.
+
+
+Timed out after 120 seconds.

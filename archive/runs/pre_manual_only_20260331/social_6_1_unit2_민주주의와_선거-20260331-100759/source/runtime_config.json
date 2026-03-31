@@ -1,0 +1,230 @@
+{
+  "project_root": "/Users/jonyeock/Desktop/Tool/NumbersAuto",
+  "pdf_path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/textbook/사회/[사회]6_1_교과서.pdf",
+  "template_path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/빈 넘버스 파일.numbers",
+  "output_file": "/Users/jonyeock/Desktop/Tool/NumbersAuto/output/social_6_1_unit2_민주주의와_선거.numbers",
+  "footer": "사회 6-1 · 2단원 · 민주주의와 선거",
+  "source_chart": "configs/charts/social_6_1_progress_chart.json",
+  "sections": [
+    {
+      "sheet_name": "2차시",
+      "card_file": "social_6_1_unit2_민주주의와_선거_2차시",
+      "title": "선거의 의미와 중요성 파악하기",
+      "title_query": "선거의 의미와 중요성 파악하기",
+      "badge": "2차시",
+      "accent": [
+        "#6366f1",
+        "#818cf8"
+      ],
+      "sources": [
+        {
+          "resource_id": "main",
+          "role": "textbook",
+          "title_query": "선거의 의미와 중요성 파악하기",
+          "_inference": {
+            "status": "matched",
+            "start_page": 54,
+            "end_page": 54,
+            "start_query": "선거의 의미와 중요성 파악하기",
+            "start_match_pages": [
+              54,
+              62,
+              63,
+              172,
+              180
+            ],
+            "start_match_count": 5,
+            "end_strategy": "boundary_decision_agent",
+            "end_reference_query": null,
+            "intro_boundary_page": null,
+            "reason": "Transitional heuristic: choose highest-ranked candidate and cut before next lesson candidate",
+            "confidence": 0.45
+          },
+          "pdf_pages": [
+            54
+          ]
+        }
+      ],
+      "source_ranges": [
+        {
+          "resource_id": "main",
+          "role": "textbook",
+          "pdf_pages": [
+            54
+          ]
+        }
+      ],
+      "pdf_pages": [
+        54
+      ]
+    },
+    {
+      "sheet_name": "3차시",
+      "card_file": "social_6_1_unit2_민주주의와_선거_3차시",
+      "title": "민주주의에서 선거의 역할 파악하기",
+      "title_query": "민주주의에서 선거의 역할 파악하기",
+      "badge": "3차시",
+      "accent": [
+        "#4f46e5",
+        "#7c3aed"
+      ],
+      "sources": [
+        {
+          "resource_id": "main",
+          "role": "textbook",
+          "title_query": "민주주의에서 선거의 역할 파악하기",
+          "_inference": {
+            "status": "matched",
+            "start_page": 54,
+            "end_page": 54,
+            "start_query": "민주주의에서 선거의 역할 파악하기",
+            "start_match_pages": [
+              54,
+              58,
+              90,
+              94,
+              172
+            ],
+            "start_match_count": 5,
+            "end_strategy": "boundary_decision_agent",
+            "end_reference_query": null,
+            "intro_boundary_page": null,
+            "reason": "Transitional heuristic: choose highest-ranked candidate and cut before next lesson candidate",
+            "confidence": 0.45
+          },
+          "pdf_pages": [
+            54
+          ]
+        }
+      ],
+      "source_ranges": [
+        {
+          "resource_id": "main",
+          "role": "textbook",
+          "pdf_pages": [
+            54
+          ]
+        }
+      ],
+      "pdf_pages": [
+        54
+      ]
+    },
+    {
+      "sheet_name": "4-5차시",
+      "card_file": "social_6_1_unit2_민주주의와_선거_4_5차시",
+      "title": "우리나라의 선거 과정 살펴보기",
+      "title_query": "우리나라의 선거 과정 살펴보기",
+      "badge": "4-5차시",
+      "accent": [
+        "#0f766e",
+        "#14b8a6"
+      ],
+      "sources": [
+        {
+          "resource_id": "main",
+          "role": "textbook",
+          "title_query": "우리나라의 선거 과정 살펴보기",
+          "_inference": {
+            "status": "matched",
+            "start_page": 54,
+            "end_page": 54,
+            "start_query": "우리나라의 선거 과정 살펴보기",
+            "start_match_pages": [
+              54,
+              55,
+              56,
+              57,
+              62
+            ],
+            "start_match_count": 5,
+            "end_strategy": "boundary_decision_agent",
+            "end_reference_query": null,
+            "intro_boundary_page": null,
+            "reason": "Transitional heuristic: choose highest-ranked candidate and cut before next lesson candidate",
+            "confidence": 0.45
+          },
+          "pdf_pages": [
+            54
+          ]
+        }
+      ],
+      "source_ranges": [
+        {
+          "resource_id": "main",
+          "role": "textbook",
+          "pdf_pages": [
+            54
+          ]
+        }
+      ],
+      "pdf_pages": [
+        54
+      ]
+    },
+    {
+      "sheet_name": "6-7차시",
+      "card_file": "social_6_1_unit2_민주주의와_선거_6_7차시",
+      "title": "선거에 적극적으로 참여해야 하는 까닭 알아보기",
+      "title_query": "선거에 적극적으로 참여해야 하는 까닭 알아보기",
+      "badge": "6-7차시",
+      "accent": [
+        "#1d4ed8",
+        "#3b82f6"
+      ],
+      "sources": [
+        {
+          "resource_id": "main",
+          "role": "textbook",
+          "title_query": "선거에 적극적으로 참여해야 하는 까닭 알아보기",
+          "_inference": {
+            "status": "matched",
+            "start_page": 32,
+            "end_page": 32,
+            "start_query": "선거에 적극적으로 참여해야 하는 까닭 알아보기",
+            "start_match_pages": [
+              32,
+              54,
+              64,
+              82,
+              104
+            ],
+            "start_match_count": 5,
+            "end_strategy": "boundary_decision_agent",
+            "end_reference_query": null,
+            "intro_boundary_page": null,
+            "reason": "Transitional heuristic: choose highest-ranked candidate and cut before next lesson candidate",
+            "confidence": 0.45
+          },
+          "pdf_pages": [
+            32
+          ]
+        }
+      ],
+      "source_ranges": [
+        {
+          "resource_id": "main",
+          "role": "textbook",
+          "pdf_pages": [
+            32
+          ]
+        }
+      ],
+      "pdf_pages": [
+        32
+      ]
+    }
+  ],
+  "end_before_query": "국가기관의 의미 알아보기",
+  "pages_dir": "/Users/jonyeock/Desktop/Tool/NumbersAuto/assets/pages",
+  "cards_dir": "/Users/jonyeock/Desktop/Tool/NumbersAuto/assets/cards",
+  "html_dir": "/Users/jonyeock/Desktop/Tool/NumbersAuto/html",
+  "resources": [
+    {
+      "resource_id": "main",
+      "label": "교과서",
+      "kind": "textbook",
+      "pdf_path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/textbook/사회/[사회]6_1_교과서.pdf"
+    }
+  ]
+}

@@ -1,0 +1,197 @@
+{
+  "schema_version": "1.0.0",
+  "run_id": "social_6_1_unit4_globe_world-20260331-094542",
+  "workflow_mode": "stable",
+  "config_path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/configs/social_6_1_unit4_globe_world.json",
+  "selected_unit": "사회_지구본과_지도로_보는_세계",
+  "selected_lessons": [
+    "2-3차시",
+    "4차시",
+    "5차시",
+    "6차시",
+    "7차시"
+  ],
+  "stage_order": [
+    "document_inventory_agent",
+    "pdf_extract_agent",
+    "page_index_agent",
+    "schedule_parse_agent",
+    "lesson_query_agent",
+    "page_candidate_agent",
+    "boundary_decision_agent",
+    "boundary_validation_agent",
+    "source_boundary_agent",
+    "source_validation_agent",
+    "lesson_analysis_agent",
+    "lesson_review_agent",
+    "activity_plan_agent",
+    "activity_review_agent",
+    "html_card_agent",
+    "capture_agent",
+    "numbers_compose_agent",
+    "review_manifest_agent",
+    "verify_agent"
+  ],
+  "started_at": "2026-03-31T00:45:42.605728+00:00",
+  "finished_at": "2026-03-31T00:53:48.665464+00:00",
+  "final_status": "success",
+  "final_output_file": "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit4_globe_world-20260331-094542/output/사회_지구본과_지도로_보는_세계.numbers",
+  "status_summary": [
+    {
+      "stage": "document_inventory_agent",
+      "status": "succeeded",
+      "fallback_used": false,
+      "warning_count": 0,
+      "error_count": 0,
+      "details": {}
+    },
+    {
+      "stage": "pdf_extract_agent",
+      "status": "succeeded",
+      "fallback_used": false,
+      "warning_count": 0,
+      "error_count": 0,
+      "details": {}
+    },
+    {
+      "stage": "page_index_agent",
+      "status": "succeeded",
+      "fallback_used": false,
+      "warning_count": 0,
+      "error_count": 0,
+      "details": {}
+    },
+    {
+      "stage": "schedule_parse_agent",
+      "status": "succeeded",
+      "fallback_used": false,
+      "warning_count": 0,
+      "error_count": 0,
+      "details": {}
+    },
+    {
+      "stage": "lesson_query_agent",
+      "status": "succeeded",
+      "fallback_used": false,
+      "warning_count": 0,
+      "error_count": 0,
+      "details": {}
+    },
+    {
+      "stage": "page_candidate_agent",
+      "status": "succeeded",
+      "fallback_used": false,
+      "warning_count": 0,
+      "error_count": 0,
+      "details": {}
+    },
+    {
+      "stage": "boundary_decision_agent",
+      "status": "succeeded_with_warning",
+      "fallback_used": false,
+      "warning_count": 1,
+      "error_count": 0,
+      "details": {}
+    },
+    {
+      "stage": "boundary_validation_agent",
+      "status": "succeeded_with_warning",
+      "fallback_used": false,
+      "warning_count": 7,
+      "error_count": 0,
+      "details": {}
+    },
+    {
+      "stage": "source_boundary_agent",
+      "status": "succeeded_with_warning",
+      "fallback_used": false,
+      "warning_count": 7,
+      "error_count": 0,
+      "details": {}
+    },
+    {
+      "stage": "source_validation_agent",
+      "status": "succeeded_with_warning",
+      "fallback_used": false,
+      "warning_count": 12,
+      "error_count": 0,
+      "details": {}
+    },
+    {
+      "stage": "lesson_analysis_agent",
+      "status": "succeeded",
+      "fallback_used": false,
+      "warning_count": 0,
+      "error_count": 0,
+      "details": {
+        "fallback_category_counts": {}
+      }
+    },
+    {
+      "stage": "lesson_review_agent",
+      "status": "succeeded",
+      "fallback_used": false,
+      "warning_count": 0,
+      "error_count": 0,
+      "details": {}
+    },
+    {
+      "stage": "activity_plan_agent",
+      "status": "succeeded",
+      "fallback_used": false,
+      "warning_count": 0,
+      "error_count": 0,
+      "details": {
+        "fallback_category_counts": {}
+      }
+    },
+    {
+      "stage": "activity_review_agent",
+      "status": "succeeded",
+      "fallback_used": false,
+      "warning_count": 0,
+      "error_count": 0,
+      "details": {}
+    },
+    {
+      "stage": "html_card_agent",
+      "status": "succeeded",
+      "fallback_used": false,
+      "warning_count": 0,
+      "error_count": 0,
+      "details": {}
+    },
+    {
+      "stage": "capture_agent",
+      "status": "succeeded",
+      "fallback_used": false,
+      "warning_count": 0,
+      "error_count": 0,
+      "details": {}
+    },
+    {
+      "stage": "numbers_compose_agent",
+      "status": "succeeded",
+      "fallback_used": false,
+      "warning_count": 0,
+      "error_count": 0,
+      "details": {}
+    },
+    {
+      "stage": "review_manifest_agent",
+      "status": "succeeded",
+      "fallback_used": false,
+      "warning_count": 0,
+      "error_count": 0,
+      "details": {}
+    },
+    {
+      "stage": "verify_agent",
+      "status": "succeeded_with_warning",
+      "fallback_used": false,
+      "warning_count": 1,
+      "error_count": 0,
+      "details": {}
+    }
+  ]
+}

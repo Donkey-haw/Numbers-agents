@@ -1,0 +1,53 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-03-30T15:09:11.211303+00:00",
+  "lesson_id": "4차시",
+  "sheet_name": "4차시",
+  "lesson_title": "평화 통일을 위한 노력 — 분단의 장소가 평화의 장소로 바뀐 사례 알아보기",
+  "lesson_type": "core",
+  "pdf_pages": [
+    12
+  ],
+  "essential_question": "분단으로 상징되던 장소들이 어떻게 평화의 공간으로 변화되었으며, 그 사례에는 무엇이 있을까요?",
+  "learning_goals": [
+    "분단과 관련된 장소를 평화의 장소로 만들려는 노력을 찾아볼 수 있다."
+  ],
+  "key_concepts": [
+    "분단",
+    "평화의 장소",
+    "변화",
+    "노력"
+  ],
+  "vocabulary": [
+    "분단",
+    "산책로",
+    "푯말",
+    "상징"
+  ],
+  "misconceptions": [
+    "분단 지역은 항상 위험하거나 대립만 존재하는 고립된 공간이라고 생각할 수 있다."
+  ],
+  "difficulty_band": "on-level",
+  "content_chunks": [
+    {
+      "chunk_id": "4차시-chunk-1",
+      "label": "평화의 장소로의 전환 사례",
+      "content_type": "mixed",
+      "knowledge_type": "concept",
+      "summary": "분단과 관련된 장소를 평화의 산책로 등으로 조성하여 평화의 의미를 되새기는 사례를 확인하고, 장소에 담긴 푯말의 의미를 탐색한다.",
+      "source_pages": [
+        12
+      ],
+      "suggested_activity_types": [
+        "see_think_wonder",
+        "learning_note"
+      ]
+    }
+  ],
+  "source_page_refs": [
+    12
+  ],
+  "analysis_confidence": 0.9,
+  "review_status": "draft",
+  "notes": "텍스트북 12페이지의 학습 목표 중 '분단 관련 장소를 평화의 장소로 만들려는 노력' 항목과 연계하여 분석함. 산책로 사례를 중심으로 평화적 전환의 가치를 도출함."
+}

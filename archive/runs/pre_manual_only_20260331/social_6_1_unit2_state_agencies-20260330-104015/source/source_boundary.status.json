@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.0.0",
+  "stage": "source_boundary_agent",
+  "lesson_id": null,
+  "status": "failed",
+  "run_id": "social_6_1_unit2_state_agencies-20260330-104015",
+  "started_at": "2026-03-30T01:40:15.384278+00:00",
+  "finished_at": "2026-03-30T01:40:15.385038+00:00",
+  "input_refs": [
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/configs/social_6_1_unit2_state_agencies.json"
+  ],
+  "output_refs": [
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit2_state_agencies-20260330-104015/source/schedule_draft.json",
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit2_state_agencies-20260330-104015/source/textbook_context.json",
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit2_state_agencies-20260330-104015/source/runtime_config.json"
+  ],
+  "fallback_used": false,
+  "warnings": [],
+  "errors": [
+    "no such file: '/Users/jonyeock/Desktop/Tool/NumbersAuto/[사회]6_1_교과서.pdf'"
+  ],
+  "agent_spec_path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/agents/source_boundary_agent/AGENT.md"
+}

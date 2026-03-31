@@ -1,0 +1,81 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-03-31T00:00:00Z",
+  "lesson_id": "8차시",
+  "sheet_name": "8차시",
+  "lesson_title": "국가기관이 하는 일 — [주제 도입] 열려라 이야기 / 외쳐라 빙고",
+  "lesson_type": "intro",
+  "pdf_pages": [
+    70,
+    71
+  ],
+  "essential_question": "우리나라의 주요 국가기관에는 어떤 것들이 있으며, 이번 주제에서 무엇을 배우게 될까요?",
+  "learning_goals": [
+    "낱말 구름을 통해 국가기관(국회, 행정부, 법원)과 관련된 주요 용어를 탐색하고 배울 내용을 예상할 수 있다.",
+    "빙고 놀이를 통해 국가기관 관련 핵심 어휘에 친숙해질 수 있다."
+  ],
+  "key_concepts": [
+    "국가기관",
+    "국회",
+    "행정부",
+    "법원",
+    "권력 분립"
+  ],
+  "vocabulary": [
+    "국가기관",
+    "국회",
+    "행정부",
+    "법원",
+    "국무 회의",
+    "국정 감사",
+    "재판",
+    "예산안",
+    "권리 보장",
+    "권력 분립",
+    "행정 각부",
+    "국무총리",
+    "견제"
+  ],
+  "misconceptions": [
+    "국가기관이 단순히 건물만을 의미한다고 오해할 수 있으나, 나랏일을 하는 기관 전체를 의미함을 안내한다.",
+    "국가기관의 역할이 서로 섞여 있다고 생각할 수 있으나, 법에 따라 역할이 나누어져 있음을 예고한다."
+  ],
+  "difficulty_band": "on-level",
+  "content_chunks": [
+    {
+      "chunk_id": "8차시-chunk-1",
+      "label": "학습 내용 예상하기",
+      "content_type": "mixed",
+      "knowledge_type": "concept",
+      "summary": "낱말 구름에 제시된 국가기관 관련 용어들을 살펴보며 이번 주제에서 탐구할 핵심 주제들을 추측해 본다.",
+      "source_pages": [
+        70,
+        71
+      ],
+      "suggested_activity_types": [
+        "see_think_wonder",
+        "learning_note"
+      ]
+    },
+    {
+      "chunk_id": "8차시-chunk-2",
+      "label": "외쳐라 빙고",
+      "content_type": "activity",
+      "knowledge_type": "procedure",
+      "summary": "국회, 행정부, 법원, 대통령 등 낱말 구름 속 용어들을 활용하여 빙고 놀이를 하며 용어의 의미를 되새긴다.",
+      "source_pages": [
+        71
+      ],
+      "suggested_activity_types": [
+        "worksheet"
+      ]
+    }
+  ],
+  "source_page_refs": [
+    70,
+    71
+  ],
+  "analysis_confidence": 0.95,
+  "review_status": "draft",
+  "notes": "기존 baseline의 세계 지리 내용은 잘못된 데이터이므로 삭제하고, 사회 6-1 교과서 70-71쪽의 '국가기관이 하는 일' 도입부 내용으로 전면 수정함."
+}

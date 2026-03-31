@@ -1,0 +1,16 @@
+{
+  "schema_version": "1.0.0",
+  "stage": "review_lesson_agent",
+  "lesson_id": "2-3차시",
+  "status": "succeeded",
+  "decision": "pass",
+  "findings": [
+    {
+      "severity": "info",
+      "message": "윤희순의 전기문을 통해 인물의 삶과 시대 상황을 연결하여 가치를 도출하는 핵심 차시입니다. '안사람 의병가'의 가사와 윤희순의 결단력 있는 행동(숯 장사 등)을 중심으로 가치를 파악하도록 구성되었습니다.",
+      "evidence_refs": []
+    }
+  ],
+  "blocking_issues": [],
+  "warnings": []
+}

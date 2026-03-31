@@ -1,0 +1,64 @@
+{
+  "schema_version": "1.0.0",
+  "lessons": [
+    {
+      "lesson_id": "lesson-001",
+      "resource_id": "main",
+      "candidate_pages": [
+        13,
+        55,
+        71,
+        91,
+        111
+      ],
+      "query": "외쳐라 빙고"
+    },
+    {
+      "lesson_id": "lesson-002",
+      "resource_id": "main",
+      "candidate_pages": [
+        36,
+        32,
+        49,
+        29
+      ],
+      "query": "4·19 혁명 이해하기"
+    },
+    {
+      "lesson_id": "lesson-003",
+      "resource_id": "main",
+      "candidate_pages": [
+        38,
+        49,
+        29,
+        30,
+        31
+      ],
+      "query": "대통령 직선제와 지방 자치제의 부활 이해하기"
+    },
+    {
+      "lesson_id": "lesson-004",
+      "resource_id": "main",
+      "candidate_pages": [
+        28,
+        45,
+        10,
+        40,
+        51
+      ],
+      "query": "산업화 과정 이해하기"
+    },
+    {
+      "lesson_id": "lesson-005",
+      "resource_id": "main",
+      "candidate_pages": [
+        28,
+        42,
+        46,
+        10,
+        156
+      ],
+      "query": "산업화로 달라진 사회와 생활 문화 이해하기"
+    }
+  ]
+}

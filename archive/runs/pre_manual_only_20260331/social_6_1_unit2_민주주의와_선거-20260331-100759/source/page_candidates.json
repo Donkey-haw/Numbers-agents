@@ -1,0 +1,53 @@
+{
+  "schema_version": "1.0.0",
+  "lessons": [
+    {
+      "lesson_id": "lesson-001",
+      "resource_id": "main",
+      "candidate_pages": [
+        54,
+        172,
+        63,
+        180,
+        62
+      ],
+      "query": "선거의 의미와 중요성 파악하기"
+    },
+    {
+      "lesson_id": "lesson-002",
+      "resource_id": "main",
+      "candidate_pages": [
+        54,
+        58,
+        172,
+        90,
+        94
+      ],
+      "query": "민주주의에서 선거의 역할 파악하기"
+    },
+    {
+      "lesson_id": "lesson-003",
+      "resource_id": "main",
+      "candidate_pages": [
+        54,
+        62,
+        56,
+        55,
+        57
+      ],
+      "query": "우리나라의 선거 과정 살펴보기"
+    },
+    {
+      "lesson_id": "lesson-004",
+      "resource_id": "main",
+      "candidate_pages": [
+        64,
+        104,
+        82,
+        32,
+        54
+      ],
+      "query": "선거에 적극적으로 참여해야 하는 까닭 알아보기"
+    }
+  ]
+}

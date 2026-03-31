@@ -1,0 +1,37 @@
+{
+  "project_root": "/Users/jonyeock/Desktop/Tool/NumbersAuto",
+  "pdf_path": "textbook/사회/[사회]6_1_교과서.pdf",
+  "template_path": "빈 넘버스 파일.numbers",
+  "output_file": "output/사회_[사회]6_1_교과서.numbers",
+  "footer": "사회 · [사회]6_1_교과서",
+  "sections": [
+    {
+      "sheet_name": "1차시",
+      "card_file": "사회_1차시",
+      "title": "1차시",
+      "badge": "1차시",
+      "accent": [
+        "#6366f1",
+        "#818cf8"
+      ],
+      "pdf_pages": [
+        14,
+        15
+      ]
+    },
+    {
+      "sheet_name": "2차시",
+      "card_file": "사회_2차시",
+      "title": "2차시",
+      "badge": "2차시",
+      "accent": [
+        "#4f46e5",
+        "#7c3aed"
+      ],
+      "pdf_pages": [
+        16,
+        17
+      ]
+    }
+  ]
+}

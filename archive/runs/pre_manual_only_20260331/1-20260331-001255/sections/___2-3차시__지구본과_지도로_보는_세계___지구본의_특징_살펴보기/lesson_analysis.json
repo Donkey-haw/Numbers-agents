@@ -1,0 +1,100 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-03-30T15:27:59.282108+00:00",
+  "lesson_id": "2-3차시",
+  "sheet_name": "2-3차시",
+  "lesson_title": "지구본과 지도로 보는 세계 — 지구본의 특징 살펴보기",
+  "lesson_type": "core",
+  "pdf_pages": [
+    112,
+    113,
+    114,
+    115
+  ],
+  "essential_question": "지구본과 세계지도는 각각 어떤 특징이 있으며, 왜 모습이나 거리가 서로 다르게 표현될까요?",
+  "learning_goals": [
+    "지구본과 세계지도의 특징과 장단점을 비교하여 설명할 수 있다.",
+    "둥근 지구를 평면으로 나타낼 때 생기는 면적과 거리의 왜곡 현상을 이해한다.",
+    "지구본과 세계지도를 활용하여 두 지점 사이의 최단 경로를 찾고 비교할 수 있다."
+  ],
+  "key_concepts": [
+    "지구본",
+    "세계지도",
+    "최단 경로",
+    "면적 왜곡",
+    "관점"
+  ],
+  "vocabulary": [
+    "지구본",
+    "세계지도",
+    "적도",
+    "비행경로",
+    "남극 대륙",
+    "북극"
+  ],
+  "misconceptions": [
+    "세계지도에 나타난 대륙의 모양이나 면적이 실제와 완전히 일치한다고 오해할 수 있음.",
+    "평면 지도에서의 직선 경로가 항상 실제 지구상의 최단 거리라고 생각할 수 있음."
+  ],
+  "difficulty_band": "on-level",
+  "content_chunks": [
+    {
+      "chunk_id": "2-3차시-chunk-1",
+      "label": "지구본의 특징",
+      "content_type": "text",
+      "knowledge_type": "concept",
+      "summary": "지구본은 지구의 모습을 본뜬 모형으로, 위치와 거리, 영토 모양을 비교적 정확하게 표현하지만 한눈에 보기 어렵고 휴대하기 불편함.",
+      "source_pages": [
+        112
+      ],
+      "suggested_activity_types": [
+        "see_think_wonder"
+      ]
+    },
+    {
+      "chunk_id": "2-3차시-chunk-2",
+      "label": "세계지도의 특징과 왜곡",
+      "content_type": "map",
+      "knowledge_type": "comparison",
+      "summary": "세계지도는 지구를 평면으로 표현하여 한눈에 보기 좋으나, 둥근 표면을 펼치는 과정에서 실제 면적이나 거리와 다르게 표현되는 한계가 있음.",
+      "source_pages": [
+        113
+      ],
+      "suggested_activity_types": [
+        "learning_note"
+      ]
+    },
+    {
+      "chunk_id": "2-3차시-chunk-3",
+      "label": "지구본과 세계지도 비교 활동",
+      "content_type": "activity",
+      "knowledge_type": "procedure",
+      "summary": "남극 대륙의 모양 비교하기, 서울-런던 간 최단 경로 찾기 등을 통해 두 도구의 특성 차이를 직접 확인함.",
+      "source_pages": [
+        114
+      ],
+      "suggested_activity_types": [
+        "worksheet"
+      ]
+    },
+    {
+      "chunk_id": "2-3차시-chunk-4",
+      "label": "다양한 형태의 세계지도",
+      "content_type": "summary",
+      "knowledge_type": "opinion",
+      "summary": "물고기의 관점 지도, UN 깃발(북극 중심) 등 무엇을 중점에 두느냐에 따라 세계지도가 다양하게 표현될 수 있음을 학습함.",
+      "source_pages": [
+        115
+      ]
+    }
+  ],
+  "source_page_refs": [
+    112,
+    113,
+    114,
+    115
+  ],
+  "analysis_confidence": 0.95,
+  "review_status": "draft",
+  "notes": "지구본과 세계지도의 '실제성 vs 편의성' 대비를 중심으로 구성함. 114쪽의 경로 찾기 실습이 핵심 활동임."
+}

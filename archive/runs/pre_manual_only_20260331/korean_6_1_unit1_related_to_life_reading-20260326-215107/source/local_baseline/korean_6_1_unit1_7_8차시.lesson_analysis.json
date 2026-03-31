@@ -1,0 +1,98 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-03-26T12:51:07.432002+00:00",
+  "lesson_id": "7-8차시",
+  "sheet_name": "7-8차시",
+  "lesson_title": "인물이 추구하는 가치를 자신의 삶과 관련짓기",
+  "lesson_type": "core",
+  "pdf_pages": [
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38
+  ],
+  "essential_question": "인물이 추구하는 가치를 자신의 삶과 관련짓기",
+  "learning_goals": [
+    "인물이 추구하는 가치를 자신의 삶과 관련짓기의 핵심 내용을 설명할 수 있다."
+  ],
+  "key_concepts": [
+    "인물",
+    "추구하",
+    "가치",
+    "자신",
+    "삶과"
+  ],
+  "vocabulary": [
+    "인물",
+    "추구하",
+    "가치"
+  ],
+  "misconceptions": [],
+  "difficulty_band": "on-level",
+  "content_chunks": [
+    {
+      "chunk_id": "7-8차시-chunk-1",
+      "label": "학습 덩어리 1",
+      "content_type": "mixed",
+      "knowledge_type": "cause-effect",
+      "summary": "10 주말이 멀었는데 언니가 집에 왔다.",
+      "source_pages": [
+        27,
+        28,
+        29,
+        30,
+        31,
+        32
+      ],
+      "suggested_activity_types": [
+        "see_think_wonder",
+        "learning_note",
+        "worksheet"
+      ]
+    },
+    {
+      "chunk_id": "7-8차시-chunk-2",
+      "label": "학습 덩어리 2",
+      "content_type": "mixed",
+      "knowledge_type": "concept",
+      "summary": "5 10 “나루야, 넌 나랑 달라.",
+      "source_pages": [
+        33,
+        34,
+        35,
+        36,
+        37,
+        38
+      ],
+      "suggested_activity_types": [
+        "learning_note",
+        "worksheet"
+      ]
+    }
+  ],
+  "source_page_refs": [
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38
+  ],
+  "analysis_confidence": 0.75,
+  "review_status": "draft",
+  "notes": "자동 생성 초안. lesson title, key concepts, chunks를 검토 후 승인 필요."
+}

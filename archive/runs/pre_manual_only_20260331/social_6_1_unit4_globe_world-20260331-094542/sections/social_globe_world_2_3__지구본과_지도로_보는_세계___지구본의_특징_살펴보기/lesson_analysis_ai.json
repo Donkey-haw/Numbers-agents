@@ -1,0 +1,90 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-03-31T00:50:00.000000+00:00",
+  "lesson_id": "2-3차시",
+  "sheet_name": "2-3차시",
+  "lesson_title": "지구본과 지도로 보는 세계 — 지구본의 특징 살펴보기",
+  "lesson_type": "core",
+  "pdf_pages": [
+    112,
+    113,
+    114,
+    115
+  ],
+  "essential_question": "지구본과 세계지도는 각각 어떤 특징이 있으며, 왜 서로 다른 모습으로 표현될까요?",
+  "learning_goals": [
+    "지구본의 정의를 알고 장점과 단점을 설명할 수 있다.",
+    "세계지도의 정의를 알고 평면으로 표현할 때 생기는 변화와 그 까닭을 이해한다.",
+    "지구본과 세계지도를 비교하여 남극 대륙의 모양과 최단 이동 경로의 차이를 찾아낼 수 있다.",
+    "표현 중심에 따라 다양한 형태의 세계지도가 있음을 이해한다."
+  ],
+  "key_concepts": [
+    "지구본",
+    "세계지도",
+    "왜곡",
+    "남극 대륙",
+    "최단 경로"
+  ],
+  "vocabulary": [
+    "모형",
+    "평면",
+    "비행경로",
+    "관점"
+  ],
+  "misconceptions": [
+    "세계지도에 나타난 대륙의 면적이나 모양이 실제와 완벽히 일치한다고 생각한다.",
+    "지도상의 직선거리가 실제 지구상의 최단 거리라고 오해한다."
+  ],
+  "difficulty_band": "on-level",
+  "content_chunks": [
+    {
+      "chunk_id": "2-3차시-chunk-1",
+      "label": "지구본의 특징",
+      "content_type": "text",
+      "knowledge_type": "concept",
+      "summary": "지구본은 지구의 모습을 본떠 만든 모형으로 위치, 거리, 모양을 정확하게 표현하지만 한눈에 보기 어렵고 휴대성이 낮다.",
+      "source_pages": [
+        112
+      ]
+    },
+    {
+      "chunk_id": "2-3차시-chunk-2",
+      "label": "세계지도의 특징",
+      "content_type": "mixed",
+      "knowledge_type": "cause-effect",
+      "summary": "세계지도는 둥근 지구를 평면으로 펼쳐 나타낸 것으로, 한눈에 보기 편하지만 형태나 면적이 실제와 다르게 표현되는 한계가 있다.",
+      "source_pages": [
+        113
+      ]
+    },
+    {
+      "chunk_id": "2-3차시-chunk-3",
+      "label": "지구본과 세계지도 비교 활동",
+      "content_type": "activity",
+      "knowledge_type": "procedure",
+      "summary": "남극 대륙의 모양 비교와 서울-런던 간 최단 경로 찾기 활동을 통해 두 도구의 표현 방식 차이를 직접 확인한다.",
+      "source_pages": [
+        114
+      ]
+    },
+    {
+      "chunk_id": "2-3차시-chunk-4",
+      "label": "다양한 형태의 세계지도",
+      "content_type": "text",
+      "knowledge_type": "fact",
+      "summary": "물고기의 관점, 북극 중심, 각 국가별 중심 배치 등 무엇을 중점에 두느냐에 따라 지도는 다양하게 그려질 수 있다.",
+      "source_pages": [
+        115
+      ]
+    }
+  ],
+  "source_page_refs": [
+    112,
+    113,
+    114,
+    115
+  ],
+  "analysis_confidence": 0.95,
+  "review_status": "draft",
+  "notes": "교과서 텍스트를 바탕으로 지구본과 세계지도의 장단점 및 왜곡의 원인을 명확히 분석함. 활동 페이지(114)의 절차적 지식을 chunk에 반영함."
+}

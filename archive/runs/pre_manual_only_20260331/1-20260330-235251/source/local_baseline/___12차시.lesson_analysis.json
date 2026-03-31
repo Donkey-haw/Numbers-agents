@@ -1,0 +1,52 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-03-30T14:53:36.932567+00:00",
+  "lesson_id": "12차시",
+  "sheet_name": "12차시",
+  "lesson_title": "세계의 대륙, 대양, 나라 — 북아메리카와 남아메리카 주요 나라들의 위치 알아보기",
+  "lesson_type": "core",
+  "pdf_pages": [
+    131
+  ],
+  "essential_question": "세계의 대륙, 대양, 나라 — 북아메리카와 남아메리카 주요 나라들의 위치 알아보기",
+  "learning_goals": [
+    "세계의 대륙, 대양, 나라 — 북아메리카와 남아메리카 주요 나라들의 위치 알아보기의 핵심 내용을 설명할 수 있다."
+  ],
+  "key_concepts": [
+    "세계",
+    "대륙",
+    "대양",
+    "북아메리카",
+    "남아메리카"
+  ],
+  "vocabulary": [
+    "세계",
+    "대륙",
+    "대양"
+  ],
+  "misconceptions": [],
+  "difficulty_band": "on-level",
+  "content_chunks": [
+    {
+      "chunk_id": "12차시-chunk-1",
+      "label": "학습 덩어리 1",
+      "content_type": "mixed",
+      "knowledge_type": "concept",
+      "summary": "옳은 문장의 번호를 순서대로 써서 우주의 여행 준비물을 챙겨 봅시다.",
+      "source_pages": [
+        131
+      ],
+      "suggested_activity_types": [
+        "see_think_wonder",
+        "learning_note",
+        "worksheet"
+      ]
+    }
+  ],
+  "source_page_refs": [
+    131
+  ],
+  "analysis_confidence": 0.75,
+  "review_status": "draft",
+  "notes": "자동 생성 초안. lesson title, key concepts, chunks를 검토 후 승인 필요."
+}

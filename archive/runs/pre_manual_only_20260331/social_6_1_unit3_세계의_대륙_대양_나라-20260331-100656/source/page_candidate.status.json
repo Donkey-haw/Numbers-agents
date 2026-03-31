@@ -1,0 +1,22 @@
+{
+  "schema_version": "1.0.0",
+  "stage": "page_candidate_agent",
+  "lesson_id": null,
+  "status": "succeeded",
+  "run_id": "social_6_1_unit3_세계의_대륙_대양_나라-20260331-100656",
+  "started_at": "2026-03-31T01:07:01.945265+00:00",
+  "finished_at": "2026-03-31T01:07:01.961471+00:00",
+  "input_refs": [
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit3_세계의_대륙_대양_나라-20260331-100656/source/lesson_queries.json",
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit3_세계의_대륙_대양_나라-20260331-100656/source/main.page_index.json"
+  ],
+  "output_refs": [
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit3_세계의_대륙_대양_나라-20260331-100656/source/page_candidates.json",
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit3_세계의_대륙_대양_나라-20260331-100656/source/page_candidate.status.json"
+  ],
+  "fallback_used": false,
+  "warnings": [],
+  "errors": [],
+  "agent_spec_path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/agents/page_candidate_agent/AGENT.md",
+  "runtime_driven": true
+}

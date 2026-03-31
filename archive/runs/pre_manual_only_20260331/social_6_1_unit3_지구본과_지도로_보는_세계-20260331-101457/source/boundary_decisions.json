@@ -1,0 +1,85 @@
+{
+  "schema_version": "1.0.0",
+  "boundaries": [
+    {
+      "lesson_id": "lesson-001",
+      "resource_id": "main",
+      "status": "matched",
+      "start_page": 110,
+      "end_page": 118,
+      "reason": "Choose highest-scoring monotonic candidate and expand backward to nearby topic-intro signals",
+      "confidence": 0.8500000000000001,
+      "evidence_pages": [
+        114,
+        150,
+        112,
+        108,
+        131
+      ]
+    },
+    {
+      "lesson_id": "lesson-002",
+      "resource_id": "main",
+      "status": "matched",
+      "start_page": 119,
+      "end_page": 119,
+      "reason": "Choose highest-scoring monotonic candidate and expand backward to nearby topic-intro signals",
+      "confidence": 0.8,
+      "evidence_pages": [
+        119,
+        118,
+        150,
+        147,
+        151
+      ]
+    },
+    {
+      "lesson_id": "lesson-003",
+      "resource_id": "main",
+      "status": "matched",
+      "start_page": 120,
+      "end_page": 123,
+      "reason": "Choose highest-scoring monotonic candidate and expand backward to nearby topic-intro signals",
+      "confidence": 0.8,
+      "evidence_pages": [
+        120,
+        128,
+        129,
+        110,
+        121
+      ]
+    },
+    {
+      "lesson_id": "lesson-004",
+      "resource_id": "main",
+      "status": "matched",
+      "start_page": 124,
+      "end_page": 127,
+      "reason": "Choose highest-scoring monotonic candidate and expand backward to nearby topic-intro signals",
+      "confidence": 0.8,
+      "evidence_pages": [
+        127,
+        128,
+        124,
+        129,
+        130
+      ]
+    },
+    {
+      "lesson_id": "lesson-005",
+      "resource_id": "main",
+      "status": "matched",
+      "start_page": 128,
+      "end_page": 128,
+      "reason": "Choose highest-scoring monotonic candidate and expand backward to nearby topic-intro signals",
+      "confidence": 0.75,
+      "evidence_pages": [
+        128,
+        129,
+        120,
+        110,
+        121
+      ]
+    }
+  ]
+}

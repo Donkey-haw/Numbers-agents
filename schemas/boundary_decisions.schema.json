@@ -1,0 +1,54 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://numbersauto.local/schemas/boundary_decisions.schema.json",
+  "title": "Boundary Decisions",
+  "type": "object",
+  "required": ["schema_version", "boundaries"],
+  "properties": {
+    "schema_version": {
+      "type": "string"
+    },
+    "boundaries": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["lesson_id", "resource_id", "status", "start_page", "end_page", "reason"],
+        "properties": {
+          "lesson_id": {
+            "type": "string"
+          },
+          "resource_id": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string",
+            "enum": ["matched", "not_found", "low_confidence"]
+          },
+          "start_page": {
+            "type": ["integer", "null"],
+            "minimum": 1
+          },
+          "end_page": {
+            "type": ["integer", "null"],
+            "minimum": 1
+          },
+          "reason": {
+            "type": "string"
+          },
+          "confidence": {
+            "type": "number"
+          },
+          "evidence_pages": {
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "minimum": 1
+            }
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

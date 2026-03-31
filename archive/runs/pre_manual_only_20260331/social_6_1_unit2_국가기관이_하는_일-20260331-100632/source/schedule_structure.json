@@ -1,0 +1,65 @@
+{
+  "schema_version": "1.0.0",
+  "units": [
+    {
+      "unit_id": "unit-001",
+      "title": "외쳐라 빙고",
+      "lessons": [
+        {
+          "lesson_id": "lesson-001",
+          "sheet_name": "8차시",
+          "title": "외쳐라 빙고",
+          "raw_text": "외쳐라 빙고"
+        }
+      ]
+    },
+    {
+      "unit_id": "unit-002",
+      "title": "국회의 구성과 하는 일 파악하기",
+      "lessons": [
+        {
+          "lesson_id": "lesson-002",
+          "sheet_name": "9-10차시",
+          "title": "국회의 구성과 하는 일 파악하기",
+          "raw_text": "국회의 구성과 하는 일 파악하기"
+        }
+      ]
+    },
+    {
+      "unit_id": "unit-003",
+      "title": "행정부의 구성과 하는 일 파악하기",
+      "lessons": [
+        {
+          "lesson_id": "lesson-003",
+          "sheet_name": "11차시",
+          "title": "행정부의 구성과 하는 일 파악하기",
+          "raw_text": "행정부의 구성과 하는 일 파악하기"
+        }
+      ]
+    },
+    {
+      "unit_id": "unit-004",
+      "title": "법원의 구성과 하는 일 파악하기",
+      "lessons": [
+        {
+          "lesson_id": "lesson-004",
+          "sheet_name": "12차시",
+          "title": "법원의 구성과 하는 일 파악하기",
+          "raw_text": "법원의 구성과 하는 일 파악하기"
+        }
+      ]
+    },
+    {
+      "unit_id": "unit-005",
+      "title": "권력 분립의 의미와 중요성 탐구하기",
+      "lessons": [
+        {
+          "lesson_id": "lesson-005",
+          "sheet_name": "13차시",
+          "title": "권력 분립의 의미와 중요성 탐구하기",
+          "raw_text": "권력 분립의 의미와 중요성 탐구하기"
+        }
+      ]
+    }
+  ]
+}

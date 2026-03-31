@@ -1,0 +1,61 @@
+{
+  "schema_version": "1.0.0",
+  "lessons": [
+    {
+      "lesson_id": "lesson-001",
+      "resource_id": "main",
+      "candidate_pages": [
+        85
+      ],
+      "query": "단원·주제 도입"
+    },
+    {
+      "lesson_id": "lesson-002",
+      "resource_id": "main",
+      "candidate_pages": [
+        56,
+        124,
+        64,
+        92,
+        104
+      ],
+      "query": "선거란 무엇일까요?"
+    },
+    {
+      "lesson_id": "lesson-003",
+      "resource_id": "main",
+      "candidate_pages": [
+        58,
+        94,
+        90,
+        59,
+        4
+      ],
+      "query": "민주주의에서 선거는 어떤 역할을 할까요?"
+    },
+    {
+      "lesson_id": "lesson-004",
+      "resource_id": "main",
+      "candidate_pages": [
+        58,
+        62,
+        50,
+        54,
+        90
+      ],
+      "query": "민주주의에서 선거는 어떻게 이루어질까요?"
+    },
+    {
+      "lesson_id": "lesson-005",
+      "resource_id": "main",
+      "candidate_pages": [
+        64,
+        104,
+        54,
+        67,
+        32
+      ],
+      "query": "선거에 참여하는 바람직한 태도는 무엇일까요? / 주제 마무리"
+    }
+  ]
+}

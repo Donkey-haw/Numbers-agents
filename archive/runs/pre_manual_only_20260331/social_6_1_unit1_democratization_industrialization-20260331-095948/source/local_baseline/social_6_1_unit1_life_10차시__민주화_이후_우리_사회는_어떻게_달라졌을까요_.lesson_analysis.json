@@ -1,0 +1,104 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-03-31T00:59:54.137898+00:00",
+  "lesson_id": "10차시",
+  "sheet_name": "10차시",
+  "lesson_title": "민주화 이후 우리 사회는 어떻게 달라졌을까요?",
+  "lesson_type": "core",
+  "pdf_pages": [
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40
+  ],
+  "essential_question": "민주화 이후 우리 사회는 어떻게 달라졌을까요?",
+  "learning_goals": [
+    "민주화 이후 우리 사회는 어떻게 달라졌을까요의 핵심 내용을 설명할 수 있다."
+  ],
+  "key_concepts": [
+    "민주화",
+    "이후",
+    "어떻게",
+    "달라졌을까요",
+    "운동"
+  ],
+  "vocabulary": [
+    "민주화",
+    "이후",
+    "어떻게"
+  ],
+  "misconceptions": [
+    "선거를 단순히 사람을 뽑는 행사로만 이해할 수 있다.",
+    "민주주의의 핵심이 참여보다 결과에만 있다고 오해할 수 있다."
+  ],
+  "difficulty_band": "on-level",
+  "content_chunks": [
+    {
+      "chunk_id": "10차시-chunk-1",
+      "label": "학습 덩어리 1",
+      "content_type": "mixed",
+      "knowledge_type": "procedure",
+      "summary": "2 민주화와 산업화로 달라진 생활 문화 민주화를 이루려는 다양한 분야 사람들의 노력을 설명할 수 있어요.",
+      "source_pages": [
+        28,
+        29,
+        30,
+        31,
+        32,
+        33
+      ],
+      "suggested_activity_types": [
+        "see_think_wonder",
+        "learning_note",
+        "worksheet"
+      ]
+    },
+    {
+      "chunk_id": "10차시-chunk-2",
+      "label": "학습 덩어리 2",
+      "content_type": "mixed",
+      "knowledge_type": "procedure",
+      "summary": "동해 6월 민주 항쟁 전두환 정부가 들어선 이후에도 국민의 자유와 권리를 억압하는 독재 정치가 계속됐다.",
+      "source_pages": [
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40
+      ],
+      "suggested_activity_types": [
+        "learning_note",
+        "worksheet"
+      ]
+    }
+  ],
+  "source_page_refs": [
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40
+  ],
+  "analysis_confidence": 0.75,
+  "review_status": "draft",
+  "notes": "자동 생성 초안. lesson title, key concepts, chunks를 검토 후 승인 필요."
+}

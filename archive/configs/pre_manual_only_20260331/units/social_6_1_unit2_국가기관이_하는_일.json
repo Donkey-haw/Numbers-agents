@@ -1,0 +1,65 @@
+{
+  "project_root": "/Users/jonyeock/Desktop/Tool/NumbersAuto",
+  "pdf_path": "textbook/사회/[사회]6_1_교과서.pdf",
+  "template_path": "빈 넘버스 파일.numbers",
+  "output_file": "output/social_6_1_unit2_국가기관이_하는_일.numbers",
+  "footer": "사회 6-1 · 2단원 · 국가기관이 하는 일",
+  "sections": [
+    {
+      "sheet_name": "8차시",
+      "card_file": "social_6_1_unit2_국가기관이_하는_일_8차시",
+      "title": "국가기관의 의미 알아보기",
+      "title_query": "국가기관의 의미 알아보기",
+      "badge": "8차시",
+      "accent": [
+        "#6366f1",
+        "#818cf8"
+      ]
+    },
+    {
+      "sheet_name": "9-10차시",
+      "card_file": "social_6_1_unit2_국가기관이_하는_일_9_10차시",
+      "title": "국회의 구성과 하는 일 파악하기",
+      "title_query": "국회의 구성과 하는 일 파악하기",
+      "badge": "9-10차시",
+      "accent": [
+        "#4f46e5",
+        "#7c3aed"
+      ]
+    },
+    {
+      "sheet_name": "11차시",
+      "card_file": "social_6_1_unit2_국가기관이_하는_일_11차시",
+      "title": "행정부의 구성과 하는 일 파악하기",
+      "title_query": "행정부의 구성과 하는 일 파악하기",
+      "badge": "11차시",
+      "accent": [
+        "#0f766e",
+        "#14b8a6"
+      ]
+    },
+    {
+      "sheet_name": "12차시",
+      "card_file": "social_6_1_unit2_국가기관이_하는_일_12차시",
+      "title": "법원의 구성과 하는 일 파악하기",
+      "title_query": "법원의 구성과 하는 일 파악하기",
+      "badge": "12차시",
+      "accent": [
+        "#1d4ed8",
+        "#3b82f6"
+      ]
+    },
+    {
+      "sheet_name": "13차시",
+      "card_file": "social_6_1_unit2_국가기관이_하는_일_13차시",
+      "title": "권력 분립의 의미와 중요성 탐구하기",
+      "title_query": "권력 분립의 의미와 중요성 탐구하기",
+      "badge": "13차시",
+      "accent": [
+        "#d97706",
+        "#f59e0b"
+      ]
+    }
+  ],
+  "end_before_query": "미디어의 의미 알아보기"
+}

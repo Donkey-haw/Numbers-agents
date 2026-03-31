@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.0.0",
+  "stage": "capture_agent",
+  "lesson_id": null,
+  "status": "succeeded",
+  "run_id": "social_6_1_unit1_democratization_industrialization-20260331-003215",
+  "started_at": "2026-03-30T15:36:19.033615+00:00",
+  "finished_at": "2026-03-30T15:37:08.757449+00:00",
+  "input_refs": [
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit1_democratization_industrialization-20260331-003215/render/html_manifest.json",
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit1_democratization_industrialization-20260331-003215/sections/social_6_1_unit1_life_10차시__민주화_이후_우리_사회는_어떻게_달라졌을까요_/activity_plan.json",
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit1_democratization_industrialization-20260331-003215/sections/social_6_1_unit1_life_11차시__우리나라는_어떻게_산업화를_이루었을까요_/activity_plan.json",
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit1_democratization_industrialization-20260331-003215/sections/social_6_1_unit1_life_12-13차시__산업화로_사람들의_생활은_어떻게_달라졌을까요____주제_마무리/activity_plan.json",
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit1_democratization_industrialization-20260331-003215/sections/social_6_1_unit1_life_7차시__민주화_운동은_왜_일어났을까요_/activity_plan.json",
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit1_democratization_industrialization-20260331-003215/sections/social_6_1_unit1_life_8-9차시__민주화를_위한_노력을_살펴볼까요_/activity_plan.json"
+  ],
+  "output_refs": [
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit1_democratization_industrialization-20260331-003215/render/render_manifest.json"
+  ],
+  "fallback_used": false,
+  "warnings": [],
+  "errors": []
+}

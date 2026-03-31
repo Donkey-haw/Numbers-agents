@@ -1,0 +1,100 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-03-31T10:00:00+00:00",
+  "lesson_id": "16차시",
+  "activities": [
+    {
+      "activity_id": "act-16-1",
+      "lesson_id": "16차시",
+      "object_role": "learning_note",
+      "lesson_flow_stage": "during",
+      "activity_type": "learning_note",
+      "level": "core",
+      "learning_goal": "미디어의 내용을 비판적으로 분석해야 하는 까닭을 수업 맥락에 맞게 정리할 수 있다.",
+      "prompt_text": "수업을 들으며 미디어의 정보를 왜 그대로 믿으면 안 되는지, 비판적 분석이 왜 필요한지 핵심 내용을 자유롭게 메모해 봅시다.",
+      "layout_template": "freeform_html",
+      "html_content": "<!DOCTYPE html><html lang='ko'><head><meta charset='UTF-8'><style>body{width:1600px;margin:0;background:transparent;font-family:'Noto Sans KR',sans-serif;display:flex;justify-content:center;padding:40px;} .card{width:1200px;background:#ffffff;border-radius:32px;padding:48px;box-shadow:0 10px 30px rgba(0,0,0,0.05);} .header{display:flex;align-items:center;margin-bottom:32px;} .badge{background:#333;color:#fff;padding:8px 20px;border-radius:12px;font-weight:700;font-size:1.2rem;margin-right:20px;} h1{font-size:2.5rem;color:#111;margin:0;} .instruction{font-size:1.4rem;color:#555;margin-bottom:40px;line-height:1.6;} .note-area{background:#fff;border:3px solid #333;border-radius:20px;min-height:600px;position:relative;padding:30px;} .note-area::before{content:'오늘 수업 핵심 메모';position:absolute;top:-18px;left:30px;background:#fff;padding:0 15px;font-weight:800;font-size:1.3rem;color:#333;} .guide-lines{height:100%;background-image:linear-gradient(#eee 1px, transparent 1px);background-size:100% 40px;margin-top:20px;min-height:500px;}</style></head><body><div class='card'><div class='header'><span class='badge'>배움 정리</span><h1>오늘의 핵심 기록장</h1></div><p class='instruction'>미디어가 전달하는 정보에는 만드는 사람의 의도나 편견이 담겨 있을 수 있습니다. 수업 중 강조된 '비판적 분석의 이유'를 아래 칸에 적어보세요.</p><div class='note-area'><div class='guide-lines'></div></div></div></body></html>",
+      "source_refs": [
+        90
+      ],
+      "student_writing_zones": [
+        {
+          "zone_id": "core_memo",
+          "label": "수업 핵심 내용 메모",
+          "input_area_type": "free-writing",
+          "min_height": 600
+        }
+      ],
+      "estimated_minutes": 10,
+      "review_status": "draft"
+    },
+    {
+      "activity_id": "act-16-2",
+      "lesson_id": "16차시",
+      "object_role": "activity_area",
+      "lesson_flow_stage": "during",
+      "activity_type": "freeform_html",
+      "level": "on-level",
+      "learning_goal": "미디어를 비판 없이 수용했을 때 민주주의 사회에 미칠 수 있는 영향을 추론할 수 있다.",
+      "prompt_text": "만약 민주주의 사회의 구성원들이 미디어의 정보를 아무런 의심 없이 그대로 믿는다면 어떤 문제가 생길까요? 구체적인 상황을 상상하여 적어 봅시다.",
+      "layout_template": "freeform_html",
+      "html_content": "<!DOCTYPE html><html lang='ko'><head><meta charset='UTF-8'><style>body{width:1600px;margin:0;background:transparent;font-family:'Noto Sans KR',sans-serif;padding:40px;display:flex;justify-content:center;} .card{width:1300px;background:#ffffff;border-radius:32px;padding:50px;} h1{font-size:2.4rem;color:#111;margin-bottom:10px;} .sub-title{font-size:1.3rem;color:#666;margin-bottom:40px;} .container{display:grid;grid-template-columns:1fr 1fr;gap:40px;} .box{background:#f9f9f9;border:2px dashed #ccc;border-radius:24px;padding:30px;display:flex;flex-direction:column;} .box h2{font-size:1.6rem;margin-top:0;color:#333;border-bottom:2px solid #333;padding-bottom:10px;margin-bottom:20px;} .writing-zone{background:#fff;border:3px solid #333;border-radius:16px;flex-grow:1;min-height:450px;margin-top:10px;} .label-text{font-weight:bold;color:#d32f2f;margin-bottom:8px;display:block;}</style></head><body><div class='card'><h1>비판적 사고가 사라진 사회?</h1><p class='sub-title'>민주주의 사회에서 '미디어 비판'이라는 방어막이 사라진다면 어떤 일이 벌어질지 생각해 봅시다.</p><div class='container'><div class='box'><h2>상황 1: 선거철 가짜 뉴스</h2><span class='label-text'>[추론] 후보자에 대한 잘못된 정보를 모두가 믿는다면?</span><div class='writing-zone'></div></div><div class='box'><h2>상황 2: 편향된 정책 홍보</h2><span class='label-text'>[추론] 특정 집단에 유리한 뉴스만 반복해서 보도된다면?</span><div class='writing-zone'></div></div></div></div></body></html>",
+      "source_refs": [
+        90
+      ],
+      "student_writing_zones": [
+        {
+          "zone_id": "consequence_1",
+          "label": "상황 1에 대한 추론 쓰기",
+          "input_area_type": "free-writing",
+          "min_height": 450
+        },
+        {
+          "zone_id": "consequence_2",
+          "label": "상황 2에 대한 추론 쓰기",
+          "input_area_type": "free-writing",
+          "min_height": 450
+        }
+      ],
+      "estimated_minutes": 15,
+      "review_status": "draft"
+    },
+    {
+      "activity_id": "act-16-3",
+      "lesson_id": "16차시",
+      "object_role": "worksheet",
+      "lesson_flow_stage": "after",
+      "activity_type": "worksheet",
+      "level": "extension",
+      "learning_goal": "미디어를 대하는 비판적 분석 습관을 위한 나만의 체크리스트를 만들 수 있다.",
+      "prompt_text": "미디어 정보를 현명하게 소비하기 위해, 내가 정보를 접할 때마다 스스로에게 던질 '비판적 질문' 3가지를 정해 봅시다.",
+      "layout_template": "freeform_html",
+      "html_content": "<!DOCTYPE html><html lang='ko'><head><meta charset='UTF-8'><style>body{width:1600px;margin:0;background:transparent;font-family:'Noto Sans KR',sans-serif;padding:40px;display:flex;justify-content:center;} .card{width:1000px;background:#fff;border:4px solid #4CAF50;border-radius:40px;padding:60px;position:relative;} .title-tag{position:absolute;top:-30px;left:50%;transform:translateX(-50%);background:#4CAF50;color:#fff;padding:15px 40px;border-radius:50px;font-size:1.8rem;font-weight:900;} .intro{text-align:center;margin-top:20px;margin-bottom:50px;font-size:1.5rem;color:#444;line-height:1.5;} .question-row{display:flex;align-items:flex-start;margin-bottom:40px;} .num{background:#4CAF50;color:#fff;width:60px;height:60px;border-radius:30px;display:flex;align-items:center;justify-content:center;font-size:2rem;font-weight:bold;margin-right:25px;flex-shrink:0;} .input-box{background:#fff;border:3px solid #333;border-radius:20px;flex-grow:1;min-height:150px;padding:20px;font-size:1.3rem;} .example{font-size:1rem;color:#888;margin-top:10px;margin-left:85px;}</style></head><body><div class='card'><div class='title-tag'>나의 미디어 분석 체크리스트</div><p class='intro'>뉴스를 보거나 SNS 정보를 볼 때, <br>아래 세 가지 질문을 스스로에게 던져보겠다고 약속해요!</p><div class='question-row'><div class='num'>1</div><div class='input-box'></div></div><div class='question-row'><div class='num'>2</div><div class='input-box'></div></div><div class='question-row'><div class='num'>3</div><div class='input-box'></div></div><p class='example'>예: 이 정보를 만든 사람의 의도는 무엇인가? / 사실과 의견이 섞여 있지는 않은가? / 다른 언론사에서는 어떻게 보도하고 있는가?</p></div></body></html>",
+      "source_refs": [
+        90
+      ],
+      "student_writing_zones": [
+        {
+          "zone_id": "check_1",
+          "label": "비판적 질문 1",
+          "input_area_type": "inline-answer",
+          "min_height": 150
+        },
+        {
+          "zone_id": "check_2",
+          "label": "비판적 질문 2",
+          "input_area_type": "inline-answer",
+          "min_height": 150
+        },
+        {
+          "zone_id": "check_3",
+          "label": "비판적 질문 3",
+          "input_area_type": "inline-answer",
+          "min_height": 150
+        }
+      ],
+      "estimated_minutes": 10,
+      "review_status": "draft"
+    }
+  ]
+}

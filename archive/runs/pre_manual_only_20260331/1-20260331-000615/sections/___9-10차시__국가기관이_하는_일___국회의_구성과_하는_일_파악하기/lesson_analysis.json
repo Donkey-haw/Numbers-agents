@@ -1,0 +1,83 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-03-30T15:19:51.611295+00:00",
+  "lesson_id": "9-10차시",
+  "sheet_name": "9-10차시",
+  "lesson_title": "국가기관이 하는 일 — 국회의 구성과 하는 일 파악하기",
+  "lesson_type": "core",
+  "pdf_pages": [
+    74
+  ],
+  "essential_question": "국민의 대표 기관인 국회는 어떻게 구성되며 우리 사회에서 어떤 중요한 역할을 할까요?",
+  "learning_goals": [
+    "국회의 구성원인 국회의원의 선출 방식과 임기를 설명할 수 있다.",
+    "국회가 법을 만들고 고치는 일이 국민의 뜻과 어떤 관련이 있는지 파악할 수 있다.",
+    "국회 본회의장의 주요 시설과 본회의의 의미를 이해할 수 있다."
+  ],
+  "key_concepts": [
+    "국회",
+    "국회의원",
+    "국민의 대표 기관",
+    "입법",
+    "본회의"
+  ],
+  "vocabulary": [
+    "국회",
+    "국회의원",
+    "임기",
+    "본회의",
+    "국회 의사당"
+  ],
+  "misconceptions": [
+    "국회의원이 국민의 뜻과 상관없이 임의로 법을 만든다고 오해할 수 있다.",
+    "국회 의사당을 단순히 건물의 의미로만 이해하고 그 안에서 이루어지는 의사 결정 과정을 간과할 수 있다."
+  ],
+  "difficulty_band": "on-level",
+  "content_chunks": [
+    {
+      "chunk_id": "9-10차시-chunk-1",
+      "label": "국회의 구성과 특징",
+      "content_type": "text",
+      "knowledge_type": "concept",
+      "summary": "국회는 선거로 선출된 국민의 대표인 국회의원들(임기 4년)로 구성된 국민의 대표 기관임을 설명함.",
+      "source_pages": [
+        74
+      ],
+      "suggested_activity_types": [
+        "learning_note"
+      ]
+    },
+    {
+      "chunk_id": "9-10차시-chunk-2",
+      "label": "국회가 하는 일: 입법",
+      "content_type": "text",
+      "knowledge_type": "concept",
+      "summary": "국민의 뜻에 따라 법을 만들고 고치는 일을 수행하며, 이는 국가 권력 행사의 근거가 되는 가장 중요한 업무임.",
+      "source_pages": [
+        74
+      ],
+      "suggested_activity_types": [
+        "see_think_wonder"
+      ]
+    },
+    {
+      "chunk_id": "9-10차시-chunk-3",
+      "label": "국회 본회의장의 구조",
+      "content_type": "mixed",
+      "knowledge_type": "fact",
+      "summary": "발언대, 대형 전광판, 국회의원석 등 본회의장의 주요 시설을 소개하고, 최종 의사를 결정하는 본회의의 개념을 제시함.",
+      "source_pages": [
+        74
+      ],
+      "suggested_activity_types": [
+        "worksheet"
+      ]
+    }
+  ],
+  "source_page_refs": [
+    74
+  ],
+  "analysis_confidence": 0.95,
+  "review_status": "draft",
+  "notes": "교과서 74쪽 텍스트를 바탕으로 국회의 정의, 입법 역할, 본회의장 구조를 상세히 분석함. 인근 차시와 페이지가 중첩되나 추출된 텍스트는 해당 주제에 집중되어 있음."
+}

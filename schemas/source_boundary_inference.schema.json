@@ -1,0 +1,65 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://numbersauto.local/schemas/source_boundary_inference.schema.json",
+  "title": "Source Boundary Inference",
+  "type": "object",
+  "required": ["schema_version", "boundaries"],
+  "properties": {
+    "schema_version": {
+      "type": "string"
+    },
+    "boundaries": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "sheet_name",
+          "resource_id",
+          "role",
+          "status",
+          "start_page",
+          "end_page",
+          "reason"
+        ],
+        "properties": {
+          "sheet_name": {
+            "type": "string"
+          },
+          "resource_id": {
+            "type": "string"
+          },
+          "role": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string",
+            "enum": ["matched", "optional_not_found", "not_found"]
+          },
+          "start_page": {
+            "type": ["integer", "null"],
+            "minimum": 1
+          },
+          "end_page": {
+            "type": ["integer", "null"],
+            "minimum": 1
+          },
+          "reason": {
+            "type": "string"
+          },
+          "confidence": {
+            "type": "number"
+          },
+          "evidence_pages": {
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "minimum": 1
+            }
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

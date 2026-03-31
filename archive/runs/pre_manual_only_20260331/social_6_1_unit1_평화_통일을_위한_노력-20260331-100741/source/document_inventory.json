@@ -1,0 +1,21 @@
+{
+  "schema_version": "1.0.0",
+  "documents": [
+    {
+      "document_id": "config",
+      "path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/configs/units/social/social_6_1_unit1_평화_통일을_위한_노력.json",
+      "kind": "reference",
+      "exists": true,
+      "label": "social_6_1_unit1_평화_통일을_위한_노력",
+      "notes": ""
+    },
+    {
+      "document_id": "main",
+      "path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/textbook/사회/[사회]6_1_교과서.pdf",
+      "kind": "textbook",
+      "exists": true,
+      "label": "교과서",
+      "notes": ""
+    }
+  ]
+}

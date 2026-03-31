@@ -1,0 +1,74 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-03-30T15:39:59.011069+00:00",
+  "lesson_id": "12차시",
+  "sheet_name": "12차시",
+  "lesson_title": "세계의 대륙, 대양, 나라 — 북아메리카와 남아메리카 주요 나라들의 위치 알아보기",
+  "lesson_type": "summary",
+  "pdf_pages": [
+    131
+  ],
+  "essential_question": "지구본과 지도로 나타낸 세계의 특징과 위치 표현 방법을 어떻게 정리하고 평가할 수 있을까?",
+  "learning_goals": [
+    "지구본, 세계지도, 디지털 공간 영상 정보의 특징을 비교하여 설명할 수 있다.",
+    "위도와 경도를 활용하여 세계 여러 나라의 위치를 표현하는 방법을 점검할 수 있다.",
+    "위도와 경도에 따른 계절 차이 및 시차의 원리를 이해하고 있는지 스스로 평가할 수 있다."
+  ],
+  "key_concepts": [
+    "지구본",
+    "세계지도",
+    "디지털 공간 영상 정보",
+    "위도",
+    "경도",
+    "시차",
+    "북반구/남반구"
+  ],
+  "vocabulary": [
+    "공간 자료",
+    "위도",
+    "경도",
+    "시차",
+    "북반구",
+    "남반구"
+  ],
+  "misconceptions": [
+    "위치는 위도로만 나타낼 수 있다고 오해하기 쉬우나 경도와의 조합이 필수임을 확인한다.",
+    "지구본과 세계지도의 특징(정확도, 편리성 등)을 혼동할 수 있다."
+  ],
+  "difficulty_band": "on-level",
+  "content_chunks": [
+    {
+      "chunk_id": "12차시-chunk-1",
+      "label": "주제 정리 퀴즈",
+      "content_type": "activity",
+      "knowledge_type": "concept",
+      "summary": "옳은 문장의 번호를 찾아 우주 여행 준비물을 챙기며 주제 1(지구본과 지도로 보는 세계)에서 배운 핵심 내용을 정리한다. (공간 자료의 특징, 반구별 계절, 경도에 따른 시차 등)",
+      "source_pages": [
+        131
+      ],
+      "suggested_activity_types": [
+        "OX 퀴즈",
+        "미션 수행"
+      ]
+    },
+    {
+      "chunk_id": "12차시-chunk-2",
+      "label": "자기 학습 점검",
+      "content_type": "summary",
+      "knowledge_type": "procedure",
+      "summary": "공간 자료의 특징 설명, 기초 지리 정보 찾기, 위도와 경도 이해 등 주요 학습 목표 도달 여부를 스스로 평가한다.",
+      "source_pages": [
+        131
+      ],
+      "suggested_activity_types": [
+        "체크리스트 자기 평가"
+      ]
+    }
+  ],
+  "source_page_refs": [
+    131
+  ],
+  "analysis_confidence": 0.9,
+  "review_status": "draft",
+  "notes": "해당 페이지(131쪽)는 '1. 지구본과 지도로 보는 세계' 주제의 마무리 및 요약 정리 페이지입니다. 제공된 차시 제목(북아메리카와 남아메리카...)과 실제 페이지 내용이 일치하지 않으나, 지침에 따라 제목을 유지하고 텍스트 증거에 기반하여 분석을 수행했습니다."
+}

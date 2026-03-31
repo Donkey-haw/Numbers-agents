@@ -1,0 +1,92 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-03-30T15:33:18.485885+00:00",
+  "lesson_id": "2-3차시",
+  "sheet_name": "2-3차시",
+  "lesson_title": "지구본과 지도로 보는 세계 — 지구본의 특징 살펴보기",
+  "pdf_pages": [
+    112,
+    113,
+    114,
+    115
+  ],
+  "lesson_type": "core",
+  "difficulty_band": "on-level",
+  "review_status": "draft",
+  "essential_question": "지구본과 세계지도는 각각 어떤 특징이 있으며, 상황에 따라 무엇을 선택하여 사용하는 것이 좋을까요?",
+  "learning_goals": [
+    "지구본과 세계지도의 정의를 알고 각각의 장단점을 비교하여 설명할 수 있다.",
+    "둥근 지구를 평면으로 나타낼 때 발생하는 면적, 거리 등의 왜곡 원인을 이해한다.",
+    "지구본과 세계지도를 활용해 대륙의 모양을 비교하거나 최단 경로를 찾는 활동을 수행할 수 있다."
+  ],
+  "key_concepts": [
+    "지구본",
+    "세계지도",
+    "평면 표현",
+    "왜곡",
+    "최단 경로"
+  ],
+  "vocabulary": [
+    "모형",
+    "평면",
+    "입체",
+    "축소",
+    "비행경로",
+    "적도",
+    "남극해"
+  ],
+  "misconceptions": [
+    "세계지도에 나타난 대륙의 크기와 모양이 실제와 항상 일치한다고 생각할 수 있다.",
+    "지구본보다 세계지도가 모든 정보를 더 정확하게 전달한다고 오해할 수 있다."
+  ],
+  "content_chunks": [
+    {
+      "chunk_id": "2-3차시-chunk-1",
+      "label": "지구본의 정의와 특징",
+      "content_type": "text",
+      "knowledge_type": "concept",
+      "summary": "지구본은 지구의 실제 모습과 비슷하여 위치, 거리, 영토 모양을 정확하게 표현하지만, 한눈에 보기 어렵고 휴대성이 낮다는 특징이 있다.",
+      "source_pages": [
+        112
+      ]
+    },
+    {
+      "chunk_id": "2-3차시-chunk-2",
+      "label": "세계지도의 정의와 왜곡의 원인",
+      "content_type": "mixed",
+      "knowledge_type": "cause-effect",
+      "summary": "세계지도는 지구를 평면으로 나타내어 한눈에 보기 좋지만, 둥근 표면을 펼치는 과정에서 영토 모양, 면적, 거리 등이 실제와 다르게 표현되는 왜곡이 발생한다.",
+      "source_pages": [
+        113
+      ]
+    },
+    {
+      "chunk_id": "2-3차시-chunk-3",
+      "label": "지구본과 세계지도 비교 탐구",
+      "content_type": "activity",
+      "knowledge_type": "procedure",
+      "summary": "지구본과 세계지도에서 남극 대륙의 모양을 비교해 보고, 끈을 이용해 서울에서 런던까지의 최단 경로를 직접 찾아보며 두 도구의 차이점을 실습한다.",
+      "source_pages": [
+        114
+      ]
+    },
+    {
+      "chunk_id": "2-3차시-chunk-4",
+      "label": "다양한 시각의 세계지도",
+      "content_type": "map",
+      "knowledge_type": "application",
+      "summary": "물고기의 관점에서 그린 지도나 북극 중심의 UN 깃발처럼, 지도는 만드는 목적과 중심에 두는 대상에 따라 다양하게 표현될 수 있음을 이해한다.",
+      "source_pages": [
+        115
+      ]
+    }
+  ],
+  "source_page_refs": [
+    112,
+    113,
+    114,
+    115
+  ],
+  "analysis_confidence": 0.95,
+  "notes": "교과서 텍스트를 바탕으로 지구본과 세계지도의 장단점 및 왜곡의 원인을 명확히 추출함. 114쪽의 탐구 활동과 115쪽의 다양한 지도 사례를 별도 청크로 구성하여 학습 흐름을 강화함."
+}

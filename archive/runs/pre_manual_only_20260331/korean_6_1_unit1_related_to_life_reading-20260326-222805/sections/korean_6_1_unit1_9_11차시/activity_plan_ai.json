@@ -1,0 +1,82 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-03-26T14:00:00+00:00",
+  "lesson_id": "9-11차시",
+  "activities": [
+    {
+      "activity_id": "act-9-11-1",
+      "lesson_id": "9-11차시",
+      "object_role": "activity_area",
+      "lesson_flow_stage": "during",
+      "activity_type": "freeform_html",
+      "level": "core",
+      "learning_goal": "인물이 추구하는 가치를 파악하고 자신의 삶과 비교하여 성찰할 수 있다.",
+      "prompt_text": "작품 속 다람쥐가 고민했던 가치들과 내가 소중하게 생각하는 가치를 비교하며 나의 생각을 정리해 봅시다.",
+      "layout_template": "freeform_html",
+      "html_content": "<!DOCTYPE html><html lang='ko'><head><meta charset='UTF-8'><style>@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap');body{width:1600px;background:transparent;font-family:'Noto Sans KR',sans-serif;margin:0;padding:40px;box-sizing:border-box;}.card{background:#fff;padding:50px;border-radius:40px;border:4px solid #333;box-shadow:15px 15px 0px rgba(0,0,0,0.1);}.header{display:flex;align-items:center;margin-bottom:40px;}.badge{background:#4A90E2;color:#fff;padding:10px 24px;border-radius:100px;font-weight:700;font-size:24px;margin-right:20px;}h1{font-size:42px;color:#333;margin:0;letter-spacing:-1px;}.grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;margin-bottom:40px;}.section-title{font-size:28px;font-weight:700;margin-bottom:20px;color:#333;display:flex;align-items:center;}.section-title::before{content:'';display:inline-block;width:12px;height:28px;background:#4A90E2;margin-right:15px;border-radius:4px;}.writing-box{background:#fff;border:3px solid #333;border-radius:24px;min-height:480px;padding:20px;box-sizing:border-box;}.full-width-box{background:#f8f9fa;border:3px solid #333;border-radius:24px;padding:30px;margin-top:20px;}.instruction{font-size:22px;color:#666;margin-bottom:15px;line-height:1.6;}</style></head><body><div class='card'><div class='header'><div class='badge'>가치 비교하기</div><h1>가치 저울: 다람쥐의 선택 vs 나의 선택</h1></div><div class='grid'><div><div class='section-title'>작품 속 다람쥐가 소중히 여긴 것</div><div class='instruction'>다람쥐가 다른 동물이 되려다 결국 다람쥐로 남기로 한 까닭은 무엇일까요? 그 과정에서 드러난 가치를 써 보세요.</div><div class='writing-box'></div></div><div><div class='section-title'>내가 삶에서 가장 소중히 여기는 것</div><div class='instruction'>작품 속 가치(협력, 자유, 고결함 등) 중 내가 가장 중요하게 생각하는 것과 그 가치가 담긴 나의 경험을 써 보세요.</div><div class='writing-box'></div></div></div><div class='full-width-box'><div class='section-title'>가치에 대한 나의 생각 정리하기</div><div class='instruction'>인물이 추구하는 가치와 나의 가치를 비교해 보았을 때, 어떤 생각이 들었나요? 앞으로의 다짐과 함께 써 봅시다.</div><div class='writing-box' style='min-height:300px;'></div></div></div></body></html>",
+      "source_refs": [
+        46,
+        47
+      ],
+      "student_writing_zones": [
+        {
+          "zone_id": "character_value",
+          "label": "작품 속 인물의 가치",
+          "input_area_type": "free-writing",
+          "min_height": 480
+        },
+        {
+          "zone_id": "student_value",
+          "label": "나의 소중한 가치와 경험",
+          "input_area_type": "free-writing",
+          "min_height": 480
+        },
+        {
+          "zone_id": "value_reflection",
+          "label": "가치 비교 및 다짐",
+          "input_area_type": "free-writing",
+          "min_height": 300
+        }
+      ],
+      "estimated_minutes": 20,
+      "review_status": "draft"
+    },
+    {
+      "activity_id": "act-9-11-2",
+      "lesson_id": "9-11차시",
+      "object_role": "worksheet",
+      "lesson_flow_stage": "during",
+      "activity_type": "freeform_html",
+      "level": "core",
+      "learning_goal": "가치에 대한 자신의 생각이 드러나게 독서 감상문을 구성할 수 있다.",
+      "prompt_text": "인물이 추구하는 가치에 대한 나의 생각을 중심으로 독서 감상문의 내용을 구체적으로 설계해 봅시다.",
+      "layout_template": "freeform_html",
+      "html_content": "<!DOCTYPE html><html lang='ko'><head><meta charset='UTF-8'><style>@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap');body{width:1600px;background:transparent;font-family:'Noto Sans KR',sans-serif;margin:0;padding:40px;box-sizing:border-box;}.card{background:#fff;padding:50px;border-radius:40px;border:4px solid #333;}.header{display:flex;align-items:center;margin-bottom:40px;padding-bottom:20px;border-bottom:2px dashed #ccc;}.badge{background:#F5A623;color:#fff;padding:10px 24px;border-radius:12px;font-weight:700;font-size:22px;margin-right:20px;}h1{font-size:38px;color:#333;margin:0;}.flow-container{display:flex;flex-direction:column;gap:35px;}.step{display:flex;gap:30px;align-items:flex-start;}.step-number{background:#333;color:#fff;width:50px;height:50px;border-radius:50%;display:flex;items-center:center;justify-content:center;font-size:24px;font-weight:700;flex-shrink:0;line-height:50px;text-align:center;}.content-area{flex-grow:1;}.label{font-size:26px;font-weight:700;margin-bottom:15px;color:#333;}.writing-zone{background:#fff;border:3px solid #333;border-radius:16px;min-height:280px;padding:20px;box-sizing:border-box;}.hint{font-size:18px;color:#888;margin-top:10px;font-style:italic;}</style></head><body><div class='card'><div class='header'><div class='badge'>감상문 설계</div><h1>내 생각이 담긴 독서 감상문 구성하기</h1></div><div class='flow-container'><div class='step'><div class='step-number'>1</div><div class='content-area'><div class='label'>책을 읽게 된 동기와 첫인상</div><div class='writing-zone'></div><div class='hint'>* 이 책을 왜 읽게 되었는지, 제목을 보고 어떤 생각이 들었는지 써 보세요.</div></div></div><div class='step'><div class='step-number'>2</div><div class='content-area'><div class='label'>인물이 추구하는 가치와 나의 생각</div><div class='writing-zone' style='min-height:450px;'></div><div class='hint'>* 다람쥐가 선택한 가치에 대해 나는 어떻게 생각하나요? 인물의 행동을 보며 느낀 점을 써 보세요.</div></div></div><div class='step'><div class='step-number'>3</div><div class='content-area'><div class='label'>내 삶과 연결하여 다짐하기</div><div class='writing-zone'></div><div class='hint'>* 인물의 가치를 보고 내 삶에서 새롭게 노력하고 싶은 점이나 실천하고 싶은 가치를 써 보세요.</div></div></div></div></div></body></html>",
+      "source_refs": [
+        48
+      ],
+      "student_writing_zones": [
+        {
+          "zone_id": "intro",
+          "label": "동기 및 첫인상",
+          "input_area_type": "free-writing",
+          "min_height": 280
+        },
+        {
+          "zone_id": "body_reflection",
+          "label": "가치에 대한 내 생각",
+          "input_area_type": "free-writing",
+          "min_height": 450
+        },
+        {
+          "zone_id": "conclusion",
+          "label": "삶의 적용 및 다짐",
+          "input_area_type": "free-writing",
+          "min_height": 280
+        }
+      ],
+      "estimated_minutes": 25,
+      "review_status": "draft"
+    }
+  ]
+}

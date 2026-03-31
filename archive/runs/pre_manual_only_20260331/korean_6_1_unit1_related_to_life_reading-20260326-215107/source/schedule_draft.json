@@ -1,0 +1,41 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-03-26T12:51:07.291750+00:00",
+  "sections": [
+    {
+      "sheet_name": "1차시",
+      "lesson_title": "배울 내용 살펴보기",
+      "title_query": "배울 내용 살펴보기"
+    },
+    {
+      "sheet_name": "2-3차시",
+      "lesson_title": "전기문을 읽고 인물이 추구하는 가치 알기",
+      "title_query": "전기문을 읽고 인물이 추구하는 가치 알기"
+    },
+    {
+      "sheet_name": "4-6차시",
+      "lesson_title": "작품을 읽고 시대적 상황과 인물이 추구하는 가치에 대하여 질문하기",
+      "title_query": "작품을 읽고 시대적 상황과 인물이 추구하는 가치에 대하여 질문하기"
+    },
+    {
+      "sheet_name": "7-8차시",
+      "lesson_title": "인물이 추구하는 가치를 자신의 삶과 관련짓기",
+      "title_query": "인물이 추구하는 가치를 자신의 삶과 관련짓기"
+    },
+    {
+      "sheet_name": "9-11차시",
+      "lesson_title": "작품을 읽고 독서 감상문 쓰기",
+      "title_query": "작품을 읽고 독서 감상문 쓰기"
+    },
+    {
+      "sheet_name": "12-13차시",
+      "lesson_title": "배운 내용 실천하기",
+      "title_query": "배운 내용 실천하기"
+    },
+    {
+      "sheet_name": "14차시",
+      "lesson_title": "마무리하기",
+      "title_query": "마무리하기"
+    }
+  ]
+}

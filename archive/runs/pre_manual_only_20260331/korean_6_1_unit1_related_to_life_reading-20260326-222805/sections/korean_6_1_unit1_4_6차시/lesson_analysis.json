@@ -1,0 +1,129 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-03-26T13:29:22.584178+00:00",
+  "lesson_id": "4-6차시",
+  "sheet_name": "4-6차시",
+  "lesson_title": "작품을 읽고 시대적 상황과 인물이 추구하는 가치에 대하여 질문하기",
+  "lesson_type": "core",
+  "pdf_pages": [
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26
+  ],
+  "essential_question": "작품 속 인물의 말과 행동을 통해 그들이 중요하게 여기는 가치와 시대적 배경을 어떻게 찾아낼 수 있을까?",
+  "learning_goals": [
+    "「책 깎는 소년」을 읽고 조선 시대의 출판 문화와 시대적 상황을 파악할 수 있다.",
+    "장호와 봉운의 말과 행동을 비교하여 각 인물이 추구하는 가치를 설명할 수 있다.",
+    "인물이 추구하는 가치와 시대적 상황에 대하여 질문을 만들고 답할 수 있다."
+  ],
+  "key_concepts": [
+    "시대적 상황",
+    "인물이 추구하는 가치",
+    "조선 시대 출판 문화",
+    "가치 비교",
+    "질문 만들기"
+  ],
+  "vocabulary": [
+    "필사",
+    "목판 인쇄술",
+    "각수",
+    "서포",
+    "대패질",
+    "판각",
+    "수모",
+    "책판"
+  ],
+  "misconceptions": [
+    "가치를 단순히 돈이나 명예 같은 눈에 보이는 결과물로만 한정하여 생각할 수 있다.",
+    "시대적 배경을 단순히 옛날 이야기로만 치부하고 인물의 고민과 연결 짓지 못할 수 있다."
+  ],
+  "difficulty_band": "on-level",
+  "content_chunks": [
+    {
+      "chunk_id": "4-6차시-chunk-1",
+      "label": "시대적 배경 탐구",
+      "content_type": "mixed",
+      "knowledge_type": "concept",
+      "summary": "조선 시대의 출판 문화(필사, 목판 인쇄술)와 관련 직업(각수), 장소(서포)를 통해 이야기의 배경이 되는 시대적 상황을 이해한다.",
+      "source_pages": [
+        15
+      ],
+      "suggested_activity_types": [
+        "see_think_wonder"
+      ]
+    },
+    {
+      "chunk_id": "4-6차시-chunk-2",
+      "label": "이야기 읽기 및 갈등 파악",
+      "content_type": "text",
+      "knowledge_type": "cause-effect",
+      "summary": "「책 깎는 소년」을 읽으며 부자가 되고 싶은 장호와 진심으로 책을 만들고 싶어 하는 봉운의 태도 차이를 파악한다.",
+      "source_pages": [
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "suggested_activity_types": [
+        "learning_note"
+      ]
+    },
+    {
+      "chunk_id": "4-6차시-chunk-3",
+      "label": "가치 비교 및 분석",
+      "content_type": "summary",
+      "knowledge_type": "comparison",
+      "summary": "장호(경제적 가치/성공)와 봉운(장인 정신/보람)이 추구하는 가치를 구체적인 근거를 들어 비교하고 분석한다.",
+      "source_pages": [
+        23,
+        24,
+        25
+      ],
+      "suggested_activity_types": [
+        "worksheet"
+      ]
+    },
+    {
+      "chunk_id": "4-6차시-chunk-4",
+      "label": "질문하기 및 면담 활동",
+      "content_type": "activity",
+      "knowledge_type": "application",
+      "summary": "인물이 추구하는 가치를 깊이 있게 이해하기 위해 질문을 만들고, 역할극을 통해 인물 면담 활동을 수행한다.",
+      "source_pages": [
+        26
+      ],
+      "suggested_activity_types": [
+        "worksheet"
+      ]
+    }
+  ],
+  "source_page_refs": [
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26
+  ],
+  "analysis_confidence": 0.95,
+  "review_status": "draft",
+  "notes": "텍스트북의 구체적인 내용(필사, 목판 인쇄술, 장호와 봉운의 가치관 차이)을 반영하여 청크를 세분화하고 학습 목표를 명확히 함."
+}

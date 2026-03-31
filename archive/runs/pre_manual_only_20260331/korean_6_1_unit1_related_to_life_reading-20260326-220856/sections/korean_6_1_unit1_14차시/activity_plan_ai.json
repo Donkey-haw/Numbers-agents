@@ -1,0 +1,82 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-03-26T14:00:00+00:00",
+  "lesson_id": "14차시",
+  "activities": [
+    {
+      "activity_id": "act-14-1",
+      "lesson_id": "14차시",
+      "object_role": "activity_area",
+      "lesson_flow_stage": "during",
+      "activity_type": "freeform_html",
+      "level": "core",
+      "learning_goal": "시 속 인물의 탐험 정신을 바탕으로, 나의 일상에서 발견할 수 있는 새로운 가치를 탐색할 수 있다.",
+      "prompt_text": "시 「난 탐험가」의 말하는 이처럼, 여러분의 평범한 일상을 '탐험'의 시선으로 바라봅시다. 오늘 하루 내가 새롭게 발견하고 싶은 가치는 무엇인가요?",
+      "layout_template": "freeform_html",
+      "html_content": "<!DOCTYPE html><html lang='ko'><head><meta charset='UTF-8'><style>body{width:1600px;margin:0;padding:40px;background:transparent;font-family:'Apple SD Gothic Neo', sans-serif;color:#333;} .card{background:#fff;border-radius:32px;padding:48px;box-shadow:0 10px 30px rgba(0,0,0,0.05);border:1px solid #eee;} .header{display:flex;align-items:center;margin-bottom:32px;} .badge{background:#4A90E2;color:#fff;padding:8px 20px;border-radius:12px;font-weight:bold;font-size:24px;margin-right:20px;} h1{font-size:42px;margin:0;color:#2D3748;} .instruction{font-size:28px;line-height:1.6;color:#4A5568;margin-bottom:40px;background:#F7FAFC;padding:24px;border-left:8px solid #4A90E2;border-radius:8px;} .grid{display:grid;grid-template-columns:1fr 1fr;gap:32px;} .column-title{font-size:24px;font-weight:bold;margin-bottom:16px;color:#2D3748;display:flex;align-items:center;} .column-title::before{content:'📍';margin-right:8px;} .writing-zone{background:#fff;border:3px solid #333;border-radius:20px;min-height:500px;padding:24px;font-size:24px;position:relative;} .writing-zone::after{content:'여기에 자유롭게 쓰거나 그리며 표현해 보세요.';position:absolute;top:24px;left:24px;color:#CBD5E0;pointer-events:none;} .example-tag{display:inline-block;background:#EBF8FF;color:#2B6CB0;padding:4px 12px;border-radius:6px;font-size:18px;margin-bottom:12px;}</style></head><body><div class='card'><div class='header'><div class='badge'>활동 1</div><h1>나의 일상 탐험 일지</h1></div><div class='instruction'>시 속의 탐험가는 익숙한 세상을 새롭게 봅니다. 여러분의 책상 위, 등굣길, 혹은 친구와의 대화 속에서 어떤 가치(용기, 끈기, 호기심, 배려 등)를 발견할 수 있을까요? 그 장면을 글이나 그림으로 기록해 봅시다.</div><div class='grid'><div><div class='column-title'>내가 발견한 '탐험'의 순간</div><div class='writing-zone'></div></div><div><div class='column-title'>그 속에서 찾은 나의 가치</div><div class='writing-zone'></div></div></div></div></body></html>",
+      "source_refs": [
+        51,
+        52
+      ],
+      "student_writing_zones": [
+        {
+          "zone_id": "exploration_moment",
+          "label": "일상의 탐험 순간 기록",
+          "input_area_type": "free-writing",
+          "min_height": 500
+        },
+        {
+          "zone_id": "discovered_value",
+          "label": "발견한 가치 설명",
+          "input_area_type": "free-writing",
+          "min_height": 500
+        }
+      ],
+      "estimated_minutes": 15,
+      "review_status": "draft"
+    },
+    {
+      "activity_id": "act-14-2",
+      "lesson_id": "14차시",
+      "object_role": "worksheet",
+      "lesson_flow_stage": "after",
+      "activity_type": "freeform_html",
+      "level": "core",
+      "learning_goal": "'종합하다', '적용하다', '개선하다' 어휘를 활용하여 자신의 학습 경험을 논리적으로 구성할 수 있다.",
+      "prompt_text": "이번 단원에서 배운 내용을 바탕으로, 나만의 '성장 알고리즘'을 완성해 봅시다. 세 단어를 모두 사용하여 문장을 만들어 보세요.",
+      "layout_template": "freeform_html",
+      "html_content": "<!DOCTYPE html><html lang='ko'><head><meta charset='UTF-8'><style>body{width:1600px;margin:0;padding:40px;background:transparent;font-family:'Apple SD Gothic Neo', sans-serif;} .card{background:#fff;border-radius:32px;padding:48px;border:2px solid #E2E8F0;} .header{border-bottom:4px solid #ED8936;padding-bottom:24px;margin-bottom:40px;} h1{font-size:42px;margin:0;color:#744210;} .step-container{display:flex;flex-direction:column;gap:40px;} .step-box{display:flex;align-items:flex-start;gap:24px;} .step-number{background:#ED8936;color:#fff;width:60px;height:60px;border-radius:30px;display:flex;align-items:center;justify-content:center;font-size:32px;font-weight:bold;flex-shrink:0;} .step-content{flex-grow:1;} .keyword-info{background:#FFFAF0;border:1px solid #FEEBC8;padding:16px;border-radius:12px;margin-bottom:16px;font-size:22px;} .keyword-info b{color:#C05621;font-size:26px;} .writing-area{background:#fff;border:3px solid #333;border-radius:16px;min-height:220px;padding:20px;font-size:26px;} .final-mission{margin-top:20px;background:#FEEBC8;padding:32px;border-radius:24px;border:3px dashed #ED8936;} .final-mission h2{margin-top:0;color:#744210;} .big-writing{background:#fff;border:3px solid #333;border-radius:16px;min-height:350px;padding:24px;margin-top:16px;}</style></head><body><div class='card'><div class='header'><h1>나의 성장 알고리즘: 단어 활용하기</h1></div><div class='step-container'><div class='step-box'><div class='step-number'>1</div><div class='step-content'><div class='keyword-info'><b>종합하다:</b> 여러 가지를 한데 모아 합치다.</div><div class='writing-area'>질문: 이번 단원에서 배운 여러 인물의 삶을 <b>종합하여</b> 느낀 점을 써 보세요.</div></div></div><div class='step-box'><div class='step-number'>2</div><div class='step-content'><div class='keyword-info'><b>적용하다:</b> 지식이나 법칙 등을 실제 사례에 이용하다.</div><div class='writing-area'>질문: 인물이 추구한 가치를 나의 생활에 어떻게 <b>적용할</b> 수 있을까요?</div></div></div><div class='step-box'><div class='step-number'>3</div><div class='step-content'><div class='keyword-info'><b>개선하다:</b> 잘못된 점이나 부족한 점을 고쳐 더 좋게 만들다.</div><div class='writing-area'>질문: 나의 생활 태도 중 이 가치를 통해 <b>개선하고</b> 싶은 부분은 무엇인가요?</div></div></div></div><div class='final-mission'><h2>종합 미션: 한 문장으로 연결하기</h2><p style='font-size:24px;'>위의 세 단어를 모두 포함하여, 이번 단원을 마친 나의 다짐을 긴 문장으로 만들어 봅시다.</p><div class='big-writing'></div></div></div></body></html>",
+      "source_refs": [
+        54
+      ],
+      "student_writing_zones": [
+        {
+          "zone_id": "vocab_synthesize",
+          "label": "종합하다 활용 답변",
+          "input_area_type": "inline-answer",
+          "min_height": 200
+        },
+        {
+          "zone_id": "vocab_apply",
+          "label": "적용하다 활용 답변",
+          "input_area_type": "inline-answer",
+          "min_height": 200
+        },
+        {
+          "zone_id": "vocab_improve",
+          "label": "개선하다 활용 답변",
+          "input_area_type": "inline-answer",
+          "min_height": 200
+        },
+        {
+          "zone_id": "final_combined_sentence",
+          "label": "세 단어 통합 문장 만들기",
+          "input_area_type": "free-writing",
+          "min_height": 350
+        }
+      ],
+      "estimated_minutes": 20,
+      "review_status": "draft"
+    }
+  ]
+}

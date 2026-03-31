@@ -1,0 +1,40 @@
+{
+  "schema_version": "1.0.0",
+  "stage": "source_validation_agent",
+  "lesson_id": null,
+  "status": "succeeded_with_warning",
+  "run_id": "social_6_1_unit2_state_agencies-20260331-100020",
+  "started_at": "2026-03-31T01:00:26.521921+00:00",
+  "finished_at": "2026-03-31T01:00:26.523545+00:00",
+  "input_refs": [
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/configs/units/social/social_6_1_unit2_state_agencies.json",
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit2_state_agencies-20260331-100020/source/runtime_config.json",
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit2_state_agencies-20260331-100020/source/lesson_queries.json",
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit2_state_agencies-20260331-100020/source/boundary_decisions.json",
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit2_state_agencies-20260331-100020/source/boundary_validation.json"
+  ],
+  "output_refs": [
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit2_state_agencies-20260331-100020/source/config_quality_review.json",
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit2_state_agencies-20260331-100020/source/boundary_review.json",
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit2_state_agencies-20260331-100020/source/supplement_review.json"
+  ],
+  "fallback_used": false,
+  "warnings": [
+    "8차시: source 'main' title_query matched 4 pages",
+    "9-10차시: source 'main' title_query matched 5 pages",
+    "11차시: source 'main' title_query matched 5 pages",
+    "12차시: source 'main' title_query matched 5 pages",
+    "13차시: source 'main' title_query matched 5 pages",
+    "lesson-001: boundary is low_confidence",
+    "lesson-002: boundary is low_confidence",
+    "lesson-003: start_page overlaps with previous lesson boundary",
+    "lesson-003: boundary is low_confidence",
+    "lesson-004: start_page overlaps with previous lesson boundary",
+    "lesson-004: boundary is low_confidence",
+    "lesson-005: start_page overlaps with previous lesson boundary",
+    "lesson-005: boundary is low_confidence"
+  ],
+  "errors": [],
+  "agent_spec_path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/agents/source_validation_agent/AGENT.md",
+  "runtime_driven": true
+}

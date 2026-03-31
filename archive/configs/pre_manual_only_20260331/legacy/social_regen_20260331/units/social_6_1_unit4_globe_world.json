@@ -1,0 +1,52 @@
+{
+  "project_root": "/Users/jonyeock/Desktop/Tool/NumbersAuto",
+  "pdf_path": "textbook/사회/[사회]6_1_교과서.pdf",
+  "template_path": "빈 넘버스 파일.numbers",
+  "output_file": "output/사회_지구본과_지도로_보는_세계.numbers",
+  "footer": "",
+  "search_start_page": 1,
+  "end_before_query": "우리 국토의 위치와 영역",
+  "source_chart": null,
+  "sections": [
+    {
+      "sheet_name": "2-3차시",
+      "card_file": "social_globe_world_2_3",
+      "title": "지구본과 지도로 보는 세계 — 지구본의 특징 살펴보기",
+      "title_query": "지구본의 특징 살펴보기",
+      "badge": "2-3차시",
+      "accent": ["#1d4ed8", "#3b82f6"]
+    },
+    {
+      "sheet_name": "4차시",
+      "card_file": "social_globe_world_4",
+      "title": "지구본과 지도로 보는 세계 — 디지털 공간 영상 정보의 의미 알아보기",
+      "title_query": "디지털 공간 영상 정보의 의미 알아보기",
+      "badge": "4차시",
+      "accent": ["#d97706", "#f59e0b"]
+    },
+    {
+      "sheet_name": "5차시",
+      "card_file": "social_globe_world_5",
+      "title": "지구본과 지도로 보는 세계 — 위도와 위선의 의미 알아보기",
+      "title_query": "위도와 위선의 의미 알아보기",
+      "badge": "5차시",
+      "accent": ["#9333ea", "#c084fc"]
+    },
+    {
+      "sheet_name": "6차시",
+      "card_file": "social_globe_world_6",
+      "title": "지구본과 지도로 보는 세계 — 경도와 경선의 의미 알아보기",
+      "title_query": "경도와 경선의 의미 알아보기",
+      "badge": "6차시",
+      "accent": ["#6366f1", "#818cf8"]
+    },
+    {
+      "sheet_name": "7차시",
+      "card_file": "social_globe_world_7",
+      "title": "지구본과 지도로 보는 세계 — 위도와 경도를 이용해 위치를 표현하는 방법 살 펴보기",
+      "title_query": "위도와 경도를 이용해 위치를 표현하는 방법 살펴보기",
+      "badge": "7차시",
+      "accent": ["#4f46e5", "#7c3aed"]
+    }
+  ]
+}

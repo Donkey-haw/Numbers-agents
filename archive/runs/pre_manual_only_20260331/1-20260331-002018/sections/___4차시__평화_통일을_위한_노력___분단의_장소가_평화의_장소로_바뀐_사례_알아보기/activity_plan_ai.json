@@ -1,0 +1,75 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-03-31T10:00:00+00:00",
+  "lesson_id": "4차시",
+  "activities": [
+    {
+      "activity_id": "act-4-1",
+      "lesson_id": "4차시",
+      "object_role": "learning_note",
+      "lesson_flow_stage": "during",
+      "activity_type": "freeform_html",
+      "level": "core",
+      "learning_goal": "분단으로 인한 문제점과 평화 통일의 필요성을 수업 내용을 바탕으로 정리할 수 있다.",
+      "prompt_text": "수업을 들으며 분단으로 인해 우리가 겪는 어려움과 평화 통일이 왜 필요한지 핵심 내용을 메모해 봅시다.",
+      "layout_template": "freeform_html",
+      "html_content": "<!DOCTYPE html><html lang='ko'><head><meta charset='UTF-8'><style>@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap');body{width:1600px;margin:0;padding:40px;background:transparent;font-family:'Noto Sans KR',sans-serif;box-sizing:border-box;}.card{background:#ffffff;border-radius:40px;padding:60px;box-shadow:0 10px 30px rgba(0,0,0,0.05);border:1px solid #eee;}.header{display:flex;align-items:center;margin-bottom:40px;border-bottom:4px solid #333;padding-bottom:20px;}.badge{background:#333;color:#fff;padding:10px 24px;border-radius:100px;font-weight:700;font-size:24px;margin-right:20px;}.title{font-size:42px;font-weight:700;color:#1a1a1a;}.instruction{font-size:28px;color:#444;margin-bottom:40px;line-height:1.6;}.grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;}.note-section{display:flex;flex-direction:column;}.label{font-size:26px;font-weight:700;margin-bottom:16px;color:#222;display:flex;align-items:center;}.label::before{content:'';display:inline-block;width:12px;height:12px;background:#ff4757;border-radius:50%;margin-right:12px;}.writing-zone{background:#fff;border:3px solid #333;border-radius:24px;min-height:600px;padding:24px;box-shadow:inset 0 2px 10px rgba(0,0,0,0.02);}</style></head><body><div class='card'><div class='header'><div class='badge'>오늘의 배움 메모</div><div class='title'>분단의 기록과 평화의 목소리</div></div><div class='instruction'>수업을 통해 새롭게 알게 된 분단의 아픔과 우리가 평화를 꿈꾸는 이유를 자유롭게 기록해 봅시다.</div><div class='grid'><div class='note-section'><div class='label'>분단으로 인한 문제와 아픔</div><div class='writing-zone'></div></div><div class='note-section'><div class='label'>우리가 평화 통일을 해야 하는 이유</div><div class='writing-zone'></div></div></div></div></body></html>",
+      "source_refs": [
+        12
+      ],
+      "student_writing_zones": [
+        {
+          "zone_id": "division_problems",
+          "label": "분단 문제 메모",
+          "input_area_type": "free-writing",
+          "min_height": 600
+        },
+        {
+          "zone_id": "unification_necessity",
+          "label": "통일 필요성 메모",
+          "input_area_type": "free-writing",
+          "min_height": 600
+        }
+      ],
+      "estimated_minutes": 15,
+      "review_status": "draft"
+    },
+    {
+      "activity_id": "act-4-2",
+      "lesson_id": "4차시",
+      "object_role": "activity_area",
+      "lesson_flow_stage": "after",
+      "activity_type": "freeform_html",
+      "level": "extension",
+      "learning_goal": "분단의 장소를 평화의 장소로 바꿀 수 있는 창의적인 아이디어를 제안할 수 있다.",
+      "prompt_text": "우리나라의 분단된 장소(예: 비무장지대, 끊어진 철길 등) 중 한 곳을 골라, 그곳을 멋진 평화의 공간으로 바꿀 수 있는 계획을 세워 봅시다.",
+      "layout_template": "freeform_html",
+      "html_content": "<!DOCTYPE html><html lang='ko'><head><meta charset='UTF-8'><style>@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap');body{width:1600px;margin:0;padding:40px;background:transparent;font-family:'Noto Sans KR',sans-serif;box-sizing:border-box;}.card{background:#ffffff;border-radius:40px;padding:60px;box-shadow:0 10px 30px rgba(0,0,0,0.05);border:1px solid #eee;}.header{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:40px;}.title-group{border-left:8px solid #2ed573;padding-left:24px;}.title{font-size:42px;font-weight:700;color:#1a1a1a;margin-bottom:10px;}.subtitle{font-size:24px;color:#666;}.planning-grid{display:grid;grid-template-columns:1fr 2fr;gap:30px;margin-top:20px;}.input-group{display:flex;flex-direction:column;}.label{font-size:24px;font-weight:700;margin-bottom:12px;color:#333;}.small-box{border:3px solid #333;border-radius:16px;min-height:100px;padding:15px;margin-bottom:20px;}.large-box{border:3px solid #333;border-radius:24px;min-height:500px;padding:20px;background-image:radial-gradient(#eee 1px, transparent 1px);background-size:30px 30px;}.side-column{display:flex;flex-direction:column;}</style></head><body><div class='card'><div class='header'><div class='title-group'><div class='title'>평화 공간 디자인 프로젝트</div><div class='subtitle'>분단의 흔적을 평화의 명소로 바꾸는 나만의 아이디어</div></div></div><div class='planning-grid'><div class='side-column'><div class='input-group'><div class='label'>변화시킬 장소 선택하기</div><div class='small-box'></div></div><div class='input-group'><div class='label'>이 장소의 의미 (현재와 미래)</div><div class='small-box' style='min-height:200px;'></div></div><div class='input-group'><div class='label'>평화의 이름 지어주기</div><div class='small-box'></div></div></div><div class='input-group'><div class='label'>평화 공간 디자인 (그림과 설명)</div><div class='large-box'></div></div></div></div></body></html>",
+      "source_refs": [
+        12
+      ],
+      "student_writing_zones": [
+        {
+          "zone_id": "location_selection",
+          "label": "장소 선택",
+          "input_area_type": "inline-answer",
+          "min_height": 100
+        },
+        {
+          "zone_id": "meaning_and_vision",
+          "label": "의미와 비전",
+          "input_area_type": "free-writing",
+          "min_height": 200
+        },
+        {
+          "zone_id": "design_canvas",
+          "label": "평화 공간 디자인",
+          "input_area_type": "free-writing",
+          "min_height": 500
+        }
+      ],
+      "estimated_minutes": 20,
+      "review_status": "draft"
+    }
+  ]
+}

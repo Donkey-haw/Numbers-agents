@@ -1,0 +1,119 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-03-26T13:35:00Z",
+  "lesson_id": "7-8차시",
+  "sheet_name": "7-8차시",
+  "lesson_title": "인물이 추구하는 가치를 자신의 삶과 관련짓기",
+  "lesson_type": "core",
+  "pdf_pages": [
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38
+  ],
+  "essential_question": "작품 속 인물이 추구하는 가치를 나의 삶과 어떻게 관련지어 생각할 수 있을까?",
+  "learning_goals": [
+    "이야기 「다이빙대 위에서」를 읽고 인물이 처한 상황과 마음을 파악할 수 있다.",
+    "인물의 말과 행동을 통해 인물이 중요하게 생각하는 가치를 찾을 수 있다.",
+    "인물이 추구하는 가치를 자신의 삶과 관련지어 보고 인물에게 편지를 쓸 수 있다."
+  ],
+  "key_concepts": [
+    "추구하는 가치",
+    "삶의 태도",
+    "도전",
+    "끈기",
+    "자아실현",
+    "비교와 성찰"
+  ],
+  "vocabulary": [
+    "호출",
+    "탄력",
+    "핀잔",
+    "대수롭지 않다",
+    "재간",
+    "비행",
+    "성취감"
+  ],
+  "misconceptions": [
+    "성적이 떨어져서 종목을 바꾸는 것을 단순히 '포기'라고만 생각할 수 있으나, 새로운 가치를 찾는 과정임을 이해해야 함.",
+    "자신이 추구하는 가치와 인물의 가치가 반드시 일치해야 한다고 오해할 수 있음."
+  ],
+  "difficulty_band": "on-level",
+  "content_chunks": [
+    {
+      "chunk_id": "7-8차시-chunk-1",
+      "label": "이야기 읽기 및 내용 파악",
+      "content_type": "text",
+      "knowledge_type": "cause-effect",
+      "summary": "나루와 버들이의 대화를 통해 수영을 그만두고 다이빙을 선택한 버들이의 상황과 나루의 갈등을 이해하고 이야기의 흐름을 정리함.",
+      "source_pages": [
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34
+      ],
+      "suggested_activity_types": [
+        "see_think_wonder",
+        "learning_note"
+      ]
+    },
+    {
+      "chunk_id": "7-8차시-chunk-2",
+      "label": "인물의 가치 파악 및 삶과 관련짓기",
+      "content_type": "mixed",
+      "knowledge_type": "comparison",
+      "summary": "나루(끈기, 도전)와 버들이(즐거움, 스스로의 선택)가 추구하는 가치를 비교하고, 자신의 평소 가치관과 비슷한 인물을 찾아 연결함.",
+      "source_pages": [
+        35,
+        36
+      ],
+      "suggested_activity_types": [
+        "worksheet",
+        "learning_note"
+      ]
+    },
+    {
+      "chunk_id": "7-8차시-chunk-3",
+      "label": "가치를 생각하며 편지 쓰기",
+      "content_type": "activity",
+      "knowledge_type": "application",
+      "summary": "인물의 가치를 통해 새롭게 알게 된 점이나 변화된 생각을 바탕으로 인물에게 자신의 진심을 담은 편지를 작성함.",
+      "source_pages": [
+        37,
+        38
+      ],
+      "suggested_activity_types": [
+        "worksheet"
+      ]
+    }
+  ],
+  "source_page_refs": [
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38
+  ],
+  "analysis_confidence": 0.95,
+  "review_status": "draft",
+  "notes": "교과서 60~71쪽(PDF 27~38쪽) 분량이며, 「다이빙대 위에서」라는 긴 이야기를 읽고 가치를 내면화하는 과정이 핵심입니다. 인물의 가치 비교와 편지 쓰기 활동이 잘 드러나도록 분석했습니다."
+}

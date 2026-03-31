@@ -1,0 +1,77 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-03-31T01:14:40.683541+00:00",
+  "lesson_id": "2-3차시",
+  "sheet_name": "2-3차시",
+  "lesson_title": "지구본의 특징 살펴보기",
+  "lesson_type": "core",
+  "pdf_pages": [
+    114,
+    115,
+    116,
+    117,
+    118
+  ],
+  "essential_question": "지구본의 특징 살펴보기",
+  "learning_goals": [
+    "지구본의 특징 살펴보기의 핵심 내용을 설명할 수 있다."
+  ],
+  "key_concepts": [
+    "지구본",
+    "특징",
+    "살펴보기",
+    "정보",
+    "지도"
+  ],
+  "vocabulary": [
+    "지구본",
+    "특징",
+    "살펴보기"
+  ],
+  "misconceptions": [],
+  "difficulty_band": "on-level",
+  "content_chunks": [
+    {
+      "chunk_id": "2-3차시-chunk-1",
+      "label": "학습 덩어리 1",
+      "content_type": "mixed",
+      "knowledge_type": "procedure",
+      "summary": "정보 활용 능력 1 \u0007지구본과 세계지도에서 남극 대륙을 찾아보고, 그 모양을 그려 봅시다.",
+      "source_pages": [
+        114,
+        115
+      ],
+      "suggested_activity_types": [
+        "see_think_wonder",
+        "learning_note",
+        "worksheet"
+      ]
+    },
+    {
+      "chunk_id": "2-3차시-chunk-2",
+      "label": "학습 덩어리 2",
+      "content_type": "mixed",
+      "knowledge_type": "comparison",
+      "summary": "아시아 대한 민국 대한 민국 아시아 태 평 양 동해 황해 남해 3D 레이어 역사적인 이미지 지구의 과거 모습을 담은 이미지를 확인해 보세요.",
+      "source_pages": [
+        116,
+        117,
+        118
+      ],
+      "suggested_activity_types": [
+        "learning_note",
+        "worksheet"
+      ]
+    }
+  ],
+  "source_page_refs": [
+    114,
+    115,
+    116,
+    117,
+    118
+  ],
+  "analysis_confidence": 0.75,
+  "review_status": "draft",
+  "notes": "자동 생성 초안. lesson title, key concepts, chunks를 검토 후 승인 필요."
+}

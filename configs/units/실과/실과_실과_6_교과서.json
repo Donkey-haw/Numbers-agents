@@ -1,0 +1,59 @@
+{
+  "project_root": "/Users/jonyeock/Desktop/Tool/NumbersAuto",
+  "pdf_path": "textbook/실과/[실과]6_교과서.pdf",
+  "template_path": "빈 넘버스 파일.numbers",
+  "output_file": "output/실과_[실과]6_교과서.numbers",
+  "footer": "실과 · [실과]6_교과서",
+  "sections": [
+    {
+      "sheet_name": "1차시",
+      "card_file": "실과_1차시",
+      "title": "1차시",
+      "badge": "1차시",
+      "accent": [
+        "#6366f1",
+        "#818cf8"
+      ],
+      "pdf_pages": [
+        17,
+        18,
+        19,
+        20,
+        21
+      ]
+    },
+    {
+      "sheet_name": "2차시",
+      "card_file": "실과_2차시",
+      "title": "2차시",
+      "badge": "2차시",
+      "accent": [
+        "#4f46e5",
+        "#7c3aed"
+      ],
+      "pdf_pages": [
+        22,
+        23,
+        24,
+        25
+      ]
+    },
+    {
+      "sheet_name": "3차시",
+      "card_file": "실과_3차시",
+      "title": "3차시",
+      "badge": "3차시",
+      "accent": [
+        "#0f766e",
+        "#14b8a6"
+      ],
+      "pdf_pages": [
+        26,
+        27,
+        28,
+        29,
+        30
+      ]
+    }
+  ]
+}

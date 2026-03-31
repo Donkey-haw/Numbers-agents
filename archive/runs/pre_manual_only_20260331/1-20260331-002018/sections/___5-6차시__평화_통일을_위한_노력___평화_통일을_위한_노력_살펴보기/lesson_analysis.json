@@ -1,0 +1,68 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-03-30T15:23:08.041929+00:00",
+  "lesson_id": "5-6차시",
+  "sheet_name": "5-6차시",
+  "lesson_title": "평화 통일을 위한 노력 — 평화 통일을 위한 노력 살펴보기",
+  "pdf_pages": [
+    10,
+    11,
+    12
+  ],
+  "lesson_type": "intro",
+  "difficulty_band": "on-level",
+  "review_status": "draft",
+  "essential_question": "평화 통일을 위해 우리 사회와 우리가 할 수 있는 일에는 무엇이 있을까요?",
+  "learning_goals": [
+    "분단으로 인해 발생하는 문제점과 평화 통일의 필요성을 설명할 수 있다.",
+    "분단 관련 장소를 평화의 장소로 변화시키려는 노력의 사례를 찾아볼 수 있다.",
+    "평화 통일을 위해 일상생활에서 실천할 수 있는 일을 탐색할 수 있다."
+  ],
+  "key_concepts": [
+    "분단",
+    "평화 통일",
+    "민주화",
+    "산업화",
+    "생활 문화"
+  ],
+  "vocabulary": [
+    "분단",
+    "평화 통일",
+    "민주화",
+    "산업화",
+    "한반도기"
+  ],
+  "misconceptions": [
+    "평화 통일은 국가적 차원의 노력만으로 이루어지는 것이라고 생각할 수 있다."
+  ],
+  "content_chunks": [
+    {
+      "chunk_id": "5-6차시-chunk-1",
+      "label": "단원 도입 및 학습 목표 확인",
+      "content_type": "text",
+      "knowledge_type": "concept",
+      "summary": "평화 통일을 위한 노력과 민주화·산업화로 인한 생활 문화의 변화를 개괄하고, 이번 주제의 구체적인 학습 목표(분단 문제, 평화의 장소, 실천 방안)를 확인한다.",
+      "source_pages": [
+        10
+      ]
+    },
+    {
+      "chunk_id": "5-6차시-chunk-2",
+      "label": "단원 열기 활동: 친구 찾기",
+      "content_type": "activity",
+      "knowledge_type": "application",
+      "summary": "평화 통일 캠페인 전시관, 가발 만들기 체험 등 단원 내용과 관련된 힌트를 통해 함께 공부할 친구를 찾는 도입 활동을 수행한다.",
+      "source_pages": [
+        11,
+        12
+      ]
+    }
+  ],
+  "source_page_refs": [
+    10,
+    11,
+    12
+  ],
+  "analysis_confidence": 0.9,
+  "notes": "추출된 텍스트의 학습 목표('이 주제를 배우면 나는')와 활동 내용을 바탕으로 보완함. 10쪽은 단원 개관 및 목표 제시, 11-12쪽은 도입 활동 위주임."
+}

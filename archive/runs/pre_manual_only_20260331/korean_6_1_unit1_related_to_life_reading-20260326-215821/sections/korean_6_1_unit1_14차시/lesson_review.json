@@ -1,0 +1,16 @@
+{
+  "schema_version": "1.0.0",
+  "stage": "review_lesson_agent",
+  "lesson_id": "14차시",
+  "status": "succeeded",
+  "decision": "pass",
+  "findings": [
+    {
+      "severity": "info",
+      "message": "시 「난 탐험가」를 통한 가치 파악, 단원 마무리 자기 평가, 필수 어휘 학습으로 구성됨. 텍스트 근거에 기반하여 세분화함.",
+      "evidence_refs": []
+    }
+  ],
+  "blocking_issues": [],
+  "warnings": []
+}

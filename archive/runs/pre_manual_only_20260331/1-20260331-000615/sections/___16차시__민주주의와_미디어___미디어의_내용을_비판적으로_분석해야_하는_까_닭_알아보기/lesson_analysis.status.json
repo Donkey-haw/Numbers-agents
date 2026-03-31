@@ -1,0 +1,25 @@
+{
+  "schema_version": "1.0.0",
+  "stage": "lesson_analysis_agent",
+  "lesson_id": "16차시",
+  "status": "succeeded",
+  "run_id": "1-20260331-000615",
+  "started_at": "2026-03-30T15:23:51.673918+00:00",
+  "finished_at": "2026-03-30T15:25:03.270170+00:00",
+  "input_refs": [
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/1-20260331-000615/source/schedule_draft.json",
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/1-20260331-000615/source/textbook_context.json",
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/1-20260331-000615/source/local_baseline/___16차시__민주주의와_미디어___미디어의_내용을_비판적으로_분석해야_하는_까_닭_알아보기.lesson_analysis.json"
+  ],
+  "output_refs": [
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/1-20260331-000615/sections/___16차시__민주주의와_미디어___미디어의_내용을_비판적으로_분석해야_하는_까_닭_알아보기/lesson_analysis_ai.json",
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/1-20260331-000615/sections/___16차시__민주주의와_미디어___미디어의_내용을_비판적으로_분석해야_하는_까_닭_알아보기/lesson_analysis.json"
+  ],
+  "fallback_used": false,
+  "warnings": [],
+  "errors": [],
+  "model": "gemini",
+  "agent_spec_path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/agents/lesson_analysis_agent/AGENT.md",
+  "attempt_count": 1,
+  "validation_errors": []
+}

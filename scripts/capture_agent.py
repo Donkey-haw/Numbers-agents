@@ -47,19 +47,25 @@ def execute_capture(*, run_root: Path, run_id: str) -> dict:
         output_refs=[str(render_manifest_path)],
     )
     contracts.write_json(status_path, status)
+    try:
+        textbook_card_assets = asyncio.run(textbook.capture_cards(config))
+        plans = [(path, numbers_with_activities.load_activity_plan(path)) for path in plan_paths]
+        activity_html_pairs = numbers_with_activities.render_activity_html_files(plans, config, {"approved", "draft"})
+        activity_assets = asyncio.run(numbers_with_activities.capture_html_files(activity_html_pairs, config))
+        manifest = numbers_with_activities.build_manifest(config, textbook_card_assets, activity_assets)
+        render_manifest_path.write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
-    textbook_card_assets = asyncio.run(textbook.capture_cards(config))
-    plans = [(path, numbers_with_activities.load_activity_plan(path)) for path in plan_paths]
-    activity_html_pairs = numbers_with_activities.render_activity_html_files(plans, config, {"approved", "draft"})
-    activity_assets = asyncio.run(numbers_with_activities.capture_html_files(activity_html_pairs, config))
-    manifest = numbers_with_activities.build_manifest(config, textbook_card_assets, activity_assets)
-    render_manifest_path.write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-
-    status["status"] = "succeeded"
-    status["finished_at"] = contracts.utc_now()
-    contracts.write_json(status_path, status)
-    return {
-        "render_manifest_path": render_manifest_path,
-        "asset_count": len(manifest["assets"]),
-        "warning_count": 0,
-    }
+        status["status"] = "succeeded"
+        status["finished_at"] = contracts.utc_now()
+        contracts.write_json(status_path, status)
+        return {
+            "render_manifest_path": render_manifest_path,
+            "asset_count": len(manifest["assets"]),
+            "warning_count": 0,
+        }
+    except Exception as exc:
+        status["status"] = "failed"
+        status["finished_at"] = contracts.utc_now()
+        status["errors"] = [str(exc)]
+        contracts.write_json(status_path, status)
+        raise

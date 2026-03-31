@@ -1,0 +1,79 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-03-26T13:32:20.274863+00:00",
+  "lesson_id": "14차시",
+  "activities": [
+    {
+      "activity_id": "act-14-1",
+      "lesson_id": "14차시",
+      "object_role": "activity_area",
+      "lesson_flow_stage": "during",
+      "activity_type": "freeform_html",
+      "level": "core",
+      "learning_goal": "시 「난 탐험가」의 화자가 추구하는 가치를 파악하고 자신의 삶에 비추어 해석할 수 있다.",
+      "prompt_text": "시 속 탐험가가 소중히 여기는 '가치'를 찾아보고, 나의 삶 속에서 발견한 '탐험의 순간'을 기록해 봅시다.",
+      "layout_template": "freeform_html",
+      "html_content": "<!DOCTYPE html><html lang='ko'><head><meta charset='UTF-8'><style>body{width:1600px;margin:0;padding:40px;background:transparent;font-family:'Noto Sans KR', sans-serif;color:#333;}.card{background:#fff;border-radius:32px;padding:48px;box-shadow:none;border:3px solid #333;}.header{display:flex;align-items:center;margin-bottom:40px;}.badge{background:#333;color:#fff;padding:8px 24px;border-radius:12px;font-weight:700;font-size:24px;margin-right:20px;}.title{font-size:42px;font-weight:900;margin:0;}.content-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;margin-top:20px;}.section-title{font-size:28px;font-weight:700;margin-bottom:20px;color:#555;}.writing-area{background:#fff;border:3px solid #333;border-radius:20px;min-height:580px;padding:24px;font-size:22px;line-height:1.6;position:relative;}.writing-area::after{content:'여기에 자유롭게 쓰거나 그려보세요';position:absolute;top:24px;left:24px;color:#ccc;font-weight:500;z-index:0;}</style></head><body><div class='card'><div class='header'><div class='badge'>가치 탐색</div><h1 class='title'>나의 탐험 기록장</h1></div><div class='content-grid'><div><div class='section-title'>1. 시 속 탐험가가 추구하는 가치와 그 근거</div><div class='writing-area'></div></div><div><div class='section-title'>2. 내 삶 속에서 '탐험'이 필요했던 순간</div><div class='writing-area'></div></div></div></div></body></html>",
+      "source_refs": [
+        51,
+        52
+      ],
+      "teacher_notes": "학생들이 '탐험'이라는 단어를 단순히 지리적 이동이 아닌, 새로운 가치를 찾아가는 과정으로 이해하도록 유도하세요.",
+      "student_writing_zones": [
+        {
+          "zone_id": "speaker_value",
+          "label": "시의 가치와 근거",
+          "input_area_type": "free-writing",
+          "min_height": 580
+        },
+        {
+          "zone_id": "personal_exploration",
+          "label": "나의 탐험 경험",
+          "input_area_type": "free-writing",
+          "min_height": 580
+        }
+      ],
+      "estimated_minutes": 15,
+      "review_status": "draft"
+    },
+    {
+      "activity_id": "act-14-2",
+      "lesson_id": "14차시",
+      "object_role": "learning_note",
+      "lesson_flow_stage": "after",
+      "activity_type": "freeform_html",
+      "level": "core",
+      "learning_goal": "단원 전체에서 배운 핵심 가치들을 정리하고 자신의 언어로 요약할 수 있다.",
+      "prompt_text": "이번 단원을 마무리하며, 나만의 '가치 사전'을 만들어 봅시다. 가장 기억에 남는 단어들을 골라 정의해 보세요.",
+      "layout_template": "freeform_html",
+      "html_content": "<!DOCTYPE html><html lang='ko'><head><meta charset='UTF-8'><style>body{width:1600px;margin:0;padding:40px;background:transparent;font-family:'Noto Sans KR', sans-serif;color:#333;}.card{background:#fff;border-radius:32px;padding:48px;border:3px solid #333;}.header{margin-bottom:40px;text-align:center;}.title{font-size:48px;font-weight:900;margin:0;background:#333;color:#fff;display:inline-block;padding:10px 40px;border-radius:50px;}.grid-container{display:grid;grid-template-columns:repeat(3, 1fr);gap:30px;margin-top:40px;}.word-card{border:3px solid #333;border-radius:24px;padding:30px;display:flex;flex-direction:column;}.word-header{font-size:24px;font-weight:700;margin-bottom:15px;border-bottom:2px solid #333;padding-bottom:10px;text-align:center;color:#666;}.definition-space{background:#f9f9f9;border:2px dashed #999;border-radius:12px;min-height:420px;flex-grow:1;}</style></head><body><div class='card'><div class='header'><h1 class='title'>단원 마무리: 나만의 가치 사전</h1></div><div class='grid-container'><div class='word-card'><div class='word-header'>핵심 가치 1</div><div class='definition-space'></div></div><div class='word-card'><div class='word-header'>핵심 가치 2</div><div class='definition-space'></div></div><div class='word-card'><div class='word-header'>핵심 가치 3</div><div class='definition-space'></div></div></div></div></body></html>",
+      "source_refs": [
+        53,
+        54
+      ],
+      "teacher_notes": "단원에서 다룬 주요 어휘(추구, 가치, 말하는 이 등)를 활용하여 자신만의 정의를 내리도록 지도합니다.",
+      "student_writing_zones": [
+        {
+          "zone_id": "value_1",
+          "label": "가치 1 정의",
+          "input_area_type": "free-writing",
+          "min_height": 420
+        },
+        {
+          "zone_id": "value_2",
+          "label": "가치 2 정의",
+          "input_area_type": "free-writing",
+          "min_height": 420
+        },
+        {
+          "zone_id": "value_3",
+          "label": "가치 3 정의",
+          "input_area_type": "free-writing",
+          "min_height": 420
+        }
+      ],
+      "estimated_minutes": 12,
+      "review_status": "draft"
+    }
+  ]
+}

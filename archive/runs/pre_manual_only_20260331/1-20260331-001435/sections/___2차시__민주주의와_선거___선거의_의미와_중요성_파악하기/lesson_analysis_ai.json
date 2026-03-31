@@ -1,0 +1,60 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-03-31T00:00:00Z",
+  "lesson_id": "2차시",
+  "sheet_name": "2차시",
+  "lesson_title": "민주주의와 선거 — 선거의 의미와 중요성 파악하기",
+  "lesson_type": "intro",
+  "pdf_pages": [
+    54
+  ],
+  "essential_question": "민주주의에서 선거는 어떤 의미와 중요성을 가질까요?",
+  "learning_goals": [
+    "민주주의에서 선거가 갖는 기본적인 의미와 중요성을 이해할 수 있다.",
+    "선거를 통해 민주주의가 실현되는 과정을 시각적 자료를 통해 유추할 수 있다."
+  ],
+  "key_concepts": [
+    "선거",
+    "민주주의",
+    "참여",
+    "의미",
+    "중요성"
+  ],
+  "vocabulary": [
+    "선거",
+    "민주 국가"
+  ],
+  "misconceptions": [
+    "선거는 단순히 투표소에 가서 표를 던지는 행위로만 한정하여 생각할 수 있다.",
+    "선거가 우리 삶과 직접적인 관련이 없다고 느낄 수 있다."
+  ],
+  "difficulty_band": "on-level",
+  "content_chunks": [
+    {
+      "chunk_id": "2차시-chunk-1",
+      "label": "도입 질문 및 학습 동기 유발",
+      "content_type": "image",
+      "knowledge_type": "concept",
+      "summary": "사람들이 몸으로 만든 모양(기호 등)을 관찰하며 선거의 의미에 대해 호기심을 갖는다.",
+      "source_pages": [
+        54
+      ]
+    },
+    {
+      "chunk_id": "2차시-chunk-2",
+      "label": "단원 학습 목표 확인",
+      "content_type": "text",
+      "knowledge_type": "fact",
+      "summary": "민주주의와 선거 단원에서 배울 핵심 내용(선거의 의미, 역할, 중요성, 원칙 등)을 확인한다.",
+      "source_pages": [
+        54
+      ]
+    }
+  ],
+  "source_page_refs": [
+    54
+  ],
+  "analysis_confidence": 0.85,
+  "review_status": "draft",
+  "notes": "54쪽은 대단원 '민주주의와 시민 참여' 중 소단원 '민주주의와 선거'의 도입 페이지입니다. 시각적 이미지를 통해 선거에 대한 배경지식을 활성화하고 단원 전체의 학습 목표를 제시하는 구성입니다."
+}

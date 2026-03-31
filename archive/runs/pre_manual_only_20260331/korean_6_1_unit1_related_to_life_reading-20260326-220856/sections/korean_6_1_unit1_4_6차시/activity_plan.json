@@ -1,0 +1,130 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-03-26T13:13:18.594341+00:00",
+  "lesson_id": "4-6차시",
+  "activities": [
+    {
+      "activity_id": "act-46-1",
+      "lesson_id": "4-6차시",
+      "object_role": "learning_note",
+      "lesson_flow_stage": "during",
+      "activity_type": "freeform_html",
+      "level": "core",
+      "learning_goal": "대패질을 대하는 장호와 봉운이의 태도를 통해 각자가 추구하는 가치를 비교하여 정리할 수 있다.",
+      "prompt_text": "이야기 속 두 인물은 '대패질'이라는 같은 일을 하고 있지만, 그 일을 대하는 마음은 전혀 다릅니다. 두 소년의 생각을 비교하며 수업 내용을 정리해 봅시다.",
+      "layout_template": "freeform_html",
+      "html_content": "<!DOCTYPE html><html lang='ko'><head><meta charset='UTF-8'><style>body{width:1600px;margin:0;padding:40px;background:transparent;font-family:'Noto Sans KR',sans-serif;box-sizing:border-box;}.card{background:#ffffff;border-radius:32px;padding:48px;box-shadow:none;border:none;}.header{display:flex;align-items:center;margin-bottom:40px;}.badge{background:#4A90E2;color:#fff;padding:8px 24px;border-radius:12px;font-weight:700;font-size:24px;margin-right:20px;}.title{font-size:42px;font-weight:900;color:#222;}.instruction{font-size:28px;color:#444;margin-bottom:48px;line-height:1.6;background:#f8f9fa;padding:24px;border-left:8px solid #4A90E2;border-radius:8px;}.comparison-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;}.char-box{border:3px solid #333;border-radius:24px;padding:32px;}.char-name{font-size:32px;font-weight:800;text-align:center;margin-bottom:24px;padding-bottom:16px;border-bottom:2px dashed #ccc;}.writing-area{background:#fff;border:2px solid #333;border-radius:16px;min-height:550px;padding:24px;font-size:24px;line-height:1.8;color:#333;}.key-question{grid-column:span 2;margin-top:40px;padding:32px;background:#fff9db;border:3px solid #f1c40f;border-radius:24px;}.key-title{font-size:28px;font-weight:700;margin-bottom:16px;}</style></head><body><div class='card'><div class='header'><div class='badge'>배움 메모</div><div class='title'>대패질에 담긴 두 소년의 마음</div></div><div class='instruction'>교과서 17쪽과 21쪽을 다시 읽어 보세요. 장호와 봉운이에게 '대패질'은 각각 어떤 의미였나요? 수업을 들으며 떠오른 생각들을 자유롭게 메모해 봅시다.</div><div class='comparison-grid'><div class='char-box'><div class='char-name' style='color:#e74c3c;'>장호 (돈과 성공)</div><div class='writing-area'></div></div><div class='char-box'><div class='char-name' style='color:#27ae60;'>봉운 (마음과 정성)</div><div class='writing-area'></div></div></div><div class='key-question'><div class='key-title'>💡 질문: 나라면 어떤 소년의 태도에 더 마음이 가나요? 그 이유는 무엇인가요?</div><div class='writing-area' style='min-height:200px;'></div></div></div></body></html>",
+      "source_refs": [
+        17,
+        21
+      ],
+      "student_writing_zones": [
+        {
+          "zone_id": "jangho_notes",
+          "label": "장호의 태도 메모",
+          "input_area_type": "free-writing",
+          "min_height": 550
+        },
+        {
+          "zone_id": "bongun_notes",
+          "label": "봉운이의 태도 메모",
+          "input_area_type": "free-writing",
+          "min_height": 550
+        },
+        {
+          "zone_id": "personal_reflection",
+          "label": "나의 생각 정리",
+          "input_area_type": "free-writing",
+          "min_height": 200
+        }
+      ],
+      "estimated_minutes": 15,
+      "review_status": "draft",
+      "teacher_notes": ""
+    },
+    {
+      "activity_id": "act-46-2",
+      "lesson_id": "4-6차시",
+      "object_role": "activity_area",
+      "lesson_flow_stage": "during",
+      "activity_type": "freeform_html",
+      "level": "core",
+      "learning_goal": "봉운이가 첫 판각을 하며 느낀 가치를 이해하고, 자신에게 중요한 가치를 상징하는 글자를 구안할 수 있다.",
+      "prompt_text": "봉운이는 첫 글자를 새기며 기쁨과 무거운 책임감을 느꼈습니다. 여러분이 인생에서 가장 중요하게 생각하는 가치 한 글자를 정하고, 나무판에 새기듯 정성껏 써 봅시다.",
+      "layout_template": "freeform_html",
+      "html_content": "<!DOCTYPE html><html lang='ko'><head><meta charset='UTF-8'><style>body{width:1600px;margin:0;padding:40px;background:transparent;font-family:'Noto Sans KR',sans-serif;box-sizing:border-box;}.card{background:#ffffff;border-radius:32px;padding:56px;border:none;}.header{display:flex;flex-direction:column;margin-bottom:48px;}.badge{background:#27ae60;color:#fff;padding:8px 24px;border-radius:12px;font-weight:700;font-size:24px;width:fit-content;margin-bottom:16px;}.title{font-size:46px;font-weight:900;color:#222;}.content{display:flex;gap:60px;}.wood-block{flex:1;background:#fdf6e3;border:15px solid #5d4037;border-radius:12px;height:800px;display:flex;flex-direction:column;align-items:center;justify-content:center;position:relative;}.wood-label{position:absolute;top:20px;font-size:24px;color:#5d4037;font-weight:700;}.explanation-side{flex:0.8;display:flex;flex-direction:column;}.writing-box{border:3px solid #333;border-radius:24px;padding:32px;flex:1;margin-bottom:32px;background:#fff;}.box-title{font-size:28px;font-weight:800;margin-bottom:20px;color:#5d4037;}</style></head><body><div class='card'><div class='header'><div class='badge'>활동 구역</div><div class='title'>내 마음을 새기는 첫 판각</div></div><div class='content'><div class='wood-block'><div class='wood-label'>[ 가치 판각 구역 ]</div><!-- Student draws a large character here --></div><div class='explanation-side'><div class='writing-box'><div class='box-title'>1. 내가 선택한 가치 낱말</div><div style='border:2px solid #eee; min-height:100px; border-radius:12px;'></div></div><div class='writing-box'><div class='box-title'>2. 이 글자를 선택한 이유 (봉운이의 마음과 비교하여 쓰기)</div><div style='border:2px solid #eee; min-height:450px; border-radius:12px;'></div></div></div></div></div></body></html>",
+      "source_refs": [
+        22,
+        24
+      ],
+      "student_writing_zones": [
+        {
+          "zone_id": "woodblock_drawing",
+          "label": "가치 글자 판각하기 (그리기)",
+          "input_area_type": "free-writing",
+          "min_height": 800
+        },
+        {
+          "zone_id": "value_word",
+          "label": "선택한 낱말",
+          "input_area_type": "inline-answer",
+          "min_height": 100
+        },
+        {
+          "zone_id": "reasoning",
+          "label": "선택 이유 기록",
+          "input_area_type": "free-writing",
+          "min_height": 450
+        }
+      ],
+      "estimated_minutes": 20,
+      "review_status": "draft",
+      "teacher_notes": ""
+    },
+    {
+      "activity_id": "act-46-3",
+      "lesson_id": "4-6차시",
+      "object_role": "worksheet",
+      "lesson_flow_stage": "after",
+      "activity_type": "freeform_html",
+      "level": "extension",
+      "learning_goal": "인물이 추구하는 가치를 깊이 있게 파악하기 위해 인물의 구체적인 행동과 연결된 질문을 생성할 수 있다.",
+      "prompt_text": "인물의 가치를 알아보기 위해서는 '왜 그런 선택을 했는지' 묻는 것이 중요합니다. 교과서 활동을 넘어, 인물의 가치관을 흔들어볼 수 있는 날카로운 질문을 만들어 봅시다.",
+      "layout_template": "freeform_html",
+      "html_content": "<!DOCTYPE html><html lang='ko'><head><meta charset='UTF-8'><style>body{width:1600px;margin:0;padding:40px;background:transparent;font-family:'Noto Sans KR',sans-serif;box-sizing:border-box;}.card{background:#ffffff;border-radius:32px;padding:56px;border:4px solid #333;}.header{display:flex;align-items:baseline;margin-bottom:40px;gap:20px;}.badge{background:#e67e22;color:#fff;padding:8px 24px;border-radius:12px;font-weight:700;font-size:24px;}.title{font-size:42px;font-weight:900;}.interview-lab{display:grid;grid-template-columns:1fr 1fr;gap:40px;}.interview-card{border:3px solid #333;border-radius:24px;overflow:hidden;}.card-head{background:#333;color:#fff;padding:20px;font-size:28px;font-weight:700;text-align:center;}.card-body{padding:30px;background:#fff;}.prompt-ref{font-size:22px;color:#666;margin-bottom:20px;font-style:italic;}.input-label{font-size:24px;font-weight:700;margin-bottom:12px;display:block;}.writing-area{border:2px solid #333;border-radius:12px;min-height:400px;margin-bottom:24px;padding:20px;}</style></head><body><div class='card'><div class='header'><div class='badge'>워크시트</div><div class='title'>가치 면담 연구소: 행동 너머의 이유 묻기</div></div><div class='interview-lab'><div class='interview-card'><div class='card-head'>대상: 장호</div><div class='card-body'><div class='prompt-ref'>\"장호는 대충 빨리 대패질을 끝내고 돈을 벌고 싶어 합니다.\"</div><label class='input-label'>장호의 '성공'이라는 가치를 확인하기 위한 질문:</label><div class='writing-area'></div><label class='input-label'>장호가 예상할 만한 답변:</label><div class='writing-area' style='min-height:150px;'></div></div></div><div class='interview-card'><div class='card-head'>대상: 봉운</div><div class='card-body'><div class='prompt-ref'>\"봉운이는 손이 부르트도록 나무를 다듬으며 마음을 닦습니다.\"</div><label class='input-label'>봉운이의 '정성'이라는 가치를 확인하기 위한 질문:</label><div class='writing-area'></div><label class='input-label'>봉운이가 예상할 만한 답변:</label><div class='writing-area' style='min-height:150px;'></div></div></div></div></div></body></html>",
+      "source_refs": [
+        25,
+        26
+      ],
+      "student_writing_zones": [
+        {
+          "zone_id": "jangho_question",
+          "label": "장호에게 던질 질문",
+          "input_area_type": "free-writing",
+          "min_height": 400
+        },
+        {
+          "zone_id": "jangho_answer",
+          "label": "장호의 예상 답변",
+          "input_area_type": "free-writing",
+          "min_height": 150
+        },
+        {
+          "zone_id": "bongun_question",
+          "label": "봉운이에게 던질 질문",
+          "input_area_type": "free-writing",
+          "min_height": 400
+        },
+        {
+          "zone_id": "bongun_answer",
+          "label": "봉운이의 예상 답변",
+          "input_area_type": "free-writing",
+          "min_height": 150
+        }
+      ],
+      "estimated_minutes": 15,
+      "review_status": "draft",
+      "teacher_notes": ""
+    }
+  ]
+}

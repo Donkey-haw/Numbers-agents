@@ -1,0 +1,32 @@
+{
+  "schema_version": "1.0.0",
+  "stage": "boundary_validation_agent",
+  "lesson_id": null,
+  "status": "blocked",
+  "run_id": "korean_6_1_unit1_related_to_life_reading-20260331-095944",
+  "started_at": "2026-03-31T00:59:45.193817+00:00",
+  "finished_at": "2026-03-31T00:59:45.194266+00:00",
+  "input_refs": [
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/korean_6_1_unit1_related_to_life_reading-20260331-095944/source/boundary_decisions.json"
+  ],
+  "output_refs": [
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/korean_6_1_unit1_related_to_life_reading-20260331-095944/source/boundary_validation.json",
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/korean_6_1_unit1_related_to_life_reading-20260331-095944/source/boundary_validation.status.json"
+  ],
+  "fallback_used": false,
+  "warnings": [
+    "lesson-001: boundary is low_confidence",
+    "lesson-002: start_page overlaps with previous lesson boundary",
+    "lesson-002: boundary is low_confidence",
+    "lesson-003: boundary is low_confidence",
+    "lesson-004: start_page overlaps with previous lesson boundary",
+    "lesson-004: boundary is low_confidence",
+    "lesson-005: boundary is low_confidence",
+    "lesson-006: boundary is low_confidence"
+  ],
+  "errors": [
+    "lesson-007: boundary was not resolved"
+  ],
+  "agent_spec_path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/agents/boundary_validation_agent/AGENT.md",
+  "runtime_driven": true
+}

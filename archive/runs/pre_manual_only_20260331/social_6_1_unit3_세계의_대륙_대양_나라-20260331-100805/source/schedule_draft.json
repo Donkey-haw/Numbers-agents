@@ -1,0 +1,41 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-03-31T01:08:10.833396+00:00",
+  "sections": [
+    {
+      "sheet_name": "8차시",
+      "lesson_title": "세계의 대륙과 대양 알아보기",
+      "title_query": "세계의 대륙과 대양 알아보기"
+    },
+    {
+      "sheet_name": "9차시",
+      "lesson_title": "우리나라의 위치 특징 파악하기",
+      "title_query": "우리나라의 위치 특징 파악하기"
+    },
+    {
+      "sheet_name": "10차시",
+      "lesson_title": "아시아 주요 나라들의 위치 알아보기",
+      "title_query": "아시아 주요 나라들의 위치 알아보기"
+    },
+    {
+      "sheet_name": "11차시",
+      "lesson_title": "유럽 주요 나라들의 위치 알아보기",
+      "title_query": "유럽 주요 나라들의 위치 알아보기"
+    },
+    {
+      "sheet_name": "12차시",
+      "lesson_title": "북아메리카와 남아메리카 주요 나라들의 위치 알아보기",
+      "title_query": "북아메리카와 남아메리카 주요 나라들의 위치 알아보기"
+    },
+    {
+      "sheet_name": "13차시",
+      "lesson_title": "아프리카 주요 나라들의 위치 알아보기",
+      "title_query": "아프리카 주요 나라들의 위치 알아보기"
+    },
+    {
+      "sheet_name": "14차시",
+      "lesson_title": "오세아니아 주요 나라들의 위치 알아보기",
+      "title_query": "오세아니아 주요 나라들의 위치 알아보기"
+    }
+  ]
+}

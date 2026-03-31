@@ -1,0 +1,77 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-03-30T15:13:55.258810+00:00",
+  "lesson_id": "5-6차시",
+  "sheet_name": "5-6차시",
+  "lesson_title": "평화 통일을 위한 노력 — 평화 통일을 위한 노력 살펴보기",
+  "lesson_type": "intro",
+  "pdf_pages": [
+    10,
+    11,
+    12
+  ],
+  "essential_question": "평화 통일을 위해 우리가 해야 할 노력에는 어떤 것들이 있으며, 분단은 우리 삶에 어떤 영향을 미치고 있을까요?",
+  "learning_goals": [
+    "분단으로 생겨난 문제점과 평화 통일의 필요성을 설명할 수 있다.",
+    "분단과 관련된 장소를 평화의 장소로 만들려는 노력을 찾아볼 수 있다.",
+    "평화 통일을 위해 우리가 할 수 있는 일을 탐색할 수 있다."
+  ],
+  "key_concepts": [
+    "평화 통일",
+    "분단",
+    "민주화",
+    "산업화",
+    "한반도기"
+  ],
+  "vocabulary": [
+    "분단",
+    "평화 통일",
+    "민주화",
+    "산업화",
+    "한반도기"
+  ],
+  "misconceptions": [
+    "분단 문제는 정치적인 영역일 뿐 개인의 삶과는 무관하다고 생각할 수 있음.",
+    "통일을 단순히 과거로의 회귀라고만 오해할 수 있음."
+  ],
+  "difficulty_band": "on-level",
+  "content_chunks": [
+    {
+      "chunk_id": "5-6차시-chunk-1",
+      "label": "단원 도입 및 핵심 키워드",
+      "content_type": "mixed",
+      "knowledge_type": "concept",
+      "summary": "평화 통일, 민주화, 산업화 등 대주제의 핵심 키워드를 제시하고 애니메이션과 삽화를 통해 학습 동기를 유발함.",
+      "source_pages": [
+        10
+      ],
+      "suggested_activity_types": [
+        "브레인스토밍",
+        "키워드 찾기"
+      ]
+    },
+    {
+      "chunk_id": "5-6차시-chunk-2",
+      "label": "학습 목표 확인 및 인물 탐색",
+      "content_type": "text",
+      "knowledge_type": "procedure",
+      "summary": "이 주제를 통해 배울 내용(분단 문제, 평화의 장소, 통일 노력)을 확인하고, 평화 통일 캠페인 및 가발 만들기 체험 등 관련 인물의 이야기를 통해 단원 내용을 예측함.",
+      "source_pages": [
+        11,
+        12
+      ],
+      "suggested_activity_types": [
+        "인물 인터뷰 분석",
+        "학습 목표 세우기"
+      ]
+    }
+  ],
+  "source_page_refs": [
+    10,
+    11,
+    12
+  ],
+  "analysis_confidence": 0.9,
+  "review_status": "draft",
+  "notes": "교과서 10-12쪽의 텍스트 증거를 바탕으로 학습 목표와 주요 키워드를 정교화함. 단원 도입부의 성격을 반영하여 lesson_type을 intro로 설정함."
+}

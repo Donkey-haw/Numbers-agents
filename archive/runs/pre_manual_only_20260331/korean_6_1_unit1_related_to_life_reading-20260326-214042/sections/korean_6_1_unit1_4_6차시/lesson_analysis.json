@@ -1,0 +1,114 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-03-26T12:41:32.688226+00:00",
+  "lesson_id": "4-6차시",
+  "sheet_name": "4-6차시",
+  "lesson_title": "작품을 읽고 시대적 상황과 인물이 추구하는 가치에 대하여 질문하기",
+  "lesson_type": "core",
+  "pdf_pages": [
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26
+  ],
+  "essential_question": "이야기 속 인물의 말과 행동을 통해 그 시대의 상황과 인물이 중요하게 여기는 가치를 어떻게 파악할 수 있을까?",
+  "learning_goals": [
+    "「책 깎는 소년」을 읽고 시대적 상황과 인물의 가치관을 파악하는 질문을 만들 수 있다.",
+    "인물들이 처한 상황과 그들의 선택을 비교하며 각자가 추구하는 가치의 차이를 설명할 수 있다."
+  ],
+  "key_concepts": [
+    "시대적 상황",
+    "추구하는 가치",
+    "인물 면담",
+    "목판 인쇄술",
+    "필사"
+  ],
+  "vocabulary": [
+    "각수",
+    "서포",
+    "판각",
+    "목판본",
+    "필사",
+    "이골이 나다",
+    "수모"
+  ],
+  "misconceptions": [
+    "인물이 추구하는 가치가 하나로 고정되어 있다고 생각할 수 있으나, 상황에 따라 우선순위가 달라질 수 있음을 이해해야 함."
+  ],
+  "difficulty_band": "on-level",
+  "content_chunks": [
+    {
+      "chunk_id": "4-6차시-chunk-1",
+      "label": "조선 시대 출판 문화 이해",
+      "content_type": "mixed",
+      "knowledge_type": "fact",
+      "summary": "필사와 목판 인쇄술의 차이, 서포와 각수의 역할 등 이야기의 배경이 되는 조선 시대 출판 문화를 살펴봄.",
+      "source_pages": [
+        15
+      ],
+      "suggested_activity_types": [
+        "see_think_wonder"
+      ]
+    },
+    {
+      "chunk_id": "4-6차시-chunk-2",
+      "label": "「책 깎는 소년」 읽기 및 내용 파악",
+      "content_type": "text",
+      "knowledge_type": "cause-effect",
+      "summary": "각수가 되고 싶은 장호와 봉운이의 이야기를 읽으며, 대패질을 대하는 두 인물의 서로 다른 태도와 갈등을 파악함.",
+      "source_pages": [
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "suggested_activity_types": [
+        "learning_note"
+      ]
+    },
+    {
+      "chunk_id": "4-6차시-chunk-3",
+      "label": "인물의 가치 비교 및 질문하기",
+      "content_type": "mixed",
+      "knowledge_type": "comparison",
+      "summary": "장호(부, 성공)와 봉운(즐거움, 보람)이 추구하는 가치를 비교해 보고, 인물 면담 활동을 통해 질문과 답변을 구성함.",
+      "source_pages": [
+        23,
+        24,
+        25,
+        26
+      ],
+      "suggested_activity_types": [
+        "worksheet"
+      ]
+    }
+  ],
+  "source_page_refs": [
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26
+  ],
+  "analysis_confidence": 0.95,
+  "review_status": "draft",
+  "notes": "추출된 텍스트를 바탕으로 장호와 봉운이의 대조적인 가치관(돈 vs 보람)을 명확히 반영하였으며, 조선 시대 출판 배경 지식을 포함함."
+}

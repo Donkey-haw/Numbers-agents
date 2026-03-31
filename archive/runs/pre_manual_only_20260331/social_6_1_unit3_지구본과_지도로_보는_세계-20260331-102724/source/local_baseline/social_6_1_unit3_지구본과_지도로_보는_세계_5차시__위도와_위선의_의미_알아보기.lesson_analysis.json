@@ -1,0 +1,74 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-03-31T01:28:37.686748+00:00",
+  "lesson_id": "5차시",
+  "sheet_name": "5차시",
+  "lesson_title": "위도와 위선의 의미 알아보기",
+  "lesson_type": "core",
+  "pdf_pages": [
+    120,
+    121,
+    122,
+    123
+  ],
+  "essential_question": "위도와 위선의 의미 알아보기",
+  "learning_goals": [
+    "위도와 위선의 의미 알아보기의 핵심 내용을 설명할 수 있다."
+  ],
+  "key_concepts": [
+    "위도",
+    "위선",
+    "의미",
+    "알아보기",
+    "길이"
+  ],
+  "vocabulary": [
+    "위도",
+    "위선",
+    "의미"
+  ],
+  "misconceptions": [],
+  "difficulty_band": "on-level",
+  "content_chunks": [
+    {
+      "chunk_id": "5차시-chunk-1",
+      "label": "학습 덩어리 1",
+      "content_type": "mixed",
+      "knowledge_type": "comparison",
+      "summary": "위도와 위선 위도는 적도를 기준으로 남북으로 얼마나 떨어져 있는지를 나타내는 수치 이다.",
+      "source_pages": [
+        120,
+        121
+      ],
+      "suggested_activity_types": [
+        "see_think_wonder",
+        "learning_note",
+        "worksheet"
+      ]
+    },
+    {
+      "chunk_id": "5차시-chunk-2",
+      "label": "학습 덩어리 2",
+      "content_type": "mixed",
+      "knowledge_type": "comparison",
+      "summary": "에콰도르 핀란드 대한민국 에콰도르 핀란드 대한민국 60° 120° 90° 150° 0° 60° 30° 120° 150° 90° 180° 0° 30° 60° 30° 60° 90° 동경 서경 서경 동경 남위 북위 대 서 양 대서양 인 도 양 태 평 양 동",
+      "source_pages": [
+        122,
+        123
+      ],
+      "suggested_activity_types": [
+        "learning_note",
+        "worksheet"
+      ]
+    }
+  ],
+  "source_page_refs": [
+    120,
+    121,
+    122,
+    123
+  ],
+  "analysis_confidence": 0.75,
+  "review_status": "draft",
+  "notes": "자동 생성 초안. lesson title, key concepts, chunks를 검토 후 승인 필요."
+}

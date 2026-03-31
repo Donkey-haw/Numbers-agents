@@ -1,0 +1,52 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-03-31T01:14:40.782935+00:00",
+  "lesson_id": "4차시",
+  "sheet_name": "4차시",
+  "lesson_title": "디지털 공간 영상 정보의 의미 알아보기",
+  "lesson_type": "core",
+  "pdf_pages": [
+    119
+  ],
+  "essential_question": "디지털 공간 영상 정보의 의미 알아보기",
+  "learning_goals": [
+    "디지털 공간 영상 정보의 의미 알아보기의 핵심 내용을 설명할 수 있다."
+  ],
+  "key_concepts": [
+    "디지털",
+    "공간",
+    "영상",
+    "정보",
+    "의미"
+  ],
+  "vocabulary": [
+    "디지털",
+    "공간",
+    "영상"
+  ],
+  "misconceptions": [],
+  "difficulty_band": "on-level",
+  "content_chunks": [
+    {
+      "chunk_id": "4차시-chunk-1",
+      "label": "학습 덩어리 1",
+      "content_type": "mixed",
+      "knowledge_type": "concept",
+      "summary": "디지털 공간 영상 정보는 지구의 모습을 실감 나게 보여 준다.",
+      "source_pages": [
+        119
+      ],
+      "suggested_activity_types": [
+        "see_think_wonder",
+        "learning_note",
+        "worksheet"
+      ]
+    }
+  ],
+  "source_page_refs": [
+    119
+  ],
+  "analysis_confidence": 0.75,
+  "review_status": "draft",
+  "notes": "자동 생성 초안. lesson title, key concepts, chunks를 검토 후 승인 필요."
+}

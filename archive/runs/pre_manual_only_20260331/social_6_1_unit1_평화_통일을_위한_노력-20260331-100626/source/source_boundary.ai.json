@@ -1,0 +1,77 @@
+{
+  "schema_version": "1.0.0",
+  "boundaries": [
+    {
+      "section_index": 0,
+      "sheet_name": "2차시",
+      "resource_id": "main",
+      "role": "textbook",
+      "status": "matched",
+      "start_page": 12,
+      "end_page": 15,
+      "reason": "Transitional heuristic: choose highest-ranked candidate and cut before next lesson candidate",
+      "confidence": 0.55,
+      "evidence_pages": [
+        12,
+        42,
+        48,
+        75,
+        126
+      ]
+    },
+    {
+      "section_index": 1,
+      "sheet_name": "3차시",
+      "resource_id": "main",
+      "role": "textbook",
+      "status": "matched",
+      "start_page": 16,
+      "end_page": 16,
+      "reason": "Transitional heuristic: choose highest-ranked candidate and cut before next lesson candidate",
+      "confidence": 0.45,
+      "evidence_pages": [
+        16,
+        18,
+        20,
+        21,
+        27
+      ]
+    },
+    {
+      "section_index": 2,
+      "sheet_name": "4차시",
+      "resource_id": "main",
+      "role": "textbook",
+      "status": "matched",
+      "start_page": 12,
+      "end_page": 12,
+      "reason": "Transitional heuristic: choose highest-ranked candidate and cut before next lesson candidate",
+      "confidence": 0.45,
+      "evidence_pages": [
+        12,
+        18,
+        19,
+        21,
+        27
+      ]
+    },
+    {
+      "section_index": 3,
+      "sheet_name": "5-6차시",
+      "resource_id": "main",
+      "role": "textbook",
+      "status": "matched",
+      "start_page": 10,
+      "end_page": 10,
+      "reason": "Transitional heuristic: choose highest-ranked candidate and cut before next lesson candidate",
+      "confidence": 0.45,
+      "evidence_pages": [
+        10,
+        12,
+        28,
+        51,
+        157
+      ]
+    }
+  ]
+}

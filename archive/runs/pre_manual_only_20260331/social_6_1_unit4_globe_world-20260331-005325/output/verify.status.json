@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0.0",
+  "stage": "verify_agent",
+  "lesson_id": null,
+  "status": "succeeded",
+  "run_id": "social_6_1_unit4_globe_world-20260331-005325",
+  "started_at": "2026-03-30T15:58:58.206293+00:00",
+  "finished_at": "2026-03-30T15:59:20.172532+00:00",
+  "input_refs": [
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit4_globe_world-20260331-005325/output/사회_지구본과_지도로_보는_세계.numbers"
+  ],
+  "output_refs": [
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit4_globe_world-20260331-005325/output/verify.status.json",
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit4_globe_world-20260331-005325/output/verify_rule_review.json",
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit4_globe_world-20260331-005325/output/verify_review.json"
+  ],
+  "fallback_used": false,
+  "warnings": [
+    "verify_review fallback used: Gemini CLI timed out after 15 seconds for verify_review"
+  ],
+  "errors": [],
+  "agent_spec_path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/agents/verify_agent/AGENT.md",
+  "model": "gemini"
+}

@@ -1,0 +1,39 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-03-30T15:29:51.975741+00:00",
+  "pdf_path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/textbook/사회/[사회]6_1_교과서.pdf",
+  "current_section": {
+    "section_key": "___12차시__국가기관이_하는_일___법원의_구성과_하는_일_파악하기",
+    "sheet_name": "12차시",
+    "lesson_title": "국가기관이 하는 일 — 법원의 구성과 하는 일 파악하기",
+    "title_query": "국가기관이 하는 일 — 법원의 구성과 하는 일 파악하기",
+    "pdf_pages": [
+      73
+    ],
+    "baseline_analysis_path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/1-20260331-002018/source/local_baseline/___12차시__국가기관이_하는_일___법원의_구성과_하는_일_파악하기.lesson_analysis.json",
+    "extracted_text": "민주 국가에서 나랏일을 하는 \nㄱ\nㅎ\n , \nㅎ\nㅈ\nㅂ\n , \nㅂ\nㅇ\n 을/를 국가기관이라고 한다.\n한 문장 정리\n법원\n3\n이곳은 우리나라 최고 법원인 \n대법원이야. 가운데 건물은 법원의 \n독립을, 양옆의 건물은 정의와 \n형평을 상징해.\n이곳은 행정부 기관들이 \n자리한 정부 세종 청사야. 하늘로 \n오르는 용의 모습을 본떠 만들었어.\n행정부\n2\n형평  균형이 맞음.\n대법원 입구에는 법원이 \n지키고 보호하고자 하는 가치인 \n자유, 평등, 정의를 적어 두어 \n사람들이 오갈 때마다 볼 수 \n있도록 했어.\n배움 확인\n73\n2   국가기관이 하는 일",
+    "extracted_text_truncated": false
+  },
+  "neighbor_sections": [
+    {
+      "relation": "previous",
+      "section_key": "___11차시__국가기관이_하는_일___행정부의_구성과_하는_일_파악하기",
+      "sheet_name": "11차시",
+      "lesson_title": "국가기관이 하는 일 — 행정부의 구성과 하는 일 파악하기",
+      "title_query": "국가기관이 하는 일 — 행정부의 구성과 하는 일 파악하기",
+      "pdf_pages": [
+        74
+      ]
+    },
+    {
+      "relation": "next",
+      "section_key": "___13차시__국가기관이_하는_일___권력_분립의_의미와_중요성_탐구하기",
+      "sheet_name": "13차시",
+      "lesson_title": "국가기관이 하는 일 — 권력 분립의 의미와 중요성 탐구하기",
+      "title_query": "국가기관이 하는 일 — 권력 분립의 의미와 중요성 탐구하기",
+      "pdf_pages": [
+        54
+      ]
+    }
+  ]
+}

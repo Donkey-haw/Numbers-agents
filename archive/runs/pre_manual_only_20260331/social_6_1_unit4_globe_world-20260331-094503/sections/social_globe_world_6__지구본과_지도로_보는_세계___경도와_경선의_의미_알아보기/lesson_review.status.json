@@ -1,0 +1,19 @@
+{
+  "schema_version": "1.0.0",
+  "stage": "lesson_review_agent",
+  "lesson_id": "6차시",
+  "status": "succeeded",
+  "run_id": "social_6_1_unit4_globe_world-20260331-094503",
+  "started_at": "2026-03-31T00:45:13.791691+00:00",
+  "finished_at": "2026-03-31T00:45:13.792125+00:00",
+  "input_refs": [
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit4_globe_world-20260331-094503/sections/social_globe_world_6__지구본과_지도로_보는_세계___경도와_경선의_의미_알아보기/lesson_analysis.json"
+  ],
+  "output_refs": [
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit4_globe_world-20260331-094503/sections/social_globe_world_6__지구본과_지도로_보는_세계___경도와_경선의_의미_알아보기/lesson_review.json"
+  ],
+  "fallback_used": false,
+  "warnings": [],
+  "errors": [],
+  "agent_spec_path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/agents/lesson_review_agent/AGENT.md"
+}

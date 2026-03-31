@@ -1,0 +1,10 @@
+{
+  "schema_version": "1.0.0",
+  "stage": "review_activity_agent",
+  "lesson_id": "1차시",
+  "status": "succeeded",
+  "decision": "pass",
+  "findings": [],
+  "blocking_issues": [],
+  "warnings": []
+}

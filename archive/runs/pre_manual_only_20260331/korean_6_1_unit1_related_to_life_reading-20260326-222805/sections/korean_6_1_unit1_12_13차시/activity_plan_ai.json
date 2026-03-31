@@ -1,0 +1,83 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-03-26T00:00:00+00:00",
+  "lesson_id": "12-13차시",
+  "activities": [
+    {
+      "activity_id": "act-12-13-1",
+      "lesson_id": "12-13차시",
+      "object_role": "activity_area",
+      "lesson_flow_stage": "during",
+      "activity_type": "freeform_html",
+      "level": "core",
+      "learning_goal": "인물의 삶에서 핵심 가치를 발견하고, 이를 증명하는 장면을 논리적으로 연결할 수 있다.",
+      "prompt_text": "소개하고 싶은 인물을 정하고, 그 인물의 어떤 모습에서 '가치'를 발견했는지 구체적인 장면과 연결해 봅시다.",
+      "layout_template": "freeform_html",
+      "html_content": "<!DOCTYPE html><html lang='ko'><head><meta charset='UTF-8'><style>body{width:1600px;margin:0;padding:40px;background:transparent;font-family:'Noto Sans KR',sans-serif;color:#333;}.card{background:#fff;padding:40px;border-radius:32px;box-shadow:none;border:1px solid #eee;}.header{display:flex;align-items:center;margin-bottom:32px;}.badge{background:#4F46E5;color:#fff;padding:8px 20px;border-radius:12px;font-weight:700;font-size:20px;margin-right:16px;}.title{font-size:32px;font-weight:800;letter-spacing:-1px;}.row{display:grid;grid-template-columns:1fr 1fr;gap:32px;margin-bottom:32px;}.label{font-size:22px;font-weight:700;margin-bottom:12px;color:#4F46E5;}.writing-box{background:#fff;border:3px solid #333;border-radius:20px;padding:24px;min-height:220px;font-size:20px;line-height:1.6;}.large-box{min-height:520px;}.instruction{font-size:18px;color:#666;margin-bottom:12px;}</style></head><body><div class='card'><div class='header'><div class='badge'>인물 탐구</div><div class='title'>가치 중심 인물 분석 설계도</div></div><div class='row'><div><div class='label'>1. 내가 선택한 인물</div><div class='writing-box'></div></div><div><div class='label'>2. 인물이 추구하는 핵심 가치</div><div class='instruction'>예: 용기, 끈기, 정직, 나눔 등 한 단어로 써보세요.</div><div class='writing-box'></div></div></div><div><div class='label'>3. 가치가 드러나는 결정적 장면 (증거 발견하기)</div><div class='instruction'>교과서 49쪽의 내용을 참고하여, 인물의 말이나 행동 중 위 가치가 가장 잘 느껴지는 장면을 구체적으로 설명하세요.</div><div class='writing-box large-box'></div></div></div></body></html>",
+      "source_refs": [
+        49
+      ],
+      "teacher_notes": "단순히 인물의 업적을 나열하는 것이 아니라, 특정 장면에서 어떤 가치가 읽히는지 학생이 자신의 언어로 설명하도록 지도하십시오.",
+      "student_writing_zones": [
+        {
+          "zone_id": "target_person",
+          "label": "선택한 인물",
+          "input_area_type": "inline-answer",
+          "min_height": 220
+        },
+        {
+          "zone_id": "core_value",
+          "label": "핵심 가치",
+          "input_area_type": "inline-answer",
+          "min_height": 220
+        },
+        {
+          "zone_id": "value_evidence",
+          "label": "가치 증거 장면 설명",
+          "input_area_type": "free-writing",
+          "min_height": 520
+        }
+      ],
+      "estimated_minutes": 15,
+      "review_status": "draft"
+    },
+    {
+      "activity_id": "act-12-13-2",
+      "lesson_id": "12-13차시",
+      "object_role": "learning_note",
+      "lesson_flow_stage": "after",
+      "activity_type": "freeform_html",
+      "level": "extension",
+      "learning_goal": "타인의 삶에서 발견한 가치를 자신의 일상적 실천으로 연결하여 내면화할 수 있다.",
+      "prompt_text": "오늘 소개한 인물의 가치가 나의 삶으로 들어온다면 어떤 변화가 생길까요? 구체적인 실천 약속을 세워 봅시다.",
+      "layout_template": "freeform_html",
+      "html_content": "<!DOCTYPE html><html lang='ko'><head><meta charset='UTF-8'><style>body{width:1600px;margin:0;padding:40px;background:transparent;font-family:'Noto Sans KR',sans-serif;color:#333;}.card{background:#fff;padding:48px;border-radius:32px;border:1px solid #eee;}.header{text-align:center;margin-bottom:48px;}.badge{display:inline-block;background:#10B981;color:#fff;padding:8px 24px;border-radius:30px;font-weight:700;font-size:22px;margin-bottom:16px;}.title{font-size:36px;font-weight:900;}.content{display:flex;flex-direction:column;gap:40px;}.item{display:flex;gap:32px;align-items:flex-start;}.circle{flex-shrink:0;width:64px;height:64px;background:#333;color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:28px;font-weight:800;}.text-area{flex-grow:1;}.label{font-size:24px;font-weight:700;margin-bottom:16px;}.writing-zone{background:#fff;border:3px solid #333;border-radius:24px;padding:32px;min-height:300px;font-size:22px;line-height:1.6;}.highlight{color:#10B981;}</style></head><body><div class='card'><div class='header'><div class='badge'>가치 내면화</div><div class='title'>나의 삶으로 연결되는 <span class='highlight'>가치 실천 약속</span></div></div><div class='content'><div class='item'><div class='circle'>1</div><div class='text-area'><div class='label'>내가 본받고 싶은 '그 인물'의 한 마디 또는 행동</div><div class='writing-zone'></div></div></div><div class='item'><div class='circle'>2</div><div class='text-area'><div class='label'>내 일상에서 이 가치가 필요한 순간은 언제인가요?</div><div class='writing-zone'></div></div></div><div class='item'><div class='circle'>3</div><div class='text-area'><div class='label'>오늘부터 내가 실천할 구체적인 행동 약속</div><div class='writing-zone' style='min-height:420px; border-color:#10B981;'></div></div></div></div></div></body></html>",
+      "source_refs": [
+        50
+      ],
+      "teacher_notes": "발표 후 소감 나누기 단계에서 활용하십시오. 인물의 훌륭함을 칭송하는 데서 그치지 않고 학생 개인의 삶의 변화로 이어지도록 하는 것이 핵심입니다.",
+      "student_writing_zones": [
+        {
+          "zone_id": "emulate_point",
+          "label": "본받고 싶은 점",
+          "input_area_type": "free-writing",
+          "min_height": 300
+        },
+        {
+          "zone_id": "life_context",
+          "label": "가치가 필요한 상황",
+          "input_area_type": "free-writing",
+          "min_height": 300
+        },
+        {
+          "zone_id": "action_promise",
+          "label": "구체적 실천 약속",
+          "input_area_type": "free-writing",
+          "min_height": 420
+        }
+      ],
+      "estimated_minutes": 12,
+      "review_status": "draft"
+    }
+  ]
+}

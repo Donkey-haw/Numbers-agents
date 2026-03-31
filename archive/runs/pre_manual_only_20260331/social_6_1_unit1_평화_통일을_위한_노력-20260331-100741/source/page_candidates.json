@@ -1,0 +1,53 @@
+{
+  "schema_version": "1.0.0",
+  "lessons": [
+    {
+      "lesson_id": "lesson-001",
+      "resource_id": "main",
+      "candidate_pages": [
+        126,
+        12,
+        75,
+        48,
+        42
+      ],
+      "query": "분단으로 나타난 문제점과 분단이 사회와 생활에 끼친 영향 알아보기"
+    },
+    {
+      "lesson_id": "lesson-002",
+      "resource_id": "main",
+      "candidate_pages": [
+        16,
+        21,
+        18,
+        27,
+        20
+      ],
+      "query": "분단의 흔적이 남아 있는 장소 알아보기"
+    },
+    {
+      "lesson_id": "lesson-003",
+      "resource_id": "main",
+      "candidate_pages": [
+        18,
+        19,
+        21,
+        27,
+        12
+      ],
+      "query": "분단의 장소가 평화의 장소로 바뀐 사례 알아보기"
+    },
+    {
+      "lesson_id": "lesson-004",
+      "resource_id": "main",
+      "candidate_pages": [
+        12,
+        10,
+        51,
+        157,
+        28
+      ],
+      "query": "평화 통일을 위한 노력 살펴보기"
+    }
+  ]
+}

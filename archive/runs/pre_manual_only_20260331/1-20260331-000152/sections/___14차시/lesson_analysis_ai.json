@@ -1,0 +1,72 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-03-31T00:05:00.000000+00:00",
+  "lesson_id": "14차시",
+  "sheet_name": "14차시",
+  "lesson_title": "1단원 정리 — [단원 마무리] 나만의 누리집 완성하기 / 창의·융 합 사고력 쑥쑥",
+  "lesson_type": "summary",
+  "pdf_pages": [
+    49
+  ],
+  "essential_question": "평화 통일을 위한 노력과 민주화 및 산업화 과정의 핵심 내용을 정리할 수 있는가?",
+  "learning_goals": [
+    "1단원에서 배운 민주화 운동의 종류와 의의를 정리할 수 있다.",
+    "우리나라의 산업화 과정과 그로 인한 사회 변화 및 문제점을 설명할 수 있다.",
+    "학습한 내용을 바탕으로 단원 마무리 활동에 참여할 수 있다."
+  ],
+  "key_concepts": [
+    "민주화 운동",
+    "대통령 직선제",
+    "지방 자치제",
+    "산업화",
+    "첨단 산업",
+    "노동 문제"
+  ],
+  "vocabulary": [
+    "4·19 혁명",
+    "5·18 민주화 운동",
+    "6월 민주 항쟁",
+    "경공업",
+    "중화학 공업",
+    "반도체"
+  ],
+  "misconceptions": [
+    "산업화가 긍정적인 생활의 변화만을 가져왔다고 오해할 수 있으나, 노동 문제나 환경 오염 등의 어두운 면도 함께 있었음을 이해해야 함."
+  ],
+  "difficulty_band": "on-level",
+  "content_chunks": [
+    {
+      "chunk_id": "14차시-chunk-1",
+      "label": "민주화와 산업화 내용 정리",
+      "content_type": "summary",
+      "knowledge_type": "mixed",
+      "summary": "민주화 운동(4·19, 5·18, 6월 항쟁)의 성과인 대통령 직선제 및 지방 자치제 부활과 시대별 산업화 과정(60년대 경공업~2000년대 첨단 산업) 및 그 영향을 복습함.",
+      "source_pages": [
+        49
+      ],
+      "suggested_activity_types": [
+        "learning_note",
+        "worksheet"
+      ]
+    },
+    {
+      "chunk_id": "14차시-chunk-2",
+      "label": "단원 마무리 활동",
+      "content_type": "activity",
+      "knowledge_type": "application",
+      "summary": "나만의 누리집 완성하기와 단원 게임을 통해 학습한 내용을 최종적으로 내면화함.",
+      "source_pages": [
+        49
+      ],
+      "suggested_activity_types": [
+        "see_think_wonder"
+      ]
+    }
+  ],
+  "source_page_refs": [
+    49
+  ],
+  "analysis_confidence": 0.95,
+  "review_status": "draft",
+  "notes": "추출된 텍스트(49쪽)에 근거하여 1단원의 민주화와 산업화 핵심 키워드를 반영하여 정리함. 12-13차시와의 경계를 명확히 하여 단원 마무리 성격에 집중함."
+}

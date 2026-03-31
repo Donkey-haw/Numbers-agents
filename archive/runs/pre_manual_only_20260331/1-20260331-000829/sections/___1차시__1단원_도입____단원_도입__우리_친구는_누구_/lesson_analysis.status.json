@@ -1,0 +1,25 @@
+{
+  "schema_version": "1.0.0",
+  "stage": "lesson_analysis_agent",
+  "lesson_id": "1차시",
+  "status": "succeeded",
+  "run_id": "1-20260331-000829",
+  "started_at": "2026-03-30T15:09:06.755980+00:00",
+  "finished_at": "2026-03-30T15:09:51.929607+00:00",
+  "input_refs": [
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/1-20260331-000829/source/schedule_draft.json",
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/1-20260331-000829/source/textbook_context.json",
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/1-20260331-000829/source/local_baseline/___1차시__1단원_도입____단원_도입__우리_친구는_누구_.lesson_analysis.json"
+  ],
+  "output_refs": [
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/1-20260331-000829/sections/___1차시__1단원_도입____단원_도입__우리_친구는_누구_/lesson_analysis_ai.json",
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/1-20260331-000829/sections/___1차시__1단원_도입____단원_도입__우리_친구는_누구_/lesson_analysis.json"
+  ],
+  "fallback_used": false,
+  "warnings": [],
+  "errors": [],
+  "model": "gemini",
+  "agent_spec_path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/agents/lesson_analysis_agent/AGENT.md",
+  "attempt_count": 1,
+  "validation_errors": []
+}

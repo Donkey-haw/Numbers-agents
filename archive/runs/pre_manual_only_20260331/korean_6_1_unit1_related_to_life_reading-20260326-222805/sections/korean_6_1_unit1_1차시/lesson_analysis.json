@@ -1,0 +1,88 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-03-26T13:29:02.714015+00:00",
+  "lesson_id": "1차시",
+  "sheet_name": "1차시",
+  "lesson_title": "배울 내용 살펴보기",
+  "lesson_type": "intro",
+  "pdf_pages": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "essential_question": "인물이 추구하는 가치란 무엇이며, 내 삶과 어떻게 관련지을 수 있을까?",
+  "learning_goals": [
+    "단원 학습의 전체적인 흐름을 파악하고 배울 내용을 설명할 수 있다.",
+    "가치의 의미를 이해하고 이야기 속 인물이 추구하는 가치에 관심을 가질 수 있다."
+  ],
+  "key_concepts": [
+    "가치",
+    "추구",
+    "인물의 삶",
+    "독서 감상문",
+    "전기문"
+  ],
+  "vocabulary": [
+    "가치",
+    "추구",
+    "전기문",
+    "문화 향유 역량"
+  ],
+  "misconceptions": [
+    "가치는 도덕적인 것만 의미한다고 오해할 수 있으나, 개인이 삶에서 소중히 여기는 모든 것을 포함함을 안내한다."
+  ],
+  "difficulty_band": "on-level",
+  "content_chunks": [
+    {
+      "chunk_id": "1차시-chunk-1",
+      "label": "단원 도입 및 생각 열기",
+      "content_type": "mixed",
+      "knowledge_type": "concept",
+      "summary": "세종 대왕과 장영실의 사례를 통해 인물이 소중히 여기는 것(백성, 사람들의 편리함)을 살펴보고, 자신이 소중하게 생각하는 가치에 대해 생각하며 학습 동기를 유발함.",
+      "source_pages": [
+        1,
+        2
+      ],
+      "suggested_activity_types": [
+        "see_think_wonder"
+      ]
+    },
+    {
+      "chunk_id": "1차시-chunk-2",
+      "label": "독서 감상문을 통한 가치 이해",
+      "content_type": "mixed",
+      "knowledge_type": "concept",
+      "summary": "경주의 독서 감상문(『권기옥』)을 읽으며 '가치'의 정의(사람들이 자신의 삶에서 중요하게 여기는 것)를 배우고, 인물이 추구하는 가치(용기, 노력)를 파악함.",
+      "source_pages": [
+        3
+      ],
+      "suggested_activity_types": [
+        "learning_note",
+        "worksheet"
+      ]
+    },
+    {
+      "chunk_id": "1차시-chunk-3",
+      "label": "인물의 삶과 영향 및 학습 계획",
+      "content_type": "activity",
+      "knowledge_type": "application",
+      "summary": "이야기 속 인물(「긴긴밤」의 펭귄, 「나비를 잡는 아버지」의 바우 등)에게 영향받은 경험을 나누고, 이번 단원에서 알고 싶은 내용을 빈칸에 채우며 학습 계획을 세움.",
+      "source_pages": [
+        4
+      ],
+      "suggested_activity_types": [
+        "learning_note"
+      ]
+    }
+  ],
+  "source_page_refs": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "analysis_confidence": 0.95,
+  "review_status": "draft",
+  "notes": "도입 차시로서 가치의 개념을 친숙한 인물(세종대왕, 장영실)과 독서 감상문 사례를 통해 제시함. 단원 전체의 로드맵 역할을 함."
+}

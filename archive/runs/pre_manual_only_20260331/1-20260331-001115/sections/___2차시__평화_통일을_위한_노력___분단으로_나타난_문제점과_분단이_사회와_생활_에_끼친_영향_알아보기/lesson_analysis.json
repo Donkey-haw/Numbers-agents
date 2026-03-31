@@ -1,0 +1,106 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-03-30T15:13:34.703107+00:00",
+  "lesson_id": "2차시",
+  "sheet_name": "2차시",
+  "lesson_title": "평화 통일을 위한 노력 — 분단으로 나타난 문제점과 분단이 사회와 생활 에 끼친 영향 알아보기",
+  "lesson_type": "core",
+  "pdf_pages": [
+    12,
+    13,
+    14,
+    15
+  ],
+  "essential_question": "분단으로 인해 우리 사회와 생활에는 어떠한 문제점들이 나타났으며, 왜 평화 통일이 필요할까요?",
+  "learning_goals": [
+    "분단으로 인해 발생하는 군사적 긴장과 국방비 부담 등 국가적 차원의 문제점을 설명할 수 있다.",
+    "남북한의 언어와 생활 방식 차이로 인한 문화적 이질화 현상을 이해한다.",
+    "이산가족의 고통과 자유 왕래의 제한 등 분단이 개인의 삶에 끼친 영향을 공감한다."
+  ],
+  "key_concepts": [
+    "분단",
+    "군사적 긴장",
+    "국방비",
+    "문화적 차이",
+    "이산가족",
+    "자유 왕래"
+  ],
+  "vocabulary": [
+    "이산가족",
+    "실향민",
+    "망배단",
+    "북한 이탈 주민",
+    "군사적 대립"
+  ],
+  "misconceptions": [
+    "남북한의 언어 차이가 단순한 방언 차이라고 오해할 수 있으나, 오랜 분단으로 인해 단어의 뜻이나 생활 용어가 구조적으로 달라졌음을 이해해야 함."
+  ],
+  "difficulty_band": "on-level",
+  "content_chunks": [
+    {
+      "chunk_id": "2차시-chunk-1",
+      "label": "분단으로 인한 군사적·경제적 문제",
+      "content_type": "mixed",
+      "knowledge_type": "cause-effect",
+      "summary": "남북 간의 군사적 대립으로 인해 한반도에 전쟁의 불안감이 지속되고 있으며, 막대한 국방비 지출로 인해 경제적 부담이 발생함.",
+      "source_pages": [
+        12
+      ],
+      "suggested_activity_types": [
+        "그래프 분석",
+        "토론"
+      ]
+    },
+    {
+      "chunk_id": "2차시-chunk-2",
+      "label": "남북한의 문화적 차이",
+      "content_type": "mixed",
+      "knowledge_type": "comparison",
+      "summary": "오랜 분단 체제 속에서 언어(빙수-단얼음, 도시락-곽밥)와 생활 방식에 차이가 생겼으며, 이는 북한 이탈 주민들이 남한 사회에 적응하는 데 어려움을 주기도 함.",
+      "source_pages": [
+        13
+      ],
+      "suggested_activity_types": [
+        "단어 비교 퀴즈",
+        "사례 연구"
+      ]
+    },
+    {
+      "chunk_id": "2차시-chunk-3",
+      "label": "이산가족의 아픔과 인도적 문제",
+      "content_type": "image",
+      "knowledge_type": "fact",
+      "summary": "분단으로 인해 가족과 헤어진 이산가족들은 자유롭게 왕래하거나 소식을 전하지 못한 채 고통받고 있으며, 실향민들은 망배단 등을 통해 고향을 그리워함.",
+      "source_pages": [
+        13
+      ],
+      "suggested_activity_types": [
+        "공감 편지 쓰기",
+        "사진 자료 분석"
+      ]
+    },
+    {
+      "chunk_id": "2차시-chunk-4",
+      "label": "평화 통일의 필요성 탐색",
+      "content_type": "summary",
+      "knowledge_type": "concept",
+      "summary": "분단으로 발생하는 여러 가지 문제점을 해결하고 민족의 동질성을 회복하기 위해 평화 통일이 왜 필요한지 스스로 정리해 봄.",
+      "source_pages": [
+        14,
+        15
+      ],
+      "suggested_activity_types": [
+        "생각 정리 활동"
+      ]
+    }
+  ],
+  "source_page_refs": [
+    12,
+    13,
+    14,
+    15
+  ],
+  "analysis_confidence": 0.9,
+  "review_status": "draft",
+  "notes": "교과서 12-13쪽의 텍스트와 도표(국방비 그래프, 언어 비교)를 중심으로 분석함. 14-15쪽은 주제의 마무리 및 평화 통일의 필요성을 정리하는 구간으로 판단됨."
+}

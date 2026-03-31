@@ -1,0 +1,115 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-03-30T15:46:57.438000+00:00",
+  "lesson_id": "14차시",
+  "activities": [
+    {
+      "activity_id": "act-14-1",
+      "lesson_id": "14차시",
+      "object_role": "activity_area",
+      "lesson_flow_stage": "during",
+      "activity_type": "freeform_html",
+      "level": "core",
+      "learning_goal": "낱말 구름 속 핵심 키워드를 바탕으로 이번 단원에서 배울 내용을 자신의 삶과 연결하여 추론할 수 있다.",
+      "prompt_text": "낱말 구름에서 발견한 핵심 단어 3개를 골라, 내가 경험한 미디어의 모습과 연결하여 이번 단원의 궁금한 점을 적어 봅시다.",
+      "layout_template": "freeform_html",
+      "html_content": "<!DOCTYPE html><html lang='ko'><head><meta charset='UTF-8'><style>body{width:1600px;margin:0;padding:40px;background:transparent;font-family:'Noto Sans KR',sans-serif;color:#333;} .card{background:#fff;padding:48px;border-radius:32px;box-shadow:none;} .header{display:flex;align-items:center;margin-bottom:32px;} .badge{background:#eef2ff;color:#4f46e5;padding:8px 20px;border-radius:12px;font-weight:700;font-size:20px;margin-right:20px;} h1{font-size:36px;margin:0;font-weight:800;} .instruction{font-size:24px;line-height:1.6;margin-bottom:40px;color:#555;} .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:32px;} .item{display:flex;flex-direction:column;} .label{font-size:22px;font-weight:700;margin-bottom:12px;color:#111;} .writing-zone{background:#fff;border:3px solid #333;border-radius:20px;min-height:480px;padding:24px;font-size:20px;line-height:1.8;position:relative;} .writing-zone::after{content:'여기에 애플 펜슬로 자유롭게 메모하거나 그려 보세요.';position:absolute;top:24px;left:24px;color:#ccc;pointer-events:none;}</style></head><body><div class='card'><div class='header'><div class='badge'>탐구 활동</div><h1>미디어로 여는 민주주의 이야기</h1></div><p class='instruction'>낱말 구름 속에서 가장 눈에 띄는 단어 3개를 선택해 보세요. 그리고 그 단어가 나의 생활(유튜브, 뉴스, SNS 등)에서 어떤 모습으로 나타나는지, 무엇이 궁금한지 정리해 봅시다.</p><div class='grid'><div class='item'><div class='label'>선택한 단어 1:</div><div class='writing-zone'></div></div><div class='item'><div class='label'>선택한 단어 2:</div><div class='writing-zone'></div></div><div class='item'><div class='label'>선택한 단어 3:</div><div class='writing-zone'></div></div></div></div></body></html>",
+      "source_refs": [
+        13,
+        20,
+        35
+      ],
+      "student_writing_zones": [
+        {
+          "zone_id": "word_concept_1",
+          "label": "첫 번째 단어와 나의 경험",
+          "input_area_type": "free-writing",
+          "min_height": 480
+        },
+        {
+          "zone_id": "word_concept_2",
+          "label": "두 번째 단어와 나의 경험",
+          "input_area_type": "free-writing",
+          "min_height": 480
+        },
+        {
+          "zone_id": "word_concept_3",
+          "label": "세 번째 단어와 나의 경험",
+          "input_area_type": "free-writing",
+          "min_height": 480
+        }
+      ],
+      "estimated_minutes": 15,
+      "review_status": "draft",
+      "teacher_notes": ""
+    },
+    {
+      "activity_id": "act-14-2",
+      "lesson_id": "14차시",
+      "object_role": "learning_note",
+      "lesson_flow_stage": "during",
+      "activity_type": "freeform_html",
+      "level": "core",
+      "learning_goal": "민주주의와 미디어에 관한 핵심 용어를 정리하고, 그 정의를 자신의 언어로 재구성할 수 있다.",
+      "prompt_text": "오늘 수업 시간에 들은 '용어 콕!' 핵심 개념들을 나만의 언어로 정의하고, 왜 중요한지 메모해 봅시다.",
+      "layout_template": "freeform_html",
+      "html_content": "<!DOCTYPE html><html lang='ko'><head><meta charset='UTF-8'><style>body{width:1600px;margin:0;padding:40px;background:transparent;font-family:'Noto Sans KR',sans-serif;} .card{background:#fff;padding:48px;border-radius:32px;border:1px solid #eee;} .header-group{margin-bottom:40px;} .badge{display:inline-block;background:#fef3c7;color:#92400e;padding:6px 16px;border-radius:8px;font-weight:700;font-size:18px;margin-bottom:12px;} h1{font-size:32px;margin:0;color:#111;} .note-area{display:flex;gap:40px;margin-top:30px;} .main-note{flex:2;background:#fff;border:3px solid #333;border-radius:24px;min-height:650px;padding:32px;position:relative;} .main-note::before{content:'[수업 핵심 메모] 들은 내용과 중요 용어를 자유롭게 기록하세요.';position:absolute;top:32px;left:32px;color:#bbb;} .sidebar{flex:1;display:flex;flex-direction:column;gap:32px;} .mini-box{background:#f9fafb;border:2px dashed #999;border-radius:20px;padding:24px;min-height:280px;} .box-label{font-weight:800;font-size:20px;margin-bottom:16px;color:#444;display:block;}</style></head><body><div class='card'><div class='header-group'><div class='badge'>배움 노트</div><h1>민주주의와 미디어 핵심 키워드 정리</h1></div><div class='note-area'><div class='main-note'></div><div class='sidebar'><div class='mini-box'><span class='box-label'>오늘의 핵심 용어 (3가지)</span></div><div class='mini-box'><span class='box-label'>미디어가 민주주의에 왜 필요할까?</span></div></div></div></div></body></html>",
+      "source_refs": [
+        48,
+        60,
+        82
+      ],
+      "student_writing_zones": [
+        {
+          "zone_id": "class_main_note",
+          "label": "수업 핵심 메모",
+          "input_area_type": "free-writing",
+          "min_height": 650
+        },
+        {
+          "zone_id": "key_terms",
+          "label": "핵심 용어 리스트",
+          "input_area_type": "inline-answer",
+          "min_height": 200
+        },
+        {
+          "zone_id": "importance_reflection",
+          "label": "미디어의 필요성 생각",
+          "input_area_type": "free-writing",
+          "min_height": 200
+        }
+      ],
+      "estimated_minutes": 20,
+      "review_status": "draft",
+      "teacher_notes": ""
+    },
+    {
+      "activity_id": "act-14-3",
+      "lesson_id": "14차시",
+      "object_role": "worksheet",
+      "lesson_flow_stage": "after",
+      "activity_type": "freeform_html",
+      "level": "extension",
+      "learning_goal": "민주주의의 핵심이 '참여'에 있음을 이해하고, 오해(결과 중심)를 바로잡는 자신의 생각을 서술할 수 있다.",
+      "prompt_text": "민주주의는 결과보다 과정, 즉 '참여'가 더 중요하다고 합니다. 만약 참여가 없는 정치가 이루어진다면 어떤 일이 벌어질지 상상하여 글을 써 봅시다.",
+      "layout_template": "freeform_html",
+      "html_content": "<!DOCTYPE html><html lang='ko'><head><meta charset='UTF-8'><style>body{width:1600px;margin:0;padding:40px;background:transparent;font-family:'Noto Sans KR',sans-serif;} .card{background:#fff;padding:50px;border-radius:40px;border:4px solid #333;} h1{font-size:38px;color:#dc2626;margin-bottom:10px;display:flex;align-items:center;} h1::before{content:'⚠️';margin-right:15px;} .scenario{background:#fff1f2;padding:30px;border-radius:20px;font-size:24px;line-height:1.7;margin-bottom:40px;border-left:10px solid #f43f5e;} .writing-title{font-size:26px;font-weight:800;margin-bottom:20px;} .writing-box{background:#fff;border:3px solid #333;border-radius:24px;min-height:550px;padding:40px;font-size:22px;line-height:2.0;background-image:linear-gradient(#eee 1px, transparent 1px);background-size:100% 40px;}</style></head><body><div class='card'><h1>생각의 벽 깨기: 참여가 없는 민주주의?</h1><div class='scenario'><strong>[상황]</strong> 어떤 나라에서 시민들의 참여 없이 아주 똑똑한 인공지능이 모든 결정을 내린다고 가정해 봅시다. 결과는 효율적일 수 있지만, 시민들은 아무런 목소리도 낼 수 없습니다.</div><div class='writing-title'>이런 '결과만 좋은' 상황이 왜 위험할지, 민주주의의 진짜 의미를 담아 나의 주장을 펼쳐 보세요.</div><div class='writing-box'></div></div></body></html>",
+      "source_refs": [
+        13,
+        14,
+        15
+      ],
+      "student_writing_zones": [
+        {
+          "zone_id": "democracy_participation_essay",
+          "label": "참여의 중요성 논술",
+          "input_area_type": "lined",
+          "min_height": 550
+        }
+      ],
+      "estimated_minutes": 15,
+      "review_status": "draft",
+      "teacher_notes": ""
+    }
+  ]
+}

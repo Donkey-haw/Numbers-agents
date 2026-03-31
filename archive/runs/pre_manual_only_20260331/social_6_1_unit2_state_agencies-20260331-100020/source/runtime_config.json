@@ -1,0 +1,333 @@
+{
+  "project_root": "/Users/jonyeock/Desktop/Tool/NumbersAuto",
+  "pdf_path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/textbook/사회/[사회]6_1_교과서.pdf",
+  "template_path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/빈 넘버스 파일.numbers",
+  "output_file": "/Users/jonyeock/Desktop/Tool/NumbersAuto/output/6-1-2-2. 국가기관이 하는 일.numbers",
+  "footer": "사회 6-1 · 2단원 · 국가기관이 하는 일",
+  "search_start_page": 70,
+  "end_before_query": "민주주의와 미디어",
+  "source_chart": "configs/social_6_1_progress_chart.json",
+  "sections": [
+    {
+      "sheet_name": "8차시",
+      "card_file": "social_6_1_unit2_state_8차시",
+      "title": "국가기관의 의미와 종류를 알아볼까요?",
+      "title_query": "민주 국가는 어떻게 운영될까요?",
+      "pdf_pages": [
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71
+      ],
+      "badge": "8차시",
+      "accent": [
+        "#6366f1",
+        "#818cf8"
+      ],
+      "sources": [
+        {
+          "resource_id": "main",
+          "role": "textbook",
+          "title_query": "민주 국가는 어떻게 운영될까요?",
+          "pdf_pages": [
+            54,
+            55,
+            56,
+            57,
+            58,
+            59,
+            60,
+            61,
+            62,
+            63,
+            64,
+            65,
+            66,
+            67,
+            68,
+            69,
+            70,
+            71
+          ],
+          "_inference": {
+            "status": "matched",
+            "start_page": 54,
+            "end_page": 71,
+            "start_query": "민주 국가는 어떻게 운영될까요?",
+            "start_match_pages": [
+              54,
+              88,
+              90,
+              100
+            ],
+            "start_match_count": 4,
+            "end_strategy": "boundary_decision_agent",
+            "end_reference_query": null,
+            "intro_boundary_page": null,
+            "reason": "Transitional heuristic: choose highest-ranked candidate and cut before next lesson candidate",
+            "confidence": 0.55
+          }
+        }
+      ],
+      "source_ranges": [
+        {
+          "resource_id": "main",
+          "role": "textbook",
+          "pdf_pages": [
+            54,
+            55,
+            56,
+            57,
+            58,
+            59,
+            60,
+            61,
+            62,
+            63,
+            64,
+            65,
+            66,
+            67,
+            68,
+            69,
+            70,
+            71
+          ]
+        }
+      ]
+    },
+    {
+      "sheet_name": "9-10차시",
+      "card_file": "social_6_1_unit2_state_9-10차시",
+      "title": "국회의 구성과 하는 일을 알아볼까요?",
+      "title_query": "국회는 어떤 일을 할까요?",
+      "badge": "9-10차시",
+      "accent": [
+        "#4f46e5",
+        "#7c3aed"
+      ],
+      "sources": [
+        {
+          "resource_id": "main",
+          "role": "textbook",
+          "title_query": "국회는 어떤 일을 할까요?",
+          "_inference": {
+            "status": "matched",
+            "start_page": 72,
+            "end_page": 72,
+            "start_query": "국회는 어떤 일을 할까요?",
+            "start_match_pages": [
+              72,
+              74,
+              81,
+              82,
+              100
+            ],
+            "start_match_count": 5,
+            "end_strategy": "boundary_decision_agent",
+            "end_reference_query": null,
+            "intro_boundary_page": null,
+            "reason": "Transitional heuristic: choose highest-ranked candidate and cut before next lesson candidate",
+            "confidence": 0.45
+          },
+          "pdf_pages": [
+            72
+          ]
+        }
+      ],
+      "source_ranges": [
+        {
+          "resource_id": "main",
+          "role": "textbook",
+          "pdf_pages": [
+            72
+          ]
+        }
+      ],
+      "pdf_pages": [
+        72
+      ]
+    },
+    {
+      "sheet_name": "11차시",
+      "card_file": "social_6_1_unit2_state_11차시",
+      "title": "행정부의 구성과 하는 일을 알아볼까요?",
+      "title_query": "행정부는 어떤 일을 할까요?",
+      "badge": "11차시",
+      "accent": [
+        "#0f766e",
+        "#14b8a6"
+      ],
+      "sources": [
+        {
+          "resource_id": "main",
+          "role": "textbook",
+          "title_query": "행정부는 어떤 일을 할까요?",
+          "_inference": {
+            "status": "matched",
+            "start_page": 72,
+            "end_page": 72,
+            "start_query": "행정부는 어떤 일을 할까요?",
+            "start_match_pages": [
+              72,
+              74,
+              81,
+              82,
+              100
+            ],
+            "start_match_count": 5,
+            "end_strategy": "boundary_decision_agent",
+            "end_reference_query": null,
+            "intro_boundary_page": null,
+            "reason": "Transitional heuristic: choose highest-ranked candidate and cut before next lesson candidate",
+            "confidence": 0.45
+          },
+          "pdf_pages": [
+            72
+          ]
+        }
+      ],
+      "source_ranges": [
+        {
+          "resource_id": "main",
+          "role": "textbook",
+          "pdf_pages": [
+            72
+          ]
+        }
+      ],
+      "pdf_pages": [
+        72
+      ]
+    },
+    {
+      "sheet_name": "12차시",
+      "card_file": "social_6_1_unit2_state_12차시",
+      "title": "법원의 구성과 하는 일을 알아볼까요?",
+      "title_query": "법원은 어떤 일을 할까요?",
+      "badge": "12차시",
+      "accent": [
+        "#1d4ed8",
+        "#3b82f6"
+      ],
+      "sources": [
+        {
+          "resource_id": "main",
+          "role": "textbook",
+          "title_query": "법원은 어떤 일을 할까요?",
+          "_inference": {
+            "status": "matched",
+            "start_page": 72,
+            "end_page": 72,
+            "start_query": "법원은 어떤 일을 할까요?",
+            "start_match_pages": [
+              72,
+              73,
+              74,
+              81,
+              82
+            ],
+            "start_match_count": 5,
+            "end_strategy": "boundary_decision_agent",
+            "end_reference_query": null,
+            "intro_boundary_page": null,
+            "reason": "Transitional heuristic: choose highest-ranked candidate and cut before next lesson candidate",
+            "confidence": 0.45
+          },
+          "pdf_pages": [
+            72
+          ]
+        }
+      ],
+      "source_ranges": [
+        {
+          "resource_id": "main",
+          "role": "textbook",
+          "pdf_pages": [
+            72
+          ]
+        }
+      ],
+      "pdf_pages": [
+        72
+      ]
+    },
+    {
+      "sheet_name": "13차시",
+      "card_file": "social_6_1_unit2_state_13차시",
+      "title": "권력 분립과 국가기관의 견제를 알아볼까요? / 주제 마무리",
+      "title_query": "국가의 권력을 왜 나누어야 할까요?",
+      "badge": "13차시",
+      "accent": [
+        "#d97706",
+        "#f59e0b"
+      ],
+      "sources": [
+        {
+          "resource_id": "main",
+          "role": "textbook",
+          "title_query": "국가의 권력을 왜 나누어야 할까요?",
+          "_inference": {
+            "status": "matched",
+            "start_page": 71,
+            "end_page": 71,
+            "start_query": "국가의 권력을 왜 나누어야 할까요?",
+            "start_match_pages": [
+              71,
+              87,
+              88,
+              100,
+              178
+            ],
+            "start_match_count": 5,
+            "end_strategy": "boundary_decision_agent",
+            "end_reference_query": null,
+            "intro_boundary_page": null,
+            "reason": "Transitional heuristic: choose highest-ranked candidate and cut before next lesson candidate",
+            "confidence": 0.45
+          },
+          "pdf_pages": [
+            71
+          ]
+        }
+      ],
+      "source_ranges": [
+        {
+          "resource_id": "main",
+          "role": "textbook",
+          "pdf_pages": [
+            71
+          ]
+        }
+      ],
+      "pdf_pages": [
+        71
+      ]
+    }
+  ],
+  "pages_dir": "/Users/jonyeock/Desktop/Tool/NumbersAuto/assets/pages",
+  "cards_dir": "/Users/jonyeock/Desktop/Tool/NumbersAuto/assets/cards",
+  "html_dir": "/Users/jonyeock/Desktop/Tool/NumbersAuto/html",
+  "resources": [
+    {
+      "resource_id": "main",
+      "label": "교과서",
+      "kind": "textbook",
+      "pdf_path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/textbook/사회/[사회]6_1_교과서.pdf"
+    }
+  ]
+}

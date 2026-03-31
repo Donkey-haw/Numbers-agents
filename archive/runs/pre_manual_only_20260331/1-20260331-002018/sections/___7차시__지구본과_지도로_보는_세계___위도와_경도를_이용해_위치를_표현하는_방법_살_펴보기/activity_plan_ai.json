@@ -1,0 +1,109 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-03-31T10:00:00+00:00",
+  "lesson_id": "7차시",
+  "activities": [
+    {
+      "activity_id": "act-7-1",
+      "lesson_id": "7차시",
+      "object_role": "learning_note",
+      "lesson_flow_stage": "during",
+      "activity_type": "freeform_html",
+      "level": "core",
+      "learning_goal": "위도와 경도의 개념을 정의하고 각각의 기준선과 특징을 정리할 수 있다.",
+      "prompt_text": "수업을 들으며 위도와 경도의 핵심 내용을 정리해 봅시다. 각각의 기준이 되는 선(적도, 본초 자오선)은 무엇이며, 숫자가 어떻게 변하는지 적어보세요.",
+      "layout_template": "freeform_html",
+      "html_content": "<!DOCTYPE html><html lang='ko'><head><meta charset='UTF-8'><style>@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap');body{width:1200px;margin:0;padding:40px;background:transparent;font-family:'Noto Sans KR',sans-serif;color:#333;}.card{background:#fff;border-radius:32px;padding:48px;box-shadow:0 10px 30px rgba(0,0,0,0.05);border:1px solid #eee;}.header{display:flex;align-items:center;margin-bottom:40px;}.badge{background:#4A90E2;color:#fff;padding:8px 20px;border-radius:12px;font-weight:700;font-size:18px;margin-right:20px;}.title{font-size:32px;font-weight:700;margin:0;}.grid{display:grid;grid-template-columns:1fr 1fr;gap:32px;}.section-label{font-size:20px;font-weight:700;margin-bottom:16px;color:#4A90E2;display:flex;align-items:center;}.section-label::before{content:'';display:inline-block;width:8px;height:24px;background:#4A90E2;margin-right:12px;border-radius:4px;}.note-area{background:#fff;border:3px solid #333;border-radius:20px;height:550px;padding:24px;position:relative;}.note-area::after{content:'여기에 자유롭게 메모하거나 그림을 그려보세요';position:absolute;bottom:20px;right:20px;font-size:14px;color:#bbb;}</style></head><body><div class='card'><div class='header'><div class='badge'>배움 메모</div><h1 class='title'>위도와 경도: 지구의 주소 체계 정리</h1></div><div class='grid'><div><div class='section-label'>위도 (Latitude)</div><div class='note-area'></div></div><div><div class='section-label'>경도 (Longitude)</div><div class='note-area'></div></div></div></div></body></html>",
+      "source_refs": [
+        110
+      ],
+      "teacher_notes": "적도와 본초 자오선을 기준으로 북위/남위, 동경/서경으로 나뉘는 원리를 시각적으로 메모하도록 유도하세요.",
+      "student_writing_zones": [
+        {
+          "zone_id": "lat_note",
+          "label": "위도 개념 정리",
+          "input_area_type": "free-writing",
+          "min_height": 550
+        },
+        {
+          "zone_id": "long_note",
+          "label": "경도 개념 정리",
+          "input_area_type": "free-writing",
+          "min_height": 550
+        }
+      ],
+      "estimated_minutes": 10,
+      "review_status": "draft"
+    },
+    {
+      "activity_id": "act-7-2",
+      "lesson_id": "7차시",
+      "object_role": "worksheet",
+      "lesson_flow_stage": "during",
+      "activity_type": "freeform_html",
+      "level": "on-level",
+      "learning_goal": "특정 위치를 위도와 경도로 읽고, 이 표현 방식이 필요한 이유를 논리적으로 설명할 수 있다.",
+      "prompt_text": "망망대해 한가운데에서 구조를 기다리는 배가 있습니다. '오른쪽 위'라는 표현 대신 왜 위도와 경도 숫자를 알려주어야 할까요? 좌표의 필요성을 생각하며 답해 봅시다.",
+      "layout_template": "freeform_html",
+      "html_content": "<!DOCTYPE html><html lang='ko'><head><meta charset='UTF-8'><style>@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap');body{width:1200px;margin:0;padding:40px;background:transparent;font-family:'Noto Sans KR',sans-serif;color:#333;}.card{background:#fff;border-radius:32px;padding:48px;box-shadow:0 10px 30px rgba(0,0,0,0.05);border:1px solid #eee;}.header{margin-bottom:32px;}.badge{display:inline-block;background:#F5A623;color:#fff;padding:6px 16px;border-radius:8px;font-weight:700;font-size:16px;margin-bottom:12px;}.title{font-size:28px;font-weight:700;margin:0;line-height:1.4;}.scenario{background:#F9F9F9;border-left:6px solid #F5A623;padding:20px;margin-bottom:32px;font-size:18px;line-height:1.6;}.task-label{font-size:20px;font-weight:700;margin-bottom:12px;}.writing-zone{background:#fff;border:3px solid #333;border-radius:16px;min-height:480px;padding:24px;margin-bottom:24px;}</style></head><body><div class='card'><div class='header'><div class='badge'>사고력 활동</div><h1 class='title'>숫자로 말하는 절대적인 위치의 힘</h1></div><div class='scenario'>🚢 <strong>상황:</strong> 태평양 한복판에서 엔진이 고장 난 배가 구조 요청을 보내려고 합니다. 구조대에게 \"저희는 큰 섬 근처에 있어요\"라고 말한다면 구조대가 금방 찾아올 수 있을까요?</div><div class='task-label'>Q1. 위도와 경도를 사용해 위치를 알려주어야 하는 이유는 무엇인지 써 봅시다.</div><div class='writing-zone'></div><div class='task-label'>Q2. (심화) 우리 집이나 학교의 위치를 좌표로 나타낼 때 생기는 좋은 점은 무엇일까요?</div><div class='writing-zone' style='min-height:300px;'></div></div></body></html>",
+      "source_refs": [
+        110
+      ],
+      "teacher_notes": "상대적인 위치(섬 근처, 오른쪽)와 절대적인 위치(좌표)의 차이를 인식하게 합니다.",
+      "student_writing_zones": [
+        {
+          "zone_id": "reasoning_1",
+          "label": "좌표의 필요성 설명",
+          "input_area_type": "free-writing",
+          "min_height": 480
+        },
+        {
+          "zone_id": "reasoning_2",
+          "label": "좌표 활용의 장점",
+          "input_area_type": "free-writing",
+          "min_height": 300
+        }
+      ],
+      "estimated_minutes": 15,
+      "review_status": "draft"
+    },
+    {
+      "activity_id": "act-7-3",
+      "lesson_id": "7차시",
+      "object_role": "activity_area",
+      "lesson_flow_stage": "after",
+      "activity_type": "freeform_html",
+      "level": "extension",
+      "learning_goal": "지구본과 세계지도의 특징을 비교하여 상황에 적합한 공간 자료를 선택하고 이유를 제안할 수 있다.",
+      "prompt_text": "세계 여행 전문가가 되어 봅시다. 고객의 상황에 따라 지구본을 추천할지, 세계지도를 추천할지 결정하고 그 이유를 설득력 있게 적어보세요.",
+      "layout_template": "freeform_html",
+      "html_content": "<!DOCTYPE html><html lang='ko'><head><meta charset='UTF-8'><style>@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap');body{width:1200px;margin:0;padding:40px;background:transparent;font-family:'Noto Sans KR',sans-serif;color:#333;}.card{background:#fff;border-radius:32px;padding:48px;box-shadow:0 10px 30px rgba(0,0,0,0.05);border:1px solid #eee;}.header{margin-bottom:32px;text-align:center;}.badge{display:inline-block;background:#7ED321;color:#fff;padding:6px 16px;border-radius:8px;font-weight:700;font-size:16px;margin-bottom:12px;}.title{font-size:28px;font-weight:700;margin:0;}.case-container{display:flex;gap:24px;margin-top:24px;}.case-box{flex:1;background:#fdfdfd;border:2px dashed #ccc;border-radius:20px;padding:24px;}.case-title{font-weight:700;font-size:18px;margin-bottom:12px;color:#555;}.answer-box{background:#fff;border:3px solid #333;border-radius:16px;height:450px;margin-top:16px;}</style></head><body><div class='card'><div class='header'><div class='badge'>도전! 여행 전문가</div><h1 class='title'>상황별 최고의 공간 자료 추천하기</h1></div><div class='case-container'><div class='case-box'><div class='case-title'>Case A: \"비행기 항로 찾기\"</div><div>인천에서 뉴욕까지 가는 가장 짧은 경로와 실제 거리를 확인하고 싶어 하는 여행객</div><div class='answer-box'></div></div><div class='case-box'><div class='case-title'>Case B: \"한눈에 전 세계 보기\"</div><div>모든 대륙과 나라의 위치를 한 페이지에 펼쳐놓고 여행 루트를 짜고 싶어 하는 여행객</div><div class='answer-box'></div></div></div><div style='margin-top:32px;'><div style='font-weight:700; margin-bottom:12px;'>★ 전문가의 최종 조언: 두 자료를 함께 사용할 때의 팁이 있다면?</div><div class='answer-box' style='height:250px;'></div></div></div></body></html>",
+      "source_refs": [
+        110
+      ],
+      "teacher_notes": "지구본의 정확성(거리, 면적)과 세계지도의 편의성(휴대성, 전체 조망)을 비교하도록 지도합니다.",
+      "student_writing_zones": [
+        {
+          "zone_id": "case_a_response",
+          "label": "Case A 추천 및 이유",
+          "input_area_type": "free-writing",
+          "min_height": 450
+        },
+        {
+          "zone_id": "case_b_response",
+          "label": "Case B 추천 및 이유",
+          "input_area_type": "free-writing",
+          "min_height": 450
+        },
+        {
+          "zone_id": "final_tip",
+          "label": "전문가 조언",
+          "input_area_type": "free-writing",
+          "min_height": 250
+        }
+      ],
+      "estimated_minutes": 12,
+      "review_status": "draft"
+    }
+  ]
+}

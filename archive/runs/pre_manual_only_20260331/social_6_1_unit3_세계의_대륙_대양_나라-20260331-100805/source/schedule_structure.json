@@ -1,0 +1,89 @@
+{
+  "schema_version": "1.0.0",
+  "units": [
+    {
+      "unit_id": "unit-001",
+      "title": "세계의 대륙과 대양 알아보기",
+      "lessons": [
+        {
+          "lesson_id": "lesson-001",
+          "sheet_name": "8차시",
+          "title": "세계의 대륙과 대양 알아보기",
+          "raw_text": "세계의 대륙과 대양 알아보기"
+        }
+      ]
+    },
+    {
+      "unit_id": "unit-002",
+      "title": "우리나라의 위치 특징 파악하기",
+      "lessons": [
+        {
+          "lesson_id": "lesson-002",
+          "sheet_name": "9차시",
+          "title": "우리나라의 위치 특징 파악하기",
+          "raw_text": "우리나라의 위치 특징 파악하기"
+        }
+      ]
+    },
+    {
+      "unit_id": "unit-003",
+      "title": "아시아 주요 나라들의 위치 알아보기",
+      "lessons": [
+        {
+          "lesson_id": "lesson-003",
+          "sheet_name": "10차시",
+          "title": "아시아 주요 나라들의 위치 알아보기",
+          "raw_text": "아시아 주요 나라들의 위치 알아보기"
+        }
+      ]
+    },
+    {
+      "unit_id": "unit-004",
+      "title": "유럽 주요 나라들의 위치 알아보기",
+      "lessons": [
+        {
+          "lesson_id": "lesson-004",
+          "sheet_name": "11차시",
+          "title": "유럽 주요 나라들의 위치 알아보기",
+          "raw_text": "유럽 주요 나라들의 위치 알아보기"
+        }
+      ]
+    },
+    {
+      "unit_id": "unit-005",
+      "title": "북아메리카와 남아메리카 주요 나라들의 위치 알아보기",
+      "lessons": [
+        {
+          "lesson_id": "lesson-005",
+          "sheet_name": "12차시",
+          "title": "북아메리카와 남아메리카 주요 나라들의 위치 알아보기",
+          "raw_text": "북아메리카와 남아메리카 주요 나라들의 위치 알아보기"
+        }
+      ]
+    },
+    {
+      "unit_id": "unit-006",
+      "title": "아프리카 주요 나라들의 위치 알아보기",
+      "lessons": [
+        {
+          "lesson_id": "lesson-006",
+          "sheet_name": "13차시",
+          "title": "아프리카 주요 나라들의 위치 알아보기",
+          "raw_text": "아프리카 주요 나라들의 위치 알아보기"
+        }
+      ]
+    },
+    {
+      "unit_id": "unit-007",
+      "title": "오세아니아 주요 나라들의 위치 알아보기",
+      "lessons": [
+        {
+          "lesson_id": "lesson-007",
+          "sheet_name": "14차시",
+          "title": "오세아니아 주요 나라들의 위치 알아보기",
+          "raw_text": "오세아니아 주요 나라들의 위치 알아보기"
+        }
+      ]
+    }
+  ]
+}

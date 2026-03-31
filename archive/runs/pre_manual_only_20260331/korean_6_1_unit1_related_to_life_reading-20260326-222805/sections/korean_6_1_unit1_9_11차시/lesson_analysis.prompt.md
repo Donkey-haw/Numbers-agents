@@ -1,0 +1,512 @@
+# Runtime Agent Spec: lesson_analysis_agent
+
+아래 AGENT.md는 이 단계의 역할과 경계를 정의한다.
+문서에 적힌 역할만 수행하고, 하지 말아야 할 일은 넘지 마라.
+출력 형식 요구가 있으면 반드시 지켜라.
+
+# lesson_analysis_agent
+
+## 역할
+- 차시별 lesson analysis를 생성한다.
+- Gemini 결과를 정규화해 최종 `lesson_analysis.json`으로 확정한다.
+- 같은 단계 안에서 `review_lesson_agent` 산출물을 함께 만든다.
+
+구현:
+- `scripts/lesson_analysis_agent.py`
+
+## 입력
+- `source/schedule_draft.json`
+- `source/textbook_context.json`
+- `source/local_baseline/<lesson>.lesson_analysis.json`
+
+## 출력
+- `sections/<lesson>/lesson_analysis.context.json`
+- `sections/<lesson>/lesson_analysis.prompt.md`
+- `sections/<lesson>/lesson_analysis_ai.json`
+- `sections/<lesson>/lesson_analysis.json`
+- `sections/<lesson>/lesson_review.json`
+- `sections/<lesson>/lesson_analysis.status.json`
+
+## 내부 책임
+- lesson별 prompt를 구성한다.
+- Gemini를 호출해 lesson analysis를 생성한다.
+- 실패 시 baseline analysis로 fallback한다.
+- review 단계에서 최소 필수 필드와 경고를 기록한다.
+- lesson 단위 병렬 실행을 지원한다.
+
+## 성공 조건
+- 각 lesson에 `lesson_analysis.json`이 생성된다.
+- 각 lesson에 `lesson_review.json`이 생성된다.
+- `lesson_analysis.status.json`이 lesson별로 존재한다.
+
+## fallback
+- Gemini timeout 또는 생성 실패 시 baseline analysis를 사용한다.
+- fallback 여부는 `lesson_analysis.status.json`의 `fallback_used`와 `errors`에 남긴다.
+
+## review_lesson_agent 내장 규칙
+- `learning_goals` 필수
+- `key_concepts` 필수
+- `source_page_refs` 필수
+- `misconceptions` 비어 있으면 warning
+
+## 하지 말아야 할 일
+- source 경계를 다시 바꾸지 않는다.
+- activity를 생성하지 않는다.
+- Numbers 배치를 다루지 않는다.
+
+## 테스트 방법
+```bash
+python3 scripts/pipeline_orchestrator.py \
+  --config configs/<config>.json \
+  --stop-after review_lesson_agent \
+  --keep-run-artifacts
+```
+
+## 확인 포인트
+- `lesson_analysis.status.json`의 `fallback_used`
+- `lesson_review.json`의 `decision`
+- lesson별 prompt와 ai 결과 비교
+
+
+
+# Execution Task
+
+You are helping a local textbook-to-Numbers pipeline.
+
+Rules:
+- Ignore progress-chart page numbers entirely.
+- Treat the textbook PDF as the primary source of truth.
+- Do not invent page boundaries.
+- Return JSON only.
+- Do not include markdown fences.
+- Do not include fields outside the provided schema unless they already appear in the baseline object.
+- If a value is uncertain, keep the baseline value or explain uncertainty in `notes`.
+- Keep `review_status` as `draft`.
+- Keep the output grounded in the supplied section context only.
+- Do not infer details from other lessons unless they are explicitly included as neighboring boundary hints.
+
+
+Generate one `lesson_analysis` JSON object for the section below.
+
+Section:
+{
+  "sheet_name": "9-11차시",
+  "card_file": "korean_6_1_unit1_9_11차시",
+  "title": "작품을 읽고 독서 감상문 쓰기",
+  "badge": "9-11차시",
+  "accent": [
+    "#155e75",
+    "#22d3ee"
+  ],
+  "sources": [
+    {
+      "resource_id": "main",
+      "role": "textbook",
+      "pdf_pages": [
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48
+      ],
+      "title_query": "작품을 읽고 독서 감상문 쓰기"
+    }
+  ],
+  "source_ranges": [
+    {
+      "resource_id": "main",
+      "role": "textbook",
+      "pdf_pages": [
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48
+      ]
+    }
+  ],
+  "pdf_pages": [
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48
+  ]
+}
+
+Baseline lesson analysis:
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-03-26T13:28:05.793552+00:00",
+  "lesson_id": "9-11차시",
+  "sheet_name": "9-11차시",
+  "lesson_title": "작품을 읽고 독서 감상문 쓰기",
+  "lesson_type": "core",
+  "pdf_pages": [
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48
+  ],
+  "essential_question": "작품을 읽고 독서 감상문 쓰기",
+  "learning_goals": [
+    "작품을 읽고 독서 감상문 쓰기의 핵심 내용을 설명할 수 있다."
+  ],
+  "key_concepts": [
+    "작품",
+    "읽고",
+    "독서",
+    "감상문",
+    "쓰기"
+  ],
+  "vocabulary": [
+    "작품",
+    "읽고",
+    "독서"
+  ],
+  "misconceptions": [],
+  "difficulty_band": "on-level",
+  "content_chunks": [
+    {
+      "chunk_id": "9-11차시-chunk-1",
+      "label": "학습 덩어리 1",
+      "content_type": "mixed",
+      "knowledge_type": "comparison",
+      "summary": "인물이 추구하는 가치를 생각하며 「그랬다면 어땠을까」를 읽어 봅시다.",
+      "source_pages": [
+        39,
+        40,
+        41,
+        42,
+        43
+      ],
+      "suggested_activity_types": [
+        "see_think_wonder",
+        "learning_note",
+        "worksheet"
+      ]
+    },
+    {
+      "chunk_id": "9-11차시-chunk-2",
+      "label": "학습 덩어리 2",
+      "content_type": "mixed",
+      "knowledge_type": "procedure",
+      "summary": "밤의 고요와 고독 속에서…… 해가 지면 나타나는 모든 신비로운 현상을 관찰하며 살기를 원했지.",
+      "source_pages": [
+        44,
+        45,
+        46,
+        47,
+        48
+      ],
+      "suggested_activity_types": [
+        "learning_note",
+        "worksheet"
+      ]
+    }
+  ],
+  "source_page_refs": [
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48
+  ],
+  "analysis_confidence": 0.75,
+  "review_status": "draft",
+  "notes": "자동 생성 초안. lesson title, key concepts, chunks를 검토 후 승인 필요."
+}
+
+Schedule draft:
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-03-26T13:28:05.617635+00:00",
+  "sections": [
+    {
+      "sheet_name": "1차시",
+      "lesson_title": "배울 내용 살펴보기",
+      "title_query": "배울 내용 살펴보기"
+    },
+    {
+      "sheet_name": "2-3차시",
+      "lesson_title": "전기문을 읽고 인물이 추구하는 가치 알기",
+      "title_query": "전기문을 읽고 인물이 추구하는 가치 알기"
+    },
+    {
+      "sheet_name": "4-6차시",
+      "lesson_title": "작품을 읽고 시대적 상황과 인물이 추구하는 가치에 대하여 질문하기",
+      "title_query": "작품을 읽고 시대적 상황과 인물이 추구하는 가치에 대하여 질문하기"
+    },
+    {
+      "sheet_name": "7-8차시",
+      "lesson_title": "인물이 추구하는 가치를 자신의 삶과 관련짓기",
+      "title_query": "인물이 추구하는 가치를 자신의 삶과 관련짓기"
+    },
+    {
+      "sheet_name": "9-11차시",
+      "lesson_title": "작품을 읽고 독서 감상문 쓰기",
+      "title_query": "작품을 읽고 독서 감상문 쓰기"
+    },
+    {
+      "sheet_name": "12-13차시",
+      "lesson_title": "배운 내용 실천하기",
+      "title_query": "배운 내용 실천하기"
+    },
+    {
+      "sheet_name": "14차시",
+      "lesson_title": "마무리하기",
+      "title_query": "마무리하기"
+    }
+  ]
+}
+
+Section context:
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-03-26T13:29:22.585751+00:00",
+  "pdf_path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/textbook/국어/[국어]6_1_교과서.pdf",
+  "current_section": {
+    "sheet_name": "9-11차시",
+    "lesson_title": "작품을 읽고 독서 감상문 쓰기",
+    "title_query": "작품을 읽고 독서 감상문 쓰기",
+    "pdf_pages": [
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48
+    ],
+    "baseline_analysis_path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/korean_6_1_unit1_related_to_life_reading-20260326-222805/source/local_baseline/korean_6_1_unit1_9_11차시.lesson_analysis.json",
+    "extracted_text": "인물이 추구하는 가치를 생각하며 「그랬다면 어땠을까」를 읽어 봅시다.\n5\n \n그랬다면 어땠을까\n글 · 그림: 올리비에 탈레크, 옮김: 이나무　\n난 다람쥐로 살기 싫어. 절대 싫어! 게다가 누가 다람쥐 따위가 되기를 \n꿈꾸겠어. 대체 누가 혼자 나무에 올라가 이 가지에서 저 가지로 솔방울을 \n찾아 온종일 뛰어다니고 싶겠어.\n정말 싫어. 더는 다람쥐로 살지 않을 거야! 누가 내 의견을 물었다면, 난 \n당연히 다른 선택을 했을 거야.\n작품을 읽고 독서 감상문 쓰기 \n72\n\n5\n10\n비버가 되겠다고 했겠지. 비버는 진지하고 \n성실하잖아. 누구나 그걸 알고 있지. 난 완\n벽하게 비버가 될 수 있었어. 심지어 최고\n의 비버가 될 수도 있었지. 난 비버가 정말 \n좋아! 다람쥐와 비교하면 비버의 삶은 얼마\n나 신날까! 이빨로 나무를 자르고, 등으로 \n나뭇가지를 옮겨서 강에 둑을 쌓는 훌륭한 \n삶이지. 더 나은 세상을 만들려고 모두가 \n함께 일하는 이런 새로운 삶은 정말 멋질 \n거야. 하지만 말은 안 해도 실제로 비버의 \n삶은 엄청나게 고단해. 게다가 발은 늘 물\n에 젖어 있잖아. 솔직히 그보다는 더 나은 \n삶을 찾아야 해.\n1\n73\n\n비버의 삶은 나한테 어울리지 않아. 어쨌든 내가 늘 부러워했던 건 사슴\n의 삶이니까. 사슴은 정말 아름답고, 고결하지. 보잘것없는 다람쥐 따위인 \n나는 늠름하게 뿔을 단 사슴들이 지나가는 모습을 보고 얼마나 감탄했던\n지!\n \n74\n\n바람이 조금만 불어도 팔락이는 내 귀와는 전혀 다른 것이 내 머리에도 \n달렸기를 얼마나 오래도록 꿈꿔 왔던지.\n내가 원했던 건 저 넓은 숲속 공터를 이리저리 마음껏 달리는 거였지. \n그런 삶을 그토록 꿈꾸다 보니 비버의 삶도 싫어졌고, 지루하기 짝이 없는 \n다람쥐의 삶으로 돌아가기는 더더욱 싫어졌어.\n나는 이제 숲의 왕이 될 거야.\n하지만 그건 모험과 예상치 못한 사건으로 가득 찬 삶이야. 때로는 몸을 \n숨겨야 해. 게다가 ‘가끔’이 아니라 ‘아주 자주’ 숨어야 해. 모든 시간을 달\n리는 데 써야 하지. 숲속 빈터에서 차분하게 내리는 햇빛을 즐길 틈조차 \n없어.\n5\n10\n1\n75\n\n5\n10\n결국, 그게 내가 꿈꾸던 삶이지. 나뭇잎 그늘에서 \n몸을 둥글게 말고 누워 느긋하게 사는 거야. 탐스럽\n게 익은 검은 딸기를 따서 먹…… 어…… 지렁이잖\n아. 끔찍해! 게다가 걸음이 느리니 길을 건너다가 차\n에 치이기 십상이지! 잘 생각해 보니, 내가 고슴도치\n를 진짜로 좋아했던 적은 없는 것 같아.\n사슴이 되기 싫어졌어. 비버도 싫고, 다람\n쥐도 싫어. 그런 거 다 싫어. 내가 마음속 \n깊은 곳에서 진심으로 원했던 것, 늘 그렇\n게 되기를 바랐던 것은 바로 고슴도치야. \n76\n\n밤의 고요와 고독 속에서…… 해가 지면 나타나는 모든 신비로운 현상을 \n관찰하며 살기를 원했지. 혹은…… 혹은…… 예를 들어 내가 천\n◆\n산갑이었다\n면 어땠을까? 산개구리였다면? 두툽상어였다면? 아니, 펭귄이 좋았겠지. \n그것도 황제펭귄! 아니면 기린이었다면? 달팽이여도 좋았겠지! 아니, 이제 \n알겠어! 난 다람쥐가 되고 싶었어! \n5\n◆\n◆천산갑: 몸이 딱딱한 비늘로 덮인 포유류로, 주로 개미를 먹으며 위험할 때에는 몸을 공처럼 말아 자신\n을 보호함.\n77\n1\n\n내용 알기\n「그랬다면 어땠을까」를 읽고 물음에 답해 봅시다.\n(1)\u0001\t 다람쥐가 되고 싶어 한 동물은 무엇무엇인가요?\n(2)\t다람쥐가 비버가 되기를 원하지 않은 까닭은 무엇인가요?\n(3)\t다람쥐가 결국 다람쥐로 남기로 한 까닭은 무엇일까요?\n●\n낱말 알기\n빈칸에 들어갈 낱말을 보기에서 찾아 알맞게 써 봅시다.\n●\n고결하다  팔락이다  고단하다  늠름하다  탐스럽다\n보기\n● 비버는 해야 할 일이 너무 많아서 몸이  \n.\n● 사슴의 성품은 아름다운 뿔만큼이나  \n.\n● 다람쥐의 두 귀가 바람에  \n.\n● 덩굴에 알알이 열린 딸기가 크고  \n.\n78\n\n인물이 추구하는 가치 비교하기 \n「그랬다면 어땠을까」 속 다람쥐가 추구했던 가치를 비교해 봅시다.\n(1)\u0001\t 다람쥐가 어떤 동물이 되고 싶어 했는지를 생각해 보고 그때 다람쥐가 \n한 말이나 행동과 관련 있는 가치를 보기에서 찾아 써 보세요. \n●\n평화  정직  여유  만족  안전  자유  공정\n보기\n우리가 함께 잘 살려면 \n서로를 돕는 ‘협력’이 중요한 \n가치라고 생각해.\n(2)\u0001\t다람쥐가 추구한 가치에 대한 자신의 생각을 친구들과 이야기해 \n보세요.\n인물의 말이나 행동과 관련 있다면 \n보기 외의 가치도 쓸 수 있어요.\n나는 여러 사람을 위한 \n‘협력’의 가치만큼이나 개인의 \n‘자유’도 중요하다고 생각해. \n \n다람쥐가 되고 \n싶어 한 동물\n다람쥐의 말이나 행동\n관련 있는 가치\n비버\n●‌\u0007 더 나은 세상을 만들려고 모두가 \n함께 일하는 이런 새로운 삶은 정\n말 멋질 거야. \n79\n1\n\n(2)\u0001\t자신이 추구하는 가치를 생각해 보고, 그 가치를 자신의 삶에서 실천\n하기 위해 노력할 일을 짝과 이야기해 보세요. \n자신과 관련짓기\n「그랬다면 어땠을까」 속 다양한 가치를 바탕으로 자신의 삶을 성찰해 \n봅시다.\n(1)\u0001\t 「그랬다면 어땠을까」에 나오는 동물 가운데에서 자신이 되고 싶은 \n동물과 그 까닭을 가치와 관련지어 써 보세요.\n●\n붙임5 를 용세요.\n내가 추구하는 가치\n그 가치를 추구하는 까닭\n그 가치를 내 삶에서 실천하기 위해 노력할 일\n되고 싶은 동물: 비버\n나는 더 나은 세상을 위해 모두가 함께 일\n하는 삶을 사는 비버가 되고 싶다. 나 혼자만 \n재미있고 즐거운 것보다 힘을 모아서 더 나은 \n세상을 만드는 삶이 의미 있다고 생각하기 \n때문이다.\n80\n\n독서 감상문 쓰기\n「그랬다면 어땠을까」를 읽고 가치에 대한 자신의 생각이 드러나게 독서 \n감상문을 써 봅시다. \n●\n인물이 그 가치를 추구하는 과정에서 어떤 생각이나 \n느낌이 들었는지, 자신의 삶에서는 어떻게 노력하고 \n싶은지를 구체적으로 생각하며 글을 써 봐요. \n81\n1"
+  },
+  "neighbor_sections": [
+    {
+      "relation": "previous",
+      "sheet_name": "7-8차시",
+      "lesson_title": "인물이 추구하는 가치를 자신의 삶과 관련짓기",
+      "title_query": "인물이 추구하는 가치를 자신의 삶과 관련짓기",
+      "pdf_pages": [
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38
+      ]
+    },
+    {
+      "relation": "next",
+      "sheet_name": "12-13차시",
+      "lesson_title": "배운 내용 실천하기",
+      "title_query": "배운 내용 실천하기",
+      "pdf_pages": [
+        49,
+        50
+      ]
+    }
+  ]
+}
+
+Target schema:
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://numbersauto.local/schemas/lesson_analysis.schema.json",
+  "title": "Lesson Analysis",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "generated_at",
+    "lesson_id",
+    "sheet_name",
+    "lesson_title",
+    "pdf_pages",
+    "essential_question",
+    "learning_goals",
+    "key_concepts",
+    "vocabulary",
+    "misconceptions",
+    "content_chunks",
+    "source_page_refs",
+    "analysis_confidence"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string"
+    },
+    "generated_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "lesson_id": {
+      "type": "string"
+    },
+    "sheet_name": {
+      "type": "string"
+    },
+    "lesson_title": {
+      "type": "string"
+    },
+    "lesson_type": {
+      "type": "string",
+      "enum": ["intro", "core", "review", "summary", "mixed"]
+    },
+    "pdf_pages": {
+      "type": "array",
+      "items": {
+        "type": "integer",
+        "minimum": 1
+      },
+      "minItems": 1
+    },
+    "essential_question": {
+      "type": "string"
+    },
+    "learning_goals": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1
+    },
+    "key_concepts": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1
+    },
+    "vocabulary": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "misconceptions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "difficulty_band": {
+      "type": "string",
+      "enum": ["core", "on-level", "extension", "mixed"]
+    },
+    "content_chunks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "chunk_id",
+          "label",
+          "content_type",
+          "knowledge_type",
+          "summary",
+          "source_pages"
+        ],
+        "properties": {
+          "chunk_id": {
+            "type": "string"
+          },
+          "label": {
+            "type": "string"
+          },
+          "content_type": {
+            "type": "string",
+            "enum": ["text", "image", "diagram", "map", "activity", "summary", "mixed"]
+          },
+          "knowledge_type": {
+            "type": "string",
+            "enum": ["fact", "concept", "procedure", "comparison", "cause-effect", "opinion", "application", "mixed"]
+          },
+          "summary": {
+            "type": "string"
+          },
+          "source_pages": {
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "minimum": 1
+            },
+            "minItems": 1
+          },
+          "suggested_activity_types": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "source_page_refs": {
+      "type": "array",
+      "items": {
+        "type": "integer",
+        "minimum": 1
+      },
+      "minItems": 1
+    },
+    "analysis_confidence": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "review_status": {
+      "type": "string",
+      "enum": ["draft", "reviewed", "approved", "rejected"]
+    },
+    "notes": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": false
+}
+
+
+Requirements:
+- Preserve `sheet_name`, `lesson_id`, `lesson_title`, and `pdf_pages`.
+- Improve `essential_question`, `learning_goals`, `key_concepts`, `vocabulary`, `misconceptions`, and `content_chunks` if the context supports it.
+- `content_chunks` must stay grounded in the supplied `pdf_pages`.
+- `source_page_refs` must match the actual section pages.
+- Use `current_section.extracted_text` as the primary evidence.
+- Use `neighbor_sections` only to avoid crossing lesson boundaries.
+- Keep the result concise and classroom-usable.
+- Output a single JSON object only.

@@ -1,0 +1,16 @@
+{
+  "schema_version": "1.0.0",
+  "stage": "lesson_review_agent",
+  "lesson_id": "4차시",
+  "status": "succeeded",
+  "decision": "pass",
+  "findings": [
+    {
+      "severity": "info",
+      "message": "교과서 116쪽의 텍스트와 기능을 상세히 분석함. 디지털 지구본의 조작적 기능과 정보 제공 특성을 구분하여 content_chunks를 구성함.",
+      "evidence_refs": []
+    }
+  ],
+  "blocking_issues": [],
+  "warnings": []
+}

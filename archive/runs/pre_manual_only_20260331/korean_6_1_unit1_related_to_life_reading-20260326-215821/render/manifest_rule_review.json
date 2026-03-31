@@ -1,0 +1,12 @@
+{
+  "schema_version": "1.0.0",
+  "stage": "review_manifest_rule_agent",
+  "lesson_id": null,
+  "status": "succeeded_with_warning",
+  "decision": "pass_with_warning",
+  "findings": [],
+  "blocking_issues": [],
+  "warnings": [
+    "4-6차시: activity flow order is not before/during/after"
+  ]
+}

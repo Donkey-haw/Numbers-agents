@@ -1,0 +1,19 @@
+{
+  "schema_version": "1.0.0",
+  "stage": "lesson_review_agent",
+  "lesson_id": "2-3차시",
+  "status": "succeeded",
+  "run_id": "1-20260331-002018",
+  "started_at": "2026-03-30T15:42:31.538613+00:00",
+  "finished_at": "2026-03-30T15:42:31.539349+00:00",
+  "input_refs": [
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/1-20260331-002018/sections/___2-3차시__지구본과_지도로_보는_세계___지구본의_특징_살펴보기/lesson_analysis.json"
+  ],
+  "output_refs": [
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/1-20260331-002018/sections/___2-3차시__지구본과_지도로_보는_세계___지구본의_특징_살펴보기/lesson_review.json"
+  ],
+  "fallback_used": false,
+  "warnings": [],
+  "errors": [],
+  "agent_spec_path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/agents/lesson_review_agent/AGENT.md"
+}

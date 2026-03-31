@@ -1,0 +1,52 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-03-31T01:00:00.120412+00:00",
+  "lesson_id": "1차시",
+  "sheet_name": "1차시",
+  "lesson_title": "단원·주제 도입",
+  "lesson_type": "core",
+  "pdf_pages": [
+    85
+  ],
+  "essential_question": "단원·주제 도입",
+  "learning_goals": [
+    "단원·주제 도입의 핵심 내용을 설명할 수 있다."
+  ],
+  "key_concepts": [
+    "도입",
+    "배심원",
+    "국민",
+    "재판",
+    "참여"
+  ],
+  "vocabulary": [
+    "도입",
+    "배심원",
+    "국민"
+  ],
+  "misconceptions": [],
+  "difficulty_band": "on-level",
+  "content_chunks": [
+    {
+      "chunk_id": "1차시-chunk-1",
+      "label": "학습 덩어리 1",
+      "content_type": "mixed",
+      "knowledge_type": "procedure",
+      "summary": "국민 참여 재판은 일반 국민이 배심원으로서 재판에 참여하는 제도로, 재판의 공정성 과 투명성을 높이고자 도입되었다.",
+      "source_pages": [
+        85
+      ],
+      "suggested_activity_types": [
+        "see_think_wonder",
+        "learning_note",
+        "worksheet"
+      ]
+    }
+  ],
+  "source_page_refs": [
+    85
+  ],
+  "analysis_confidence": 0.75,
+  "review_status": "draft",
+  "notes": "자동 생성 초안. lesson title, key concepts, chunks를 검토 후 승인 필요."
+}

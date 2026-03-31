@@ -1,0 +1,81 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-03-31T10:00:00+00:00",
+  "lesson_id": "12차시",
+  "activities": [
+    {
+      "activity_id": "act-12-1",
+      "lesson_id": "12차시",
+      "object_role": "activity_area",
+      "lesson_flow_stage": "during",
+      "activity_type": "freeform_html",
+      "level": "core",
+      "learning_goal": "북아메리카와 남아메리카 주요 나라들의 위치를 대양과의 관계를 중심으로 설명할 수 있다.",
+      "prompt_text": "북아메리카와 남아메리카에서 각각 한 나라를 골라, 어느 대양과 맞닿아 있는지 확인하고 그 위치의 특징을 기록해 봅시다.",
+      "layout_template": "freeform_html",
+      "html_content": "<!DOCTYPE html><html lang='ko'><head><meta charset='UTF-8'><style>body{width:1600px;margin:0;padding:40px;background:transparent;font-family:'Noto Sans KR',sans-serif;color:#333;display:flex;justify-content:center;} .card{width:1400px;background:#fff;padding:60px;border-radius:40px;box-shadow:none;border:1px solid #eee;} h1{font-size:48px;margin-bottom:10px;color:#000;} p.instruction{font-size:24px;color:#666;margin-bottom:40px;} .comparison-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;} .zone-header{background:#f8f9fa;padding:20px;border-radius:15px 15px 0 0;border:2px solid #333;border-bottom:none;font-weight:bold;font-size:28px;text-align:center;} .writing-zone{background:#fff;border:2px solid #333;min-height:500px;border-radius:0 0 15px 15px;padding:20px;font-size:22px;line-height:1.6;position:relative;} .writing-zone::after{content:'여기에 애플 펜슬로 자유롭게 기록하세요';position:absolute;bottom:20px;right:20px;color:#ccc;font-size:18px;} .label-tag{display:inline-block;background:#333;color:#fff;padding:8px 16px;border-radius:8px;font-size:18px;margin-bottom:15px;}</style></head><body><div class='card'><h1>북·남아메리카 주요 나라 위치 탐구</h1><p class='instruction'>교과서 131쪽의 지도를 참고하여 두 대륙의 나라들을 비교해 보세요.</p><div class='comparison-grid'><div><div class='zone-header'>북아메리카 (선택한 나라)</div><div class='writing-zone'><div class='label-tag'>위치 특징</div><br><br></div></div><div><div class='zone-header'>남아메리카 (선택한 나라)</div><div class='writing-zone'><div class='label-tag'>위치 특징</div><br><br></div></div></div></div></body></html>",
+      "source_refs": [
+        131
+      ],
+      "student_writing_zones": [
+        {
+          "zone_id": "north_america_analysis",
+          "label": "북아메리카 나라 분석",
+          "input_area_type": "free-writing",
+          "min_height": 500
+        },
+        {
+          "zone_id": "south_america_analysis",
+          "label": "남아메리카 나라 분석",
+          "input_area_type": "free-writing",
+          "min_height": 500
+        }
+      ],
+      "estimated_minutes": 15,
+      "review_status": "draft"
+    },
+    {
+      "activity_id": "act-12-2",
+      "lesson_id": "12차시",
+      "object_role": "worksheet",
+      "lesson_flow_stage": "after",
+      "activity_type": "freeform_html",
+      "level": "extension",
+      "learning_goal": "두 대륙을 횡단하는 가상의 여행 경로를 계획하며 대륙과 대양의 배치를 내면화한다.",
+      "prompt_text": "교과서의 '우주 여행 준비물' 퀴즈를 완료했다면, 이제 실제 아메리카 대륙 탐험을 떠나봅시다. 북아메리카 끝에서 남아메리카 끝까지 이동할 때 거쳐야 하는 나라와 바다의 이름을 순서대로 적어보세요.",
+      "layout_template": "freeform_html",
+      "html_content": "<!DOCTYPE html><html lang='ko'><head><meta charset='UTF-8'><style>body{width:1600px;margin:0;padding:40px;background:transparent;font-family:'Noto Sans KR',sans-serif;color:#333;} .card{background:#fff;padding:50px;border-radius:30px;border:3px solid #000;} .header-section{border-bottom:4px double #000;padding-bottom:20px;margin-bottom:30px;display:flex;justify-content:space-between;align-items:flex-end;} .title{font-size:52px;font-weight:900;} .route-container{display:flex;flex-direction:column;gap:20px;} .step{display:flex;align-items:center;gap:20px;} .step-num{background:#000;color:#fff;width:50px;height:50px;border-radius:50%;display:flex;justify-content:center;align-items:center;font-size:24px;flex-shrink:0;} .input-line{border:2px solid #333;flex-grow:1;height:80px;border-radius:10px;padding:0 20px;display:flex;align-items:center;font-size:24px;} .main-reflection{margin-top:40px;border:2px solid #333;border-radius:20px;padding:30px;} .reflection-title{font-size:28px;font-weight:bold;margin-bottom:15px;display:flex;align-items:center;gap:10px;} .reflection-title::before{content:'';width:10px;height:30px;background:#ffcc00;display:block;} .reflection-area{min-height:420px;background:#fdfdfd;}</style></head><body><div class='card'><div class='header-section'><div class='title'>아메리카 대륙 횡단 탐험 일지</div><div style='font-size:20px;'>제 12차시 심화 활동</div></div><div class='route-container'><div class='step'><div class='step-num'>1</div><div class='input-line'>출발지 (북아메리카 나라):</div></div><div class='step' style='margin-left:40px;'><div style='font-size:30px;'>⬇️</div><div class='input-line' style='border-style:dashed;'>지나가는 대양:</div></div><div class='step'><div class='step-num'>2</div><div class='input-line'>도착지 (남아메리카 나라):</div></div></div><div class='main-reflection'><div class='reflection-title'>탐험 경로 요약 및 나라별 위치 특징</div><div class='reflection-area'></div></div></div></body></html>",
+      "source_refs": [
+        131
+      ],
+      "student_writing_zones": [
+        {
+          "zone_id": "start_point",
+          "label": "출발 나라",
+          "input_area_type": "inline-answer",
+          "min_height": 80
+        },
+        {
+          "zone_id": "ocean_pass",
+          "label": "지나가는 바다",
+          "input_area_type": "inline-answer",
+          "min_height": 80
+        },
+        {
+          "zone_id": "end_point",
+          "label": "도착 나라",
+          "input_area_type": "inline-answer",
+          "min_height": 80
+        },
+        {
+          "zone_id": "travel_summary",
+          "label": "탐험 요약 기록",
+          "input_area_type": "free-writing",
+          "min_height": 420
+        }
+      ],
+      "estimated_minutes": 20,
+      "review_status": "draft"
+    }
+  ]
+}

@@ -1,0 +1,297 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-03-30T15:37:08.757104+00:00",
+  "output_file": "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit1_democratization_industrialization-20260331-003215/output/6-1-1-2. 민주화와 산업화로 달라진 생활 문화.numbers",
+  "assets": [
+    {
+      "asset_id": "social_6_1_unit1_life_10차시",
+      "asset_type": "textbook_card",
+      "sheet_name": "10차시",
+      "insert_order": 1,
+      "html_path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit1_democratization_industrialization-20260331-003215/render/html/social_6_1_unit1_life_10차시.html",
+      "image_path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit1_democratization_industrialization-20260331-003215/render/cards/social_6_1_unit1_life_10차시.png",
+      "resource_id": "main",
+      "dimensions": {
+        "width": 360,
+        "height": 1685
+      }
+    },
+    {
+      "asset_id": "10차시-see-think-wonder",
+      "asset_type": "activity_sheet",
+      "sheet_name": "10차시",
+      "insert_order": 2,
+      "html_path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit1_democratization_industrialization-20260331-003215/render/html/activity_10차시-see-think-wonder.html",
+      "image_path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit1_democratization_industrialization-20260331-003215/render/cards/activity_10차시-see-think-wonder.png",
+      "source_json": "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit1_democratization_industrialization-20260331-003215/sections/social_6_1_unit1_life_10차시__민주화_이후_우리_사회는_어떻게_달라졌을까요_/activity_plan.json",
+      "object_role": "activity_area",
+      "lesson_flow_stage": "during",
+      "dimensions": {
+        "width": 360,
+        "height": 180
+      }
+    },
+    {
+      "asset_id": "10차시-learning-note",
+      "asset_type": "activity_sheet",
+      "sheet_name": "10차시",
+      "insert_order": 3,
+      "html_path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit1_democratization_industrialization-20260331-003215/render/html/activity_10차시-learning-note.html",
+      "image_path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit1_democratization_industrialization-20260331-003215/render/cards/activity_10차시-learning-note.png",
+      "source_json": "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit1_democratization_industrialization-20260331-003215/sections/social_6_1_unit1_life_10차시__민주화_이후_우리_사회는_어떻게_달라졌을까요_/activity_plan.json",
+      "object_role": "learning_note",
+      "lesson_flow_stage": "during",
+      "dimensions": {
+        "width": 360,
+        "height": 218
+      }
+    },
+    {
+      "asset_id": "10차시-worksheet",
+      "asset_type": "activity_sheet",
+      "sheet_name": "10차시",
+      "insert_order": 4,
+      "html_path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit1_democratization_industrialization-20260331-003215/render/html/activity_10차시-worksheet.html",
+      "image_path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit1_democratization_industrialization-20260331-003215/render/cards/activity_10차시-worksheet.png",
+      "source_json": "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit1_democratization_industrialization-20260331-003215/sections/social_6_1_unit1_life_10차시__민주화_이후_우리_사회는_어떻게_달라졌을까요_/activity_plan.json",
+      "object_role": "worksheet",
+      "lesson_flow_stage": "after",
+      "dimensions": {
+        "width": 360,
+        "height": 130
+      }
+    },
+    {
+      "asset_id": "social_6_1_unit1_life_11차시",
+      "asset_type": "textbook_card",
+      "sheet_name": "11차시",
+      "insert_order": 1,
+      "html_path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit1_democratization_industrialization-20260331-003215/render/html/social_6_1_unit1_life_11차시.html",
+      "image_path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit1_democratization_industrialization-20260331-003215/render/cards/social_6_1_unit1_life_11차시.png",
+      "resource_id": "main",
+      "dimensions": {
+        "width": 360,
+        "height": 308
+      }
+    },
+    {
+      "asset_id": "11차시-see-think-wonder",
+      "asset_type": "activity_sheet",
+      "sheet_name": "11차시",
+      "insert_order": 2,
+      "html_path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit1_democratization_industrialization-20260331-003215/render/html/activity_11차시-see-think-wonder.html",
+      "image_path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit1_democratization_industrialization-20260331-003215/render/cards/activity_11차시-see-think-wonder.png",
+      "source_json": "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit1_democratization_industrialization-20260331-003215/sections/social_6_1_unit1_life_11차시__우리나라는_어떻게_산업화를_이루었을까요_/activity_plan.json",
+      "object_role": "activity_area",
+      "lesson_flow_stage": "during",
+      "dimensions": {
+        "width": 360,
+        "height": 180
+      }
+    },
+    {
+      "asset_id": "11차시-learning-note",
+      "asset_type": "activity_sheet",
+      "sheet_name": "11차시",
+      "insert_order": 3,
+      "html_path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit1_democratization_industrialization-20260331-003215/render/html/activity_11차시-learning-note.html",
+      "image_path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit1_democratization_industrialization-20260331-003215/render/cards/activity_11차시-learning-note.png",
+      "source_json": "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit1_democratization_industrialization-20260331-003215/sections/social_6_1_unit1_life_11차시__우리나라는_어떻게_산업화를_이루었을까요_/activity_plan.json",
+      "object_role": "learning_note",
+      "lesson_flow_stage": "during",
+      "dimensions": {
+        "width": 360,
+        "height": 218
+      }
+    },
+    {
+      "asset_id": "11차시-worksheet",
+      "asset_type": "activity_sheet",
+      "sheet_name": "11차시",
+      "insert_order": 4,
+      "html_path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit1_democratization_industrialization-20260331-003215/render/html/activity_11차시-worksheet.html",
+      "image_path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit1_democratization_industrialization-20260331-003215/render/cards/activity_11차시-worksheet.png",
+      "source_json": "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit1_democratization_industrialization-20260331-003215/sections/social_6_1_unit1_life_11차시__우리나라는_어떻게_산업화를_이루었을까요_/activity_plan.json",
+      "object_role": "worksheet",
+      "lesson_flow_stage": "after",
+      "dimensions": {
+        "width": 360,
+        "height": 130
+      }
+    },
+    {
+      "asset_id": "social_6_1_unit1_life_12-13차시",
+      "asset_type": "textbook_card",
+      "sheet_name": "12-13차시",
+      "insert_order": 1,
+      "html_path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit1_democratization_industrialization-20260331-003215/render/html/social_6_1_unit1_life_12-13차시.html",
+      "image_path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit1_democratization_industrialization-20260331-003215/render/cards/social_6_1_unit1_life_12-13차시.png",
+      "resource_id": "main",
+      "dimensions": {
+        "width": 360,
+        "height": 518
+      }
+    },
+    {
+      "asset_id": "12-13차시-see-think-wonder",
+      "asset_type": "activity_sheet",
+      "sheet_name": "12-13차시",
+      "insert_order": 2,
+      "html_path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit1_democratization_industrialization-20260331-003215/render/html/activity_12-13차시-see-think-wonder.html",
+      "image_path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit1_democratization_industrialization-20260331-003215/render/cards/activity_12-13차시-see-think-wonder.png",
+      "source_json": "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit1_democratization_industrialization-20260331-003215/sections/social_6_1_unit1_life_12-13차시__산업화로_사람들의_생활은_어떻게_달라졌을까요____주제_마무리/activity_plan.json",
+      "object_role": "activity_area",
+      "lesson_flow_stage": "during",
+      "dimensions": {
+        "width": 360,
+        "height": 180
+      }
+    },
+    {
+      "asset_id": "12-13차시-learning-note",
+      "asset_type": "activity_sheet",
+      "sheet_name": "12-13차시",
+      "insert_order": 3,
+      "html_path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit1_democratization_industrialization-20260331-003215/render/html/activity_12-13차시-learning-note.html",
+      "image_path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit1_democratization_industrialization-20260331-003215/render/cards/activity_12-13차시-learning-note.png",
+      "source_json": "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit1_democratization_industrialization-20260331-003215/sections/social_6_1_unit1_life_12-13차시__산업화로_사람들의_생활은_어떻게_달라졌을까요____주제_마무리/activity_plan.json",
+      "object_role": "learning_note",
+      "lesson_flow_stage": "during",
+      "dimensions": {
+        "width": 360,
+        "height": 218
+      }
+    },
+    {
+      "asset_id": "12-13차시-worksheet",
+      "asset_type": "activity_sheet",
+      "sheet_name": "12-13차시",
+      "insert_order": 4,
+      "html_path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit1_democratization_industrialization-20260331-003215/render/html/activity_12-13차시-worksheet.html",
+      "image_path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit1_democratization_industrialization-20260331-003215/render/cards/activity_12-13차시-worksheet.png",
+      "source_json": "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit1_democratization_industrialization-20260331-003215/sections/social_6_1_unit1_life_12-13차시__산업화로_사람들의_생활은_어떻게_달라졌을까요____주제_마무리/activity_plan.json",
+      "object_role": "worksheet",
+      "lesson_flow_stage": "after",
+      "dimensions": {
+        "width": 360,
+        "height": 130
+      }
+    },
+    {
+      "asset_id": "social_6_1_unit1_life_7차시",
+      "asset_type": "textbook_card",
+      "sheet_name": "7차시",
+      "insert_order": 1,
+      "html_path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit1_democratization_industrialization-20260331-003215/render/html/social_6_1_unit1_life_7차시.html",
+      "image_path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit1_democratization_industrialization-20260331-003215/render/cards/social_6_1_unit1_life_7차시.png",
+      "resource_id": "main",
+      "dimensions": {
+        "width": 360,
+        "height": 518
+      }
+    },
+    {
+      "asset_id": "7차시-see-think-wonder",
+      "asset_type": "activity_sheet",
+      "sheet_name": "7차시",
+      "insert_order": 2,
+      "html_path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit1_democratization_industrialization-20260331-003215/render/html/activity_7차시-see-think-wonder.html",
+      "image_path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit1_democratization_industrialization-20260331-003215/render/cards/activity_7차시-see-think-wonder.png",
+      "source_json": "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit1_democratization_industrialization-20260331-003215/sections/social_6_1_unit1_life_7차시__민주화_운동은_왜_일어났을까요_/activity_plan.json",
+      "object_role": "activity_area",
+      "lesson_flow_stage": "during",
+      "dimensions": {
+        "width": 360,
+        "height": 180
+      }
+    },
+    {
+      "asset_id": "7차시-learning-note",
+      "asset_type": "activity_sheet",
+      "sheet_name": "7차시",
+      "insert_order": 3,
+      "html_path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit1_democratization_industrialization-20260331-003215/render/html/activity_7차시-learning-note.html",
+      "image_path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit1_democratization_industrialization-20260331-003215/render/cards/activity_7차시-learning-note.png",
+      "source_json": "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit1_democratization_industrialization-20260331-003215/sections/social_6_1_unit1_life_7차시__민주화_운동은_왜_일어났을까요_/activity_plan.json",
+      "object_role": "learning_note",
+      "lesson_flow_stage": "during",
+      "dimensions": {
+        "width": 360,
+        "height": 218
+      }
+    },
+    {
+      "asset_id": "7차시-worksheet",
+      "asset_type": "activity_sheet",
+      "sheet_name": "7차시",
+      "insert_order": 4,
+      "html_path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit1_democratization_industrialization-20260331-003215/render/html/activity_7차시-worksheet.html",
+      "image_path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit1_democratization_industrialization-20260331-003215/render/cards/activity_7차시-worksheet.png",
+      "source_json": "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit1_democratization_industrialization-20260331-003215/sections/social_6_1_unit1_life_7차시__민주화_운동은_왜_일어났을까요_/activity_plan.json",
+      "object_role": "worksheet",
+      "lesson_flow_stage": "after",
+      "dimensions": {
+        "width": 360,
+        "height": 130
+      }
+    },
+    {
+      "asset_id": "social_6_1_unit1_life_8-9차시",
+      "asset_type": "textbook_card",
+      "sheet_name": "8-9차시",
+      "insert_order": 1,
+      "html_path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit1_democratization_industrialization-20260331-003215/render/html/social_6_1_unit1_life_8-9차시.html",
+      "image_path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit1_democratization_industrialization-20260331-003215/render/cards/social_6_1_unit1_life_8-9차시.png",
+      "resource_id": "main",
+      "dimensions": {
+        "width": 360,
+        "height": 2151
+      }
+    },
+    {
+      "asset_id": "8-9차시-see-think-wonder",
+      "asset_type": "activity_sheet",
+      "sheet_name": "8-9차시",
+      "insert_order": 2,
+      "html_path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit1_democratization_industrialization-20260331-003215/render/html/activity_8-9차시-see-think-wonder.html",
+      "image_path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit1_democratization_industrialization-20260331-003215/render/cards/activity_8-9차시-see-think-wonder.png",
+      "source_json": "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit1_democratization_industrialization-20260331-003215/sections/social_6_1_unit1_life_8-9차시__민주화를_위한_노력을_살펴볼까요_/activity_plan.json",
+      "object_role": "activity_area",
+      "lesson_flow_stage": "during",
+      "dimensions": {
+        "width": 360,
+        "height": 180
+      }
+    },
+    {
+      "asset_id": "8-9차시-learning-note",
+      "asset_type": "activity_sheet",
+      "sheet_name": "8-9차시",
+      "insert_order": 3,
+      "html_path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit1_democratization_industrialization-20260331-003215/render/html/activity_8-9차시-learning-note.html",
+      "image_path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit1_democratization_industrialization-20260331-003215/render/cards/activity_8-9차시-learning-note.png",
+      "source_json": "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit1_democratization_industrialization-20260331-003215/sections/social_6_1_unit1_life_8-9차시__민주화를_위한_노력을_살펴볼까요_/activity_plan.json",
+      "object_role": "learning_note",
+      "lesson_flow_stage": "during",
+      "dimensions": {
+        "width": 360,
+        "height": 218
+      }
+    },
+    {
+      "asset_id": "8-9차시-worksheet",
+      "asset_type": "activity_sheet",
+      "sheet_name": "8-9차시",
+      "insert_order": 4,
+      "html_path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit1_democratization_industrialization-20260331-003215/render/html/activity_8-9차시-worksheet.html",
+      "image_path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit1_democratization_industrialization-20260331-003215/render/cards/activity_8-9차시-worksheet.png",
+      "source_json": "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit1_democratization_industrialization-20260331-003215/sections/social_6_1_unit1_life_8-9차시__민주화를_위한_노력을_살펴볼까요_/activity_plan.json",
+      "object_role": "worksheet",
+      "lesson_flow_stage": "after",
+      "dimensions": {
+        "width": 360,
+        "height": 130
+      }
+    }
+  ]
+}

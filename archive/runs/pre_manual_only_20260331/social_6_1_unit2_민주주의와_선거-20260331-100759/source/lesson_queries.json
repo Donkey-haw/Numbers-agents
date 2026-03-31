@@ -1,0 +1,37 @@
+{
+  "schema_version": "1.0.0",
+  "lessons": [
+    {
+      "lesson_id": "lesson-001",
+      "sheet_name": "2차시",
+      "display_title": "선거의 의미와 중요성 파악하기",
+      "title_query": "선거의 의미와 중요성 파악하기",
+      "end_before_query": "민주주의에서 선거의 역할 파악하기",
+      "resource_id": "main"
+    },
+    {
+      "lesson_id": "lesson-002",
+      "sheet_name": "3차시",
+      "display_title": "민주주의에서 선거의 역할 파악하기",
+      "title_query": "민주주의에서 선거의 역할 파악하기",
+      "end_before_query": "우리나라의 선거 과정 살펴보기",
+      "resource_id": "main"
+    },
+    {
+      "lesson_id": "lesson-003",
+      "sheet_name": "4-5차시",
+      "display_title": "우리나라의 선거 과정 살펴보기",
+      "title_query": "우리나라의 선거 과정 살펴보기",
+      "end_before_query": "선거에 적극적으로 참여해야 하는 까닭 알아보기",
+      "resource_id": "main"
+    },
+    {
+      "lesson_id": "lesson-004",
+      "sheet_name": "6-7차시",
+      "display_title": "선거에 적극적으로 참여해야 하는 까닭 알아보기",
+      "title_query": "선거에 적극적으로 참여해야 하는 까닭 알아보기",
+      "end_before_query": null,
+      "resource_id": "main"
+    }
+  ]
+}

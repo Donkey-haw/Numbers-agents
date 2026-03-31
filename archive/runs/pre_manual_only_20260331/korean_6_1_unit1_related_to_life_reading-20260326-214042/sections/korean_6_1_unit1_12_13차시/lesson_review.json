@@ -1,0 +1,16 @@
+{
+  "schema_version": "1.0.0",
+  "stage": "review_lesson_agent",
+  "lesson_id": "12-13차시",
+  "status": "succeeded",
+  "decision": "pass",
+  "findings": [
+    {
+      "severity": "info",
+      "message": "12-13차시는 실천 중심의 차시로, 인물 소개와 가치 실천이라는 두 가지 주요 활동이 유기적으로 연결되도록 구성함.",
+      "evidence_refs": []
+    }
+  ],
+  "blocking_issues": [],
+  "warnings": []
+}

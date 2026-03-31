@@ -1,0 +1,54 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-03-30T15:28:16.795910+00:00",
+  "lesson_id": "16차시",
+  "sheet_name": "16차시",
+  "lesson_title": "민주주의와 미디어 — 미디어의 내용을 비판적으로 분석해야 하는 까닭 알아보기",
+  "lesson_type": "core",
+  "pdf_pages": [
+    90
+  ],
+  "essential_question": "우리는 왜 미디어에서 제공하는 정보를 비판적으로 분석하고 평가해야 할까요?",
+  "learning_goals": [
+    "미디어의 내용을 비판적으로 분석하고 평가해야 하는 까닭을 이해할 수 있다.",
+    "일상생활에서 미디어를 통해 정보를 소비하고 공유하는 경험을 성찰할 수 있다."
+  ],
+  "key_concepts": [
+    "미디어",
+    "비판적 분석",
+    "평가",
+    "민주주의"
+  ],
+  "vocabulary": [
+    "미디어",
+    "비판적 분석",
+    "평가"
+  ],
+  "misconceptions": [
+    "미디어가 전달하는 정보는 항상 객관적이고 사실이라고 생각하기 쉽다.",
+    "내가 직접 찍고 공유하는 영상이나 사진은 미디어 활동이 아니라고 오해할 수 있다."
+  ],
+  "difficulty_band": "on-level",
+  "content_chunks": [
+    {
+      "chunk_id": "16차시-chunk-1",
+      "label": "도입 및 학습 목표 안내",
+      "content_type": "text",
+      "knowledge_type": "concept",
+      "summary": "영상이나 사진을 찍어 공유하는 일상적 미디어 경험을 환기하며, 미디어 내용을 비판적으로 분석하고 평가하는 태도의 필요성을 인지한다.",
+      "source_pages": [
+        90
+      ],
+      "suggested_activity_types": [
+        "경험 나누기",
+        "목표 확인"
+      ]
+    }
+  ],
+  "source_page_refs": [
+    90
+  ],
+  "analysis_confidence": 0.9,
+  "review_status": "draft",
+  "notes": "교과서 90쪽의 도입 질문과 단원 학습 목표 텍스트를 바탕으로 분석함. 미디어의 비판적 수용이라는 핵심 가치에 집중하여 구성함."
+}

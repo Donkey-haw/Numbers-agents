@@ -1,0 +1,74 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-03-31T10:00:00.000000+09:00",
+  "lesson_id": "12차시",
+  "sheet_name": "12차시",
+  "lesson_title": "국가기관이 하는 일 — 법원의 구성과 하는 일 파악하기",
+  "pdf_pages": [
+    73
+  ],
+  "essential_question": "민주 국가에서 국가기관이란 무엇이며, 법원은 어떤 상징과 가치를 지니고 있는가?",
+  "learning_goals": [
+    "국회, 행정부, 법원이 국가기관임을 알고 그 의미를 설명할 수 있다.",
+    "대법원의 구성과 상징을 통해 법원이 지키고자 하는 독립, 정의, 형평의 가치를 파악할 수 있다."
+  ],
+  "key_concepts": [
+    "국가기관",
+    "국회",
+    "행정부",
+    "법원",
+    "대법원",
+    "독립",
+    "정의",
+    "형평"
+  ],
+  "vocabulary": [
+    "국가기관",
+    "형평",
+    "대법원",
+    "정부 세종 청사"
+  ],
+  "misconceptions": [
+    "국가기관을 행정부(정부)로만 한정하여 생각할 수 있으나, 민주 국가에서는 국회와 법원도 나랏일을 하는 중요한 국가기관임을 명확히 인지해야 한다."
+  ],
+  "content_chunks": [
+    {
+      "chunk_id": "12차시-chunk-1",
+      "label": "국가기관의 정의",
+      "content_type": "text",
+      "knowledge_type": "concept",
+      "summary": "민주 국가에서 나랏일을 하는 국회(ㄱㅎ), 행정부(ㅎㅈㅂ), 법원(ㅂㅇ)을 국가기관이라고 한다.",
+      "source_pages": [
+        73
+      ]
+    },
+    {
+      "chunk_id": "12차시-chunk-2",
+      "label": "대법원의 상징과 가치",
+      "content_type": "mixed",
+      "knowledge_type": "fact",
+      "summary": "우리나라 최고 법원인 대법원의 건물은 법원의 독립과 정의, 형평을 상징하며 입구에는 자유, 평등, 정의의 가치를 적어 두었다.",
+      "source_pages": [
+        73
+      ]
+    },
+    {
+      "chunk_id": "12차시-chunk-3",
+      "label": "정부 세종 청사",
+      "content_type": "image",
+      "knowledge_type": "fact",
+      "summary": "행정부 기관들이 자리한 정부 세종 청사는 하늘로 오르는 용의 모습을 본떠 만들어졌다.",
+      "source_pages": [
+        73
+      ]
+    }
+  ],
+  "source_page_refs": [
+    73
+  ],
+  "analysis_confidence": 0.95,
+  "lesson_type": "core",
+  "difficulty_band": "on-level",
+  "review_status": "draft",
+  "notes": "교과서 73쪽 텍스트를 바탕으로 국가기관의 3요소(국회, 행정부, 법원)와 대법원의 상징물 및 가치를 분석함. baseline의 부족한 용어(국회, 행정부 등)를 텍스트 힌트에서 복원함."
+}

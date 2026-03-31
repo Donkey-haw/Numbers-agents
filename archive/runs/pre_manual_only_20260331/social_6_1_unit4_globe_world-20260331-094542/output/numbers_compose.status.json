@@ -1,0 +1,18 @@
+{
+  "schema_version": "1.0.0",
+  "stage": "numbers_compose_agent",
+  "lesson_id": null,
+  "status": "succeeded",
+  "run_id": "social_6_1_unit4_globe_world-20260331-094542",
+  "started_at": "2026-03-31T00:52:53.901718+00:00",
+  "finished_at": "2026-03-31T00:53:14.663100+00:00",
+  "input_refs": [
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit4_globe_world-20260331-094542/render/render_manifest.json"
+  ],
+  "output_refs": [
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit4_globe_world-20260331-094542/output/사회_지구본과_지도로_보는_세계.numbers"
+  ],
+  "fallback_used": false,
+  "warnings": [],
+  "errors": []
+}

@@ -1,0 +1,65 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-03-31T00:30:15.123Z",
+  "lesson_id": "12차시",
+  "sheet_name": "12차시",
+  "lesson_title": "세계의 대륙, 대양, 나라 — 북아메리카와 남아메리카 주요 나라들의 위치 알아보기",
+  "lesson_type": "summary",
+  "pdf_pages": [
+    131
+  ],
+  "essential_question": "이번 주제에서 배운 세계 여러 나라의 위치와 지리 정보 특징을 어떻게 정리할 수 있을까요?",
+  "learning_goals": [
+    "북아메리카와 남아메리카를 포함한 세계 여러 나라의 위치 정보를 다양한 공간 자료로 찾을 수 있다.",
+    "세계지도, 지구본, 디지털 공간 영상 정보의 주요 특징을 비교하여 설명할 수 있다.",
+    "위도와 경도의 의미를 이해하고 이를 활용해 위치를 정확하게 표현하는 방법을 정리한다."
+  ],
+  "key_concepts": [
+    "세계지도",
+    "지구본",
+    "디지털 공간 영상 정보",
+    "위도",
+    "경도",
+    "북아메리카",
+    "남아메리카"
+  ],
+  "vocabulary": [
+    "북반구",
+    "남반구",
+    "시차",
+    "위도",
+    "경도"
+  ],
+  "misconceptions": [
+    "위치는 위도로만 나타낼 수 있다는 오개념(위도와 경도 모두 필요함)"
+  ],
+  "difficulty_band": "on-level",
+  "content_chunks": [
+    {
+      "chunk_id": "12차시-chunk-1",
+      "label": "주제 마무리 — 우주의 여행 준비물 챙기기",
+      "content_type": "activity",
+      "knowledge_type": "application",
+      "summary": "공간 자료의 특징, 북반구/남반구의 계절 차이, 경도와 시차 등 배운 내용 중 옳은 문장을 찾아 번호를 순서대로 쓰는 복습 활동",
+      "source_pages": [
+        131
+      ]
+    },
+    {
+      "chunk_id": "12차시-chunk-2",
+      "label": "학습 내용 요약 및 자기 점검",
+      "content_type": "summary",
+      "knowledge_type": "mixed",
+      "summary": "공간 자료 특징 설명, 지리 정보 찾기, 위도와 경도 활용 위치 표현 능력에 대한 스스로 평가하기",
+      "source_pages": [
+        131
+      ]
+    }
+  ],
+  "source_page_refs": [
+    131
+  ],
+  "analysis_confidence": 0.95,
+  "review_status": "draft",
+  "notes": "텍스트북 131쪽은 '주제 마무리'와 '요약 정리' 페이지입니다. 차시명은 북아메리카와 남아메리카 위치 학습으로 되어 있으나, 실제 콘텐츠는 해당 내용을 포함한 전체 주제(지구본과 지도로 보는 세계)를 총정리하는 성격이 강합니다."
+}

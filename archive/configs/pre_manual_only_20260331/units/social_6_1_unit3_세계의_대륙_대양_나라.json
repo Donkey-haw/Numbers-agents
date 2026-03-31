@@ -1,0 +1,87 @@
+{
+  "project_root": "/Users/jonyeock/Desktop/Tool/NumbersAuto",
+  "pdf_path": "textbook/사회/[사회]6_1_교과서.pdf",
+  "template_path": "빈 넘버스 파일.numbers",
+  "output_file": "output/social_6_1_unit3_세계의_대륙_대양_나라.numbers",
+  "footer": "사회 6-1 · 3단원 · 세계의 대륙, 대양, 나라",
+  "sections": [
+    {
+      "sheet_name": "8차시",
+      "card_file": "social_6_1_unit3_세계의_대륙_대양_나라_8차시",
+      "title": "세계의 대륙과 대양 알아보기",
+      "title_query": "세계의 대륙과 대양 알아보기",
+      "badge": "8차시",
+      "accent": [
+        "#6366f1",
+        "#818cf8"
+      ]
+    },
+    {
+      "sheet_name": "9차시",
+      "card_file": "social_6_1_unit3_세계의_대륙_대양_나라_9차시",
+      "title": "우리나라의 위치 특징 파악하기",
+      "title_query": "우리나라의 위치 특징 파악하기",
+      "badge": "9차시",
+      "accent": [
+        "#4f46e5",
+        "#7c3aed"
+      ]
+    },
+    {
+      "sheet_name": "10차시",
+      "card_file": "social_6_1_unit3_세계의_대륙_대양_나라_10차시",
+      "title": "아시아 주요 나라들의 위치 알아보기",
+      "title_query": "아시아 주요 나라들의 위치 알아보기",
+      "badge": "10차시",
+      "accent": [
+        "#0f766e",
+        "#14b8a6"
+      ]
+    },
+    {
+      "sheet_name": "11차시",
+      "card_file": "social_6_1_unit3_세계의_대륙_대양_나라_11차시",
+      "title": "유럽 주요 나라들의 위치 알아보기",
+      "title_query": "유럽 주요 나라들의 위치 알아보기",
+      "badge": "11차시",
+      "accent": [
+        "#1d4ed8",
+        "#3b82f6"
+      ]
+    },
+    {
+      "sheet_name": "12차시",
+      "card_file": "social_6_1_unit3_세계의_대륙_대양_나라_12차시",
+      "title": "북아메리카와 남아메리카 주요 나라들의 위치 알아보기",
+      "title_query": "북아메리카와 남아메리카 주요 나라들의 위치 알아보기",
+      "badge": "12차시",
+      "accent": [
+        "#d97706",
+        "#f59e0b"
+      ]
+    },
+    {
+      "sheet_name": "13차시",
+      "card_file": "social_6_1_unit3_세계의_대륙_대양_나라_13차시",
+      "title": "아프리카 주요 나라들의 위치 알아보기",
+      "title_query": "아프리카 주요 나라들의 위치 알아보기",
+      "badge": "13차시",
+      "accent": [
+        "#9333ea",
+        "#c084fc"
+      ]
+    },
+    {
+      "sheet_name": "14차시",
+      "card_file": "social_6_1_unit3_세계의_대륙_대양_나라_14차시",
+      "title": "오세아니아 주요 나라들의 위치 알아보기",
+      "title_query": "오세아니아 주요 나라들의 위치 알아보기",
+      "badge": "14차시",
+      "accent": [
+        "#6366f1",
+        "#818cf8"
+      ]
+    }
+  ],
+  "end_before_query": "15차시"
+}

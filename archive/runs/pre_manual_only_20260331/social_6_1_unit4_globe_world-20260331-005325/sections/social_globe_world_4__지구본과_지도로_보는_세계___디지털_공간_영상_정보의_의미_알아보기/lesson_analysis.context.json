@@ -1,0 +1,42 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-03-30T15:53:34.369995+00:00",
+  "pdf_path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/textbook/사회/[사회]6_1_교과서.pdf",
+  "current_section": {
+    "section_key": "social_globe_world_4__지구본과_지도로_보는_세계___디지털_공간_영상_정보의_의미_알아보기",
+    "sheet_name": "4차시",
+    "lesson_title": "지구본과 지도로 보는 세계 — 디지털 공간 영상 정보의 의미 알아보기",
+    "title_query": "디지털 공간 영상 정보의 의미 알아보기",
+    "pdf_pages": [
+      116
+    ],
+    "baseline_analysis_path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit4_globe_world-20260331-005325/source/local_baseline/social_globe_world_4__지구본과_지도로_보는_세계___디지털_공간_영상_정보의_의미_알아보기.lesson_analysis.json",
+    "extracted_text": "아시아\n대한\n민국\n대한\n민국\n아시아\n태 평 양\n동해\n황해\n남해\n3D\n레이어\n역사적인 이미지\n지구의 과거 모습을 담은\n이미지를 확인해 보세요.\n사진\n전 세계의 사진을 둘러보세요.\n검색\n디지털 공간 영상 정보로 세계를 \n살펴볼까요?\n둘\n아린이가 내게 가 보고 싶은 나라가 어디냐고 물었어. 난 프랑스라고 대답했지. \n 그러자 아린이가 프랑스 파리에 있는 에펠 탑 주변에 무엇이 있는지 아주 자세히 설명해 \n줬어. 그런데 알고 보니 아린이는 파리에 가 본 적이 없대. 아린이는 어떻게 가 보지도 않은 곳\n을 자세히 아는 걸까?\n생각 깨우기\n디지\n털 지\n구본\n거리·면적 재기\n두 지점 사이의 거리\n나 지역의 면적을 잴 \n수 있다.\n지구본처럼 \n입체적으로 \n살펴볼 수 있어.\n시간의 흐름에 따른 변화 보기\n시간의 흐름에 따라 장소\n를 살펴볼 수 있다.\n추가 레이어를 이용하면 전 세계의 \n과거 모습, 실제 사진 등을 볼 수 있다.\n다음 기능은 디지털 지구본과 디지털 \n세계지도에서 모두 이용할 수 있어!\n찾고 싶은 장소를 입력하면 위치를 표시하고, 관련 정보를 알려 준다.\n실제 길 위를 지나는 것처럼 장소의 모습을 볼 수 있다.\n확대하거나 축소하며 축척을 다르게 할 수 있다.\n현재 나의 위치를 표시해 준다.\n검색하기\n거리 보기\n확대와 축소\n위치 확인\n입체 영상 보기\n  장소의 모습\n을 입체 영상\n으로 볼 수 \n있다.\n지도 위 정보 표시하기\n지도에 나타날 정보를 선택하는 \n기능으로, 경계선, 장소, 도로 등\n을 표시할 수 있다.\n애니메이션\n116\n3 지구, 대륙 그리고 국가들",
+    "extracted_text_truncated": false
+  },
+  "neighbor_sections": [
+    {
+      "relation": "previous",
+      "section_key": "social_globe_world_2_3__지구본과_지도로_보는_세계___지구본의_특징_살펴보기",
+      "sheet_name": "2-3차시",
+      "lesson_title": "지구본과 지도로 보는 세계 — 지구본의 특징 살펴보기",
+      "title_query": "지구본의 특징 살펴보기",
+      "pdf_pages": [
+        112,
+        113,
+        114,
+        115
+      ]
+    },
+    {
+      "relation": "next",
+      "section_key": "social_globe_world_5__지구본과_지도로_보는_세계___위도와_위선의_의미_알아보기",
+      "sheet_name": "5차시",
+      "lesson_title": "지구본과 지도로 보는 세계 — 위도와 위선의 의미 알아보기",
+      "title_query": "위도와 위선의 의미 알아보기",
+      "pdf_pages": [
+        83
+      ]
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "schema_version": "1.0.0",
+  "lessons": [
+    {
+      "lesson_id": "lesson-001",
+      "resource_id": "main",
+      "candidate_pages": [
+        92,
+        56,
+        124,
+        64,
+        104
+      ],
+      "query": "미디어란 무엇일까요?"
+    },
+    {
+      "lesson_id": "lesson-002",
+      "resource_id": "main",
+      "candidate_pages": [
+        94,
+        58,
+        90,
+        4,
+        22
+      ],
+      "query": "민주주의에서 미디어는 어떤 역할을 할까요?"
+    },
+    {
+      "lesson_id": "lesson-003",
+      "resource_id": "main",
+      "candidate_pages": [
+        101,
+        100,
+        90,
+        170,
+        102
+      ],
+      "query": "미디어의 내용을 왜 비판적으로 분석해야 할까요?"
+    },
+    {
+      "lesson_id": "lesson-004",
+      "resource_id": "main",
+      "candidate_pages": [
+        100,
+        90,
+        102,
+        7,
+        103
+      ],
+      "query": "미디어를 올바르게 이용하는 방법을 알아볼까요? / 주제 마무리"
+    }
+  ]
+}

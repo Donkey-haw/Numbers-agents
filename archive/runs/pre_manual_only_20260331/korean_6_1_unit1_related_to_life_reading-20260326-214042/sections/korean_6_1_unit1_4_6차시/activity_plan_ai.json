@@ -1,0 +1,131 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-03-26T10:00:00+00:00",
+  "lesson_id": "4-6차시",
+  "activities": [
+    {
+      "activity_id": "act-46-1",
+      "lesson_id": "4-6차시",
+      "object_role": "activity_area",
+      "lesson_flow_stage": "during",
+      "activity_type": "freeform_html",
+      "level": "core",
+      "learning_goal": "인물들이 처한 상황에서 각자가 선택한 행동의 이유를 분석하고 추구하는 가치를 비교할 수 있다.",
+      "prompt_text": "대패질을 대하는 장호와 봉운이의 서로 다른 태도를 비교해 보고, 그들이 소중하게 여기는 가치가 무엇인지 추론해 봅시다.",
+      "layout_template": "freeform_html",
+      "html_content": "<!DOCTYPE html><html lang='ko'><head><meta charset='UTF-8'><style>body{width:1600px;margin:0;padding:40px;background:transparent;font-family:'Noto Sans KR',sans-serif;color:#333;}.card{background:#fff;padding:48px;border-radius:32px;box-shadow:0 10px 30px rgba(0,0,0,0.05);}.header{display:flex;align-items:center;margin-bottom:40px;border-left:12px solid #4A90E2;padding-left:24px;}.header h1{margin:0;font-size:42px;font-weight:900;letter-spacing:-1px;}.comparison-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;margin-bottom:40px;}.char-box{display:flex;flex-direction:column;}.char-label{font-size:28px;font-weight:700;margin-bottom:16px;padding:8px 24px;border-radius:12px;display:inline-block;}.label-jangho{background:#FFE5E5;color:#D0021B;}.label-bongun{background:#E5F4FF;color:#007AFF;}.writing-zone{background:#fff;border:3px solid #333;border-radius:20px;min-height:480px;padding:24px;font-size:24px;line-height:1.6;}.reason-area{margin-top:20px;}.reason-label{font-size:26px;font-weight:700;margin-bottom:16px;display:flex;align-items:center;}.reason-label::before{content:'Q';background:#333;color:#fff;width:40px;height:40px;display:inline-flex;align-items:center;justify-content:center;border-radius:50%;margin-right:12px;font-size:20px;}.full-writing-zone{background:#fff;border:3px solid #333;border-radius:20px;min-height:300px;padding:24px;}</style></head><body><div class='card'><div class='header'><h1>가치관 저울질: 장호 vs 봉운</h1></div><div class='comparison-grid'><div class='char-box'><div class='char-label label-jangho'>장호의 생각과 행동</div><div class='writing-zone'></div></div><div class='char-box'><div class='char-label label-bongun'>봉운이의 생각과 행동</div><div class='writing-zone'></div></div></div><div class='reason-area'><div class='reason-label'>두 인물이 결정적으로 다른 선택을 하게 만든 '가장 소중한 가치'는 각각 무엇일까요? 이유와 함께 써 봅시다.</div><div class='full-writing-zone'></div></div></div></body></html>",
+      "source_refs": [
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "teacher_notes": "장호는 성공과 부를, 봉운이는 일의 즐거움과 보람을 추구한다는 점이 드러나도록 안내합니다.",
+      "student_writing_zones": [
+        {
+          "zone_id": "jangho_behavior",
+          "label": "장호의 행동 분석",
+          "input_area_type": "free-writing",
+          "min_height": 480
+        },
+        {
+          "zone_id": "bongun_behavior",
+          "label": "봉운의 행동 분석",
+          "input_area_type": "free-writing",
+          "min_height": 480
+        },
+        {
+          "zone_id": "value_inference",
+          "label": "가치 추론 및 이유",
+          "input_area_type": "free-writing",
+          "min_height": 300
+        }
+      ],
+      "estimated_minutes": 15,
+      "review_status": "draft"
+    },
+    {
+      "activity_id": "act-46-2",
+      "lesson_id": "4-6차시",
+      "object_role": "worksheet",
+      "lesson_flow_stage": "after",
+      "activity_type": "freeform_html",
+      "level": "core",
+      "learning_goal": "시대적 상황과 인물의 가치관을 묻는 질문을 만들고 답변을 구성하여 인물의 내면을 깊이 있게 이해할 수 있다.",
+      "prompt_text": "내가 만약 조선 시대의 기록자가 되어 '책 깎는 소년' 봉운이를 인터뷰한다면 어떤 질문을 하고 싶나요? 시대 상황을 고려하여 질문을 만들고 봉운이의 마음이 담긴 답변을 상상해 봅시다.",
+      "layout_template": "freeform_html",
+      "html_content": "<!DOCTYPE html><html lang='ko'><head><meta charset='UTF-8'><style>body{width:1600px;margin:0;padding:40px;background:transparent;font-family:'Noto Sans KR',sans-serif;}.card{background:#fff;padding:48px;border-radius:32px;border:1px solid #eee;}.header{margin-bottom:40px;}.title-tag{background:#333;color:#fff;padding:8px 20px;border-radius:8px;font-size:20px;font-weight:700;display:inline-block;margin-bottom:12px;}.header h1{margin:0;font-size:38px;font-weight:800;color:#111;}.interview-container{display:flex;flex-direction:column;gap:32px;}.interview-row{display:flex;flex-direction:column;gap:12px;}.q-box{background:#F8F9FA;padding:20px;border-radius:16px 16px 0 0;border:3px solid #333;border-bottom:none;font-weight:700;font-size:24px;display:flex;align-items:center;}.q-box::before{content:'질문';color:#D0021B;margin-right:12px;}.a-box{background:#fff;padding:24px;border-radius:0 0 16px 16px;border:3px solid #333;min-height:380px;position:relative;}.a-box::before{content:'봉운이의 답변';position:absolute;top:-15px;right:30px;background:#333;color:#fff;padding:4px 16px;border-radius:20px;font-size:18px;}.hint-text{font-size:18px;color:#666;margin-top:12px;font-style:italic;}</style></head><body><div class='card'><div class='header'><div class='title-tag'>가상 인터뷰 프로젝트</div><h1>인물의 삶과 가치를 묻는 인터뷰 기록장</h1><p class='hint-text'>* 책이 귀했던 조선 시대의 상황(필사, 목판 인쇄 등)을 질문에 녹여보세요.</p></div><div class='interview-container'><div class='interview-row'><div class='q-box'>첫 번째 질문: </div><div class='a-box'></div></div><div class='interview-row'><div class='q-box'>두 번째 질문: </div><div class='a-box'></div></div></div></div></body></html>",
+      "source_refs": [
+        15,
+        24,
+        25,
+        26
+      ],
+      "teacher_notes": "학생들이 단순한 사실 확인 질문을 넘어, 왜 그런 선택을 했는지 '가치'를 묻는 질문을 생성하도록 독려합니다.",
+      "student_writing_zones": [
+        {
+          "zone_id": "interview_q1",
+          "label": "첫 번째 질문 작성",
+          "input_area_type": "inline-answer",
+          "min_height": 60
+        },
+        {
+          "zone_id": "interview_a1",
+          "label": "봉운의 첫 번째 답변",
+          "input_area_type": "free-writing",
+          "min_height": 380
+        },
+        {
+          "zone_id": "interview_q2",
+          "label": "두 번째 질문 작성",
+          "input_area_type": "inline-answer",
+          "min_height": 60
+        },
+        {
+          "zone_id": "interview_a2",
+          "label": "봉운의 두 번째 답변",
+          "input_area_type": "free-writing",
+          "min_height": 380
+        }
+      ],
+      "estimated_minutes": 20,
+      "review_status": "draft"
+    },
+    {
+      "activity_id": "act-46-3",
+      "lesson_id": "4-6차시",
+      "object_role": "learning_note",
+      "lesson_flow_stage": "during",
+      "activity_type": "freeform_html",
+      "level": "core",
+      "learning_goal": "조선 시대의 출판 문화와 이야기 속 상황을 연결하여 정리할 수 있다.",
+      "prompt_text": "이야기의 배경이 되는 조선 시대의 출판 문화(필사, 각수, 서포 등)에 대해 배운 내용을 정리하고, 이것이 인물들의 삶에 어떤 영향을 주었는지 기록해 봅시다.",
+      "layout_template": "freeform_html",
+      "html_content": "<!DOCTYPE html><html lang='ko'><head><meta charset='UTF-8'><style>body{width:1600px;margin:0;padding:40px;background:transparent;font-family:'Noto Sans KR',sans-serif;}.card{background:#FFFBEB;padding:48px;border-radius:32px;border:2px dashed #D97706;}.header{margin-bottom:32px;text-align:center;}.header h1{font-size:34px;color:#92400E;margin:0;}.note-grid{display:grid;grid-template-columns:1fr 1fr;gap:32px;}.note-section{background:#fff;padding:24px;border-radius:24px;border:2px solid #D97706;}.note-title{font-size:24px;font-weight:800;color:#B45309;margin-bottom:16px;border-bottom:2px solid #FEF3C7;padding-bottom:8px;}.writing-area{min-height:420px;font-size:22px;line-height:1.8;background-image:radial-gradient(#FDE68A 1px, transparent 1px);background-size: 20px 20px;}</style></head><body><div class='card'><div class='header'><h1>[지식 정리] 조선 시대 출판 문화와 우리 이야기</h1></div><div class='note-grid'><div class='note-section'><div class='note-title'>배경 지식: 조선의 책 만들기</div><div class='writing-area'></div></div><div class='note-section'><div class='note-title'>이야기 연결: 인물들에게 책이란?</div><div class='writing-area'></div></div></div></div></body></html>",
+      "source_refs": [
+        15
+      ],
+      "teacher_notes": "필사와 목판 인쇄의 차이점이 이야기의 갈등 구조와 어떻게 연결되는지 파악하게 합니다.",
+      "student_writing_zones": [
+        {
+          "zone_id": "publishing_culture",
+          "label": "출판 문화 정리",
+          "input_area_type": "free-writing",
+          "min_height": 420
+        },
+        {
+          "zone_id": "connection_to_story",
+          "label": "이야기와의 연결점",
+          "input_area_type": "free-writing",
+          "min_height": 420
+        }
+      ],
+      "estimated_minutes": 10,
+      "review_status": "draft"
+    }
+  ]
+}

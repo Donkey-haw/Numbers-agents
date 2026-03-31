@@ -1,0 +1,105 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-03-31T00:15:00Z",
+  "lesson_id": "15차시",
+  "sheet_name": "15차시",
+  "lesson_title": "민주주의와 미디어 — 미디어의 정보 제공 역할 알아보기",
+  "lesson_type": "core",
+  "pdf_pages": [
+    83,
+    84,
+    85,
+    86,
+    87,
+    88,
+    89
+  ],
+  "essential_question": "우리나라 국가 기관들은 국민의 권리를 보호하기 위해 어떻게 역할을 나누고 서로 협력하거나 견제하고 있을까?",
+  "learning_goals": [
+    "법원과 재판의 역할을 이해하고 공정한 재판을 위한 제도를 설명할 수 있다.",
+    "권력 분립과 삼권 분립의 의미를 이해하고 그 필요성을 설명할 수 있다.",
+    "국회, 행정부, 법원이 서로를 견제하며 균형을 이루는 사례를 찾을 수 있다."
+  ],
+  "key_concepts": [
+    "재판",
+    "3심 제도",
+    "국민 참여 재판",
+    "권력 분립",
+    "삼권 분립",
+    "견제와 균형"
+  ],
+  "vocabulary": [
+    "판사",
+    "검사",
+    "변호인",
+    "피고인",
+    "배심원",
+    "국정 감사",
+    "거부권"
+  ],
+  "misconceptions": [
+    "법원은 처벌만을 목적으로 하는 기관이라고 생각할 수 있으나, 본질은 국민의 자유와 권리 보장에 있음을 유의한다.",
+    "삼권 분립을 단순히 일을 나누어 하는 것으로 오해할 수 있으나, 핵심은 권력 독점 방지와 상호 견제에 있음을 강조한다."
+  ],
+  "difficulty_band": "on-level",
+  "content_chunks": [
+    {
+      "chunk_id": "15차시-chunk-1",
+      "label": "법원과 공정한 재판",
+      "content_type": "mixed",
+      "knowledge_type": "procedure",
+      "summary": "재판의 구성원(판사, 검사, 변호인 등)과 공정한 재판을 위한 3심 제도, 국민 참여 재판의 의미를 학습함.",
+      "source_pages": [
+        83,
+        84,
+        85
+      ],
+      "suggested_activity_types": [
+        "역할극",
+        "사례 분석"
+      ]
+    },
+    {
+      "chunk_id": "15차시-chunk-2",
+      "label": "권력 분립과 삼권 분립",
+      "content_type": "diagram",
+      "knowledge_type": "concept",
+      "summary": "국가 권력이 한곳에 집중될 때의 위험성을 인지하고, 국회·행정부·법원이 권력을 나누는 삼권 분립의 원리를 파악함.",
+      "source_pages": [
+        86,
+        87
+      ],
+      "suggested_activity_types": [
+        "개념도 그리기",
+        "토의"
+      ]
+    },
+    {
+      "chunk_id": "15차시-chunk-3",
+      "label": "국가 기관의 견제와 균형",
+      "content_type": "mixed",
+      "knowledge_type": "application",
+      "summary": "국정 감사, 법률안 거부권, 위헌 법률 심사 제청 등 각 기관이 서로를 견제하는 실제 사례를 분석하고 단원을 마무리함.",
+      "source_pages": [
+        88,
+        89
+      ],
+      "suggested_activity_types": [
+        "기사 분석",
+        "퀴즈"
+      ]
+    }
+  ],
+  "source_page_refs": [
+    83,
+    84,
+    85,
+    86,
+    87,
+    88,
+    89
+  ],
+  "analysis_confidence": 0.9,
+  "review_status": "draft",
+  "notes": "추출된 텍스트와 이미지 설명(삼권 분립 다이어그램 등)을 바탕으로 분석을 정교화함. 단원 마무리(89쪽) 내용까지 포함됨."
+}

@@ -1,0 +1,22 @@
+{
+  "schema_version": "1.0.0",
+  "stage": "document_inventory_agent",
+  "lesson_id": null,
+  "status": "succeeded",
+  "run_id": "social_6_1_unit1_민주화와_산업화로_달라진_생활_문화-20260331-100620",
+  "started_at": "2026-03-31T01:06:20.708685+00:00",
+  "finished_at": "2026-03-31T01:06:20.709209+00:00",
+  "input_refs": [
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/configs/units/social/social_6_1_unit1_민주화와_산업화로_달라진_생활_문화.json",
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/textbook/사회/[사회]6_1_교과서.pdf"
+  ],
+  "output_refs": [
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit1_민주화와_산업화로_달라진_생활_문화-20260331-100620/source/document_inventory.json",
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit1_민주화와_산업화로_달라진_생활_문화-20260331-100620/source/document_inventory.status.json"
+  ],
+  "fallback_used": false,
+  "warnings": [],
+  "errors": [],
+  "agent_spec_path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/agents/document_inventory_agent/AGENT.md",
+  "runtime_driven": true
+}

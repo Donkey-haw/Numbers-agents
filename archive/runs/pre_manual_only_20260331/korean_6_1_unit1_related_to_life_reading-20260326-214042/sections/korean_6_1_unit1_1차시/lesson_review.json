@@ -1,0 +1,16 @@
+{
+  "schema_version": "1.0.0",
+  "stage": "review_lesson_agent",
+  "lesson_id": "1차시",
+  "status": "succeeded",
+  "decision": "pass",
+  "findings": [
+    {
+      "severity": "info",
+      "message": "단원 도입 차시로 가치의 개념을 정의하고 학습 동기를 부여하는 활동으로 구성됨. 추출된 텍스트와 삽화를 바탕으로 학습 목표 및 핵심 개념을 보강함.",
+      "evidence_refs": []
+    }
+  ],
+  "blocking_issues": [],
+  "warnings": []
+}

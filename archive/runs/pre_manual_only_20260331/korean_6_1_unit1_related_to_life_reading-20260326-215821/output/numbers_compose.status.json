@@ -1,0 +1,18 @@
+{
+  "schema_version": "1.0.0",
+  "stage": "numbers_compose_agent",
+  "lesson_id": null,
+  "status": "succeeded",
+  "run_id": "korean_6_1_unit1_related_to_life_reading-20260326-215821",
+  "started_at": "2026-03-26T13:03:49.955044+00:00",
+  "finished_at": "2026-03-26T13:04:12.170095+00:00",
+  "input_refs": [
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/korean_6_1_unit1_related_to_life_reading-20260326-215821/render/render_manifest.json"
+  ],
+  "output_refs": [
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/korean_6_1_unit1_related_to_life_reading-20260326-215821/output/6-1-국어-1. 자신의 삶과 관련지어 읽어요.numbers"
+  ],
+  "fallback_used": false,
+  "warnings": [],
+  "errors": []
+}

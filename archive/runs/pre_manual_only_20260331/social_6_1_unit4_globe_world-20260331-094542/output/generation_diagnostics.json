@@ -1,0 +1,25 @@
+{
+  "schema_version": "1.0.0",
+  "run_id": "social_6_1_unit4_globe_world-20260331-094542",
+  "updated_at": "2026-03-31T00:49:33.596144+00:00",
+  "stages": {
+    "lesson_analysis_agent": {
+      "status": "succeeded",
+      "fallback_used": false,
+      "warning_count": 0,
+      "error_count": 0,
+      "details": {
+        "fallback_category_counts": {}
+      }
+    },
+    "activity_plan_agent": {
+      "status": "succeeded",
+      "fallback_used": false,
+      "warning_count": 0,
+      "error_count": 0,
+      "details": {
+        "fallback_category_counts": {}
+      }
+    }
+  }
+}

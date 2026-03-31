@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.0.0",
+  "stage": "boundary_decision_agent",
+  "lesson_id": null,
+  "status": "succeeded_with_warning",
+  "run_id": "social_6_1_unit1_민주화와_산업화로_달라진_생활_문화-20260331-100620",
+  "started_at": "2026-03-31T01:06:25.988058+00:00",
+  "finished_at": "2026-03-31T01:06:25.988282+00:00",
+  "input_refs": [
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit1_민주화와_산업화로_달라진_생활_문화-20260331-100620/source/page_candidates.json"
+  ],
+  "output_refs": [
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit1_민주화와_산업화로_달라진_생활_문화-20260331-100620/source/boundary_decisions.json",
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit1_민주화와_산업화로_달라진_생활_문화-20260331-100620/source/boundary_decision.status.json"
+  ],
+  "fallback_used": false,
+  "warnings": [
+    "5 lessons were marked low_confidence"
+  ],
+  "errors": [],
+  "agent_spec_path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/agents/boundary_decision_agent/AGENT.md",
+  "runtime_driven": true
+}

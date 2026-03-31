@@ -1,0 +1,483 @@
+{
+  "schema_version": "1.0.0",
+  "source_type": "progress_chart_pdf",
+  "units": [
+    {
+      "unit_number": 1,
+      "unit_title": "평화 통일을 위한 노력, 민주화와 산업화",
+      "sections": [
+        {
+          "section_type": "unit_intro",
+          "section_label": "1단원 도입",
+          "section_title": "1단원 도입",
+          "lessons": [
+            {
+              "sheet_name": "1차시",
+              "chart_range": "1",
+              "activity_summary": [
+                "[단원 도입] 우리 친구는 누구?",
+                "[주제 도입] 열려라 이야기 / 외쳐라 빙고"
+              ],
+              "materials": "교과서, 영상 자료"
+            }
+          ]
+        },
+        {
+          "section_type": "topic",
+          "section_label": "①",
+          "section_title": "평화 통일을 위한 노력",
+          "lessons": [
+            {
+              "sheet_name": "2차시",
+              "chart_range": "2",
+              "activity_summary": [
+                "분단으로 나타난 문제점과 분단이 사회와 생활 에 끼친 영향 알아보기",
+                "평화 통일의 필요성 이해하기"
+              ],
+              "materials": "교과서, 영상 자료, 활동지, 활동 자료 2"
+            },
+            {
+              "sheet_name": "3차시",
+              "chart_range": "3",
+              "activity_summary": [
+                "분단의 흔적이 남아 있는 장소 알아보기",
+                "분단의 흔적 이해하기"
+              ],
+              "materials": "교과서, 영상 자료, 활동지"
+            },
+            {
+              "sheet_name": "4차시",
+              "chart_range": "4",
+              "activity_summary": [
+                "분단의 장소가 평화의 장소로 바뀐 사례 알아보기",
+                "비무장 지대의 미래 모습 상상하기"
+              ],
+              "materials": "교과서, 영상 자료, 활동지"
+            },
+            {
+              "sheet_name": "5-6차시",
+              "chart_range": "5~6",
+              "activity_summary": [
+                "평화 통일을 위한 노력 살펴보기",
+                "평화 통일을 위해 우리가 할 수 있는 일 알아보기",
+                "[주제 마무리] 우리의 놀이터 / 스스로 확인하기"
+              ],
+              "materials": "교과서, 영상 자료, 활동지"
+            }
+          ]
+        },
+        {
+          "section_type": "topic",
+          "section_label": "②",
+          "section_title": "민주화와 산업화로 달라진 생활 문화",
+          "lessons": [
+            {
+              "sheet_name": "7차시",
+              "chart_range": "7",
+              "activity_summary": [
+                "[주제 도입] 열려라 이야기 / 외쳐라 빙고",
+                "민주화 운동이 일어난 이유 알아보기"
+              ],
+              "materials": "교과서, 영상 자료, 활동지"
+            },
+            {
+              "sheet_name": "8-9차시",
+              "chart_range": "8~9",
+              "activity_summary": [
+                "4·19 혁명 이해하기",
+                "5·18 민주화 운동 살펴보기",
+                "6월 민주 항쟁 파악하기"
+              ],
+              "materials": "교과서, 영상 자료, 활동지, 활동 자료 3"
+            },
+            {
+              "sheet_name": "10차시",
+              "chart_range": "10",
+              "activity_summary": [
+                "대통령 직선제와 지방 자치제의 부활 이해하기",
+                "시민 의식의 성장과 시민운동 살펴보"
+              ],
+              "materials": "교과서, 영상 자료, 활동지"
+            },
+            {
+              "sheet_name": "11차시",
+              "chart_range": "11",
+              "activity_summary": [
+                "산업화 과정 이해하기",
+                "산업화를 이룰 수 있었던 까닭 파악하기"
+              ],
+              "materials": "교과서, 영상 자료, 활동지"
+            },
+            {
+              "sheet_name": "12-13차시",
+              "chart_range": "12~13",
+              "activity_summary": [
+                "산업화로 달라진 사회와 생활 문화 이해하기",
+                "산업화로 발생한 문제점 탐색하기",
+                "[주제 마무리] 우리의 놀이터 / 스스로 확인하기"
+              ],
+              "materials": "교과서, 영상 자료, 활동지, 활동 자료 4, 색연필"
+            }
+          ]
+        },
+        {
+          "section_type": "unit_summary",
+          "section_label": "1단원 정리",
+          "section_title": "1단원 정리",
+          "lessons": [
+            {
+              "sheet_name": "14차시",
+              "chart_range": "14",
+              "activity_summary": [
+                "[단원 마무리] 나만의 누리집 완성하기 / 창의·융 합 사고력 쑥쑥"
+              ],
+              "materials": "교과서, 활동지, 활동 자료 1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 2,
+      "unit_title": "민주주의와 시민 참여",
+      "sections": [
+        {
+          "section_type": "unit_intro",
+          "section_label": "2단원 도입",
+          "section_title": "2단원 도입",
+          "lessons": [
+            {
+              "sheet_name": "1차시",
+              "chart_range": "1",
+              "activity_summary": [
+                "[단원 도입] 우리 친구는 누구?",
+                "[주제 도입] 열려라 이야기 / 외쳐라 빙고"
+              ],
+              "materials": "교과서, 영상 자료"
+            }
+          ]
+        },
+        {
+          "section_type": "topic",
+          "section_label": "①",
+          "section_title": "민주주의와 선거",
+          "lessons": [
+            {
+              "sheet_name": "2차시",
+              "chart_range": "2",
+              "activity_summary": [
+                "선거의 의미와 중요성 파악하기"
+              ],
+              "materials": "교과서, 영상 자료, 활동지"
+            },
+            {
+              "sheet_name": "3차시",
+              "chart_range": "3",
+              "activity_summary": [
+                "민주주의에서 선거의 역할 파악하기"
+              ],
+              "materials": "교과서, 영상 자료, 활동지"
+            },
+            {
+              "sheet_name": "4-5차시",
+              "chart_range": "4~5",
+              "activity_summary": [
+                "우리나라의 선거 과정 살펴보기",
+                "민주 선거의 기본 원칙 파악하기"
+              ],
+              "materials": "교과서, 영상 자료, 활동지, 활동 자료 5, 채색 도구"
+            },
+            {
+              "sheet_name": "6-7차시",
+              "chart_range": "6~7",
+              "activity_summary": [
+                "선거에 적극적으로 참여해야 하는 까닭 알아보기",
+                "모의 선거 해 보기",
+                "[주제 마무리] 우리의 놀이터 / 스스로 확인하기"
+              ],
+              "materials": "교과서, 영상 자료, 활동지, 활동 자료 6, 채색 도구"
+            }
+          ]
+        },
+        {
+          "section_type": "topic",
+          "section_label": "②",
+          "section_title": "국가기관이 하는 일",
+          "lessons": [
+            {
+              "sheet_name": "8차시",
+              "chart_range": "8",
+              "activity_summary": [
+                "[주제 도입] 열려라 이야기 / 외쳐라 빙고",
+                "국가기관의 의미 알아보기",
+                "우리나라 국가기관의 종류와 상징 생각해 보기"
+              ],
+              "materials": "교과서, 영상 자료, 활동지"
+            },
+            {
+              "sheet_name": "9-10차시",
+              "chart_range": "9~10",
+              "activity_summary": [
+                "국회의 구성과 하는 일 파악하기",
+                "법률안 제안서 작성하기"
+              ],
+              "materials": "교과서, 영상 자료, 활동지"
+            },
+            {
+              "sheet_name": "11차시",
+              "chart_range": "11",
+              "activity_summary": [
+                "행정부의 구성과 하는 일 파악하기",
+                "행정 각부가 하는 일 살펴보기"
+              ],
+              "materials": "교과서, 영상 자료, 활동지"
+            },
+            {
+              "sheet_name": "12차시",
+              "chart_range": "12",
+              "activity_summary": [
+                "법원의 구성과 하는 일 파악하기",
+                "공정한 재판을 위한 노력 살펴보기"
+              ],
+              "materials": "교과서, 영상 자료, 활동지"
+            },
+            {
+              "sheet_name": "13차시",
+              "chart_range": "13",
+              "activity_summary": [
+                "권력 분립의 의미와 중요성 탐구하기",
+                "국가기관의 견제 사례 알아보기",
+                "[주제 마무리] 우리의 놀이터 / 스스로 확인하기"
+              ],
+              "materials": "교과서, 영상 자료, 활동지"
+            }
+          ]
+        },
+        {
+          "section_type": "topic",
+          "section_label": "③",
+          "section_title": "민주주의와 미디어",
+          "lessons": [
+            {
+              "sheet_name": "14차시",
+              "chart_range": "14",
+              "activity_summary": [
+                "[주제 도입] 열려라 이야기 / 외쳐라 빙고",
+                "미디어의 의미 알아보기"
+              ],
+              "materials": "교과서, 영상 자료, 활동지"
+            },
+            {
+              "sheet_name": "15차시",
+              "chart_range": "15",
+              "activity_summary": [
+                "미디어의 정보 제공 역할 알아보기",
+                "미디어의 여론 형성 역할 알아보기"
+              ],
+              "materials": "교과서, 영상 자료, 활동지"
+            },
+            {
+              "sheet_name": "16차시",
+              "chart_range": "16",
+              "activity_summary": [
+                "미디어의 내용을 비판적으로 분석해야 하는 까 닭 알아보기",
+                "미디어 속 잘못된 정보의 사례 알아보기"
+              ],
+              "materials": "교과서, 활동지"
+            },
+            {
+              "sheet_name": "17-18차시",
+              "chart_range": "17~18",
+              "activity_summary": [
+                "미디어를 올바르게 이용하는 방법 알아보기",
+                "미디어의 내용 비판적으로 분석하기",
+                "올바른 미디어 이용 방법 실천하기",
+                "[주제 마무리] 우리의 놀이터 / 스스로 확인하기"
+              ],
+              "materials": "교과서, 영상 자료, 활동지, 활동 자료 7, 8"
+            }
+          ]
+        },
+        {
+          "section_type": "unit_summary",
+          "section_label": "2단원 정리",
+          "section_title": "2단원 정리",
+          "lessons": [
+            {
+              "sheet_name": "19차시",
+              "chart_range": "19",
+              "activity_summary": [
+                "[단원 마무리] 나만의 누리집 완성하기 / 창의·융 합 사고력 쑥쑥"
+              ],
+              "materials": "교과서, 활동지, 활동 자료 9"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 3,
+      "unit_title": "지구, 대륙 그리고 국가들",
+      "sections": [
+        {
+          "section_type": "unit_intro",
+          "section_label": "3단원 도입",
+          "section_title": "3단원 도입",
+          "lessons": [
+            {
+              "sheet_name": "1차시",
+              "chart_range": "1",
+              "activity_summary": [
+                "[단원 도입] 우리 친구는 누구?",
+                "[주제 도입] 열려라 이야기 / 외쳐라 빙고"
+              ],
+              "materials": "교과서, 영상 자료"
+            }
+          ]
+        },
+        {
+          "section_type": "topic",
+          "section_label": "①",
+          "section_title": "지구본과 지도로 보는 세계",
+          "lessons": [
+            {
+              "sheet_name": "2-3차시",
+              "chart_range": "2~3",
+              "activity_summary": [
+                "지구본의 특징 살펴보기",
+                "세계지도의 특징 살펴보기"
+              ],
+              "materials": "교과서, 영상 자료, 활동지, 활동 자료 10, 지구본, 색 연필(빨간색, 파란색), 끈"
+            },
+            {
+              "sheet_name": "4차시",
+              "chart_range": "4",
+              "activity_summary": [
+                "디지털 공간 영상 정보의 의미 알아보기",
+                "디지털 공간 영상 정보의 특징 살펴보기"
+              ],
+              "materials": "교과서, 영상 자료, 활동지, 활동 자료 11"
+            },
+            {
+              "sheet_name": "5차시",
+              "chart_range": "5",
+              "activity_summary": [
+                "위도와 위선의 의미 알아보기",
+                "위도에 따른 계절 차이 파악하기",
+                "위도에 따른 밤낮의 길이 차이 파악하기"
+              ],
+              "materials": "교과서, 영상 자료, 활동지"
+            },
+            {
+              "sheet_name": "6차시",
+              "chart_range": "6",
+              "activity_summary": [
+                "경도와 경선의 의미 알아보기",
+                "경도에 따른 시간의 차이 파악하기",
+                "생활 속에서 시차를 활용한 사례 살펴보기"
+              ],
+              "materials": "교과서, 영상 자료, 활동지"
+            },
+            {
+              "sheet_name": "7차시",
+              "chart_range": "7",
+              "activity_summary": [
+                "위도와 경도를 이용해 위치를 표현하는 방법 살 펴보기",
+                "공간 자료를 활용해 위치 파악하기",
+                "[주제 마무리] 우리의 놀이터 / 스스로 확인하기"
+              ],
+              "materials": "교과서, 활동지"
+            }
+          ]
+        },
+        {
+          "section_type": "topic",
+          "section_label": "②",
+          "section_title": "세계의 대륙, 대양, 나라",
+          "lessons": [
+            {
+              "sheet_name": "8차시",
+              "chart_range": "8",
+              "activity_summary": [
+                "[주제 도입] 열려라 이야기 / 외쳐라 빙고",
+                "세계의 대륙과 대양 알아보기"
+              ],
+              "materials": "교과서, 영상 자료, 활동지"
+            },
+            {
+              "sheet_name": "9차시",
+              "chart_range": "9",
+              "activity_summary": [
+                "우리나라의 위치 특징 파악하기",
+                "우리나라의 영토 특징 파악하기"
+              ],
+              "materials": "교과서, 영상 자료, 활동지"
+            },
+            {
+              "sheet_name": "10차시",
+              "chart_range": "10",
+              "activity_summary": [
+                "아시아 주요 나라들의 위치 알아보기",
+                "아시아 주요 나라들의 영토 특징 알아보기"
+              ],
+              "materials": "교과서, 영상 자료, 활동지"
+            },
+            {
+              "sheet_name": "11차시",
+              "chart_range": "11",
+              "activity_summary": [
+                "유럽 주요 나라들의 위치 알아보기",
+                "유럽 주요 나라들의 영토 특징 알아보기"
+              ],
+              "materials": "교과서, 영상 자료, 활동지"
+            },
+            {
+              "sheet_name": "12차시",
+              "chart_range": "12",
+              "activity_summary": [
+                "북아메리카와 남아메리카 주요 나라들의 위치 알아보기",
+                "북아메리카와 남아메리카 주요 나라들의 영토 특징 알아보기"
+              ],
+              "materials": "교과서, 영상 자료, 활동지"
+            },
+            {
+              "sheet_name": "13차시",
+              "chart_range": "13",
+              "activity_summary": [
+                "아프리카 주요 나라들의 위치 알아보기",
+                "아프리카 주요 나라들의 영토 특징 알아보기"
+              ],
+              "materials": "교과서, 활동지"
+            },
+            {
+              "sheet_name": "14차시",
+              "chart_range": "14",
+              "activity_summary": [
+                "오세아니아 주요 나라들의 위치 알아보기",
+                "오세아니아 주요 나라들의 영토 특징 알아보기",
+                "[주제 마무리] 우리의 놀이터 / 스스로 확인하기"
+              ],
+              "materials": "교과서, 영상 자료, 활동지"
+            }
+          ]
+        },
+        {
+          "section_type": "unit_summary",
+          "section_label": "3단원 정리",
+          "section_title": "3단원 정리",
+          "lessons": [
+            {
+              "sheet_name": "15차시",
+              "chart_range": "15",
+              "activity_summary": [
+                "[단원 마무리] 나만의 누리집 완성하기 / 창의·융 합 사고력 쑥쑥"
+              ],
+              "materials": "교과서, 활동지"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "source_pdf": "/Users/jonyeock/Desktop/Tool/NumbersAuto/textbook/사회/6학년 1학기 사회 진도표.pdf"
+}

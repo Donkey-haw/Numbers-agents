@@ -1,0 +1,27 @@
+{
+  "schema_version": "1.0.0",
+  "stage": "lesson_analysis_agent",
+  "lesson_id": "14차시",
+  "status": "succeeded_with_warning",
+  "run_id": "1-20260331-001652",
+  "started_at": "2026-03-30T15:21:53.717532+00:00",
+  "finished_at": "2026-03-30T15:23:53.744180+00:00",
+  "input_refs": [
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/1-20260331-001652/source/schedule_draft.json",
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/1-20260331-001652/source/textbook_context.json",
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/1-20260331-001652/source/local_baseline/___14차시__1단원_정리____단원_마무리__나만의_누리집_완성하기___창의_융_합_사고력_쑥쑥.lesson_analysis.json"
+  ],
+  "output_refs": [
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/1-20260331-001652/sections/___14차시__1단원_정리____단원_마무리__나만의_누리집_완성하기___창의_융_합_사고력_쑥쑥/lesson_analysis_ai.json",
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/1-20260331-001652/sections/___14차시__1단원_정리____단원_마무리__나만의_누리집_완성하기___창의_융_합_사고력_쑥쑥/lesson_analysis.json"
+  ],
+  "fallback_used": true,
+  "warnings": [],
+  "errors": [
+    "Gemini CLI timed out after 120 seconds for lesson_analysis_ai"
+  ],
+  "model": "gemini",
+  "agent_spec_path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/agents/lesson_analysis_agent/AGENT.md",
+  "attempt_count": 1,
+  "validation_errors": []
+}

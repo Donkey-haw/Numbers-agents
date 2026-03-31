@@ -1,0 +1,62 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-03-30T15:20:35.039639+00:00",
+  "lesson_id": "10차시",
+  "sheet_name": "10차시",
+  "lesson_title": "민주화와 산업화로 달라진 생활 문화 — 대통령 직선제와 지방 자치제의 부활 이해하기",
+  "lesson_type": "intro",
+  "pdf_pages": [
+    29
+  ],
+  "essential_question": "대통령 직선제와 지방 자치제의 부활은 우리나라의 민주주의 발전에 어떤 변화를 가져왔을까요?",
+  "learning_goals": [
+    "낱말 구름을 통해 민주화와 산업화와 관련된 핵심 용어들을 찾아내고 그 의미를 추론할 수 있다.",
+    "대통령 직선제와 지방 자치제 부활이 민주주의와 생활 문화에 미치는 영향을 이해할 수 있다."
+  ],
+  "key_concepts": [
+    "민주화",
+    "대통령 직선제",
+    "지방 자치제",
+    "시민 의식",
+    "6월 민주 항쟁"
+  ],
+  "vocabulary": [
+    "직선제",
+    "지방 자치제",
+    "독재",
+    "시민 의식",
+    "산업화"
+  ],
+  "misconceptions": [
+    "지방 자치제가 단순히 지역의 이익만을 챙기는 제도라고 오해할 수 있으나, 시민의 참여를 확대하는 민주주의의 핵심 제도임을 이해해야 한다."
+  ],
+  "content_chunks": [
+    {
+      "chunk_id": "10차시-chunk-1",
+      "label": "핵심 낱말 탐색 및 주제 추론",
+      "content_type": "activity",
+      "knowledge_type": "concept",
+      "summary": "교과서의 낱말 구름에 제시된 민주화, 산업화, 직선제, 지방 자치제 등의 용어들을 살펴보며 이번 단원에서 배울 주요 사건과 변화상을 시각적으로 확인하고 추론함.",
+      "source_pages": [
+        29
+      ]
+    },
+    {
+      "chunk_id": "10차시-chunk-2",
+      "label": "용어 친숙화 활동 (빙고 놀이)",
+      "content_type": "activity",
+      "knowledge_type": "application",
+      "summary": "낱말 구름 속의 낱말 9개를 골라 빙고 놀이를 수행하며 학습 용어에 대한 흥미를 높이고 사전 지식을 점검함.",
+      "source_pages": [
+        29
+      ]
+    }
+  ],
+  "source_page_refs": [
+    29
+  ],
+  "analysis_confidence": 0.9,
+  "difficulty_band": "on-level",
+  "review_status": "draft",
+  "notes": "29쪽은 단원 도입 페이지로, 낱말 구름을 통해 '민주화와 산업화로 달라진 생활 문화'라는 큰 주제 안에서 핵심이 되는 직선제와 지방 자치제 등의 개념을 미리 접하는 활동 중심의 차시임."
+}

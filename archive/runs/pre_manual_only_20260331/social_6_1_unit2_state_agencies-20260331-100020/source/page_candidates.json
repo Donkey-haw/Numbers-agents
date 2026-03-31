@@ -1,0 +1,64 @@
+{
+  "schema_version": "1.0.0",
+  "lessons": [
+    {
+      "lesson_id": "lesson-001",
+      "resource_id": "main",
+      "candidate_pages": [
+        88,
+        100,
+        54,
+        90
+      ],
+      "query": "국가기관의 의미와 종류를 알아볼까요?"
+    },
+    {
+      "lesson_id": "lesson-002",
+      "resource_id": "main",
+      "candidate_pages": [
+        74,
+        82,
+        72,
+        81,
+        100
+      ],
+      "query": "국회의 구성과 하는 일을 알아볼까요?"
+    },
+    {
+      "lesson_id": "lesson-003",
+      "resource_id": "main",
+      "candidate_pages": [
+        82,
+        74,
+        72,
+        81,
+        100
+      ],
+      "query": "행정부의 구성과 하는 일을 알아볼까요?"
+    },
+    {
+      "lesson_id": "lesson-004",
+      "resource_id": "main",
+      "candidate_pages": [
+        82,
+        74,
+        73,
+        72,
+        81
+      ],
+      "query": "법원의 구성과 하는 일을 알아볼까요?"
+    },
+    {
+      "lesson_id": "lesson-005",
+      "resource_id": "main",
+      "candidate_pages": [
+        87,
+        88,
+        100,
+        71,
+        178
+      ],
+      "query": "권력 분립과 국가기관의 견제를 알아볼까요? / 주제 마무리"
+    }
+  ]
+}

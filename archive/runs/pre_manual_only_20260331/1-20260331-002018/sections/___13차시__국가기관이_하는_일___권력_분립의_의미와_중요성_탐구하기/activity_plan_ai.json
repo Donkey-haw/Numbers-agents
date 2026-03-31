@@ -1,0 +1,69 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-03-31T10:00:00+00:00",
+  "lesson_id": "13차시",
+  "activities": [
+    {
+      "activity_id": "act-13-1",
+      "lesson_id": "13차시",
+      "object_role": "activity_area",
+      "lesson_flow_stage": "during",
+      "activity_type": "freeform_html",
+      "level": "core",
+      "learning_goal": "권력 분립의 상징적 의미를 통해 상호 견제와 균형의 필요성을 추론할 수 있다.",
+      "prompt_text": "교과서 54쪽의 사진에서 사람들이 몸으로 만든 '삼각형 모양'은 무엇을 의미할까요? 만약 이 중 한 명이라도 손을 놓거나 힘을 뺀다면 어떤 일이 벌어질지 상상하여 적어 봅시다.",
+      "layout_template": "freeform_html",
+      "html_content": "<!DOCTYPE html><html lang='ko'><head><meta charset='UTF-8'><style>body{width:1600px;margin:0;padding:40px;background:transparent;font-family:'Noto Sans KR',sans-serif;box-sizing:border-box;}.card{background:#ffffff;padding:48px;border-radius:32px;box-shadow:none;border:none;display:flex;flex-direction:column;gap:32px;}.header{display:flex;align-items:center;gap:20px;border-left:12px solid #FFD700;padding-left:24px;}.header h1{margin:0;font-size:42px;color:#1a1a1a;}.header p{margin:8px 0 0 0;font-size:24px;color:#666;}.content-grid{display:flex;gap:40px;}.context-box{flex:1;background:#F8F9FA;padding:32px;border-radius:24px;border:2px dashed #CED4DA;}.context-box h2{margin-top:0;font-size:28px;color:#333;}#writing-area{flex:2;background:#fff;border:3px solid #333;border-radius:24px;min-height:600px;padding:32px;position:relative;}#writing-area::before{content:'이곳에 자유롭게 쓰고 그려 보세요 (Apple Pencil 권장)';position:absolute;top:24px;right:32px;font-size:18px;color:#ADB5BD;font-style:italic;}.label-tag{display:inline-block;background:#333;color:#fff;padding:8px 20px;border-radius:40px;font-size:20px;margin-bottom:16px;}</style></head><body><div class='card'><div class='header'><h1>서로 버티는 힘, 권력 분립</h1><p>교과서 54쪽 탐구 활동</p></div><div class='content-grid'><div class='context-box'><h2>상상해 보기</h2><p style='font-size:22px; line-height:1.6;'>사람들이 서로의 어깨를 맞대고 버티고 있습니다. 이들은 각각 <b>국회(입법), 정부(행정), 법원(사법)</b>을 상징합니다.<br><br>1. 한 사람이 갑자기 힘을 뺀다면?<br>2. 한 사람이 다른 사람을 억지로 누르려 한다면?<br><br>우리 사회에서 이런 일이 일어난다면 국민의 삶은 어떻게 변할까요?</p></div><div id='writing-area'><div class='label-tag'>나의 생각과 추론</div></div></div></div></body></html>",
+      "source_refs": [
+        54
+      ],
+      "student_writing_zones": [
+        {
+          "zone_id": "inference_zone",
+          "label": "권력 분립이 무너졌을 때의 상황 추론",
+          "input_area_type": "free-writing",
+          "min_height": 600
+        }
+      ],
+      "estimated_minutes": 15,
+      "review_status": "draft"
+    },
+    {
+      "activity_id": "act-13-2",
+      "lesson_id": "13차시",
+      "object_role": "learning_note",
+      "lesson_flow_stage": "after",
+      "activity_type": "freeform_html",
+      "level": "core",
+      "learning_goal": "수업 중 학습한 권력 분립의 핵심 개념과 세부 내용을 체계적으로 정리할 수 있다.",
+      "prompt_text": "오늘 수업 시간에 들은 '국가기관이 하는 일'과 '권력 분립'에 대한 핵심 내용을 나만의 방식으로 정리해 봅시다.",
+      "layout_template": "freeform_html",
+      "html_content": "<!DOCTYPE html><html lang='ko'><head><meta charset='UTF-8'><style>body{width:1600px;margin:0;padding:40px;background:transparent;font-family:'Noto Sans KR',sans-serif;box-sizing:border-box;}.card{background:#ffffff;padding:48px;border-radius:32px;display:flex;flex-direction:column;gap:24px;}.note-header{border-bottom:4px solid #333;padding-bottom:16px;margin-bottom:20px;}.note-header h1{margin:0;font-size:36px;color:#1a1a1a;}.grid-container{display:grid;grid-template-columns:1fr 1fr;gap:32px;}.note-section{background:#fff;border:3px solid #333;border-radius:24px;padding:24px;min-height:450px;}.note-section.full{grid-column: span 2; min-height:350px;}.section-title{font-size:24px;font-weight:bold;margin-bottom:16px;display:flex;align-items:center;gap:12px;}.section-title span{background:#333;color:#fff;width:32px;height:32px;display:flex;align-items:center;justify-content:center;border-radius:50%;font-size:18px;}</style></head><body><div class='card'><div class='note-header'><h1>오늘 수업 핵심 정리: 권력 분립</h1></div><div class='grid-container'><div class='note-section'><div class='section-title'><span>1</span>설명 들으며 메모한 내용</div></div><div class='note-section'><div class='section-title'><span>2</span>가장 중요하다고 생각하는 단어</div></div><div class='note-section full'><div class='section-title'><span>3</span>내가 정의하는 '권력 분립'이란?</div><p style='color:#999; font-style:italic;'>비유를 들어 설명해도 좋아요. (예: 권력 분립은 운동 경기의 심판과 같다. 왜냐하면...)</p></div></div></div></body></html>",
+      "source_refs": [
+        54
+      ],
+      "student_writing_zones": [
+        {
+          "zone_id": "class_memo",
+          "label": "수업 메모",
+          "input_area_type": "free-writing",
+          "min_height": 450
+        },
+        {
+          "zone_id": "key_vocab",
+          "label": "핵심 단어",
+          "input_area_type": "free-writing",
+          "min_height": 450
+        },
+        {
+          "zone_id": "my_definition",
+          "label": "나만의 정의",
+          "input_area_type": "free-writing",
+          "min_height": 350
+        }
+      ],
+      "estimated_minutes": 10,
+      "review_status": "draft"
+    }
+  ]
+}

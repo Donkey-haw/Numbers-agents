@@ -1,0 +1,113 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-03-26T13:01:54.681801+00:00",
+  "lesson_id": "2-3차시",
+  "activities": [
+    {
+      "activity_id": "act-23-1",
+      "lesson_id": "2-3차시",
+      "object_role": "learning_note",
+      "lesson_flow_stage": "during",
+      "activity_type": "freeform_html",
+      "level": "core",
+      "learning_goal": "인물의 말과 행동을 시대 상황과 관련지어 인물이 추구하는 가치를 찾고 정리할 수 있다.",
+      "prompt_text": "윤희순 의병장이 처한 상황과 그에 따른 말·행동을 연결하여, 그 속에 담긴 '가치'를 찾아 정리해 봅시다.",
+      "layout_template": "freeform_html",
+      "html_content": "<!DOCTYPE html><html lang='ko'><head><meta charset='UTF-8'><style>body{width:1000px;margin:0;padding:20px;background:transparent;font-family:'Apple SD Gothic Neo',sans-serif;} .card{background:#fff;padding:40px;border-radius:30px;box-shadow:none;border:1px solid #eee;} h1{font-size:32px;color:#1d1d1f;margin-bottom:10px;display:flex;align-items:center;} h1::before{content:'📝';margin-right:12px;} p.desc{font-size:18px;color:#86868b;margin-bottom:30px;} .flow-container{display:flex;flex-direction:column;gap:30px;} .row{display:grid;grid-template-columns:1fr 1.5fr 1fr;gap:20px;align-items:stretch;} .label{font-weight:bold;font-size:16px;color:#555;margin-bottom:8px;text-align:center;} .box{background:#fff;border:2px solid #333;border-radius:16px;padding:20px;min-height:180px;} .arrow{display:flex;align-items:center;justify-content:center;font-size:24px;color:#333;} .writing-large{background:#fff;border:2px solid #333;border-radius:16px;min-height:450px;margin-top:20px;padding:25px;font-size:18px;line-height:1.6;}</style></head><body><div class='card'><h1>가치 추론 노트: 시대 상황과 말·행동</h1><p class='desc'>인물이 왜 그런 말과 행동을 했을까요? 시대 상황(원인)과 연결하여 인물의 중심 가치를 찾아보세요.</p><div class='flow-container'><div class='labels'><div class='row'><div class='label'>당시 시대 상황</div><div class='label'>인물의 말과 행동</div><div class='label'>추구하는 가치</div></div></div><div class='row'><div class='box'>나라의 주권을 빼앗길 위기에 처한 상황</div><div class='box'></div><div class='box'></div></div><div class='row'><div class='box'>여성들도 의병 활동에 참여해야 한다고 생각함</div><div class='box'></div><div class='box'></div></div></div><div style='margin-top:40px;'><div class='label' style='text-align:left;'>💡 윤희순 의병장의 삶을 통해 내가 새롭게 발견한 '가치'에 대해 자유롭게 적어보세요.</div><div class='writing-large'></div></div></div></body></html>",
+      "source_refs": [
+        11,
+        12,
+        13
+      ],
+      "student_writing_zones": [
+        {
+          "zone_id": "context_mapping_1",
+          "label": "말과 행동/가치 기입 1",
+          "input_area_type": "inline-answer",
+          "min_height": 180
+        },
+        {
+          "zone_id": "context_mapping_2",
+          "label": "말과 행동/가치 기입 2",
+          "input_area_type": "inline-answer",
+          "min_height": 180
+        },
+        {
+          "zone_id": "reflective_note",
+          "label": "발견한 가치 종합 정리",
+          "input_area_type": "free-writing",
+          "min_height": 450
+        }
+      ],
+      "estimated_minutes": 15,
+      "review_status": "draft",
+      "teacher_notes": ""
+    },
+    {
+      "activity_id": "act-23-2",
+      "lesson_id": "2-3차시",
+      "object_role": "activity_area",
+      "lesson_flow_stage": "during",
+      "activity_type": "freeform_html",
+      "level": "extension",
+      "learning_goal": "인물이 추구하는 가치를 담아 현대적인 메시지나 노래 가사로 재구성할 수 있다.",
+      "prompt_text": "윤희순 의병장의 '안사람 의병가'가 오늘날 우리에게 전하는 가치는 무엇일까요? 그 가치를 담아 현대의 사람들에게 전하는 '새로운 의병가'의 한 구절을 만들어 봅시다.",
+      "layout_template": "freeform_html",
+      "html_content": "<!DOCTYPE html><html lang='ko'><head><meta charset='UTF-8'><style>body{width:1000px;margin:0;padding:20px;background:transparent;font-family:'Apple SD Gothic Neo',sans-serif;} .card{background:#fff;padding:40px;border-radius:30px;border:2px solid #333;} .header-area{border-bottom:2px solid #333;margin-bottom:30px;padding-bottom:20px;} h1{font-size:32px;margin:0;color:#000;} .sub-prompt{background:#f9f9f9;padding:20px;border-radius:12px;margin-bottom:30px;font-size:18px;border-left:6px solid #333;} .lyrics-area{background:#fff;border:2px dashed #333;border-radius:20px;min-height:520px;padding:30px;position:relative;} .lyrics-area::after{content:'(여기에 가사나 메시지를 적어주세요)';position:absolute;top:50%;left:50%;transform:translate(-50%, -50%);color:#ccc;font-size:24px;pointer-events:none;} .reason-area{margin-top:30px;} .writing-box{background:#fff;border:2px solid #333;border-radius:12px;min-height:150px;padding:20px;font-size:18px;}</style></head><body><div class='card'><div class='header-area'><h1>[창작] 21세기 안사람 의병가: 가치의 울림</h1></div><div class='sub-prompt'>전기문 7~8쪽에 나오는 '안사람 의병가'의 핵심 가치(용기, 협력, 애국심 등)를 하나 정해 보세요. 그리고 그 가치를 오늘날 우리가 지켜야 할 모습으로 바꾸어 표현해 봅시다.</div><div class='lyrics-area'></div><div class='reason-area'><div style='font-weight:bold;margin-bottom:10px;'>내가 이 메시지에 담고 싶었던 핵심 가치와 그 이유는?</div><div class='writing-box'></div></div></div></body></html>",
+      "source_refs": [
+        7,
+        8,
+        14
+      ],
+      "student_writing_zones": [
+        {
+          "zone_id": "modern_lyrics",
+          "label": "현대적 의병가 창작",
+          "input_area_type": "free-writing",
+          "min_height": 520
+        },
+        {
+          "zone_id": "creation_reason",
+          "label": "창작 의도 및 선택한 가치",
+          "input_area_type": "inline-answer",
+          "min_height": 150
+        }
+      ],
+      "estimated_minutes": 20,
+      "review_status": "draft",
+      "teacher_notes": ""
+    },
+    {
+      "activity_id": "act-23-3",
+      "lesson_id": "2-3차시",
+      "object_role": "worksheet",
+      "lesson_flow_stage": "after",
+      "activity_type": "freeform_html",
+      "level": "core",
+      "learning_goal": "전기문에서 인물이 추구하는 가치를 파악하는 방법을 정리하고 적용할 수 있다.",
+      "prompt_text": "전기문을 읽고 인물의 가치를 파악하는 세 가지 방법을 정리해 보고, 내가 닮고 싶은 인물의 가치를 하나 찾아봅시다.",
+      "layout_template": "freeform_html",
+      "html_content": "<!DOCTYPE html><html lang='ko'><head><meta charset='UTF-8'><style>body{width:1000px;margin:0;padding:20px;background:transparent;font-family:'Apple SD Gothic Neo',sans-serif;} .card{background:#fff;padding:45px;border-radius:32px;border:1px solid #ddd;} h1{font-size:28px;border-left:8px solid #333;padding-left:15px;margin-bottom:30px;} .step-grid{display:grid;grid-template-columns:repeat(3, 1fr);gap:15px;margin-bottom:40px;} .step-box{border:2px solid #333;border-radius:16px;padding:20px;background:#fefefe;min-height:160px;} .step-num{font-weight:bold;color:#333;margin-bottom:10px;font-size:14px;text-transform:uppercase;} .apply-area{border-top:2px solid #eee;padding-top:30px;} .writing-huge{background:#fff;border:2px solid #333;border-radius:20px;min-height:480px;margin-top:20px;padding:30px;font-size:20px;}</style></head><body><div class='card'><h1>전기문 가치 탐정의 마무리 정리</h1><div class='step-grid'><div class='step-box'><div class='step-num'>방법 1</div>인물이 처한 [ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ] 상황을 먼저 살펴봅니다.</div><div class='step-box'><div class='step-num'>방법 2</div>인물의 [ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ]과(와) [ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ]을(를) 찾아봅니다.</div><div class='step-box'><div class='step-num'>방법 3</div>인물이 그렇게 행동한 [ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ]을(를) 생각하며 가치를 찾습니다.</div></div><div class='apply-area'><h2>🌟 나의 삶에 적용하기</h2><p>내가 좋아하는 다른 인물이나, 우리 주변의 인물을 한 명 떠올려 보세요. 그 사람의 어떤 모습에서 어떤 가치를 느꼈나요? 위의 방법을 참고하여 적어 봅시다.</p><div class='writing-huge'></div></div></div></body></html>",
+      "source_refs": [
+        14
+      ],
+      "student_writing_zones": [
+        {
+          "zone_id": "method_summary",
+          "label": "가치 파악 방법 빈칸 채우기",
+          "input_area_type": "inline-answer",
+          "min_height": 160
+        },
+        {
+          "zone_id": "personal_application",
+          "label": "다른 인물의 가치 찾기 적용",
+          "input_area_type": "free-writing",
+          "min_height": 480
+        }
+      ],
+      "estimated_minutes": 12,
+      "review_status": "draft",
+      "teacher_notes": ""
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "schema_version": "1.0.0",
+  "lessons": [
+    {
+      "lesson_id": "lesson-001",
+      "sheet_name": "1차시",
+      "display_title": "단원 도입",
+      "title_query": "단원 도입",
+      "end_before_query": "각기둥을 알아볼까요(1)",
+      "resource_id": "main"
+    },
+    {
+      "lesson_id": "lesson-002",
+      "sheet_name": "2-3차시",
+      "display_title": "각기둥을 알아볼까요(1)",
+      "title_query": "각기둥을 알아볼까요(1)",
+      "end_before_query": "각기둥을 알아볼까요(2)",
+      "resource_id": "main"
+    },
+    {
+      "lesson_id": "lesson-003",
+      "sheet_name": "4차시",
+      "display_title": "각기둥을 알아볼까요(2)",
+      "title_query": "각기둥을 알아볼까요(2)",
+      "end_before_query": "각기둥의 전개도를 알아볼까요(1)",
+      "resource_id": "main"
+    },
+    {
+      "lesson_id": "lesson-004",
+      "sheet_name": "5차시",
+      "display_title": "각기둥의 전개도를 알아볼까요(1)",
+      "title_query": "각기둥의 전개도를 알아볼까요(1)",
+      "end_before_query": "각기둥의 전개도를 알아볼까요(2)",
+      "resource_id": "main"
+    },
+    {
+      "lesson_id": "lesson-005",
+      "sheet_name": "6차시",
+      "display_title": "각기둥의 전개도를 알아볼까요(2)",
+      "title_query": "각기둥의 전개도를 알아볼까요(2)",
+      "end_before_query": "각뿔을 알아볼까요(1)",
+      "resource_id": "main"
+    },
+    {
+      "lesson_id": "lesson-006",
+      "sheet_name": "7차시",
+      "display_title": "각뿔을 알아볼까요(1)",
+      "title_query": "각뿔을 알아볼까요(1)",
+      "end_before_query": "각뿔을 알아볼까요(2)",
+      "resource_id": "main"
+    },
+    {
+      "lesson_id": "lesson-007",
+      "sheet_name": "8차시",
+      "display_title": "각뿔을 알아볼까요(2)",
+      "title_query": "각뿔을 알아볼까요(2)",
+      "end_before_query": "하하! 놀이와 만나요",
+      "resource_id": "main"
+    },
+    {
+      "lesson_id": "lesson-008",
+      "sheet_name": "9차시",
+      "display_title": "하하! 놀이와 만나요",
+      "title_query": "하하! 놀이와 만나요",
+      "end_before_query": "와우! 세상과 만나요",
+      "resource_id": "main"
+    },
+    {
+      "lesson_id": "lesson-009",
+      "sheet_name": "10-11차시",
+      "display_title": "와우! 세상과 만나요",
+      "title_query": "와우! 세상과 만나요",
+      "end_before_query": "됐다! 마무리",
+      "resource_id": "main"
+    },
+    {
+      "lesson_id": "lesson-010",
+      "sheet_name": "12차시",
+      "display_title": "됐다! 마무리",
+      "title_query": "됐다! 마무리",
+      "end_before_query": null,
+      "resource_id": "main"
+    }
+  ]
+}

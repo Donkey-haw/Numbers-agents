@@ -1,0 +1,113 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-03-26T10:00:00+09:00",
+  "lesson_id": "2-3차시",
+  "activities": [
+    {
+      "activity_id": "act-2-3-1",
+      "lesson_id": "2-3차시",
+      "object_role": "learning_note",
+      "lesson_flow_stage": "during",
+      "activity_type": "freeform_html",
+      "level": "core",
+      "learning_goal": "윤희순의 주요 활동과 시대적 배경을 연결하여 정리할 수 있다.",
+      "prompt_text": "전기문을 읽으며 인물이 처한 상황과 그에 따른 행동을 흐름에 따라 메모해 봅시다.",
+      "layout_template": "freeform_html",
+      "html_content": "<!DOCTYPE html><html lang='ko'><head><meta charset='UTF-8'><style>body{width:1600px;margin:0;padding:40px;background:transparent;font-family:'Noto Sans KR',sans-serif;color:#333;}.card{background:#fff;padding:40px;border-radius:32px;box-shadow:none;border:1px solid #eee;}.header{display:flex;align-items:center;margin-bottom:30px;}.badge{background:#4A90E2;color:#fff;padding:8px 20px;border-radius:12px;font-weight:700;font-size:24px;margin-right:20px;}.title{font-size:36px;font-weight:800;letter-spacing:-1px;}.grid-container{display:grid;grid-template-columns:1fr 1fr;gap:30px;margin-top:20px;}.box{border:3px solid #333;border-radius:20px;background:#fff;padding:24px;}.box-label{font-size:22px;font-weight:700;margin-bottom:15px;color:#4A90E2;display:flex;align-items:center;}.box-label::before{content:'';display:inline-block;width:12px;height:12px;background:#4A90E2;border-radius:50%;margin-right:10px;}.writing-area{min-height:450px;font-size:20px;line-height:1.6;color:#666;}</style></head><body><div class='card'><div class='header'><div class='badge'>수업 메모</div><div class='title'>의병장 윤희순의 발자취 기록하기</div></div><div class='grid-container'><div class='box'><div class='box-label'>당시의 시대 상황 (나라의 위기)</div><div class='writing-area'></div></div><div class='box'><div class='box-label'>윤희순의 주요 활동 (대응과 노력)</div><div class='writing-area'></div></div></div><div class='box' style='margin-top:30px;'><div class='box-label'>기록을 통해 알 수 있는 인물의 마음가짐</div><div class='writing-area' style='min-height:200px;'></div></div></div></body></html>",
+      "source_refs": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "student_writing_zones": [
+        {
+          "zone_id": "context_note",
+          "label": "시대 상황 메모",
+          "input_area_type": "free-writing",
+          "min_height": 450
+        },
+        {
+          "zone_id": "action_note",
+          "label": "주요 활동 메모",
+          "input_area_type": "free-writing",
+          "min_height": 450
+        },
+        {
+          "zone_id": "value_inference",
+          "label": "마음가짐 정리",
+          "input_area_type": "free-writing",
+          "min_height": 200
+        }
+      ],
+      "estimated_minutes": 15,
+      "review_status": "draft"
+    },
+    {
+      "activity_id": "act-2-3-2",
+      "lesson_id": "2-3차시",
+      "object_role": "activity_area",
+      "lesson_flow_stage": "during",
+      "activity_type": "freeform_html",
+      "level": "on-level",
+      "learning_goal": "인물의 말과 행동을 통해 추구하는 가치를 논리적으로 도출할 수 있다.",
+      "prompt_text": "윤희순의 특정한 말이나 행동을 하나 고르고, 그것이 어떤 가치를 보여주는지 증거를 들어 설명해 봅시다.",
+      "layout_template": "freeform_html",
+      "html_content": "<!DOCTYPE html><html lang='ko'><head><meta charset='UTF-8'><style>body{width:1600px;margin:0;padding:40px;background:transparent;font-family:'Noto Sans KR',sans-serif;color:#333;}.card{background:#fff;padding:50px;border-radius:40px;border:1px solid #ddd;}.header{margin-bottom:40px;border-left:10px solid #E67E22;padding-left:25px;}.title{font-size:38px;font-weight:900;margin:0;}.subtitle{font-size:22px;color:#666;margin-top:10px;}.content-layout{display:flex;flex-direction:column;gap:35px;}.input-group{display:flex;flex-direction:column;gap:15px;}.label{font-size:24px;font-weight:700;color:#E67E22;}.writing-box{background:#fff;border:3px solid #333;border-radius:24px;padding:30px;min-height:150px;font-size:24px;}.large-box{min-height:480px;}</style></head><body><div class='card'><div class='header'><h1 class='title'>가치의 증거: 왜 그렇게 생각하나요?</h1><p class='subtitle'>인물의 선택 뒤에 숨겨진 '가치'의 뿌리를 찾아봅시다.</p></div><div class='content-layout'><div class='input-group'><div class='label'>1. 가장 인상 깊은 인물의 말이나 행동</div><div class='writing-box'></div></div><div class='input-group'><div class='label'>2. 이 행동에서 느껴지는 핵심 가치 (예: 애국, 용기, 끈기 등)</div><div class='writing-box' style='min-height:80px;'></div></div><div class='input-group'><div class='label'>3. 그렇게 판단한 구체적인 이유와 근거</div><div class='writing-box large-box'></div></div></div></div></body></html>",
+      "source_refs": [
+        11,
+        12,
+        13
+      ],
+      "student_writing_zones": [
+        {
+          "zone_id": "target_event",
+          "label": "선택한 말이나 행동",
+          "input_area_type": "inline-answer",
+          "min_height": 150
+        },
+        {
+          "zone_id": "core_value",
+          "label": "핵심 가치 키워드",
+          "input_area_type": "inline-answer",
+          "min_height": 80
+        },
+        {
+          "zone_id": "reasoning_evidence",
+          "label": "판단 근거 및 이유",
+          "input_area_type": "free-writing",
+          "min_height": 480
+        }
+      ],
+      "estimated_minutes": 20,
+      "review_status": "draft"
+    },
+    {
+      "activity_id": "act-2-3-3",
+      "lesson_id": "2-3차시",
+      "object_role": "worksheet",
+      "lesson_flow_stage": "after",
+      "activity_type": "freeform_html",
+      "level": "extension",
+      "learning_goal": "인물이 추구한 가치를 자신의 삶과 연결하여 내면화할 수 있다.",
+      "prompt_text": "윤희순이 지키고자 했던 가치를 오늘날 나의 상황에 적용한다면 어떻게 실천할 수 있을지 계획해 봅시다.",
+      "layout_template": "freeform_html",
+      "html_content": "<!DOCTYPE html><html lang='ko'><head><meta charset='UTF-8'><style>body{width:1600px;margin:0;padding:40px;background:transparent;font-family:'Noto Sans KR',sans-serif;color:#333;}.card{background:#fff;padding:60px;border-radius:48px;border:2px solid #333;}.header-section{text-align:center;margin-bottom:50px;}.main-tag{display:inline-block;background:#333;color:#fff;padding:10px 30px;border-radius:50px;font-size:20px;font-weight:700;margin-bottom:20px;}.main-title{font-size:42px;font-weight:900;margin:0;letter-spacing:-2px;}.comparison-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;margin-top:40px;}.comp-box{border:3px dashed #ccc;border-radius:30px;padding:30px;background:#F9F9F9;}.comp-box.active{border-style:solid;border-color:#27AE60;background:#fff;}.label-tag{display:inline-block;background:#27AE60;color:#fff;padding:6px 18px;border-radius:8px;font-weight:700;margin-bottom:20px;}.writing-area{min-height:520px;background:#fff;border:2px solid #eee;border-radius:15px;}</style></head><body><div class='card'><div class='header-section'><div class='main-tag'>가치 연결하기</div><h1 class='main-title'>윤희순의 가치, 나의 삶에서 꽃피우기</h1></div><div class='comparison-grid'><div class='comp-box'><div class='label-tag' style='background:#999;'>과거: 윤희순의 가치 실천</div><div style='font-size:22px; line-height:1.7; color:#555;'>윤희순은 나라를 되찾기 위해<br><b>안사람 의병가</b>를 지어 사람들의<br>마음을 하나로 모으고, 직접 군자금을<br>모으는 용기를 보여주었습니다.</div><div style='margin-top:30px; font-weight:700; font-size:24px; color:#333;'>추구한 가치: [ 애국 / 용기 ]</div></div><div class='comp-box active'><div class='label-tag'>오늘날: 나의 가치 실천</div><div style='font-size:20px; color:#666; margin-bottom:15px;'>내가 소중히 여기는 공동체(학교, 가족, 지구 등)를 위해 내가 할 수 있는 구체적인 행동은 무엇일까요?</div><div class='writing-area'></div></div></div></div></body></html>",
+      "source_refs": [
+        14
+      ],
+      "student_writing_zones": [
+        {
+          "zone_id": "my_value_action",
+          "label": "나의 실천 계획 쓰기",
+          "input_area_type": "free-writing",
+          "min_height": 520
+        }
+      ],
+      "estimated_minutes": 15,
+      "review_status": "draft"
+    }
+  ]
+}

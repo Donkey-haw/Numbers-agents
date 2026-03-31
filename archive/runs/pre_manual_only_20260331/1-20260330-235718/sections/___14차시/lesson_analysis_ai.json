@@ -1,0 +1,70 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-03-31T09:00:00.000000+00:00",
+  "lesson_id": "14차시",
+  "sheet_name": "14차시",
+  "lesson_title": "1단원 정리 — [단원 마무리] 나만의 누리집 완성하기 / 창의·융 합 사고력 쑥쑥",
+  "lesson_type": "summary",
+  "pdf_pages": [
+    49
+  ],
+  "essential_question": "우리나라의 민주화와 산업화 과정, 평화 통일을 위한 노력의 핵심 내용을 체계적으로 정리하고 갈무리할 수 있는가?",
+  "learning_goals": [
+    "민주화 운동(4·19, 5·18, 6월)과 산업화의 단계별 발전 과정을 종합적으로 요약할 수 있다.",
+    "단원에서 배운 핵심 용어를 사용하여 나만의 누리집(정리 활동)을 완성할 수 있다."
+  ],
+  "key_concepts": [
+    "민주화 운동",
+    "산업화 과정",
+    "6월 민주 항쟁",
+    "지방 자치제",
+    "경제 성장"
+  ],
+  "vocabulary": [
+    "독재 정권",
+    "대통령 직선제",
+    "중화학 공업",
+    "첨단 산업",
+    "나만의 누리집"
+  ],
+  "misconceptions": [
+    "민주화와 산업화가 서로 관련 없는 독립적인 사건들의 나열이라고 오해할 수 있음."
+  ],
+  "difficulty_band": "on-level",
+  "content_chunks": [
+    {
+      "chunk_id": "14차시-chunk-1",
+      "label": "단원 핵심 내용 정리",
+      "content_type": "summary",
+      "knowledge_type": "concept",
+      "summary": "민주화 운동의 흐름(독재 정권 대응, 6월 민주 항쟁 등)과 산업화의 시기별 특징(60년대 경공업 ~ 2000년대 첨단 산업)을 복습함.",
+      "source_pages": [
+        49
+      ],
+      "suggested_activity_types": [
+        "learning_note",
+        "worksheet"
+      ]
+    },
+    {
+      "chunk_id": "14차시-chunk-2",
+      "label": "나만의 누리집 완성하기",
+      "content_type": "activity",
+      "knowledge_type": "application",
+      "summary": "배운 내용을 바탕으로 빈칸을 채우거나 카드 뉴스를 구성하여 단원 학습 결과를 시각적으로 정리하는 활동.",
+      "source_pages": [
+        49
+      ],
+      "suggested_activity_types": [
+        "see_think_wonder",
+        "learning_note"
+      ]
+    }
+  ],
+  "source_page_refs": [
+    49
+  ],
+  "analysis_confidence": 0.95,
+  "review_status": "draft",
+  "notes": "기존 베이스라인은 다른 단원의 내용이므로 현재 단원 정리(민주화와 산업화) 텍스트를 바탕으로 전면 재작성함. 페이지 49의 요약 정보를 충실히 반영."
+}

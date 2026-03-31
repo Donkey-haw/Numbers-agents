@@ -1,5 +1,6 @@
 import argparse
 import json
+import re
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -13,6 +14,87 @@ def parse_args() -> argparse.Namespace:
 
 def utc_now() -> str:
     return datetime.now(timezone.utc).isoformat()
+
+
+def normalize_spaces(text: str) -> str:
+    return re.sub(r"\s+", " ", (text or "")).strip()
+
+
+QUESTION_TOKENS = {
+    "무엇",
+    "무엇일까요",
+    "왜",
+    "어떻게",
+    "어떤",
+    "일어났을까요",
+    "이루었을까요",
+    "달라졌을까요",
+    "살펴볼까요",
+}
+
+
+def lesson_topic(analysis: dict) -> str:
+    title = normalize_spaces(analysis.get("lesson_title") or analysis["lesson_id"])
+    title = re.sub(r"[?？]+$", "", title).strip()
+    return title or analysis["lesson_id"]
+
+
+def first_learning_goal(analysis: dict) -> str:
+    goals = analysis.get("learning_goals") or []
+    if goals:
+        return goals[0]
+    return f"{lesson_topic(analysis)}의 핵심 내용을 설명할 수 있다."
+
+
+def primary_concepts(analysis: dict, limit: int = 3) -> list[str]:
+    concepts = []
+    for item in analysis.get("key_concepts", []):
+        cleaned = normalize_spaces(item)
+        if not cleaned or cleaned in QUESTION_TOKENS:
+            continue
+        concepts.append(cleaned)
+    return concepts[:limit]
+
+
+def focus_phrase(analysis: dict) -> str:
+    concepts = primary_concepts(analysis, limit=2)
+    if len(concepts) >= 2:
+        return f"{concepts[0]} {concepts[1]}"
+    if concepts:
+        return concepts[0]
+    return lesson_topic(analysis)
+
+
+def misconception_text(analysis: dict) -> str:
+    misconceptions = [normalize_spaces(item) for item in analysis.get("misconceptions", []) if normalize_spaces(item)]
+    if misconceptions:
+        return misconceptions[0]
+    return f"{focus_phrase(analysis)}를 단순한 사실 암기로만 이해할 수 있다."
+
+
+def chunk_summaries(analysis: dict) -> list[str]:
+    chunks = []
+    for chunk in analysis.get("content_chunks", []):
+        summary = normalize_spaces(chunk.get("summary", ""))
+        if summary:
+            chunks.append(summary)
+    return chunks
+
+
+def main_chunk_pages(analysis: dict) -> list[int]:
+    chunks = analysis.get("content_chunks", [])
+    if chunks and chunks[0].get("source_pages"):
+        return chunks[0]["source_pages"]
+    return analysis.get("source_page_refs", [])
+
+
+def teacher_note_keywords(analysis: dict, limit: int = 3) -> str:
+    concepts = primary_concepts(analysis, limit=limit)
+    if not concepts:
+        return lesson_topic(analysis)
+    if len(concepts) == 1:
+        return concepts[0]
+    return ", ".join(concepts)
 
 
 def build_activity_plan(analysis: dict) -> dict:
@@ -29,7 +111,10 @@ def build_activity_plan(analysis: dict) -> dict:
 
 
 def build_learning_note(analysis: dict) -> dict:
-    misconception = analysis["misconceptions"][0] if analysis["misconceptions"] else f"{analysis['lesson_title']}를 단순한 사실 암기로 이해한다."
+    topic = lesson_topic(analysis)
+    misconception = misconception_text(analysis)
+    learning_goal = first_learning_goal(analysis)
+    key_phrase = focus_phrase(analysis)
     return {
         "activity_id": f"{analysis['lesson_id']}-learning-note",
         "lesson_id": analysis["lesson_id"],
@@ -37,11 +122,11 @@ def build_learning_note(analysis: dict) -> dict:
         "lesson_flow_stage": "during",
         "activity_type": "learning_note",
         "level": "on-level",
-        "learning_goal": analysis["learning_goals"][0],
-        "prompt_text": f"수업에서 들은 설명을 바탕으로 {analysis['lesson_title']}를 자신의 말로 정리하고, 헷갈리기 쉬운 생각을 바로잡아 봅시다.",
+        "learning_goal": learning_goal,
+        "prompt_text": f"오늘 배운 {topic}의 핵심 내용을 자신의 말로 정리하고, 헷갈리기 쉬운 생각을 바로잡아 봅시다.",
         "layout_template": "learning_note",
-        "source_refs": analysis["source_page_refs"],
-        "teacher_notes": f"교과서 문장 복사가 아니라 자신의 말 정리인지, 그리고 '{misconception}'을 스스로 수정하는 흔적이 있는지 확인한다.",
+        "source_refs": analysis.get("source_page_refs", []),
+        "teacher_notes": f"교과서 문장을 그대로 옮기지 않고 '{key_phrase}'이라는 내용을 자신의 말로 설명하는지, 그리고 '{misconception}' 같은 오해를 스스로 수정하는지 확인한다.",
         "student_writing_zones": [
             {"zone_id": "summary", "label": "수업시간에 들은 내용 정리", "input_area_type": "lined", "min_height": 620},
             {"zone_id": "question", "label": "헷갈렸던 생각 바로잡기 / 질문", "input_area_type": "free-writing", "min_height": 220}
@@ -52,8 +137,11 @@ def build_learning_note(analysis: dict) -> dict:
 
 
 def build_stw(analysis: dict) -> dict:
-    first_chunk_pages = analysis["content_chunks"][0]["source_pages"]
-    concept = analysis["key_concepts"][0] if analysis["key_concepts"] else analysis["lesson_title"]
+    topic = lesson_topic(analysis)
+    first_chunk_pages = main_chunk_pages(analysis)
+    concept = focus_phrase(analysis)
+    summaries = chunk_summaries(analysis)
+    anchor_summary = summaries[0] if summaries else f"{topic}와 관련된 사례를 떠올려 봅시다."
     return {
         "activity_id": f"{analysis['lesson_id']}-see-think-wonder",
         "lesson_id": analysis["lesson_id"],
@@ -61,11 +149,11 @@ def build_stw(analysis: dict) -> dict:
         "lesson_flow_stage": "during",
         "activity_type": "see_think_wonder",
         "level": "core",
-        "learning_goal": f"{analysis['lesson_title']}를 생활 속 사례와 연결해 해석하고 새로운 질문을 만들 수 있다.",
-        "prompt_text": f"교과서 설명을 그대로 옮기지 말고, {concept}이 실제 생활이나 사회 문제에서 어떻게 나타나는지 떠올리며 관찰, 해석, 질문을 넓혀 봅시다.",
+        "learning_goal": f"{topic}를 실제 사례와 연결해 해석하고 새로운 질문을 만들 수 있다.",
+        "prompt_text": f"'{anchor_summary}'를 떠올리며, '{concept}'라는 주제가 실제 생활이나 사회에서 어떻게 드러나는지 관찰하고 해석한 뒤 더 알아보고 싶은 질문을 만들어 봅시다.",
         "layout_template": "see_think_wonder",
         "source_refs": first_chunk_pages,
-        "teacher_notes": "교과서 속 장면 묘사에 머물지 않고 실제 사례 상상, 해석, 추가 질문으로 확장되는지 확인한다.",
+        "teacher_notes": f"교과서 문장 재진술에 머물지 않고, '{concept}'를 실제 사례와 연결해 해석하고 질문을 확장하는지 확인한다.",
         "student_writing_zones": [
             {"zone_id": "see", "label": "생활 속에서 비슷한 장면 / 사례 찾기", "input_area_type": "free-writing", "min_height": 380},
             {"zone_id": "think", "label": "왜 그렇게 보이는지 해석하기", "input_area_type": "free-writing", "min_height": 380},
@@ -77,10 +165,14 @@ def build_stw(analysis: dict) -> dict:
 
 
 def build_worksheet(analysis: dict) -> dict:
-    concepts = analysis["key_concepts"][:2]
+    topic = lesson_topic(analysis)
+    concepts = primary_concepts(analysis, limit=2)
     while len(concepts) < 2:
         concepts.append(f"핵심 개념 {len(concepts) + 1}")
-    essential_question = analysis.get("essential_question") or f"{analysis['lesson_title']}를 다른 상황에 적용해 본다."
+    essential_question = normalize_spaces(analysis.get("essential_question") or f"{topic}를 다른 상황에 적용해 본다.")
+    summaries = chunk_summaries(analysis)
+    anchor_summary = summaries[-1] if summaries else f"{topic}를 새로운 사례에 적용해 봅시다."
+    teacher_keywords = teacher_note_keywords(analysis)
     return {
         "activity_id": f"{analysis['lesson_id']}-worksheet",
         "lesson_id": analysis["lesson_id"],
@@ -88,11 +180,11 @@ def build_worksheet(analysis: dict) -> dict:
         "lesson_flow_stage": "after",
         "activity_type": "worksheet",
         "level": "extension",
-        "learning_goal": f"{analysis['lesson_title']}의 핵심 개념을 새로운 사례에 적용하고 근거를 들어 판단할 수 있다.",
-        "prompt_text": f"새로운 사례를 떠올리거나 제시된 상황을 보고, {analysis['lesson_title']}의 관점에서 더 바람직한 선택을 근거와 함께 판단해 봅시다.",
+        "learning_goal": f"{topic}의 핵심 개념을 새로운 사례에 적용하고 근거를 들어 판단할 수 있다.",
+        "prompt_text": f"'{anchor_summary}'를 바탕으로 새로운 사례를 떠올리거나 제시된 상황을 보고, {topic}의 관점에서 더 바람직한 선택을 근거와 함께 판단해 봅시다.",
         "layout_template": "worksheet",
-        "source_refs": analysis["source_page_refs"],
-        "teacher_notes": f"'{essential_question}'에 답하듯 사고를 확장하는지, 그리고 {', '.join(analysis['key_concepts'][:3])} 중 적어도 두 개 이상을 근거와 연결하는지 본다.",
+        "source_refs": analysis.get("source_page_refs", []),
+        "teacher_notes": f"'{essential_question}'에 답하듯 사고를 확장하는지, 그리고 {teacher_keywords}를 근거와 연결해 판단하는지 확인한다.",
         "student_writing_zones": [
             {"zone_id": "short-a", "label": f"새 사례에서 보이는 {concepts[0]}", "input_area_type": "inline-answer", "min_height": 90},
             {"zone_id": "short-b", "label": f"판단에 필요한 {concepts[1]} 근거", "input_area_type": "inline-answer", "min_height": 90},

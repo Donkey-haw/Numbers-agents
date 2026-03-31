@@ -1,0 +1,96 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-03-31T10:00:00+09:00",
+  "lesson_id": "6차시",
+  "activities": [
+    {
+      "activity_id": "act-6-1",
+      "lesson_id": "6차시",
+      "object_role": "learning_note",
+      "lesson_flow_stage": "during",
+      "activity_type": "freeform_html",
+      "level": "core",
+      "learning_goal": "민주주의에서 선거의 의미와 4대 원칙을 수업 내용을 바탕으로 정리할 수 있다.",
+      "prompt_text": "수업을 들으며 선거가 왜 '민주주의의 꽃'인지, 그리고 공정한 선거를 위한 4대 원칙은 무엇인지 정리해 봅시다.",
+      "layout_template": "freeform_html",
+      "html_content": "<!DOCTYPE html><html lang='ko'><head><meta charset='UTF-8'><style>body{width:1600px;margin:0;padding:40px;background:transparent;font-family:'Noto Sans KR', sans-serif;box-sizing:border-box;}.card{background:#fff;border-radius:32px;padding:60px;box-shadow:none;border:none;}.header{display:flex;align-items:center;margin-bottom:48px;}.badge{background:#E0F2F1;color:#00796B;padding:12px 24px;border-radius:12px;font-weight:700;font-size:24px;margin-right:24px;}.title{font-size:48px;font-weight:900;color:#1A1A1A;margin:0;}.section-title{font-size:32px;font-weight:700;color:#333;margin:40px 0 24px;display:flex;align-items:center;}.section-title::before{content:'';display:inline-block;width:12px;height:32px;background:#00796B;margin-right:16px;border-radius:4px;}.note-area{background:#fff;border:3px solid #333;border-radius:20px;padding:32px;min-height:300px;font-size:24px;line-height:1.6;color:#444;}.grid{display:grid;grid-template-columns:1fr 1fr;gap:32px;margin-top:24px;}.principle-box{border:3px solid #333;border-radius:20px;padding:24px;min-height:220px;}.principle-name{font-size:28px;font-weight:800;color:#00796B;margin-bottom:16px;}</style></head><body><div class='card'><div class='header'><div class='badge'>오늘의 배움 정리</div><h1 class='title'>선거, 민주주의의 꽃</h1></div><div class='section-title'>선거가 '민주주의의 꽃'이라고 불리는 이유 (수업 핵심 메모)</div><div class='note-area' id='why_flower'></div><div class='section-title'>공정한 선거를 위한 4대 원칙 정리하기</div><div class='grid'><div class='principle-box'><div class='principle-name'>보통 선거</div><div class='note-content' id='principle_1'></div></div><div class='principle-box'><div class='principle-name'>평등 선거</div><div class='note-content' id='principle_2'></div></div><div class='principle-box'><div class='principle-name'>직접 선거</div><div class='note-content' id='principle_3'></div></div><div class='principle-box'><div class='principle-name'>비밀 선거</div><div class='note-content' id='principle_4'></div></div></div></div></body></html>",
+      "source_refs": [
+        54,
+        56,
+        60
+      ],
+      "student_writing_zones": [
+        {
+          "zone_id": "why_flower",
+          "label": "선거의 중요성 메모",
+          "input_area_type": "free-writing",
+          "min_height": 300
+        },
+        {
+          "zone_id": "principle_1",
+          "label": "보통 선거 설명",
+          "input_area_type": "inline-answer",
+          "min_height": 120
+        },
+        {
+          "zone_id": "principle_2",
+          "label": "평등 선거 설명",
+          "input_area_type": "inline-answer",
+          "min_height": 120
+        },
+        {
+          "zone_id": "principle_3",
+          "label": "직접 선거 설명",
+          "input_area_type": "inline-answer",
+          "min_height": 120
+        },
+        {
+          "zone_id": "principle_4",
+          "label": "비밀 선거 설명",
+          "input_area_type": "inline-answer",
+          "min_height": 120
+        }
+      ],
+      "estimated_minutes": 15,
+      "review_status": "draft"
+    },
+    {
+      "activity_id": "act-6-2",
+      "lesson_id": "6차시",
+      "object_role": "activity_area",
+      "lesson_flow_stage": "after",
+      "activity_type": "freeform_html",
+      "level": "on-level",
+      "learning_goal": "유권자의 관점에서 후보자의 공약을 분석하고 비판적으로 사고할 수 있다.",
+      "prompt_text": "내가 우리 동네의 유권자라면 어떤 공약을 선택할까요? 한 후보자의 가상 공약을 분석해 봅시다.",
+      "layout_template": "freeform_html",
+      "html_content": "<!DOCTYPE html><html lang='ko'><head><meta charset='UTF-8'><style>body{width:1600px;margin:0;padding:40px;background:transparent;font-family:'Noto Sans KR', sans-serif;box-sizing:border-box;}.card{background:#fff;border-radius:32px;padding:60px;border:none;}.header{margin-bottom:48px;border-bottom:4px solid #333;padding-bottom:24px;}.title{font-size:48px;font-weight:900;color:#1A1A1A;margin:0;}.case-study{background:#FFFDE7;border:2px dashed #FBC02D;border-radius:20px;padding:32px;margin-bottom:40px;}.case-title{font-size:28px;font-weight:800;color:#F57F17;margin-bottom:16px;}.case-content{font-size:24px;line-height:1.6;color:#5D4037;}.analysis-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;}.question-block{display:flex;flex-direction:column;}.question-label{font-size:28px;font-weight:800;color:#333;margin-bottom:16px;display:flex;align-items:center;}.question-label span{background:#333;color:#fff;width:36px;height:36px;display:inline-flex;justify-content:center;align-items:center;border-radius:50%;margin-right:12px;font-size:20px;}.writing-box{background:#fff;border:3px solid #333;border-radius:20px;min-height:480px;padding:24px;}</style></head><body><div class='card'><div class='header'><h1 class='title'>유권자의 눈으로 공약 분석하기</h1></div><div class='case-study'><div class='case-title'>[가상 후보의 공약] \"우리 동네 모든 어린이에게 매달 장난감 구입비 10만원을 지급하겠습니다!\"</div><div class='case-content'>이 공약은 매력적으로 보이지만, 동네 예산이 충분한지, 다른 시급한 문제(낡은 도로 수리, 노인 복지 등)보다 우선인지 생각해보아야 합니다.</div></div><div class='analysis-grid'><div class='question-block'><div class='question-label'><span>1</span>이 공약이 실현되면 어떤 점이 좋을까요?</div><div class='writing-box' id='pros'></div></div><div class='question-block'><div class='question-label'><span>2</span>공약 실현을 위해 걱정되는 점이나 질문하고 싶은 것은?</div><div class='writing-box' id='cons'></div></div></div><div class='question-block' style='margin-top:40px;'><div class='question-label'><span>3</span>결론: 당신은 이 후보를 선택하겠습니까? 그 이유는?</div><div class='writing-box' id='conclusion' style='min-height:280px;'></div></div></div></body></html>",
+      "source_refs": [
+        58,
+        59
+      ],
+      "student_writing_zones": [
+        {
+          "zone_id": "pros",
+          "label": "긍정적 영향 분석",
+          "input_area_type": "free-writing",
+          "min_height": 480
+        },
+        {
+          "zone_id": "cons",
+          "label": "우려되는 점 및 질문",
+          "input_area_type": "free-writing",
+          "min_height": 480
+        },
+        {
+          "zone_id": "conclusion",
+          "label": "최종 선택과 이유",
+          "input_area_type": "free-writing",
+          "min_height": 280
+        }
+      ],
+      "estimated_minutes": 20,
+      "review_status": "draft"
+    }
+  ]
+}

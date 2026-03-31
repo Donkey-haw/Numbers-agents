@@ -1,0 +1,84 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-03-31T00:00:00.000000+00:00",
+  "lesson_id": "9-10차시",
+  "sheet_name": "9-10차시",
+  "lesson_title": "국가기관이 하는 일 — 국회의 구성과 하는 일 파악하기",
+  "lesson_type": "core",
+  "pdf_pages": [
+    74
+  ],
+  "essential_question": "국민의 대표 기관인 국회는 어떻게 구성되며, 우리 사회에서 어떤 중요한 역할을 수행할까요?",
+  "learning_goals": [
+    "국회가 국민의 대표 기관임을 이해하고 국회의원의 구성과 임기를 설명할 수 있다.",
+    "국회가 법을 만들고 고치는 일이 왜 가장 중요한 역할인지 그 이유를 설명할 수 있다.",
+    "국회 의사당 본회의장의 구조와 기능을 파악하여 국회의 의사 결정 과정을 이해할 수 있다."
+  ],
+  "key_concepts": [
+    "국회",
+    "국회의원",
+    "국민의 대표 기관",
+    "입법",
+    "본회의"
+  ],
+  "vocabulary": [
+    "국가기관",
+    "본회의",
+    "임기",
+    "검증",
+    "발언대"
+  ],
+  "misconceptions": [
+    "국회의원이 법을 만드는 것과 나의 일상생활은 상관이 없다고 생각할 수 있다.",
+    "국회는 단순히 회의만 하는 곳이며 법을 만드는 것 외의 기능(투표 등)을 간과할 수 있다."
+  ],
+  "difficulty_band": "on-level",
+  "content_chunks": [
+    {
+      "chunk_id": "9-10차시-chunk-1",
+      "label": "국회의 의미와 구성",
+      "content_type": "text",
+      "knowledge_type": "concept",
+      "summary": "국회는 선거로 선출된 국민의 대표(임기 4년)들로 구성된 대표 기관임을 학습한다.",
+      "source_pages": [
+        74
+      ],
+      "suggested_activity_types": [
+        "learning_note"
+      ]
+    },
+    {
+      "chunk_id": "9-10차시-chunk-2",
+      "label": "국회가 하는 일(입법)",
+      "content_type": "mixed",
+      "knowledge_type": "cause-effect",
+      "summary": "법은 국가 권력 행사의 근거가 되므로, 국민의 뜻에 따라 법을 만들고 고치는 일이 국회의 가장 중요한 임무임을 파악한다.",
+      "source_pages": [
+        74
+      ],
+      "suggested_activity_types": [
+        "see_think_wonder",
+        "worksheet"
+      ]
+    },
+    {
+      "chunk_id": "9-10차시-chunk-3",
+      "label": "국회 의사당 본회의장 구조",
+      "content_type": "diagram",
+      "knowledge_type": "fact",
+      "summary": "발언대, 대형 전광판, 국회의원석 등 본회의장의 구조를 통해 국회의원들이 회의하고 투표하는 과정을 시각적으로 이해한다.",
+      "source_pages": [
+        74
+      ],
+      "suggested_activity_types": [
+        "see_think_wonder"
+      ]
+    }
+  ],
+  "source_page_refs": [
+    74
+  ],
+  "analysis_confidence": 0.9,
+  "review_status": "draft",
+  "notes": "추출된 텍스트와 본회의장 도해 정보를 바탕으로 분석을 보강함. 74쪽 단일 페이지 구성이 명확함."
+}

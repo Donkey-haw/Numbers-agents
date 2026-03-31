@@ -1,0 +1,16 @@
+{
+  "schema_version": "1.0.0",
+  "stage": "review_lesson_agent",
+  "lesson_id": "14차시",
+  "status": "succeeded",
+  "decision": "pass",
+  "findings": [
+    {
+      "severity": "info",
+      "message": "교과서 84~87쪽(PDF 51~54쪽)의 시 감상, 자기 점검, 어휘 학습 내용을 충실히 반영하였습니다. 특히 어휘 학습 부분의 구체적인 단어들을 추가하였습니다.",
+      "evidence_refs": []
+    }
+  ],
+  "blocking_issues": [],
+  "warnings": []
+}

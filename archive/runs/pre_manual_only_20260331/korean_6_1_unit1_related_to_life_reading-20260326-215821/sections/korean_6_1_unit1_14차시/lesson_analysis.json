@@ -1,0 +1,89 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-03-26T13:00:50.607754+00:00",
+  "lesson_id": "14차시",
+  "sheet_name": "14차시",
+  "lesson_title": "마무리하기",
+  "lesson_type": "summary",
+  "pdf_pages": [
+    51,
+    52,
+    53,
+    54
+  ],
+  "essential_question": "단원에서 배운 '인물이 추구하는 가치'를 작품을 통해 확인하고 자신의 학습 과정을 스스로 점검할 수 있는가?",
+  "learning_goals": [
+    "시 「난 탐험가」를 읽고 말하는 이가 추구하는 가치를 파악할 수 있다.",
+    "단원 학습 내용을 되돌아보고 자신의 성취도를 스스로 점검 및 평가할 수 있다.",
+    "단원 주요 어휘인 '종합하다', '적용하다', '개선하다'의 뜻을 익히고 문장에 활용할 수 있다."
+  ],
+  "key_concepts": [
+    "추구하는 가치",
+    "나다움",
+    "자기 성찰",
+    "어휘(종합·적용·개선)"
+  ],
+  "vocabulary": [
+    "종합하다",
+    "적용하다",
+    "개선하다",
+    "탐험가",
+    "나다움"
+  ],
+  "misconceptions": [
+    "추구하는 가치는 특별한 인물에게만 해당되는 것이 아니라, 누구나 일상과 작품 속에서 발견할 수 있는 삶의 태도임을 이해해야 한다."
+  ],
+  "difficulty_band": "on-level",
+  "content_chunks": [
+    {
+      "chunk_id": "14차시-chunk-1",
+      "label": "시 감상 및 가치 파악",
+      "content_type": "mixed",
+      "knowledge_type": "concept",
+      "summary": "시 「난 탐험가」를 읽고 길을 잃어도 즐거워하는 말하는 이의 태도를 통해 그가 추구하는 가치(도전, 나다움 등)를 파악한다.",
+      "source_pages": [
+        51,
+        52
+      ],
+      "suggested_activity_types": [
+        "see_think_wonder",
+        "learning_note"
+      ]
+    },
+    {
+      "chunk_id": "14차시-chunk-2",
+      "label": "단원 학습 정리 및 성찰",
+      "content_type": "summary",
+      "knowledge_type": "application",
+      "summary": "단원 전체에서 공부한 다섯 가지 핵심 성취 기준을 바탕으로 자신의 학습 정도를 스스로 평가하고 실천 방안을 생각한다.",
+      "source_pages": [
+        53
+      ],
+      "suggested_activity_types": [
+        "worksheet"
+      ]
+    },
+    {
+      "chunk_id": "14차시-chunk-3",
+      "label": "단원 어휘 학습",
+      "content_type": "text",
+      "knowledge_type": "procedure",
+      "summary": "학습에 자주 쓰이는 '종합하다', '적용하다', '개선하다'의 정의를 확인하고 이를 활용하여 올바른 문장을 만든다.",
+      "source_pages": [
+        54
+      ],
+      "suggested_activity_types": [
+        "learning_note"
+      ]
+    }
+  ],
+  "source_page_refs": [
+    51,
+    52,
+    53,
+    54
+  ],
+  "analysis_confidence": 0.95,
+  "review_status": "draft",
+  "notes": "시 「난 탐험가」를 통한 가치 파악, 단원 마무리 자기 평가, 필수 어휘 학습으로 구성됨. 텍스트 근거에 기반하여 세분화함."
+}

@@ -1,0 +1,54 @@
+{
+  "project_root": "/Users/jonyeock/Desktop/Tool/NumbersAuto",
+  "pdf_path": "textbook/사회/[사회]6_1_교과서.pdf",
+  "template_path": "빈 넘버스 파일.numbers",
+  "output_file": "output/social_6_1_unit1_평화_통일을_위한_노력.numbers",
+  "footer": "사회 6-1 · 1단원 · 평화 통일을 위한 노력",
+  "sections": [
+    {
+      "sheet_name": "2차시",
+      "card_file": "social_6_1_unit1_평화_통일을_위한_노력_2차시",
+      "title": "분단으로 나타난 문제점과 분단이 사회와 생활에 끼친 영향 알아보기",
+      "title_query": "분단으로 나타난 문제점과 분단이 사회와 생활에 끼친 영향 알아보기",
+      "badge": "2차시",
+      "accent": [
+        "#6366f1",
+        "#818cf8"
+      ]
+    },
+    {
+      "sheet_name": "3차시",
+      "card_file": "social_6_1_unit1_평화_통일을_위한_노력_3차시",
+      "title": "분단의 흔적이 남아 있는 장소 알아보기",
+      "title_query": "분단의 흔적이 남아 있는 장소 알아보기",
+      "badge": "3차시",
+      "accent": [
+        "#4f46e5",
+        "#7c3aed"
+      ]
+    },
+    {
+      "sheet_name": "4차시",
+      "card_file": "social_6_1_unit1_평화_통일을_위한_노력_4차시",
+      "title": "분단의 장소가 평화의 장소로 바뀐 사례 알아보기",
+      "title_query": "분단의 장소가 평화의 장소로 바뀐 사례 알아보기",
+      "badge": "4차시",
+      "accent": [
+        "#0f766e",
+        "#14b8a6"
+      ]
+    },
+    {
+      "sheet_name": "5-6차시",
+      "card_file": "social_6_1_unit1_평화_통일을_위한_노력_5_6차시",
+      "title": "평화 통일을 위한 노력 살펴보기",
+      "title_query": "평화 통일을 위한 노력 살펴보기",
+      "badge": "5-6차시",
+      "accent": [
+        "#1d4ed8",
+        "#3b82f6"
+      ]
+    }
+  ],
+  "end_before_query": "민주화 운동이 일어난 이유 알아보기"
+}

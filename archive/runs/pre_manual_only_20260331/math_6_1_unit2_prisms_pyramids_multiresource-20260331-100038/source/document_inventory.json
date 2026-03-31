@@ -1,0 +1,29 @@
+{
+  "schema_version": "1.0.0",
+  "documents": [
+    {
+      "document_id": "config",
+      "path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/configs/units/math/math_6_1_unit2_prisms_pyramids_multiresource.json",
+      "kind": "reference",
+      "exists": true,
+      "label": "math_6_1_unit2_prisms_pyramids_multiresource",
+      "notes": ""
+    },
+    {
+      "document_id": "math_textbook",
+      "path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/textbook/수학/[수학]6_1_교과서.pdf",
+      "kind": "textbook",
+      "exists": true,
+      "label": "수학",
+      "notes": ""
+    },
+    {
+      "document_id": "math_workbook",
+      "path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/textbook/수학/[수학]6_1_수학익힘책.pdf",
+      "kind": "supplement",
+      "exists": true,
+      "label": "수학익힘",
+      "notes": ""
+    }
+  ]
+}

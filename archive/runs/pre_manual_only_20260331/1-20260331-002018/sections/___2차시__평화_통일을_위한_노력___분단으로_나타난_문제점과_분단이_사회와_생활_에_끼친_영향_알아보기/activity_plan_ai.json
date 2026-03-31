@@ -1,0 +1,112 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-03-31T00:00:00+00:00",
+  "lesson_id": "2차시",
+  "activities": [
+    {
+      "activity_id": "act-2-1",
+      "lesson_id": "2차시",
+      "object_role": "learning_note",
+      "lesson_flow_stage": "during",
+      "activity_type": "freeform_html",
+      "level": "core",
+      "learning_goal": "분단으로 인한 국가적, 사회적 문제점을 수업 흐름에 따라 정리할 수 있다.",
+      "prompt_text": "수업을 들으며 우리 사회가 분단으로 인해 겪고 있는 어려움들을 두 가지 영역으로 나누어 정리해 봅시다.",
+      "layout_template": "freeform_html",
+      "html_content": "<!DOCTYPE html><html lang='ko'><head><meta charset='UTF-8'><style>body{width:1600px;margin:0;padding:40px;background:transparent;font-family:'Pretendard', 'Noto Sans KR', sans-serif;color:#333;display:flex;justify-content:center;} .card{width:1400px;background:#fff;border-radius:40px;padding:60px;box-shadow:0 10px 30px rgba(0,0,0,0.05);border:1px solid #eee;} .header{display:flex;align-items:center;margin-bottom:40px;} .badge{background:#FFD93D;color:#000;padding:12px 24px;border-radius:100px;font-weight:800;font-size:24px;margin-right:20px;} h1{font-size:42px;margin:0;letter-spacing:-1px;} .grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;margin-top:20px;} .section-title{font-size:28px;font-weight:700;margin-bottom:20px;display:flex;align-items:center;} .section-title::before{content:'';display:inline-block;width:12px;height:28px;background:#FFD93D;margin-right:15px;border-radius:4px;} .writing-zone{background:#fff;border:3px solid #333;border-radius:24px;height:650px;padding:30px;font-size:22px;color:#888;position:relative;} .writing-zone::after{content:'여기에 메모하세요 (수업 내용 정리)';position:absolute;top:30px;left:30px;opacity:0.5;} .footer-hint{margin-top:30px;font-size:20px;color:#666;background:#f8f9fa;padding:20px;border-radius:16px;border-left:5px solid #ccc;}</style></head><body><div class='card'><div class='header'><div class='badge'>수업 메모</div><h1>분단이 남긴 우리 사회의 문제점</h1></div><div class='grid'><div class='column'><div class='section-title'>국가적 문제 (군사·경제)</div><div class='writing-zone'></div></div><div class='column'><div class='section-title'>사회·문화적 문제 (사람·생활)</div><div class='writing-zone'></div></div></div><div class='footer-hint'>💡 팁: 국방비, 군사적 긴장, 이산가족, 언어와 생활 방식의 차이 등을 중심으로 기록해 보세요.</div></div></body></html>",
+      "source_refs": [
+        12,
+        13
+      ],
+      "teacher_notes": "학생들이 교사의 설명을 들으며 실시간으로 기록할 수 있도록 설계된 노트형 카드입니다.",
+      "student_writing_zones": [
+        {
+          "zone_id": "national_issues",
+          "label": "국가적 문제 메모",
+          "input_area_type": "free-writing",
+          "min_height": 650
+        },
+        {
+          "zone_id": "social_issues",
+          "label": "사회/문화적 문제 메모",
+          "input_area_type": "free-writing",
+          "min_height": 650
+        }
+      ],
+      "estimated_minutes": 15,
+      "review_status": "draft"
+    },
+    {
+      "activity_id": "act-2-2",
+      "lesson_id": "2차시",
+      "object_role": "activity_area",
+      "lesson_flow_stage": "during",
+      "activity_type": "freeform_html",
+      "level": "core",
+      "learning_goal": "이산가족과 북한 이탈 주민의 아픔에 공감하고, 문화 차이를 극복하기 위한 태도를 제시할 수 있다.",
+      "prompt_text": "오랜 시간 떨어져 살며 달라진 남북의 언어와 생활 모습을 살펴보고, 다시 하나가 되기 위해 우리가 가져야 할 마음은 무엇인지 적어 봅시다.",
+      "layout_template": "freeform_html",
+      "html_content": "<!DOCTYPE html><html lang='ko'><head><meta charset='UTF-8'><style>body{width:1600px;margin:0;padding:40px;background:transparent;font-family:'Pretendard', sans-serif;display:flex;justify-content:center;} .card{width:1400px;background:#fff;border-radius:40px;padding:60px;border:1px solid #eee;} .header{margin-bottom:40px;} .badge{background:#4D96FF;color:#fff;padding:10px 25px;border-radius:100px;font-weight:700;font-size:22px;display:inline-block;margin-bottom:15px;} h1{font-size:38px;margin:0;color:#1a1a1a;} .scenario{background:#f0f7ff;padding:30px;border-radius:24px;margin:30px 0;font-size:24px;line-height:1.6;color:#2c3e50;border-left:8px solid #4D96FF;} .main-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;} .box-label{font-size:24px;font-weight:700;margin-bottom:15px;color:#333;} .writing-area{background:#fff;border:3px solid #333;border-radius:20px;height:500px;padding:25px;font-size:22px;} .full-width{grid-column: span 2; margin-top:20px;} .bridge-zone{background:#fff;border:3px dashed #4D96FF;border-radius:24px;height:300px;padding:25px;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;} .bridge-icon{font-size:50px;margin-bottom:15px;}</style></head><body><div class='card'><div class='header'><div class='badge'>공감과 이해</div><h1>서로 다른 모습을 연결하는 마음의 다리</h1></div><div class='scenario'>📌 <b>생각해 보기:</b> 북한에서 온 친구가 \"오늘 점심은 '곽밥'이 참 맛있네!\"라고 말했습니다. '곽밥'은 도시락을 뜻하는 북한 말입니다. 처음 듣는 말에 당황하기보다 어떻게 반응하면 좋을까요?</div><div class='main-grid'><div class='column'><div class='box-label'>내가 발견한 남북의 차이 (언어, 생활 등)</div><div class='writing-area'></div></div><div class='column'><div class='box-label'>차이를 마주했을 때 나의 마음가짐</div><div class='writing-area'></div></div><div class='full-width'><div class='box-label'>우리가 '다르지만 하나'인 이유는 무엇일까요?</div><div class='bridge-zone'><div class='bridge-icon'>🤝</div><div style='font-size:22px; color:#666;'>여기에 생각을 자유롭게 적어 주세요.</div></div></div></div></div></body></html>",
+      "source_refs": [
+        13,
+        14
+      ],
+      "teacher_notes": "언어 차이가 소통의 장벽이 아닌, 서로를 알아가는 계기가 되도록 유도하는 활동입니다.",
+      "student_writing_zones": [
+        {
+          "zone_id": "observed_differences",
+          "label": "발견한 차이점",
+          "input_area_type": "free-writing",
+          "min_height": 500
+        },
+        {
+          "zone_id": "mindset",
+          "label": "나의 마음가짐",
+          "input_area_type": "free-writing",
+          "min_height": 500
+        },
+        {
+          "zone_id": "unity_reason",
+          "label": "하나인 이유",
+          "input_area_type": "free-writing",
+          "min_height": 300
+        }
+      ],
+      "estimated_minutes": 20,
+      "review_status": "draft"
+    },
+    {
+      "activity_id": "act-2-3",
+      "lesson_id": "2차시",
+      "object_role": "activity_area",
+      "lesson_flow_stage": "after",
+      "activity_type": "freeform_html",
+      "level": "extension",
+      "learning_goal": "국방비 등 분단 비용의 전환이 우리 삶에 미칠 긍정적 영향을 추론하고 평화 통일의 필요성을 논리적으로 설명할 수 있다.",
+      "prompt_text": "만약 우리나라가 평화 통일이 되어 막대한 국방비를 다른 곳에 쓸 수 있게 된다면, 어떤 변화가 일어날까요? '평화 배당금'으로 바꾸고 싶은 우리 마을의 모습을 설계해 봅시다.",
+      "layout_template": "freeform_html",
+      "html_content": "<!DOCTYPE html><html lang='ko'><head><meta charset='UTF-8'><style>body{width:1600px;margin:0;padding:40px;background:transparent;font-family:'Pretendard', sans-serif;display:flex;justify-content:center;} .card{width:1400px;background:#fff;border-radius:40px;padding:60px;border:1px solid #eee;overflow:hidden;} .header{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:40px;} .title-group h1{font-size:45px;margin:0;color:#1a1a1a;letter-spacing:-1.5px;} .badge{background:#6BCB77;color:#fff;padding:12px 24px;border-radius:12px;font-weight:800;font-size:22px;margin-bottom:15px;display:inline-block;} .concept-box{background:#f4fcf6;padding:25px;border-radius:24px;border:2px solid #6BCB77;margin-bottom:40px;} .concept-box b{color:#2d6a4f; font-size:26px;} .content-grid{display:grid;grid-template-columns:1fr 1.2fr;gap:40px;} .image-placeholder{background:#f8f9fa;border:3px dashed #ccc;border-radius:24px;height:600px;display:flex;flex-direction:column;justify-content:center;align-items:center;color:#999;text-align:center;} .writing-zone{background:#fff;border:3px solid #333;border-radius:24px;padding:30px;height:540px;} .label{font-size:26px;font-weight:700;margin-bottom:15px;display:block;}</style></head><body><div class='card'><div class='header'><div class='title-group'><div class='badge'>미래 설계</div><h1>평화 통일로 그리는 새로운 우리 삶</h1></div><div style='font-size:50px;'>🕊️</div></div><div class='concept-box'><b>평화 배당금(Peace Dividend)이란?</b><br>전쟁의 위험이 사라져 국방에 쓰던 돈을 복지, 교육, 환경 등 우리 생활을 더 풍요롭게 만드는 곳에 투자하는 것을 말해요.</div><div class='content-grid'><div class='visual-part'><span class='label'>[그림] 평화로운 우리 마을의 새로운 시설</span><div class='image-placeholder'><div style='font-size:60px;margin-bottom:20px;'>🎨</div>분단 비용으로 만들고 싶은<br>시설이나 모습을 그려 보세요.</div></div><div class='text-part'><span class='label'>[계획] 이 변화가 왜 우리에게 필요할까요?</span><div class='writing-zone'></div><div style='margin-top:25px; padding:20px; background:#e9f7ef; border-radius:15px; font-size:20px; color:#2d6a4f;'>결론: 내가 생각하는 평화 통일이 필요한 가장 큰 이유는...</div></div></div></div></body></html>",
+      "source_refs": [
+        12,
+        15
+      ],
+      "teacher_notes": "국방비라는 추상적인 개념을 실질적인 생활의 변화(복지, 시설 등)와 연결하여 통일의 필요성을 체감하게 하는 확장 활동입니다.",
+      "student_writing_zones": [
+        {
+          "zone_id": "drawing_area",
+          "label": "마을 변화 그림",
+          "input_area_type": "grid",
+          "min_height": 600
+        },
+        {
+          "zone_id": "logical_reasoning",
+          "label": "변화의 이유와 통일의 필요성",
+          "input_area_type": "free-writing",
+          "min_height": 540
+        }
+      ],
+      "estimated_minutes": 25,
+      "review_status": "draft"
+    }
+  ]
+}

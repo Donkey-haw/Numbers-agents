@@ -1,0 +1,102 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-03-26T12:59:15.393750+00:00",
+  "lesson_id": "2-3차시",
+  "sheet_name": "2-3차시",
+  "lesson_title": "전기문을 읽고 인물이 추구하는 가치 알기",
+  "lesson_type": "core",
+  "pdf_pages": [
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14
+  ],
+  "essential_question": "전기문 속 인물의 말과 행동을 통해 인물이 중요하게 여기는 가치를 어떻게 찾을 수 있을까?",
+  "learning_goals": [
+    "전기문 「의병장 윤희순」을 읽고 인물이 처한 시대 상황과 한 일을 설명할 수 있다.",
+    "인물의 말과 행동을 시대 상황과 관련지어 인물이 추구하는 가치를 찾을 수 있다.",
+    "인물이 추구하는 가치를 파악하는 방법을 정리할 수 있다."
+  ],
+  "key_concepts": [
+    "전기문",
+    "추구하는 가치",
+    "시대 상황",
+    "말과 행동",
+    "의병",
+    "애국심"
+  ],
+  "vocabulary": [
+    "전기문",
+    "의병",
+    "을미사변",
+    "단발령",
+    "군자금",
+    "망명",
+    "항거",
+    "주권"
+  ],
+  "misconceptions": [
+    "전기문은 단순히 과거 사실의 나열이라고 생각할 수 있으나, 인물의 가치관이 반영된 글임을 이해해야 한다.",
+    "인물의 가치는 글에 직접적으로 나타나야만 알 수 있다고 생각할 수 있으나, 말과 행동을 통해 추론해야 함을 안내한다."
+  ],
+  "difficulty_band": "on-level",
+  "content_chunks": [
+    {
+      "chunk_id": "2-3차시-chunk-1",
+      "label": "전기문 읽기: 의병장 윤희순",
+      "content_type": "mixed",
+      "knowledge_type": "fact",
+      "summary": "윤희순이 의병 활동을 돕기 위해 숯을 구워 식량을 지원하고, '안사람 의병가'를 지어 마을 여성들의 마음을 모아 안사람 의병대를 조직하는 과정을 읽는다.",
+      "source_pages": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "suggested_activity_types": [
+        "see_think_wonder",
+        "learning_note"
+      ]
+    },
+    {
+      "chunk_id": "2-3차시-chunk-2",
+      "label": "인물이 추구하는 가치 파악하기",
+      "content_type": "mixed",
+      "knowledge_type": "application",
+      "summary": "작품 속 시대 상황(국권 침탈기)과 윤희순의 말, 행동을 연결하여 그가 추구한 가치(애국심, 용기 등)를 파악하고, 가치를 파악하는 방법(시대 상황 이해, 말과 행동 살피기)을 정리한다.",
+      "source_pages": [
+        11,
+        12,
+        13,
+        14
+      ],
+      "suggested_activity_types": [
+        "learning_note",
+        "worksheet"
+      ]
+    }
+  ],
+  "source_page_refs": [
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14
+  ],
+  "analysis_confidence": 0.95,
+  "review_status": "draft",
+  "notes": "윤희순의 전기문을 통해 인물의 삶과 시대적 배경을 연결하여 가치를 도출하는 과정이 명확하게 제시됨. 14페이지(교과서 47쪽)의 가치 파악 방법 정리가 핵심 요약 포인트임."
+}

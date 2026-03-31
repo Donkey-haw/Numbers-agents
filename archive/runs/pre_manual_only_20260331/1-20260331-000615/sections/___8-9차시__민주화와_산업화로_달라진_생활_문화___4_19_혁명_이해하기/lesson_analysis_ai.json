@@ -1,0 +1,69 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-03-31T00:10:00+00:00",
+  "lesson_id": "8-9차시",
+  "sheet_name": "8-9차시",
+  "lesson_title": "민주화와 산업화로 달라진 생활 문화 — 4·19 혁명 이해하기",
+  "lesson_type": "intro",
+  "pdf_pages": [
+    29
+  ],
+  "essential_question": "민주화와 산업화 과정을 거치며 우리 사회와 생활 문화는 어떻게 변화해 왔을까요?",
+  "learning_goals": [
+    "낱말 구름에 제시된 핵심 용어를 통해 이번 주제에서 학습할 주요 내용을 예측할 수 있다.",
+    "4·19 혁명, 독재, 경제성장 등 주요 용어를 익히고 학습 동기를 형성한다."
+  ],
+  "key_concepts": [
+    "민주화",
+    "산업화",
+    "4·19 혁명",
+    "생활 문화",
+    "시민 의식"
+  ],
+  "vocabulary": [
+    "독재",
+    "직선제",
+    "지방 자치제",
+    "중화학 공업",
+    "경공업"
+  ],
+  "misconceptions": [
+    "민주화와 산업화가 과거의 일일 뿐 현재의 생활 문화와는 관련이 없다고 생각할 수 있음"
+  ],
+  "difficulty_band": "on-level",
+  "content_chunks": [
+    {
+      "chunk_id": "8-9차시-chunk-1",
+      "label": "주제 핵심 용어 탐색",
+      "content_type": "mixed",
+      "knowledge_type": "concept",
+      "summary": "민주화, 산업화, 4.19 혁명, 경제성장 등 주제를 관통하는 핵심 용어들이 담긴 낱말 구름을 보고 배울 내용을 추측함. 컴퓨터 보급 시기와 같은 생활 변화 질문을 통해 학습 흥미를 유발함.",
+      "source_pages": [
+        29
+      ],
+      "suggested_activity_types": [
+        "see_think_wonder",
+        "learning_note"
+      ]
+    },
+    {
+      "chunk_id": "8-9차시-chunk-2",
+      "label": "활동: 낱말 빙고 놀이",
+      "content_type": "activity",
+      "knowledge_type": "fact",
+      "summary": "낱말 구름 속 용어 중 9개를 선택하여 빙고 놀이를 하며 주요 학습 개념 및 용어와 친숙해지는 시간을 가짐.",
+      "source_pages": [
+        29
+      ],
+      "suggested_activity_types": [
+        "worksheet"
+      ]
+    }
+  ],
+  "source_page_refs": [
+    29
+  ],
+  "analysis_confidence": 0.95,
+  "review_status": "draft",
+  "notes": "해당 페이지는 '민주화와 산업화' 주제의 도입부로, 낱말 구름과 빙고 활동을 통해 향후 배울 4·19 혁명 및 산업화 관련 핵심 개념을 미리 살펴보는 구성을 취하고 있음."
+}

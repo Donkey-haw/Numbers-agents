@@ -1,0 +1,16 @@
+{
+  "schema_version": "1.0.0",
+  "stage": "review_lesson_agent",
+  "lesson_id": "4-6차시",
+  "status": "succeeded",
+  "decision": "pass",
+  "findings": [
+    {
+      "severity": "info",
+      "message": "추출된 텍스트를 바탕으로 장호와 봉운이의 대조적인 가치관(돈 vs 보람)을 명확히 반영하였으며, 조선 시대 출판 배경 지식을 포함함.",
+      "evidence_refs": []
+    }
+  ],
+  "blocking_issues": [],
+  "warnings": []
+}

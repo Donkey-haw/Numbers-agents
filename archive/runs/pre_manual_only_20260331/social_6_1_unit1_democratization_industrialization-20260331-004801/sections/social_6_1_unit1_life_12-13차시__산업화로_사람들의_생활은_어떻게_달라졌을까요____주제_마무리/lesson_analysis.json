@@ -1,0 +1,52 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-03-30T15:48:08.199507+00:00",
+  "lesson_id": "12-13차시",
+  "sheet_name": "12-13차시",
+  "lesson_title": "산업화로 사람들의 생활은 어떻게 달라졌을까요? / 주제 마무리",
+  "lesson_type": "core",
+  "pdf_pages": [
+    20
+  ],
+  "essential_question": "산업화로 사람들의 생활은 어떻게 달라졌을까요? / 주제 마무리",
+  "learning_goals": [
+    "산업화로 사람들의 생활은 어떻게 달라졌을까요의 핵심 내용을 설명할 수 있다."
+  ],
+  "key_concepts": [
+    "산업화",
+    "사람들",
+    "생활",
+    "어떻게",
+    "달라졌을까요"
+  ],
+  "vocabulary": [
+    "산업화",
+    "사람들",
+    "생활"
+  ],
+  "misconceptions": [],
+  "difficulty_band": "on-level",
+  "content_chunks": [
+    {
+      "chunk_id": "12-13차시-chunk-1",
+      "label": "학습 덩어리 1",
+      "content_type": "mixed",
+      "knowledge_type": "concept",
+      "summary": "우리가 꿈꾸는 비무장 지대 비무장 지대는 정전 협정 이후 오랫동안 사람들의 출입이 제한되었다.",
+      "source_pages": [
+        20
+      ],
+      "suggested_activity_types": [
+        "see_think_wonder",
+        "learning_note",
+        "worksheet"
+      ]
+    }
+  ],
+  "source_page_refs": [
+    20
+  ],
+  "analysis_confidence": 0.75,
+  "review_status": "draft",
+  "notes": "자동 생성 초안. lesson title, key concepts, chunks를 검토 후 승인 필요. Gemini fallback used: Gemini CLI timed out after 15 seconds for lesson_analysis_ai"
+}

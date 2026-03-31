@@ -1,0 +1,21 @@
+{
+  "schema_version": "1.0.0",
+  "stage": "lesson_review_agent",
+  "lesson_id": "4차시",
+  "status": "succeeded_with_warning",
+  "run_id": "1-20260331-002018",
+  "started_at": "2026-03-30T15:42:31.543843+00:00",
+  "finished_at": "2026-03-30T15:42:31.544391+00:00",
+  "input_refs": [
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/1-20260331-002018/sections/___4차시__평화_통일을_위한_노력___분단의_장소가_평화의_장소로_바뀐_사례_알아보기/lesson_analysis.json"
+  ],
+  "output_refs": [
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/1-20260331-002018/sections/___4차시__평화_통일을_위한_노력___분단의_장소가_평화의_장소로_바뀐_사례_알아보기/lesson_review.json"
+  ],
+  "fallback_used": false,
+  "warnings": [
+    "misconceptions is empty"
+  ],
+  "errors": [],
+  "agent_spec_path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/agents/lesson_review_agent/AGENT.md"
+}

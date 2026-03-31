@@ -1,0 +1,87 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-03-31T10:00:00+00:00",
+  "lesson_id": "4차시",
+  "activities": [
+    {
+      "activity_id": "act-4-1",
+      "lesson_id": "4차시",
+      "object_role": "activity_area",
+      "lesson_flow_stage": "during",
+      "activity_type": "freeform_html",
+      "level": "core",
+      "learning_goal": "종이 지구본과 차별화되는 디지털 공간 영상 정보의 고유한 기능을 설명할 수 있다.",
+      "prompt_text": "종이 지구본으로는 절대 할 수 없는, 디지털 지구본만의 '특별한 능력' 3가지를 찾아 그 이유와 함께 정리해 봅시다.",
+      "layout_template": "freeform_html",
+      "html_content": "<!DOCTYPE html><html lang='ko'><head><meta charset='UTF-8'><style>body{width:1600px;margin:0;padding:40px;background:transparent;font-family:'Noto Sans KR',sans-serif;color:#333;}.card{background:#fff;padding:40px;border-radius:32px;box-shadow:0 10px 30px rgba(0,0,0,0.05);border:1px solid #eee;}.header{margin-bottom:40px;border-left:12px solid #4A90E2;padding-left:24px;}.header h1{margin:0;font-size:42px;letter-spacing:-1px;}.header p{margin:10px 0 0;font-size:22px;color:#666;}.grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:30px;}.feature-box{border:3px solid #333;border-radius:24px;padding:30px;display:flex;flex-direction:column;}.feature-num{background:#333;color:#fff;width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:bold;font-size:20px;margin-bottom:20px;}.label{font-size:20px;font-weight:bold;margin-bottom:12px;color:#4A90E2;}.writing-area{flex-grow:1;background:#f9f9f9;border-top:1px dashed #ccc;margin-top:20px;min-height:480px;border-radius:12px;}</style></head><body><div class='card'><div class='header'><h1>디지털 지구본만의 '특별한 능력' 찾기</h1><p>종이 지구본의 한계를 넘어서는 디지털 정보의 특징을 탐색해 보세요.</p></div><div class='grid'><div class='feature-box'><div class='feature-num'>1</div><div class='label'>기능 명칭</div><div class='writing-area'></div></div><div class='feature-box'><div class='feature-num'>2</div><div class='label'>기능 명칭</div><div class='writing-area'></div></div><div class='feature-box'><div class='feature-num'>3</div><div class='label'>기능 명칭</div><div class='writing-area'></div></div></div></div></body></html>",
+      "source_refs": [
+        116
+      ],
+      "student_writing_zones": [
+        {
+          "zone_id": "ability_1",
+          "label": "능력 1 및 설명",
+          "input_area_type": "free-writing",
+          "min_height": 480
+        },
+        {
+          "zone_id": "ability_2",
+          "label": "능력 2 및 설명",
+          "input_area_type": "free-writing",
+          "min_height": 480
+        },
+        {
+          "zone_id": "ability_3",
+          "label": "능력 3 및 설명",
+          "input_area_type": "free-writing",
+          "min_height": 480
+        }
+      ],
+      "estimated_minutes": 15,
+      "review_status": "draft"
+    },
+    {
+      "activity_id": "act-4-2",
+      "lesson_id": "4차시",
+      "object_role": "activity_area",
+      "lesson_flow_stage": "after",
+      "activity_type": "freeform_html",
+      "level": "on-level",
+      "learning_goal": "디지털 세계지도의 3D 보기, 거리 재기 등 특화 기능을 활용해 장소의 특징을 조사할 수 있다.",
+      "prompt_text": "디지털 세계지도를 활용해 내가 가보고 싶은 세계 명소를 정하고, 직접 방문한 것처럼 상세히 조사해 봅시다.",
+      "layout_template": "freeform_html",
+      "html_content": "<!DOCTYPE html><html lang='ko'><head><meta charset='UTF-8'><style>body{width:1600px;margin:0;padding:40px;background:transparent;font-family:'Noto Sans KR',sans-serif;}.card{background:#fff;padding:45px;border-radius:30px;border:2px solid #333;}.title-row{display:flex;justify-content:space-between;align-items:center;margin-bottom:30px;}.title-row h2{margin:0;font-size:36px;color:#1A237E;} .tag{background:#E8EAF6;padding:8px 16px;border-radius:10px;font-weight:bold;color:#3F51B5;} .main-layout{display:grid;grid-template-columns:1fr 1fr;gap:40px;}.section-title{font-size:22px;font-weight:bold;margin-bottom:15px;display:flex;align-items:center;}.section-title::before{content:'';width:8px;height:24px;background:#3F51B5;margin-right:12px;border-radius:4px;}.writing-zone{border:2px solid #333;background:#fff;border-radius:15px;min-height:540px;padding:20px;}</style></head><body><div class='card'><div class='title-row'><h2>가상 세계 여행자 보고서</h2><div class='tag'>디지털 공간 영상 정보 활용</div></div><div class='main-layout'><div><div class='section-title'>탐사할 장소 및 위치(검색 기능 활용)</div><div class='writing-zone' style='min-height:120px; margin-bottom:30px;'></div><div class='section-title'>3D 레이어로 관찰한 입체적인 모습</div><div class='writing-zone'></div></div><div><div class='section-title'>주변의 거리와 면적(측정 기능 활용)</div><div class='writing-zone' style='min-height:180px; margin-bottom:30px;'></div><div class='section-title'>직접 가본 것처럼 느껴지는 사실들(거리 보기 활용)</div><div class='writing-zone' style='min-height:430px;'></div></div></div></div></body></html>",
+      "source_refs": [
+        116
+      ],
+      "student_writing_zones": [
+        {
+          "zone_id": "location_info",
+          "label": "장소 및 위치 정보",
+          "input_area_type": "inline-answer",
+          "min_height": 120
+        },
+        {
+          "zone_id": "3d_observation",
+          "label": "3D 관찰 내용",
+          "input_area_type": "free-writing",
+          "min_height": 540
+        },
+        {
+          "zone_id": "measurement_data",
+          "label": "거리 및 면적 측정값",
+          "input_area_type": "free-writing",
+          "min_height": 180
+        },
+        {
+          "zone_id": "street_view_details",
+          "label": "거리 보기 관찰 내용",
+          "input_area_type": "free-writing",
+          "min_height": 430
+        }
+      ],
+      "estimated_minutes": 20,
+      "review_status": "draft"
+    }
+  ]
+}

@@ -35,6 +35,10 @@ def is_schedule_line(line: str) -> bool:
     return bool(re.fullmatch(r"\d+(?:~\d+)?", line))
 
 
+def is_unit_header_line(line: str) -> bool:
+    return bool(re.fullmatch(r"\d+\.", line))
+
+
 def consume_schedule(lines: list[str], index: int) -> tuple[str | None, int]:
     if index >= len(lines):
         return None, index
@@ -50,6 +54,8 @@ def is_section_header_start(lines: list[str], index: int) -> bool:
     if index >= len(lines):
         return False
     line = lines[index]
+    if is_unit_header_line(line):
+        return True
     if line in TOPIC_MARKERS:
         return True
     if re.fullmatch(r"\d+단원", line):
@@ -78,7 +84,7 @@ def parse_progress_chart(lines: list[str]) -> dict:
     while index < len(lines):
         line = lines[index]
 
-        if re.fullmatch(r"\d+\.", line):
+        if is_unit_header_line(line):
             unit_number = int(line[:-1])
             index += 1
             title_parts = []

@@ -1,0 +1,44 @@
+{
+  "schema_version": "1.0.0",
+  "stage": "review_source_config",
+  "lesson_id": null,
+  "status": "succeeded_with_warning",
+  "decision": "pass_with_warning",
+  "findings": [
+    {
+      "severity": "warning",
+      "message": "2차시의 시작 쿼리가 여러 페이지에 매칭됩니다.",
+      "evidence_refs": [
+        "선거의 의미와 중요성 파악하기"
+      ]
+    },
+    {
+      "severity": "warning",
+      "message": "3차시의 시작 쿼리가 여러 페이지에 매칭됩니다.",
+      "evidence_refs": [
+        "민주주의에서 선거의 역할 파악하기"
+      ]
+    },
+    {
+      "severity": "warning",
+      "message": "4-5차시의 시작 쿼리가 여러 페이지에 매칭됩니다.",
+      "evidence_refs": [
+        "우리나라의 선거 과정 살펴보기"
+      ]
+    },
+    {
+      "severity": "warning",
+      "message": "6-7차시의 시작 쿼리가 여러 페이지에 매칭됩니다.",
+      "evidence_refs": [
+        "선거에 적극적으로 참여해야 하는 까닭 알아보기"
+      ]
+    }
+  ],
+  "blocking_issues": [],
+  "warnings": [
+    "2차시: source 'main' title_query matched 5 pages",
+    "3차시: source 'main' title_query matched 5 pages",
+    "4-5차시: source 'main' title_query matched 5 pages",
+    "6-7차시: source 'main' title_query matched 5 pages"
+  ]
+}

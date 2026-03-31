@@ -1,0 +1,16 @@
+{
+  "schema_version": "1.0.0",
+  "stage": "lesson_review_agent",
+  "lesson_id": "7차시",
+  "status": "succeeded",
+  "decision": "pass",
+  "findings": [
+    {
+      "severity": "info",
+      "message": "교과서 110쪽의 학습 목표와 단원 도입 텍스트를 바탕으로 분석함. 위도와 경도의 정의와 실질적인 표현 방법이 핵심임.",
+      "evidence_refs": []
+    }
+  ],
+  "blocking_issues": [],
+  "warnings": []
+}

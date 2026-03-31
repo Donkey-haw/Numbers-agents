@@ -1,0 +1,65 @@
+{
+  "project_root": "/Users/jonyeock/Desktop/Tool/NumbersAuto",
+  "pdf_path": "textbook/사회/[사회]6_1_교과서.pdf",
+  "template_path": "빈 넘버스 파일.numbers",
+  "output_file": "output/social_6_1_unit1_민주화와_산업화로_달라진_생활_문화.numbers",
+  "footer": "사회 6-1 · 1단원 · 민주화와 산업화로 달라진 생활 문화",
+  "sections": [
+    {
+      "sheet_name": "7차시",
+      "card_file": "social_6_1_unit1_민주화와_산업화로_달라진_생활_문화_7차시",
+      "title": "민주화 운동이 일어난 이유 알아보기",
+      "title_query": "민주화 운동이 일어난 이유 알아보기",
+      "badge": "7차시",
+      "accent": [
+        "#6366f1",
+        "#818cf8"
+      ]
+    },
+    {
+      "sheet_name": "8-9차시",
+      "card_file": "social_6_1_unit1_민주화와_산업화로_달라진_생활_문화_8_9차시",
+      "title": "4·19 혁명 이해하기",
+      "title_query": "4·19 혁명 이해하기",
+      "badge": "8-9차시",
+      "accent": [
+        "#4f46e5",
+        "#7c3aed"
+      ]
+    },
+    {
+      "sheet_name": "10차시",
+      "card_file": "social_6_1_unit1_민주화와_산업화로_달라진_생활_문화_10차시",
+      "title": "대통령 직선제와 지방 자치제의 부활 이해하기",
+      "title_query": "대통령 직선제와 지방 자치제의 부활 이해하기",
+      "badge": "10차시",
+      "accent": [
+        "#0f766e",
+        "#14b8a6"
+      ]
+    },
+    {
+      "sheet_name": "11차시",
+      "card_file": "social_6_1_unit1_민주화와_산업화로_달라진_생활_문화_11차시",
+      "title": "산업화 과정 이해하기",
+      "title_query": "산업화 과정 이해하기",
+      "badge": "11차시",
+      "accent": [
+        "#1d4ed8",
+        "#3b82f6"
+      ]
+    },
+    {
+      "sheet_name": "12-13차시",
+      "card_file": "social_6_1_unit1_민주화와_산업화로_달라진_생활_문화_12_13차시",
+      "title": "산업화로 달라진 사회와 생활 문화 이해하기",
+      "title_query": "산업화로 달라진 사회와 생활 문화 이해하기",
+      "badge": "12-13차시",
+      "accent": [
+        "#d97706",
+        "#f59e0b"
+      ]
+    }
+  ],
+  "end_before_query": "14차시"
+}

@@ -1,0 +1,39 @@
+{
+  "schema_version": "1.0.0",
+  "stage": "source_validation_agent",
+  "lesson_id": null,
+  "status": "succeeded_with_warning",
+  "run_id": "social_6_1_unit1_democratization_industrialization-20260331-004621",
+  "started_at": "2026-03-30T15:46:28.773008+00:00",
+  "finished_at": "2026-03-30T15:46:28.773790+00:00",
+  "input_refs": [
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/configs/social_6_1_unit1_democratization_industrialization.json",
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit1_democratization_industrialization-20260331-004621/source/runtime_config.json",
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit1_democratization_industrialization-20260331-004621/source/lesson_queries.json",
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit1_democratization_industrialization-20260331-004621/source/boundary_decisions.json",
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit1_democratization_industrialization-20260331-004621/source/boundary_validation.json"
+  ],
+  "output_refs": [
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit1_democratization_industrialization-20260331-004621/source/config_quality_review.json",
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit1_democratization_industrialization-20260331-004621/source/boundary_review.json",
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit1_democratization_industrialization-20260331-004621/source/supplement_review.json"
+  ],
+  "fallback_used": false,
+  "warnings": [
+    "7차시: source 'main' title_query matched 5 pages",
+    "8-9차시: source 'main' title_query matched 5 pages",
+    "10차시: source 'main' title_query matched 5 pages",
+    "11차시: source 'main' title_query matched 5 pages",
+    "12-13차시: source 'main' title_query matched 5 pages",
+    "lesson-001: boundary is low_confidence",
+    "lesson-002: start_page overlaps with previous lesson boundary",
+    "lesson-002: boundary is low_confidence",
+    "lesson-003: boundary is low_confidence",
+    "lesson-004: boundary is low_confidence",
+    "lesson-005: start_page overlaps with previous lesson boundary",
+    "lesson-005: boundary is low_confidence"
+  ],
+  "errors": [],
+  "agent_spec_path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/agents/source_validation_agent/AGENT.md",
+  "runtime_driven": true
+}

@@ -1,0 +1,85 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-03-30T15:56:11.346814+00:00",
+  "lesson_id": "7차시",
+  "activities": [
+    {
+      "activity_id": "act-7-1",
+      "lesson_id": "7차시",
+      "object_role": "activity_area",
+      "lesson_flow_stage": "before",
+      "activity_type": "freeform_html",
+      "level": "core",
+      "learning_goal": "낱말 구름 속 핵심 어휘를 연결하여 이번 단원의 학습 주제를 예측할 수 있다.",
+      "prompt_text": "낱말 구름에서 가장 눈에 띄는 단어 3개를 골라 서로 연결해 보고, 이번 단원에서 우리가 어떤 변화를 배우게 될지 상상하여 적어 봅시다.",
+      "layout_template": "freeform_html",
+      "html_content": "<!DOCTYPE html><html lang='ko'><head><meta charset='UTF-8'><style>body{width:1600px;margin:0;padding:40px;background:transparent;font-family:'Noto Sans KR',sans-serif;box-sizing:border-box;}.card{background:#ffffff;padding:48px;border-radius:32px;box-shadow:0 4px 20px rgba(0,0,0,0.05);border:1px solid #eee;}.header{display:flex;align-items:center;margin-bottom:32px;}.badge{background:#4A90E2;color:#fff;padding:8px 20px;border-radius:12px;font-weight:700;font-size:24px;margin-right:20px;}.title{font-size:42px;font-weight:800;color:#222;margin:0;}.instruction{font-size:28px;line-height:1.6;color:#444;margin-bottom:40px;background:#f8f9fa;padding:24px;border-radius:16px;border-left:8px solid #4A90E2;}.workspace{display:flex;gap:40px;}.word-select{flex:1;}.writing-zone{flex:2;}.label{font-size:24px;font-weight:700;color:#333;margin-bottom:16px;display:block;}.box{background:#fff;border:3px solid #333;border-radius:20px;padding:24px;box-sizing:border-box;}.word-input{height:100px;margin-bottom:20px;display:flex;align-items:center;justify-content:center;font-size:32px;font-weight:600;}.prediction-area{min-height:520px;font-size:28px;line-height:1.8;}</style></head><body><div class='card'><div class='header'><span class='badge'>생각 열기</span><h1 class='title'>키워드로 여는 우리 사회의 변화</h1></div><p class='instruction'>교과서 13~20쪽의 낱말 구름을 살펴보세요. '민주화', '산업화' 등 중요한 단어들이 어떻게 연결될지 나의 생각을 자유롭게 펼쳐 봅시다.</p><div class='workspace'><div class='word-select'><span class='label'>내가 선택한 핵심 단어 3가지</span><div class='box word-input'>1. </div><div class='box word-input'>2. </div><div class='box word-input'>3. </div></div><div class='writing-zone'><span class='label'>이 단어들로 상상해 본 우리 사회의 모습 (예측하기)</span><div class='box prediction-area'></div></div></div></div></body></html>",
+      "source_refs": [
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "student_writing_zones": [
+        {
+          "zone_id": "word_selection",
+          "label": "선택 단어 기입",
+          "input_area_type": "inline-answer",
+          "min_height": 300
+        },
+        {
+          "zone_id": "prediction_text",
+          "label": "상상한 모습 쓰기",
+          "input_area_type": "free-writing",
+          "min_height": 520
+        }
+      ],
+      "estimated_minutes": 10,
+      "review_status": "draft",
+      "teacher_notes": ""
+    },
+    {
+      "activity_id": "act-7-2",
+      "lesson_id": "7차시",
+      "object_role": "activity_area",
+      "lesson_flow_stage": "during",
+      "activity_type": "freeform_html",
+      "level": "core",
+      "learning_goal": "분단의 상징을 평화의 공간으로 전환하는 아이디어를 제안하고 그 가치를 설명할 수 있다.",
+      "prompt_text": "철조망이나 초소와 같이 전쟁과 분단의 아픔이 서린 공간을 모든 사람이 행복하게 이용할 수 있는 '평화의 공간'으로 다시 디자인해 봅시다.",
+      "layout_template": "freeform_html",
+      "html_content": "<!DOCTYPE html><html lang='ko'><head><meta charset='UTF-8'><style>body{width:1600px;margin:0;padding:40px;background:transparent;font-family:'Noto Sans KR',sans-serif;box-sizing:border-box;}.card{background:#ffffff;padding:48px;border-radius:32px;border:1px solid #eee;}.header{display:flex;align-items:center;margin-bottom:32px;}.badge{background:#E67E22;color:#fff;padding:8px 20px;border-radius:12px;font-weight:700;font-size:24px;margin-right:20px;}.title{font-size:42px;font-weight:800;color:#222;margin:0;}.instruction{font-size:28px;line-height:1.6;color:#444;margin-bottom:40px;background:#fff5eb;padding:24px;border-radius:16px;border-left:8px solid #E67E22;}.design-section{display:flex;flex-direction:column;gap:32px;}.canvas-container{position:relative;}.canvas-label{position:absolute;top:-15px;left:30px;background:#fff;padding:0 10px;font-weight:700;font-size:22px;color:#E67E22;}.drawing-board{border:3px solid #333;border-radius:24px;min-height:700px;background:#fff;}.description-box{border:3px solid #333;border-radius:20px;min-height:350px;padding:24px;font-size:28px;line-height:1.6;}</style></head><body><div class='card'><div class='header'><span class='badge'>심화·설계</span><h1 class='title'>평화로 물드는 공간 리디자인</h1></div><p class='instruction'>교과서 21~28쪽에는 분단의 상징을 평화로 바꾼 사례들이 나옵니다. 여러분은 어떤 상징물을 어떻게 바꾸고 싶나요? 창의적인 평화의 공간을 설계해 보세요.</p><div class='design-section'><div class='canvas-container'><span class='canvas-label'>나만의 평화 공간 설계도 (그림 또는 배치도)</span><div class='drawing-board'></div></div><div class='canvas-container'><span class='canvas-label'>공간의 이름과 설계 의도 (어떤 평화의 메시지를 담았나요?)</span><div class='description-box'></div></div></div></div></body></html>",
+      "source_refs": [
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28
+      ],
+      "student_writing_zones": [
+        {
+          "zone_id": "design_canvas",
+          "label": "평화 공간 설계도",
+          "input_area_type": "free-writing",
+          "min_height": 700
+        },
+        {
+          "zone_id": "design_rationale",
+          "label": "설계 의도 설명",
+          "input_area_type": "free-writing",
+          "min_height": 350
+        }
+      ],
+      "estimated_minutes": 20,
+      "review_status": "draft",
+      "teacher_notes": ""
+    }
+  ]
+}

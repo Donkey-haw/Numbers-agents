@@ -1,0 +1,81 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-03-31T10:00:00+09:00",
+  "lesson_id": "8차시",
+  "activities": [
+    {
+      "activity_id": "act-8-1",
+      "lesson_id": "8차시",
+      "object_role": "activity_area",
+      "lesson_flow_stage": "during",
+      "activity_type": "freeform_html",
+      "level": "core",
+      "learning_goal": "낱말 구름을 분석하여 대단원에서 배울 핵심 주제를 예측하고 나의 언어로 설명할 수 있다.",
+      "prompt_text": "교과서의 낱말 구름에서 가장 중요하다고 생각하는 단어 3개를 골라보고, 이번 단원에서 무엇을 배울지 나만의 문장으로 예측해 봅시다.",
+      "layout_template": "freeform_html",
+      "html_content": "<!DOCTYPE html><html lang='ko'><head><meta charset='UTF-8'><style>body{width:1600px;margin:0;padding:40px;background:transparent;font-family:'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif;color:#333;}.card{background:#fff;padding:60px;border-radius:40px;border:3px solid #333;box-shadow:12px 12px 0px #333;}.header{display:flex;align-items:center;margin-bottom:40px;}.badge{background:#333;color:#fff;padding:12px 24px;border-radius:12px;font-weight:800;font-size:24px;margin-right:20px;}.title{font-size:48px;font-weight:900;margin:0;}.instruction{font-size:28px;color:#555;margin-bottom:40px;line-height:1.6;}.keyword-grid{display:grid;grid-template-columns:repeat(3, 1fr);gap:30px;margin-bottom:40px;}.keyword-box{border:3px solid #333;border-radius:20px;padding:30px;text-align:center;}.keyword-label{font-size:20px;font-weight:700;color:#777;margin-bottom:15px;}.keyword-input{height:80px;background:#f9f9f9;border-radius:12px;}.writing-section{margin-top:40px;}.writing-label{font-size:24px;font-weight:800;margin-bottom:20px;display:block;}.writing-area{width:100%;height:450px;border:3px solid #333;border-radius:20px;background:#fff;box-sizing:border-box;}</style></head><body><div class='card'><div class='header'><div class='badge'>도입 활동</div><h1 class='title'>열려라 이야기! 핵심 단어 찾기</h1></div><p class='instruction'>낱말 구름 속 수많은 단어 중 우리 사회를 이해하는 데 가장 필요해 보이는 단어 3개를 골라 적고, 이 단어들이 이번 단원에서 어떻게 연결될지 생각해 봅시다.</p><div class='keyword-grid'><div class='keyword-box'><div class='keyword-label'>선택 단어 01</div><div class='keyword-input'></div></div><div class='keyword-box'><div class='keyword-label'>선택 단어 02</div><div class='keyword-input'></div></div><div class='keyword-box'><div class='keyword-label'>선택 단어 03</div><div class='keyword-input'></div></div></div><div class='writing-section'><label class='writing-label'>내가 예측하는 이번 단원의 핵심 내용</label><div class='writing-area'></div></div></div></body></html>",
+      "source_refs": [
+        13,
+        14,
+        42
+      ],
+      "teacher_notes": "학생들이 교과서의 낱말 구름을 단순히 보는 것에 그치지 않고, 스스로 키워드를 추출하여 학습 동기를 유발하도록 설계되었습니다.",
+      "student_writing_zones": [
+        {
+          "zone_id": "keyword_1",
+          "label": "첫 번째 단어",
+          "input_area_type": "inline-answer",
+          "min_height": 80
+        },
+        {
+          "zone_id": "keyword_2",
+          "label": "두 번째 단어",
+          "input_area_type": "inline-answer",
+          "min_height": 80
+        },
+        {
+          "zone_id": "keyword_3",
+          "label": "세 번째 단어",
+          "input_area_type": "inline-answer",
+          "min_height": 80
+        },
+        {
+          "zone_id": "prediction_text",
+          "label": "학습 내용 예측 쓰기",
+          "input_area_type": "free-writing",
+          "min_height": 450
+        }
+      ],
+      "estimated_minutes": 10,
+      "review_status": "draft"
+    },
+    {
+      "activity_id": "act-8-2",
+      "lesson_id": "8차시",
+      "object_role": "worksheet",
+      "lesson_flow_stage": "during",
+      "activity_type": "freeform_html",
+      "level": "on-level",
+      "learning_goal": "사회 변화상(자동차, 컴퓨터 보급)과 국가기관의 역할 사이의 상관관계를 추론할 수 있다.",
+      "prompt_text": "자동차와 컴퓨터가 늘어난 사회 변화를 확인하고, 이러한 변화 때문에 국가기관이 새롭게 해야 할 일은 무엇일지 상상하여 적어 봅시다.",
+      "layout_template": "freeform_html",
+      "html_content": "<!DOCTYPE html><html lang='ko'><head><meta charset='UTF-8'><style>body{width:1600px;margin:0;padding:40px;background:transparent;font-family:'Apple SD Gothic Neo', sans-serif;}.card{background:#fff;padding:60px;border-radius:40px;border:3px solid #333;}.header{margin-bottom:40px;border-bottom:5px solid #333;padding-bottom:20px;}.title{font-size:44px;font-weight:900;margin:0;color:#000;}.content-split{display:grid;grid-template-columns:1fr 1fr;gap:40px;margin-top:40px;}.info-panel{background:#f0f4f8;padding:30px;border-radius:24px;border:2px dashed #333;}.info-title{font-size:24px;font-weight:800;margin-bottom:20px;color:#2c3e50;}.info-item{background:#fff;padding:20px;margin-bottom:15px;border-radius:12px;font-size:22px;border:1px solid #ddd;}.writing-panel{display:flex;flex-direction:column;}.writing-label{font-size:26px;font-weight:900;margin-bottom:20px;color:#e67e22;}.writing-area{flex-grow:1;min-height:550px;border:3px solid #333;border-radius:24px;background:#fff;}</style></head><body><div class='card'><div class='header'><h1 class='title'>사회의 변화와 국가기관의 새로운 임무</h1></div><div class='content-split'><div class='info-panel'><div class='info-title'>[확인하기] 우리 사회의 변화</div><div class='info-item'>🚗 자동차를 소유한 가정이 크게 늘어남</div><div class='info-item'>💻 개인용 컴퓨터 보급률이 매우 높아짐</div><div class='info-item'>🌐 인터넷을 통한 정보 교류가 일상이 됨</div><p style='margin-top:20px; color:#666; font-size:18px;'>위와 같은 변화가 생기면 사람들의 생활은 편리해지지만, 새로운 문제나 규칙이 필요해지기도 합니다.</p></div><div class='writing-panel'><div class='writing-label'>💡 국가기관이 '새로' 해야 할 일 상상하기</div><div class='writing-area'></div></div></div></div></body></html>",
+      "source_refs": [
+        43,
+        45,
+        70
+      ],
+      "teacher_notes": "교과서의 통계적 사실(자동차, 컴퓨터 보급)을 국가기관의 존재 이유와 연결 짓는 비판적 사고 활동입니다.",
+      "student_writing_zones": [
+        {
+          "zone_id": "imagination_zone",
+          "label": "국가기관의 새로운 역할 제안",
+          "input_area_type": "free-writing",
+          "min_height": 550
+        }
+      ],
+      "estimated_minutes": 15,
+      "review_status": "draft"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-03-30T15:15:22.341017+00:00",
+  "pdf_path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/textbook/사회/[사회]6_1_교과서.pdf",
+  "current_section": {
+    "sheet_name": "4차시",
+    "lesson_title": "평화 통일을 위한 노력 — 분단의 장소가 평화의 장소로 바뀐 사례 알아보기",
+    "title_query": "평화 통일을 위한 노력 — 분단의 장소가 평화의 장소로 바뀐 사례 알아보기",
+    "pdf_pages": [
+      12
+    ],
+    "baseline_analysis_path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/1-20260330-235718/source/local_baseline/___4차시.lesson_analysis.json",
+    "extracted_text": "1\n평화 통일을 \n위한 노력\n 분단으로 생겨난 문제점과 평화 통일의 필요성을 설명할 수 있어요.\n 분단과 관련된 장소를 평화의 장소로 만들려는 노력을 찾아볼 수 있어요.\n 평화 통일을 위해 우리가 할 수 있는 일을 탐색할 수 있어요.\n이 주제를 배우면 나는\n이 산책로에 있는\n푯말은 무엇을 의미할까?\n1\n10\n1 평화 통일을 위한 노력, 민주화와 산업화"
+  },
+  "neighbor_sections": [
+    {
+      "relation": "previous",
+      "sheet_name": "3차시",
+      "lesson_title": "평화 통일을 위한 노력 — 분단의 흔적이 남아 있는 장소 알아보기",
+      "title_query": "평화 통일을 위한 노력 — 분단의 흔적이 남아 있는 장소 알아보기",
+      "pdf_pages": [
+        16
+      ]
+    },
+    {
+      "relation": "next",
+      "sheet_name": "5-6차시",
+      "lesson_title": "평화 통일을 위한 노력 — 평화 통일을 위한 노력 살펴보기",
+      "title_query": "평화 통일을 위한 노력 — 평화 통일을 위한 노력 살펴보기",
+      "pdf_pages": [
+        10,
+        11,
+        12
+      ]
+    }
+  ]
+}

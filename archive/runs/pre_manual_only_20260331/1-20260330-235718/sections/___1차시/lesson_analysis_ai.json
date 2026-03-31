@@ -1,0 +1,91 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-03-31T00:00:00.000000+00:00",
+  "lesson_id": "1차시",
+  "sheet_name": "1차시",
+  "lesson_title": "1단원 도입 — [단원 도입] 우리 친구는 누구?",
+  "lesson_type": "intro",
+  "pdf_pages": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "essential_question": "6학년 1학기 사회 수업에서는 어떤 내용을 배우며, 이 책은 어떻게 구성되어 있을까요?",
+  "learning_goals": [
+    "6학년 1학기 사회 교과서의 구성과 특징을 설명할 수 있다.",
+    "1단원 '평화 통일을 위한 노력, 민주화와 산업화'에서 배울 핵심 주제를 탐색할 수 있다.",
+    "단원 도입 활동을 통해 학습에 대한 흥미와 호기심을 가질 수 있다."
+  ],
+  "key_concepts": [
+    "교과서 구성",
+    "평화 통일",
+    "민주화",
+    "산업화",
+    "빙고 놀이"
+  ],
+  "vocabulary": [
+    "평화 통일",
+    "분단",
+    "민주화",
+    "산업화",
+    "빙고"
+  ],
+  "misconceptions": [
+    "사회 과목을 단순히 암기 과목으로만 생각할 수 있다.",
+    "교과서의 부록이나 안내 페이지를 학습과 무관한 부분으로 간주할 수 있다."
+  ],
+  "difficulty_band": "core",
+  "content_chunks": [
+    {
+      "chunk_id": "1차시-chunk-1",
+      "label": "교과서 안내 및 캐릭터 소개",
+      "content_type": "mixed",
+      "knowledge_type": "concept",
+      "summary": "사회 교과서의 주인공 '우리'와 '행복이'를 소개하고, 본문, 스스로/함께해 보기, 우리봇 등 교과서의 주요 구성 요소를 파악한다.",
+      "source_pages": [
+        4,
+        5,
+        10,
+        11
+      ],
+      "suggested_activity_types": [
+        "see_think_wonder",
+        "learning_note"
+      ]
+    },
+    {
+      "chunk_id": "1차시-chunk-2",
+      "label": "1단원 주제 탐색 및 빙고 놀이",
+      "content_type": "mixed",
+      "knowledge_type": "procedure",
+      "summary": "1단원에서 다룰 '평화 통일', '민주화', '산업화' 관련 낱말들을 살펴보고, 빙고 놀이를 통해 학습 용어와 친숙해진다.",
+      "source_pages": [
+        6,
+        7,
+        8,
+        9
+      ],
+      "suggested_activity_types": [
+        "worksheet"
+      ]
+    }
+  ],
+  "source_page_refs": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "analysis_confidence": 0.95,
+  "review_status": "draft",
+  "notes": "추출된 텍스트 증거(교과서 구성 안내, 1단원 낱말 구름 등)를 바탕으로 분석을 정교화함. Baseline의 잘못된 페이지 범위를 현재 섹션 범위인 4-11쪽으로 수정함."
+}

@@ -1,0 +1,25 @@
+{
+  "schema_version": "1.0.0",
+  "stage": "source_parse_agent",
+  "lesson_id": null,
+  "status": "failed",
+  "run_id": "social_6_1_unit2_state_agencies-20260326-214004",
+  "started_at": "2026-03-26T12:40:04.930962+00:00",
+  "finished_at": "2026-03-26T12:40:04.931454+00:00",
+  "input_refs": [
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/configs/social_6_1_unit2_state_agencies.json"
+  ],
+  "output_refs": [
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit2_state_agencies-20260326-214004/source/schedule_draft.json",
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit2_state_agencies-20260326-214004/source/textbook_context.json",
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit2_state_agencies-20260326-214004/source/runtime_config.json",
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit2_state_agencies-20260326-214004/source/config_quality_review.json",
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit2_state_agencies-20260326-214004/source/boundary_review.json",
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit2_state_agencies-20260326-214004/source/supplement_review.json"
+  ],
+  "fallback_used": false,
+  "warnings": [],
+  "errors": [
+    "no such file: '/Users/jonyeock/Desktop/Tool/NumbersAuto/[사회]6_1_교과서.pdf'"
+  ]
+}

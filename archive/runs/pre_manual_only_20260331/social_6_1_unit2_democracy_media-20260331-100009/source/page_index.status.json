@@ -1,0 +1,21 @@
+{
+  "schema_version": "1.0.0",
+  "stage": "page_index_agent",
+  "lesson_id": null,
+  "status": "succeeded",
+  "run_id": "social_6_1_unit2_democracy_media-20260331-100009",
+  "started_at": "2026-03-31T01:00:15.186413+00:00",
+  "finished_at": "2026-03-31T01:00:15.193935+00:00",
+  "input_refs": [
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit2_democracy_media-20260331-100009/source/main.page_texts.json"
+  ],
+  "output_refs": [
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit2_democracy_media-20260331-100009/source/main.page_index.json",
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit2_democracy_media-20260331-100009/source/page_index.status.json"
+  ],
+  "fallback_used": false,
+  "warnings": [],
+  "errors": [],
+  "agent_spec_path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/agents/page_index_agent/AGENT.md",
+  "runtime_driven": true
+}

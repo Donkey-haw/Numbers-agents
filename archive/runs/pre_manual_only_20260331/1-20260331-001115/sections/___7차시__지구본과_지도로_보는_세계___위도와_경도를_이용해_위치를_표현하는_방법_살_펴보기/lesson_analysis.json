@@ -1,0 +1,52 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-03-30T15:11:46.033289+00:00",
+  "lesson_id": "7차시",
+  "sheet_name": "7차시",
+  "lesson_title": "지구본과 지도로 보는 세계 — 위도와 경도를 이용해 위치를 표현하는 방법 살 펴보기",
+  "lesson_type": "core",
+  "pdf_pages": [
+    110
+  ],
+  "essential_question": "지구본과 지도로 보는 세계 — 위도와 경도를 이용해 위치를 표현하는 방법 살 펴보기",
+  "learning_goals": [
+    "지구본과 지도로 보는 세계 — 위도와 경도를 이용해 위치를 표현하는 방법 살 펴보기의 핵심 내용을 설명할 수 있다."
+  ],
+  "key_concepts": [
+    "지구본",
+    "지도",
+    "보는",
+    "세계",
+    "위도"
+  ],
+  "vocabulary": [
+    "지구본",
+    "지도",
+    "보는"
+  ],
+  "misconceptions": [],
+  "difficulty_band": "on-level",
+  "content_chunks": [
+    {
+      "chunk_id": "7차시-chunk-1",
+      "label": "학습 덩어리 1",
+      "content_type": "mixed",
+      "knowledge_type": "concept",
+      "summary": "세계를 표현하는 다양한 공간 자료의 특징을 설명할 수 있어요.",
+      "source_pages": [
+        110
+      ],
+      "suggested_activity_types": [
+        "see_think_wonder",
+        "learning_note",
+        "worksheet"
+      ]
+    }
+  ],
+  "source_page_refs": [
+    110
+  ],
+  "analysis_confidence": 0.75,
+  "review_status": "draft",
+  "notes": "자동 생성 초안. lesson title, key concepts, chunks를 검토 후 승인 필요. Gemini fallback used: Gemini CLI timed out after 120 seconds for lesson_analysis_ai"
+}

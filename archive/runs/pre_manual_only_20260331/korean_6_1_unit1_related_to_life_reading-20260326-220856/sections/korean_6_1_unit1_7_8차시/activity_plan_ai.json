@@ -1,0 +1,89 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-03-26T10:00:00+00:00",
+  "lesson_id": "7-8차시",
+  "activities": [
+    {
+      "activity_id": "act-7-8-1",
+      "lesson_id": "7-8차시",
+      "object_role": "learning_note",
+      "lesson_flow_stage": "during",
+      "activity_type": "freeform_html",
+      "level": "core",
+      "learning_goal": "이야기 속 인물이 추구하는 가치를 파악하고 근거를 정리할 수 있다.",
+      "prompt_text": "이야기를 읽으며 인물들이 소중하게 여기는 가치가 무엇인지, 그 증거(말과 행동)를 찾아 메모해 봅시다.",
+      "layout_template": "freeform_html",
+      "html_content": "<!DOCTYPE html><html lang='ko'><head><meta charset='UTF-8'><style>body{width:1600px;margin:0;padding:40px;background:transparent;font-family:'Apple SD Gothic Neo', sans-serif;color:#333;} .card{background:#fff;border-radius:32px;padding:48px;box-shadow:0 10px 30px rgba(0,0,0,0.05);border:1px solid #eee;} .header{display:flex;align-items:center;margin-bottom:40px;} .badge{background:#4A90E2;color:#fff;padding:8px 20px;border-radius:12px;font-weight:700;font-size:20px;margin-right:20px;} h1{font-size:36px;margin:0;letter-spacing:-1px;} .instruction{font-size:24px;color:#666;margin-bottom:40px;line-height:1.5;} .grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;} .character-box{border:3px solid #333;border-radius:24px;overflow:hidden;} .char-name{background:#333;color:#fff;padding:15px;text-align:center;font-size:28px;font-weight:700;} .writing-area{height:600px;background:#fff;padding:25px;font-size:22px;line-height:1.8;position:relative;} .writing-area::before{content:'';position:absolute;top:0;left:0;right:0;bottom:0;background-image:linear-gradient(#eee 1px, transparent 1px);background-size:100% 45px;margin:25px;pointer-events:none;} .label-hint{font-size:18px;color:#999;margin-bottom:10px;font-weight:500;}</style></head><body><div class='card'><div class='header'><div class='badge'>수업 메모</div><h1>가치 발견 노트</h1></div><p class='instruction'>교과서 27~38쪽을 읽으며 나루와 언니가 각각 무엇을 중요하게 생각하는지, 어떤 삶의 태도를 보이는지 메모해 보세요.</p><div class='grid'><div class='character-box'><div class='char-name'>나루</div><div class='writing-area'><div class='label-hint'>[찾은 가치와 그 이유(말/행동)]</div></div></div><div class='character-box'><div class='char-name'>언니</div><div class='writing-area'><div class='label-hint'>[찾은 가치와 그 이유(말/행동)]</div></div></div></div></div></body></html>",
+      "source_refs": [
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38
+      ],
+      "student_writing_zones": [
+        {
+          "zone_id": "naru_value",
+          "label": "나루의 가치와 근거 메모",
+          "input_area_type": "lined",
+          "min_height": 600
+        },
+        {
+          "zone_id": "sister_value",
+          "label": "언니의 가치와 근거 메모",
+          "input_area_type": "lined",
+          "min_height": 600
+        }
+      ],
+      "estimated_minutes": 15,
+      "review_status": "draft"
+    },
+    {
+      "activity_id": "act-7-8-2",
+      "lesson_id": "7-8차시",
+      "object_role": "activity_area",
+      "lesson_flow_stage": "after",
+      "activity_type": "freeform_html",
+      "level": "core",
+      "learning_goal": "인물이 추구하는 가치와 자신의 삶을 연결하여 내면화할 수 있다.",
+      "prompt_text": "인물들이 추구하는 가치 중 여러분의 삶에서 가장 소중하게 여기고 싶은 가치는 무엇인가요? 나의 경험과 연결하여 다짐을 적어 봅시다.",
+      "layout_template": "freeform_html",
+      "html_content": "<!DOCTYPE html><html lang='ko'><head><meta charset='UTF-8'><style>body{width:1600px;margin:0;padding:40px;background:transparent;font-family:'Apple SD Gothic Neo', sans-serif;color:#333;} .card{background:#fff;border-radius:32px;padding:48px;box-shadow:0 10px 30px rgba(0,0,0,0.05);border:2px solid #4A90E2;} .header{display:flex;align-items:center;margin-bottom:30px;} .badge{background:#F5A623;color:#fff;padding:8px 20px;border-radius:12px;font-weight:700;font-size:20px;margin-right:20px;} h1{font-size:36px;margin:0;color:#2C3E50;} .section-title{font-size:26px;font-weight:700;margin:30px 0 15px;display:flex;align-items:center;} .section-title::before{content:'';width:8px;height:24px;background:#4A90E2;margin-right:12px;border-radius:4px;} .input-box{border:2px solid #333;border-radius:16px;background:#fff;padding:20px;font-size:22px;} .choice-box{height:120px;display:flex;align-items:center;font-size:28px;font-weight:700;justify-content:center;border-style:dashed;} .experience-box{height:350px;} .action-box{height:350px;background:#f9f9f9;}</style></head><body><div class='card'><div class='header'><div class='badge'>가치 연결</div><h1>나의 삶과 가치 잇기</h1></div><div class='section-title'>내가 가장 소중하게 여기고 싶은 가치</div><div class='input-box choice-box'>[이곳에 가치 낱말을 크게 적어 보세요]</div><div class='section-title'>이 가치와 관련된 나의 경험 (떠오르는 장면)</div><div class='input-box experience-box'></div><div class='section-title'>이 가치를 지키기 위해 내가 실천하고 싶은 다짐</div><div class='input-box action-box'></div></div></body></html>",
+      "source_refs": [
+        33,
+        34,
+        35,
+        38
+      ],
+      "student_writing_zones": [
+        {
+          "zone_id": "chosen_value",
+          "label": "선택한 가치 낱말",
+          "input_area_type": "inline-answer",
+          "min_height": 120
+        },
+        {
+          "zone_id": "related_experience",
+          "label": "관련 경험 쓰기",
+          "input_area_type": "free-writing",
+          "min_height": 350
+        },
+        {
+          "zone_id": "future_promise",
+          "label": "나의 실천 다짐",
+          "input_area_type": "free-writing",
+          "min_height": 350
+        }
+      ],
+      "estimated_minutes": 20,
+      "review_status": "draft"
+    }
+  ]
+}

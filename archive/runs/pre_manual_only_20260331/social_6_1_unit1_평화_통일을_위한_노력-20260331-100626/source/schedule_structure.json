@@ -1,0 +1,53 @@
+{
+  "schema_version": "1.0.0",
+  "units": [
+    {
+      "unit_id": "unit-001",
+      "title": "분단으로 나타난 문제점과 분단이 사회와 생활에 끼친 영향 알아보기",
+      "lessons": [
+        {
+          "lesson_id": "lesson-001",
+          "sheet_name": "2차시",
+          "title": "분단으로 나타난 문제점과 분단이 사회와 생활에 끼친 영향 알아보기",
+          "raw_text": "분단으로 나타난 문제점과 분단이 사회와 생활에 끼친 영향 알아보기"
+        }
+      ]
+    },
+    {
+      "unit_id": "unit-002",
+      "title": "분단의 흔적이 남아 있는 장소 알아보기",
+      "lessons": [
+        {
+          "lesson_id": "lesson-002",
+          "sheet_name": "3차시",
+          "title": "분단의 흔적이 남아 있는 장소 알아보기",
+          "raw_text": "분단의 흔적이 남아 있는 장소 알아보기"
+        }
+      ]
+    },
+    {
+      "unit_id": "unit-003",
+      "title": "분단의 장소가 평화의 장소로 바뀐 사례 알아보기",
+      "lessons": [
+        {
+          "lesson_id": "lesson-003",
+          "sheet_name": "4차시",
+          "title": "분단의 장소가 평화의 장소로 바뀐 사례 알아보기",
+          "raw_text": "분단의 장소가 평화의 장소로 바뀐 사례 알아보기"
+        }
+      ]
+    },
+    {
+      "unit_id": "unit-004",
+      "title": "평화 통일을 위한 노력 살펴보기",
+      "lessons": [
+        {
+          "lesson_id": "lesson-004",
+          "sheet_name": "5-6차시",
+          "title": "평화 통일을 위한 노력 살펴보기",
+          "raw_text": "평화 통일을 위한 노력 살펴보기"
+        }
+      ]
+    }
+  ]
+}

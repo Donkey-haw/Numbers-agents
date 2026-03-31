@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0.0",
+  "stage": "source_boundary_agent",
+  "lesson_id": null,
+  "status": "succeeded_with_warning",
+  "run_id": "social_6_1_unit1_democratization_industrialization-20260331-004801",
+  "started_at": "2026-03-30T15:48:07.188506+00:00",
+  "finished_at": "2026-03-30T15:48:08.205306+00:00",
+  "input_refs": [
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/configs/social_6_1_unit1_democratization_industrialization.json",
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit1_democratization_industrialization-20260331-004801/source/lesson_queries.json",
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit1_democratization_industrialization-20260331-004801/source/page_candidates.json",
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit1_democratization_industrialization-20260331-004801/source/boundary_decisions.json",
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit1_democratization_industrialization-20260331-004801/source/boundary_validation.json"
+  ],
+  "output_refs": [
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit1_democratization_industrialization-20260331-004801/source/source_boundary.ai.json",
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit1_democratization_industrialization-20260331-004801/source/schedule_draft.json",
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit1_democratization_industrialization-20260331-004801/source/textbook_context.json",
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit1_democratization_industrialization-20260331-004801/source/runtime_config.json"
+  ],
+  "fallback_used": false,
+  "warnings": [
+    "lesson-001: boundary is low_confidence",
+    "lesson-002: start_page overlaps with previous lesson boundary",
+    "lesson-002: boundary is low_confidence",
+    "lesson-003: boundary is low_confidence",
+    "lesson-004: boundary is low_confidence",
+    "lesson-005: start_page overlaps with previous lesson boundary",
+    "lesson-005: boundary is low_confidence"
+  ],
+  "errors": [],
+  "agent_spec_path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/agents/source_boundary_agent/AGENT.md",
+  "runtime_driven": true
+}

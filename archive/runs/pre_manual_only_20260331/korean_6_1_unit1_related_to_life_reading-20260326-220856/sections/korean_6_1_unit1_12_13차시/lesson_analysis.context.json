@@ -1,0 +1,48 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-03-26T13:10:59.509510+00:00",
+  "pdf_path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/textbook/국어/[국어]6_1_교과서.pdf",
+  "current_section": {
+    "sheet_name": "12-13차시",
+    "lesson_title": "배운 내용 실천하기",
+    "title_query": "배운 내용 실천하기",
+    "pdf_pages": [
+      49,
+      50
+    ],
+    "baseline_analysis_path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/korean_6_1_unit1_related_to_life_reading-20260326-220856/source/local_baseline/korean_6_1_unit1_12_13차시.lesson_analysis.json",
+    "extracted_text": "인물이 추구하는 가치가 드러나게 인물 소개하기\n배운 내용 \n실\n이런 활동도 \n있어요\n좋아하는 문학 작품 속 인물 소개하기\n3 \t 인물이 추구하는 가치가 드러나게 인물을 소개하는 자료 만들기\n\t\n 소개하는 글  \n 광고지  \n 동영상  \n 기타:\n5 \t 반 친구들에게 인물을 소개하는 자료 발표하기 \n1 \u0007\t ‌\u0007문학 작품에 나오는 인물 가운데에서 친구들에게 소개할 인물 선택하기\n4 \t 발표할 내용 계획하기 \n●\u0007 책 제목과 작가:\n● 소개할 인물 이름: \n●\u0007 \n●\u0007  \n●\u0007 \n●\u0007  \n처음\n가운데\n끝\n2 \u0007\t 질문에 답하며 인물을 소개하는 자료에 넣을 내용 정하기\n● ‌\u0001이 인물을 선택한 까닭은 무엇인가요?\n● ‌\u0001인물이 추구하는 가치가 잘 드러나는 장면은 무엇인가요?\n● ‌\u0001인물을 보며 새롭게 안 점이나 본받고 싶은 점은 무엇인가요? \n책 제목\n인물 이름\n인물이 추구하는 가치\n82\n\n4\n 하고 싶은 활동 정하기\n인물이 추구하는\n가치가 드러나게 \n인물 소개하기\n 활동하기\n 활동 소감 나누기\n우리가 정한 활동을  \n반 전체가 할지, 모둠으로 할지, \n짝과 할지, 혼자 할지 정해요.\n83\n1"
+  },
+  "neighbor_sections": [
+    {
+      "relation": "previous",
+      "sheet_name": "9-11차시",
+      "lesson_title": "작품을 읽고 독서 감상문 쓰기",
+      "title_query": "작품을 읽고 독서 감상문 쓰기",
+      "pdf_pages": [
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48
+      ]
+    },
+    {
+      "relation": "next",
+      "sheet_name": "14차시",
+      "lesson_title": "마무리하기",
+      "title_query": "마무리하기",
+      "pdf_pages": [
+        51,
+        52,
+        53,
+        54
+      ]
+    }
+  ]
+}

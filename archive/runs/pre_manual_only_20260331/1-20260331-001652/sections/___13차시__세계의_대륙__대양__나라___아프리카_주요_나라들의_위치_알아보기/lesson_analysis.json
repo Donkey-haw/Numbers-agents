@@ -1,0 +1,67 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-03-30T15:39:19.738712+00:00",
+  "lesson_id": "13차시",
+  "sheet_name": "13차시",
+  "lesson_title": "세계의 대륙, 대양, 나라 — 아프리카 주요 나라들의 위치 알아보기",
+  "lesson_type": "summary",
+  "pdf_pages": [
+    131
+  ],
+  "essential_question": "지구본과 지도로 보는 세계 주제에서 배운 핵심 내용을 요약하고 스스로의 학습 상태를 점검할 수 있는가?",
+  "learning_goals": [
+    "세계지도, 지구본, 디지털 공간 영상 정보의 특징과 차이점을 설명할 수 있다.",
+    "위도와 경도의 의미를 이해하고 이를 활용해 위치를 표현하는 방법을 정리할 수 있다.",
+    "북반구와 남반구의 계절 차이 및 경도에 따른 시차 발생 원리를 이해한다."
+  ],
+  "key_concepts": [
+    "세계지도",
+    "지구본",
+    "디지털 공간 영상 정보",
+    "위도",
+    "경도",
+    "주제 마무리"
+  ],
+  "vocabulary": [
+    "세계지도",
+    "지구본",
+    "공간 영상 정보",
+    "위도",
+    "경도",
+    "시차",
+    "북반구",
+    "남반구"
+  ],
+  "misconceptions": [
+    "위치는 위도로만 나타낼 수 있다는 오개념 (경도와 함께 사용해야 정확한 위치 표현이 가능함)"
+  ],
+  "difficulty_band": "on-level",
+  "review_status": "draft",
+  "content_chunks": [
+    {
+      "chunk_id": "13차시-chunk-1",
+      "label": "주제 마무리: 옳은 문장 찾기",
+      "content_type": "activity",
+      "knowledge_type": "concept",
+      "summary": "세계지도, 지구본, 디지털 공간 영상 정보 및 위도·경도와 관련된 옳은 설명을 찾아 번호를 나열하는 활동",
+      "source_pages": [
+        131
+      ]
+    },
+    {
+      "chunk_id": "13차시-chunk-2",
+      "label": "요약 정리 및 자기 점검",
+      "content_type": "summary",
+      "knowledge_type": "application",
+      "summary": "공간 자료의 특징 설명, 지리 정보 탐색, 위치 표현 이해도 등 핵심 학습 목표에 대한 성취도를 스스로 평가",
+      "source_pages": [
+        131
+      ]
+    }
+  ],
+  "source_page_refs": [
+    131
+  ],
+  "analysis_confidence": 0.9,
+  "notes": "추출된 텍스트 분석 결과, 131쪽은 '1. 지구본과 지도로 보는 세계' 대단원의 주제 마무리 및 요약 정리 페이지입니다. 따라서 레슨 유형을 summary로 조정하였으며, 텍스트에 명시된 자기 점검 질문과 핵심 개념(위도, 경도, 공간 정보 등)을 반영하여 학습 목표와 내용을 구체화하였습니다."
+}

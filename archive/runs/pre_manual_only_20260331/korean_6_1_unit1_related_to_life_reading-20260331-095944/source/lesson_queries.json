@@ -1,0 +1,61 @@
+{
+  "schema_version": "1.0.0",
+  "lessons": [
+    {
+      "lesson_id": "lesson-001",
+      "sheet_name": "1차시",
+      "display_title": "배울 내용 살펴보기",
+      "title_query": "배울 내용 살펴보기",
+      "end_before_query": "전기문을 읽고 인물이 추구하는 가치 알기",
+      "resource_id": "main"
+    },
+    {
+      "lesson_id": "lesson-002",
+      "sheet_name": "2-3차시",
+      "display_title": "전기문을 읽고 인물이 추구하는 가치 알기",
+      "title_query": "전기문을 읽고 인물이 추구하는 가치 알기",
+      "end_before_query": "작품을 읽고 시대적 상황과 인물이 추구하는 가치에 대하여 질문하기",
+      "resource_id": "main"
+    },
+    {
+      "lesson_id": "lesson-003",
+      "sheet_name": "4-6차시",
+      "display_title": "작품을 읽고 시대적 상황과 인물이 추구하는 가치에 대하여 질문하기",
+      "title_query": "작품을 읽고 시대적 상황과 인물이 추구하는 가치에 대하여 질문하기",
+      "end_before_query": "인물이 추구하는 가치를 자신의 삶과 관련짓기",
+      "resource_id": "main"
+    },
+    {
+      "lesson_id": "lesson-004",
+      "sheet_name": "7-8차시",
+      "display_title": "인물이 추구하는 가치를 자신의 삶과 관련짓기",
+      "title_query": "인물이 추구하는 가치를 자신의 삶과 관련짓기",
+      "end_before_query": "작품을 읽고 독서 감상문 쓰기",
+      "resource_id": "main"
+    },
+    {
+      "lesson_id": "lesson-005",
+      "sheet_name": "9-11차시",
+      "display_title": "작품을 읽고 독서 감상문 쓰기",
+      "title_query": "작품을 읽고 독서 감상문 쓰기",
+      "end_before_query": "배운 내용 실천하기",
+      "resource_id": "main"
+    },
+    {
+      "lesson_id": "lesson-006",
+      "sheet_name": "12-13차시",
+      "display_title": "배운 내용 실천하기",
+      "title_query": "배운 내용 실천하기",
+      "end_before_query": "마무리하기",
+      "resource_id": "main"
+    },
+    {
+      "lesson_id": "lesson-007",
+      "sheet_name": "14차시",
+      "display_title": "마무리하기",
+      "title_query": "마무리하기",
+      "end_before_query": null,
+      "resource_id": "main"
+    }
+  ]
+}

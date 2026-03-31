@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-03-31T01:08:17.872129+00:00",
+  "sections": [
+    {
+      "sheet_name": "2-3차시",
+      "lesson_title": "지구본의 특징 살펴보기",
+      "title_query": "지구본의 특징 살펴보기"
+    },
+    {
+      "sheet_name": "4차시",
+      "lesson_title": "디지털 공간 영상 정보의 의미 알아보기",
+      "title_query": "디지털 공간 영상 정보의 의미 알아보기"
+    },
+    {
+      "sheet_name": "5차시",
+      "lesson_title": "위도와 위선의 의미 알아보기",
+      "title_query": "위도와 위선의 의미 알아보기"
+    },
+    {
+      "sheet_name": "6차시",
+      "lesson_title": "경도와 경선의 의미 알아보기",
+      "title_query": "경도와 경선의 의미 알아보기"
+    },
+    {
+      "sheet_name": "7차시",
+      "lesson_title": "위도와 경도를 이용해 위치를 표현하는 방법 살펴보기",
+      "title_query": "위도와 경도를 이용해 위치를 표현하는 방법 살펴보기"
+    }
+  ]
+}

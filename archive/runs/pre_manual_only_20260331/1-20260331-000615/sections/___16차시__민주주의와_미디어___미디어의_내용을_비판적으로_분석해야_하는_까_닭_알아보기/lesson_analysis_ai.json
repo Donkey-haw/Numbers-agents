@@ -1,0 +1,52 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-03-31T09:00:00.000000+00:00",
+  "lesson_id": "16차시",
+  "sheet_name": "16차시",
+  "lesson_title": "민주주의와 미디어 — 미디어의 내용을 비판적으로 분석해야 하는 까 닭 알아보기",
+  "lesson_type": "core",
+  "pdf_pages": [
+    90
+  ],
+  "essential_question": "민주주의 사회에서 미디어의 내용을 비판적으로 분석하고 평가해야 하는 까닭은 무엇일까요?",
+  "learning_goals": [
+    "미디어의 내용을 비판적으로 분석하고 평가하는 태도의 중요성을 이해할 수 있다."
+  ],
+  "key_concepts": [
+    "미디어",
+    "비판적 분석",
+    "민주주의"
+  ],
+  "vocabulary": [
+    "미디어",
+    "비판적",
+    "분석",
+    "평가"
+  ],
+  "misconceptions": [
+    "미디어가 전달하는 모든 정보는 항상 사실이며 객관적이라고 믿는 경향이 있다."
+  ],
+  "difficulty_band": "on-level",
+  "content_chunks": [
+    {
+      "chunk_id": "16차시-chunk-1",
+      "label": "미디어 비판적 분석의 필요성",
+      "content_type": "mixed",
+      "knowledge_type": "concept",
+      "summary": "우리가 일상에서 접하는 다양한 미디어의 정보를 무조건 수용하기보다 비판적으로 바라보고 분석해야 하는 이유를 탐색합니다.",
+      "source_pages": [
+        90
+      ],
+      "suggested_activity_types": [
+        "see_think_wonder",
+        "learning_note"
+      ]
+    }
+  ],
+  "source_page_refs": [
+    90
+  ],
+  "analysis_confidence": 0.85,
+  "review_status": "draft",
+  "notes": "교과서 90페이지의 학습 목표('미디어의 내용을 비판적으로 분석하고 평가할 수 있어요')와 도입 텍스트를 근거로 분석되었습니다."
+}

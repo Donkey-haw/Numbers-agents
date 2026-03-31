@@ -1,0 +1,29 @@
+{
+  "schema_version": "1.0.0",
+  "stage": "source_boundary_agent",
+  "lesson_id": null,
+  "status": "failed",
+  "run_id": "1-20260331-000506",
+  "started_at": "2026-03-30T15:05:11.959561+00:00",
+  "finished_at": "2026-03-30T15:05:12.473708+00:00",
+  "input_refs": [
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/configs/1.json",
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/1-20260331-000506/source/lesson_queries.json",
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/1-20260331-000506/source/page_candidates.json",
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/1-20260331-000506/source/boundary_decisions.json",
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/1-20260331-000506/source/boundary_validation.json"
+  ],
+  "output_refs": [
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/1-20260331-000506/source/source_boundary.ai.json",
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/1-20260331-000506/source/schedule_draft.json",
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/1-20260331-000506/source/textbook_context.json",
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/1-20260331-000506/source/runtime_config.json"
+  ],
+  "fallback_used": false,
+  "warnings": [],
+  "errors": [
+    "name 'contracts' is not defined"
+  ],
+  "agent_spec_path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/agents/source_boundary_agent/AGENT.md",
+  "runtime_driven": true
+}

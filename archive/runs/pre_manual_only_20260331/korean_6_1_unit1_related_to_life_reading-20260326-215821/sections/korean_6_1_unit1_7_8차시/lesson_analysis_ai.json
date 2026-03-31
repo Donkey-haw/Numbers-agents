@@ -1,0 +1,118 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-03-26T13:05:00.000000+00:00",
+  "lesson_id": "7-8차시",
+  "sheet_name": "7-8차시",
+  "lesson_title": "인물이 추구하는 가치를 자신의 삶과 관련짓기",
+  "lesson_type": "core",
+  "pdf_pages": [
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38
+  ],
+  "essential_question": "작품 속 인물이 추구하는 가치를 나의 삶과 비교해보고, 어떤 교훈이나 변화를 얻을 수 있을까요?",
+  "learning_goals": [
+    "「다이빙대 위에서」를 읽고 인물이 처한 상황과 인물이 추구하는 가치를 파악할 수 있다.",
+    "인물이 추구하는 가치를 자신의 삶과 관련지어 생각하거나 느낀 점을 말할 수 있다.",
+    "자신이 추구하는 가치를 바탕으로 인물에게 전하고 싶은 마음을 담아 편지를 쓸 수 있다."
+  ],
+  "key_concepts": [
+    "추구하는 가치",
+    "삶의 태도",
+    "도전과 끈기",
+    "자기 결정",
+    "독서 감상"
+  ],
+  "vocabulary": [
+    "호출",
+    "탄력",
+    "핀잔",
+    "재간",
+    "비행"
+  ],
+  "misconceptions": [
+    "가치는 정답이 정해져 있는 것이 아니라 인물의 상황과 선택에 따라 다양할 수 있음을 이해해야 함.",
+    "성공(메달)만이 가치 있는 것이 아니라, 스스로 결정하고 노력하는 과정 자체가 가치 있음을 인식해야 함."
+  ],
+  "difficulty_band": "on-level",
+  "content_chunks": [
+    {
+      "chunk_id": "7-8차시-chunk-1",
+      "label": "이야기 읽기와 상황 파악",
+      "content_type": "text",
+      "knowledge_type": "concept",
+      "summary": "나루와 버들이의 대화를 통해 수영을 그만두고 다이빙을 시작한 버들이의 상황과 나루의 고민을 이해함.",
+      "source_pages": [
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36
+      ],
+      "suggested_activity_types": [
+        "see_think_wonder",
+        "learning_note"
+      ]
+    },
+    {
+      "chunk_id": "7-8차시-chunk-2",
+      "label": "인물의 가치 분석 및 비교",
+      "content_type": "mixed",
+      "knowledge_type": "comparison",
+      "summary": "나루와 버들이가 소중히 여기는 가치를 비교하고, 자신의 삶과 관련지어 생각의 변화를 정리함.",
+      "source_pages": [
+        37,
+        38,
+        39,
+        40
+      ],
+      "suggested_activity_types": [
+        "worksheet"
+      ]
+    },
+    {
+      "chunk_id": "7-8차시-chunk-3",
+      "label": "가치를 담은 편지 쓰기",
+      "content_type": "activity",
+      "knowledge_type": "application",
+      "summary": "인물의 가치를 이해한 내용을 바탕으로 인물에게 자신의 생각과 느낀 점을 담은 편지를 작성함.",
+      "source_pages": [
+        41
+      ],
+      "suggested_activity_types": [
+        "worksheet"
+      ]
+    }
+  ],
+  "source_page_refs": [
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38
+  ],
+  "analysis_confidence": 0.95,
+  "review_status": "draft",
+  "notes": "추출된 텍스트와 문항 정보를 바탕으로 학습 목표와 활동 구성을 구체화함. 인물 간의 가치관 차이(경쟁 vs 자기만족/도전)를 명확히 함."
+}

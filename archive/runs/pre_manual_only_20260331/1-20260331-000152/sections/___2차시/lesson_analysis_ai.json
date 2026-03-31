@@ -1,0 +1,108 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-03-31T00:15:20.000Z",
+  "lesson_id": "2차시",
+  "sheet_name": "2차시",
+  "lesson_title": "평화 통일을 위한 노력 — 분단으로 나타난 문제점과 분단이 사회와 생활 에 끼친 영향 알아보기",
+  "lesson_type": "core",
+  "pdf_pages": [
+    12,
+    13,
+    14,
+    15
+  ],
+  "essential_question": "남북 분단으로 인해 우리 사회와 생활에서 발생하는 문제점은 무엇이며, 왜 평화 통일이 필요할까요?",
+  "learning_goals": [
+    "남북 분단으로 인한 군사적 긴장과 국방비 지출 등 국가적 차원의 문제점을 설명할 수 있다.",
+    "이산가족, 북한 이탈 주민의 사례를 통해 분단이 개인의 삶에 미치는 고통을 이해할 수 있다.",
+    "남북한의 언어와 생활 방식 차이를 통해 문화적 이질화 문제를 파악할 수 있다."
+  ],
+  "key_concepts": [
+    "분단",
+    "군사적 긴장",
+    "국방비",
+    "이산가족",
+    "문화 차이",
+    "북한 이탈 주민",
+    "평화 통일"
+  ],
+  "vocabulary": [
+    "군사적 대립",
+    "적대 관계",
+    "이질화",
+    "실향민",
+    "망배단",
+    "동해선"
+  ],
+  "misconceptions": [
+    "분단 문제가 단순히 군사적인 문제에만 국한된다고 생각할 수 있다.",
+    "북한 이탈 주민이 겪는 어려움을 단순히 경제적 문제로만 오해할 수 있다.",
+    "언어 차이를 극복 불가능한 완전히 다른 언어로 인식할 수 있다."
+  ],
+  "difficulty_band": "on-level",
+  "content_chunks": [
+    {
+      "chunk_id": "2차시-chunk-1",
+      "label": "도입: 단원 및 주제 안내",
+      "content_type": "mixed",
+      "knowledge_type": "concept",
+      "summary": "평화 통일을 위한 노력 주제에서 배울 핵심 내용(문제점, 장소, 실천)을 확인하고 낱말 구름을 통해 관련 용어를 탐색한다.",
+      "source_pages": [
+        12,
+        13
+      ],
+      "suggested_activity_types": [
+        "see_think_wonder"
+      ]
+    },
+    {
+      "chunk_id": "2차시-chunk-2",
+      "label": "분단으로 인한 국가적 문제",
+      "content_type": "mixed",
+      "knowledge_type": "cause-effect",
+      "summary": "남북 간의 군사적 대립으로 인한 전쟁 불안감과 막대한 국방비 지출 등 국가 안보 및 경제적 측면의 문제점을 분석한다.",
+      "source_pages": [
+        14
+      ],
+      "suggested_activity_types": [
+        "learning_note"
+      ]
+    },
+    {
+      "chunk_id": "2차시-chunk-3",
+      "label": "분단으로 인한 사회·문화적 문제",
+      "content_type": "mixed",
+      "knowledge_type": "comparison",
+      "summary": "오랜 분단으로 인한 남북한의 언어 차이(빙수-단얼음 등)와 생활 방식의 차이로 인해 겪는 문화적 이질화 현상을 살펴본다.",
+      "source_pages": [
+        14,
+        15
+      ],
+      "suggested_activity_types": [
+        "worksheet"
+      ]
+    },
+    {
+      "chunk_id": "2차시-chunk-4",
+      "label": "분단으로 인한 인도적 문제",
+      "content_type": "image",
+      "knowledge_type": "fact",
+      "summary": "이산가족의 아픔, 자유로운 왕래의 불가능, 북한 이탈 주민의 고향 상실 등 분단이 개인의 삶에 주는 고통과 평화 통일의 필요성을 정리한다.",
+      "source_pages": [
+        15
+      ],
+      "suggested_activity_types": [
+        "learning_note"
+      ]
+    }
+  ],
+  "source_page_refs": [
+    12,
+    13,
+    14,
+    15
+  ],
+  "analysis_confidence": 0.95,
+  "review_status": "draft",
+  "notes": "추출된 텍스트와 이미지 정보를 바탕으로 분단의 문제점을 국가, 문화, 개인 차원으로 구조화하여 분석함. Baseline의 54페이지 정보는 잘못된 매칭이므로 실제 텍스트북 내용인 12-15페이지를 기준으로 전면 수정함."
+}

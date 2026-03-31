@@ -1,0 +1,16 @@
+{
+  "schema_version": "1.0.0",
+  "stage": "lesson_review_agent",
+  "lesson_id": "16차시",
+  "status": "succeeded",
+  "decision": "pass",
+  "findings": [
+    {
+      "severity": "info",
+      "message": "교과서 90쪽 텍스트를 기반으로 학습 목표와 핵심 개념을 구체화함. 미디어의 비판적 분석과 평가 역량에 초점을 맞춤.",
+      "evidence_refs": []
+    }
+  ],
+  "blocking_issues": [],
+  "warnings": []
+}

@@ -1,0 +1,121 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-03-30T15:48:40.713113+00:00",
+  "lesson_id": "19차시",
+  "activities": [
+    {
+      "activity_id": "act-19-1",
+      "lesson_id": "19차시",
+      "object_role": "learning_note",
+      "lesson_flow_stage": "during",
+      "activity_type": "freeform_html",
+      "level": "core",
+      "learning_goal": "2단원에서 배운 민주주의의 핵심 원리와 일상 속 실천 방안을 구조화하여 정리할 수 있다.",
+      "prompt_text": "우리 반 누리집(홈페이지)에 올릴 '2단원 요약 맵'을 완성해 봅시다. 수업을 들으며 중요하다고 생각한 키워드를 중심으로 내용을 정리해 보세요.",
+      "layout_template": "freeform_html",
+      "html_content": "<!DOCTYPE html><html lang='ko'><head><meta charset='UTF-8'><style>body{width:1600px;margin:0;padding:40px;background:transparent;font-family:'Noto Sans KR', sans-serif;color:#333;}.card{background:#fff;padding:50px;border-radius:32px;box-shadow:0 10px 30px rgba(0,0,0,0.05);border:1px solid #eee;}.header{display:flex;align-items:baseline;gap:20px;margin-bottom:40px;border-bottom:4px solid #4A90E2;padding-bottom:20px;}.header h1{margin:0;font-size:42px;color:#2C3E50;}.header span{font-size:20px;color:#7F8C8D;}.grid{display:grid;grid-template-columns:1fr 1fr;gap:30px;}.section{background:#F8FAFC;padding:30px;border-radius:24px;border:1px solid #E2E8F0;}.section-title{font-size:26px;font-weight:700;margin-bottom:20px;display:flex;align-items:center;gap:12px;}.section-title::before{content:'';display:inline-block;width:12px;height:12px;background:#4A90E2;border-radius:50%;}.writing-area{background:#fff;border:2px solid #333;border-radius:16px;min-height:450px;padding:20px;font-size:22px;line-height:1.6;}</style></head><body><div class='card'><div class='header'><h1>💻 2단원 핵심 내비게이션</h1><span>나만의 누리집 구성을 위한 핵심 정리 노트</span></div><div class='grid'><div class='section'><div class='section-title'>민주주의의 기본 원리와 국가 기관</div><div class='writing-area'>(수업을 들으며 기억에 남는 원리와 기관의 역할을 메모하세요)</div></div><div class='section'><div class='section-title'>국민의 권리를 지키는 민주적 제도</div><div class='writing-area'>(선거, 국민 투표 등 우리가 배운 제도들을 정리해 보세요)</div></div><div class='section' style='grid-column: span 2;'><div class='section-title'>일상 생활 속에서 민주주의를 실천하는 방법</div><div class='writing-area'>(단순한 투표를 넘어, 우리가 일상에서 할 수 있는 참여 방법을 구체적으로 적어봅시다)</div></div></div></div></body></html>",
+      "source_refs": [
+        49
+      ],
+      "student_writing_zones": [
+        {
+          "zone_id": "core_principles",
+          "label": "민주주의 원리 및 기관 메모",
+          "input_area_type": "free-writing",
+          "min_height": 450
+        },
+        {
+          "zone_id": "democratic_systems",
+          "label": "민주적 제도 정리",
+          "input_area_type": "free-writing",
+          "min_height": 450
+        },
+        {
+          "zone_id": "daily_practice",
+          "label": "일상 속 실천 방법",
+          "input_area_type": "free-writing",
+          "min_height": 450
+        }
+      ],
+      "estimated_minutes": 15,
+      "review_status": "draft",
+      "teacher_notes": ""
+    },
+    {
+      "activity_id": "act-19-2",
+      "lesson_id": "19차시",
+      "object_role": "activity_area",
+      "lesson_flow_stage": "during",
+      "activity_type": "freeform_html",
+      "level": "extension",
+      "learning_goal": "민주주의와 산업화의 관계를 이해하고, 이를 시각적으로 표현하는 뉴스카드를 창의적으로 설계할 수 있다.",
+      "prompt_text": "교과서 49쪽의 '카드 뉴스' 예시를 참고하여, 여러분만의 '민주주의 성장 뉴스카드'를 디자인해 봅시다. 우리나라 민주주의 발전에서 가장 중요하다고 생각하는 순간이나 가치를 한 장면으로 표현해 보세요.",
+      "layout_template": "freeform_html",
+      "html_content": "<!DOCTYPE html><html lang='ko'><head><meta charset='UTF-8'><style>body{width:1600px;margin:0;padding:40px;background:transparent;font-family:'Noto Sans KR', sans-serif;}.card{background:#fff;padding:60px;border-radius:40px;border:3px dashed #CBD5E0;}.canvas-container{display:flex;gap:40px;}.news-card-mockup{flex:1;background:#333;padding:20px;border-radius:20px;display:flex;flex-direction:column;gap:15px;}.main-visual{background:#fff;height:700px;border-radius:10px;display:flex;align-items:center;justify-content:center;color:#999;font-size:24px;border:2px solid #000;}.headline-area{background:#EBF8FF;padding:20px;border-radius:10px;border:2px solid #3182CE;min-height:120px;font-weight:700;font-size:28px;}.desc-area{flex:1;background:#F7FAFC;padding:40px;border-radius:20px;border:2px solid #333;}.title-tag{display:inline-block;background:#333;color:#fff;padding:8px 20px;border-radius:50px;margin-bottom:15px;font-size:18px;}</style></head><body><div class='card'><div style='margin-bottom:30px;'><h1 style='font-size:38px;margin:0;'>🎨 나만의 민주주의 뉴스카드 설계</h1><p style='font-size:22px;color:#666;'>단원을 마무리하며 가장 기억에 남는 장면이나 메시지를 담아보세요.</p></div><div class='canvas-container'><div class='news-card-mockup'><div class='main-visual'>(이곳에 민주주의의 가치를 담은 그림을 그리거나 사진을 배치하세요)</div><div class='headline-area'>(여기에 시선을 사로잡는 뉴스 제목을 써보세요)</div></div><div class='desc-area'><div class='title-tag'>기획 의도</div><div style='background:#fff; border:2px solid #333; min-height:300px; border-radius:12px; margin-bottom:30px;'></div><div class='title-tag'>뉴스카드 상세 설명</div><div style='background:#fff; border:2px solid #333; min-height:420px; border-radius:12px;'></div></div></div></div></body></html>",
+      "source_refs": [
+        49
+      ],
+      "student_writing_zones": [
+        {
+          "zone_id": "news_headline",
+          "label": "뉴스카드 제목",
+          "input_area_type": "inline-answer",
+          "min_height": 100
+        },
+        {
+          "zone_id": "intent",
+          "label": "기획 의도 기술",
+          "input_area_type": "free-writing",
+          "min_height": 300
+        },
+        {
+          "zone_id": "content_details",
+          "label": "뉴스카드 상세 설명",
+          "input_area_type": "free-writing",
+          "min_height": 420
+        }
+      ],
+      "estimated_minutes": 20,
+      "review_status": "draft",
+      "teacher_notes": ""
+    },
+    {
+      "activity_id": "act-19-3",
+      "lesson_id": "19차시",
+      "object_role": "worksheet",
+      "lesson_flow_stage": "after",
+      "activity_type": "freeform_html",
+      "level": "on-level",
+      "learning_goal": "민주주의가 우리 삶에서 왜 중요한지 성찰하고, 스스로 실천할 수 있는 과제를 제시할 수 있다.",
+      "prompt_text": "창의·융합 사고력 쑥쑥! 우리가 배운 민주주의가 '내 삶의 누리집'에서 어떻게 작동해야 할까요? 한 학기 동안의 배움을 바탕으로 스스로에게 약속하는 민주 시민 선언문을 작성해 봅시다.",
+      "layout_template": "freeform_html",
+      "html_content": "<!DOCTYPE html><html lang='ko'><head><meta charset='UTF-8'><style>body{width:1600px;margin:0;padding:40px;background:transparent;font-family:'Noto Sans KR', sans-serif;}.card{background:#FFFDF0;padding:60px;border-radius:40px;border:5px double #D4AF37;position:relative;}.title{text-align:center;font-size:45px;color:#8B4513;margin-bottom:50px;font-weight:900;text-decoration:underline;}.content-row{margin-bottom:40px;}.label{font-size:26px;font-weight:700;color:#5D4037;margin-bottom:15px;display:block;}.writing-box{background:#fff;border:2px solid #8B4513;border-radius:12px;min-height:220px;padding:20px;font-size:24px;}.manifesto-box{background:#fff;border:3px solid #333;border-radius:20px;min-height:500px;padding:40px;font-size:28px;line-height:1.8;text-align:center;display:flex;flex-direction:column;justify-content:center;}</style></head><body><div class='card'><div class='title'>📜 더 나은 세상을 위한 나의 다짐</div><div class='content-row'><span class='label'>1. 내가 생각하는 민주주의의 가장 큰 가치는 무엇인가요?</span><div class='writing-box'>(예: 자유, 평등, 존중, 참여 등)</div></div><div class='content-row'><span class='label'>2. 민주주의가 사라진다면 나의 일상은 어떻게 변할까요?</span><div class='writing-box'></div></div><div class='content-row'><span class='label'>3. [민주 시민 선언문] 나는 앞으로 다음과 같이 행동할 것을 약속합니다.</span><div class='manifesto-box'>나는 우리 사회의 당당한 구성원으로서,<br><br>______________________________________(을)를 실천하고,<br><br>______________________________________(한) 사람이 되겠습니다.<br><br>2026년 ____월 ____일 성명: ___________</div></div></div></body></html>",
+      "source_refs": [
+        49
+      ],
+      "student_writing_zones": [
+        {
+          "zone_id": "value_reflection",
+          "label": "민주주의 가치 성찰",
+          "input_area_type": "free-writing",
+          "min_height": 220
+        },
+        {
+          "zone_id": "what_if",
+          "label": "민주주의 부재 시의 변화",
+          "input_area_type": "free-writing",
+          "min_height": 220
+        },
+        {
+          "zone_id": "manifesto",
+          "label": "민주 시민 선언문 작성",
+          "input_area_type": "free-writing",
+          "min_height": 500
+        }
+      ],
+      "estimated_minutes": 12,
+      "review_status": "draft",
+      "teacher_notes": ""
+    }
+  ]
+}

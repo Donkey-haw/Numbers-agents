@@ -1,0 +1,108 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-03-26T12:42:00.942749+00:00",
+  "lesson_id": "9-11차시",
+  "sheet_name": "9-11차시",
+  "lesson_title": "작품을 읽고 독서 감상문 쓰기",
+  "lesson_type": "core",
+  "pdf_pages": [
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48
+  ],
+  "essential_question": "작품 속 인물이 추구하는 가치를 생각하며 자신의 생각이 드러나는 독서 감상문을 어떻게 쓸까요?",
+  "learning_goals": [
+    "작품 속 인물이 추구하는 가치를 파악하고 비교할 수 있다.",
+    "인물이 추구하는 가치를 자신의 삶과 관련지어 성찰할 수 있다.",
+    "가치에 대한 자신의 생각이 드러나게 독서 감상문을 쓸 수 있다."
+  ],
+  "key_concepts": [
+    "독서 감상문",
+    "가치",
+    "성찰",
+    "비교"
+  ],
+  "vocabulary": [
+    "고결하다",
+    "팔락이다",
+    "고단하다",
+    "늠름하다",
+    "탐스럽다"
+  ],
+  "misconceptions": [
+    "독서 감상문은 단순히 줄거리를 요약하는 글이라고 오해할 수 있다."
+  ],
+  "difficulty_band": "on-level",
+  "content_chunks": [
+    {
+      "chunk_id": "9-11차시-chunk-1",
+      "label": "이야기 읽고 내용 이해하기",
+      "content_type": "mixed",
+      "knowledge_type": "mixed",
+      "summary": "인물이 추구하는 가치를 생각하며 「그랬다면 어땠을까」를 읽고 내용을 파악하며 어휘를 익힙니다.",
+      "source_pages": [
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45
+      ],
+      "suggested_activity_types": [
+        "see_think_wonder",
+        "learning_note"
+      ]
+    },
+    {
+      "chunk_id": "9-11차시-chunk-2",
+      "label": "인물이 추구하는 가치 탐구 및 성찰",
+      "content_type": "activity",
+      "knowledge_type": "comparison",
+      "summary": "이야기 속 인물이 추구하는 가치를 비교해 보고, 자신이 추구하는 가치와 관련지어 삶을 성찰합니다.",
+      "source_pages": [
+        46,
+        47
+      ],
+      "suggested_activity_types": [
+        "worksheet",
+        "learning_note"
+      ]
+    },
+    {
+      "chunk_id": "9-11차시-chunk-3",
+      "label": "독서 감상문 쓰기",
+      "content_type": "activity",
+      "knowledge_type": "application",
+      "summary": "가치에 대한 자신의 생각과 실천 의지가 드러나도록 독서 감상문을 작성합니다.",
+      "source_pages": [
+        48
+      ],
+      "suggested_activity_types": [
+        "worksheet"
+      ]
+    }
+  ],
+  "source_page_refs": [
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48
+  ],
+  "analysis_confidence": 0.95,
+  "review_status": "draft",
+  "notes": "추출된 텍스트(72-81쪽)를 바탕으로 이야기 읽기, 가치 탐구, 글쓰기 활동의 3단계 흐름으로 분석을 정교화함."
+}

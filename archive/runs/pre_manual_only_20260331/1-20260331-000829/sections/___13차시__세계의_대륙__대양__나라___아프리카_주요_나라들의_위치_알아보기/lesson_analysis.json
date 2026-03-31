@@ -1,0 +1,75 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-03-30T15:40:31.957122+00:00",
+  "lesson_id": "13차시",
+  "sheet_name": "13차시",
+  "lesson_title": "세계의 대륙, 대양, 나라 — 아프리카 주요 나라들의 위치 알아보기",
+  "lesson_type": "summary",
+  "pdf_pages": [
+    131
+  ],
+  "essential_question": "지구본, 세계지도, 디지털 공간 영상 정보 등 다양한 자료를 활용해 학습한 세계의 위치와 지리 정보를 어떻게 정리하고 확인할 수 있는가?",
+  "learning_goals": [
+    "세계를 표현하는 다양한 공간 자료(지구본, 세계지도, 디지털 공간 영상 정보)의 특징을 비교하여 설명할 수 있다.",
+    "위도와 경도의 의미를 이해하고, 이를 활용해 위치를 정확하게 표현할 수 있는지 확인한다.",
+    "주제 학습 내용을 바탕으로 핵심 개념(위도, 경도, 반구, 시차 등)을 요약 정리할 수 있다."
+  ],
+  "key_concepts": [
+    "세계지도",
+    "지구본",
+    "디지털 공간 영상 정보",
+    "위도",
+    "경도",
+    "요약 정리"
+  ],
+  "vocabulary": [
+    "세계지도",
+    "지구본",
+    "디지털 공간 영상 정보",
+    "위도",
+    "경도",
+    "북반구",
+    "남반구",
+    "시차"
+  ],
+  "misconceptions": [
+    "위치는 위도로만 나타낼 수 있다고 생각하기 쉬우나, 정확한 위치 표현을 위해서는 경도와 위도가 모두 필요함을 이해해야 한다."
+  ],
+  "difficulty_band": "on-level",
+  "content_chunks": [
+    {
+      "chunk_id": "13차시-chunk-1",
+      "label": "주제 마무리 퀴즈",
+      "content_type": "summary",
+      "knowledge_type": "concept",
+      "summary": "학습한 핵심 내용(세계지도/지구본의 특징, 디지털 영상 정보, 위도/경도, 시차 등)을 바탕으로 옳은 문장을 찾아 여행 준비물을 챙기는 정리 활동 수행.",
+      "source_pages": [
+        131
+      ],
+      "suggested_activity_types": [
+        "퀴즈",
+        "개념 연결하기"
+      ]
+    },
+    {
+      "chunk_id": "13차시-chunk-2",
+      "label": "스스로 확인하기",
+      "content_type": "summary",
+      "knowledge_type": "application",
+      "summary": "공간 자료의 특징 설명, 지리 정보 찾기, 위도와 경도 활용 능력 등 학습 목표 도달 여부를 자기 평가 문항을 통해 점검.",
+      "source_pages": [
+        131
+      ],
+      "suggested_activity_types": [
+        "자기 평가",
+        "체크리스트"
+      ]
+    }
+  ],
+  "source_page_refs": [
+    131
+  ],
+  "analysis_confidence": 0.9,
+  "review_status": "draft",
+  "notes": "제공된 페이지 131은 '주제 마무리' 및 '요약 정리' 페이지로 확인되었습니다. 분석 결과는 아프리카 위치 학습보다는 주제 전체의 핵심 개념 정리 활동에 집중되어 있습니다."
+}

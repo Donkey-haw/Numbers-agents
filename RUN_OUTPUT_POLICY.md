@@ -39,7 +39,7 @@
 아래 중 하나라도 해당하면 run artifacts를 자동 삭제하지 않는다.
 
 1. run 실패
-2. `source_parse_agent`가 `blocked`
+2. legacy source parsing stage가 `blocked`
 3. `--stop-after` 사용
 4. `--debug-artifacts` 사용
 5. `--run-root`를 직접 지정

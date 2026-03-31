@@ -1,0 +1,27 @@
+{
+  "schema_version": "1.0.0",
+  "stage": "activity_plan_agent",
+  "lesson_id": "11차시",
+  "status": "succeeded_with_warning",
+  "run_id": "social_6_1_unit1_democratization_industrialization-20260331-004621",
+  "started_at": "2026-03-30T15:47:14.373634+00:00",
+  "finished_at": "2026-03-30T15:47:29.413157+00:00",
+  "input_refs": [
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit1_democratization_industrialization-20260331-004621/sections/social_6_1_unit1_life_11차시__우리나라는_어떻게_산업화를_이루었을까요_/lesson_analysis.json"
+  ],
+  "output_refs": [
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit1_democratization_industrialization-20260331-004621/sections/social_6_1_unit1_life_11차시__우리나라는_어떻게_산업화를_이루었을까요_/activity_plan_ai.json",
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit1_democratization_industrialization-20260331-004621/sections/social_6_1_unit1_life_11차시__우리나라는_어떻게_산업화를_이루었을까요_/activity_plan.json"
+  ],
+  "fallback_used": true,
+  "fallback_category": "timeout",
+  "fallback_reason": "Gemini CLI timed out after 15 seconds for activity_plan_ai",
+  "warnings": [],
+  "errors": [
+    "Gemini CLI timed out after 15 seconds for activity_plan_ai"
+  ],
+  "agent_spec_path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/agents/activity_plan_agent/AGENT.md",
+  "attempt_count": 1,
+  "repair_attempted": false,
+  "validation_errors": []
+}

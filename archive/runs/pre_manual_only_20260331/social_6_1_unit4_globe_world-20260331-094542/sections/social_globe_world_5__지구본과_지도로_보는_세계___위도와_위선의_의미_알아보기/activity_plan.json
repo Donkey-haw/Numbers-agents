@@ -1,0 +1,77 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-03-31T00:49:02.491742+00:00",
+  "lesson_id": "5차시",
+  "activities": [
+    {
+      "activity_id": "act-5-1",
+      "lesson_id": "5차시",
+      "object_role": "learning_note",
+      "lesson_flow_stage": "during",
+      "activity_type": "freeform_html",
+      "level": "core",
+      "learning_goal": "재판에 참여하는 사람들의 명칭과 주요 역할을 체계적으로 정리할 수 있다.",
+      "prompt_text": "수업을 들으며 재판에 참여하는 사람들의 역할과 특징을 메모해 봅시다.",
+      "layout_template": "freeform_html",
+      "html_content": "<!DOCTYPE html><html lang='ko'><head><meta charset='UTF-8'><style>body{width:1540px;margin:0;padding:20px;background:transparent;font-family:'Noto Sans KR',sans-serif;box-sizing:border-box;}.card{background:#ffffff;padding:40px;border-radius:30px;box-shadow:0 4px 20px rgba(0,0,0,0.05);border:1px solid #eee;}.header{display:flex;align-items:center;margin-bottom:40px;border-bottom:3px solid #333;padding-bottom:15px;}.badge{background:#4A90E2;color:#fff;padding:8px 20px;border-radius:50px;font-weight:700;margin-right:15px;font-size:20px;}.title{font-size:32px;font-weight:900;color:#333;}#grid{display:grid;grid-template-columns:1fr 1fr;gap:30px;}.role-box{background:#f9f9f9;padding:25px;border-radius:20px;}.role-header{font-size:24px;font-weight:700;margin-bottom:15px;display:flex;align-items:center;}.role-header span{background:#333;color:#fff;width:30px;height:30px;border-radius:50%;display:inline-flex;justify-content:center;align-items:center;margin-right:10px;font-size:16px;}.writing-area{background:#fff;border:2px solid #333;border-radius:15px;min-height:300px;margin-top:10px;padding:15px;}</style></head><body><div class='card'><div class='header'><div class='badge'>배움 정리</div><div class='title'>재판에 참여하는 사람들</div></div><div id='grid'><div class='role-box'><div class='role-header'><span>1</span>판사</div><div class='writing-area'></div></div><div class='role-box'><div class='role-header'><span>2</span>검사</div><div class='writing-area'></div></div><div class='role-box'><div class='role-header'><span>3</span>변호인</div><div class='writing-area'></div></div><div class='role-box'><div class='role-header'><span>4</span>피고인</div><div class='writing-area'></div></div></div></div></body></html>",
+      "source_refs": [
+        83
+      ],
+      "student_writing_zones": [
+        {
+          "zone_id": "judge_note",
+          "label": "판사 역할 메모",
+          "input_area_type": "free-writing",
+          "min_height": 300
+        },
+        {
+          "zone_id": "prosecutor_note",
+          "label": "검사 역할 메모",
+          "input_area_type": "free-writing",
+          "min_height": 300
+        },
+        {
+          "zone_id": "lawyer_note",
+          "label": "변호인 역할 메모",
+          "input_area_type": "free-writing",
+          "min_height": 300
+        },
+        {
+          "zone_id": "defendant_note",
+          "label": "피고인 역할 메모",
+          "input_area_type": "free-writing",
+          "min_height": 300
+        }
+      ],
+      "estimated_minutes": 15,
+      "review_status": "draft",
+      "teacher_notes": ""
+    },
+    {
+      "activity_id": "act-5-2",
+      "lesson_id": "5차시",
+      "object_role": "activity_area",
+      "lesson_flow_stage": "after",
+      "activity_type": "freeform_html",
+      "level": "core",
+      "learning_goal": "법원의 역할을 이해하고, 사건의 공정한 판결과 그 근거를 제시할 수 있다.",
+      "prompt_text": "원산지를 속여 이득을 얻은 피고인에 대한 판결문을 직접 작성해 봅시다.",
+      "layout_template": "freeform_html",
+      "html_content": "<!DOCTYPE html><html lang='ko'><head><meta charset='UTF-8'><style>body{width:1540px;margin:0;padding:20px;background:transparent;font-family:'Noto Sans KR',sans-serif;box-sizing:border-box;}.card{background:#ffffff;padding:50px;border-radius:30px;border:2px solid #333;}.header{margin-bottom:30px;text-align:center;}.title{font-size:36px;font-weight:900;text-decoration:underline;margin-bottom:10px;}.case-summary{background:#fff8e1;padding:25px;border-radius:15px;border-left:8px solid #ffca28;margin-bottom:40px;line-height:1.6;font-size:20px;}.section-title{font-size:24px;font-weight:700;margin-bottom:15px;color:#333;}.writing-area{background:#fff;border:3px solid #333;border-radius:20px;min-height:550px;padding:30px;font-size:22px;line-height:2.0;background-image:linear-gradient(#eee .1em,transparent .1em);background-size:100% 3em;}</style></head><body><div class='card'><div class='header'><div class='title'>나의 판결문</div><p style='color:#666;'>제 2026 - 5호 사건</p></div><div class='case-summary'><strong>사건 요약:</strong> 피고인은 값싼 수입산 식재료를 국산으로 속여 학교 급식 업체에 납품하였습니다. 이로 인해 많은 학생들의 건강이 위협받을 뻔했으며, 피고인은 큰 부당 이득을 챙겼습니다. 검사는 엄격한 처벌을 구형했고, 변호인은 피고인이 잘못을 뉘우치고 있다는 점을 강조했습니다.</div><div class='section-title'>여러분의 판결과 그 이유를 논리적으로 적어주세요.</div><div class='writing-area'></div></div></body></html>",
+      "source_refs": [
+        83
+      ],
+      "student_writing_zones": [
+        {
+          "zone_id": "verdict_text",
+          "label": "판결문 작성 구역",
+          "input_area_type": "free-writing",
+          "min_height": 550
+        }
+      ],
+      "estimated_minutes": 20,
+      "review_status": "draft",
+      "teacher_notes": ""
+    }
+  ]
+}

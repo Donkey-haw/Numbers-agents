@@ -1,0 +1,116 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-03-30T15:54:22.030619+00:00",
+  "lesson_id": "5-6차시",
+  "activities": [
+    {
+      "activity_id": "act-5-6-1",
+      "lesson_id": "5-6차시",
+      "object_role": "learning_note",
+      "lesson_flow_stage": "during",
+      "activity_type": "freeform_html",
+      "level": "core",
+      "learning_goal": "분단으로 인해 발생하는 문제점과 평화 통일의 필요성을 수업 내용을 바탕으로 체계적으로 정리할 수 있다.",
+      "prompt_text": "수업 시간에 배운 분단의 아픔과 평화 통일이 우리에게 꼭 필요한 이유를 자유롭게 메모하며 정리해 봅시다.",
+      "layout_template": "freeform_html",
+      "html_content": "<!DOCTYPE html><html lang='ko'><head><meta charset='UTF-8'><style>body{width:1200px;margin:0;padding:20px;background:transparent;font-family:'Apple SD Gothic Neo', sans-serif;box-sizing:border-box;}.card{background:#ffffff;padding:40px;border-radius:30px;box-shadow:none;border:none;}.header{display:flex;align-items:center;margin-bottom:30px;}.badge{background:#4A90E2;color:#fff;padding:8px 20px;border-radius:50px;font-weight:bold;font-size:18px;margin-right:15px;}.title{font-size:32px;font-weight:800;color:#333;}.instructions{font-size:20px;color:#555;margin-bottom:30px;line-height:1.6;}.grid{display:grid;grid-template-columns:1fr 1fr;gap:30px;}.note-section{display:flex;flex-direction:column;}.label{font-size:22px;font-weight:bold;margin-bottom:15px;color:#222;display:flex;align-items:center;}.label::before{content:'';display:inline-block;width:10px;height:24px;background:#4A90E2;margin-right:12px;border-radius:5px;}.writing-area{background:#fff;border:3px solid #333;border-radius:20px;min-height:650px;flex-grow:1;position:relative;}.writing-area::after{content:'여기에 자유롭게 기록하세요 (애플 펜슬 권장)';position:absolute;top:20px;left:20px;color:#ccc;font-size:18px;pointer-events:none;}</style></head><body><div class='card'><div class='header'><div class='badge'>학습 메모</div><div class='title'>오늘 수업 핵심 정리하기</div></div><div class='instructions'>선생님의 설명을 들으며 분단으로 인한 문제와 평화 통일이 필요한 이유를 나만의 방식으로 기록해 보세요.</div><div class='grid'><div class='note-section'><div class='label'>분단으로 인한 문제점</div><div class='writing-area'></div></div><div class='note-section'><div class='label'>평화 통일이 필요한 이유</div><div class='writing-area'></div></div></div></div></body></html>",
+      "source_refs": [
+        10
+      ],
+      "teacher_notes": "학생들이 수업의 흐름을 놓치지 않고 핵심 키워드(이산가족, 국방비, 평화 등)를 중심으로 기록하도록 안내합니다.",
+      "student_writing_zones": [
+        {
+          "zone_id": "problems_note",
+          "label": "분단 문제점 기록",
+          "input_area_type": "free-writing",
+          "min_height": 650
+        },
+        {
+          "zone_id": "reason_note",
+          "label": "통일 필요성 기록",
+          "input_area_type": "free-writing",
+          "min_height": 650
+        }
+      ],
+      "estimated_minutes": 10,
+      "review_status": "draft"
+    },
+    {
+      "activity_id": "act-5-6-2",
+      "lesson_id": "5-6차시",
+      "object_role": "activity_area",
+      "lesson_flow_stage": "during",
+      "activity_type": "freeform_html",
+      "level": "on-level",
+      "learning_goal": "분단 관련 장소를 평화의 장소로 변화시키려는 창의적인 아이디어를 제안하고 그 이유를 논리적으로 설명할 수 있다.",
+      "prompt_text": "교과서에 나온 사례처럼, 분단의 상징인 장소를 '평화의 공간'으로 바꾼다면 어떤 모습일지 상상해 봅시다.",
+      "layout_template": "freeform_html",
+      "html_content": "<!DOCTYPE html><html lang='ko'><head><meta charset='UTF-8'><style>body{width:1200px;margin:0;padding:20px;background:transparent;font-family:'Apple SD Gothic Neo', sans-serif;box-sizing:border-box;}.card{background:#ffffff;padding:45px;border-radius:32px;border:none;}.header{margin-bottom:35px;border-bottom:2px solid #eee;padding-bottom:20px;}.title-row{display:flex;align-items:center;margin-bottom:10px;}.badge{background:#34C759;color:#fff;padding:8px 20px;border-radius:50px;font-weight:bold;font-size:18px;margin-right:15px;}.title{font-size:34px;font-weight:800;color:#111;}.subtitle{font-size:20px;color:#666;line-height:1.5;}.form-section{margin-top:30px;}.input-group{margin-bottom:30px;}.label{font-size:24px;font-weight:bold;margin-bottom:15px;color:#333;}.text-input{border:3px solid #333;border-radius:15px;padding:15px;font-size:22px;width:50%;margin-bottom:10px;}.canvas-area{border:3px solid #333;border-radius:24px;min-height:500px;background:#fff;position:relative;margin-top:10px;}.canvas-area::after{content:'여기에 평화의 공간이 된 모습을 그리거나 설명해 보세요';position:absolute;top:50%;left:50%;transform:translate(-50%, -50%);color:#ddd;font-size:24px;font-weight:bold;pointer-events:none;}.explanation-box{border:3px solid #333;border-radius:20px;min-height:220px;padding:20px;margin-top:20px;}</style></head><body><div class='card'><div class='header'><div class='title-row'><div class='badge'>창의 활동</div><div class='title'>분단의 공간을 평화의 공간으로!</div></div><div class='subtitle'>철조망이 걷히고 지뢰가 사라진 그곳은 어떤 모습이 될까요? 여러분의 아이디어를 담아보세요.</div></div><div class='form-section'><div class='input-group'><div class='label'>1. 내가 선택한 분단의 장소는 어디인가요?</div><div class='text-input' style='background:#f9f9f9; color:#999;'>예시: DMZ 철조망, 판문점, 끊어진 철길 등</div></div><div class='input-group'><div class='label'>2. 이 장소가 '평화의 공간'으로 변한 모습을 그려보세요.</div><div class='canvas-area'></div></div><div class='input-group'><div class='label'>3. 왜 이런 공간으로 바꾸고 싶나요? (장소의 의미와 기대 효과)</div><div class='explanation-box'></div></div></div></div></body></html>",
+      "source_refs": [
+        11,
+        12
+      ],
+      "teacher_notes": "단순히 예쁜 건물을 짓는 것이 아니라, 분단의 아픔을 치유하거나 평화의 가치를 알리는 기능에 집중하도록 유도합니다.",
+      "student_writing_zones": [
+        {
+          "zone_id": "target_place",
+          "label": "선택한 장소",
+          "input_area_type": "inline-answer",
+          "min_height": 60
+        },
+        {
+          "zone_id": "design_canvas",
+          "label": "공간 디자인 (그리기)",
+          "input_area_type": "free-writing",
+          "min_height": 500
+        },
+        {
+          "zone_id": "design_reason",
+          "label": "변화의 이유와 의미",
+          "input_area_type": "free-writing",
+          "min_height": 220
+        }
+      ],
+      "estimated_minutes": 15,
+      "review_status": "draft"
+    },
+    {
+      "activity_id": "act-5-6-3",
+      "lesson_id": "5-6차시",
+      "object_role": "worksheet",
+      "lesson_flow_stage": "after",
+      "activity_type": "freeform_html",
+      "level": "core",
+      "learning_goal": "평화 통일이 국가적 노력뿐만 아니라 개인의 실천이 필요함을 이해하고, 일상에서 실천할 수 있는 일을 구체적으로 계획할 수 있다.",
+      "prompt_text": "평화 통일을 위해 '나부터' 실천할 수 있는 작은 일들은 무엇이 있을까요? 세 가지 평화 약속을 정해 봅시다.",
+      "layout_template": "freeform_html",
+      "html_content": "<!DOCTYPE html><html lang='ko'><head><meta charset='UTF-8'><style>body{width:1200px;margin:0;padding:20px;background:transparent;font-family:'Apple SD Gothic Neo', sans-serif;box-sizing:border-box;}.card{background:#ffffff;padding:50px;border-radius:40px;border:5px solid #FFD700;}.header{text-align:center;margin-bottom:40px;}.title{font-size:36px;font-weight:900;color:#333;margin-bottom:15px;}.mission-statement{background:#FFF9C4;padding:20px;border-radius:15px;font-size:22px;font-weight:bold;color:#827717;display:inline-block;}.grid{display:grid;grid-template-columns:repeat(3, 1fr);gap:25px;margin-top:40px;}.promise-card{background:#fff;border:3px solid #333;border-radius:25px;padding:30px;display:flex;flex-direction:column;align-items:center;}.number{background:#333;color:#fff;width:50px;height:50px;border-radius:25px;display:flex;align-items:center;justify-content:center;font-size:24px;font-weight:bold;margin-bottom:20px;}.promise-box{width:100%;min-height:350px;background:#fcfcfc;border-radius:15px;margin-top:15px;position:relative;}.promise-box::after{content:'나의 실천 약속 쓰기';position:absolute;top:20px;left:50%;transform:translateX(-50%);color:#ddd;font-size:18px;pointer-events:none;}</style></head><body><div class='card'><div class='header'><div class='title'>나의 '평화 통일' 실천 약속</div><div class='mission-statement'>\"평화 통일은 거창한 것이 아니라, 나의 작은 관심에서 시작됩니다.\"</div></div><div class='grid'><div class='promise-card'><div class='number'>1</div><div style='font-size:20px; font-weight:bold;'>학교에서</div><div class='promise-box'></div></div><div class='promise-card'><div class='number'>2</div><div style='font-size:20px; font-weight:bold;'>가정에서</div><div class='promise-box'></div></div><div class='promise-card'><div class='number'>3</div><div style='font-size:20px; font-weight:bold;'>친구와 함께</div><div class='promise-box'></div></div></div><div style='margin-top:40px; text-align:right; font-size:18px; color:#666;'>실천 기간: 오늘부터 한 주 동안</div></div></body></html>",
+      "source_refs": [
+        12
+      ],
+      "teacher_notes": "국가 간의 정치적 협상 이외에 우리가 북한 주민에 대한 편견을 버리거나 평화 관련 뉴스에 관심을 갖는 것도 통일을 위한 노력임을 강조합니다.",
+      "student_writing_zones": [
+        {
+          "zone_id": "school_promise",
+          "label": "학교 실천 약속",
+          "input_area_type": "free-writing",
+          "min_height": 350
+        },
+        {
+          "zone_id": "home_promise",
+          "label": "가정 실천 약속",
+          "input_area_type": "free-writing",
+          "min_height": 350
+        },
+        {
+          "zone_id": "friend_promise",
+          "label": "친구와 실천 약속",
+          "input_area_type": "free-writing",
+          "min_height": 350
+        }
+      ],
+      "estimated_minutes": 8,
+      "review_status": "draft"
+    }
+  ]
+}

@@ -1,0 +1,110 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-03-26T21:05:00Z",
+  "lesson_id": "9-11차시",
+  "sheet_name": "9-11차시",
+  "lesson_title": "작품을 읽고 독서 감상문 쓰기",
+  "lesson_type": "core",
+  "pdf_pages": [
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48
+  ],
+  "essential_question": "작품 속 인물이 추구하는 가치를 파악하고, 이를 자신의 삶과 관련지어 독서 감상문으로 어떻게 나타낼 수 있을까?",
+  "learning_goals": [
+    "작품 속 인물이 추구하는 가치를 파악하고 자신의 가치관과 비교할 수 있다.",
+    "인물이 추구하는 가치와 자신의 삶을 관련지어 생각할 수 있다.",
+    "가치에 대한 자신의 생각이 드러나게 독서 감상문을 쓸 수 있다."
+  ],
+  "key_concepts": [
+    "가치 추구",
+    "삶의 태도",
+    "자기 성찰",
+    "독서 감상문"
+  ],
+  "vocabulary": [
+    "고결하다",
+    "팔락이다",
+    "고단하다",
+    "늠름하다",
+    "탐스럽다",
+    "천산갑"
+  ],
+  "misconceptions": [
+    "독서 감상문은 책의 줄거리를 요약하는 것이 가장 중요한 목적이다.",
+    "인물이 추구하는 가치는 항상 긍정적인 것 하나로만 고정되어 있다."
+  ],
+  "difficulty_band": "on-level",
+  "content_chunks": [
+    {
+      "chunk_id": "9-11차시-chunk-1",
+      "label": "작품 읽기 및 내용 파악",
+      "content_type": "mixed",
+      "knowledge_type": "concept",
+      "summary": "인물이 추구하는 가치를 생각하며 「그랬다면 어땠을까」를 읽고 내용을 파악하며 낱말의 뜻을 익힌다.",
+      "source_pages": [
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45
+      ],
+      "suggested_activity_types": [
+        "see_think_wonder",
+        "learning_note"
+      ]
+    },
+    {
+      "chunk_id": "9-11차시-chunk-2",
+      "label": "가치 비교 및 자기 성찰",
+      "content_type": "mixed",
+      "knowledge_type": "comparison",
+      "summary": "작품 속 다람쥐가 추구한 가치를 비교해 보고, 자신이 되고 싶은 동물과 그 까닭을 자신이 추구하는 가치와 관련지어 성찰한다.",
+      "source_pages": [
+        46,
+        47
+      ],
+      "suggested_activity_types": [
+        "worksheet",
+        "learning_note"
+      ]
+    },
+    {
+      "chunk_id": "9-11차시-chunk-3",
+      "label": "독서 감상문 쓰기",
+      "content_type": "text",
+      "knowledge_type": "application",
+      "summary": "가치에 대한 자신의 생각이 드러나도록 인물의 삶과 자신의 노력을 구체적으로 포함하여 독서 감상문을 쓴다.",
+      "source_pages": [
+        48
+      ],
+      "suggested_activity_types": [
+        "worksheet"
+      ]
+    }
+  ],
+  "source_page_refs": [
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48
+  ],
+  "analysis_confidence": 0.95,
+  "review_status": "draft",
+  "notes": "작품 「그랬다면 어땠을까」를 바탕으로 한 가치 탐색과 독서 감상문 쓰기 활동이 유기적으로 연결됨. 낱말 알기 활동의 어휘들을 vocabulary에 반영함."
+}

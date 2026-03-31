@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.0.0",
+  "stage": "boundary_decision_agent",
+  "lesson_id": null,
+  "status": "succeeded_with_warning",
+  "run_id": "1-20260330-235008",
+  "started_at": "2026-03-30T14:50:14.663579+00:00",
+  "finished_at": "2026-03-30T14:50:14.664043+00:00",
+  "input_refs": [
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/1-20260330-235008/source/page_candidates.json"
+  ],
+  "output_refs": [
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/1-20260330-235008/source/boundary_decisions.json",
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/1-20260330-235008/source/boundary_decision.status.json"
+  ],
+  "fallback_used": false,
+  "warnings": [
+    "40 lessons were marked low_confidence"
+  ],
+  "errors": [],
+  "agent_spec_path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/agents/boundary_decision_agent/AGENT.md",
+  "runtime_driven": true
+}

@@ -1,0 +1,94 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-03-31T10:00:00+00:00",
+  "lesson_id": "6-7차시",
+  "activities": [
+    {
+      "activity_id": "act-6-7-1",
+      "lesson_id": "6-7차시",
+      "object_role": "learning_note",
+      "lesson_flow_stage": "during",
+      "activity_type": "learning_note",
+      "level": "core",
+      "learning_goal": "4·19 혁명의 발생 원인과 전개 과정을 이해하고 수업 내용을 체계적으로 정리할 수 있다.",
+      "prompt_text": "선생님의 설명을 들으며 4·19 혁명이 일어난 까닭과 시민들의 노력을 메모해 봅시다.",
+      "layout_template": "freeform_html",
+      "html_content": "<!DOCTYPE html><html lang='ko'><head><meta charset='UTF-8'><meta name='viewport' content='width=device-width, initial-scale=1.0'><style>body{margin:0;padding:20px;width:1400px;background:transparent;font-family:'Pretendard', sans-serif;color:#333;}.card{background:#fff;padding:40px;border-radius:32px;box-shadow:0 4px 20px rgba(0,0,0,0.05);border:1px solid #eee;}.header{display:flex;align-items:center;margin-bottom:30px;border-bottom:4px solid #FFD166;padding-bottom:15px;}.badge{background:#FFD166;color:#000;padding:8px 20px;border-radius:12px;font-weight:800;font-size:20px;margin-right:15px;}.title{font-size:32px;font-weight:800;margin:0;}.section-grid{display:grid;grid-template-columns:1fr 1fr;gap:30px;margin-top:20px;}.section-label{font-size:22px;font-weight:700;margin-bottom:12px;color:#444;display:flex;align-items:center;}.section-label::before{content:'';display:inline-block;width:8px;height:24px;background:#FFD166;margin-right:10px;border-radius:4px;}.writing-area{background:#fff;border:3px solid #333;border-radius:16px;min-height:600px;padding:20px;font-size:20px;line-height:1.6;position:relative;}.writing-area::after{content:'여기에 자유롭게 메모하세요 (Apple Pencil 권장)';position:absolute;top:20px;left:20px;color:#ccc;font-weight:500;z-index:0;pointer-events:none;}</style></head><body><div class='card'><div class='header'><div class='badge'>오늘의 배움 기록</div><h1 class='title'>4·19 혁명: 민주주의를 향한 뜨거운 발걸음</h1></div><div class='section-grid'><div class='column'><div class='section-label'>사건의 흐름 (원인과 결과)</div><div class='writing-area'></div></div><div class='column'><div class='section-label'>설명을 들으며 느낀 점/궁금한 점</div><div class='writing-area'></div></div></div></div></body></html>",
+      "source_refs": [
+        32
+      ],
+      "student_writing_zones": [
+        {
+          "zone_id": "historical_flow",
+          "label": "사건의 흐름 정리",
+          "input_area_type": "free-writing",
+          "min_height": 600
+        },
+        {
+          "zone_id": "personal_reflection",
+          "label": "느낀 점 및 질문",
+          "input_area_type": "free-writing",
+          "min_height": 600
+        }
+      ],
+      "estimated_minutes": 15,
+      "review_status": "draft"
+    },
+    {
+      "activity_id": "act-6-7-2",
+      "lesson_id": "6-7차시",
+      "object_role": "activity_area",
+      "lesson_flow_stage": "during",
+      "activity_type": "see_think_wonder",
+      "level": "on-level",
+      "learning_goal": "시 '나는 알아요'와 당시 초등학생들의 참여 의미를 해석하고 민주주의 수호 의지를 파악할 수 있다.",
+      "prompt_text": "교과서 32쪽의 시 '나는 알아요'를 읽고, 당시 초등학생들이 거리로 나선 마음을 상상해 봅시다.",
+      "layout_template": "freeform_html",
+      "html_content": "<!DOCTYPE html><html lang='ko'><head><meta charset='UTF-8'><style>body{margin:0;padding:20px;width:1400px;background:transparent;font-family:'Pretendard', sans-serif;}.card{background:#fff;padding:45px;border-radius:32px;border:1px solid #eee;}.header{margin-bottom:35px;}.title-group{display:flex;align-items:baseline;gap:15px;}.badge{background:#06D6A0;color:#fff;padding:6px 16px;border-radius:8px;font-weight:700;font-size:18px;}.main-title{font-size:36px;font-weight:900;margin:10px 0;color:#111;}.sub-text{font-size:20px;color:#666;line-height:1.5;}.content-layout{display:flex;gap:40px;margin-top:20px;}.poem-box{flex:1;background:#F8F9FA;padding:30px;border-radius:20px;border-left:8px solid #06D6A0;font-style:italic;line-height:1.8;font-size:20px;}.thinking-canvas{flex:1.5;}.label{font-size:22px;font-weight:800;margin-bottom:15px;color:#06D6A0;}.writing-box{border:3px solid #333;background:#fff;border-radius:20px;min-height:550px;padding:25px;font-size:22px;}</style></head><body><div class='card'><div class='header'><div class='title-group'><div class='badge'>깊이 생각하기</div><h1 class='main-title'>\"나는 알아요, 왜 총을 쏘았는지...\"</h1></div><p class='sub-text'>4·19 혁명 당시 초등학생이었던 형과 누나들은 어떤 마음으로 시를 쓰고 거리로 나갔을까요?</p></div><div class='content-layout'><div class='poem-box'><strong>[시: 나는 알아요]</strong><br><br>어머니, 왜 총을 쏘았는지 나는 알아요.<br>민주주의를 지키려고 그랬다는 것을...<br>우리 형과 누나들이 흘린 피는<br>결코 헛되지 않을 거예요.<br><br>... (교과서 32쪽 시 참고)</div><div class='thinking-canvas'><div class='label'>그날의 초등학생이 되어 답장을 써보거나 그림을 그려보세요.</div><div class='writing-box'></div></div></div></div></body></html>",
+      "source_refs": [
+        32
+      ],
+      "student_writing_zones": [
+        {
+          "zone_id": "empathy_response",
+          "label": "역사적 공감 및 표현",
+          "input_area_type": "free-writing",
+          "min_height": 550
+        }
+      ],
+      "estimated_minutes": 12,
+      "review_status": "draft"
+    },
+    {
+      "activity_id": "act-6-7-3",
+      "lesson_id": "6-7차시",
+      "object_role": "worksheet",
+      "lesson_flow_stage": "after",
+      "activity_type": "worksheet",
+      "level": "extension",
+      "learning_goal": "민주주의를 지키기 위한 시민 참여의 중요성을 오늘날의 학교 생활에 적용할 수 있다.",
+      "prompt_text": "4·19 혁명 정신을 이어받아, 우리 반의 민주주의를 지키기 위한 나의 '참여 약속'을 세워 봅시다.",
+      "layout_template": "freeform_html",
+      "html_content": "<!DOCTYPE html><html lang='ko'><head><meta charset='UTF-8'><style>body{margin:0;padding:20px;width:1400px;background:transparent;font-family:'Pretendard', sans-serif;}.card{background:#fff;padding:40px;border-radius:40px;border:2px solid #efefef;}.top-section{text-align:center;margin-bottom:40px;}.title{font-size:40px;font-weight:900;color:#118AB2;margin-bottom:10px;}.desc{font-size:22px;color:#444;}.grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;}.box{display:flex;flex-direction:column;}.box-header{background:#118AB2;color:#fff;padding:15px;border-radius:15px 15px 0 0;font-weight:800;font-size:22px;text-align:center;}.writing-zone{border:3px solid #333;border-top:none;background:#fff;border-radius:0 0 15px 15px;min-height:480px;padding:25px;font-size:20px;}</style></head><body><div class='card'><div class='top-section'><div class='title'>민주주의 수호자 임명장</div><div class='desc'>4·19 혁명의 희생이 헛되지 않도록, 오늘날 내가 실천할 참여는 무엇일까요?</div></div><div class='grid'><div class='box'><div class='box-header'>과거: 4·19 혁명 당시 시민들이 지키려 했던 것</div><div class='writing-zone'></div></div><div class='box'><div class='box-header'>현재: 우리 반/학교에서 내가 참여로 지킬 것</div><div class='writing-zone'></div></div></div></div></body></html>",
+      "source_refs": [
+        32
+      ],
+      "student_writing_zones": [
+        {
+          "zone_id": "past_understanding",
+          "label": "역사적 가치 정리",
+          "input_area_type": "free-writing",
+          "min_height": 480
+        },
+        {
+          "zone_id": "present_action",
+          "label": "실천 약속",
+          "input_area_type": "free-writing",
+          "min_height": 480
+        }
+      ],
+      "estimated_minutes": 10,
+      "review_status": "draft"
+    }
+  ]
+}

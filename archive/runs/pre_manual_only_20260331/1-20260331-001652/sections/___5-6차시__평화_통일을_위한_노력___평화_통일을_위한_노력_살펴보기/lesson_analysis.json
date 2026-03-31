@@ -1,0 +1,67 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-03-30T15:19:29.001592+00:00",
+  "lesson_id": "5-6차시",
+  "sheet_name": "5-6차시",
+  "lesson_title": "평화 통일을 위한 노력 — 평화 통일을 위한 노력 살펴보기",
+  "pdf_pages": [
+    10,
+    11,
+    12
+  ],
+  "essential_question": "평화 통일을 이루기 위해 우리가 관심을 가지고 실천해야 할 노력에는 어떤 것들이 있을까요?",
+  "learning_goals": [
+    "분단으로 생겨난 문제점과 평화 통일의 필요성을 설명할 수 있다.",
+    "분단과 관련된 장소를 평화의 장소로 만들려는 노력을 찾아볼 수 있다.",
+    "평화 통일을 위해 우리가 할 수 있는 일을 탐색할 수 있다."
+  ],
+  "key_concepts": [
+    "평화 통일",
+    "분단 문제",
+    "평화의 장소",
+    "평화 통일 캠페인"
+  ],
+  "vocabulary": [
+    "분단",
+    "평화 통일",
+    "민주화",
+    "산업화",
+    "한반도기"
+  ],
+  "misconceptions": [
+    "평화 통일은 국가 간의 정치적인 문제로만 국한된다고 생각할 수 있으나, 일상 속 평화의 장소 만들기 등 개인의 노력도 중요함을 인식해야 함."
+  ],
+  "content_chunks": [
+    {
+      "chunk_id": "5-6차시-chunk-1",
+      "label": "주제 도입 및 학습 목표",
+      "content_type": "text",
+      "knowledge_type": "concept",
+      "summary": "평화 통일을 위한 노력 주제의 시작으로, 분단 문제 해결 및 평화 통일의 필요성 등 단원 전체에서 다룰 학습 목표를 안내함.",
+      "source_pages": [
+        10
+      ]
+    },
+    {
+      "chunk_id": "5-6차시-chunk-2",
+      "label": "평화 통일 캠페인 전시관 활동",
+      "content_type": "activity",
+      "knowledge_type": "application",
+      "summary": "전시관 상황에서 인물들의 대화를 통해 평화 통일과 관련된 다양한 경험(한반도기, 가발 만들기 체험 등)을 탐색하고 특정 조건을 가진 친구를 찾는 도입 활동을 수행함.",
+      "source_pages": [
+        11,
+        12
+      ]
+    }
+  ],
+  "source_page_refs": [
+    10,
+    11,
+    12
+  ],
+  "analysis_confidence": 0.95,
+  "lesson_type": "intro",
+  "difficulty_band": "on-level",
+  "review_status": "draft",
+  "notes": "교과서 10쪽의 명시적인 학습 목표와 11-12쪽의 삽화 기반 도입 활동을 분석하여 반영함. 4차시와 12쪽이 겹치는 부분은 도입 전시관 활동의 연속성으로 판단됨."
+}

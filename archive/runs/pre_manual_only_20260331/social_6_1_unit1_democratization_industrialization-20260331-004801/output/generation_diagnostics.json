@@ -1,0 +1,25 @@
+{
+  "schema_version": "1.0.0",
+  "run_id": "social_6_1_unit1_democratization_industrialization-20260331-004801",
+  "updated_at": "2026-03-30T15:48:53.706875+00:00",
+  "stages": {
+    "lesson_analysis_agent": {
+      "status": "succeeded_with_warning",
+      "fallback_used": true,
+      "warning_count": 5,
+      "error_count": 0,
+      "details": {
+        "fallback_category_counts": {
+          "timeout": 5
+        }
+      }
+    },
+    "activity_plan_agent": {
+      "status": "pending",
+      "fallback_used": false,
+      "warning_count": 0,
+      "error_count": 0,
+      "details": {}
+    }
+  }
+}

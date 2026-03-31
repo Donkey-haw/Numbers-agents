@@ -1,0 +1,92 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-03-30T15:31:28.638770+00:00",
+  "lesson_id": "2-3차시",
+  "sheet_name": "2-3차시",
+  "lesson_title": "지구본과 지도로 보는 세계 — 지구본의 특징 살펴보기",
+  "lesson_type": "core",
+  "pdf_pages": [
+    112,
+    113,
+    114,
+    115
+  ],
+  "essential_question": "지구본과 세계지도는 각각 어떤 특징이 있으며, 실제 모습과 다르게 표현되는 이유는 무엇일까?",
+  "learning_goals": [
+    "지구본과 세계지도의 특징을 비교하여 설명할 수 있다.",
+    "세계지도가 실제 지구의 모습과 다르게 표현되는 까닭을 이해한다.",
+    "다양한 형태의 세계지도가 가진 의미를 찾아볼 수 있다."
+  ],
+  "key_concepts": [
+    "지구본",
+    "세계지도",
+    "적도",
+    "최단 경로",
+    "정보 활용 능력"
+  ],
+  "vocabulary": [
+    "모형",
+    "축소",
+    "평면",
+    "비행경로",
+    "아델스탄 스필하우스"
+  ],
+  "misconceptions": [
+    "세계지도에 표현된 영토의 모양이나 면적이 실제와 항상 일치한다고 생각할 수 있다."
+  ],
+  "difficulty_band": "on-level",
+  "content_chunks": [
+    {
+      "chunk_id": "2-3차시-chunk-1",
+      "label": "지구본과 세계지도의 특징",
+      "content_type": "text",
+      "knowledge_type": "comparison",
+      "summary": "지구본은 지구의 실제 모습과 비슷해 위치와 거리가 정확하지만 한눈에 보기 어렵고, 세계지도는 평면이라 한눈에 보기 좋지만 모양과 면적이 실제와 다를 수 있음을 학습한다.",
+      "source_pages": [
+        112,
+        113
+      ],
+      "suggested_activity_types": [
+        "비교 표 작성",
+        "장단점 토론"
+      ]
+    },
+    {
+      "chunk_id": "2-3차시-chunk-2",
+      "label": "지구본과 세계지도 활용하기",
+      "content_type": "activity",
+      "knowledge_type": "procedure",
+      "summary": "남극 대륙의 모양을 직접 그려보고 면적 차이를 확인하며, 서울에서 런던까지의 최단 경로를 지구본과 지도로 비교해 본다.",
+      "source_pages": [
+        114
+      ],
+      "suggested_activity_types": [
+        "남극 그리기",
+        "끈을 이용한 최단 경로 찾기"
+      ]
+    },
+    {
+      "chunk_id": "2-3차시-chunk-3",
+      "label": "다양한 형태의 세계지도",
+      "content_type": "mixed",
+      "knowledge_type": "concept",
+      "summary": "물고기의 관점에서 그린 지도, UN 깃발 등 중심과 목적에 따라 세계지도가 다양하게 표현될 수 있음을 이해한다.",
+      "source_pages": [
+        115
+      ],
+      "suggested_activity_types": [
+        "독특한 지도 조사하기",
+        "나만의 중심 지도 구상"
+      ]
+    }
+  ],
+  "source_page_refs": [
+    112,
+    113,
+    114,
+    115
+  ],
+  "analysis_confidence": 0.95,
+  "review_status": "draft",
+  "notes": "텍스트북 추출 내용을 바탕으로 지구본과 지도의 대비적 특징 및 활동 내용을 구체화함. 115쪽의 다양한 세계지도 사례를 포함하여 학습 범위를 명확히 함."
+}

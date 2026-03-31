@@ -1,0 +1,104 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-03-26T10:00:00+09:00",
+  "lesson_id": "14차시",
+  "activities": [
+    {
+      "activity_id": "act-14-1",
+      "lesson_id": "14차시",
+      "object_role": "activity_area",
+      "lesson_flow_stage": "during",
+      "activity_type": "freeform_html",
+      "level": "core",
+      "learning_goal": "시 「난 탐험가」의 가치를 바탕으로 나만의 탐험 계획과 추구하는 가치를 구체적으로 표현할 수 있다.",
+      "prompt_text": "시 속의 탐험가처럼, 여러분이 삶에서 새롭게 발견하고 싶은 '가치'는 무엇인가요? 나만의 탐험 일지를 작성해 봅시다.",
+      "layout_template": "freeform_html",
+      "html_content": "<!DOCTYPE html><html lang='ko'><head><meta charset='UTF-8'><style>@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap');body{width:1600px;margin:0;padding:40px;background:transparent;font-family:'Noto Sans KR',sans-serif;color:#333;box-sizing:border-box;}.card{background:#fff;border-radius:32px;padding:48px;box-shadow:0 10px 30px rgba(0,0,0,0.05);border:1px solid #eee;}.header{display:flex;align-items:center;margin-bottom:32px;}.badge{background:#4A90E2;color:#fff;padding:8px 20px;border-radius:12px;font-weight:700;font-size:20px;margin-right:20px;}.title{font-size:32px;font-weight:700;}.instruction{font-size:24px;line-height:1.6;margin-bottom:40px;color:#555;padding-left:12px;border-left:6px solid #4A90E2;}.main-container{display:grid;grid-template-columns:1fr 1fr;gap:40px;}.sub-title{font-size:22px;font-weight:700;margin-bottom:16px;color:#2c3e50;}.writing-box{background:#fff;border:3px solid #333;border-radius:20px;min-height:550px;padding:24px;position:relative;}.writing-box::after{content:'(여기에 그림을 그리거나 글을 써보세요)';position:absolute;bottom:20px;right:20px;font-size:16px;color:#999;font-style:italic;}.icon-label{display:inline-flex;align-items:center;margin-bottom:12px;font-size:18px;font-weight:700;color:#4A90E2;}</style></head><body><div class='card'><div class='header'><div class='badge'>확장 활동</div><div class='title'>나의 가치 탐험 일지</div></div><div class='instruction'>시 「난 탐험가」를 읽고 느낀 점을 떠올려 보세요. 내가 일상에서 도전하고 싶은 목표와 그 과정에서 가장 중요하게 여길 '나만의 가치'를 정해 일지를 완성해 봅시다.</div><div class='main-container'><div><div class='icon-label'>🧭 나의 탐험 목표</div><div class='sub-title'>내가 새롭게 발견하고 싶은 세상이나 목표는?</div><div class='writing-box'></div></div><div><div class='icon-label'>💎 나의 나침반 가치</div><div class='sub-title'>탐험하는 동안 나를 지켜줄 핵심 가치는?</div><div class='writing-box'></div></div></div></div></body></html>",
+      "source_refs": [
+        51,
+        52
+      ],
+      "teacher_notes": "교과서에서 시를 읽고 가치를 파악하는 활동을 넘어, 학생 개개인이 자신의 삶을 하나의 탐험으로 정의하고 그 안에서 발현하고 싶은 개인적 가치를 시각화하도록 유도합니다.",
+      "student_writing_zones": [
+        {
+          "zone_id": "exploration_goal",
+          "label": "나의 탐험 목표 쓰기",
+          "input_area_type": "free-writing",
+          "min_height": 550
+        },
+        {
+          "zone_id": "core_value",
+          "label": "나의 나침반 가치 쓰기",
+          "input_area_type": "free-writing",
+          "min_height": 550
+        }
+      ],
+      "estimated_minutes": 15,
+      "review_status": "draft"
+    },
+    {
+      "activity_id": "act-14-2",
+      "lesson_id": "14차시",
+      "object_role": "learning_note",
+      "lesson_flow_stage": "after",
+      "activity_type": "freeform_html",
+      "level": "core",
+      "learning_goal": "단원에서 배운 주요 내용을 종합하여 자신의 변화를 성찰하고, 구체적인 실천 계획을 수립할 수 있다.",
+      "prompt_text": "이번 단원을 배우기 전과 후, 나의 생각은 어떻게 달라졌나요? 배움을 삶으로 연결하는 계획을 세워 봅시다.",
+      "layout_template": "freeform_html",
+      "html_content": "<!DOCTYPE html><html lang='ko'><head><meta charset='UTF-8'><style>@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap');body{width:1600px;margin:0;padding:40px;background:transparent;font-family:'Noto Sans KR',sans-serif;color:#333;box-sizing:border-box;}.card{background:#fff;border-radius:32px;padding:48px;box-shadow:0 10px 30px rgba(0,0,0,0.05);border:1px solid #eee;}.header{display:flex;align-items:center;margin-bottom:32px;}.badge{background:#27ae60;color:#fff;padding:8px 20px;border-radius:12px;font-weight:700;font-size:20px;margin-right:20px;}.title{font-size:32px;font-weight:700;}.section-title{font-size:26px;font-weight:700;margin:40px 0 20px;display:flex;align-items:center;}.section-title span{background:#e8f5e9;color:#2e7d32;width:40px;height:40px;border-radius:50%;display:inline-flex;justify-content:center;align-items:center;margin-right:15px;font-size:20px;}.grid-row{display:grid;grid-template-columns:1fr 1fr;gap:30px;}.note-area{background:#fff;border:3px solid #333;border-radius:16px;min-height:420px;padding:25px;font-size:20px;line-height:1.6;}.action-plan{background:#fff;border:3px solid #333;border-radius:16px;min-height:300px;padding:25px;margin-top:20px;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;color:#666;border-style:dashed;}.label-tag{display:inline-block;background:#333;color:#fff;padding:4px 12px;border-radius:6px;font-size:16px;margin-bottom:12px;}</style></head><body><div class='card'><div class='header'><div class='badge'>심화 성찰</div><div class='title'>단원 배움 종합 노트</div></div><div class='section-title'><span>1</span>나의 생각이 이렇게 바뀌었어요</div><div class='grid-row'><div><div class='label-tag'>배우기 전</div><div class='note-area'>(가치를 파악하며 읽는 것이 왜 중요한지 몰랐을 때 나의 생각)</div></div><div><div class='label-tag'>배운 후</div><div class='note-area'>(인물의 삶을 통해 나의 가치를 발견하게 된 지금 나의 생각)</div></div></div><div class='section-title'><span>2</span>내일부터 바로 실천할 나의 행동</div><div class='note-area' style='min-height:250px;'>(구체적으로 어떤 상황에서 어떤 가치를 실천할 것인지 한 문장으로 써보세요)</div></div></body></html>",
+      "source_refs": [
+        53
+      ],
+      "teacher_notes": "단순한 O/X 체크리스트를 넘어, 학생이 메타인지적 관점에서 자신의 인식 변화를 기록하도록 돕습니다. '배우기 전'과 '배운 후'를 대비시켜 성장의 폭을 확인하게 합니다.",
+      "student_writing_zones": [
+        {
+          "zone_id": "reflection_before",
+          "label": "배우기 전 생각",
+          "input_area_type": "free-writing",
+          "min_height": 420
+        },
+        {
+          "zone_id": "reflection_after",
+          "label": "배운 후 생각",
+          "input_area_type": "free-writing",
+          "min_height": 420
+        },
+        {
+          "zone_id": "action_commitment",
+          "label": "실천 약속 쓰기",
+          "input_area_type": "free-writing",
+          "min_height": 250
+        }
+      ],
+      "estimated_minutes": 12,
+      "review_status": "draft"
+    },
+    {
+      "activity_id": "act-14-3",
+      "lesson_id": "14차시",
+      "object_role": "worksheet",
+      "lesson_flow_stage": "during",
+      "activity_type": "freeform_html",
+      "level": "on-level",
+      "learning_goal": "교과 어휘 '종합하다', '적용하다', '개선하다'의 의미를 문맥에 맞게 활용하여 문장을 완성할 수 있다.",
+      "prompt_text": "세 가지 핵심 어휘를 모두 사용하여, 여러분이 무언가를 배우고 성장한 경험을 한 문단으로 설명해 봅시다.",
+      "layout_template": "freeform_html",
+      "html_content": "<!DOCTYPE html><html lang='ko'><head><meta charset='UTF-8'><style>@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap');body{width:1600px;margin:0;padding:40px;background:transparent;font-family:'Noto Sans KR',sans-serif;color:#333;box-sizing:border-box;}.card{background:#fff;border-radius:32px;padding:48px;box-shadow:0 10px 30px rgba(0,0,0,0.05);border:1px solid #eee;}.header{display:flex;align-items:center;margin-bottom:32px;}.badge{background:#f39c12;color:#fff;padding:8px 20px;border-radius:12px;font-weight:700;font-size:20px;margin-right:20px;}.title{font-size:32px;font-weight:700;}.vocab-chips{display:flex;gap:15px;margin-bottom:30px;}.chip{border:2px solid #f39c12;color:#d35400;padding:10px 20px;border-radius:30px;font-weight:700;font-size:22px;background:#fef5e7;}.writing-container{background:#fff;border:3px solid #333;border-radius:20px;min-height:500px;padding:40px;position:relative;background-image:linear-gradient(#eee .1em, transparent .1em);background-size:100% 3em;line-height:3em;font-size:24px;}.hint{font-size:18px;color:#7f8c8d;margin-top:20px;background:#f8f9fa;padding:15px;border-radius:10px;border-left:4px solid #bdc3c7;}</style></head><body><div class='card'><div class='header'><div class='badge'>어휘 보완</div><div class='title'>단어 마스터: 성장 보고서 쓰기</div></div><div class='vocab-chips'><div class='chip'>#종합하다</div><div class='chip'>#적용하다</div><div class='chip'>#개선하다</div></div><div class='writing-container'></div><div class='hint'>💡 <b>도움말:</b> 여러 정보를 하나로 모으고(종합), 배운 것을 실제에 써보고(적용), 부족한 점을 고쳐 나가는(개선) 과정을 떠올려 보세요.</div></div></body></html>",
+      "source_refs": [
+        54
+      ],
+      "teacher_notes": "단어의 뜻을 단순히 외우는 것이 아니라, 세 단어의 논리적 흐름(모으기 -> 쓰기 -> 고치기)을 이해하고 자신의 경험에 투영하도록 설계했습니다.",
+      "student_writing_zones": [
+        {
+          "zone_id": "vocab_paragraph",
+          "label": "성장 보고서 문단 쓰기",
+          "input_area_type": "lined",
+          "min_height": 500
+        }
+      ],
+      "estimated_minutes": 10,
+      "review_status": "draft"
+    }
+  ]
+}

@@ -1,0 +1,128 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-03-26T14:30:00+09:00",
+  "lesson_id": "9-11차시",
+  "activities": [
+    {
+      "activity_id": "act-9-11-1",
+      "lesson_id": "9-11차시",
+      "object_role": "activity_area",
+      "lesson_flow_stage": "during",
+      "activity_type": "freeform_html",
+      "level": "core",
+      "learning_goal": "인물이 추구하는 가치를 비교하고 자신의 가치관과 연결하여 성찰할 수 있다.",
+      "prompt_text": "이야기 속 인물이 중요하게 여긴 가치와 내가 가장 소중히 여기는 가치를 비교하고, 그 이유를 써 봅시다.",
+      "layout_template": "freeform_html",
+      "html_content": "<!DOCTYPE html><html lang='ko'><head><meta charset='UTF-8'><style>body{width:1600px;margin:0;padding:40px;background:transparent;font-family:'Noto Sans KR',sans-serif;box-sizing:border-box;}.card{background:#ffffff;padding:40px;border-radius:32px;border:none;}.header{display:flex;align-items:center;margin-bottom:30px;}.badge{background:#4A90E2;color:#fff;padding:8px 20px;border-radius:12px;font-weight:700;font-size:24px;margin-right:20px;}.title{font-size:36px;font-weight:800;color:#333;}.container{display:grid;grid-template-columns:1fr 1fr;gap:40px;margin-top:20px;}.section-title{font-size:28px;font-weight:700;margin-bottom:15px;color:#444;display:flex;align-items:center;}.section-title span{font-size:40px;margin-right:10px;}.writing-area{background:#ffffff;border:3px solid #333333;border-radius:20px;min-height:500px;padding:25px;font-size:24px;line-height:1.6;color:#222;}.comparison-box{grid-column:span 2;background:#F8F9FA;border:2px dashed #999;border-radius:20px;padding:30px;margin-top:20px;}.comparison-title{font-size:24px;font-weight:700;color:#555;margin-bottom:15px;}</style></head><body><div class='card'><div class='header'><div class='badge'>가치 탐구</div><div class='title'>인물의 가치 vs 나의 가치</div></div><div class='container'><div class='box'><div class='section-title'><span>👤</span> 인물이 추구하는 가치</div><div class='writing-area'>작품 속 인물이 지키려 했던 생각이나 마음은 무엇인가요? 관련된 장면과 함께 적어 보세요.</div></div><div class='box'><div class='section-title'><span>⭐</span> 내가 추구하는 가치</div><div class='writing-area'>나는 어떤 가치를 가장 중요하게 생각하나요? 그 이유와 나의 경험을 연결해 보세요.</div></div><div class='comparison-box'><div class='comparison-title'>💡 두 가치를 비교해 보니 어떤 생각이 드나요? (닮은 점이나 다른 점, 새롭게 깨달은 점)</div><div class='writing-area' style='min-height:200px;'></div></div></div></div></body></html>",
+      "source_refs": [
+        46,
+        47
+      ],
+      "teacher_notes": "교과서 46-47쪽의 가치 비교 활동을 시각화한 카드입니다. 인물의 가치와 학생 자신의 가치를 대조하여 깊이 있는 성찰을 유도합니다.",
+      "student_writing_zones": [
+        {
+          "zone_id": "character_value",
+          "label": "인물의 가치와 근거",
+          "input_area_type": "free-writing",
+          "min_height": 500
+        },
+        {
+          "zone_id": "my_value",
+          "label": "나의 가치와 이유",
+          "input_area_type": "free-writing",
+          "min_height": 500
+        },
+        {
+          "zone_id": "reflection_comparison",
+          "label": "비교 및 성찰",
+          "input_area_type": "free-writing",
+          "min_height": 200
+        }
+      ],
+      "estimated_minutes": 15,
+      "review_status": "draft"
+    },
+    {
+      "activity_id": "act-9-11-2",
+      "lesson_id": "9-11차시",
+      "object_role": "learning_note",
+      "lesson_flow_stage": "during",
+      "activity_type": "freeform_html",
+      "level": "core",
+      "learning_goal": "독서 감상문의 구성 요소를 파악하고 자신의 생각이 드러나도록 글의 뼈대를 잡을 수 있다.",
+      "prompt_text": "줄거리 요약이 아닌 '나의 생각'이 중심이 되는 독서 감상문을 위해 글의 흐름을 미리 구성해 봅시다.",
+      "layout_template": "freeform_html",
+      "html_content": "<!DOCTYPE html><html lang='ko'><head><meta charset='UTF-8'><style>body{width:1600px;margin:0;padding:40px;background:transparent;font-family:'Noto Sans KR',sans-serif;}.card{background:#ffffff;padding:45px;border-radius:32px;}.header{border-bottom:4px solid #333;margin-bottom:40px;padding-bottom:20px;}.title{font-size:42px;font-weight:900;color:#1A1A1A;}.grid-container{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:auto auto;gap:35px;}.note-section{background:#ffffff;border:3px solid #333;border-radius:24px;padding:30px;display:flex;flex-direction:column;}.note-label{font-size:26px;font-weight:800;margin-bottom:20px;color:#E67E22;display:flex;align-items:center;}.note-label::before{content:'';width:12px;height:28px;background:#E67E22;margin-right:15px;border-radius:4px;}.writing-space{flex-grow:1;min-height:420px;font-size:24px;line-height:1.7;color:#333;}</style></head><body><div class='card'><div class='header'><div class='title'>독서 감상문 설계 노트: 나의 생각이 머무는 곳</div></div><div class='grid-container'><div class='note-section'><div class='note-label'>1. 마음을 흔든 장면 (가장 기억에 남는 부분)</div><div class='writing-space'>단순한 줄거리보다는 왜 이 장면이 인상 깊었는지 구체적으로 적어 보세요.</div></div><div class='note-section'><div class='note-label'>2. 인물의 선택과 가치 (깊이 읽기)</div><div class='writing-space'>인물이 왜 그런 행동을 했을까요? 그 속에 담긴 소중한 마음(가치)은 무엇일까요?</div></div><div class='note-section'><div class='note-label'>3. 나와의 연결고리 (나의 경험)</div><div class='writing-space'>작품의 내용과 비슷한 나의 경험이나 고민이 있었나요?</div></div><div class='note-section'><div class='note-label'>4. 내 삶으로의 확장 (다짐과 변화)</div><div class='writing-space'>이 작품을 읽고 나서 내 생각이나 행동이 어떻게 바뀔 것 같나요?</div></div></div></div></body></html>",
+      "source_refs": [
+        48
+      ],
+      "teacher_notes": "본격적인 글쓰기 전, 사고를 구조화하는 단계입니다. 줄거리 요약의 늪에서 벗어나 '성찰'과 '가치' 중심의 글쓰기를 돕습니다.",
+      "student_writing_zones": [
+        {
+          "zone_id": "impressive_scene",
+          "label": "인상 깊은 장면과 이유",
+          "input_area_type": "free-writing",
+          "min_height": 420
+        },
+        {
+          "zone_id": "character_value_depth",
+          "label": "인물의 가치 분석",
+          "input_area_type": "free-writing",
+          "min_height": 420
+        },
+        {
+          "zone_id": "personal_connection",
+          "label": "나의 경험 연결",
+          "input_area_type": "free-writing",
+          "min_height": 420
+        },
+        {
+          "zone_id": "future_action",
+          "label": "다짐과 변화",
+          "input_area_type": "free-writing",
+          "min_height": 420
+        }
+      ],
+      "estimated_minutes": 20,
+      "review_status": "draft"
+    },
+    {
+      "activity_id": "act-9-11-3",
+      "lesson_id": "9-11차시",
+      "object_role": "worksheet",
+      "lesson_flow_stage": "after",
+      "activity_type": "freeform_html",
+      "level": "extension",
+      "learning_goal": "작품 속 가치를 일상생활에서 실천할 구체적인 방법을 계획하고 다짐할 수 있다.",
+      "prompt_text": "작품에서 배운 '가치'를 오늘 나의 하루 속에서 어떻게 실천할 수 있을지 구체적인 계획을 세워 봅시다.",
+      "layout_template": "freeform_html",
+      "html_content": "<!DOCTYPE html><html lang='ko'><head><meta charset='UTF-8'><style>body{width:1600px;margin:0;padding:40px;background:transparent;font-family:'Noto Sans KR',sans-serif;}.card{background:#ffffff;padding:50px;border-radius:40px;border:4px solid #333;box-shadow:15px 15px 0px #333;}.header{text-align:center;margin-bottom:50px;}.title{font-size:48px;font-weight:900;color:#2C3E50;letter-spacing:-1px;}.subtitle{font-size:24px;color:#7F8C8D;margin-top:10px;}.action-card{background:#FDFEFE;border:3px solid #333;border-radius:25px;padding:35px;margin-bottom:30px;}.question{font-size:28px;font-weight:700;color:#333;margin-bottom:20px;border-left:8px solid #2ECC71;padding-left:20px;}.input-box{background:#fff;border:2px solid #EEE;border-radius:15px;min-height:300px;padding:20px;font-size:24px;}</style></head><body><div class='card'><div class='header'><div class='title'>가치 실천 '오늘의 한 걸음'</div><div class='subtitle'>작품 속 가치가 나의 행동이 되는 순간</div></div><div class='action-card'><div class='question'>내가 실천하고 싶은 가치는 무엇인가요? (예: 정직, 용기, 배려 등)</div><div class='input-box' style='min-height:100px;'></div></div><div class='action-card'><div class='question'>그 가치를 실천하기 위해 오늘 내가 할 수 있는 '아주 작은 행동'은 무엇인가요?</div><div class='input-box' style='min-height:350px;'>예: 친구의 말을 끝까지 들어주기, 잘못을 솔직하게 말하기 등 구체적인 상황을 그려보세요.</div></div><div class='action-card'><div class='question'>이 행동을 실천했을 때 나의 마음이나 주변은 어떻게 바뀔까요?</div><div class='input-box' style='min-height:250px;'></div></div></div></body></html>",
+      "source_refs": [
+        48
+      ],
+      "teacher_notes": "학습한 가치를 내면화하여 실제 삶의 변화로 이끄는 확장 활동입니다. 독서 감상문의 '실천 의지' 부분을 구체화하는 데 도움이 됩니다.",
+      "student_writing_zones": [
+        {
+          "zone_id": "target_value",
+          "label": "실천할 가치",
+          "input_area_type": "inline-answer",
+          "min_height": 100
+        },
+        {
+          "zone_id": "small_action_plan",
+          "label": "구체적 실천 행동",
+          "input_area_type": "free-writing",
+          "min_height": 350
+        },
+        {
+          "zone_id": "expected_change",
+          "label": "기대되는 변화",
+          "input_area_type": "free-writing",
+          "min_height": 250
+        }
+      ],
+      "estimated_minutes": 10,
+      "review_status": "draft"
+    }
+  ]
+}

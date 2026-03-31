@@ -1,0 +1,90 @@
+{
+  "schema_version": "1.0.0",
+  "boundaries": [
+    {
+      "section_index": 0,
+      "sheet_name": "2-3차시",
+      "resource_id": "main",
+      "role": "textbook",
+      "status": "matched",
+      "start_page": 110,
+      "end_page": 115,
+      "reason": "p.110의 '이 주제를 배우면'과 p.111의 '낱말 구름/빙고 놀이' 등 주제 도입 요소를 포함하여 시작점을 설정함. p.112~p.114에서 지구본과 세계지도의 특징을 설명하고 활동을 수행하며, 다음 차시 주제인 '디지털 공간 영상 정보'가 시작되는 p.116 직전인 p.115에서 현재 레슨을 종료함.",
+      "confidence": 1.0,
+      "evidence_pages": [
+        110,
+        111,
+        112,
+        114,
+        116
+      ]
+    },
+    {
+      "section_index": 1,
+      "sheet_name": "4차시",
+      "resource_id": "main",
+      "role": "textbook",
+      "status": "matched",
+      "start_page": 116,
+      "end_page": 119,
+      "reason": "페이지 116에서 '디지털 공간 영상 정보로 세계를 살펴볼까요?'라는 제목과 함께 주제가 시작되며, 페이지 118-119에서 해당 정보의 특징과 활용 방법이 구체적으로 설명됩니다. 다음 차시인 '위도와 위선'이 페이지 120에서 명확히 시작되므로 119페이지를 종료 지점으로 결정했습니다.",
+      "confidence": 0.95,
+      "evidence_pages": [
+        116,
+        118,
+        119
+      ]
+    },
+    {
+      "section_index": 2,
+      "sheet_name": "5차시",
+      "resource_id": "main",
+      "role": "textbook",
+      "status": "matched",
+      "start_page": 120,
+      "end_page": 123,
+      "reason": "120페이지에서 '위도와 위선' 주제가 명시적으로 시작되며, 123페이지의 '한 문장 정리' 및 '스스로 해 보기' 활동으로 해당 주제가 마무리됩니다. 124페이지부터는 다음 차시 주제인 '경도'가 시작되므로 123페이지를 종료 지점으로 결정했습니다.",
+      "confidence": 1.0,
+      "evidence_pages": [
+        120,
+        121,
+        122,
+        123
+      ]
+    },
+    {
+      "section_index": 3,
+      "sheet_name": "6차시",
+      "resource_id": "main",
+      "role": "textbook",
+      "status": "matched",
+      "start_page": 124,
+      "end_page": 127,
+      "reason": "124쪽에서 '경도란 무엇일까요?'라는 질문과 함께 본초 자오선 등 경도의 개념이 시작되며, 127쪽의 '경도에 따른 생활 모습의 차이 탐색하기' 활동과 '한 문장 정리'로 해당 주제가 마무리됩니다. 이전 차시(위도)는 123쪽에서 끝나고 다음 차시(위도와 경도 활용)는 128쪽에서 시작되므로 경계가 명확합니다.",
+      "confidence": 1.0,
+      "evidence_pages": [
+        124,
+        125,
+        126,
+        127
+      ]
+    },
+    {
+      "section_index": 4,
+      "sheet_name": "7차시",
+      "resource_id": "main",
+      "role": "textbook",
+      "status": "matched",
+      "start_page": 128,
+      "end_page": 131,
+      "reason": "128쪽에서 '위도와 경도로 위치를 표현해 볼까요?'라는 질문과 함께 주제가 시작되며, 129쪽의 실습 활동과 130쪽의 표준시 보충 설명을 거쳐 131쪽에서 해당 주제의 배운 내용을 정리하며 마무리됩니다. 132쪽부터는 새로운 대주제인 '세계의 대륙, 대양, 나라'가 시작되므로 131쪽을 끝 페이지로 결정했습니다.",
+      "confidence": 0.95,
+      "evidence_pages": [
+        128,
+        129,
+        130,
+        131
+      ]
+    }
+  ]
+}

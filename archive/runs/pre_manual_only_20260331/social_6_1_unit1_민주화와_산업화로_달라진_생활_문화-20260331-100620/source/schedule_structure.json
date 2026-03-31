@@ -1,0 +1,65 @@
+{
+  "schema_version": "1.0.0",
+  "units": [
+    {
+      "unit_id": "unit-001",
+      "title": "외쳐라 빙고",
+      "lessons": [
+        {
+          "lesson_id": "lesson-001",
+          "sheet_name": "7차시",
+          "title": "외쳐라 빙고",
+          "raw_text": "외쳐라 빙고"
+        }
+      ]
+    },
+    {
+      "unit_id": "unit-002",
+      "title": "4·19 혁명 이해하기",
+      "lessons": [
+        {
+          "lesson_id": "lesson-002",
+          "sheet_name": "8-9차시",
+          "title": "4·19 혁명 이해하기",
+          "raw_text": "4·19 혁명 이해하기"
+        }
+      ]
+    },
+    {
+      "unit_id": "unit-003",
+      "title": "대통령 직선제와 지방 자치제의 부활 이해하기",
+      "lessons": [
+        {
+          "lesson_id": "lesson-003",
+          "sheet_name": "10차시",
+          "title": "대통령 직선제와 지방 자치제의 부활 이해하기",
+          "raw_text": "대통령 직선제와 지방 자치제의 부활 이해하기"
+        }
+      ]
+    },
+    {
+      "unit_id": "unit-004",
+      "title": "산업화 과정 이해하기",
+      "lessons": [
+        {
+          "lesson_id": "lesson-004",
+          "sheet_name": "11차시",
+          "title": "산업화 과정 이해하기",
+          "raw_text": "산업화 과정 이해하기"
+        }
+      ]
+    },
+    {
+      "unit_id": "unit-005",
+      "title": "산업화로 달라진 사회와 생활 문화 이해하기",
+      "lessons": [
+        {
+          "lesson_id": "lesson-005",
+          "sheet_name": "12-13차시",
+          "title": "산업화로 달라진 사회와 생활 문화 이해하기",
+          "raw_text": "산업화로 달라진 사회와 생활 문화 이해하기"
+        }
+      ]
+    }
+  ]
+}

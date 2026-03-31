@@ -1,0 +1,125 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-03-31T01:07:52.817772+00:00",
+  "lesson_id": "8차시",
+  "sheet_name": "8차시",
+  "lesson_title": "국가기관의 의미 알아보기",
+  "lesson_type": "core",
+  "pdf_pages": [
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73
+  ],
+  "essential_question": "국가기관의 의미 알아보기",
+  "learning_goals": [
+    "국가기관의 의미 알아보기의 핵심 내용을 설명할 수 있다."
+  ],
+  "key_concepts": [
+    "국가기관",
+    "의미",
+    "알아보기",
+    "선거",
+    "지역"
+  ],
+  "vocabulary": [
+    "국가기관",
+    "의미",
+    "알아보기"
+  ],
+  "misconceptions": [
+    "선거를 단순히 사람을 뽑는 행사로만 이해할 수 있다.",
+    "민주주의의 핵심이 참여보다 결과에만 있다고 오해할 수 있다."
+  ],
+  "difficulty_band": "on-level",
+  "content_chunks": [
+    {
+      "chunk_id": "8차시-chunk-1",
+      "label": "학습 덩어리 1",
+      "content_type": "mixed",
+      "knowledge_type": "procedure",
+      "summary": "사람들이 몸으로 만든 저 모양은 무엇을 의미하는 걸까?",
+      "source_pages": [
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63
+      ],
+      "suggested_activity_types": [
+        "see_think_wonder",
+        "learning_note",
+        "worksheet"
+      ]
+    },
+    {
+      "chunk_id": "8차시-chunk-2",
+      "label": "학습 덩어리 2",
+      "content_type": "mixed",
+      "knowledge_type": "procedure",
+      "summary": "비판적 사고력 문제 해결력 및 의사 결정력 선거에 참여하는 바람직한 태도는 무엇일까요?",
+      "source_pages": [
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73
+      ],
+      "suggested_activity_types": [
+        "learning_note",
+        "worksheet"
+      ]
+    }
+  ],
+  "source_page_refs": [
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73
+  ],
+  "analysis_confidence": 0.75,
+  "review_status": "draft",
+  "notes": "자동 생성 초안. lesson title, key concepts, chunks를 검토 후 승인 필요."
+}

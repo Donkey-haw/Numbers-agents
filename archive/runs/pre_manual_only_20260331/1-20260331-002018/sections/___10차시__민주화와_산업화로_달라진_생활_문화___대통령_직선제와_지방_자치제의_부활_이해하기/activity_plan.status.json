@@ -1,0 +1,25 @@
+{
+  "schema_version": "1.0.0",
+  "stage": "activity_plan_agent",
+  "lesson_id": "10차시",
+  "status": "succeeded_with_warning",
+  "run_id": "1-20260331-002018",
+  "started_at": "2026-03-30T15:42:31.674533+00:00",
+  "finished_at": "2026-03-30T15:42:38.278792+00:00",
+  "input_refs": [
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/1-20260331-002018/sections/___10차시__민주화와_산업화로_달라진_생활_문화___대통령_직선제와_지방_자치제의_부활_이해하기/lesson_analysis.json"
+  ],
+  "output_refs": [
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/1-20260331-002018/sections/___10차시__민주화와_산업화로_달라진_생활_문화___대통령_직선제와_지방_자치제의_부활_이해하기/activity_plan_ai.json",
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/1-20260331-002018/sections/___10차시__민주화와_산업화로_달라진_생활_문화___대통령_직선제와_지방_자치제의_부활_이해하기/activity_plan.json"
+  ],
+  "fallback_used": true,
+  "warnings": [],
+  "errors": [
+    "Gemini CLI aborted early for activity_plan_ai: capacity/rate-limit condition"
+  ],
+  "agent_spec_path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/agents/activity_plan_agent/AGENT.md",
+  "attempt_count": 1,
+  "repair_attempted": false,
+  "validation_errors": []
+}

@@ -1,0 +1,70 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-03-30T15:10:06.291773+00:00",
+  "lesson_id": "3차시",
+  "sheet_name": "3차시",
+  "lesson_title": "평화 통일을 위한 노력 — 분단의 흔적이 남아 있는 장소 알아보기",
+  "lesson_type": "core",
+  "pdf_pages": [
+    16
+  ],
+  "essential_question": "한반도 곳곳에는 어떤 분단의 흔적들이 남아 있을까요?",
+  "learning_goals": [
+    "분단의 흔적이 남아 있는 대표적인 장소인 휴전선과 비무장 지대(DMZ)를 설명할 수 있다.",
+    "끊어진 철길, 다리, 용치 등 분단의 아픔을 보여 주는 다양한 흔적들을 찾고 그 의미를 이해할 수 있다."
+  ],
+  "key_concepts": [
+    "비무장 지대(DMZ)",
+    "군사 분계선",
+    "정전 협정",
+    "분단의 흔적",
+    "아바이 마을"
+  ],
+  "vocabulary": [
+    "비무장 지대(DMZ)",
+    "용치",
+    "방호벽",
+    "정전 협정",
+    "군사 분계선"
+  ],
+  "misconceptions": [
+    "비무장 지대와 군사 분계선을 동일한 선으로 오해할 수 있으나, 비무장 지대는 군사 분계선에서 남북으로 각각 2km씩 떨어진 구역임을 명확히 한다."
+  ],
+  "difficulty_band": "on-level",
+  "content_chunks": [
+    {
+      "chunk_id": "3차시-chunk-1",
+      "label": "분단의 상징과 장소",
+      "content_type": "text",
+      "knowledge_type": "concept",
+      "summary": "정전 협정으로 그어진 군사 분계선과 그 주변의 비무장 지대(DMZ), 판문점 등 분단을 상징하는 대표적인 장소들에 대해 학습합니다.",
+      "source_pages": [
+        16
+      ],
+      "suggested_activity_types": [
+        "지도 확인",
+        "사진 분석"
+      ]
+    },
+    {
+      "chunk_id": "3차시-chunk-2",
+      "label": "분단의 흔적과 아픔",
+      "content_type": "mixed",
+      "knowledge_type": "fact",
+      "summary": "끊어진 철길(금강산 철교), 멈춰 선 기관차, 용치, 방호벽 등 한반도 곳곳에 남은 물리적 흔적과 아바이 마을과 같은 실향민의 아픔이 서린 장소를 살펴봅니다.",
+      "source_pages": [
+        16
+      ],
+      "suggested_activity_types": [
+        "시각 자료 탐구",
+        "사례 조사"
+      ]
+    }
+  ],
+  "source_page_refs": [
+    16
+  ],
+  "analysis_confidence": 0.95,
+  "review_status": "draft",
+  "notes": "교과서 16쪽의 텍스트를 바탕으로 비무장 지대, 용치, 방호벽 등의 정의와 아바이 마을 사례를 구체화하여 분석을 강화함."
+}

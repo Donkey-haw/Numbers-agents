@@ -1,0 +1,16 @@
+{
+  "schema_version": "1.0.0",
+  "stage": "review_lesson_agent",
+  "lesson_id": "14차시",
+  "status": "succeeded",
+  "decision": "pass",
+  "findings": [
+    {
+      "severity": "info",
+      "message": "단원 마무리 차시로, 문학 작품을 통한 가치 탐색, 자기 평가, 어휘 학습이 유기적으로 연결되어 있음. '난 탐험가' 시를 통해 '나다움'과 '도전'의 가치를 논의하도록 구성됨.",
+      "evidence_refs": []
+    }
+  ],
+  "blocking_issues": [],
+  "warnings": []
+}

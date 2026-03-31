@@ -1,0 +1,19 @@
+{
+  "schema_version": "1.0.0",
+  "stage": "lesson_review_agent",
+  "lesson_id": "9-10차시",
+  "status": "succeeded",
+  "run_id": "1-20260331-002018",
+  "started_at": "2026-03-30T15:42:31.549848+00:00",
+  "finished_at": "2026-03-30T15:42:31.550334+00:00",
+  "input_refs": [
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/1-20260331-002018/sections/___9-10차시__국가기관이_하는_일___국회의_구성과_하는_일_파악하기/lesson_analysis.json"
+  ],
+  "output_refs": [
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/1-20260331-002018/sections/___9-10차시__국가기관이_하는_일___국회의_구성과_하는_일_파악하기/lesson_review.json"
+  ],
+  "fallback_used": false,
+  "warnings": [],
+  "errors": [],
+  "agent_spec_path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/agents/lesson_review_agent/AGENT.md"
+}

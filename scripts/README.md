@@ -4,7 +4,9 @@
 현재 AGENT 기반 Numbers 자동 생성에서 직접 쓰는 핵심 스크립트는 아래다.
 
 - [pipeline_orchestrator.py](/Users/jonyeock/Desktop/Tool/NumbersAuto/scripts/pipeline_orchestrator.py)
-- [source_parse_agent.py](/Users/jonyeock/Desktop/Tool/NumbersAuto/scripts/source_parse_agent.py)
+- [runtime_driven_agents.py](/Users/jonyeock/Desktop/Tool/NumbersAuto/scripts/runtime_driven_agents.py)
+- [source_boundary_agent.py](/Users/jonyeock/Desktop/Tool/NumbersAuto/scripts/source_boundary_agent.py)
+- [source_validation_agent.py](/Users/jonyeock/Desktop/Tool/NumbersAuto/scripts/source_validation_agent.py)
 - [lesson_analysis_agent.py](/Users/jonyeock/Desktop/Tool/NumbersAuto/scripts/lesson_analysis_agent.py)
 - [activity_plan_agent.py](/Users/jonyeock/Desktop/Tool/NumbersAuto/scripts/activity_plan_agent.py)
 - [html_card_agent.py](/Users/jonyeock/Desktop/Tool/NumbersAuto/scripts/html_card_agent.py)
@@ -14,6 +16,15 @@
 - [verify_agent.py](/Users/jonyeock/Desktop/Tool/NumbersAuto/scripts/verify_agent.py)
 - [pipeline_contracts.py](/Users/jonyeock/Desktop/Tool/NumbersAuto/scripts/pipeline_contracts.py)
 - [render_pipeline_support.py](/Users/jonyeock/Desktop/Tool/NumbersAuto/scripts/render_pipeline_support.py)
+- [agent_runtime.py](/Users/jonyeock/Desktop/Tool/NumbersAuto/scripts/agent_runtime.py)
+
+현재 AI stage는 아래 AGENT 문서를 실제 runtime prompt spec으로 사용한다.
+
+- [agents/source_boundary_agent/AGENT.md](/Users/jonyeock/Desktop/Tool/NumbersAuto/agents/source_boundary_agent/AGENT.md)
+- [agents/source_validation_agent/AGENT.md](/Users/jonyeock/Desktop/Tool/NumbersAuto/agents/source_validation_agent/AGENT.md)
+- [agents/lesson_analysis_agent/AGENT.md](/Users/jonyeock/Desktop/Tool/NumbersAuto/agents/lesson_analysis_agent/AGENT.md)
+- [agents/activity_plan_agent/AGENT.md](/Users/jonyeock/Desktop/Tool/NumbersAuto/agents/activity_plan_agent/AGENT.md)
+- [agents/review_manifest_agent/AGENT.md](/Users/jonyeock/Desktop/Tool/NumbersAuto/agents/review_manifest_agent/AGENT.md)
 
 이 파이프라인이 내부적으로 재사용하는 기반 스크립트:
 
@@ -26,11 +37,15 @@
 - [run_gemini_cli_pipeline.py](/Users/jonyeock/Desktop/Tool/NumbersAuto/scripts/run_gemini_cli_pipeline.py)
 
 ## Config Authoring
-현재도 유지하는 설정 초안/진도표 보조 스크립트:
+현재 기준 경로는 manual page selection이며, 핵심은 `config`를 `pdf_pages` 기반 final config로 만드는 것이다.
+
+레거시 진도표/초안 생성 보조 스크립트:
 
 - [parse_progress_chart_pdf.py](/Users/jonyeock/Desktop/Tool/NumbersAuto/scripts/parse_progress_chart_pdf.py)
 - [draft_config_from_progress_chart.py](/Users/jonyeock/Desktop/Tool/NumbersAuto/scripts/draft_config_from_progress_chart.py)
 - [ocr_progress_chart.swift](/Users/jonyeock/Desktop/Tool/NumbersAuto/scripts/ocr_progress_chart.swift)
+
+일회성 정리 스크립트는 [archive/scripts/one_off](/Users/jonyeock/Desktop/Tool/NumbersAuto/archive/scripts/one_off) 로 이동했다.
 
 예시:
 
@@ -77,10 +92,11 @@ python3 scripts/run_gemini_cli_pipeline.py \
   --config configs/social_6_1_unit2_state_agencies.json \
   --gemini-bin gemini \
   --max-workers 2 \
+  --gemini-timeout-sec 120 \
   --dry-run
 ```
 
-진도표 PDF를 구조화 JSON으로 정리할 때:
+레거시 진도표 PDF를 구조화 JSON으로 정리할 때:
 
 ```bash
 python3 scripts/parse_progress_chart_pdf.py \
@@ -88,7 +104,7 @@ python3 scripts/parse_progress_chart_pdf.py \
   --output configs/social_6_1_progress_chart.json
 ```
 
-진도표 이미지에서 config 초안을 만들 때:
+레거시 진도표 이미지에서 config 초안을 만들 때:
 
 ```bash
 python3 scripts/draft_config_from_progress_chart.py \
@@ -110,8 +126,8 @@ python3 scripts/draft_config_from_progress_chart.py \
 - bundle/index 실험 경로 스크립트는 [archive/scripts/support](/Users/jonyeock/Desktop/Tool/NumbersAuto/archive/scripts/support) 로 이동했다.
 - 단원 전용 또는 실험용 구형 스크립트는 [archive/scripts/legacy](/Users/jonyeock/Desktop/Tool/NumbersAuto/archive/scripts/legacy) 로 이동했다.
 - 기존 실험용 config는 [archive/configs/legacy](/Users/jonyeock/Desktop/Tool/NumbersAuto/archive/configs/legacy) 로 이동했고, 현재 표준 config는 `configs/social_6_1_*.json` 형식을 사용한다.
-- 새 작업은 가능하면 진도표 PDF를 먼저 [configs/social_6_1_progress_chart.json](/Users/jonyeock/Desktop/Tool/NumbersAuto/configs/social_6_1_progress_chart.json) 으로 구조화한 뒤, 주제별 config를 추가하고 범용 실행기를 호출하는 방식으로 진행한다.
-- 진도표의 쪽수는 사용하지 않는다. 차시명만 추출하고, 실제 페이지 범위는 교과서 PDF 본문 분석으로 결정한다.
+- 새 작업은 [MANUAL_PAGE_SELECTION_WORKFLOW.md](/Users/jonyeock/Desktop/Tool/NumbersAuto/MANUAL_PAGE_SELECTION_WORKFLOW.md) 기준으로 `pdf_pages`가 확정된 final config를 먼저 만든 뒤 실행하는 것을 기본으로 한다.
+- 진도표는 레거시 보조 입력일 뿐, 필수 입력이 아니다.
 - 교과서 카드에는 해당 주제의 `주제 도입` 페이지를 반드시 포함한다.
 - `주제 도입`이 별도 차시가 아닌 경우에는 첫 본차시 카드가 `주제 도입 + 본문 시작`을 함께 담도록 config를 잡는다.
 - Gemini 기반 `lesson_analysis`와 `activity_plan` 생성의 기본 근거는 주교과서다.

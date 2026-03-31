@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.0.0",
+  "stage": "page_index_agent",
+  "lesson_id": null,
+  "status": "succeeded",
+  "run_id": "math_6_1_unit2_prisms_pyramids_multiresource-20260331-100038",
+  "started_at": "2026-03-31T01:00:40.877849+00:00",
+  "finished_at": "2026-03-31T01:00:40.892043+00:00",
+  "input_refs": [
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/math_6_1_unit2_prisms_pyramids_multiresource-20260331-100038/source/math_textbook.page_texts.json",
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/math_6_1_unit2_prisms_pyramids_multiresource-20260331-100038/source/math_workbook.page_texts.json"
+  ],
+  "output_refs": [
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/math_6_1_unit2_prisms_pyramids_multiresource-20260331-100038/source/math_textbook.page_index.json",
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/math_6_1_unit2_prisms_pyramids_multiresource-20260331-100038/source/math_workbook.page_index.json",
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/math_6_1_unit2_prisms_pyramids_multiresource-20260331-100038/source/page_index.status.json"
+  ],
+  "fallback_used": false,
+  "warnings": [],
+  "errors": [],
+  "agent_spec_path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/agents/page_index_agent/AGENT.md",
+  "runtime_driven": true
+}

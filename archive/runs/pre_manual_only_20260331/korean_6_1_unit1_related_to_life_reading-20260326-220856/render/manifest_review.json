@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.0.0",
+  "stage": "review_manifest_agent",
+  "lesson_id": null,
+  "status": "succeeded",
+  "decision": "pass",
+  "findings": [
+    {
+      "severity": "info",
+      "message": "모든 시트가 insert_order 1번에 textbook_card를 배치하여 교과서 우선 원칙을 준수함.",
+      "evidence_refs": [
+        "12-13차시[1]",
+        "14차시[1]",
+        "1차시[1]",
+        "2-3차시[1]",
+        "4-6차시[1]",
+        "7-8차시[1]",
+        "9-11차시[1]"
+      ]
+    },
+    {
+      "severity": "info",
+      "message": "활동 흐름(during -> after)이 논리적 순서에 따라 적절히 배치됨.",
+      "evidence_refs": [
+        "lesson_flow_stage_sequence"
+      ]
+    }
+  ],
+  "blocking_issues": [],
+  "warnings": []
+}

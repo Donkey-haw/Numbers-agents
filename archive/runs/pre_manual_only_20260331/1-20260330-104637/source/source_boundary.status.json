@@ -1,0 +1,26 @@
+{
+  "schema_version": "1.0.0",
+  "stage": "source_boundary_agent",
+  "lesson_id": null,
+  "status": "failed",
+  "run_id": "1-20260330-104637",
+  "started_at": "2026-03-30T01:46:37.674195+00:00",
+  "finished_at": "2026-03-30T01:48:43.465182+00:00",
+  "input_refs": [
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/configs/1.json"
+  ],
+  "output_refs": [
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/1-20260330-104637/source/resource_page_catalog.json",
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/1-20260330-104637/source/source_boundary.ai.json",
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/1-20260330-104637/source/schedule_draft.json",
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/1-20260330-104637/source/textbook_context.json",
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/1-20260330-104637/source/runtime_config.json"
+  ],
+  "fallback_used": false,
+  "warnings": [],
+  "errors": [
+    "Gemini CLI timed out after 120 seconds for source_boundary_ai"
+  ],
+  "agent_spec_path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/agents/source_boundary_agent/AGENT.md",
+  "model": "gemini"
+}

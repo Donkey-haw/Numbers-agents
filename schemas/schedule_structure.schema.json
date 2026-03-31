@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://numbersauto.local/schemas/schedule_structure.schema.json",
+  "title": "Schedule Structure",
+  "type": "object",
+  "required": ["schema_version", "units"],
+  "properties": {
+    "schema_version": {
+      "type": "string"
+    },
+    "units": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["unit_id", "title", "lessons"],
+        "properties": {
+          "unit_id": {
+            "type": "string"
+          },
+          "title": {
+            "type": "string"
+          },
+          "lessons": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["lesson_id", "sheet_name", "title"],
+              "properties": {
+                "lesson_id": {
+                  "type": "string"
+                },
+                "sheet_name": {
+                  "type": "string"
+                },
+                "title": {
+                  "type": "string"
+                },
+                "raw_text": {
+                  "type": "string"
+                }
+              },
+              "additionalProperties": false
+            }
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

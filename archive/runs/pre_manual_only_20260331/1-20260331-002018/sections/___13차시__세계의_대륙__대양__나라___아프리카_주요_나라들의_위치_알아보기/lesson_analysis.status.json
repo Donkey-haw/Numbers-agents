@@ -1,0 +1,27 @@
+{
+  "schema_version": "1.0.0",
+  "stage": "lesson_analysis_agent",
+  "lesson_id": "13차시",
+  "status": "succeeded_with_warning",
+  "run_id": "1-20260331-002018",
+  "started_at": "2026-03-30T15:39:05.124331+00:00",
+  "finished_at": "2026-03-30T15:41:05.141503+00:00",
+  "input_refs": [
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/1-20260331-002018/source/schedule_draft.json",
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/1-20260331-002018/source/textbook_context.json",
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/1-20260331-002018/source/local_baseline/___13차시__세계의_대륙__대양__나라___아프리카_주요_나라들의_위치_알아보기.lesson_analysis.json"
+  ],
+  "output_refs": [
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/1-20260331-002018/sections/___13차시__세계의_대륙__대양__나라___아프리카_주요_나라들의_위치_알아보기/lesson_analysis_ai.json",
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/1-20260331-002018/sections/___13차시__세계의_대륙__대양__나라___아프리카_주요_나라들의_위치_알아보기/lesson_analysis.json"
+  ],
+  "fallback_used": true,
+  "warnings": [],
+  "errors": [
+    "Gemini CLI timed out after 120 seconds for lesson_analysis_ai"
+  ],
+  "model": "gemini",
+  "agent_spec_path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/agents/lesson_analysis_agent/AGENT.md",
+  "attempt_count": 1,
+  "validation_errors": []
+}

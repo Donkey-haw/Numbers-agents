@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.0.0",
+  "stage": "lesson_review_agent",
+  "lesson_id": "8-9차시",
+  "status": "succeeded_with_warning",
+  "decision": "pass_with_warning",
+  "findings": [
+    {
+      "severity": "warning",
+      "message": "오개념 후보가 비어 있습니다.",
+      "evidence_refs": []
+    },
+    {
+      "severity": "info",
+      "message": "해당 차시는 대주제 '민주화와 산업화로 달라진 생활 문화'의 도입부(29쪽)로, 낱말 구름과 빙고 활동을 통해 단원 전체의 핵심 키워드를 조망하는 구성입니다.",
+      "evidence_refs": []
+    }
+  ],
+  "blocking_issues": [],
+  "warnings": [
+    "misconceptions is empty"
+  ]
+}

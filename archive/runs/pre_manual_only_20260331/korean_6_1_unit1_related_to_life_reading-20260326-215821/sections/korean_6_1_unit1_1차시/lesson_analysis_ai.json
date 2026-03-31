@@ -1,0 +1,77 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-03-26T13:00:00.000000+00:00",
+  "lesson_id": "1차시",
+  "sheet_name": "1차시",
+  "lesson_title": "배울 내용 살펴보기",
+  "lesson_type": "intro",
+  "pdf_pages": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "essential_question": "인물의 삶에서 '가치'란 무엇이며, 우리는 이야기 속 인물의 삶을 통해 어떻게 자신의 삶을 되돌아볼 수 있을까요?",
+  "learning_goals": [
+    "단원의 학습 내용을 살펴보고 앞으로 배울 내용에 대한 학습 계획을 세울 수 있다.",
+    "인물의 삶에 나타난 '가치'의 의미를 이해하고, 인물이 추구하는 가치가 자신의 삶에 주는 영향을 설명할 수 있다."
+  ],
+  "key_concepts": [
+    "가치",
+    "인물의 삶",
+    "자신의 삶",
+    "독서 감상문"
+  ],
+  "vocabulary": [
+    "가치",
+    "추구",
+    "창제",
+    "전기문",
+    "영향"
+  ],
+  "misconceptions": [
+    "'가치'라는 단어를 어렵게 느껴 위인들만 가질 수 있는 특별한 신념으로 오해할 수 있으나, 일상에서 소중히 여기는 것임을 강조해야 함."
+  ],
+  "difficulty_band": "on-level",
+  "content_chunks": [
+    {
+      "chunk_id": "1차시-chunk-1",
+      "label": "생각 열기: 인물의 삶과 가치",
+      "content_type": "mixed",
+      "knowledge_type": "concept",
+      "summary": "세종 대왕(백성, 훈민정음 창제)과 장영실(편리함, 해시계/물시계 제작)의 사례를 통해 인물이 소중하게 생각하며 살았던 가치를 파악하고, 학습자 스스로가 소중하게 생각하는 가치에 대해 생각하며 단원을 도입한다.",
+      "source_pages": [
+        1,
+        2
+      ],
+      "suggested_activity_types": [
+        "see_think_wonder",
+        "learning_note"
+      ]
+    },
+    {
+      "chunk_id": "1차시-chunk-2",
+      "label": "가치 파악 및 학습 계획",
+      "content_type": "mixed",
+      "knowledge_type": "concept",
+      "summary": "전기문 『권기옥』에 대한 독서 감상문을 읽으며 '가치'의 정의를 배우고, 인물이 꿈을 이루기 위해 노력한 용기를 이해한다. 또한 이야기 속 인물에게 영향받은 경험(예: 「긴긴밤」, 「나비를 잡는 아버지」)을 나누며 단원에서 알고 싶은 내용을 정리한다.",
+      "source_pages": [
+        3,
+        4
+      ],
+      "suggested_activity_types": [
+        "learning_note",
+        "worksheet"
+      ]
+    }
+  ],
+  "source_page_refs": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "analysis_confidence": 0.95,
+  "review_status": "draft",
+  "notes": "단원의 첫 차시로 가치의 개념을 도입하고 전체 학습 흐름을 조망함. 위인과 문학 작품 속 인물을 고루 활용하여 가치에 대한 이해를 돕도록 구성함."
+}

@@ -1,0 +1,38 @@
+{
+  "schema_version": "1.0.0",
+  "status": "succeeded",
+  "blocking_issues": [],
+  "warnings": [],
+  "entries": [
+    {
+      "lesson_id": "lesson-001",
+      "resource_id": "main",
+      "status": "matched",
+      "message": "ok"
+    },
+    {
+      "lesson_id": "lesson-002",
+      "resource_id": "main",
+      "status": "matched",
+      "message": "ok"
+    },
+    {
+      "lesson_id": "lesson-003",
+      "resource_id": "main",
+      "status": "matched",
+      "message": "ok"
+    },
+    {
+      "lesson_id": "lesson-004",
+      "resource_id": "main",
+      "status": "matched",
+      "message": "ok"
+    },
+    {
+      "lesson_id": "lesson-005",
+      "resource_id": "main",
+      "status": "matched",
+      "message": "ok"
+    }
+  ]
+}

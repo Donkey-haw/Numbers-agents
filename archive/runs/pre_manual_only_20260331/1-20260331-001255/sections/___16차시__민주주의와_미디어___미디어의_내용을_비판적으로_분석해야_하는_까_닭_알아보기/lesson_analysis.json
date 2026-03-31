@@ -1,0 +1,68 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-03-30T15:26:25.712310+00:00",
+  "lesson_id": "16차시",
+  "sheet_name": "16차시",
+  "lesson_title": "민주주의와 미디어 — 미디어의 내용을 비판적으로 분석해야 하는 까닭 알아보기",
+  "lesson_type": "core",
+  "pdf_pages": [
+    90
+  ],
+  "essential_question": "민주주의 사회에서 우리는 왜 미디어의 내용을 비판적으로 분석하고 평가해야 할까요?",
+  "learning_goals": [
+    "민주주의에서 미디어가 갖는 의미와 역할을 이해할 수 있다.",
+    "미디어의 내용을 비판적으로 분석하고 평가하는 태도의 중요성을 설명할 수 있다."
+  ],
+  "key_concepts": [
+    "미디어",
+    "비판적 분석",
+    "민주주의",
+    "정보 평가"
+  ],
+  "vocabulary": [
+    "미디어",
+    "비판적",
+    "분석",
+    "평가",
+    "공유"
+  ],
+  "misconceptions": [
+    "미디어를 통해 전달되는 정보는 모두 객관적인 사실이라고 믿는 경향이 있다.",
+    "개인이 직접 찍어 공유하는 영상이나 사진은 미디어의 범주에 포함되지 않는다고 생각할 수 있다."
+  ],
+  "difficulty_band": "on-level",
+  "content_chunks": [
+    {
+      "chunk_id": "16차시-chunk-1",
+      "label": "도입: 일상 속의 미디어 경험",
+      "content_type": "text",
+      "knowledge_type": "opinion",
+      "summary": "영상이나 사진을 직접 찍고 공유하는 일상적인 경험을 통해 미디어와의 접점을 확인한다.",
+      "source_pages": [
+        90
+      ],
+      "suggested_activity_types": [
+        "see_think_wonder"
+      ]
+    },
+    {
+      "chunk_id": "16차시-chunk-2",
+      "label": "핵심 목표: 미디어 리터러시의 기초",
+      "content_type": "text",
+      "knowledge_type": "concept",
+      "summary": "민주주의에서 미디어의 역할을 이해하고, 내용을 비판적으로 분석·평가하며 올바르게 이용하는 태도를 기르는 학습 목표를 제시한다.",
+      "source_pages": [
+        90
+      ],
+      "suggested_activity_types": [
+        "learning_note"
+      ]
+    }
+  ],
+  "source_page_refs": [
+    90
+  ],
+  "analysis_confidence": 0.92,
+  "review_status": "draft",
+  "notes": "추출된 텍스트에서 명시된 학습 목표를 바탕으로 분석을 보완함. 90페이지는 '민주주의와 미디어' 소주제의 시작 페이지로, 미디어 경험 공유와 비판적 분석의 필요성을 도입하는 단계임."
+}

@@ -1,0 +1,57 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-03-30T15:36:28.793855+00:00",
+  "lesson_id": "13차시",
+  "sheet_name": "13차시",
+  "lesson_title": "국가기관이 하는 일 — 권력 분립의 의미와 중요성 탐구하기",
+  "lesson_type": "core",
+  "pdf_pages": [
+    54
+  ],
+  "essential_question": "민주주의 국가에서 권력을 나누어 맡는 이유는 무엇일까요?",
+  "learning_goals": [
+    "민주주의에서 선거의 의미와 역할 및 중요성을 파악할 수 있다.",
+    "민주 국가의 선거 과정과 선거 원칙을 파악할 수 있다.",
+    "선거에 주체적으로 참여하는 태도를 지닐 수 있다."
+  ],
+  "key_concepts": [
+    "민주주의",
+    "선거",
+    "선거 원칙",
+    "시민 참여",
+    "권력 분립"
+  ],
+  "vocabulary": [
+    "민주주의",
+    "선거",
+    "선거 원칙",
+    "권력 분립"
+  ],
+  "misconceptions": [
+    "선거는 단순히 투표하는 날일 뿐이다.",
+    "권력 분립이 효율성을 떨어뜨린다고 생각할 수 있다."
+  ],
+  "difficulty_band": "on-level",
+  "content_chunks": [
+    {
+      "chunk_id": "13차시-chunk-1",
+      "label": "민주주의와 선거의 기초",
+      "content_type": "mixed",
+      "knowledge_type": "concept",
+      "summary": "민주주의에서 선거가 갖는 의미와 역할, 그리고 시민의 주체적인 참여 태도에 대해 알아봅니다.",
+      "source_pages": [
+        54
+      ],
+      "suggested_activity_types": [
+        "see_think_wonder",
+        "learning_note"
+      ]
+    }
+  ],
+  "source_page_refs": [
+    54
+  ],
+  "analysis_confidence": 0.85,
+  "review_status": "draft",
+  "notes": "추출된 텍스트와 학습 목표를 바탕으로 권력 분립과 선거의 중요성을 연결하여 분석함. 페이지 54의 도입 내용을 중심으로 구성."
+}

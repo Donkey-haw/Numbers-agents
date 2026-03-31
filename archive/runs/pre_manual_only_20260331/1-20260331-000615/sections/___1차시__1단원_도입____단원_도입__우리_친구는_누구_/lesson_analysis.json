@@ -1,0 +1,94 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-03-30T15:07:48.257584+00:00",
+  "lesson_id": "1차시",
+  "sheet_name": "1차시",
+  "lesson_title": "1단원 도입 — [단원 도입] 우리 친구는 누구?",
+  "lesson_type": "intro",
+  "pdf_pages": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "essential_question": "사회 과목에서는 무엇을 배우며, 1단원에서 다룰 '평화 통일'과 '민주화·산업화'는 우리 삶과 어떤 관련이 있을까요?",
+  "learning_goals": [
+    "사회 과목의 성격과 학습 목적을 이해하고 교과서의 구성 요소를 파악할 수 있다.",
+    "1단원에서 배울 핵심 주제인 평화 통일, 민주화, 산업화의 의미를 짐작할 수 있다.",
+    "낱말 구름 활동을 통해 단원 관련 핵심 용어에 친숙해질 수 있다."
+  ],
+  "key_concepts": [
+    "사회 과목",
+    "교과서 구성",
+    "평화 통일",
+    "민주화",
+    "산업화",
+    "낱말 구름"
+  ],
+  "vocabulary": [
+    "사회",
+    "평화 통일",
+    "분단",
+    "민주화",
+    "산업화",
+    "교류",
+    "협력"
+  ],
+  "misconceptions": [
+    "사회 과목을 단순히 과거의 사실을 암기하는 과목으로만 오해할 수 있다.",
+    "평화 통일이나 민주화 같은 주제가 어린이들의 일상생활과는 상관없는 거대 담론이라고 생각할 수 있다."
+  ],
+  "difficulty_band": "on-level",
+  "content_chunks": [
+    {
+      "chunk_id": "1차시-chunk-1",
+      "label": "사회 과목 및 교과서 탐색",
+      "content_type": "mixed",
+      "knowledge_type": "procedure",
+      "summary": "캐릭터 '우리'의 안내를 통해 사회 과목의 의미를 살펴보고, 본문·활동·우리봇 등 교과서의 다양한 구성 요소와 학습 방법을 익힙니다.",
+      "source_pages": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "suggested_activity_types": [
+        "see_think_wonder",
+        "learning_note"
+      ]
+    },
+    {
+      "chunk_id": "1차시-chunk-2",
+      "label": "1단원 주제 열기",
+      "content_type": "mixed",
+      "knowledge_type": "concept",
+      "summary": "1단원 '평화 통일을 위한 노력, 민주화와 산업화'의 전체 내용을 조망하고, 낱말 구름에서 핵심 용어를 찾아 빙고 놀이를 하며 학습 의욕을 높입니다.",
+      "source_pages": [
+        8,
+        9,
+        10,
+        11
+      ],
+      "suggested_activity_types": [
+        "worksheet"
+      ]
+    }
+  ],
+  "source_page_refs": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "analysis_confidence": 0.9,
+  "review_status": "draft",
+  "notes": "교과서 전반의 구성 안내와 1단원 도입 활동 내용을 충실히 반영함. 추출된 텍스트 중 선거 관련 내용은 2단원 범위이므로 제외하고 도입 차시에 집중함."
+}

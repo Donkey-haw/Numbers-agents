@@ -1,0 +1,22 @@
+{
+  "schema_version": "1.0.0",
+  "stage": "document_inventory_agent",
+  "lesson_id": null,
+  "status": "succeeded",
+  "run_id": "korean_6_1_unit1_related_to_life_reading-20260331-100038",
+  "started_at": "2026-03-31T01:00:38.525590+00:00",
+  "finished_at": "2026-03-31T01:00:38.525921+00:00",
+  "input_refs": [
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/configs/units/korean/korean_6_1_unit1_related_to_life_reading.json",
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/textbook/국어/[국어]6_1_교과서.pdf"
+  ],
+  "output_refs": [
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/korean_6_1_unit1_related_to_life_reading-20260331-100038/source/document_inventory.json",
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/korean_6_1_unit1_related_to_life_reading-20260331-100038/source/document_inventory.status.json"
+  ],
+  "fallback_used": false,
+  "warnings": [],
+  "errors": [],
+  "agent_spec_path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/agents/document_inventory_agent/AGENT.md",
+  "runtime_driven": true
+}

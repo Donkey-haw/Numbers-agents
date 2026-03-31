@@ -1,0 +1,54 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-03-31T00:00:00Z",
+  "lesson_id": "4차시",
+  "sheet_name": "4차시",
+  "lesson_title": "평화 통일을 위한 노력 — 분단의 장소가 평화의 장소로 바뀐 사례 알아보기",
+  "lesson_type": "intro",
+  "pdf_pages": [
+    12
+  ],
+  "essential_question": "분단과 관련된 갈등의 장소를 어떻게 평화의 장소로 바꿀 수 있을까요?",
+  "learning_goals": [
+    "분단과 관련된 장소를 평화의 장소로 만들려는 노력을 찾아볼 수 있다.",
+    "분단으로 생겨난 문제점을 이해하고 평화 통일의 필요성을 설명할 수 있다."
+  ],
+  "key_concepts": [
+    "평화 통일",
+    "분단",
+    "평화의 장소",
+    "문제점 해결"
+  ],
+  "vocabulary": [
+    "분단",
+    "평화 통일",
+    "산책로",
+    "푯말"
+  ],
+  "misconceptions": [
+    "분단된 장소는 영원히 갈등과 대립의 장소로만 남을 것이라고 생각한다."
+  ],
+  "difficulty_band": "on-level",
+  "content_chunks": [
+    {
+      "chunk_id": "4차시-chunk-1",
+      "label": "단원 학습 목표 및 도입",
+      "content_type": "text",
+      "knowledge_type": "concept",
+      "summary": "평화 통일 단원의 도입부로, 분단 문제 해결 및 장소의 평화적 재구성을 위한 학습 목표를 제시하고 산책로 푯말의 의미를 통해 학습 동기를 유발함.",
+      "source_pages": [
+        12
+      ],
+      "suggested_activity_types": [
+        "see-think-wonder",
+        "discussion"
+      ]
+    }
+  ],
+  "source_page_refs": [
+    12
+  ],
+  "analysis_confidence": 0.85,
+  "review_status": "draft",
+  "notes": "교과서 12쪽은 '1. 평화 통일을 위한 노력' 주제의 도입 페이지이며, 분단의 장소를 평화의 장소로 바꾸려는 노력을 포함한 핵심 학습 목표를 명시하고 있음."
+}

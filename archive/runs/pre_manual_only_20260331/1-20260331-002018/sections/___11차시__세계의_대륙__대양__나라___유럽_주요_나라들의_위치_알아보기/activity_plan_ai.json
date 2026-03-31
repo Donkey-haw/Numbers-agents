@@ -1,0 +1,102 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-03-31T10:00:00+09:00",
+  "lesson_id": "11차시",
+  "activities": [
+    {
+      "activity_id": "act-11-note",
+      "lesson_id": "11차시",
+      "object_role": "learning_note",
+      "lesson_flow_stage": "during",
+      "activity_type": "freeform_html",
+      "level": "core",
+      "learning_goal": "위도와 경도를 사용하여 유럽 주요 나라의 위치를 체계적으로 정리할 수 있다.",
+      "prompt_text": "수업을 들으며 유럽의 대륙, 대양, 그리고 주요 나라들의 위치 정보를 정리해 봅시다.",
+      "layout_template": "freeform_html",
+      "html_content": "<!DOCTYPE html><html lang='ko'><head><meta charset='UTF-8'><style>body{width:1600px;margin:0;padding:40px;background:transparent;font-family:'Noto Sans KR',sans-serif;box-sizing:border-box;}.card{background:#ffffff;border-radius:32px;padding:48px;border:1px solid #eee;}.header{display:flex;align-items:center;margin-bottom:32px;}.badge{background:#0ea5e9;color:white;padding:8px 20px;border-radius:12px;font-weight:700;margin-right:20px;font-size:20px;}.title{margin:0;font-size:32px;color:#111;}.instruction{font-size:22px;color:#444;margin-bottom:40px;line-height:1.6;}.note-container{display:grid;grid-template-columns:400px 1fr;gap:32px;}.side-panel{display:flex;flex-direction:column;gap:24px;}.main-note{border:3px solid #333;border-radius:20px;background:#fff;padding:24px;min-height:700px;}.vocabulary-box{border:2px solid #ccc;border-radius:16px;padding:20px;background:#f8fafc;}.v-label{font-weight:700;color:#0369a1;margin-bottom:8px;font-size:18px;}.v-content{min-height:100px;border-bottom:1px solid #ddd;margin-bottom:16px;}.note-header{font-weight:800;font-size:24px;margin-bottom:20px;color:#111;display:flex;align-items:center;}.note-header::before{content:'';width:8px;height:24px;background:#0ea5e9;margin-right:12px;border-radius:4px;}</style></head><body><div class='card'><div class='header'><div class='badge'>배움 정리</div><h1 class='title'>유럽의 위치와 나라 정리 노트</h1></div><p class='instruction'>교과서 128~130쪽을 참고하여, 유럽 대륙의 위치 특징과 오늘 알게 된 나라들을 자유롭게 메모해 봅시다.</p><div class='note-container'><div class='side-panel'><div class='vocabulary-box'><div class='v-label'>핵심 단어: 대륙/대양</div><div class='v-content'></div><div class='v-label'>핵심 단어: 위도/경도</div><div class='v-content'></div><div class='v-label'>유럽의 이웃 나라들</div><div class='v-content'></div></div></div><div class='main-note'><div class='note-header'>수업 시간 핵심 내용 메모</div></div></div></div></body></html>",
+      "source_refs": [
+        128,
+        129
+      ],
+      "student_writing_zones": [
+        {
+          "zone_id": "voc_notes",
+          "label": "단어 및 기초 메모",
+          "input_area_type": "free-writing",
+          "min_height": 300
+        },
+        {
+          "zone_id": "main_lecture_note",
+          "label": "수업 핵심 정리",
+          "input_area_type": "free-writing",
+          "min_height": 700
+        }
+      ],
+      "estimated_minutes": 15,
+      "review_status": "draft"
+    },
+    {
+      "activity_id": "act-11-search",
+      "lesson_id": "11차시",
+      "object_role": "activity_area",
+      "lesson_flow_stage": "during",
+      "activity_type": "freeform_html",
+      "level": "core",
+      "learning_goal": "특정 유럽 국가의 위치를 위도와 경도를 활용해 정확히 찾아내고 설명할 수 있다.",
+      "prompt_text": "지도에서 관심 있는 유럽의 세 나라를 골라, 위도와 경도로 위치를 표현하고 특징을 써 봅시다.",
+      "layout_template": "freeform_html",
+      "html_content": "<!DOCTYPE html><html lang='ko'><head><meta charset='UTF-8'><style>body{width:1600px;margin:0;padding:40px;background:transparent;font-family:'Noto Sans KR',sans-serif;box-sizing:border-box;}.card{background:#ffffff;border-radius:32px;padding:48px;border:1px solid #eee;}.header{display:flex;align-items:center;margin-bottom:32px;}.badge{background:#4f46e5;color:white;padding:8px 20px;border-radius:12px;font-weight:700;margin-right:20px;font-size:20px;}.title{margin:0;font-size:32px;color:#111;}.instruction{font-size:22px;color:#444;margin-bottom:40px;line-height:1.6;}.finder-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:24px;}.country-card{border:3px solid #333;border-radius:24px;background:#fff;padding:24px;display:flex;flex-direction:column;gap:20px;}.field-label{font-weight:800;font-size:18px;color:#4f46e5;margin-bottom:8px;}.field-input{border:1.5px solid #eee;border-radius:12px;background:#f9fafb;min-height:60px;padding:12px;}.large-input{min-height:350px;border:2px solid #333;background:#fff;}</style></head><body><div class='card'><div class='header'><div class='badge'>위치 탐사</div><h1 class='title'>좌표로 찾는 유럽의 나라</h1></div><p class='instruction'>디지털 영상 지도나 교과서 부록의 세계지도를 활용하여 다음 세 나라의 정확한 위치 정보를 기록해 보세요.</p><div class='finder-grid'><div class='country-card'><div class='field-group'><div class='field-label'>나라 이름</div><div class='field-input'></div></div><div class='field-group'><div class='field-label'>위도와 경도</div><div class='field-input'></div></div><div class='field-group'><div class='field-label'>이 나라의 위치 특징</div><div class='large-input'></div></div></div><div class='country-card'><div class='field-group'><div class='field-label'>나라 이름</div><div class='field-input'></div></div><div class='field-group'><div class='field-label'>위도와 경도</div><div class='field-input'></div></div><div class='field-group'><div class='field-label'>이 나라의 위치 특징</div><div class='large-input'></div></div></div><div class='country-card'><div class='field-group'><div class='field-label'>나라 이름</div><div class='field-input'></div></div><div class='field-group'><div class='field-label'>위도와 경도</div><div class='field-input'></div></div><div class='field-group'><div class='field-label'>이 나라의 위치 특징</div><div class='large-input'></div></div></div></div></div></body></html>",
+      "source_refs": [
+        129,
+        130
+      ],
+      "student_writing_zones": [
+        {
+          "zone_id": "country_1_desc",
+          "label": "첫 번째 나라 분석",
+          "input_area_type": "free-writing",
+          "min_height": 350
+        },
+        {
+          "zone_id": "country_2_desc",
+          "label": "두 번째 나라 분석",
+          "input_area_type": "free-writing",
+          "min_height": 350
+        },
+        {
+          "zone_id": "country_3_desc",
+          "label": "세 번째 나라 분석",
+          "input_area_type": "free-writing",
+          "min_height": 350
+        }
+      ],
+      "estimated_minutes": 20,
+      "review_status": "draft"
+    },
+    {
+      "activity_id": "act-11-reason",
+      "lesson_id": "11차시",
+      "object_role": "worksheet",
+      "lesson_flow_stage": "after",
+      "activity_type": "freeform_html",
+      "level": "extension",
+      "learning_goal": "위도와 경도라는 약속이 우리 삶과 국제 관계에서 왜 중요한지 추론할 수 있다.",
+      "prompt_text": "만약 위도와 경도라는 전 세계적인 약속이 없다면, 어떤 혼란이 생길지 상상하여 의견을 써 봅시다.",
+      "layout_template": "freeform_html",
+      "html_content": "<!DOCTYPE html><html lang='ko'><head><meta charset='UTF-8'><style>body{width:1600px;margin:0;padding:40px;background:transparent;font-family:'Noto Sans KR',sans-serif;box-sizing:border-box;}.card{background:#ffffff;border-radius:32px;padding:56px;border:1px solid #eee;}.header{display:flex;align-items:center;margin-bottom:40px;}.badge{background:#ef4444;color:white;padding:8px 20px;border-radius:12px;font-weight:700;margin-right:20px;font-size:20px;}.title{margin:0;font-size:36px;color:#111;}.scenario-box{background:#fff1f2;border-left:8px solid #ef4444;padding:32px;margin-bottom:40px;border-radius:0 16px 16px 0;}.scenario-text{font-size:24px;color:#991b1b;line-height:1.7;font-weight:500;}.writing-container{border:3px solid #333;border-radius:24px;background:#fff;padding:40px;min-height:550px;}.label{font-weight:900;font-size:26px;color:#111;margin-bottom:24px;display:block;}</style></head><body><div class='card'><div class='header'><div class='badge'>생각 확장</div><h1 class='title'>좌표가 사라진 세상 상상하기</h1></div><div class='scenario-box'><div class='scenario-text'>\"전 세계의 모든 GPS와 지도가 먹통이 되고, 위도와 경도라는 약속마저 잊혀졌다고 상상해 보세요. 유럽에 있는 친구에게 구호 물자를 보내거나, 바다 한가운데서 구조 요청을 해야 한다면 어떻게 될까요?\"</div></div><div class='writing-container'><span class='label'>나의 생각: 위도와 경도라는 '약속'이 중요한 이유</span></div></div></body></html>",
+      "source_refs": [
+        128
+      ],
+      "student_writing_zones": [
+        {
+          "zone_id": "reasoning_response",
+          "label": "좌표의 중요성 논증",
+          "input_area_type": "free-writing",
+          "min_height": 550
+        }
+      ],
+      "estimated_minutes": 10,
+      "review_status": "draft"
+    }
+  ]
+}

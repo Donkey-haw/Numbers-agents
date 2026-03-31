@@ -1,0 +1,69 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-03-31T10:00:00+09:00",
+  "lesson_id": "8-9차시",
+  "activities": [
+    {
+      "activity_id": "act-89-1",
+      "lesson_id": "8-9차시",
+      "object_role": "learning_note",
+      "lesson_flow_stage": "before",
+      "activity_type": "freeform_html",
+      "level": "core",
+      "learning_goal": "낱말 구름의 핵심 용어를 분류하며 단원의 전체적인 흐름을 예측할 수 있다.",
+      "prompt_text": "낱말 구름에서 본 단어들을 '민주화'와 '산업화'라는 두 범주로 나누어 적어보고, 이번 단원에서 무엇을 배우게 될지 상상해 봅시다.",
+      "layout_template": "freeform_html",
+      "html_content": "<!DOCTYPE html><html lang='ko'><head><meta charset='UTF-8'><style>@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700;900&display=swap');body{width:1600px;margin:0;padding:40px;background:transparent;font-family:'Noto Sans KR',sans-serif;color:#333;box-sizing:border-box;}.card{background:#fff;padding:60px;border-radius:40px;box-shadow:0 15px 50px rgba(0,0,0,0.08);border:1px solid #f0f0f0;}.header{display:flex;align-items:center;margin-bottom:40px;}.badge{background:#4A90E2;color:#fff;padding:12px 24px;border-radius:15px;font-weight:900;font-size:24px;margin-right:20px;}.title{font-size:48px;font-weight:900;margin:0;letter-spacing:-1px;}.instruction{font-size:28px;line-height:1.6;color:#555;margin-bottom:50px;background:#f8f9fa;padding:30px;border-left:8px solid #4A90E2;border-radius:0 15px 15px 0;}.container{display:flex;gap:40px;}.column{flex:1;}.column-label{font-size:32px;font-weight:700;text-align:center;margin-bottom:20px;color:#2c3e50;}.writing-area{background:#fff;border:3px solid #333;border-radius:24px;min-height:550px;padding:30px;}.hint{font-size:20px;color:#888;margin-top:15px;text-align:center;}</style></head><body><div class='card'><div class='header'><div class='badge'>배움 메모</div><h1 class='title'>단원 키워드 분류하기: 민주화 vs 산업화</h1></div><div class='instruction'>낱말 구름에 나타난 용어들을 성격에 따라 분류해 보세요. 정답을 맞히기보다 여러분이 생각하는 '변화의 성격'에 따라 나누어 보는 것이 중요합니다.</div><div class='container'><div class='column'><div class='column-label'>🗳️ 정치와 권리 (민주화)</div><div class='writing-area'></div><div class='hint'>예: 4·19 혁명, 시민 의식...</div></div><div class='column'><div class='column-label'>🏭 경제와 성장 (산업화)</div><div class='writing-area'></div><div class='hint'>예: 중화학 공업, 수출...</div></div></div></div></body></html>",
+      "source_refs": [
+        29
+      ],
+      "student_writing_zones": [
+        {
+          "zone_id": "democratization_list",
+          "label": "민주화 관련 낱말 쓰기",
+          "input_area_type": "free-writing",
+          "min_height": 550
+        },
+        {
+          "zone_id": "industrialization_list",
+          "label": "산업화 관련 낱말 쓰기",
+          "input_area_type": "free-writing",
+          "min_height": 550
+        }
+      ],
+      "estimated_minutes": 10,
+      "review_status": "draft"
+    },
+    {
+      "activity_id": "act-89-2",
+      "lesson_id": "8-9차시",
+      "object_role": "activity_area",
+      "lesson_flow_stage": "during",
+      "activity_type": "freeform_html",
+      "level": "core",
+      "learning_goal": "주요 학습 용어에 친숙해지며, 각 용어가 우리 삶에 어떤 영향을 주는지 추론할 수 있다.",
+      "prompt_text": "핵심 낱말로 빙고판을 채우고 빙고 놀이를 해 봅시다. 빙고를 외친 후에는 내가 고른 낱말 중 가장 중요하다고 생각하는 것을 골라 이유를 적어 보세요.",
+      "layout_template": "freeform_html",
+      "html_content": "<!DOCTYPE html><html lang='ko'><head><meta charset='UTF-8'><style>@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700;900&display=swap');body{width:1600px;margin:0;padding:40px;background:transparent;font-family:'Noto Sans KR',sans-serif;box-sizing:border-box;}.card{background:#fff;padding:60px;border-radius:40px;box-shadow:0 15px 50px rgba(0,0,0,0.1);border:1px solid #eee;}.header{display:flex;justify-content:space-between;align-items:center;margin-bottom:40px;}.badge{background:#FF6B6B;color:#fff;padding:12px 24px;border-radius:15px;font-weight:900;font-size:24px;}.title{font-size:48px;font-weight:900;flex-grow:1;margin-left:20px;}.main-content{display:flex;gap:60px;}.bingo-section{flex:1;}.bingo-grid{display:grid;grid-template-columns:repeat(3, 1fr);gap:15px;margin-top:20px;}.bingo-cell{aspect-ratio:1/1;border:3px solid #333;border-radius:15px;background:#fff;display:flex;align-items:center;justify-content:center;font-size:24px;font-weight:700;text-align:center;padding:10px;}.reflection-section{flex:0.8;display:flex;flex-direction:column;}.reflection-title{font-size:32px;font-weight:700;margin-bottom:20px;color:#e67e22;}.writing-area{flex-grow:1;border:3px solid #333;border-radius:24px;background:#fdf9f0;padding:30px;min-height:500px;}.hint-list{margin-top:20px;font-size:18px;color:#777;padding:20px;background:#f1f3f5;border-radius:15px;}li{margin-bottom:8px;}</style></head><body><div class='card'><div class='header'><div class='badge'>활동 영역</div><h1 class='title'>생각을 잇는 낱말 빙고</h1></div><div class='main-content'><div class='bingo-section'><div class='bingo-grid'><div class='bingo-cell'></div><div class='bingo-cell'></div><div class='bingo-cell'></div><div class='bingo-cell'></div><div class='bingo-cell'></div><div class='bingo-cell'></div><div class='bingo-cell'></div><div class='bingo-cell'></div><div class='bingo-cell'></div></div><div class='hint-list'><strong>💡 빙고 낱말 후보:</strong><ul><li>민주화, 산업화, 4·19 혁명, 5·18 민주화 운동, 6월 민주 항쟁, 직선제, 독재, 시민 의식, 중화학 공업, 경공업 등</li></ul></div></div><div class='reflection-section'><div class='reflection-title'>⭐ 나의 원픽 낱말과 그 이유</div><div class='writing-area'></div></div></div></div></body></html>",
+      "source_refs": [
+        29
+      ],
+      "student_writing_zones": [
+        {
+          "zone_id": "bingo_grid",
+          "label": "3x3 빙고판 채우기",
+          "input_area_type": "grid",
+          "min_height": 600
+        },
+        {
+          "zone_id": "reasoning_note",
+          "label": "중요한 낱말 선정 이유 쓰기",
+          "input_area_type": "free-writing",
+          "min_height": 500
+        }
+      ],
+      "estimated_minutes": 15,
+      "review_status": "draft"
+    }
+  ]
+}

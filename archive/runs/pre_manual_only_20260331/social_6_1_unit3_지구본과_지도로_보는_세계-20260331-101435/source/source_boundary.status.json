@@ -1,0 +1,27 @@
+{
+  "schema_version": "1.0.0",
+  "stage": "source_boundary_agent",
+  "lesson_id": null,
+  "status": "succeeded",
+  "run_id": "social_6_1_unit3_지구본과_지도로_보는_세계-20260331-101435",
+  "started_at": "2026-03-31T01:14:40.520342+00:00",
+  "finished_at": "2026-03-31T01:14:41.751605+00:00",
+  "input_refs": [
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/configs/units/social/social_6_1_unit3_지구본과_지도로_보는_세계.json",
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit3_지구본과_지도로_보는_세계-20260331-101435/source/lesson_queries.json",
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit3_지구본과_지도로_보는_세계-20260331-101435/source/page_candidates.json",
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit3_지구본과_지도로_보는_세계-20260331-101435/source/boundary_decisions.json",
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit3_지구본과_지도로_보는_세계-20260331-101435/source/boundary_validation.json"
+  ],
+  "output_refs": [
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit3_지구본과_지도로_보는_세계-20260331-101435/source/source_boundary.ai.json",
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit3_지구본과_지도로_보는_세계-20260331-101435/source/schedule_draft.json",
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit3_지구본과_지도로_보는_세계-20260331-101435/source/textbook_context.json",
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit3_지구본과_지도로_보는_세계-20260331-101435/source/runtime_config.json"
+  ],
+  "fallback_used": false,
+  "warnings": [],
+  "errors": [],
+  "agent_spec_path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/agents/source_boundary_agent/AGENT.md",
+  "runtime_driven": true
+}

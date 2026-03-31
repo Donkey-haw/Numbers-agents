@@ -1,0 +1,89 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-03-26T12:45:00.000000+00:00",
+  "lesson_id": "14차시",
+  "sheet_name": "14차시",
+  "lesson_title": "마무리하기",
+  "lesson_type": "summary",
+  "pdf_pages": [
+    51,
+    52,
+    53,
+    54
+  ],
+  "essential_question": "이 단원에서 배운 내용을 어떻게 정리하고, 나의 삶 속에서 가치를 실천할 수 있을까요?",
+  "learning_goals": [
+    "시 「난 탐험가」를 읽고 말하는 이가 추구하는 가치를 파악할 수 있다.",
+    "단원 학습 내용을 되돌아보며 자신의 성취 수준을 점검하고 실천 의지를 다질 수 있다.",
+    "교과 학습 어휘인 '종합하다', '적용하다', '개선하다'의 의미를 이해하고 활용할 수 있다."
+  ],
+  "key_concepts": [
+    "추구하는 가치",
+    "자기 성찰",
+    "학습 점검",
+    "교과 어휘"
+  ],
+  "vocabulary": [
+    "종합하다",
+    "적용하다",
+    "개선하다",
+    "탐험가"
+  ],
+  "misconceptions": [
+    "단원 마무리는 단순히 문제를 푸는 과정이 아니라, 자신의 삶과 연결하여 가치를 내면화하는 과정임을 인지해야 함."
+  ],
+  "difficulty_band": "on-level",
+  "content_chunks": [
+    {
+      "chunk_id": "14차시-chunk-1",
+      "label": "시 감상과 가치 탐색",
+      "content_type": "mixed",
+      "knowledge_type": "concept",
+      "summary": "시 「난 탐험가」를 읽고 말하는 이의 특성과 마음상태를 파악하며, 그가 중요하게 여기는 가치(나다움, 도전 등)에 대해 이야기 나눕니다.",
+      "source_pages": [
+        51,
+        52
+      ],
+      "suggested_activity_types": [
+        "see_think_wonder",
+        "learning_note"
+      ]
+    },
+    {
+      "chunk_id": "14차시-chunk-2",
+      "label": "단원 학습 되돌아보기",
+      "content_type": "activity",
+      "knowledge_type": "opinion",
+      "summary": "인물의 가치 파악, 관련 경험 떠올리기, 자신의 생각 말하기 등 단원에서 배운 주요 활동에 대한 도달도를 스스로 점검하고 생활 속 실천 방안을 계획합니다.",
+      "source_pages": [
+        53
+      ],
+      "suggested_activity_types": [
+        "worksheet"
+      ]
+    },
+    {
+      "chunk_id": "14차시-chunk-3",
+      "label": "교과 어휘 익히기",
+      "content_type": "text",
+      "knowledge_type": "application",
+      "summary": "'종합하다', '적용하다', '개선하다'의 사전적 의미를 확인하고, 이를 활용하여 적절한 문장을 만들어 봅니다.",
+      "source_pages": [
+        54
+      ],
+      "suggested_activity_types": [
+        "learning_note",
+        "worksheet"
+      ]
+    }
+  ],
+  "source_page_refs": [
+    51,
+    52,
+    53,
+    54
+  ],
+  "analysis_confidence": 0.95,
+  "review_status": "draft",
+  "notes": "교과서 84~87쪽(PDF 51~54쪽)의 시 감상, 자기 점검, 어휘 학습 내용을 충실히 반영하였습니다. 특히 어휘 학습 부분의 구체적인 단어들을 추가하였습니다."
+}

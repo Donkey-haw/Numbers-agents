@@ -1,0 +1,105 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-03-26T12:41:15Z",
+  "lesson_id": "7-8차시",
+  "sheet_name": "7-8차시",
+  "lesson_title": "인물이 추구하는 가치를 자신의 삶과 관련짓기",
+  "lesson_type": "core",
+  "pdf_pages": [
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38
+  ],
+  "essential_question": "인물이 소중하게 여기는 가치는 무엇이며, 그것을 나의 삶과 어떻게 연결할 수 있을까?",
+  "learning_goals": [
+    "이야기 속 인물의 말과 행동을 통해 인물이 추구하는 가치를 파악할 수 있다.",
+    "인물의 가치와 나의 삶을 비교하여 생각이 달라진 점이나 새롭게 안 점을 말할 수 있다.",
+    "인물이 추구하는 가치를 생각하며 인물에게 전하고 싶은 마음을 편지로 쓸 수 있다."
+  ],
+  "key_concepts": [
+    "가치 추구",
+    "삶과 관련짓기",
+    "인물의 태도",
+    "성찰",
+    "독서 감상"
+  ],
+  "vocabulary": [
+    "가치",
+    "추구",
+    "끈기",
+    "재간",
+    "핀잔",
+    "도전"
+  ],
+  "misconceptions": [
+    "1등이나 승리만이 삶의 유일한 가치라고 생각할 수 있다.",
+    "나와 다른 가치를 추구하는 인물을 틀렸다고 생각하거나 비난할 수 있다."
+  ],
+  "difficulty_band": "on-level",
+  "content_chunks": [
+    {
+      "chunk_id": "7-8차시-chunk-1",
+      "label": "이야기 「다이빙대 위에서」 읽기",
+      "content_type": "text",
+      "knowledge_type": "mixed",
+      "summary": "수영을 그만두고 다이빙을 시작한 언니 버들이와 시합에서 지며 고민하는 나루의 대화를 통해 두 인물이 처한 상황과 내면의 갈등을 이해한다.",
+      "source_pages": [
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33
+      ],
+      "suggested_activity_types": [
+        "see_think_wonder",
+        "learning_note"
+      ]
+    },
+    {
+      "chunk_id": "7-8차시-chunk-2",
+      "label": "인물의 가치 분석 및 적용",
+      "content_type": "activity",
+      "knowledge_type": "application",
+      "summary": "나루(끈기, 도전)와 버들이(즐거움, 자기 주도성)의 가치를 파악하고, 자신의 삶과 관련지어 성찰한 내용을 바탕으로 인물에게 편지를 쓴다.",
+      "source_pages": [
+        34,
+        35,
+        36,
+        37,
+        38
+      ],
+      "suggested_activity_types": [
+        "worksheet",
+        "learning_note"
+      ]
+    }
+  ],
+  "source_page_refs": [
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38
+  ],
+  "analysis_confidence": 0.95,
+  "review_status": "draft",
+  "notes": "「다이빙대 위에서」 이야기를 중심으로 인물의 가치를 파악하고 자신의 삶에 적용하는 활동 중심 차시입니다. 버들이와 나루의 대조적인 가치관(성과 vs 과정/즐거움)을 명확히 다룹니다."
+}

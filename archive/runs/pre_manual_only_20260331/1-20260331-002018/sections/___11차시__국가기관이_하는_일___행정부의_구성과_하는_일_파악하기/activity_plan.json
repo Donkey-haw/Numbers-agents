@@ -1,0 +1,109 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-03-30T15:43:34.027367+00:00",
+  "lesson_id": "11차시",
+  "activities": [
+    {
+      "activity_id": "act-11-1",
+      "lesson_id": "11차시",
+      "object_role": "learning_note",
+      "lesson_flow_stage": "during",
+      "activity_type": "freeform_html",
+      "level": "core",
+      "learning_goal": "행정부의 주요 구성 요소와 각 기관이 하는 일을 체계적으로 정리할 수 있다.",
+      "prompt_text": "수업을 들으며 행정부의 구성원들과 각 부처가 우리 사회를 위해 어떤 일을 하는지 자유롭게 메모해 봅시다.",
+      "layout_template": "freeform_html",
+      "html_content": "<!DOCTYPE html><html lang='ko'><head><meta charset='UTF-8'><style>body{width:1600px;margin:0;padding:40px;background:transparent;font-family:'Noto Sans KR',sans-serif;color:#333;display:flex;justify-content:center;} .card{width:1400px;background:#fff;padding:60px;border-radius:40px;box-shadow:0 10px 30px rgba(0,0,0,0.05);border:1px solid #eee;} .header{border-left:12px solid #333;padding-left:24px;margin-bottom:40px;} h1{font-size:48px;margin:0;letter-spacing:-1px;} p{font-size:24px;color:#666;margin-top:10px;} .note-grid{display:grid;grid-template-columns:1fr 2fr;gap:30px;margin-top:40px;} .section-label{font-size:28px;font-weight:700;margin-bottom:15px;color:#444;} .writing-zone{background:#fff;border:3px solid #333;border-radius:20px;min-height:450px;padding:20px;} .full-zone{grid-column: span 2; min-height: 500px;}</style></head><body><div class='card'><div class='header'><h1>행정부 구성과 역할 정리 노트</h1><p>대통령, 국무총리, 그리고 여러 부(部)가 하는 일을 중심으로 메모해 보세요.</p></div><div class='note-grid'><div><div class='section-label'>대통령과 국무총리</div><div class='writing-zone'></div></div><div><div class='section-label'>행정부의 여러 부처들 (교육부, 행정안전부 등)</div><div class='writing-zone'></div></div><div class='full-zone'><div class='section-label'>오늘 수업에서 가장 중요하다고 생각한 점</div><div class='writing-zone' style='min-height:300px;'></div></div></div></div></body></html>",
+      "source_refs": [
+        74
+      ],
+      "student_writing_zones": [
+        {
+          "zone_id": "exec_leadership",
+          "label": "대통령과 국무총리 메모",
+          "input_area_type": "free-writing",
+          "min_height": 450
+        },
+        {
+          "zone_id": "ministries_notes",
+          "label": "부처별 역할 메모",
+          "input_area_type": "free-writing",
+          "min_height": 450
+        }
+      ],
+      "estimated_minutes": 15,
+      "review_status": "draft",
+      "teacher_notes": ""
+    },
+    {
+      "activity_id": "act-11-2",
+      "lesson_id": "11차시",
+      "object_role": "activity_area",
+      "lesson_flow_stage": "during",
+      "activity_type": "freeform_html",
+      "level": "on-level",
+      "learning_goal": "행정부의 부처 중 하나를 선택하여 그곳의 업무가 우리 삶에 미치는 영향을 구체적으로 설명할 수 있다.",
+      "prompt_text": "행정부의 수많은 부처 중 여러분의 일상과 가장 관련이 깊다고 생각하는 곳을 하나 골라, 그곳이 없다면 어떤 불편함이 생길지 상상하여 써 봅시다.",
+      "layout_template": "freeform_html",
+      "html_content": "<!DOCTYPE html><html lang='ko'><head><meta charset='UTF-8'><style>body{width:1600px;margin:0;padding:40px;background:transparent;font-family:'Noto Sans KR',sans-serif;color:#333;display:flex;justify-content:center;} .card{width:1400px;background:#fff;padding:60px;border-radius:40px;border:1px solid #eee;} .header{margin-bottom:40px;text-align:center;} h1{font-size:42px;background:#333;color:#fff;display:inline-block;padding:10px 30px;border-radius:10px;} .prompt-box{font-size:26px;line-height:1.6;margin:30px 0;padding:30px;background:#f9f9f9;border-radius:20px;border-left:8px solid #333;} .writing-container{margin-top:40px;} .choice-line{font-size:28px;font-weight:700;margin-bottom:20px;display:flex;align-items:center;} .input-line{border-bottom:3px solid #333;flex-grow:1;margin-left:15px;height:40px;} .writing-area{width:100%;height:600px;border:3px solid #333;border-radius:20px;margin-top:20px;background:#fff;}</style></head><body><div class='card'><div class='header'><h1>우리 생활 속의 행정부 찾기</h1></div><div class='prompt-box'>행정부는 국민의 안전과 행복을 위해 다양한 일을 합니다. (예: 교육부-학교 운영, 환경부-미세먼지 관리, 보건복지부-질병 예방)</div><div class='writing-container'><div class='choice-line'>내가 선택한 행정부 부처: <div class='input-line'></div></div><div class='choice-line' style='margin-top:40px;'>이 부처가 하는 일과 우리 삶에 주는 도움:</div><div class='writing-area'></div></div></div></body></html>",
+      "source_refs": [
+        74
+      ],
+      "student_writing_zones": [
+        {
+          "zone_id": "ministry_choice",
+          "label": "선택한 부처 이름",
+          "input_area_type": "inline-answer",
+          "min_height": 50
+        },
+        {
+          "zone_id": "impact_reasoning",
+          "label": "삶에 미치는 영향 설명",
+          "input_area_type": "free-writing",
+          "min_height": 600
+        }
+      ],
+      "estimated_minutes": 12,
+      "review_status": "draft",
+      "teacher_notes": ""
+    },
+    {
+      "activity_id": "act-11-3",
+      "lesson_id": "11차시",
+      "object_role": "worksheet",
+      "lesson_flow_stage": "after",
+      "activity_type": "freeform_html",
+      "level": "extension",
+      "learning_goal": "행정부의 역할을 바탕으로 사회 문제 해결을 위한 정책적 우선순위를 결정하고 논리적으로 제안할 수 있다.",
+      "prompt_text": "여러분이 대통령이라면, 지금 우리 사회에서 가장 시급히 해결해야 할 문제는 무엇이라고 생각하나요? 이를 해결하기 위해 어떤 부처에 힘을 실어줄지 계획을 세워 봅시다.",
+      "layout_template": "freeform_html",
+      "html_content": "<!DOCTYPE html><html lang='ko'><head><meta charset='UTF-8'><style>body{width:1600px;margin:0;padding:40px;background:transparent;font-family:'Noto Sans KR',sans-serif;color:#333;display:flex;justify-content:center;} .card{width:1400px;background:#fff;padding:60px;border-radius:40px;border:4px solid #333;} h1{font-size:44px;margin-bottom:10px;} .subtitle{font-size:24px;color:#666;margin-bottom:40px;} .box-label{font-size:24px;font-weight:bold;background:#333;color:#fff;padding:8px 20px;display:inline-block;border-radius:8px 8px 0 0;margin-left:10px;} .writing-box{border:3px solid #333;border-radius:15px;padding:25px;margin-bottom:30px;min-height:250px;} .main-plan{min-height:550px;}</style></head><body><div class='card'><h1>[미션] 내가 만드는 행정부 정책</h1><div class='subtitle'>대통령의 마음으로 우리 사회의 문제를 진단하고 해결책을 제시해 보세요.</div><div><div class='box-label'>1. 우리가 해결해야 할 사회 문제</div><div class='writing-box'></div></div><div><div class='box-label'>2. 집중적으로 협력할 행정부 부처</div><div class='writing-box' style='min-height:150px;'></div></div><div><div class='box-label'>3. 구체적인 정책 아이디어와 기대 효과</div><div class='writing-box main-plan'></div></div></div></body></html>",
+      "source_refs": [
+        74
+      ],
+      "student_writing_zones": [
+        {
+          "zone_id": "problem_diagnosis",
+          "label": "사회 문제 진단",
+          "input_area_type": "free-writing",
+          "min_height": 250
+        },
+        {
+          "zone_id": "ministry_selection",
+          "label": "관련 부처 선택",
+          "input_area_type": "inline-answer",
+          "min_height": 150
+        },
+        {
+          "zone_id": "policy_proposal",
+          "label": "정책 및 기대효과",
+          "input_area_type": "free-writing",
+          "min_height": 550
+        }
+      ],
+      "estimated_minutes": 20,
+      "review_status": "draft",
+      "teacher_notes": ""
+    }
+  ]
+}

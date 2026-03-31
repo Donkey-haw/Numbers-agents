@@ -1,0 +1,21 @@
+{
+  "schema_version": "1.0.0",
+  "documents": [
+    {
+      "document_id": "config",
+      "path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/configs/units/social/social_6_1_unit2_state_agencies.json",
+      "kind": "reference",
+      "exists": true,
+      "label": "social_6_1_unit2_state_agencies",
+      "notes": ""
+    },
+    {
+      "document_id": "main",
+      "path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/textbook/사회/[사회]6_1_교과서.pdf",
+      "kind": "textbook",
+      "exists": true,
+      "label": "교과서",
+      "notes": ""
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "schema_version": "1.0.0",
+  "stage": "boundary_validation_agent",
+  "lesson_id": null,
+  "status": "succeeded",
+  "run_id": "social_6_1_unit3_지구본과_지도로_보는_세계-20260331-103033",
+  "started_at": "2026-03-31T01:34:00.607275+00:00",
+  "finished_at": "2026-03-31T01:34:00.607548+00:00",
+  "input_refs": [
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit3_지구본과_지도로_보는_세계-20260331-103033/source/boundary_decisions.json"
+  ],
+  "output_refs": [
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit3_지구본과_지도로_보는_세계-20260331-103033/source/boundary_validation.json",
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit3_지구본과_지도로_보는_세계-20260331-103033/source/boundary_validation.status.json"
+  ],
+  "fallback_used": false,
+  "warnings": [],
+  "errors": [],
+  "agent_spec_path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/agents/boundary_validation_agent/AGENT.md",
+  "runtime_driven": true
+}

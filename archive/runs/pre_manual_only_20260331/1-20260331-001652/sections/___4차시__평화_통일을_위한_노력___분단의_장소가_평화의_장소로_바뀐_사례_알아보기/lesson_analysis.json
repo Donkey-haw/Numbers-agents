@@ -1,0 +1,52 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-03-30T15:17:00.608101+00:00",
+  "lesson_id": "4차시",
+  "sheet_name": "4차시",
+  "lesson_title": "평화 통일을 위한 노력 — 분단의 장소가 평화의 장소로 바뀐 사례 알아보기",
+  "lesson_type": "core",
+  "pdf_pages": [
+    12
+  ],
+  "essential_question": "평화 통일을 위한 노력 — 분단의 장소가 평화의 장소로 바뀐 사례 알아보기",
+  "learning_goals": [
+    "평화 통일을 위한 노력 — 분단의 장소가 평화의 장소로 바뀐 사례 알아보기의 핵심 내용을 설명할 수 있다."
+  ],
+  "key_concepts": [
+    "평화",
+    "통일",
+    "위한",
+    "노력",
+    "분단"
+  ],
+  "vocabulary": [
+    "평화",
+    "통일",
+    "위한"
+  ],
+  "misconceptions": [],
+  "difficulty_band": "on-level",
+  "content_chunks": [
+    {
+      "chunk_id": "4차시-chunk-1",
+      "label": "학습 덩어리 1",
+      "content_type": "mixed",
+      "knowledge_type": "concept",
+      "summary": "1 평화 통일을 위한 노력 분단으로 생겨난 문제점과 평화 통일의 필요성을 설명할 수 있어요.",
+      "source_pages": [
+        12
+      ],
+      "suggested_activity_types": [
+        "see_think_wonder",
+        "learning_note",
+        "worksheet"
+      ]
+    }
+  ],
+  "source_page_refs": [
+    12
+  ],
+  "analysis_confidence": 0.75,
+  "review_status": "draft",
+  "notes": "자동 생성 초안. lesson title, key concepts, chunks를 검토 후 승인 필요. Gemini fallback used: Gemini CLI timed out after 120 seconds for lesson_analysis_ai"
+}

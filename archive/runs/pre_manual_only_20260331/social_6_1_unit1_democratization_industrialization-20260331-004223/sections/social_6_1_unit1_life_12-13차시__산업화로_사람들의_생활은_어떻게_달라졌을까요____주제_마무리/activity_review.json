@@ -1,0 +1,16 @@
+{
+  "schema_version": "1.0.0",
+  "stage": "activity_review_agent",
+  "lesson_id": "12-13차시",
+  "status": "succeeded",
+  "decision": "pass",
+  "findings": [
+    {
+      "severity": "info",
+      "message": "Gemini fallback used: Gemini CLI timed out after 30 seconds for activity_plan_ai",
+      "evidence_refs": []
+    }
+  ],
+  "blocking_issues": [],
+  "warnings": []
+}

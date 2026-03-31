@@ -1,0 +1,77 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-03-30T15:46:44.593098+00:00",
+  "lesson_id": "14차시",
+  "activities": [
+    {
+      "activity_id": "act-14-1",
+      "lesson_id": "14차시",
+      "object_role": "learning_note",
+      "lesson_flow_stage": "during",
+      "activity_type": "freeform_html",
+      "level": "core",
+      "learning_goal": "우리나라 민주화와 산업화의 핵심 과정을 연결하여 자신의 언어로 요약할 수 있다.",
+      "prompt_text": "오늘 수업을 들으며 우리나라를 지탱하는 두 기둥(민주주의와 경제 성장)의 핵심 장면과 그 의미를 나만의 방식으로 정리해 봅시다.",
+      "layout_template": "freeform_html",
+      "html_content": "<!DOCTYPE html><html lang='ko'><head><meta charset='UTF-8'><style>body{width:1600px;margin:0;padding:40px;background:transparent;font-family:'Noto Sans KR',sans-serif;box-sizing:border-box;}.card{background:#fff;padding:48px;border-radius:32px;box-shadow:0 4px 20px rgba(0,0,0,0.05);border:1px solid #eee;}.header{display:flex;align-items:center;margin-bottom:40px;border-bottom:4px solid #333;padding-bottom:16px;}.badge{background:#333;color:#fff;padding:8px 20px;border-radius:12px;font-weight:700;margin-right:16px;font-size:24px;}.title{font-size:36px;font-weight:900;color:#111;}.grid{display:grid;grid-template-columns:1fr 1fr;gap:32px;margin-bottom:32px;}.section-title{font-size:24px;font-weight:700;margin-bottom:16px;color:#444;display:flex;align-items:center;}.section-title::before{content:'';width:8px;height:24px;background:#333;margin-right:12px;border-radius:4px;}.writing-area{background:#fff;border:3px solid #333;border-radius:20px;min-height:500px;padding:24px;font-size:20px;line-height:1.6;color:#222;}.full-width{grid-column:1 / -1;}.hint{font-size:16px;color:#666;margin-top:8px;font-style:italic;}</style></head><body><div class='card'><div class='header'><div class='badge'>수업 정리 노트</div><div class='title'>민주주의와 경제 성장의 기록</div></div><div class='grid'><div class='section'><div class='section-title'>민주화의 이정표 (4·19, 5·18, 6월 항쟁 등)</div><div class='writing-area'></div><div class='hint'>* 가장 기억에 남는 사건과 그 이유를 적어보세요.</div></div><div class='section'><div class='section-title'>산업화의 빛과 그림자 (발전과 사회 문제)</div><div class='writing-area'></div><div class='hint'>* 경제 성장 과정에서 발생한 변화와 우리가 해결해야 할 문제를 정리해 보세요.</div></div><div class='section full-width'><div class='section-title'>오늘의 핵심 요약: 내가 생각하는 우리나라의 발전</div><div class='writing-area' style='min-height:300px;'></div><div class='hint'>* 배운 내용을 바탕으로 우리나라의 민주주의와 경제 성장을 한 문장 혹은 짧은 글로 정의해 보세요.</div></div></div></div></body></html>",
+      "source_refs": [
+        49
+      ],
+      "student_writing_zones": [
+        {
+          "zone_id": "democracy_note",
+          "label": "민주화 과정 정리",
+          "input_area_type": "free-writing",
+          "min_height": 500
+        },
+        {
+          "zone_id": "economy_note",
+          "label": "산업화 과정 정리",
+          "input_area_type": "free-writing",
+          "min_height": 500
+        },
+        {
+          "zone_id": "summary_reflection",
+          "label": "핵심 요약 및 성찰",
+          "input_area_type": "free-writing",
+          "min_height": 300
+        }
+      ],
+      "estimated_minutes": 15,
+      "review_status": "draft",
+      "teacher_notes": ""
+    },
+    {
+      "activity_id": "act-14-2",
+      "lesson_id": "14차시",
+      "object_role": "activity_area",
+      "lesson_flow_stage": "after",
+      "activity_type": "freeform_html",
+      "level": "extension",
+      "learning_goal": "단원 핵심 지식을 구조화하여 디지털 포트폴리오(누리집)의 형태를 기획하고 설계할 수 있다.",
+      "prompt_text": "교과서에 나온 '나만의 누리집'을 실제로 만들기 전에, 어떤 내용을 어떤 순서로 배치할지 나만의 설계도를 그려봅시다.",
+      "layout_template": "freeform_html",
+      "html_content": "<!DOCTYPE html><html lang='ko'><head><meta charset='UTF-8'><style>body{width:1600px;margin:0;padding:40px;background:transparent;font-family:'Noto Sans KR',sans-serif;}.card{background:#fff;padding:48px;border-radius:32px;border:1px solid #ddd;}.header{margin-bottom:32px;}.tag{display:inline-block;background:#E3F2FD;color:#1565C0;padding:6px 16px;border-radius:8px;font-weight:700;margin-bottom:12px;}.title{font-size:32px;font-weight:800;color:#111;}.blueprint-container{display:flex;gap:24px;}.sidebar{width:300px;display:flex;flex-direction:column;gap:16px;}.main-canvas{flex:1;border:3px dashed #999;border-radius:24px;padding:32px;background:#FAFAFA;position:relative;min-height:800px;}.box{background:#fff;border:2px solid #333;border-radius:12px;padding:16px;margin-bottom:16px;}.writing-field{min-height:100px;margin-top:8px;border-top:1px solid #eee;}.instruction{font-size:18px;font-weight:600;color:#555;margin-bottom:8px;}</style></head><body><div class='card'><div class='header'><div class='tag'>창의·융합 활동</div><div class='title'>나만의 누리집(Website) 설계도</div></div><div class='blueprint-container'><div class='sidebar'><div class='box'><div class='instruction'>1. 누리집 제목</div><div class='writing-field'></div></div><div class='box'><div class='instruction'>2. 핵심 메뉴 구성</div><div class='writing-field' style='min-height:200px;'></div></div><div class='box'><div class='instruction'>3. 방문객에게 주는 메시지</div><div class='writing-field' style='min-height:150px;'></div></div></div><div class='main-canvas'><div class='instruction' style='text-align:center;color:#999;font-size:24px;margin-top:300px;'>여기에 메인 화면의 레이아웃을 스케치하세요.<br>(그림, 사진 배치, 글상자 등)</div><div style='position:absolute;top:0;left:0;width:100%;height:100%;'></div></div></div></div></body></html>",
+      "source_refs": [
+        49
+      ],
+      "student_writing_zones": [
+        {
+          "zone_id": "website_meta",
+          "label": "제목 및 메뉴 기획",
+          "input_area_type": "free-writing",
+          "min_height": 600
+        },
+        {
+          "zone_id": "website_sketch",
+          "label": "메인 화면 레이아웃 스케치",
+          "input_area_type": "free-writing",
+          "min_height": 800
+        }
+      ],
+      "estimated_minutes": 20,
+      "review_status": "draft",
+      "teacher_notes": ""
+    }
+  ]
+}

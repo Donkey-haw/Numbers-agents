@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.0.0",
+  "stage": "source_parse_agent",
+  "lesson_id": null,
+  "status": "succeeded",
+  "run_id": "korean_6_1_unit1_related_to_life_reading-20260326-214042",
+  "started_at": "2026-03-26T12:40:42.474601+00:00",
+  "finished_at": "2026-03-26T12:40:42.721802+00:00",
+  "input_refs": [
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/configs/korean_6_1_unit1_related_to_life_reading.json"
+  ],
+  "output_refs": [
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/korean_6_1_unit1_related_to_life_reading-20260326-214042/source/schedule_draft.json",
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/korean_6_1_unit1_related_to_life_reading-20260326-214042/source/textbook_context.json",
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/korean_6_1_unit1_related_to_life_reading-20260326-214042/source/runtime_config.json",
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/korean_6_1_unit1_related_to_life_reading-20260326-214042/source/config_quality_review.json",
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/korean_6_1_unit1_related_to_life_reading-20260326-214042/source/boundary_review.json",
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/korean_6_1_unit1_related_to_life_reading-20260326-214042/source/supplement_review.json"
+  ],
+  "fallback_used": false,
+  "warnings": [],
+  "errors": []
+}

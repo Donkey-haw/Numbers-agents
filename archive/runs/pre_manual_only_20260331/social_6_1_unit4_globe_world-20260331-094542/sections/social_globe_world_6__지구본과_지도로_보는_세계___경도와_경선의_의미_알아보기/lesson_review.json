@@ -1,0 +1,16 @@
+{
+  "schema_version": "1.0.0",
+  "stage": "lesson_review_agent",
+  "lesson_id": "6차시",
+  "status": "succeeded",
+  "decision": "pass",
+  "findings": [
+    {
+      "severity": "info",
+      "message": "제시된 차시명(경도와 경선)과 실제 교과서 페이지 내용(민주주의와 선거)이 일치하지 않습니다. 교과서 PDF 본문 내용을 우선하여 분석을 수행하였습니다. 페이지 범위(54-109)가 매우 넓어 단원을 가로지르는 다수의 학습 내용이 포함되어 있습니다.",
+      "evidence_refs": []
+    }
+  ],
+  "blocking_issues": [],
+  "warnings": []
+}

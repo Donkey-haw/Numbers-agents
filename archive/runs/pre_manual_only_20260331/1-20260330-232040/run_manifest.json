@@ -1,0 +1,145 @@
+{
+  "schema_version": "1.0.0",
+  "run_id": "1-20260330-232040",
+  "workflow_mode": "stable",
+  "config_path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/configs/1.json",
+  "selected_unit": "사회_1_평화 통일을 위한 노력, 민주화와 산업화",
+  "selected_lessons": [
+    "1차시",
+    "2차시",
+    "3차시",
+    "4차시",
+    "5-6차시",
+    "7차시",
+    "8-9차시",
+    "10차시",
+    "11차시",
+    "12-13차시",
+    "14차시",
+    "1차시",
+    "2차시",
+    "3차시",
+    "4-5차시",
+    "6-7차시",
+    "8차시",
+    "9-10차시",
+    "11차시",
+    "12차시",
+    "13차시",
+    "14차시",
+    "15차시",
+    "16차시",
+    "17-18차시",
+    "19차시",
+    "1차시",
+    "2-3차시",
+    "4차시",
+    "5차시",
+    "6차시",
+    "7차시",
+    "8차시",
+    "9차시",
+    "10차시",
+    "11차시",
+    "12차시",
+    "13차시",
+    "14차시",
+    "15차시"
+  ],
+  "stage_order": [
+    "source_boundary_agent",
+    "source_validation_agent",
+    "lesson_analysis_agent",
+    "lesson_review_agent",
+    "activity_plan_agent",
+    "activity_review_agent",
+    "html_card_agent",
+    "capture_agent",
+    "numbers_compose_agent",
+    "review_manifest_agent",
+    "verify_agent"
+  ],
+  "started_at": "2026-03-30T14:20:40.086839+00:00",
+  "finished_at": "2026-03-30T14:22:45.025491+00:00",
+  "final_status": "failed",
+  "final_output_file": null,
+  "status_summary": [
+    {
+      "stage": "source_boundary_agent",
+      "status": "failed",
+      "fallback_used": false,
+      "warning_count": 0,
+      "error_count": 1
+    },
+    {
+      "stage": "source_validation_agent",
+      "status": "pending",
+      "fallback_used": false,
+      "warning_count": 0,
+      "error_count": 0
+    },
+    {
+      "stage": "lesson_analysis_agent",
+      "status": "pending",
+      "fallback_used": false,
+      "warning_count": 0,
+      "error_count": 0
+    },
+    {
+      "stage": "lesson_review_agent",
+      "status": "pending",
+      "fallback_used": false,
+      "warning_count": 0,
+      "error_count": 0
+    },
+    {
+      "stage": "activity_plan_agent",
+      "status": "pending",
+      "fallback_used": false,
+      "warning_count": 0,
+      "error_count": 0
+    },
+    {
+      "stage": "activity_review_agent",
+      "status": "pending",
+      "fallback_used": false,
+      "warning_count": 0,
+      "error_count": 0
+    },
+    {
+      "stage": "html_card_agent",
+      "status": "pending",
+      "fallback_used": false,
+      "warning_count": 0,
+      "error_count": 0
+    },
+    {
+      "stage": "capture_agent",
+      "status": "pending",
+      "fallback_used": false,
+      "warning_count": 0,
+      "error_count": 0
+    },
+    {
+      "stage": "numbers_compose_agent",
+      "status": "pending",
+      "fallback_used": false,
+      "warning_count": 0,
+      "error_count": 0
+    },
+    {
+      "stage": "review_manifest_agent",
+      "status": "pending",
+      "fallback_used": false,
+      "warning_count": 0,
+      "error_count": 0
+    },
+    {
+      "stage": "verify_agent",
+      "status": "pending",
+      "fallback_used": false,
+      "warning_count": 0,
+      "error_count": 0
+    }
+  ]
+}

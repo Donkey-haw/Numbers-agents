@@ -1,0 +1,85 @@
+{
+  "schema_version": "1.0.0",
+  "boundaries": [
+    {
+      "lesson_id": "lesson-001",
+      "resource_id": "main",
+      "status": "low_confidence",
+      "start_page": 28,
+      "end_page": 28,
+      "reason": "Transitional heuristic: choose highest-ranked candidate and cut before next lesson candidate",
+      "confidence": 0.45,
+      "evidence_pages": [
+        28,
+        29,
+        30,
+        31,
+        50
+      ]
+    },
+    {
+      "lesson_id": "lesson-002",
+      "resource_id": "main",
+      "status": "low_confidence",
+      "start_page": 10,
+      "end_page": 27,
+      "reason": "Transitional heuristic: choose highest-ranked candidate and cut before next lesson candidate",
+      "confidence": 0.55,
+      "evidence_pages": [
+        10,
+        12,
+        23,
+        25,
+        28
+      ]
+    },
+    {
+      "lesson_id": "lesson-003",
+      "resource_id": "main",
+      "status": "low_confidence",
+      "start_page": 28,
+      "end_page": 40,
+      "reason": "Transitional heuristic: choose highest-ranked candidate and cut before next lesson candidate",
+      "confidence": 0.55,
+      "evidence_pages": [
+        28,
+        36,
+        47,
+        50,
+        72
+      ]
+    },
+    {
+      "lesson_id": "lesson-004",
+      "resource_id": "main",
+      "status": "low_confidence",
+      "start_page": 41,
+      "end_page": 41,
+      "reason": "Transitional heuristic: choose highest-ranked candidate and cut before next lesson candidate",
+      "confidence": 0.45,
+      "evidence_pages": [
+        41,
+        44,
+        50,
+        62,
+        72
+      ]
+    },
+    {
+      "lesson_id": "lesson-005",
+      "resource_id": "main",
+      "status": "low_confidence",
+      "start_page": 20,
+      "end_page": 20,
+      "reason": "Transitional heuristic: choose highest-ranked candidate and cut before next lesson candidate",
+      "confidence": 0.45,
+      "evidence_pages": [
+        20,
+        28,
+        46,
+        50,
+        180
+      ]
+    }
+  ]
+}

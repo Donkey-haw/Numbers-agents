@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.0.0",
+  "stage": "lesson_review_agent",
+  "lesson_id": "7차시",
+  "status": "succeeded_with_warning",
+  "decision": "pass_with_warning",
+  "findings": [
+    {
+      "severity": "warning",
+      "message": "오개념 후보가 비어 있습니다.",
+      "evidence_refs": []
+    },
+    {
+      "severity": "info",
+      "message": "자동 생성 초안. lesson title, key concepts, chunks를 검토 후 승인 필요. Gemini fallback used: Gemini CLI timed out after 15 seconds for lesson_analysis_ai",
+      "evidence_refs": []
+    }
+  ],
+  "blocking_issues": [],
+  "warnings": [
+    "misconceptions is empty"
+  ]
+}

@@ -1,0 +1,113 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-03-30T15:44:42.598468+00:00",
+  "lesson_id": "12-13차시",
+  "activities": [
+    {
+      "activity_id": "act-12-13-1",
+      "lesson_id": "12-13차시",
+      "object_role": "activity_area",
+      "lesson_flow_stage": "during",
+      "activity_type": "freeform_html",
+      "level": "core",
+      "learning_goal": "남북 분단으로 인한 기회비용을 상상하고 평화 통일의 필요성을 자신의 언어로 설명할 수 있다.",
+      "prompt_text": "분단으로 인해 쓰이는 '국방비'나 '제한된 공간'이 우리 삶으로 돌아온다면? 우리 학교나 마을이 어떻게 달라질지 상상하여 기록해 봅시다.",
+      "layout_template": "freeform_html",
+      "html_content": "<!DOCTYPE html><html lang='ko'><head><meta charset='UTF-8'><style>body{width:1600px;margin:0;background:transparent;font-family:'Noto Sans KR',sans-serif;color:#333;display:flex;justify-content:center;padding:40px 0;}.card{width:1400px;background:#fff;padding:60px;border-radius:40px;box-shadow:0 10px 30px rgba(0,0,0,0.05);border:1px solid #eee;}.header{display:flex;align-items:center;margin-bottom:40px;border-left:12px solid #FF5252;padding-left:24px;}.header h1{margin:0;font-size:42px;font-weight:900;letter-spacing:-1.5px;}.badge{background:#FF5252;color:#fff;padding:6px 16px;border-radius:10px;font-size:18px;font-weight:bold;margin-bottom:12px;display:inline-block;}.instruction{font-size:26px;line-height:1.5;margin-bottom:40px;color:#555;font-weight:500;}.grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;}.box{border:3px solid #333;border-radius:24px;padding:32px;background:#fff;}.box-title{font-size:24px;font-weight:bold;margin-bottom:20px;display:flex;align-items:center;gap:12px;}.box-title span{background:#333;color:#fff;width:32px;height:32px;display:flex;align-items:center;justify-content:center;border-radius:50%;font-size:18px;}.writing-area{min-height:580px;background:#fcfcfc;border-radius:12px;}</style></head><body><div class='card'><div class='badge'>가치 판단 및 추론</div><div class='header'><h1>분단이 사라진 우리 마을의 새로운 풍경</h1></div><p class='instruction'>분단으로 인해 우리가 치르는 '보이지 않는 비용(국방비, 출입 금지 구역 등)'이 사라진다면 우리 삶은 어떻게 변할까요? 구체적인 아이디어를 써 봅시다.</p><div class='grid'><div class='box'><div class='box-title'><span>1</span> 지금 우리가 겪는 불편이나 비용</div><div class='writing-area'></div></div><div class='box'><div class='box-title'><span>2</span> 평화 통일 후 새롭게 생길 시설이나 활동</div><div class='writing-area'></div></div></div></div></body></html>",
+      "source_refs": [
+        12,
+        13
+      ],
+      "student_writing_zones": [
+        {
+          "zone_id": "current_costs",
+          "label": "현재의 불편함 적기",
+          "input_area_type": "free-writing",
+          "min_height": 580
+        },
+        {
+          "zone_id": "future_changes",
+          "label": "변화된 미래 상상하기",
+          "input_area_type": "free-writing",
+          "min_height": 580
+        }
+      ],
+      "estimated_minutes": 15,
+      "review_status": "draft",
+      "teacher_notes": ""
+    },
+    {
+      "activity_id": "act-12-13-2",
+      "lesson_id": "12-13차시",
+      "object_role": "learning_note",
+      "lesson_flow_stage": "during",
+      "activity_type": "freeform_html",
+      "level": "core",
+      "learning_goal": "우리 주변에 남아 있는 분단의 흔적(용치, 방호벽 등)을 파악하고 그 역사적 의미를 정리할 수 있다.",
+      "prompt_text": "교과서 14-15쪽에서 찾은 분단의 흔적 중 가장 기억에 남는 것을 선택하고, 그것이 우리에게 어떤 메시지를 주는지 정리해 봅시다.",
+      "layout_template": "freeform_html",
+      "html_content": "<!DOCTYPE html><html lang='ko'><head><meta charset='UTF-8'><style>body{width:1600px;margin:0;background:transparent;font-family:'Noto Sans KR',sans-serif;color:#333;padding:40px 0;display:flex;justify-content:center;}.card{width:1400px;background:#fff;padding:60px;border-radius:32px;border:2px solid #000;}.header{margin-bottom:40px;}.header h1{font-size:40px;font-weight:800;margin:0;color:#1A237E;}.subtitle{font-size:22px;color:#666;margin-top:10px;font-weight:400;}.note-container{display:flex;flex-direction:column;gap:30px;}.note-section{border:3px solid #1A237E;border-radius:20px;padding:30px;}.note-label{font-size:22px;font-weight:bold;color:#1A237E;margin-bottom:15px;background:#E8EAF6;display:inline-block;padding:4px 12px;border-radius:6px;}.writing-space{min-height:220px;background:#fff;border:1px dashed #ccc;border-radius:10px;margin-top:10px;}.main-thinking{min-height:480px;background:#fff;border:2px solid #1A237E;border-radius:12px;margin-top:15px;}</style></head><body><div class='card'><div class='header'><h1>[배움 메모] 우리 곁의 분단 흔적 탐구하기</h1><div class='subtitle'>교과서 14~15쪽의 사진 자료를 보며 정리해 봅시다.</div></div><div class='note-container'><div class='note-section'><div class='note-label'>내가 선택한 흔적 (용치, 방호벽, 철도 중단점 등)</div><div class='writing-space'></div></div><div class='note-section'><div class='note-label'>이 흔적이 만들어진 이유와 담긴 의미</div><div class='writing-space'></div></div><div class='note-section'><div class='note-label'>흔적을 보며 든 생각 (평화 통일이 필요한 이유)</div><div class='main-thinking'></div></div></div></div></body></html>",
+      "source_refs": [
+        14,
+        15
+      ],
+      "student_writing_zones": [
+        {
+          "zone_id": "selected_trace",
+          "label": "선택한 흔적 명칭",
+          "input_area_type": "inline-answer",
+          "min_height": 220
+        },
+        {
+          "zone_id": "historical_meaning",
+          "label": "역사적 의미 정리",
+          "input_area_type": "free-writing",
+          "min_height": 220
+        },
+        {
+          "zone_id": "reflection_thinking",
+          "label": "나의 생각 및 통일 필요성",
+          "input_area_type": "free-writing",
+          "min_height": 480
+        }
+      ],
+      "estimated_minutes": 12,
+      "review_status": "draft",
+      "teacher_notes": ""
+    },
+    {
+      "activity_id": "act-12-13-3",
+      "lesson_id": "12-13차시",
+      "object_role": "worksheet",
+      "lesson_flow_stage": "after",
+      "activity_type": "freeform_html",
+      "level": "on-level",
+      "learning_goal": "산업화와 민주화로 인해 변화한 생활 문화 요소를 찾아 현재 나의 일상과 연결 지어 설명할 수 있다.",
+      "prompt_text": "오늘날 나의 일상 중 하나(예: 자유로운 인터넷 사용, 다양한 물건 구매 등)를 고르고, 이것이 가능해진 역사적 배경(산업화/민주화)을 연결해 봅시다.",
+      "layout_template": "freeform_html",
+      "html_content": "<!DOCTYPE html><html lang='ko'><head><meta charset='UTF-8'><style>body{width:1600px;margin:0;background:transparent;font-family:'Noto Sans KR',sans-serif;padding:40px 0;display:flex;justify-content:center;}.card{width:1300px;background:#f8f9fa;padding:50px;border-radius:24px;border:4px double #333;}.title-box{background:#333;color:#fff;padding:20px 40px;border-radius:12px;margin-bottom:40px;text-align:center;}.title-box h1{margin:0;font-size:36px;}.content-layout{display:flex;flex-direction:column;gap:40px;}.task-box{background:#fff;border:2px solid #333;border-radius:16px;padding:30px;}.task-header{font-size:24px;font-weight:bold;margin-bottom:20px;color:#2c3e50;border-bottom:2px solid #eee;padding-bottom:10px;}.writing-zone{min-height:450px;}</style></head><body><div class='card'><div class='title-box'><h1>산업화·민주화가 만든 나의 '오늘'</h1></div><div class='content-layout'><div class='task-box'><div class='task-header'>🔍 내가 고른 나의 일상 한 장면 (예: 편리한 교통, 자유로운 의견 표현 등)</div><div class='writing-zone' style='min-height:200px;'></div></div><div class='task-box'><div class='task-header'>⛓️ 역사와 연결하기: 이 장면은 어떤 과정(산업화/민주화) 덕분에 가능해졌을까요?</div><div class='writing-zone'></div></div></div></div></body></html>",
+      "source_refs": [
+        29,
+        30,
+        48
+      ],
+      "student_writing_zones": [
+        {
+          "zone_id": "daily_scene",
+          "label": "나의 일상 장면 선택",
+          "input_area_type": "free-writing",
+          "min_height": 200
+        },
+        {
+          "zone_id": "historical_connection",
+          "label": "역사적 배경 연결 설명",
+          "input_area_type": "free-writing",
+          "min_height": 450
+        }
+      ],
+      "estimated_minutes": 10,
+      "review_status": "draft",
+      "teacher_notes": ""
+    }
+  ]
+}

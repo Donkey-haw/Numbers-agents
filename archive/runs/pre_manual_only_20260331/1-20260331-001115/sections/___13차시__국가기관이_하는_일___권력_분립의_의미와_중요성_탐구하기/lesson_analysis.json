@@ -1,0 +1,71 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-03-30T15:21:46.729721+00:00",
+  "lesson_id": "13차시",
+  "sheet_name": "13차시",
+  "lesson_title": "국가기관이 하는 일 — 권력 분립의 의미와 중요성 탐구하기",
+  "lesson_type": "core",
+  "pdf_pages": [
+    54
+  ],
+  "essential_question": "권력 분립은 왜 필요하며, 우리 생활에 어떤 영향을 미칠까요?",
+  "learning_goals": [
+    "권력 분립의 의미와 필요성을 설명할 수 있다.",
+    "민주주의 사회에서 권력 분립이 가지는 중요성을 탐구할 수 있다."
+  ],
+  "key_concepts": [
+    "권력 분립",
+    "민주주의",
+    "상호 견제",
+    "국가기관",
+    "자유와 권리 보호"
+  ],
+  "vocabulary": [
+    "권력 분립",
+    "견제와 균형",
+    "입법부",
+    "행정부",
+    "사법부"
+  ],
+  "misconceptions": [
+    "국가기관이 나누어져 있는 것이 단순히 효율성 때문이라고만 생각할 수 있다.",
+    "권력 분립이 국가 기관 사이의 갈등만을 초래한다고 오해할 수 있다."
+  ],
+  "difficulty_band": "on-level",
+  "content_chunks": [
+    {
+      "chunk_id": "13차시-chunk-1",
+      "label": "도입: 생각 열기",
+      "content_type": "mixed",
+      "knowledge_type": "concept",
+      "summary": "사람들이 몸으로 만든 모양(저울 등 권력 분립 상징)을 통해 권력 분립의 필요성에 대해 질문을 던짐.",
+      "source_pages": [
+        54
+      ],
+      "suggested_activity_types": [
+        "see-think-wonder",
+        "discussion"
+      ]
+    },
+    {
+      "chunk_id": "13차시-chunk-2",
+      "label": "핵심 개념: 민주주의와 선거",
+      "content_type": "text",
+      "knowledge_type": "fact",
+      "summary": "민주주의에서 선거의 의미, 역할, 중요성 및 선거의 기본 원칙과 시민 참여의 태도 학습.",
+      "source_pages": [
+        54
+      ],
+      "suggested_activity_types": [
+        "worksheet",
+        "concept-mapping"
+      ]
+    }
+  ],
+  "source_page_refs": [
+    54
+  ],
+  "analysis_confidence": 0.85,
+  "review_status": "draft",
+  "notes": "추출된 텍스트에 선거 관련 내용이 포함되어 있으나, 타이틀은 권력 분립을 명시하고 있음. 교과서 54쪽의 실제 구성(도입부 여부)에 따라 선거와 권력 분립의 연결 고리 확인이 필요함."
+}

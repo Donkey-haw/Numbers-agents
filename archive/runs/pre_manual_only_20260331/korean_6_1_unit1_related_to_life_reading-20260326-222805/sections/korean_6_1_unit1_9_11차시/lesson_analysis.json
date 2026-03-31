@@ -1,0 +1,109 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-03-26T13:29:51.420972+00:00",
+  "lesson_id": "9-11차시",
+  "sheet_name": "9-11차시",
+  "lesson_title": "작품을 읽고 독서 감상문 쓰기",
+  "lesson_type": "core",
+  "pdf_pages": [
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48
+  ],
+  "essential_question": "작품 속 인물이 추구하는 가치를 파악하고, 자신의 생각이 드러나게 독서 감상문을 쓰려면 어떻게 해야 할까요?",
+  "learning_goals": [
+    "작품 「그랬다면 어땠을까」를 읽고 인물이 추구하는 가치를 파악할 수 있다.",
+    "인물이 추구하는 가치와 자신의 삶을 관련지어 성찰할 수 있다.",
+    "가치에 대한 자신의 생각이 드러나게 독서 감상문을 쓸 수 있다."
+  ],
+  "key_concepts": [
+    "독서 감상문",
+    "추구하는 가치",
+    "가치 비교",
+    "삶의 성찰"
+  ],
+  "vocabulary": [
+    "고결하다",
+    "팔락이다",
+    "고단하다",
+    "늠름하다",
+    "탐스럽다"
+  ],
+  "misconceptions": [
+    "독서 감상문은 책의 줄거리를 요약하는 것이 가장 중요한 목적이라고 생각할 수 있다.",
+    "작품 속 인물의 가치와 자신의 삶을 연결 짓는 것을 어려워할 수 있다."
+  ],
+  "difficulty_band": "on-level",
+  "content_chunks": [
+    {
+      "chunk_id": "9-11차시-chunk-1",
+      "label": "작품 읽기 및 내용 파악",
+      "content_type": "text",
+      "knowledge_type": "concept",
+      "summary": "인물이 추구하는 가치를 생각하며 「그랬다면 어땠을까」를 읽고, 다람쥐가 다른 동물이 되고 싶어 한 까닭과 결국 다람쥐로 남기로 한 이유를 파악합니다.",
+      "source_pages": [
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45
+      ],
+      "suggested_activity_types": [
+        "see_think_wonder",
+        "learning_note"
+      ]
+    },
+    {
+      "chunk_id": "9-11차시-chunk-2",
+      "label": "가치 탐색 및 삶과 관련짓기",
+      "content_type": "mixed",
+      "knowledge_type": "comparison",
+      "summary": "작품 속 인물이 추구한 가치(협력, 자유, 여유 등)를 비교해 보고, 자신이 중요하게 생각하는 가치를 삶의 실천 계획과 연결하여 성찰합니다.",
+      "source_pages": [
+        46,
+        47
+      ],
+      "suggested_activity_types": [
+        "worksheet",
+        "learning_note"
+      ]
+    },
+    {
+      "chunk_id": "9-11차시-chunk-3",
+      "label": "독서 감상문 쓰기",
+      "content_type": "activity",
+      "knowledge_type": "application",
+      "summary": "인물이 가치를 추구하는 과정에서 느낀 생각과 자신의 삶에서 노력하고 싶은 점을 구체적으로 포함하여 독서 감상문을 작성합니다.",
+      "source_pages": [
+        48
+      ],
+      "suggested_activity_types": [
+        "worksheet"
+      ]
+    }
+  ],
+  "source_page_refs": [
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48
+  ],
+  "analysis_confidence": 0.95,
+  "review_status": "draft",
+  "notes": "작품의 텍스트가 명확하여 학습 목표와 가치 키워드를 상세화함. 81쪽(PDF 48)의 독서 감상문 쓰기 활동을 독립된 청크로 분리함."
+}

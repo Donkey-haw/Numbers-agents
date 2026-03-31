@@ -1,0 +1,104 @@
+{
+  "schema_version": "1.0.0",
+  "run_id": "korean_6_1_unit1_related_to_life_reading-20260326-214042",
+  "workflow_mode": "stable",
+  "config_path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/configs/korean_6_1_unit1_related_to_life_reading.json",
+  "selected_unit": "6-1-국어-1. 자신의 삶과 관련지어 읽어요",
+  "selected_lessons": [
+    "1차시",
+    "2-3차시",
+    "4-6차시",
+    "7-8차시",
+    "9-11차시",
+    "12-13차시",
+    "14차시"
+  ],
+  "stage_order": [
+    "source_parse_agent",
+    "lesson_analysis_agent",
+    "review_lesson_agent",
+    "activity_plan_agent",
+    "review_activity_agent",
+    "html_card_agent",
+    "capture_agent",
+    "numbers_compose_agent",
+    "review_manifest_agent",
+    "verify_agent"
+  ],
+  "started_at": "2026-03-26T12:40:42.474101+00:00",
+  "finished_at": "2026-03-26T12:44:49.850887+00:00",
+  "final_status": "success",
+  "final_output_file": null,
+  "status_summary": [
+    {
+      "stage": "source_parse_agent",
+      "status": "succeeded",
+      "fallback_used": false,
+      "warning_count": 0,
+      "error_count": 0
+    },
+    {
+      "stage": "lesson_analysis_agent",
+      "status": "succeeded",
+      "fallback_used": false,
+      "warning_count": 0,
+      "error_count": 0
+    },
+    {
+      "stage": "review_lesson_agent",
+      "status": "succeeded",
+      "fallback_used": false,
+      "warning_count": 0,
+      "error_count": 0
+    },
+    {
+      "stage": "activity_plan_agent",
+      "status": "failed_fallback_used",
+      "fallback_used": true,
+      "warning_count": 0,
+      "error_count": 2
+    },
+    {
+      "stage": "review_activity_agent",
+      "status": "succeeded",
+      "fallback_used": false,
+      "warning_count": 0,
+      "error_count": 0
+    },
+    {
+      "stage": "html_card_agent",
+      "status": "pending",
+      "fallback_used": false,
+      "warning_count": 0,
+      "error_count": 0
+    },
+    {
+      "stage": "capture_agent",
+      "status": "pending",
+      "fallback_used": false,
+      "warning_count": 0,
+      "error_count": 0
+    },
+    {
+      "stage": "numbers_compose_agent",
+      "status": "pending",
+      "fallback_used": false,
+      "warning_count": 0,
+      "error_count": 0
+    },
+    {
+      "stage": "review_manifest_agent",
+      "status": "pending",
+      "fallback_used": false,
+      "warning_count": 0,
+      "error_count": 0
+    },
+    {
+      "stage": "verify_agent",
+      "status": "pending",
+      "fallback_used": false,
+      "warning_count": 0,
+      "error_count": 0
+    }
+  ]
+}

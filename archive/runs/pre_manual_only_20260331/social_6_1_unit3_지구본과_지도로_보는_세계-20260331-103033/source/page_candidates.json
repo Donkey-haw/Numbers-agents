@@ -1,0 +1,76 @@
+{
+  "schema_version": "1.0.0",
+  "lessons": [
+    {
+      "lesson_id": "lesson-001",
+      "resource_id": "main",
+      "query": "지구본의 특징 살펴보기",
+      "candidate_pages": [
+        112,
+        114,
+        111,
+        110,
+        108,
+        131,
+        150
+      ]
+    },
+    {
+      "lesson_id": "lesson-002",
+      "resource_id": "main",
+      "candidate_pages": [
+        116,
+        118,
+        119,
+        150,
+        151,
+        168
+      ],
+      "query": "디지털 공간 영상 정보의 의미 알아보기"
+    },
+    {
+      "lesson_id": "lesson-003",
+      "resource_id": "main",
+      "candidate_pages": [
+        110,
+        111,
+        120,
+        121,
+        122,
+        123,
+        128,
+        129
+      ],
+      "query": "위도와 위선의 의미 알아보기"
+    },
+    {
+      "lesson_id": "lesson-004",
+      "resource_id": "main",
+      "candidate_pages": [
+        124,
+        126,
+        127,
+        111,
+        110,
+        128,
+        154
+      ],
+      "query": "경도와 경선의 의미 알아보기"
+    },
+    {
+      "lesson_id": "lesson-005",
+      "resource_id": "main",
+      "candidate_pages": [
+        128,
+        129,
+        110,
+        120,
+        111,
+        121,
+        122,
+        123
+      ],
+      "query": "위도와 경도를 이용해 위치를 표현하는 방법 살펴보기"
+    }
+  ]
+}

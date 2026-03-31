@@ -1,0 +1,73 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-03-26T12:45:00.000000+00:00",
+  "lesson_id": "12-13차시",
+  "sheet_name": "12-13차시",
+  "lesson_title": "배운 내용 실천하기",
+  "lesson_type": "core",
+  "pdf_pages": [
+    49,
+    50
+  ],
+  "essential_question": "인물이 추구하는 가치가 잘 드러나게 인물을 소개하고, 작품에서 배운 가치를 우리 삶 속에서 어떻게 실천할 수 있을까?",
+  "learning_goals": [
+    "인물이 추구하는 가치가 드러나게 인물을 소개하는 자료를 만들고 친구들에게 발표할 수 있다.",
+    "작품을 통해 배운 가치를 실천하기 위한 활동을 계획하고 적극적으로 참여할 수 있다."
+  ],
+  "key_concepts": [
+    "인물 소개",
+    "가치 실천",
+    "소개 자료 제작",
+    "발표",
+    "활동 소감"
+  ],
+  "vocabulary": [
+    "실천",
+    "가치",
+    "본받다",
+    "소개",
+    "추구"
+  ],
+  "misconceptions": [
+    "인물 소개는 단순한 인물 정보나 사건의 나열이다.",
+    "가치 실천은 거창하고 어려운 일로만 생각한다."
+  ],
+  "difficulty_band": "on-level",
+  "content_chunks": [
+    {
+      "chunk_id": "12-13차시-chunk-1",
+      "label": "인물 소개 자료 만들고 발표하기",
+      "content_type": "activity",
+      "knowledge_type": "procedure",
+      "summary": "친구들에게 소개하고 싶은 인물을 선택하여, 선택한 까닭과 가치가 잘 드러나는 장면 등을 포함한 소개 자료(글, 광고지, 동영상 등)를 만들고 계획에 따라 발표한다.",
+      "source_pages": [
+        49
+      ],
+      "suggested_activity_types": [
+        "worksheet",
+        "learning_note"
+      ]
+    },
+    {
+      "chunk_id": "12-13차시-chunk-2",
+      "label": "배운 내용 실천하기",
+      "content_type": "activity",
+      "knowledge_type": "application",
+      "summary": "우리가 정한 활동(개인, 짝, 모둠 등)을 바탕으로 인물이 추구하는 가치를 실제 활동으로 실천해보고 그 소감을 나눈다.",
+      "source_pages": [
+        50
+      ],
+      "suggested_activity_types": [
+        "learning_note",
+        "see_think_wonder"
+      ]
+    }
+  ],
+  "source_page_refs": [
+    49,
+    50
+  ],
+  "analysis_confidence": 0.95,
+  "review_status": "draft",
+  "notes": "12-13차시는 실천 중심의 차시로, 인물 소개와 가치 실천이라는 두 가지 주요 활동이 유기적으로 연결되도록 구성함."
+}

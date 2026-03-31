@@ -1,0 +1,45 @@
+{
+  "schema_version": "1.0.0",
+  "lessons": [
+    {
+      "lesson_id": "lesson-001",
+      "sheet_name": "1차시",
+      "display_title": "단원·주제 도입",
+      "title_query": "단원·주제 도입",
+      "end_before_query": "분단으로 어떤 문제가 발생했을까요?",
+      "resource_id": "main"
+    },
+    {
+      "lesson_id": "lesson-002",
+      "sheet_name": "2차시",
+      "display_title": "분단으로 어떤 문제가 발생했을까요?",
+      "title_query": "분단으로 어떤 문제가 발생했을까요?",
+      "end_before_query": "분단의 흔적이 남아 있는 장소를 찾아볼까요?",
+      "resource_id": "main"
+    },
+    {
+      "lesson_id": "lesson-003",
+      "sheet_name": "3차시",
+      "display_title": "분단의 흔적이 남아 있는 장소를 찾아볼까요?",
+      "title_query": "분단의 흔적이 남아 있는 장소를 찾아볼까요?",
+      "end_before_query": "분단의 장소를 평화의 장소로 바꾸려는 노력을 살펴볼까요?",
+      "resource_id": "main"
+    },
+    {
+      "lesson_id": "lesson-004",
+      "sheet_name": "4차시",
+      "display_title": "분단의 장소를 평화의 장소로 바꾸려는 노력을 살펴볼까요?",
+      "title_query": "분단의 장소를 평화의 장소로 바꾸려는 노력을 살펴볼까요?",
+      "end_before_query": "평화 통일을 위해 어떤 노력을 해야 할까요?",
+      "resource_id": "main"
+    },
+    {
+      "lesson_id": "lesson-005",
+      "sheet_name": "5-6차시",
+      "display_title": "평화 통일을 위해 어떤 노력을 해야 할까요?",
+      "title_query": "평화 통일을 위해 어떤 노력을 해야 할까요?",
+      "end_before_query": null,
+      "resource_id": "main"
+    }
+  ]
+}

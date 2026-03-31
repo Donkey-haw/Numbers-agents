@@ -1,0 +1,44 @@
+{
+  "schema_version": "1.0.0",
+  "stage": "review_source_config",
+  "lesson_id": null,
+  "status": "succeeded_with_warning",
+  "decision": "pass_with_warning",
+  "findings": [
+    {
+      "severity": "warning",
+      "message": "2차시의 시작 쿼리가 여러 페이지에 매칭됩니다.",
+      "evidence_refs": [
+        "선거란 무엇일까요?"
+      ]
+    },
+    {
+      "severity": "warning",
+      "message": "3차시의 시작 쿼리가 여러 페이지에 매칭됩니다.",
+      "evidence_refs": [
+        "민주주의에서 선거는 어떤 역할을 할까요?"
+      ]
+    },
+    {
+      "severity": "warning",
+      "message": "4-5차시의 시작 쿼리가 여러 페이지에 매칭됩니다.",
+      "evidence_refs": [
+        "민주주의에서 선거는 어떻게 이루어질까요?"
+      ]
+    },
+    {
+      "severity": "warning",
+      "message": "6-7차시의 시작 쿼리가 여러 페이지에 매칭됩니다.",
+      "evidence_refs": [
+        "선거에 참여하는 바람직한 태도는 무엇일까요?"
+      ]
+    }
+  ],
+  "blocking_issues": [],
+  "warnings": [
+    "2차시: source 'main' title_query matched 5 pages",
+    "3차시: source 'main' title_query matched 5 pages",
+    "4-5차시: source 'main' title_query matched 5 pages",
+    "6-7차시: source 'main' title_query matched 5 pages"
+  ]
+}

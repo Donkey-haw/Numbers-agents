@@ -1,0 +1,26 @@
+{
+  "schema_version": "1.0.0",
+  "stage": "html_card_agent",
+  "lesson_id": null,
+  "status": "succeeded",
+  "run_id": "korean_6_1_unit1_related_to_life_reading-20260326-215821",
+  "started_at": "2026-03-26T13:02:56.683992+00:00",
+  "finished_at": "2026-03-26T13:03:10.342304+00:00",
+  "input_refs": [
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/korean_6_1_unit1_related_to_life_reading-20260326-215821/sections/korean_6_1_unit1_12_13차시/activity_plan.json",
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/korean_6_1_unit1_related_to_life_reading-20260326-215821/sections/korean_6_1_unit1_14차시/activity_plan.json",
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/korean_6_1_unit1_related_to_life_reading-20260326-215821/sections/korean_6_1_unit1_1차시/activity_plan.json",
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/korean_6_1_unit1_related_to_life_reading-20260326-215821/sections/korean_6_1_unit1_2_3차시/activity_plan.json",
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/korean_6_1_unit1_related_to_life_reading-20260326-215821/sections/korean_6_1_unit1_4_6차시/activity_plan.json",
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/korean_6_1_unit1_related_to_life_reading-20260326-215821/sections/korean_6_1_unit1_7_8차시/activity_plan.json",
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/korean_6_1_unit1_related_to_life_reading-20260326-215821/sections/korean_6_1_unit1_9_11차시/activity_plan.json",
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/korean_6_1_unit1_related_to_life_reading-20260326-215821/source/runtime_config.json"
+  ],
+  "output_refs": [
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/korean_6_1_unit1_related_to_life_reading-20260326-215821/render/runtime_config.json",
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/korean_6_1_unit1_related_to_life_reading-20260326-215821/render/html_manifest.json"
+  ],
+  "fallback_used": false,
+  "warnings": [],
+  "errors": []
+}

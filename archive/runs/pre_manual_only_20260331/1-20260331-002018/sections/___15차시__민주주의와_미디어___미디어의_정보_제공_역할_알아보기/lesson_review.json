@@ -1,0 +1,16 @@
+{
+  "schema_version": "1.0.0",
+  "stage": "lesson_review_agent",
+  "lesson_id": "15차시",
+  "status": "succeeded",
+  "decision": "pass",
+  "findings": [
+    {
+      "severity": "info",
+      "message": "추출된 텍스트에 기반하여 재판의 역할과 삼권 분립 내용을 상세화함. 88-89쪽 내용은 제공된 텍스트 범위 밖이므로 83-87쪽 중심으로 재구성함.",
+      "evidence_refs": []
+    }
+  ],
+  "blocking_issues": [],
+  "warnings": []
+}

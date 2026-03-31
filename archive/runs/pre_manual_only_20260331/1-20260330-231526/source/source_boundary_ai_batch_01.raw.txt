@@ -1,0 +1,89 @@
+{
+  "session_id": "e8a27dcf-d858-4bb0-8899-adf68c22823f",
+  "response": "```json\n{\n  \"schema_version\": \"1.0.0\",\n  \"boundaries\": [\n    {\n      \"sheet_name\": \"1차시\",\n      \"resource_id\": \"main\",\n      \"role\": \"textbook\",\n      \"status\": \"matched\",\n      \"start_page\": 4,\n      \"end_page\": 11,\n      \"reason\": \"4페이지의 도입 인사('안녕, 친구들!')와 10페이지의 단원 개요(대주제 1, 2 소개)를 포함하는 단원 도입부입니다. 12페이지에서 실제 1주제가 시작되므로 그 전까지를 범위로 확정합니다.\",\n      \"confidence\": 0.95,\n      \"evidence_pages\": [4, 10]\n    },\n    {\n      \"sheet_name\": \"2차시\",\n      \"resource_id\": \"main\",\n      \"role\": \"textbook\",\n      \"status\": \"matched\",\n      \"start_page\": 12,\n      \"end_page\": 15,\n      \"reason\": \"12페이지에 '1 평화 통일을 위한 노력' 주제의 시작과 함께 분단으로 인한 문제점 설명 등 학습 목표가 명시되어 있습니다. 다음 차시가 16페이지에서 시작되므로 15페이지까지로 판단합니다.\",\n      \"confidence\": 0.98,\n      \"evidence_pages\": [12]\n    },\n    {\n      \"sheet_name\": \"3차시\",\n      \"resource_id\": \"main\",\n      \"role\": \"textbook\",\n      \"status\": \"matched\",\n      \"start_page\": 16,\n      \"end_page\": 17,\n      \"reason\": \"16페이지의 소제목 '분단의 흔적이 남아 있는 장소를 찾아볼까요?'가 쿼리와 일치하며, 17페이지의 질문 답변 활동까지 이어지는 연속된 학습 구간입니다.\",\n      \"confidence\": 0.99,\n      \"evidence_pages\": [16, 17]\n    },\n    {\n      \"sheet_name\": \"4차시\",\n      \"resource_id\": \"main\",\n      \"role\": \"textbook\",\n      \"status\": \"matched\",\n      \"start_page\": 18,\n      \"end_page\": 19,\n      \"reason\": \"18페이지의 '새롭게 태어난 평화의 장소' 제목이 쿼리 내용과 일치하며, 19페이지에서 실제 사례(독개다리 등)를 구체적으로 다루고 있습니다.\",\n      \"confidence\": 0.99,\n      \"evidence_pages\": [18, 19]\n    },\n    {\n      \"sheet_name\": \"5-6차시\",\n      \"resource_id\": \"main\",\n      \"role\": \"textbook\",\n      \"status\": \"matched\",\n      \"start_page\": 20,\n      \"end_page\": 27,\n      \"reason\": \"4차시가 끝나는 19페이지 이후부터 해당 주제의 최종 정리 활동이 포함된 27페이지까지의 구간입니다. 27페이지에서 '이번 주제에서 배운 내용을 정리하며'라는 문구가 확인됩니다.\",\n      \"confidence\": 0.9,\n      \"evidence_pages\": [27]\n    },\n    {\n      \"sheet_name\": \"7차시\",\n      \"resource_id\": \"main\",\n      \"role\": \"textbook\",\n      \"status\": \"matched\",\n      \"start_page\": 28,\n      \"end_page\": 29,\n      \"reason\": \"28페이지에서 새로운 주제인 '2 민주화와 산업화로 달라진 생활 문화'가 시작되며, 29페이지의 낱말 구름 활동이 주제 도입부의 성격을 띠고 있습니다.\",\n      \"confidence\": 0.95,\n      \"evidence_pages\": [28, 29]\n    }\n  ]\n}\n```",
+  "stats": {
+    "models": {
+      "gemini-2.5-flash-lite": {
+        "api": {
+          "totalRequests": 1,
+          "totalErrors": 0,
+          "totalLatencyMs": 3326
+        },
+        "tokens": {
+          "input": 22382,
+          "prompt": 22382,
+          "candidates": 105,
+          "total": 22891,
+          "cached": 0,
+          "thoughts": 404,
+          "tool": 0
+        },
+        "roles": {
+          "utility_router": {
+            "totalRequests": 1,
+            "totalErrors": 0,
+            "totalLatencyMs": 3326,
+            "tokens": {
+              "input": 22382,
+              "prompt": 22382,
+              "candidates": 105,
+              "total": 22891,
+              "cached": 0,
+              "thoughts": 404,
+              "tool": 0
+            }
+          }
+        }
+      },
+      "gemini-3-flash-preview": {
+        "api": {
+          "totalRequests": 1,
+          "totalErrors": 0,
+          "totalLatencyMs": 71265
+        },
+        "tokens": {
+          "input": 28788,
+          "prompt": 28788,
+          "candidates": 929,
+          "total": 32237,
+          "cached": 0,
+          "thoughts": 2520,
+          "tool": 0
+        },
+        "roles": {
+          "main": {
+            "totalRequests": 1,
+            "totalErrors": 0,
+            "totalLatencyMs": 71265,
+            "tokens": {
+              "input": 28788,
+              "prompt": 28788,
+              "candidates": 929,
+              "total": 32237,
+              "cached": 0,
+              "thoughts": 2520,
+              "tool": 0
+            }
+          }
+        }
+      }
+    },
+    "tools": {
+      "totalCalls": 0,
+      "totalSuccess": 0,
+      "totalFail": 0,
+      "totalDurationMs": 0,
+      "totalDecisions": {
+        "accept": 0,
+        "reject": 0,
+        "modify": 0,
+        "auto_accept": 0
+      },
+      "byName": {}
+    },
+    "files": {
+      "totalLinesAdded": 0,
+      "totalLinesRemoved": 0
+    }
+  }
+}

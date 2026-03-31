@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-03-30T15:15:21.739253+00:00",
+  "pdf_path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/textbook/사회/[사회]6_1_교과서.pdf",
+  "current_section": {
+    "sheet_name": "4-5차시",
+    "lesson_title": "민주주의와 선거 — 우리나라의 선거 과정 살펴보기",
+    "title_query": "민주주의와 선거 — 우리나라의 선거 과정 살펴보기",
+    "pdf_pages": [
+      54
+    ],
+    "baseline_analysis_path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/1-20260331-000615/source/local_baseline/___4-5차시__민주주의와_선거___우리나라의_선거_과정_살펴보기.lesson_analysis.json",
+    "extracted_text": "사람들이\n몸으로 만든 저 모양은 무엇을\n의미하는 걸까?\n 민주주의에서 선거의 의미와 역할 및 중요성을 파악할 수 있어요.\n 민주 국가의 선거 과정과 선거 원칙을 파악할 수 있어요.\n 선거에 주체적으로 참여하는 태도를 지닐 수 있어요.\n이 주제를 배우면 나는\n민주주의와 선거\n1\n1\n54\n2 민주주의와 시민 참여"
+  },
+  "neighbor_sections": [
+    {
+      "relation": "previous",
+      "sheet_name": "3차시",
+      "lesson_title": "민주주의와 선거 — 민주주의에서 선거의 역할 파악하기",
+      "title_query": "민주주의와 선거 — 민주주의에서 선거의 역할 파악하기",
+      "pdf_pages": [
+        54
+      ]
+    },
+    {
+      "relation": "next",
+      "sheet_name": "6-7차시",
+      "lesson_title": "민주주의와 선거 — 선거에 적극적으로 참여해야 하는 까닭 알아보기",
+      "title_query": "민주주의와 선거 — 선거에 적극적으로 참여해야 하는 까닭 알아보기",
+      "pdf_pages": [
+        32
+      ]
+    }
+  ]
+}

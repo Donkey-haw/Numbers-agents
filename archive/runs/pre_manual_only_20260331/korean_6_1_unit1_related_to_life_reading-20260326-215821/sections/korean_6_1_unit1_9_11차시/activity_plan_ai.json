@@ -1,0 +1,107 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-03-26T10:00:00+00:00",
+  "lesson_id": "9-11차시",
+  "activities": [
+    {
+      "activity_id": "act-9-11-1",
+      "lesson_id": "9-11차시",
+      "object_role": "activity_area",
+      "lesson_flow_stage": "during",
+      "activity_type": "freeform_html",
+      "level": "core",
+      "learning_goal": "작품 속 인물의 선택을 통해 그가 추구하는 가치를 비판적으로 분석하고 자신의 생각과 비교할 수 있다.",
+      "prompt_text": "인물이 내린 결정의 순간을 떠올려 보고, 만약 나였다면 어떤 가치를 선택했을지 비교하며 이유를 써 봅시다.",
+      "layout_template": "freeform_html",
+      "html_content": "<!DOCTYPE html><html lang='ko'><head><meta charset='UTF-8'><style>body{width:1400px;margin:0;padding:40px;background:transparent;font-family:'Noto Sans KR',sans-serif;color:#333;}.container{display:flex;flex-direction:column;gap:30px;}.header{display:flex;align-items:center;gap:20px;margin-bottom:10px;}.badge{background:#4A90E2;color:#fff;padding:8px 24px;border-radius:30px;font-weight:700;font-size:20px;}.title{font-size:32px;font-weight:800;}.comparison-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;}.column-label{font-size:24px;font-weight:700;margin-bottom:15px;text-align:center;color:#444;}.writing-pane{background:#fff;border:3px solid #333;border-radius:24px;min-height:600px;padding:25px;box-shadow:8px 8px 0 rgba(0,0,0,0.05);}.writing-pane::before{content:'여기에 애플 펜슬로 내용을 적어주세요';color:#ccc;font-size:18px;font-style:italic;}</style></head><body><div class='container'><div class='header'><div class='badge'>가치 비교하기</div><div class='title'>인물의 선택 vs 나의 선택</div></div><div class='comparison-grid'><div><div class='column-label'>인물의 선택과 그가 소중히 여긴 가치</div><div class='writing-pane'></div></div><div><div class='column-label'>나라면 내렸을 결정과 내가 소중히 여길 가치</div><div class='writing-pane'></div></div></div></div></body></html>",
+      "source_refs": [
+        46,
+        47
+      ],
+      "student_writing_zones": [
+        {
+          "zone_id": "character_value",
+          "label": "인물의 가치 분석",
+          "input_area_type": "free-writing",
+          "min_height": 600
+        },
+        {
+          "zone_id": "my_value",
+          "label": "나의 가치 비교",
+          "input_area_type": "free-writing",
+          "min_height": 600
+        }
+      ],
+      "estimated_minutes": 15,
+      "review_status": "draft"
+    },
+    {
+      "activity_id": "act-9-11-2",
+      "lesson_id": "9-11차시",
+      "object_role": "worksheet",
+      "lesson_flow_stage": "during",
+      "activity_type": "freeform_html",
+      "level": "extension",
+      "learning_goal": "자신이 추구하는 가치를 상징하는 동물이나 대상을 설계하여 가치관을 구체화할 수 있다.",
+      "prompt_text": "교과서 47쪽의 내용을 확장하여, 내가 추구하는 삶의 가치를 가장 잘 보여주는 ‘가치 아바타’를 디자인하고 그 이유를 설명해 봅시다.",
+      "layout_template": "freeform_html",
+      "html_content": "<!DOCTYPE html><html lang='ko'><head><meta charset='UTF-8'><style>body{width:1400px;margin:0;padding:40px;background:transparent;font-family:'Noto Sans KR',sans-serif;}.card{background:#fff;border:3px solid #333;border-radius:30px;padding:40px;}.header{margin-bottom:30px;border-bottom:2px dashed #ccc;padding-bottom:20px;}.label{font-size:20px;font-weight:700;color:#666;text-transform:uppercase;}.main-title{font-size:36px;font-weight:900;margin-top:5px;}.content-layout{display:grid;grid-template-columns:1fr 1fr;gap:40px;margin-top:20px;}.visual-area{background:#f9f9f9;border:2px dashed #999;border-radius:20px;height:700px;display:flex;align-items:center;justify-content:center;color:#999;font-size:24px;text-align:center;}.description-area{display:flex;flex-direction:column;gap:20px;}.writing-box{background:#fff;border:2px solid #333;border-radius:15px;padding:20px;flex-grow:1;min-height:300px;}</style></head><body><div class='card'><div class='header'><div class='label'>Creative Project</div><div class='main-title'>나를 상징하는 가치 아바타 설계하기</div></div><div class='content-layout'><div class='visual-area'>[여기에 아바타의 모습이나 <br>상징적인 문양을 그려보세요]</div><div class='description-area'><div><div class='label' style='color:#333; margin-bottom:10px;'>내가 선택한 동물(또는 대상)</div><div class='writing-box' style='min-height:80px;'></div></div><div><div class='label' style='color:#333; margin-bottom:10px;'>이 대상이 나의 '가치'를 어떻게 보여주나요?</div><div class='writing-box'></div></div></div></div></div></body></html>",
+      "source_refs": [
+        47
+      ],
+      "student_writing_zones": [
+        {
+          "zone_id": "avatar_sketch",
+          "label": "아바타 스케치 영역",
+          "input_area_type": "grid",
+          "min_height": 700
+        },
+        {
+          "zone_id": "value_description",
+          "label": "가치 연결 설명",
+          "input_area_type": "free-writing",
+          "min_height": 300
+        }
+      ],
+      "estimated_minutes": 20,
+      "review_status": "draft"
+    },
+    {
+      "activity_id": "act-9-11-3",
+      "lesson_id": "9-11차시",
+      "object_role": "learning_note",
+      "lesson_flow_stage": "after",
+      "activity_type": "freeform_html",
+      "level": "core",
+      "learning_goal": "인물의 삶과 자신의 노력을 연결하여 독서 감상문의 핵심 내용을 체계적으로 구성할 수 있다.",
+      "prompt_text": "본격적인 독서 감상문을 쓰기 전, 인물로부터 배운 점과 내 삶의 변화를 연결하는 생각 지도를 완성해 봅시다.",
+      "layout_template": "freeform_html",
+      "html_content": "<!DOCTYPE html><html lang='ko'><head><meta charset='UTF-8'><style>body{width:1400px;margin:0;padding:40px;background:transparent;font-family:'Noto Sans KR',sans-serif;}.note-container{background:#FFFCF2;border:2px solid #E6D5B8;border-radius:15px;padding:40px;box-shadow:0 4px 15px rgba(0,0,0,0.05);}.step-section{margin-bottom:40px;}.step-header{display:flex;align-items:center;gap:15px;margin-bottom:15px;}.step-num{background:#333;color:#fff;width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:22px;}.step-title{font-size:26px;font-weight:700;}.response-area{background:#fff;border:3px solid #333;border-radius:15px;min-height:300px;padding:20px;}</style></head><body><div class='note-container'><div style='text-align:center; margin-bottom:40px;'><h1 style='font-size:38px; color:#222;'>독서 감상문 구성 노트</h1><p style='font-size:20px; color:#666;'>가치를 중심으로 생각 정리하기</p></div><div class='step-section'><div class='step-header'><div class='step-num'>1</div><div class='step-title'>인물의 삶에서 발견한 가치와 인상 깊은 장면</div></div><div class='response-area'></div></div><div class='step-section'><div class='step-header'><div class='step-num'>2</div><div class='step-title'>그 가치와 관련된 나의 경험이나 나의 생각</div></div><div class='response-area'></div></div><div class='step-section'><div class='step-header'><div class='step-num'>3</div><div class='step-title'>앞으로 나의 삶에서 이 가치를 어떻게 실천하고 싶은가요?</div></div><div class='response-area'></div></div></div></body></html>",
+      "source_refs": [
+        48
+      ],
+      "student_writing_zones": [
+        {
+          "zone_id": "draft_step_1",
+          "label": "인물 가치 정리",
+          "input_area_type": "free-writing",
+          "min_height": 300
+        },
+        {
+          "zone_id": "draft_step_2",
+          "label": "나의 경험 연결",
+          "input_area_type": "free-writing",
+          "min_height": 300
+        },
+        {
+          "zone_id": "draft_step_3",
+          "label": "실천 다짐",
+          "input_area_type": "free-writing",
+          "min_height": 300
+        }
+      ],
+      "estimated_minutes": 15,
+      "review_status": "draft"
+    }
+  ]
+}

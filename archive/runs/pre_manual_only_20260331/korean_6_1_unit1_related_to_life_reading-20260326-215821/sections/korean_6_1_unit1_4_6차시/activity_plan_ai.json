@@ -1,0 +1,137 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-03-26T10:00:00+00:00",
+  "lesson_id": "4-6차시",
+  "activities": [
+    {
+      "activity_id": "act-4-6-1",
+      "lesson_id": "4-6차시",
+      "object_role": "activity_area",
+      "lesson_flow_stage": "during",
+      "activity_type": "freeform_html",
+      "level": "core",
+      "learning_goal": "대패질을 대하는 두 인물의 상반된 태도를 통해 그들이 중요하게 여기는 가치를 비교할 수 있다.",
+      "prompt_text": "장호와 봉운이는 왜 같은 대패질을 다르게 느꼈을까요? 두 사람의 마음속을 들여다보고, 각자가 소중히 여기는 가치가 무엇인지 써 봅시다.",
+      "layout_template": "freeform_html",
+      "html_content": "<!DOCTYPE html><html lang='ko'><head><meta charset='UTF-8'><style>body{width:1600px;margin:0;padding:40px;background:transparent;font-family:'Apple SD Gothic Neo', sans-serif;display:flex;justify-content:center;} .card{width:1400px;background:#fff;padding:50px;border-radius:30px;box-shadow:none;border:1px solid #eee;} h1{font-size:38px;color:#222;margin-bottom:10px;border-left:12px solid #ffcc00;padding-left:20px;} p.desc{font-size:22px;color:#666;margin-bottom:40px;} .comparison-container{display:flex;gap:40px;} .person-box{flex:1;display:flex;flex-direction:column;} .label{font-size:28px;font-weight:bold;margin-bottom:15px;padding:10px 25px;border-radius:40px;display:inline-block;width:fit-content;} .jangho .label{background:#ffebee;color:#c62828;} .bongun .label{background:#e8f5e9;color:#2e7d32;} .writing-zone{background:#fff;border:3px solid #333;border-radius:20px;min-height:550px;padding:30px;font-size:24px;line-height:1.6;position:relative;} .writing-zone::after{content:'이곳에 인물의 마음과 가치를 기록하세요';position:absolute;top:30px;left:30px;color:#ccc;z-index:0;} .tag{margin-top:20px;font-weight:bold;font-size:20px;color:#444;}</style></head><body><div class='card'><h1>대패질에 담긴 두 마음 비교하기</h1><p class='desc'>교과서 17~20쪽을 읽고, 장호와 봉운이가 대패질을 대하는 태도와 그 이유를 분석해 보세요.</p><div class='comparison-container'><div class='person-box jangho'><div class='label'>장호 (빨리 각수가 되고 싶은 마음)</div><div class='writing-zone'></div><div class='tag'># 장호가 추구하는 가치는?</div></div><div class='person-box bongun'><div class='label'>봉운 (정성을 다하는 마음)</div><div class='writing-zone'></div><div class='tag'># 봉운이가 추구하는 가치는?</div></div></div></div></body></html>",
+      "source_refs": [
+        17,
+        18,
+        19,
+        20
+      ],
+      "student_writing_zones": [
+        {
+          "zone_id": "jangho_value",
+          "label": "장호의 태도와 가치 분석",
+          "input_area_type": "free-writing",
+          "min_height": 550
+        },
+        {
+          "zone_id": "bongun_value",
+          "label": "봉운이의 태도와 가치 분석",
+          "input_area_type": "free-writing",
+          "min_height": 550
+        }
+      ],
+      "estimated_minutes": 15,
+      "review_status": "draft"
+    },
+    {
+      "activity_id": "act-4-6-2",
+      "lesson_id": "4-6차시",
+      "object_role": "worksheet",
+      "lesson_flow_stage": "after",
+      "activity_type": "freeform_html",
+      "level": "extension",
+      "learning_goal": "인물이 추구하는 가치를 바탕으로 심도 있는 면담 질문을 구성하고 답변할 수 있다.",
+      "prompt_text": "여러분이 '서포(책방)'의 기자가 되어 봉운이를 인터뷰한다고 상상해 보세요. 봉운이의 가치관이 잘 드러날 수 있는 날카로운 질문을 던져 봅시다.",
+      "layout_template": "freeform_html",
+      "html_content": "<!DOCTYPE html><html lang='ko'><head><meta charset='UTF-8'><style>body{width:1600px;margin:0;padding:40px;background:transparent;font-family:'Apple SD Gothic Neo', sans-serif;} .card{background:#fff;padding:60px;border-radius:40px;border:2px solid #000;} .header{display:flex;justify-content:space-between;align-items:center;border-bottom:4px solid #000;padding-bottom:20px;margin-bottom:40px;} .header-title{font-size:45px;font-weight:900;letter-spacing:-1px;} .interview-grid{display:grid;grid-template-columns:1fr 1fr;gap:30px;} .q-box{background:#f9f9f9;padding:25px;border-radius:20px;border:2px dashed #999;} .a-box{background:#fff;padding:25px;border-radius:20px;border:3px solid #333;min-height:450px;} .label{font-weight:bold;font-size:22px;margin-bottom:10px;display:block;} .q-label{color:#d32f2f;} .a-label{color:#1976d2;} .placeholder-text{color:#bbb;font-size:22px;}</style></head><body><div class='card'><div class='header'><div class='header-title'>[조선일보] 각수 소년 봉운이 특별 인터뷰</div><div style='font-size:20px;'>취재 기자: ________________</div></div><div class='interview-grid'><div class='interview-item'><span class='label q-label'>질문 1: (가치관을 묻는 질문)</span><div class='q-box'><div class='placeholder-text'>예: 봉운아, 너는 왜 힘든 판각 일을 하면서도 웃을 수 있니?</div></div></div><div class='interview-item'><span class='label a-label'>봉운이의 답변:</span><div class='a-box'></div></div><div class='interview-item'><span class='label q-label'>질문 2: (시대적 상황과 연결된 질문)</span><div class='q-box'><div class='placeholder-text'>예: 사람들이 책을 더 빨리 갖고 싶어 하는데, 목판 인쇄는 왜 중요할까?</div></div></div><div class='interview-item'><span class='label a-label'>봉운이의 답변:</span><div class='a-box'></div></div></div></div></body></html>",
+      "source_refs": [
+        21,
+        22,
+        25,
+        26
+      ],
+      "student_writing_zones": [
+        {
+          "zone_id": "interview_q1",
+          "label": "질문 1 작성",
+          "input_area_type": "inline-answer"
+        },
+        {
+          "zone_id": "interview_a1",
+          "label": "답변 1 작성",
+          "input_area_type": "free-writing",
+          "min_height": 450
+        },
+        {
+          "zone_id": "interview_q2",
+          "label": "질문 2 작성",
+          "input_area_type": "inline-answer"
+        },
+        {
+          "zone_id": "interview_a2",
+          "label": "답변 2 작성",
+          "input_area_type": "free-writing",
+          "min_height": 450
+        }
+      ],
+      "estimated_minutes": 20,
+      "review_status": "draft"
+    },
+    {
+      "activity_id": "act-4-6-3",
+      "lesson_id": "4-6차시",
+      "object_role": "learning_note",
+      "lesson_flow_stage": "before",
+      "activity_type": "freeform_html",
+      "level": "core",
+      "learning_goal": "조선 시대의 출판 문화와 관련된 핵심 용어를 이해하고 정리할 수 있다.",
+      "prompt_text": "이야기 속 배경이 되는 조선 시대의 책 만들기 문화를 이해하기 위한 핵심 단어들을 정리해 봅시다.",
+      "layout_template": "freeform_html",
+      "html_content": "<!DOCTYPE html><html lang='ko'><head><meta charset='UTF-8'><style>body{width:1600px;margin:0;padding:40px;background:transparent;font-family:'Apple SD Gothic Neo', sans-serif;} .card{background:#fffef0;padding:50px;border-radius:20px;border:1px solid #d4c4a8; position:relative; overflow:hidden;} .card::before{content:''; position:absolute; top:0; right:0; width:100px; height:100px; background:linear-gradient(225deg, #d4c4a8 45%, #fffef0 50%);} h1{font-family:'Nanum Myeongjo', serif; font-size:40px; color:#4e342e; text-align:center; margin-bottom:40px; border-bottom:2px solid #4e342e; padding-bottom:20px;} .term-grid{display:grid; grid-template-columns: repeat(2, 1fr); gap:30px;} .term-item{background:#fff; padding:25px; border:2px solid #4e342e; border-radius:10px;} .term-name{font-weight:bold; font-size:26px; color:#4e342e; margin-bottom:15px; display:block; border-bottom:1px solid #eee;} .term-meaning{min-height:180px; font-size:22px; color:#333; line-height:1.6;} .summary-box{margin-top:40px; background:#fff; padding:30px; border:3px solid #4e342e; border-radius:10px;} .summary-label{font-size:24px; font-weight:bold; color:#fff; background:#4e342e; padding:5px 20px; border-radius:5px; margin-bottom:20px; display:inline-block;}</style></head><body><div class='card'><h1>조선 시대 출판 문화 용어 사전</h1><div class='term-grid'><div class='term-item'><span class='term-name'>1. 필사 (筆寫)</span><div class='term-meaning'></div></div><div class='term-item'><span class='term-name'>2. 각수 (刻手)</span><div class='term-meaning'></div></div><div class='term-item'><span class='term-name'>3. 서포 (書鋪)</span><div class='term-meaning'></div></div><div class='term-item'><span class='term-name'>4. 판각 (板刻)</span><div class='term-meaning'></div></div></div><div class='summary-box'><span class='summary-label'>나의 생각 정리</span><div style='min-height:300px; font-size:22px;'>이야기를 읽기 전, 내가 생각하는 '책의 가치'란 무엇인가요?</div></div></div></body></html>",
+      "source_refs": [
+        15,
+        16,
+        23,
+        24
+      ],
+      "student_writing_zones": [
+        {
+          "zone_id": "def_필사",
+          "label": "필사의 의미 기록",
+          "input_area_type": "free-writing",
+          "min_height": 180
+        },
+        {
+          "zone_id": "def_각수",
+          "label": "각수의 의미 기록",
+          "input_area_type": "free-writing",
+          "min_height": 180
+        },
+        {
+          "zone_id": "def_서포",
+          "label": "서포의 의미 기록",
+          "input_area_type": "free-writing",
+          "min_height": 180
+        },
+        {
+          "zone_id": "def_판각",
+          "label": "판각의 의미 기록",
+          "input_area_type": "free-writing",
+          "min_height": 180
+        },
+        {
+          "zone_id": "initial_thought",
+          "label": "책의 가치에 대한 첫 생각",
+          "input_area_type": "free-writing",
+          "min_height": 300
+        }
+      ],
+      "estimated_minutes": 10,
+      "review_status": "draft"
+    }
+  ]
+}

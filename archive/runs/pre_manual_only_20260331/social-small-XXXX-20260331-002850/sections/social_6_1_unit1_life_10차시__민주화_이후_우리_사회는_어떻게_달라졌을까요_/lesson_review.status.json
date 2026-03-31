@@ -1,0 +1,19 @@
+{
+  "schema_version": "1.0.0",
+  "stage": "lesson_review_agent",
+  "lesson_id": "10차시",
+  "status": "succeeded",
+  "run_id": "social-small-XXXX-20260331-002850",
+  "started_at": "2026-03-30T15:29:44.100623+00:00",
+  "finished_at": "2026-03-30T15:29:44.102041+00:00",
+  "input_refs": [
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social-small-XXXX-20260331-002850/sections/social_6_1_unit1_life_10차시__민주화_이후_우리_사회는_어떻게_달라졌을까요_/lesson_analysis.json"
+  ],
+  "output_refs": [
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social-small-XXXX-20260331-002850/sections/social_6_1_unit1_life_10차시__민주화_이후_우리_사회는_어떻게_달라졌을까요_/lesson_review.json"
+  ],
+  "fallback_used": false,
+  "warnings": [],
+  "errors": [],
+  "agent_spec_path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/agents/lesson_review_agent/AGENT.md"
+}

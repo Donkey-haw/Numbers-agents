@@ -1,0 +1,248 @@
+{
+  "project_root": "/Users/jonyeock/Desktop/Tool/NumbersAuto",
+  "pdf_path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/textbook/사회/[사회]6_1_교과서.pdf",
+  "template_path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/빈 넘버스 파일.numbers",
+  "output_file": "/Users/jonyeock/Desktop/Tool/NumbersAuto/output/social_6_1_unit2_민주주의와_미디어.numbers",
+  "footer": "사회 6-1 · 2단원 · 민주주의와 미디어",
+  "source_chart": "configs/charts/social_6_1_progress_chart.json",
+  "sections": [
+    {
+      "sheet_name": "14차시",
+      "card_file": "social_6_1_unit2_민주주의와_미디어_14차시",
+      "title": "미디어의 의미 알아보기",
+      "title_query": "미디어의 의미 알아보기",
+      "badge": "14차시",
+      "accent": [
+        "#6366f1",
+        "#818cf8"
+      ],
+      "sources": [
+        {
+          "resource_id": "main",
+          "role": "textbook",
+          "title_query": "미디어의 의미 알아보기",
+          "_inference": {
+            "status": "matched",
+            "start_page": 83,
+            "end_page": 83,
+            "start_query": "미디어의 의미 알아보기",
+            "start_match_pages": [
+              83,
+              88,
+              90,
+              100,
+              101
+            ],
+            "start_match_count": 5,
+            "end_strategy": "boundary_decision_agent",
+            "end_reference_query": null,
+            "intro_boundary_page": null,
+            "reason": "Transitional heuristic: choose highest-ranked candidate and cut before next lesson candidate",
+            "confidence": 0.45
+          },
+          "pdf_pages": [
+            83
+          ]
+        }
+      ],
+      "source_ranges": [
+        {
+          "resource_id": "main",
+          "role": "textbook",
+          "pdf_pages": [
+            83
+          ]
+        }
+      ],
+      "pdf_pages": [
+        83
+      ]
+    },
+    {
+      "sheet_name": "15차시",
+      "card_file": "social_6_1_unit2_민주주의와_미디어_15차시",
+      "title": "미디어의 정보 제공 역할 알아보기",
+      "title_query": "미디어의 정보 제공 역할 알아보기",
+      "badge": "15차시",
+      "accent": [
+        "#4f46e5",
+        "#7c3aed"
+      ],
+      "sources": [
+        {
+          "resource_id": "main",
+          "role": "textbook",
+          "title_query": "미디어의 정보 제공 역할 알아보기",
+          "_inference": {
+            "status": "matched",
+            "start_page": 83,
+            "end_page": 89,
+            "start_query": "미디어의 정보 제공 역할 알아보기",
+            "start_match_pages": [
+              83,
+              88,
+              101,
+              114,
+              118
+            ],
+            "start_match_count": 5,
+            "end_strategy": "boundary_decision_agent",
+            "end_reference_query": null,
+            "intro_boundary_page": null,
+            "reason": "Transitional heuristic: choose highest-ranked candidate and cut before next lesson candidate",
+            "confidence": 0.55
+          },
+          "pdf_pages": [
+            83,
+            84,
+            85,
+            86,
+            87,
+            88,
+            89
+          ]
+        }
+      ],
+      "source_ranges": [
+        {
+          "resource_id": "main",
+          "role": "textbook",
+          "pdf_pages": [
+            83,
+            84,
+            85,
+            86,
+            87,
+            88,
+            89
+          ]
+        }
+      ],
+      "pdf_pages": [
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89
+      ]
+    },
+    {
+      "sheet_name": "16차시",
+      "card_file": "social_6_1_unit2_민주주의와_미디어_16차시",
+      "title": "미디어의 내용을 비판적으로 분석해야 하는 까닭 알아보기",
+      "title_query": "미디어의 내용을 비판적으로 분석해야 하는 까닭 알아보기",
+      "badge": "16차시",
+      "accent": [
+        "#0f766e",
+        "#14b8a6"
+      ],
+      "sources": [
+        {
+          "resource_id": "main",
+          "role": "textbook",
+          "title_query": "미디어의 내용을 비판적으로 분석해야 하는 까닭 알아보기",
+          "_inference": {
+            "status": "matched",
+            "start_page": 90,
+            "end_page": 90,
+            "start_query": "미디어의 내용을 비판적으로 분석해야 하는 까닭 알아보기",
+            "start_match_pages": [
+              90,
+              100,
+              101,
+              102,
+              170
+            ],
+            "start_match_count": 5,
+            "end_strategy": "boundary_decision_agent",
+            "end_reference_query": null,
+            "intro_boundary_page": null,
+            "reason": "Transitional heuristic: choose highest-ranked candidate and cut before next lesson candidate",
+            "confidence": 0.45
+          },
+          "pdf_pages": [
+            90
+          ]
+        }
+      ],
+      "source_ranges": [
+        {
+          "resource_id": "main",
+          "role": "textbook",
+          "pdf_pages": [
+            90
+          ]
+        }
+      ],
+      "pdf_pages": [
+        90
+      ]
+    },
+    {
+      "sheet_name": "17-18차시",
+      "card_file": "social_6_1_unit2_민주주의와_미디어_17_18차시",
+      "title": "미디어를 올바르게 이용하는 방법 알아보기",
+      "title_query": "미디어를 올바르게 이용하는 방법 알아보기",
+      "badge": "17-18차시",
+      "accent": [
+        "#1d4ed8",
+        "#3b82f6"
+      ],
+      "sources": [
+        {
+          "resource_id": "main",
+          "role": "textbook",
+          "title_query": "미디어를 올바르게 이용하는 방법 알아보기",
+          "_inference": {
+            "status": "matched",
+            "start_page": 7,
+            "end_page": 7,
+            "start_query": "미디어를 올바르게 이용하는 방법 알아보기",
+            "start_match_pages": [
+              7,
+              90,
+              100,
+              102,
+              103
+            ],
+            "start_match_count": 5,
+            "end_strategy": "boundary_decision_agent",
+            "end_reference_query": null,
+            "intro_boundary_page": null,
+            "reason": "Transitional heuristic: choose highest-ranked candidate and cut before next lesson candidate",
+            "confidence": 0.45
+          },
+          "pdf_pages": [
+            7
+          ]
+        }
+      ],
+      "source_ranges": [
+        {
+          "resource_id": "main",
+          "role": "textbook",
+          "pdf_pages": [
+            7
+          ]
+        }
+      ],
+      "pdf_pages": [
+        7
+      ]
+    }
+  ],
+  "end_before_query": "19차시",
+  "pages_dir": "/Users/jonyeock/Desktop/Tool/NumbersAuto/assets/pages",
+  "cards_dir": "/Users/jonyeock/Desktop/Tool/NumbersAuto/assets/cards",
+  "html_dir": "/Users/jonyeock/Desktop/Tool/NumbersAuto/html",
+  "resources": [
+    {
+      "resource_id": "main",
+      "label": "교과서",
+      "kind": "textbook",
+      "pdf_path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/textbook/사회/[사회]6_1_교과서.pdf"
+    }
+  ]
+}

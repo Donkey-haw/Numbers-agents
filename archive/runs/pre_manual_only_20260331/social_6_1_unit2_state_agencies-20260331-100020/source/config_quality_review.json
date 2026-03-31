@@ -1,0 +1,52 @@
+{
+  "schema_version": "1.0.0",
+  "stage": "review_source_config",
+  "lesson_id": null,
+  "status": "succeeded_with_warning",
+  "decision": "pass_with_warning",
+  "findings": [
+    {
+      "severity": "warning",
+      "message": "8차시의 시작 쿼리가 여러 페이지에 매칭됩니다.",
+      "evidence_refs": [
+        "민주 국가는 어떻게 운영될까요?"
+      ]
+    },
+    {
+      "severity": "warning",
+      "message": "9-10차시의 시작 쿼리가 여러 페이지에 매칭됩니다.",
+      "evidence_refs": [
+        "국회는 어떤 일을 할까요?"
+      ]
+    },
+    {
+      "severity": "warning",
+      "message": "11차시의 시작 쿼리가 여러 페이지에 매칭됩니다.",
+      "evidence_refs": [
+        "행정부는 어떤 일을 할까요?"
+      ]
+    },
+    {
+      "severity": "warning",
+      "message": "12차시의 시작 쿼리가 여러 페이지에 매칭됩니다.",
+      "evidence_refs": [
+        "법원은 어떤 일을 할까요?"
+      ]
+    },
+    {
+      "severity": "warning",
+      "message": "13차시의 시작 쿼리가 여러 페이지에 매칭됩니다.",
+      "evidence_refs": [
+        "국가의 권력을 왜 나누어야 할까요?"
+      ]
+    }
+  ],
+  "blocking_issues": [],
+  "warnings": [
+    "8차시: source 'main' title_query matched 4 pages",
+    "9-10차시: source 'main' title_query matched 5 pages",
+    "11차시: source 'main' title_query matched 5 pages",
+    "12차시: source 'main' title_query matched 5 pages",
+    "13차시: source 'main' title_query matched 5 pages"
+  ]
+}

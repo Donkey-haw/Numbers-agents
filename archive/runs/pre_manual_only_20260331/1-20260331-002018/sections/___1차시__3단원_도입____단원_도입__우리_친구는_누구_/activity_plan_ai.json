@@ -1,0 +1,84 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-03-31T10:00:00+00:00",
+  "lesson_id": "1차시",
+  "activities": [
+    {
+      "activity_id": "act-1-1",
+      "lesson_id": "1차시",
+      "object_role": "activity_area",
+      "lesson_flow_stage": "during",
+      "activity_type": "freeform_html",
+      "level": "core",
+      "learning_goal": "공동체의 대표자가 갖추어야 할 자질을 '친구'의 의미와 연결 지어 설명할 수 있다.",
+      "prompt_text": "우리 반이나 학교라는 공동체에서, 모두를 위해 일할 '진정한 친구(대표자)'는 어떤 모습이어야 할까요? 그 모습과 그렇게 생각한 이유를 정리해 봅시다.",
+      "layout_template": "freeform_html",
+      "html_content": "<!DOCTYPE html><html lang='ko'><head><meta charset='UTF-8'><style>body{width:1600px;margin:0;padding:40px;background:transparent;font-family:'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif;display:flex;justify-content:center;} .card{width:1400px;background:#ffffff;padding:50px;border-radius:40px;box-shadow:none;} .header{display:flex;align-items:center;margin-bottom:40px;border-bottom:4px solid #333;padding-bottom:20px;} .badge{background:#333;color:#fff;padding:10px 24px;border-radius:12px;font-size:24px;font-weight:bold;margin-right:20px;} .title{font-size:42px;font-weight:900;color:#1a1a1a;} .instruction{font-size:28px;color:#444;margin-bottom:30px;line-height:1.5;} .main-layout{display:grid;grid-template-columns:1fr 1fr;gap:40px;} .writing-section{display:flex;flex-direction:column;gap:15px;} .label{font-size:26px;font-weight:bold;color:#333;display:flex;align-items:center;} .label::before{content:'';display:inline-block;width:12px;height:12px;background:#333;border-radius:50%;margin-right:12px;} .writing-area{background:#fff;border:3px solid #333;border-radius:24px;min-height:550px;padding:24px;font-size:24px;line-height:1.6;} .drawing-area{background:#f9f9f9;border:3px dashed #999;border-radius:24px;min-height:550px;display:flex;align-items:center;justify-content:center;color:#999;font-size:22px;}</style></head><body><div class='card'><div class='header'><div class='badge'>활동 1</div><div class='title'>공동체의 '진정한 친구' 찾기</div></div><div class='instruction'>단원 도입부에서 만난 '친구'는 우리 공동체를 이끌어갈 대표자를 의미하기도 합니다.<br>우리가 생각하는 이상적인 대표자의 모습을 그려보고, 그가 왜 우리 공동체에 필요한지 적어 봅시다.</div><div class='main-layout'><div class='writing-section'><div class='label'>내가 그리는 대표자의 모습</div><div class='drawing-area'>여기에 대표자의 특징이 드러나게 그림을 그려보세요.</div></div><div class='writing-section'><div class='label'>이런 친구(대표자)가 필요한 이유</div><div class='writing-area'></div></div></div></div></body></html>",
+      "source_refs": [
+        4,
+        5,
+        58
+      ],
+      "student_writing_zones": [
+        {
+          "zone_id": "drawing_representation",
+          "label": "대표자 모습 그리기",
+          "input_area_type": "grid",
+          "min_height": 550
+        },
+        {
+          "zone_id": "reasoning_text",
+          "label": "필요한 이유 쓰기",
+          "input_area_type": "free-writing",
+          "min_height": 550
+        }
+      ],
+      "estimated_minutes": 15,
+      "review_status": "draft"
+    },
+    {
+      "activity_id": "act-1-2",
+      "lesson_id": "1차시",
+      "object_role": "learning_note",
+      "lesson_flow_stage": "after",
+      "activity_type": "freeform_html",
+      "level": "core",
+      "learning_goal": "3단원에서 배울 핵심 키워드(선거, 민주주의, 평화)를 자신의 삶과 연결하여 정리할 수 있다.",
+      "prompt_text": "3단원을 시작하며 우리가 함께 탐구할 핵심 단어들을 살펴봅시다. 각 단어가 나의 생활과 어떤 관련이 있을지 자유롭게 메모해 봅시다.",
+      "layout_template": "freeform_html",
+      "html_content": "<!DOCTYPE html><html lang='ko'><head><meta charset='UTF-8'><style>body{width:1600px;margin:0;padding:40px;background:transparent;font-family:'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif;} .card{background:#ffffff;padding:60px;border-radius:40px;border:4px solid #333;} .header{margin-bottom:50px;} .title{font-size:48px;font-weight:900;margin-bottom:15px;} .sub-title{font-size:26px;color:#666;} .note-grid{display:grid;grid-template-columns:repeat(3, 1fr);gap:30px;} .note-box{display:flex;flex-direction:column;gap:20px;} .box-header{background:#333;color:#fff;padding:15px;border-radius:12px;text-align:center;font-size:28px;font-weight:bold;} .writing-zone{border:3px solid #333;border-radius:20px;min-height:480px;padding:25px;font-size:22px;background:#fff;} .footer-prompt{margin-top:40px;padding:30px;background:#f0f0f0;border-radius:20px;border:2px solid #ccc;} .footer-text{font-size:24px;font-weight:bold;margin-bottom:15px;} .footer-input{background:#fff;border:2px solid #333;min-height:120px;border-radius:12px;padding:15px;}</style></head><body><div class='card'><div class='header'><div class='title'>3단원 배움 노트: 우리와 민주주의</div><div class='sub-title'>본격적인 학습에 앞서, 우리가 만날 중요한 가치들에 대해 나의 생각을 담아봅시다.</div></div><div class='note-grid'><div class='note-box'><div class='box-header'>선거 (Election)</div><div class='writing-zone'>선거에 대해 내가 알고 있는 것 혹은 궁금한 것:</div></div><div class='note-box'><div class='box-header'>민주주의 (Democracy)</div><div class='writing-zone'>우리 생활 속 민주주의는 어떤 모습일까?</div></div><div class='note-box'><div class='box-header'>평화 (Peace)</div><div class='writing-zone'>모두가 평화롭게 살기 위해 필요한 약속은?</div></div></div><div class='footer-prompt'><div class='footer-text'>💡 이번 단원을 공부하면서 꼭 해결하고 싶은 질문 하나를 적어주세요.</div><div class='footer-input'></div></div></div></body></html>",
+      "source_refs": [
+        4,
+        111
+      ],
+      "student_writing_zones": [
+        {
+          "zone_id": "election_note",
+          "label": "선거 관련 메모",
+          "input_area_type": "lined",
+          "min_height": 480
+        },
+        {
+          "zone_id": "democracy_note",
+          "label": "민주주의 관련 메모",
+          "input_area_type": "lined",
+          "min_height": 480
+        },
+        {
+          "zone_id": "peace_note",
+          "label": "평화 관련 메모",
+          "input_area_type": "lined",
+          "min_height": 480
+        },
+        {
+          "zone_id": "essential_question",
+          "label": "나만의 질문",
+          "input_area_type": "inline-answer",
+          "min_height": 120
+        }
+      ],
+      "estimated_minutes": 12,
+      "review_status": "draft"
+    }
+  ]
+}

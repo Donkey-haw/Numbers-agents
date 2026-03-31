@@ -1,0 +1,29 @@
+{
+  "schema_version": "1.0.0",
+  "stage": "lesson_analysis_agent",
+  "lesson_id": "4차시",
+  "status": "succeeded_with_warning",
+  "run_id": "social_6_1_unit4_globe_world-20260331-094503",
+  "started_at": "2026-03-31T00:45:13.502548+00:00",
+  "finished_at": "2026-03-31T00:45:13.508782+00:00",
+  "input_refs": [
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit4_globe_world-20260331-094503/source/schedule_draft.json",
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit4_globe_world-20260331-094503/source/textbook_context.json",
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit4_globe_world-20260331-094503/source/local_baseline/social_globe_world_4__지구본과_지도로_보는_세계___디지털_공간_영상_정보의_의미_알아보기.lesson_analysis.json"
+  ],
+  "output_refs": [
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit4_globe_world-20260331-094503/sections/social_globe_world_4__지구본과_지도로_보는_세계___디지털_공간_영상_정보의_의미_알아보기/lesson_analysis_ai.json",
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit4_globe_world-20260331-094503/sections/social_globe_world_4__지구본과_지도로_보는_세계___디지털_공간_영상_정보의_의미_알아보기/lesson_analysis.json"
+  ],
+  "fallback_used": true,
+  "fallback_category": "timeout",
+  "fallback_reason": "Gemini CLI timed out after 0 seconds for lesson_analysis_ai",
+  "warnings": [],
+  "errors": [
+    "Gemini CLI timed out after 0 seconds for lesson_analysis_ai"
+  ],
+  "model": "gemini",
+  "agent_spec_path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/agents/lesson_analysis_agent/AGENT.md",
+  "attempt_count": 1,
+  "validation_errors": []
+}

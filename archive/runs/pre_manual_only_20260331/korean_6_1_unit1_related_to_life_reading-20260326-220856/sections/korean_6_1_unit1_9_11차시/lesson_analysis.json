@@ -1,0 +1,109 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-03-26T13:10:59.508000+00:00",
+  "lesson_id": "9-11차시",
+  "sheet_name": "9-11차시",
+  "lesson_title": "작품을 읽고 독서 감상문 쓰기",
+  "lesson_type": "core",
+  "pdf_pages": [
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48
+  ],
+  "essential_question": "인물이 추구하는 가치를 생각하며 자신의 생각이 드러나는 독서 감상문을 어떻게 써야 할까?",
+  "learning_goals": [
+    "인물이 추구하는 가치를 생각하며 작품을 읽을 수 있다.",
+    "자신의 삶과 관련지어 추구하고 싶은 가치를 찾을 수 있다.",
+    "가치에 대한 자신의 생각이 드러나게 독서 감상문을 쓸 수 있다."
+  ],
+  "key_concepts": [
+    "독서 감상문",
+    "가치 비교",
+    "삶의 성찰",
+    "추구하는 가치"
+  ],
+  "vocabulary": [
+    "고결하다",
+    "팔락이다",
+    "고단하다",
+    "늠름하다",
+    "탐스럽다",
+    "천산갑"
+  ],
+  "misconceptions": [
+    "독서 감상문을 단순한 줄거리 요약으로 오해할 수 있으나, 인물의 가치와 자신의 생각을 연결하는 과정이 중요함을 강조함."
+  ],
+  "difficulty_band": "on-level",
+  "content_chunks": [
+    {
+      "chunk_id": "9-11차시-chunk-1",
+      "label": "작품 읽기",
+      "content_type": "text",
+      "knowledge_type": "concept",
+      "summary": "인물이 추구하는 가치를 생각하며 「그랬다면 어땠을까」를 읽고 인물의 마음 변화 이해하기",
+      "source_pages": [
+        39,
+        40,
+        41,
+        42,
+        43,
+        44
+      ],
+      "suggested_activity_types": [
+        "see_think_wonder",
+        "learning_note"
+      ]
+    },
+    {
+      "chunk_id": "9-11차시-chunk-2",
+      "label": "내용 파악 및 가치 비교",
+      "content_type": "mixed",
+      "knowledge_type": "comparison",
+      "summary": "작품의 주요 내용을 파악하고, 등장하는 동물들이 추구하는 다양한 가치(협력, 자유 등)를 비교하기",
+      "source_pages": [
+        45,
+        46
+      ],
+      "suggested_activity_types": [
+        "worksheet",
+        "learning_note"
+      ]
+    },
+    {
+      "chunk_id": "9-11차시-chunk-3",
+      "label": "성찰 및 감상문 쓰기",
+      "content_type": "activity",
+      "knowledge_type": "application",
+      "summary": "자신이 추구하는 가치를 삶과 관련지어 성찰하고, 가치에 대한 생각이 드러나는 독서 감상문 쓰기",
+      "source_pages": [
+        47,
+        48
+      ],
+      "suggested_activity_types": [
+        "worksheet"
+      ]
+    }
+  ],
+  "source_page_refs": [
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48
+  ],
+  "analysis_confidence": 0.95,
+  "review_status": "draft",
+  "notes": "작품 「그랬다면 어땠을까」의 서사 구조와 후반부의 가치 비교 및 쓰기 활동을 중심으로 분석됨. PDF 39-44쪽은 텍스트 읽기, 45-48쪽은 활동 중심임."
+}

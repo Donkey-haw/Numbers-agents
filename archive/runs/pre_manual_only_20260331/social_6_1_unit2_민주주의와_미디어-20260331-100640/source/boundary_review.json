@@ -1,0 +1,130 @@
+{
+  "schema_version": "1.0.0",
+  "stage": "review_source_boundary",
+  "lesson_id": null,
+  "status": "succeeded_with_warning",
+  "decision": "pass_with_warning",
+  "findings": [
+    {
+      "severity": "warning",
+      "message": "14차시의 경계 판정 신뢰도가 낮습니다.",
+      "evidence_refs": [
+        "lesson-001"
+      ]
+    },
+    {
+      "severity": "warning",
+      "message": "15차시의 경계 판정 신뢰도가 낮습니다.",
+      "evidence_refs": [
+        "lesson-002"
+      ]
+    },
+    {
+      "severity": "warning",
+      "message": "16차시의 경계 판정 신뢰도가 낮습니다.",
+      "evidence_refs": [
+        "lesson-003"
+      ]
+    },
+    {
+      "severity": "warning",
+      "message": "17-18차시의 시작 페이지가 이전 차시와 겹칩니다.",
+      "evidence_refs": [
+        "lesson-004"
+      ]
+    },
+    {
+      "severity": "warning",
+      "message": "17-18차시의 경계 판정 신뢰도가 낮습니다.",
+      "evidence_refs": [
+        "lesson-004"
+      ]
+    }
+  ],
+  "blocking_issues": [],
+  "warnings": [
+    "lesson-001: boundary is low_confidence",
+    "lesson-002: boundary is low_confidence",
+    "lesson-003: boundary is low_confidence",
+    "lesson-004: start_page overlaps with previous lesson boundary",
+    "lesson-004: boundary is low_confidence"
+  ],
+  "entries": [
+    {
+      "lesson_id": "lesson-001",
+      "sheet_name": "14차시",
+      "resource_id": "main",
+      "role": "textbook",
+      "title_query": "외쳐라 빙고",
+      "start_page": 13,
+      "end_page": 82,
+      "evidence_pages": [
+        13,
+        55,
+        71,
+        91,
+        111
+      ],
+      "status": "low_confidence",
+      "confidence": 0.55,
+      "reason": "Transitional heuristic: choose highest-ranked candidate and cut before next lesson candidate"
+    },
+    {
+      "lesson_id": "lesson-002",
+      "sheet_name": "15차시",
+      "resource_id": "main",
+      "role": "textbook",
+      "title_query": "미디어의 정보 제공 역할 알아보기",
+      "start_page": 83,
+      "end_page": 89,
+      "evidence_pages": [
+        83,
+        88,
+        101,
+        114,
+        118
+      ],
+      "status": "low_confidence",
+      "confidence": 0.55,
+      "reason": "Transitional heuristic: choose highest-ranked candidate and cut before next lesson candidate"
+    },
+    {
+      "lesson_id": "lesson-003",
+      "sheet_name": "16차시",
+      "resource_id": "main",
+      "role": "textbook",
+      "title_query": "미디어의 내용을 비판적으로 분석해야 하는 까닭 알아보기",
+      "start_page": 90,
+      "end_page": 90,
+      "evidence_pages": [
+        90,
+        100,
+        101,
+        102,
+        170
+      ],
+      "status": "low_confidence",
+      "confidence": 0.45,
+      "reason": "Transitional heuristic: choose highest-ranked candidate and cut before next lesson candidate"
+    },
+    {
+      "lesson_id": "lesson-004",
+      "sheet_name": "17-18차시",
+      "resource_id": "main",
+      "role": "textbook",
+      "title_query": "미디어를 올바르게 이용하는 방법 알아보기",
+      "start_page": 7,
+      "end_page": 7,
+      "evidence_pages": [
+        7,
+        90,
+        100,
+        102,
+        103
+      ],
+      "status": "low_confidence",
+      "confidence": 0.45,
+      "reason": "Transitional heuristic: choose highest-ranked candidate and cut before next lesson candidate"
+    }
+  ]
+}

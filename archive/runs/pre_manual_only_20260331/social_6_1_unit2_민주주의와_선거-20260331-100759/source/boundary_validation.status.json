@@ -1,0 +1,29 @@
+{
+  "schema_version": "1.0.0",
+  "stage": "boundary_validation_agent",
+  "lesson_id": null,
+  "status": "succeeded_with_warning",
+  "run_id": "social_6_1_unit2_민주주의와_선거-20260331-100759",
+  "started_at": "2026-03-31T01:08:05.675275+00:00",
+  "finished_at": "2026-03-31T01:08:05.675509+00:00",
+  "input_refs": [
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit2_민주주의와_선거-20260331-100759/source/boundary_decisions.json"
+  ],
+  "output_refs": [
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit2_민주주의와_선거-20260331-100759/source/boundary_validation.json",
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit2_민주주의와_선거-20260331-100759/source/boundary_validation.status.json"
+  ],
+  "fallback_used": false,
+  "warnings": [
+    "lesson-001: boundary is low_confidence",
+    "lesson-002: start_page overlaps with previous lesson boundary",
+    "lesson-002: boundary is low_confidence",
+    "lesson-003: start_page overlaps with previous lesson boundary",
+    "lesson-003: boundary is low_confidence",
+    "lesson-004: start_page overlaps with previous lesson boundary",
+    "lesson-004: boundary is low_confidence"
+  ],
+  "errors": [],
+  "agent_spec_path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/agents/boundary_validation_agent/AGENT.md",
+  "runtime_driven": true
+}

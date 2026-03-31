@@ -1,0 +1,84 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-03-30T15:19:48.555503+00:00",
+  "lesson_id": "6-7차시",
+  "sheet_name": "6-7차시",
+  "lesson_title": "민주주의와 선거 — 선거에 적극적으로 참여해야 하는 까닭 알아보기",
+  "lesson_type": "core",
+  "pdf_pages": [
+    32
+  ],
+  "essential_question": "4·19 혁명의 사례를 통해 볼 때, 우리가 선거에 적극적으로 참여하고 공정한 선거를 지켜야 하는 까닭은 무엇일까요?",
+  "learning_goals": [
+    "3·15 부정 선거와 이에 맞선 4·19 혁명의 원인과 과정을 설명할 수 있다.",
+    "민주주의를 지키기 위한 시민들의 노력과 희생을 이해하고, 선거 참여의 중요성을 말할 수 있다."
+  ],
+  "key_concepts": [
+    "4·19 혁명",
+    "3·15 부정 선거",
+    "이승만 정부",
+    "민주주의 수호",
+    "선거의 공정성"
+  ],
+  "vocabulary": [
+    "부정 선거",
+    "혁명",
+    "시위",
+    "영정 사진",
+    "민주 묘지"
+  ],
+  "misconceptions": [
+    "선거 결과가 나와 상관없다고 생각하여 참여를 소홀히 할 수 있다.",
+    "초등학생은 사회의 민주적 의사 결정이나 역사적 사건에 참여할 수 없다고 오해할 수 있다."
+  ],
+  "difficulty_band": "on-level",
+  "content_chunks": [
+    {
+      "chunk_id": "6-7차시-chunk-1",
+      "label": "4·19 혁명의 배경과 전개",
+      "content_type": "text",
+      "knowledge_type": "cause-effect",
+      "summary": "이승만 정부의 3·15 부정 선거에 항의하여 학생과 시민들이 시위를 벌였으며, 경찰의 무력 진압에도 불구하고 민주화를 향한 열망이 거세졌음을 학습한다.",
+      "source_pages": [
+        32
+      ],
+      "suggested_activity_types": [
+        "사건 원인-결과 도식화",
+        "역사 신문 만들기"
+      ]
+    },
+    {
+      "chunk_id": "6-7차시-chunk-2",
+      "label": "4·19 혁명의 결과와 의의",
+      "content_type": "text",
+      "knowledge_type": "fact",
+      "summary": "초등학생까지 참여한 거센 시위 결과 이승만 대통령이 물러났으며, 이를 4·19 혁명이라 부르고 민주화를 위한 중요한 전환점이 되었음을 이해한다.",
+      "source_pages": [
+        32
+      ],
+      "suggested_activity_types": [
+        "인물 인터뷰 가상 구성"
+      ]
+    },
+    {
+      "chunk_id": "6-7차시-chunk-3",
+      "label": "희생자 추모와 생각 깨우기",
+      "content_type": "mixed",
+      "knowledge_type": "opinion",
+      "summary": "강명희의 시 '나는 알아요'를 읽고 국립 4·19 민주 묘지에 잠든 초등학생 등 희생자들의 마음을 헤아려 보며, 민주주의를 지키기 위한 태도를 함양한다.",
+      "source_pages": [
+        32
+      ],
+      "suggested_activity_types": [
+        "시 낭송 및 느낌 나누기",
+        "감사 편지 쓰기"
+      ]
+    }
+  ],
+  "source_page_refs": [
+    32
+  ],
+  "analysis_confidence": 0.95,
+  "review_status": "draft",
+  "notes": "텍스트북 32쪽의 4·19 혁명 사례를 중심으로, 선거의 공정성과 적극적 참여의 가치를 역사적 맥락에서 분석함. 초등학생의 시각에서 쓰인 시와 묘지 방문 에피소드를 학습 요소로 강화함."
+}

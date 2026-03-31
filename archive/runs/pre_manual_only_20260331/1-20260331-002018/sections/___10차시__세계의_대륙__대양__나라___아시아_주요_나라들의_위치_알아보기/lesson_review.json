@@ -1,0 +1,16 @@
+{
+  "schema_version": "1.0.0",
+  "stage": "lesson_review_agent",
+  "lesson_id": "10차시",
+  "status": "succeeded",
+  "decision": "pass",
+  "findings": [
+    {
+      "severity": "info",
+      "message": "해당 페이지는 '1. 지구본과 지도로 보는 세계' 주제의 대단원 마무리 및 요약 정리 단계입니다. 텍스트 추출 결과에 따라 학습 목표와 주요 개념을 재구성하였습니다.",
+      "evidence_refs": []
+    }
+  ],
+  "blocking_issues": [],
+  "warnings": []
+}

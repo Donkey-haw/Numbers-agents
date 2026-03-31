@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0.0",
+  "stage": "page_candidate_agent",
+  "lesson_id": null,
+  "status": "failed",
+  "run_id": "math_6_1_unit2_prisms_pyramids_multiresource-20260331-095945",
+  "started_at": "2026-03-31T00:59:47.872414+00:00",
+  "finished_at": "2026-03-31T00:59:47.872539+00:00",
+  "input_refs": [
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/math_6_1_unit2_prisms_pyramids_multiresource-20260331-095945/source/lesson_queries.json",
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/math_6_1_unit2_prisms_pyramids_multiresource-20260331-095945/source/main.page_index.json"
+  ],
+  "output_refs": [
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/math_6_1_unit2_prisms_pyramids_multiresource-20260331-095945/source/page_candidates.json",
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/math_6_1_unit2_prisms_pyramids_multiresource-20260331-095945/source/page_candidate.status.json"
+  ],
+  "fallback_used": false,
+  "warnings": [],
+  "errors": [
+    "[Errno 2] No such file or directory: '/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/math_6_1_unit2_prisms_pyramids_multiresource-20260331-095945/source/main.page_index.json'"
+  ],
+  "agent_spec_path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/agents/page_candidate_agent/AGENT.md",
+  "runtime_driven": true
+}

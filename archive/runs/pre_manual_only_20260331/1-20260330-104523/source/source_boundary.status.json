@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0.0",
+  "stage": "source_boundary_agent",
+  "lesson_id": null,
+  "status": "running",
+  "run_id": "1-20260330-104523",
+  "started_at": "2026-03-30T01:45:23.977253+00:00",
+  "finished_at": null,
+  "input_refs": [
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/configs/1.json"
+  ],
+  "output_refs": [
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/1-20260330-104523/source/resource_page_catalog.json",
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/1-20260330-104523/source/source_boundary.ai.json",
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/1-20260330-104523/source/schedule_draft.json",
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/1-20260330-104523/source/textbook_context.json",
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/1-20260330-104523/source/runtime_config.json"
+  ],
+  "fallback_used": false,
+  "warnings": [],
+  "errors": [],
+  "agent_spec_path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/agents/source_boundary_agent/AGENT.md",
+  "model": "gemini"
+}

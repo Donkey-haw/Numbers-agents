@@ -1,0 +1,95 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-03-30T15:08:26.611971+00:00",
+  "lesson_id": "2차시",
+  "sheet_name": "2차시",
+  "lesson_title": "평화 통일을 위한 노력 — 분단으로 나타난 문제점과 분단이 사회와 생활 에 끼친 영향 알아보기",
+  "lesson_type": "core",
+  "pdf_pages": [
+    12,
+    13,
+    14,
+    15
+  ],
+  "essential_question": "남북 분단은 우리의 사회와 일상생활에 어떤 구체적인 문제점과 아픔을 가져왔을까요?",
+  "learning_goals": [
+    "남북 분단으로 인한 군사적 대립이 가져오는 전쟁의 불안감과 막대한 국방비 지출 문제를 설명할 수 있다.",
+    "오랜 분단으로 인해 발생한 남북한의 언어, 문화적 차이와 그로 인해 겪는 사회적 어려움을 이해할 수 있다.",
+    "이산가족과 실향민의 사례를 통해 자유로운 왕래가 불가능한 상황이 주는 인도적 아픔에 공감할 수 있다."
+  ],
+  "key_concepts": [
+    "분단",
+    "군사적 긴장",
+    "국방비",
+    "문화 차이",
+    "이산가족",
+    "자유 왕래"
+  ],
+  "vocabulary": [
+    "국방비",
+    "이산가족",
+    "북한 이탈 주민",
+    "체제",
+    "적대 관계",
+    "망배단"
+  ],
+  "misconceptions": [
+    "분단은 국가 간의 정치적 문제일 뿐, 개개인의 생활 방식이나 언어에는 영향을 주지 않았다고 생각할 수 있다."
+  ],
+  "difficulty_band": "on-level",
+  "content_chunks": [
+    {
+      "chunk_id": "2차시-chunk-1",
+      "label": "분단으로 인한 군사적·경제적 문제",
+      "content_type": "mixed",
+      "knowledge_type": "cause-effect",
+      "summary": "남북한의 군사적 대립으로 인해 한반도에 전쟁 발생의 위험이 지속되고 있으며, 이로 인해 막대한 국방비가 지출되어 사회적 비용이 발생하고 있음을 학습합니다.",
+      "source_pages": [
+        12
+      ],
+      "suggested_activity_types": [
+        "see_think_wonder",
+        "learning_note"
+      ]
+    },
+    {
+      "chunk_id": "2차시-chunk-2",
+      "label": "남북한의 사회·문화적 차이",
+      "content_type": "mixed",
+      "knowledge_type": "comparison",
+      "summary": "서로 다른 체제 속에서 오랫동안 살아가면서 생긴 언어(빙수-단얼음, 도시락-곽밥 등)와 생활 방식의 차이를 살펴보고, 문화 차이로 인해 겪는 소통의 어려움을 이해합니다.",
+      "source_pages": [
+        13
+      ],
+      "suggested_activity_types": [
+        "worksheet",
+        "learning_note"
+      ]
+    },
+    {
+      "chunk_id": "2차시-chunk-3",
+      "label": "분단이 가져온 인도적 문제",
+      "content_type": "mixed",
+      "knowledge_type": "fact",
+      "summary": "헤어져 살며 서로 만나지 못하는 이산가족의 슬픔과 고향을 방문하지 못하는 실향민의 아픔을 통해 자유로운 왕래가 제한된 분단 상황의 비극성을 파악합니다.",
+      "source_pages": [
+        13,
+        14,
+        15
+      ],
+      "suggested_activity_types": [
+        "learning_note",
+        "worksheet"
+      ]
+    }
+  ],
+  "source_page_refs": [
+    12,
+    13,
+    14,
+    15
+  ],
+  "analysis_confidence": 0.9,
+  "review_status": "draft",
+  "notes": "교과서 12~13쪽의 핵심 텍스트를 기반으로 군사·경제, 사회·문화, 인도적 문제라는 세 가지 축으로 분석을 구체화함. 14~15쪽은 관련 활동 자료 및 심화 내용을 포함할 것으로 판단됨."
+}

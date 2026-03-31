@@ -1,0 +1,96 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-03-30T15:35:29.601321+00:00",
+  "lesson_id": "2-3차시",
+  "sheet_name": "2-3차시",
+  "lesson_title": "지구본과 지도로 보는 세계 — 지구본의 특징 살펴보기",
+  "pdf_pages": [
+    112,
+    113,
+    114,
+    115
+  ],
+  "essential_question": "지구본과 세계지도는 각각 어떤 특징이 있으며, 왜 함께 사용해야 할까요?",
+  "learning_goals": [
+    "지구본과 세계지도의 특징, 장점 및 단점을 비교하여 설명할 수 있다.",
+    "둥근 지구를 평면인 지도로 나타낼 때 모양이나 면적이 변하는 까닭을 이해한다.",
+    "지구본과 세계지도를 활용해 대륙의 모양이나 최단 경로를 찾아보는 탐구 활동을 수행할 수 있다."
+  ],
+  "key_concepts": [
+    "지구본",
+    "세계지도",
+    "특징",
+    "왜곡",
+    "평면",
+    "모형",
+    "최단 경로"
+  ],
+  "vocabulary": [
+    "지구본",
+    "세계지도",
+    "축척",
+    "적도",
+    "태평양",
+    "대서양",
+    "인도양",
+    "남극해",
+    "북극해"
+  ],
+  "misconceptions": [
+    "세계지도의 모든 면적과 모양은 실제와 똑같다. (지도는 구형을 평면으로 펼친 것이라 왜곡이 발생함)",
+    "지도의 중심은 항상 정해져 있다. (중심 위치에 따라 다양한 지도가 존재할 수 있음)"
+  ],
+  "content_chunks": [
+    {
+      "chunk_id": "2-3차시-chunk-1",
+      "label": "지구본의 정의와 특징",
+      "content_type": "text",
+      "knowledge_type": "concept",
+      "summary": "지구본은 지구를 본뜬 모형으로 위치, 거리, 영토 모양을 정확히 나타내지만, 전 세계를 한눈에 보기 어렵고 휴대가 불편하다.",
+      "source_pages": [
+        112
+      ]
+    },
+    {
+      "chunk_id": "2-3차시-chunk-2",
+      "label": "세계지도의 정의와 특징",
+      "content_type": "map",
+      "knowledge_type": "concept",
+      "summary": "세계지도는 둥근 지구를 평면에 나타낸 것으로 전 세계를 한눈에 볼 수 있으나, 실제 면적이나 거리와 다르게 표현되는 곳이 있다.",
+      "source_pages": [
+        113
+      ]
+    },
+    {
+      "chunk_id": "2-3차시-chunk-3",
+      "label": "정보 활용 탐구: 남극과 최단 경로",
+      "content_type": "activity",
+      "knowledge_type": "procedure",
+      "summary": "지구본과 세계지도에서 남극의 모양을 비교하고, 서울에서 런던까지의 최단 경로를 직접 찾아보며 각 도구의 차이를 학습한다.",
+      "source_pages": [
+        114
+      ]
+    },
+    {
+      "chunk_id": "2-3차시-chunk-4",
+      "label": "다양한 관점의 세계지도",
+      "content_type": "text",
+      "knowledge_type": "application",
+      "summary": "물고기의 관점, 북극 중심의 UN 깃발 등 중심이나 목적에 따라 지도가 다양하게 표현됨을 이해한다.",
+      "source_pages": [
+        115
+      ]
+    }
+  ],
+  "source_page_refs": [
+    112,
+    113,
+    114,
+    115
+  ],
+  "analysis_confidence": 0.95,
+  "lesson_type": "core",
+  "difficulty_band": "on-level",
+  "review_status": "draft",
+  "notes": "사회 6-1 교과서 112~115쪽 내용을 바탕으로 작성됨. 지구본과 지도의 상호보완적 성격과 왜곡의 원인(구형->평면)이 핵심임."
+}

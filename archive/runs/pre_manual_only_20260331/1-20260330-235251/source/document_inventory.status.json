@@ -1,0 +1,22 @@
+{
+  "schema_version": "1.0.0",
+  "stage": "document_inventory_agent",
+  "lesson_id": null,
+  "status": "succeeded",
+  "run_id": "1-20260330-235251",
+  "started_at": "2026-03-30T14:52:51.447285+00:00",
+  "finished_at": "2026-03-30T14:52:51.447718+00:00",
+  "input_refs": [
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/configs/1.json",
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/textbook/사회/[사회]6_1_교과서.pdf"
+  ],
+  "output_refs": [
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/1-20260330-235251/source/document_inventory.json",
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/1-20260330-235251/source/document_inventory.status.json"
+  ],
+  "fallback_used": false,
+  "warnings": [],
+  "errors": [],
+  "agent_spec_path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/agents/document_inventory_agent/AGENT.md",
+  "runtime_driven": true
+}

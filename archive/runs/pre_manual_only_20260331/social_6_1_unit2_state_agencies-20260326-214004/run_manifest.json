@@ -1,0 +1,102 @@
+{
+  "schema_version": "1.0.0",
+  "run_id": "social_6_1_unit2_state_agencies-20260326-214004",
+  "workflow_mode": "stable",
+  "config_path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/configs/social_6_1_unit2_state_agencies.json",
+  "selected_unit": "6-1-2-2. 국가기관이 하는 일",
+  "selected_lessons": [
+    "8차시",
+    "9-10차시",
+    "11차시",
+    "12차시",
+    "13차시"
+  ],
+  "stage_order": [
+    "source_parse_agent",
+    "lesson_analysis_agent",
+    "review_lesson_agent",
+    "activity_plan_agent",
+    "review_activity_agent",
+    "html_card_agent",
+    "capture_agent",
+    "numbers_compose_agent",
+    "review_manifest_agent",
+    "verify_agent"
+  ],
+  "started_at": "2026-03-26T12:40:04.930558+00:00",
+  "finished_at": "2026-03-26T12:40:04.931754+00:00",
+  "final_status": "failed",
+  "final_output_file": null,
+  "status_summary": [
+    {
+      "stage": "source_parse_agent",
+      "status": "failed",
+      "fallback_used": false,
+      "warning_count": 0,
+      "error_count": 1
+    },
+    {
+      "stage": "lesson_analysis_agent",
+      "status": "pending",
+      "fallback_used": false,
+      "warning_count": 0,
+      "error_count": 0
+    },
+    {
+      "stage": "review_lesson_agent",
+      "status": "pending",
+      "fallback_used": false,
+      "warning_count": 0,
+      "error_count": 0
+    },
+    {
+      "stage": "activity_plan_agent",
+      "status": "pending",
+      "fallback_used": false,
+      "warning_count": 0,
+      "error_count": 0
+    },
+    {
+      "stage": "review_activity_agent",
+      "status": "pending",
+      "fallback_used": false,
+      "warning_count": 0,
+      "error_count": 0
+    },
+    {
+      "stage": "html_card_agent",
+      "status": "pending",
+      "fallback_used": false,
+      "warning_count": 0,
+      "error_count": 0
+    },
+    {
+      "stage": "capture_agent",
+      "status": "pending",
+      "fallback_used": false,
+      "warning_count": 0,
+      "error_count": 0
+    },
+    {
+      "stage": "numbers_compose_agent",
+      "status": "pending",
+      "fallback_used": false,
+      "warning_count": 0,
+      "error_count": 0
+    },
+    {
+      "stage": "review_manifest_agent",
+      "status": "pending",
+      "fallback_used": false,
+      "warning_count": 0,
+      "error_count": 0
+    },
+    {
+      "stage": "verify_agent",
+      "status": "pending",
+      "fallback_used": false,
+      "warning_count": 0,
+      "error_count": 0
+    }
+  ]
+}

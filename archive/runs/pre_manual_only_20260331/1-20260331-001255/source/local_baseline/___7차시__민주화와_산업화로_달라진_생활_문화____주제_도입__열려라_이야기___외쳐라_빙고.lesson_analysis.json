@@ -1,0 +1,110 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-03-30T15:13:03.379913+00:00",
+  "lesson_id": "7차시",
+  "sheet_name": "7차시",
+  "lesson_title": "민주화와 산업화로 달라진 생활 문화 — [주제 도입] 열려라 이야기 / 외쳐라 빙고",
+  "lesson_type": "core",
+  "pdf_pages": [
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28
+  ],
+  "essential_question": "민주화와 산업화로 달라진 생활 문화 — [주제 도입] 열려라 이야기 / 외쳐라 빙고",
+  "learning_goals": [
+    "민주화와 산업화로 달라진 생활 문화 — [주제 도입] 열려라 이야기의 핵심 내용을 설명할 수 있다."
+  ],
+  "key_concepts": [
+    "민주화",
+    "산업화",
+    "달라진",
+    "생활",
+    "문화"
+  ],
+  "vocabulary": [
+    "민주화",
+    "산업화",
+    "달라진"
+  ],
+  "misconceptions": [],
+  "difficulty_band": "on-level",
+  "content_chunks": [
+    {
+      "chunk_id": "7차시-chunk-1",
+      "label": "학습 덩어리 1",
+      "content_type": "mixed",
+      "knowledge_type": "procedure",
+      "summary": "1 낱말 구름을 보고, 이 주제에서 배울 내용이 무엇인지 생각해 봅시다.",
+      "source_pages": [
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "suggested_activity_types": [
+        "see_think_wonder",
+        "learning_note",
+        "worksheet"
+      ]
+    },
+    {
+      "chunk_id": "7차시-chunk-2",
+      "label": "학습 덩어리 2",
+      "content_type": "mixed",
+      "knowledge_type": "concept",
+      "summary": "한반도 곳곳에 남아 있는 전쟁과 분단의 상징을 평화의 공간이나 시설로 바꾸는 노력이 필요하다.",
+      "source_pages": [
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28
+      ],
+      "suggested_activity_types": [
+        "learning_note",
+        "worksheet"
+      ]
+    }
+  ],
+  "source_page_refs": [
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28
+  ],
+  "analysis_confidence": 0.75,
+  "review_status": "draft",
+  "notes": "자동 생성 초안. lesson title, key concepts, chunks를 검토 후 승인 필요."
+}

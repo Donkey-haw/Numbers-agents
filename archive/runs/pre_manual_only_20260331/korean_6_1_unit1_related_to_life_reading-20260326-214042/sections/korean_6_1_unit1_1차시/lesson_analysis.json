@@ -1,0 +1,77 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-03-26T12:41:09.967039+00:00",
+  "lesson_id": "1차시",
+  "sheet_name": "1차시",
+  "lesson_title": "배울 내용 살펴보기",
+  "lesson_type": "intro",
+  "pdf_pages": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "essential_question": "인물이 추구하는 가치를 이해하고 자신의 삶과 관련지어 읽는 것은 왜 중요할까요?",
+  "learning_goals": [
+    "단원의 학습 내용을 살펴보고 인물이 추구하는 가치의 의미를 알 수 있다.",
+    "이야기 속 인물의 삶에서 영향받은 경험을 나누고 단원에서 배우고 싶은 내용을 정할 수 있다."
+  ],
+  "key_concepts": [
+    "가치",
+    "인물",
+    "추구하는 가치",
+    "자신의 삶",
+    "독서 감상문"
+  ],
+  "vocabulary": [
+    "가치",
+    "전기문",
+    "추구",
+    "독서 감상문"
+  ],
+  "misconceptions": [
+    "'가치'를 단순히 도덕적 규범이나 금전적 가치로만 한정하여 생각할 수 있다."
+  ],
+  "difficulty_band": "on-level",
+  "content_chunks": [
+    {
+      "chunk_id": "1차시-chunk-1",
+      "label": "단원 도입 및 가치 탐색",
+      "content_type": "mixed",
+      "knowledge_type": "concept",
+      "summary": "단원의 주제인 '자신의 삶과 관련지어 읽기'를 도입하며, 세종 대왕과 장영실의 사례를 통해 인물이 소중히 여기는 것(가치)의 의미를 탐색함.",
+      "source_pages": [
+        1,
+        2
+      ],
+      "suggested_activity_types": [
+        "see_think_wonder",
+        "learning_note"
+      ]
+    },
+    {
+      "chunk_id": "1차시-chunk-2",
+      "label": "준비 학습 및 경험 나누기",
+      "content_type": "mixed",
+      "knowledge_type": "application",
+      "summary": "권기옥의 전기문에 대한 독서 감상문을 읽으며 인물이 추구하는 가치를 파악하고, 자신의 삶에 영향을 준 인물에 대해 친구들과 이야기를 나눔.",
+      "source_pages": [
+        3,
+        4
+      ],
+      "suggested_activity_types": [
+        "learning_note",
+        "worksheet"
+      ]
+    }
+  ],
+  "source_page_refs": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "analysis_confidence": 0.95,
+  "review_status": "draft",
+  "notes": "단원 도입 차시로 가치의 개념을 정의하고 학습 동기를 부여하는 활동으로 구성됨. 추출된 텍스트와 삽화를 바탕으로 학습 목표 및 핵심 개념을 보강함."
+}

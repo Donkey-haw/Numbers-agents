@@ -1,0 +1,22 @@
+{
+  "schema_version": "1.0.0",
+  "stage": "schedule_parse_agent",
+  "lesson_id": null,
+  "status": "succeeded",
+  "run_id": "korean_6_1_unit1_related_to_life_reading-20260331-100038",
+  "started_at": "2026-03-31T01:00:39.178852+00:00",
+  "finished_at": "2026-03-31T01:00:39.179170+00:00",
+  "input_refs": [
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/configs/units/korean/korean_6_1_unit1_related_to_life_reading.json",
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/korean_6_1_unit1_related_to_life_reading-20260331-100038/source/document_inventory.json"
+  ],
+  "output_refs": [
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/korean_6_1_unit1_related_to_life_reading-20260331-100038/source/schedule_structure.json",
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/korean_6_1_unit1_related_to_life_reading-20260331-100038/source/schedule_parse.status.json"
+  ],
+  "fallback_used": false,
+  "warnings": [],
+  "errors": [],
+  "agent_spec_path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/agents/schedule_parse_agent/AGENT.md",
+  "runtime_driven": true
+}

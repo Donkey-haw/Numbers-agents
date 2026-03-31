@@ -1,0 +1,27 @@
+{
+  "schema_version": "1.0.0",
+  "stage": "lesson_analysis_agent",
+  "lesson_id": "3차시",
+  "status": "succeeded_with_warning",
+  "run_id": "1-20260331-001115",
+  "started_at": "2026-03-30T15:17:40.329556+00:00",
+  "finished_at": "2026-03-30T15:19:40.349840+00:00",
+  "input_refs": [
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/1-20260331-001115/source/schedule_draft.json",
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/1-20260331-001115/source/textbook_context.json",
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/1-20260331-001115/source/local_baseline/___3차시__민주주의와_선거___민주주의에서_선거의_역할_파악하기.lesson_analysis.json"
+  ],
+  "output_refs": [
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/1-20260331-001115/sections/___3차시__민주주의와_선거___민주주의에서_선거의_역할_파악하기/lesson_analysis_ai.json",
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/1-20260331-001115/sections/___3차시__민주주의와_선거___민주주의에서_선거의_역할_파악하기/lesson_analysis.json"
+  ],
+  "fallback_used": true,
+  "warnings": [],
+  "errors": [
+    "Gemini CLI timed out after 120 seconds for lesson_analysis_ai"
+  ],
+  "model": "gemini",
+  "agent_spec_path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/agents/lesson_analysis_agent/AGENT.md",
+  "attempt_count": 1,
+  "validation_errors": []
+}

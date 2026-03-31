@@ -1,0 +1,27 @@
+{
+  "schema_version": "1.0.0",
+  "stage": "activity_plan_agent",
+  "lesson_id": "7차시",
+  "status": "succeeded_with_warning",
+  "run_id": "social_6_1_unit4_globe_world-20260331-005325",
+  "started_at": "2026-03-30T15:54:50.123239+00:00",
+  "finished_at": "2026-03-30T15:55:05.148036+00:00",
+  "input_refs": [
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit4_globe_world-20260331-005325/sections/social_globe_world_7__지구본과_지도로_보는_세계___위도와_경도를_이용해_위치를_표현하는_방법_살_펴보기/lesson_analysis.json"
+  ],
+  "output_refs": [
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit4_globe_world-20260331-005325/sections/social_globe_world_7__지구본과_지도로_보는_세계___위도와_경도를_이용해_위치를_표현하는_방법_살_펴보기/activity_plan_ai.json",
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit4_globe_world-20260331-005325/sections/social_globe_world_7__지구본과_지도로_보는_세계___위도와_경도를_이용해_위치를_표현하는_방법_살_펴보기/activity_plan.json"
+  ],
+  "fallback_used": true,
+  "fallback_category": "timeout",
+  "fallback_reason": "Gemini CLI timed out after 15 seconds for activity_plan_ai",
+  "warnings": [],
+  "errors": [
+    "Gemini CLI timed out after 15 seconds for activity_plan_ai"
+  ],
+  "agent_spec_path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/agents/activity_plan_agent/AGENT.md",
+  "attempt_count": 1,
+  "repair_attempted": false,
+  "validation_errors": []
+}

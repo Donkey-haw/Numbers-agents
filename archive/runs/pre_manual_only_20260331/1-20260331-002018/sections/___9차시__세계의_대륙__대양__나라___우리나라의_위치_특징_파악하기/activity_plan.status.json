@@ -1,0 +1,25 @@
+{
+  "schema_version": "1.0.0",
+  "stage": "activity_plan_agent",
+  "lesson_id": "9차시",
+  "status": "succeeded",
+  "run_id": "1-20260331-002018",
+  "started_at": "2026-03-30T15:57:43.665668+00:00",
+  "finished_at": "2026-03-30T15:58:24.530250+00:00",
+  "input_refs": [
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/1-20260331-002018/sections/___9차시__세계의_대륙__대양__나라___우리나라의_위치_특징_파악하기/lesson_analysis.json"
+  ],
+  "output_refs": [
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/1-20260331-002018/sections/___9차시__세계의_대륙__대양__나라___우리나라의_위치_특징_파악하기/activity_plan_ai.json",
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/1-20260331-002018/sections/___9차시__세계의_대륙__대양__나라___우리나라의_위치_특징_파악하기/activity_plan.json"
+  ],
+  "fallback_used": false,
+  "fallback_category": null,
+  "fallback_reason": null,
+  "warnings": [],
+  "errors": [],
+  "agent_spec_path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/agents/activity_plan_agent/AGENT.md",
+  "attempt_count": 1,
+  "repair_attempted": false,
+  "validation_errors": []
+}

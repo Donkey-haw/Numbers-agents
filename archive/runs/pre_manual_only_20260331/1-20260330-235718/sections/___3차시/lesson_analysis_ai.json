@@ -1,0 +1,82 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-03-31T00:00:00Z",
+  "lesson_id": "3차시",
+  "sheet_name": "3차시",
+  "lesson_title": "평화 통일을 위한 노력 — 분단의 흔적이 남아 있는 장소 알아보기",
+  "lesson_type": "core",
+  "pdf_pages": [
+    16
+  ],
+  "essential_question": "한반도 곳곳에는 어떤 분단의 흔적들이 남아 있을까요?",
+  "learning_goals": [
+    "비무장 지대(DMZ), 판문점 등 한반도에 남아 있는 분단의 흔적을 찾고 그 특징을 설명할 수 있다."
+  ],
+  "key_concepts": [
+    "분단의 흔적",
+    "비무장 지대(DMZ)",
+    "판문점",
+    "군사 분계선",
+    "정전 협정"
+  ],
+  "vocabulary": [
+    "비무장 지대(DMZ)",
+    "용치",
+    "방호벽",
+    "판문점",
+    "군사 분계선"
+  ],
+  "misconceptions": [
+    "비무장 지대를 단순히 사람이 전혀 살 수 없는 자연 보호 구역으로만 오해할 수 있다.",
+    "판문점이나 용치 같은 시설을 단순한 관광지로만 인식할 수 있다."
+  ],
+  "difficulty_band": "on-level",
+  "content_chunks": [
+    {
+      "chunk_id": "3차시-chunk-1",
+      "label": "생각 깨우기: 아바이 마을",
+      "content_type": "text",
+      "knowledge_type": "fact",
+      "summary": "강원특별자치도 속초시 아바이 마을의 유래를 통해 분단의 아픔을 이해한다.",
+      "source_pages": [
+        16
+      ],
+      "suggested_activity_types": [
+        "see_think_wonder"
+      ]
+    },
+    {
+      "chunk_id": "3차시-chunk-2",
+      "label": "분단의 대표적 흔적",
+      "content_type": "mixed",
+      "knowledge_type": "concept",
+      "summary": "군사 분계선, 비무장 지대(DMZ), 판문점, 끊어진 철길과 다리 등 다양한 분단의 흔적을 파악한다.",
+      "source_pages": [
+        16
+      ],
+      "suggested_activity_types": [
+        "learning_note",
+        "map"
+      ]
+    },
+    {
+      "chunk_id": "3차시-chunk-3",
+      "label": "방어 시설과 용어 정리",
+      "content_type": "mixed",
+      "knowledge_type": "fact",
+      "summary": "용치, 방호벽 등 탱크 공격을 막기 위한 방어 시설의 의미를 알아본다.",
+      "source_pages": [
+        16
+      ],
+      "suggested_activity_types": [
+        "worksheet"
+      ]
+    }
+  ],
+  "source_page_refs": [
+    16
+  ],
+  "analysis_confidence": 0.95,
+  "review_status": "draft",
+  "notes": "추출된 텍스트와 이미지 캡션을 바탕으로 구체적인 분단 흔적(DMZ, 용치, 판문점 등)을 반영하여 분석을 정교화함."
+}

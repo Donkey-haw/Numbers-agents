@@ -1,0 +1,83 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-03-30T15:47:25.890754+00:00",
+  "lesson_id": "15차시",
+  "activities": [
+    {
+      "activity_id": "act-15-1",
+      "lesson_id": "15차시",
+      "object_role": "learning_note",
+      "lesson_flow_stage": "during",
+      "activity_type": "freeform_html",
+      "level": "core",
+      "learning_goal": "3단원(민주주의와 경제 발전)의 핵심 내용을 나만의 언어로 정리하여 누리집의 주제를 확정할 수 있다.",
+      "prompt_text": "나만의 누리집에 담을 핵심 주제와 내용을 정리해 봅시다.",
+      "layout_template": "freeform_html",
+      "html_content": "<!DOCTYPE html><html lang='ko'><head><meta charset='UTF-8'><meta name='viewport' content='width=1600'><style>@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap');body{width:1600px;margin:0;padding:40px;background:transparent;font-family:'Noto Sans KR',sans-serif;color:#333;box-sizing:border-box;}.card{background:#fff;padding:60px;border-radius:40px;box-shadow:0 10px 30px rgba(0,0,0,0.05);border:2px solid #eee;}.header{display:flex;align-items:center;margin-bottom:40px;}.badge{background:#4A90E2;color:#fff;padding:12px 24px;border-radius:100px;font-weight:700;font-size:24px;margin-right:20px;}.title{font-size:42px;font-weight:700;margin:0;}.instruction{font-size:28px;color:#666;margin-bottom:40px;line-height:1.5;}.grid-container{display:grid;grid-template-columns:1fr 1fr;gap:40px;}.section-title{font-size:32px;font-weight:700;margin-bottom:20px;display:flex;align-items:center;}.section-title::before{content:'';display:inline-block;width:12px;height:32px;background:#4A90E2;margin-right:15px;border-radius:4px;}.writing-zone{background:#fff;border:3px solid #333;border-radius:24px;padding:30px;min-height:500px;font-size:24px;line-height:1.8;box-shadow:inset 0 2px 10px rgba(0,0,0,0.02);}.full-width{grid-column:span 2;}.keyword-box{display:flex;gap:20px;flex-wrap:wrap;margin-top:20px;}.keyword-tag{border:2px dashed #ccc;padding:10px 20px;border-radius:12px;color:#999;font-size:22px;}</style></head><body><div class='card'><div class='header'><div class='badge'>정리 노트</div><h1 class='title'>나만의 누리집 기획 로드맵</h1></div><p class='instruction'>3단원에서 배운 민주주의와 경제 발전의 역사 중, 여러분의 누리집에서 가장 중요하게 다루고 싶은 주제는 무엇인가요? 생각을 정리해 봅시다.</p><div class='grid-container'><div class='section-item'><div class='section-title'>누리집의 핵심 제목(슬로건)</div><div class='writing-zone' style='min-height:150px;'></div></div><div class='section-item'><div class='section-title'>주요 키워드 3가지</div><div class='keyword-box'><div class='keyword-tag'># 키워드 1</div><div class='keyword-tag'># 키워드 2</div><div class='keyword-tag'># 키워드 3</div></div><div class='writing-zone' style='min-height:150px; margin-top:20px;'></div></div><div class='section-item full-width'><div class='section-title'>방문자에게 꼭 전하고 싶은 메시지</div><div class='writing-zone' style='min-height:450px;'>우리나라의 민주주의와 경제 발전 과정을 공부하며 느낀 점이나 꼭 기억해야 할 사실을 써 보세요.</div></div></div></div></body></html>",
+      "source_refs": [
+        49
+      ],
+      "student_writing_zones": [
+        {
+          "zone_id": "homepage_title",
+          "label": "누리집 제목",
+          "input_area_type": "inline-answer",
+          "min_height": 150
+        },
+        {
+          "zone_id": "key_concepts",
+          "label": "주요 키워드",
+          "input_area_type": "inline-answer",
+          "min_height": 150
+        },
+        {
+          "zone_id": "main_message",
+          "label": "핵심 메시지 작성",
+          "input_area_type": "free-writing",
+          "min_height": 450
+        }
+      ],
+      "estimated_minutes": 15,
+      "review_status": "draft",
+      "teacher_notes": ""
+    },
+    {
+      "activity_id": "act-15-2",
+      "lesson_id": "15차시",
+      "object_role": "activity_area",
+      "lesson_flow_stage": "during",
+      "activity_type": "freeform_html",
+      "level": "extension",
+      "learning_goal": "산업화와 민주화 운동의 과정을 '카드 뉴스' 형식으로 재구성하여 창의적으로 표현할 수 있다.",
+      "prompt_text": "누리집에 게시할 '우리나라 발전의 순간' 카드 뉴스를 설계해 봅시다.",
+      "layout_template": "freeform_html",
+      "html_content": "<!DOCTYPE html><html lang='ko'><head><meta charset='UTF-8'><meta name='viewport' content='width=1600'><style>@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap');body{width:1600px;margin:0;padding:40px;background:transparent;font-family:'Noto Sans KR',sans-serif;color:#333;}.card{background:#fff;padding:60px;border-radius:40px;border:2px solid #eee;box-shadow:0 10px 30px rgba(0,0,0,0.05);}.header{display:flex;align-items:center;margin-bottom:30px;}.badge{background:#F5A623;color:#fff;padding:12px 24px;border-radius:100px;font-weight:700;font-size:24px;margin-right:20px;}.title{font-size:42px;font-weight:700;margin:0;}.instruction{font-size:28px;color:#666;margin-bottom:40px;line-height:1.5;}.news-layout{display:flex;gap:30px;justify-content:space-between;}.news-page{flex:1;display:flex;flex-direction:column;}.page-label{text-align:center;font-weight:700;font-size:24px;margin-bottom:15px;color:#F5A623;}.image-area{background:#F9F9F9;border:3px dashed #ccc;border-radius:20px;height:400px;display:flex;align-items:center;justify-content:center;color:#999;font-size:22px;margin-bottom:20px;}.text-area{background:#fff;border:3px solid #333;border-radius:20px;padding:20px;min-height:220px;font-size:20px;line-height:1.6;}.hint{font-size:18px;color:#999;margin-top:10px;font-style:italic;}</style></head><body><div class='card'><div class='header'><div class='badge'>창의·융합</div><h1 class='title'>누리집 콘텐츠: 3컷 카드 뉴스 설계</h1></div><p class='instruction'>민주화 운동이나 산업화의 결정적 장면을 선택해 카드 뉴스를 그려봅시다. (1컷: 제목, 2컷: 상황 설명, 3컷: 의미 전달)</p><div class='news-layout'><div class='news-page'><div class='page-label'>[1] 표지</div><div class='image-area'>메인 이미지/제목 배치</div><div class='text-area'>제목:</div><div class='hint'>시선을 끄는 강력한 제목을 정해 보세요.</div></div><div class='news-page'><div class='page-label'>[2] 내용</div><div class='image-area'>관련 장면 스케치</div><div class='text-area'>설명:</div><div class='hint'>당시 어떤 일이 일어났는지 핵심을 적어요.</div></div><div class='news-page'><div class='page-label'>[3] 맺음</div><div class='image-area'>상징적 이미지</div><div class='text-area'>메시지:</div><div class='hint'>이 사건이 오늘날 우리에게 주는 의미는?</div></div></div></div></body></html>",
+      "source_refs": [
+        49
+      ],
+      "student_writing_zones": [
+        {
+          "zone_id": "card_news_sketch_1",
+          "label": "표지 이미지 및 제목",
+          "input_area_type": "free-writing",
+          "min_height": 620
+        },
+        {
+          "zone_id": "card_news_sketch_2",
+          "label": "상황 설명 컷",
+          "input_area_type": "free-writing",
+          "min_height": 620
+        },
+        {
+          "zone_id": "card_news_sketch_3",
+          "label": "의미 전달 컷",
+          "input_area_type": "free-writing",
+          "min_height": 620
+        }
+      ],
+      "estimated_minutes": 20,
+      "review_status": "draft",
+      "teacher_notes": ""
+    }
+  ]
+}

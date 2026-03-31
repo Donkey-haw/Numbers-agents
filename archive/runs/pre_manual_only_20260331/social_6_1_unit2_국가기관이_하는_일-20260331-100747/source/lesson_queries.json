@@ -1,0 +1,45 @@
+{
+  "schema_version": "1.0.0",
+  "lessons": [
+    {
+      "lesson_id": "lesson-001",
+      "sheet_name": "8차시",
+      "display_title": "국가기관의 의미 알아보기",
+      "title_query": "국가기관의 의미 알아보기",
+      "end_before_query": "국회의 구성과 하는 일 파악하기",
+      "resource_id": "main"
+    },
+    {
+      "lesson_id": "lesson-002",
+      "sheet_name": "9-10차시",
+      "display_title": "국회의 구성과 하는 일 파악하기",
+      "title_query": "국회의 구성과 하는 일 파악하기",
+      "end_before_query": "행정부의 구성과 하는 일 파악하기",
+      "resource_id": "main"
+    },
+    {
+      "lesson_id": "lesson-003",
+      "sheet_name": "11차시",
+      "display_title": "행정부의 구성과 하는 일 파악하기",
+      "title_query": "행정부의 구성과 하는 일 파악하기",
+      "end_before_query": "법원의 구성과 하는 일 파악하기",
+      "resource_id": "main"
+    },
+    {
+      "lesson_id": "lesson-004",
+      "sheet_name": "12차시",
+      "display_title": "법원의 구성과 하는 일 파악하기",
+      "title_query": "법원의 구성과 하는 일 파악하기",
+      "end_before_query": "권력 분립의 의미와 중요성 탐구하기",
+      "resource_id": "main"
+    },
+    {
+      "lesson_id": "lesson-005",
+      "sheet_name": "13차시",
+      "display_title": "권력 분립의 의미와 중요성 탐구하기",
+      "title_query": "권력 분립의 의미와 중요성 탐구하기",
+      "end_before_query": null,
+      "resource_id": "main"
+    }
+  ]
+}

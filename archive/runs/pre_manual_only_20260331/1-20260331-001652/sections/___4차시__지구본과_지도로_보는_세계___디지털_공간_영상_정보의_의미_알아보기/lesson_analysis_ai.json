@@ -1,0 +1,72 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-03-31T00:00:00Z",
+  "lesson_id": "4차시",
+  "sheet_name": "4차시",
+  "lesson_title": "지구본과 지도로 보는 세계 — 디지털 공간 영상 정보의 의미 알아보기",
+  "pdf_pages": [
+    116
+  ],
+  "essential_question": "디지털 공간 영상 정보(디지털 지구본)를 활용하면 가 보지 않은 세계 곳곳의 장소를 어떻게 자세히 살펴볼 수 있을까요?",
+  "learning_goals": [
+    "디지털 공간 영상 정보의 의미를 이해하고 그 특징을 설명할 수 있다.",
+    "디지털 지구본의 다양한 기능을 파악하여 세계의 여러 장소를 탐색하는 데 활용할 수 있다."
+  ],
+  "key_concepts": [
+    "디지털 공간 영상 정보",
+    "디지털 지구본",
+    "3D 레이어",
+    "거리 보기",
+    "입체 영상"
+  ],
+  "vocabulary": [
+    "디지털 공간 영상 정보",
+    "디지털 지구본",
+    "레이어",
+    "축척",
+    "에펠 탑"
+  ],
+  "misconceptions": [
+    "디지털 지구본을 단순히 종이 지도를 컴퓨터 화면으로 옮겨 놓은 것이라고만 생각할 수 있으나, 실시간 위치 확인, 입체적 관찰, 과거 모습 비교 등 종이 지도와는 차별화된 고유 기능이 있음을 이해해야 함."
+  ],
+  "content_chunks": [
+    {
+      "chunk_id": "4차시-chunk-1",
+      "label": "디지털 공간 영상 정보의 의미와 사례",
+      "content_type": "text",
+      "knowledge_type": "concept",
+      "summary": "아린이가 프랑스에 가 보지 않고도 에펠 탑 주변을 자세히 설명할 수 있었던 이유를 통해, 디지털 공간 영상 정보를 활용하면 세계 곳곳을 입체적으로 살펴볼 수 있음을 도입함.",
+      "source_pages": [
+        116
+      ]
+    },
+    {
+      "chunk_id": "4차시-chunk-2",
+      "label": "디지털 지구본의 주요 기능",
+      "content_type": "map",
+      "knowledge_type": "procedure",
+      "summary": "검색하기, 거리 보기(실제 길 모습), 확대와 축소, 위치 확인, 입체 영상 보기, 거리 및 면적 재기, 시간 흐름에 따른 변화 보기 등 디지털 지구본만의 특화된 기능을 탐색함.",
+      "source_pages": [
+        116
+      ]
+    },
+    {
+      "chunk_id": "4차시-chunk-3",
+      "label": "추가 정보 표시 기능",
+      "content_type": "diagram",
+      "knowledge_type": "concept",
+      "summary": "지도 위에 경계선, 장소 명칭, 도로 정보 등 레이어를 선택하여 필요한 정보를 겹쳐서 표시할 수 있는 기능을 이해함.",
+      "source_pages": [
+        116
+      ]
+    }
+  ],
+  "source_page_refs": [
+    116
+  ],
+  "analysis_confidence": 0.95,
+  "lesson_type": "core",
+  "difficulty_band": "on-level",
+  "review_status": "draft",
+  "notes": "교과서 116쪽의 텍스트를 바탕으로 디지털 공간 영상 정보의 정의와 디지털 지구본의 10가지 주요 기능을 상세히 분석하여 반영함. 도입부의 발문을 에센셜 퀘스천으로 구체화함."
+}

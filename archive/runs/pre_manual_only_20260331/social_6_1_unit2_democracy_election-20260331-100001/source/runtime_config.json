@@ -1,0 +1,411 @@
+{
+  "project_root": "/Users/jonyeock/Desktop/Tool/NumbersAuto",
+  "pdf_path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/textbook/사회/[사회]6_1_교과서.pdf",
+  "template_path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/빈 넘버스 파일.numbers",
+  "output_file": "/Users/jonyeock/Desktop/Tool/NumbersAuto/output/6-1-2-1. 민주주의와 선거.numbers",
+  "footer": "사회 6-1 · 2단원 · 민주주의와 시민 참여",
+  "search_start_page": 52,
+  "end_before_query": "국가기관이 하는 일",
+  "source_chart": "configs/social_6_1_progress_chart.json",
+  "sections": [
+    {
+      "sheet_name": "1차시",
+      "card_file": "social_6_1_unit2_intro_1차시",
+      "title": "단원·주제 도입",
+      "title_query": "민주주의와 시민 참여",
+      "badge": "1차시",
+      "accent": [
+        "#6366f1",
+        "#818cf8"
+      ],
+      "sources": [
+        {
+          "resource_id": "main",
+          "role": "textbook",
+          "title_query": "민주주의와 시민 참여",
+          "_inference": {
+            "status": "matched",
+            "start_page": 85,
+            "end_page": 85,
+            "start_query": "민주주의와 시민 참여",
+            "start_match_pages": [
+              85
+            ],
+            "start_match_count": 1,
+            "end_strategy": "boundary_decision_agent",
+            "end_reference_query": null,
+            "intro_boundary_page": null,
+            "reason": "Transitional heuristic: choose highest-ranked candidate and cut before next lesson candidate",
+            "confidence": 0.35
+          },
+          "pdf_pages": [
+            85
+          ]
+        }
+      ],
+      "source_ranges": [
+        {
+          "resource_id": "main",
+          "role": "textbook",
+          "pdf_pages": [
+            85
+          ]
+        }
+      ],
+      "pdf_pages": [
+        85
+      ]
+    },
+    {
+      "sheet_name": "2차시",
+      "card_file": "social_6_1_unit2_election_2차시",
+      "title": "선거란 무엇일까요?",
+      "badge": "2차시",
+      "accent": [
+        "#6366f1",
+        "#818cf8"
+      ],
+      "sources": [
+        {
+          "resource_id": "main",
+          "role": "textbook",
+          "title_query": "선거란 무엇일까요?",
+          "_inference": {
+            "status": "matched",
+            "start_page": 56,
+            "end_page": 56,
+            "start_query": "선거란 무엇일까요?",
+            "start_match_pages": [
+              56,
+              64,
+              92,
+              104,
+              124
+            ],
+            "start_match_count": 5,
+            "end_strategy": "boundary_decision_agent",
+            "end_reference_query": null,
+            "intro_boundary_page": null,
+            "reason": "Transitional heuristic: choose highest-ranked candidate and cut before next lesson candidate",
+            "confidence": 0.45
+          },
+          "pdf_pages": [
+            56
+          ]
+        }
+      ],
+      "source_ranges": [
+        {
+          "resource_id": "main",
+          "role": "textbook",
+          "pdf_pages": [
+            56
+          ]
+        }
+      ],
+      "pdf_pages": [
+        56
+      ]
+    },
+    {
+      "sheet_name": "3차시",
+      "card_file": "social_6_1_unit2_election_3차시",
+      "title": "민주주의에서 선거는 어떤 역할을 할까요?",
+      "badge": "3차시",
+      "accent": [
+        "#4f46e5",
+        "#7c3aed"
+      ],
+      "sources": [
+        {
+          "resource_id": "main",
+          "role": "textbook",
+          "title_query": "민주주의에서 선거는 어떤 역할을 할까요?",
+          "_inference": {
+            "status": "matched",
+            "start_page": 4,
+            "end_page": 49,
+            "start_query": "민주주의에서 선거는 어떤 역할을 할까요?",
+            "start_match_pages": [
+              4,
+              58,
+              59,
+              90,
+              94
+            ],
+            "start_match_count": 5,
+            "end_strategy": "boundary_decision_agent",
+            "end_reference_query": null,
+            "intro_boundary_page": null,
+            "reason": "Transitional heuristic: choose highest-ranked candidate and cut before next lesson candidate",
+            "confidence": 0.55
+          },
+          "pdf_pages": [
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            43,
+            44,
+            45,
+            46,
+            47,
+            48,
+            49
+          ]
+        }
+      ],
+      "source_ranges": [
+        {
+          "resource_id": "main",
+          "role": "textbook",
+          "pdf_pages": [
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            43,
+            44,
+            45,
+            46,
+            47,
+            48,
+            49
+          ]
+        }
+      ],
+      "pdf_pages": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49
+      ]
+    },
+    {
+      "sheet_name": "4-5차시",
+      "card_file": "social_6_1_unit2_election_4-5차시",
+      "title": "민주주의에서 선거는 어떻게 이루어질까요?",
+      "badge": "4-5차시",
+      "accent": [
+        "#0f766e",
+        "#14b8a6"
+      ],
+      "sources": [
+        {
+          "resource_id": "main",
+          "role": "textbook",
+          "title_query": "민주주의에서 선거는 어떻게 이루어질까요?",
+          "_inference": {
+            "status": "matched",
+            "start_page": 50,
+            "end_page": 50,
+            "start_query": "민주주의에서 선거는 어떻게 이루어질까요?",
+            "start_match_pages": [
+              50,
+              54,
+              58,
+              62,
+              90
+            ],
+            "start_match_count": 5,
+            "end_strategy": "boundary_decision_agent",
+            "end_reference_query": null,
+            "intro_boundary_page": null,
+            "reason": "Transitional heuristic: choose highest-ranked candidate and cut before next lesson candidate",
+            "confidence": 0.45
+          },
+          "pdf_pages": [
+            50
+          ]
+        }
+      ],
+      "source_ranges": [
+        {
+          "resource_id": "main",
+          "role": "textbook",
+          "pdf_pages": [
+            50
+          ]
+        }
+      ],
+      "pdf_pages": [
+        50
+      ]
+    },
+    {
+      "sheet_name": "6-7차시",
+      "card_file": "social_6_1_unit2_election_6-7차시",
+      "title": "선거에 참여하는 바람직한 태도는 무엇일까요? / 주제 마무리",
+      "title_query": "선거에 참여하는 바람직한 태도는 무엇일까요?",
+      "badge": "6-7차시",
+      "accent": [
+        "#d97706",
+        "#f59e0b"
+      ],
+      "sources": [
+        {
+          "resource_id": "main",
+          "role": "textbook",
+          "title_query": "선거에 참여하는 바람직한 태도는 무엇일까요?",
+          "_inference": {
+            "status": "matched",
+            "start_page": 32,
+            "end_page": 32,
+            "start_query": "선거에 참여하는 바람직한 태도는 무엇일까요?",
+            "start_match_pages": [
+              32,
+              54,
+              64,
+              67,
+              104
+            ],
+            "start_match_count": 5,
+            "end_strategy": "boundary_decision_agent",
+            "end_reference_query": null,
+            "intro_boundary_page": null,
+            "reason": "Transitional heuristic: choose highest-ranked candidate and cut before next lesson candidate",
+            "confidence": 0.45
+          },
+          "pdf_pages": [
+            32
+          ]
+        }
+      ],
+      "source_ranges": [
+        {
+          "resource_id": "main",
+          "role": "textbook",
+          "pdf_pages": [
+            32
+          ]
+        }
+      ],
+      "pdf_pages": [
+        32
+      ]
+    }
+  ],
+  "pages_dir": "/Users/jonyeock/Desktop/Tool/NumbersAuto/assets/pages",
+  "cards_dir": "/Users/jonyeock/Desktop/Tool/NumbersAuto/assets/cards",
+  "html_dir": "/Users/jonyeock/Desktop/Tool/NumbersAuto/html",
+  "resources": [
+    {
+      "resource_id": "main",
+      "label": "교과서",
+      "kind": "textbook",
+      "pdf_path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/textbook/사회/[사회]6_1_교과서.pdf"
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "schema_version": "1.0.0",
+  "stage": "review_source_ai_agent",
+  "lesson_id": null,
+  "status": "succeeded_with_warning",
+  "decision": "pass_with_warning",
+  "findings": [
+    {
+      "severity": "warning",
+      "message": "시작 쿼리가 여러 페이지에 매칭되어 경계 판정의 모호성이 존재합니다.",
+      "evidence_refs": [
+        "configs/social_6_1_unit1_peace_unification.json",
+        "review_source_config"
+      ]
+    },
+    {
+      "severity": "warning",
+      "message": "대부분의 차시에서 경계 판정 신뢰도가 낮음(low_confidence)으로 보고되었습니다.",
+      "evidence_refs": [
+        "lesson-001",
+        "lesson-040",
+        "review_source_boundary"
+      ]
+    },
+    {
+      "severity": "warning",
+      "message": "다수의 차시에서 시작 페이지가 이전 차시의 경계와 겹치는 현상이 발견되었습니다.",
+      "evidence_refs": [
+        "lesson-004",
+        "lesson-005",
+        "lesson-010",
+        "review_source_boundary"
+      ]
+    }
+  ],
+  "blocking_issues": [],
+  "warnings": [
+    "Most lessons have low boundary confidence (approx 0.45-0.55)",
+    "Frequent page overlaps between consecutive lessons",
+    "Title queries matching multiple candidate pages across textbook"
+  ]
+}

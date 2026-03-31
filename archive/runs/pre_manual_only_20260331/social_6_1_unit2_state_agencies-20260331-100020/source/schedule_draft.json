@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-03-31T01:00:25.928432+00:00",
+  "sections": [
+    {
+      "sheet_name": "8차시",
+      "lesson_title": "국가기관의 의미와 종류를 알아볼까요?",
+      "title_query": "민주 국가는 어떻게 운영될까요?"
+    },
+    {
+      "sheet_name": "9-10차시",
+      "lesson_title": "국회의 구성과 하는 일을 알아볼까요?",
+      "title_query": "국회는 어떤 일을 할까요?"
+    },
+    {
+      "sheet_name": "11차시",
+      "lesson_title": "행정부의 구성과 하는 일을 알아볼까요?",
+      "title_query": "행정부는 어떤 일을 할까요?"
+    },
+    {
+      "sheet_name": "12차시",
+      "lesson_title": "법원의 구성과 하는 일을 알아볼까요?",
+      "title_query": "법원은 어떤 일을 할까요?"
+    },
+    {
+      "sheet_name": "13차시",
+      "lesson_title": "권력 분립과 국가기관의 견제를 알아볼까요? / 주제 마무리",
+      "title_query": "국가의 권력을 왜 나누어야 할까요?"
+    }
+  ]
+}

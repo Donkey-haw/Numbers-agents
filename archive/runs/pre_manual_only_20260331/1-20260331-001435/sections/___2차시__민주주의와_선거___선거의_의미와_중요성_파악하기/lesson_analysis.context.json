@@ -1,0 +1,88 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-03-30T15:22:35.061076+00:00",
+  "pdf_path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/textbook/사회/[사회]6_1_교과서.pdf",
+  "current_section": {
+    "section_key": "___2차시__민주주의와_선거___선거의_의미와_중요성_파악하기",
+    "sheet_name": "2차시",
+    "lesson_title": "민주주의와 선거 — 선거의 의미와 중요성 파악하기",
+    "title_query": "민주주의와 선거 — 선거의 의미와 중요성 파악하기",
+    "pdf_pages": [
+      54
+    ],
+    "baseline_analysis_path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/1-20260331-001435/source/local_baseline/___2차시__민주주의와_선거___선거의_의미와_중요성_파악하기.lesson_analysis.json",
+    "extracted_text": "사람들이\n몸으로 만든 저 모양은 무엇을\n의미하는 걸까?\n 민주주의에서 선거의 의미와 역할 및 중요성을 파악할 수 있어요.\n 민주 국가의 선거 과정과 선거 원칙을 파악할 수 있어요.\n 선거에 주체적으로 참여하는 태도를 지닐 수 있어요.\n이 주제를 배우면 나는\n민주주의와 선거\n1\n1\n54\n2 민주주의와 시민 참여",
+    "extracted_text_truncated": false
+  },
+  "neighbor_sections": [
+    {
+      "relation": "previous",
+      "section_key": "___1차시__2단원_도입____단원_도입__우리_친구는_누구_",
+      "sheet_name": "1차시",
+      "lesson_title": "2단원 도입 — [단원 도입] 우리 친구는 누구?",
+      "title_query": "2단원 도입 — [단원 도입] 우리 친구는 누구?",
+      "pdf_pages": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53
+      ]
+    },
+    {
+      "relation": "next",
+      "section_key": "___3차시__민주주의와_선거___민주주의에서_선거의_역할_파악하기",
+      "sheet_name": "3차시",
+      "lesson_title": "민주주의와 선거 — 민주주의에서 선거의 역할 파악하기",
+      "title_query": "민주주의와 선거 — 민주주의에서 선거의 역할 파악하기",
+      "pdf_pages": [
+        54
+      ]
+    }
+  ]
+}

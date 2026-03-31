@@ -1,0 +1,37 @@
+{
+  "schema_version": "1.0.0",
+  "lessons": [
+    {
+      "lesson_id": "lesson-001",
+      "sheet_name": "14차시",
+      "display_title": "미디어란 무엇일까요?",
+      "title_query": "미디어란 무엇일까요?",
+      "end_before_query": "민주주의에서 미디어는 어떤 역할을 할까요?",
+      "resource_id": "main"
+    },
+    {
+      "lesson_id": "lesson-002",
+      "sheet_name": "15차시",
+      "display_title": "민주주의에서 미디어는 어떤 역할을 할까요?",
+      "title_query": "민주주의에서 미디어는 어떤 역할을 할까요?",
+      "end_before_query": "미디어의 내용을 왜 비판적으로 분석해야 할까요?",
+      "resource_id": "main"
+    },
+    {
+      "lesson_id": "lesson-003",
+      "sheet_name": "16차시",
+      "display_title": "미디어의 내용을 왜 비판적으로 분석해야 할까요?",
+      "title_query": "미디어의 내용을 왜 비판적으로 분석해야 할까요?",
+      "end_before_query": "미디어를 올바르게 이용하는 방법을 알아볼까요? / 주제 마무리",
+      "resource_id": "main"
+    },
+    {
+      "lesson_id": "lesson-004",
+      "sheet_name": "17-18차시",
+      "display_title": "미디어를 올바르게 이용하는 방법을 알아볼까요? / 주제 마무리",
+      "title_query": "미디어를 올바르게 이용하는 방법을 알아볼까요? / 주제 마무리",
+      "end_before_query": null,
+      "resource_id": "main"
+    }
+  ]
+}

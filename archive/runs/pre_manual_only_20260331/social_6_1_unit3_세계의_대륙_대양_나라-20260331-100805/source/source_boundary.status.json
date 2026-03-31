@@ -1,0 +1,38 @@
+{
+  "schema_version": "1.0.0",
+  "stage": "source_boundary_agent",
+  "lesson_id": null,
+  "status": "succeeded_with_warning",
+  "run_id": "social_6_1_unit3_세계의_대륙_대양_나라-20260331-100805",
+  "started_at": "2026-03-31T01:08:10.832739+00:00",
+  "finished_at": "2026-03-31T01:08:12.811214+00:00",
+  "input_refs": [
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/configs/units/social/social_6_1_unit3_세계의_대륙_대양_나라.json",
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit3_세계의_대륙_대양_나라-20260331-100805/source/lesson_queries.json",
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit3_세계의_대륙_대양_나라-20260331-100805/source/page_candidates.json",
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit3_세계의_대륙_대양_나라-20260331-100805/source/boundary_decisions.json",
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit3_세계의_대륙_대양_나라-20260331-100805/source/boundary_validation.json"
+  ],
+  "output_refs": [
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit3_세계의_대륙_대양_나라-20260331-100805/source/source_boundary.ai.json",
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit3_세계의_대륙_대양_나라-20260331-100805/source/schedule_draft.json",
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit3_세계의_대륙_대양_나라-20260331-100805/source/textbook_context.json",
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit3_세계의_대륙_대양_나라-20260331-100805/source/runtime_config.json"
+  ],
+  "fallback_used": false,
+  "warnings": [
+    "lesson-001: boundary is low_confidence",
+    "lesson-002: boundary is low_confidence",
+    "lesson-003: boundary is low_confidence",
+    "lesson-004: start_page overlaps with previous lesson boundary",
+    "lesson-004: boundary is low_confidence",
+    "lesson-005: boundary is low_confidence",
+    "lesson-006: start_page overlaps with previous lesson boundary",
+    "lesson-006: boundary is low_confidence",
+    "lesson-007: start_page overlaps with previous lesson boundary",
+    "lesson-007: boundary is low_confidence"
+  ],
+  "errors": [],
+  "agent_spec_path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/agents/source_boundary_agent/AGENT.md",
+  "runtime_driven": true
+}

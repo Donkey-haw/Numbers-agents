@@ -1,0 +1,484 @@
+{
+  "project_root": "/Users/jonyeock/Desktop/Tool/NumbersAuto",
+  "pdf_path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/textbook/사회/[사회]6_1_교과서.pdf",
+  "template_path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/빈 넘버스 파일.numbers",
+  "output_file": "/Users/jonyeock/Desktop/Tool/NumbersAuto/output/6-1-2-3. 민주주의와 미디어.numbers",
+  "footer": "사회 6-1 · 2단원 · 민주주의와 미디어",
+  "search_start_page": 90,
+  "end_before_query": "단원마무리",
+  "source_chart": "configs/social_6_1_progress_chart.json",
+  "sections": [
+    {
+      "sheet_name": "14차시",
+      "card_file": "social_6_1_unit2_media_14차시",
+      "title": "미디어란 무엇일까요?",
+      "title_query": "민주주의와 미디어",
+      "pdf_pages": [
+        56
+      ],
+      "badge": "14차시",
+      "accent": [
+        "#6366f1",
+        "#818cf8"
+      ],
+      "sources": [
+        {
+          "resource_id": "main",
+          "role": "textbook",
+          "title_query": "민주주의와 미디어",
+          "pdf_pages": [
+            56
+          ],
+          "_inference": {
+            "status": "matched",
+            "start_page": 56,
+            "end_page": 56,
+            "start_query": "민주주의와 미디어",
+            "start_match_pages": [
+              56,
+              64,
+              92,
+              104,
+              124
+            ],
+            "start_match_count": 5,
+            "end_strategy": "boundary_decision_agent",
+            "end_reference_query": null,
+            "intro_boundary_page": null,
+            "reason": "Transitional heuristic: choose highest-ranked candidate and cut before next lesson candidate",
+            "confidence": 0.45
+          }
+        }
+      ],
+      "source_ranges": [
+        {
+          "resource_id": "main",
+          "role": "textbook",
+          "pdf_pages": [
+            56
+          ]
+        }
+      ]
+    },
+    {
+      "sheet_name": "15차시",
+      "card_file": "social_6_1_unit2_media_15차시",
+      "title": "민주주의에서 미디어는 어떤 역할을 할까요?",
+      "badge": "15차시",
+      "accent": [
+        "#4f46e5",
+        "#7c3aed"
+      ],
+      "sources": [
+        {
+          "resource_id": "main",
+          "role": "textbook",
+          "title_query": "민주주의에서 미디어는 어떤 역할을 할까요?",
+          "_inference": {
+            "status": "matched",
+            "start_page": 4,
+            "end_page": 89,
+            "start_query": "민주주의에서 미디어는 어떤 역할을 할까요?",
+            "start_match_pages": [
+              4,
+              22,
+              58,
+              90,
+              94
+            ],
+            "start_match_count": 5,
+            "end_strategy": "boundary_decision_agent",
+            "end_reference_query": null,
+            "intro_boundary_page": null,
+            "reason": "Transitional heuristic: choose highest-ranked candidate and cut before next lesson candidate",
+            "confidence": 0.55
+          },
+          "pdf_pages": [
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            43,
+            44,
+            45,
+            46,
+            47,
+            48,
+            49,
+            50,
+            51,
+            52,
+            53,
+            54,
+            55,
+            56,
+            57,
+            58,
+            59,
+            60,
+            61,
+            62,
+            63,
+            64,
+            65,
+            66,
+            67,
+            68,
+            69,
+            70,
+            71,
+            72,
+            73,
+            74,
+            75,
+            76,
+            77,
+            78,
+            79,
+            80,
+            81,
+            82,
+            83,
+            84,
+            85,
+            86,
+            87,
+            88,
+            89
+          ]
+        }
+      ],
+      "source_ranges": [
+        {
+          "resource_id": "main",
+          "role": "textbook",
+          "pdf_pages": [
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            43,
+            44,
+            45,
+            46,
+            47,
+            48,
+            49,
+            50,
+            51,
+            52,
+            53,
+            54,
+            55,
+            56,
+            57,
+            58,
+            59,
+            60,
+            61,
+            62,
+            63,
+            64,
+            65,
+            66,
+            67,
+            68,
+            69,
+            70,
+            71,
+            72,
+            73,
+            74,
+            75,
+            76,
+            77,
+            78,
+            79,
+            80,
+            81,
+            82,
+            83,
+            84,
+            85,
+            86,
+            87,
+            88,
+            89
+          ]
+        }
+      ],
+      "pdf_pages": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89
+      ]
+    },
+    {
+      "sheet_name": "16차시",
+      "card_file": "social_6_1_unit2_media_16차시",
+      "title": "미디어의 내용을 왜 비판적으로 분석해야 할까요?",
+      "badge": "16차시",
+      "accent": [
+        "#0f766e",
+        "#14b8a6"
+      ],
+      "sources": [
+        {
+          "resource_id": "main",
+          "role": "textbook",
+          "title_query": "미디어의 내용을 왜 비판적으로 분석해야 할까요?",
+          "_inference": {
+            "status": "matched",
+            "start_page": 90,
+            "end_page": 90,
+            "start_query": "미디어의 내용을 왜 비판적으로 분석해야 할까요?",
+            "start_match_pages": [
+              90,
+              100,
+              101,
+              102,
+              170
+            ],
+            "start_match_count": 5,
+            "end_strategy": "boundary_decision_agent",
+            "end_reference_query": null,
+            "intro_boundary_page": null,
+            "reason": "Transitional heuristic: choose highest-ranked candidate and cut before next lesson candidate",
+            "confidence": 0.45
+          },
+          "pdf_pages": [
+            90
+          ]
+        }
+      ],
+      "source_ranges": [
+        {
+          "resource_id": "main",
+          "role": "textbook",
+          "pdf_pages": [
+            90
+          ]
+        }
+      ],
+      "pdf_pages": [
+        90
+      ]
+    },
+    {
+      "sheet_name": "17-18차시",
+      "card_file": "social_6_1_unit2_media_17-18차시",
+      "title": "미디어를 올바르게 이용하는 방법을 알아볼까요? / 주제 마무리",
+      "title_query": "미디어를 올바르게 이용하는 방법을 알아볼까요?",
+      "badge": "17-18차시",
+      "accent": [
+        "#d97706",
+        "#f59e0b"
+      ],
+      "sources": [
+        {
+          "resource_id": "main",
+          "role": "textbook",
+          "title_query": "미디어를 올바르게 이용하는 방법을 알아볼까요?",
+          "_inference": {
+            "status": "matched",
+            "start_page": 7,
+            "end_page": 7,
+            "start_query": "미디어를 올바르게 이용하는 방법을 알아볼까요?",
+            "start_match_pages": [
+              7,
+              90,
+              100,
+              102,
+              103
+            ],
+            "start_match_count": 5,
+            "end_strategy": "boundary_decision_agent",
+            "end_reference_query": null,
+            "intro_boundary_page": null,
+            "reason": "Transitional heuristic: choose highest-ranked candidate and cut before next lesson candidate",
+            "confidence": 0.45
+          },
+          "pdf_pages": [
+            7
+          ]
+        }
+      ],
+      "source_ranges": [
+        {
+          "resource_id": "main",
+          "role": "textbook",
+          "pdf_pages": [
+            7
+          ]
+        }
+      ],
+      "pdf_pages": [
+        7
+      ]
+    }
+  ],
+  "pages_dir": "/Users/jonyeock/Desktop/Tool/NumbersAuto/assets/pages",
+  "cards_dir": "/Users/jonyeock/Desktop/Tool/NumbersAuto/assets/cards",
+  "html_dir": "/Users/jonyeock/Desktop/Tool/NumbersAuto/html",
+  "resources": [
+    {
+      "resource_id": "main",
+      "label": "교과서",
+      "kind": "textbook",
+      "pdf_path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/textbook/사회/[사회]6_1_교과서.pdf"
+    }
+  ]
+}

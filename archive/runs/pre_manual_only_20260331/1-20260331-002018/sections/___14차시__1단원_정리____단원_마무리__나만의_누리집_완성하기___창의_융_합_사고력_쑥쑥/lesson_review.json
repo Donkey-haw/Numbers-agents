@@ -1,0 +1,16 @@
+{
+  "schema_version": "1.0.0",
+  "stage": "lesson_review_agent",
+  "lesson_id": "14차시",
+  "status": "succeeded",
+  "decision": "pass",
+  "findings": [
+    {
+      "severity": "info",
+      "message": "49쪽 텍스트 분석 결과, 민주화 운동과 산업화 전 과정을 요약하는 '단원 마무리' 성격이 강함. baseline의 잘못된 지식 유형(procedure)을 summary 및 cause-effect로 수정하고, 구체적인 역사적 사건명과 경제 발전 단계를 반영함.",
+      "evidence_refs": []
+    }
+  ],
+  "blocking_issues": [],
+  "warnings": []
+}

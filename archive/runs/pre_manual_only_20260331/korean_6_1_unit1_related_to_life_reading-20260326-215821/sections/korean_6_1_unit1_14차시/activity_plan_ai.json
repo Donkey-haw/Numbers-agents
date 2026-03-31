@@ -1,0 +1,79 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-03-26T10:00:00+09:00",
+  "lesson_id": "14차시",
+  "activities": [
+    {
+      "activity_id": "act-14-1",
+      "lesson_id": "14차시",
+      "object_role": "activity_area",
+      "lesson_flow_stage": "during",
+      "activity_type": "freeform_html",
+      "level": "core",
+      "learning_goal": "시 「난 탐험가」의 가치를 자신의 삶과 연결하여 구체적인 사례로 표현할 수 있다.",
+      "prompt_text": "시 속 탐험가는 길을 잃어도 '나다움'을 잃지 않습니다. 여러분이 예상치 못한 상황(길을 잃은 순간)에서 발견한 소중한 가치는 무엇인가요? 탐험 일지를 작성해 봅시다.",
+      "layout_template": "freeform_html",
+      "html_content": "<!DOCTYPE html><html lang='ko'><head><meta charset='UTF-8'><style>body{width:1600px;margin:0;padding:40px;background:transparent;font-family:'Noto Sans KR',sans-serif;display:flex;justify-content:center;} .card{width:1200px;background:#fff;padding:60px;border-radius:40px;box-shadow:0 10px 30px rgba(0,0,0,0.05);border:1px solid #eee;} .header{display:flex;align-items:center;margin-bottom:40px;} .badge{background:#4A90E2;color:#fff;padding:12px 24px;border-radius:100px;font-weight:700;font-size:24px;margin-right:20px;} h1{font-size:48px;color:#333;margin:0;} .instruction{font-size:28px;color:#555;line-height:1.6;margin-bottom:40px;background:#f8f9fa;padding:30px;border-left:8px solid #4A90E2;border-radius:8px;} .log-container{display:grid;grid-template-columns:1fr 1fr;gap:40px;} .drawing-area{border:2px solid #333;border-radius:20px;height:600px;background:#fff;display:flex;flex-direction:column;} .writing-area{border:2px solid #333;border-radius:20px;height:600px;background:#fff;padding:30px;box-sizing:border-box;} .label{font-size:22px;font-weight:700;margin-bottom:15px;color:#333;display:flex;align-items:center;} .label::before{content:'';width:10px;height:10px;background:#4A90E2;margin-right:10px;border-radius:50%;} .sub-text{font-size:18px;color:#888;font-weight:400;margin-left:10px;}</style></head><body><div class='card'><div class='header'><div class='badge'>도전과 나다움</div><h1>나만의 탐험 일지 : 길 위에서 찾은 나</h1></div><div class='instruction'>시 「난 탐험가」의 말하는 이는 길을 잃는 것조차 즐거운 탐험이라고 말합니다. 여러분도 계획대로 되지 않았던 순간에 새롭게 발견한 '나만의 가치'나 '깨달음'을 기록해 보세요.</div><div class='log-container'><div class='drawing-area'><div style='padding:20px;' class='label'>그때의 상황 장면 그리기 <span class='sub-text'>(길을 잃거나 당황했던 순간)</span></div><div style='flex:1;'></div></div><div class='writing-area'><div class='label'>내가 발견한 가치와 생각 <span class='sub-text'>(글로 표현하기)</span></div></div></div></div></body></html>",
+      "source_refs": [
+        51,
+        52
+      ],
+      "teacher_notes": "단순히 시의 내용을 요약하는 것이 아니라, 학생의 개인적 경험(실패나 예외 상황) 속에서 '도전'이나 '긍정'의 가치를 이끌어내도록 유도합니다.",
+      "student_writing_zones": [
+        {
+          "zone_id": "scene_drawing",
+          "label": "상황 장면 그리기",
+          "input_area_type": "free-writing",
+          "min_height": 500
+        },
+        {
+          "zone_id": "value_reflection",
+          "label": "가치와 생각 쓰기",
+          "input_area_type": "free-writing",
+          "min_height": 500
+        }
+      ],
+      "estimated_minutes": 15,
+      "review_status": "draft"
+    },
+    {
+      "activity_id": "act-14-2",
+      "lesson_id": "14차시",
+      "object_role": "worksheet",
+      "lesson_flow_stage": "after",
+      "activity_type": "freeform_html",
+      "level": "core",
+      "learning_goal": "새로 배운 어휘(종합, 적용, 개선)를 사용하여 자신의 학습 과정을 성찰하고 미래의 실천 방안을 제시할 수 있다.",
+      "prompt_text": "이번 단원에서 배운 '인물이 추구하는 가치'를 세 가지 핵심 어휘를 사용해 정리해 봅시다. 단순한 확인을 넘어 여러분의 삶에 어떻게 가져올지 계획해 보세요.",
+      "layout_template": "freeform_html",
+      "html_content": "<!DOCTYPE html><html lang='ko'><head><meta charset='UTF-8'><style>body{width:1600px;margin:0;padding:40px;background:transparent;font-family:'Noto Sans KR',sans-serif;} .card{background:#fff;padding:50px;border-radius:30px;border:3px solid #333;} h1{font-size:42px;margin-top:0;display:flex;justify-content:space-between;align-items:center;} h1 span{font-size:24px;color:#666;font-weight:400;} .vocab-grid{display:grid;grid-template-rows:repeat(3, 1fr);gap:30px;margin-top:40px;} .vocab-item{display:grid;grid-template-columns:280px 1fr;gap:20px;} .vocab-label{background:#333;color:#fff;padding:30px;border-radius:15px;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;} .vocab-label .word{font-size:32px;font-weight:900;margin-bottom:10px;} .vocab-label .desc{font-size:16px;opacity:0.8;line-height:1.4;} .answer-zone{border:2px solid #333;border-radius:15px;min-height:300px;padding:25px;font-size:24px;position:relative;} .answer-zone::after{content:'여기에 자유롭게 기록하세요 (Apple Pencil)';position:absolute;bottom:20px;right:20px;font-size:16px;color:#ccc;}</style></head><body><div class='card'><h1>단원 성장 종합 리포트 <span>나의 배움을 삶으로 연결하기</span></h1><div class='vocab-grid'><div class='vocab-item'><div class='vocab-label'><div class='word'>종합하다</div><div class='desc'>여러 가지를 한데 모아 <br>하나로 합치다</div></div><div class='answer-zone'><div style='color:#4A90E2; font-weight:700; margin-bottom:15px;'>[정리] 이번 단원에서 '인물의 가치'에 대해 배운 핵심 내용을 종합해 본다면?</div></div></div><div class='vocab-item'><div class='vocab-label'><div class='word'>적용하다</div><div class='desc'>알맞게 이용하거나 <br>맞추어 쓰다</div></div><div class='answer-zone'><div style='color:#4A90E2; font-weight:700; margin-bottom:15px;'>[연결] 내가 발견한 삶의 가치를 실제 생활에서 어떻게 적용해 보고 싶나요?</div></div></div><div class='vocab-item'><div class='vocab-label'><div class='word'>개선하다</div><div class='desc'>잘못된 점을 고쳐 <br>더 좋게 만들다</div></div><div class='answer-zone'><div style='color:#4A90E2; font-weight:700; margin-bottom:15px;'>[성장] 가치 있는 삶을 위해 나의 태도 중 무엇을 개선하고 싶나요?</div></div></div></div></div></body></html>",
+      "source_refs": [
+        53,
+        54
+      ],
+      "teacher_notes": "단순 어휘 테스트가 아니라, 어휘의 의미를 자신의 학습 맥락(종합)과 실천 맥락(적용, 개선)에서 실제로 사용하도록 설계했습니다.",
+      "student_writing_zones": [
+        {
+          "zone_id": "synthesis",
+          "label": "종합하기 기록",
+          "input_area_type": "free-writing",
+          "min_height": 250
+        },
+        {
+          "zone_id": "application",
+          "label": "적용하기 계획",
+          "input_area_type": "free-writing",
+          "min_height": 250
+        },
+        {
+          "zone_id": "improvement",
+          "label": "개선하기 다짐",
+          "input_area_type": "free-writing",
+          "min_height": 250
+        }
+      ],
+      "estimated_minutes": 15,
+      "review_status": "draft"
+    }
+  ]
+}

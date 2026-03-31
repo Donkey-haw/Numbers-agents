@@ -1,0 +1,45 @@
+{
+  "schema_version": "1.0.0",
+  "lessons": [
+    {
+      "lesson_id": "lesson-001",
+      "sheet_name": "7차시",
+      "display_title": "민주화 운동은 왜 일어났을까요?",
+      "title_query": "민주화 운동은 왜 일어났을까요?",
+      "end_before_query": "민주화를 위한 노력을 살펴볼까요?",
+      "resource_id": "main"
+    },
+    {
+      "lesson_id": "lesson-002",
+      "sheet_name": "8-9차시",
+      "display_title": "민주화를 위한 노력을 살펴볼까요?",
+      "title_query": "민주화를 위한 노력을 살펴볼까요?",
+      "end_before_query": "민주화 이후 우리 사회는 어떻게 달라졌을까요?",
+      "resource_id": "main"
+    },
+    {
+      "lesson_id": "lesson-003",
+      "sheet_name": "10차시",
+      "display_title": "민주화 이후 우리 사회는 어떻게 달라졌을까요?",
+      "title_query": "민주화 이후 우리 사회는 어떻게 달라졌을까요?",
+      "end_before_query": "우리나라는 어떻게 산업화를 이루었을까요?",
+      "resource_id": "main"
+    },
+    {
+      "lesson_id": "lesson-004",
+      "sheet_name": "11차시",
+      "display_title": "우리나라는 어떻게 산업화를 이루었을까요?",
+      "title_query": "우리나라는 어떻게 산업화를 이루었을까요?",
+      "end_before_query": "산업화로 사람들의 생활은 어떻게 달라졌을까요? / 주제 마무리",
+      "resource_id": "main"
+    },
+    {
+      "lesson_id": "lesson-005",
+      "sheet_name": "12-13차시",
+      "display_title": "산업화로 사람들의 생활은 어떻게 달라졌을까요? / 주제 마무리",
+      "title_query": "산업화로 사람들의 생활은 어떻게 달라졌을까요? / 주제 마무리",
+      "end_before_query": null,
+      "resource_id": "main"
+    }
+  ]
+}

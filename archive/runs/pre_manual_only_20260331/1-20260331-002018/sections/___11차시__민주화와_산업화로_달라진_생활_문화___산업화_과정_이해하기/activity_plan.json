@@ -1,0 +1,65 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-03-30T15:43:44.275072+00:00",
+  "lesson_id": "11차시",
+  "activities": [
+    {
+      "activity_id": "act-11-1",
+      "lesson_id": "11차시",
+      "object_role": "learning_note",
+      "lesson_flow_stage": "during",
+      "activity_type": "freeform_html",
+      "level": "core",
+      "learning_goal": "산업화와 민주화 과정에서 일어난 생활 문화의 주요 변화를 정리할 수 있다.",
+      "prompt_text": "수업을 들으며 민주화와 산업화가 우리 생활 모습을 어떻게 바꾸었는지 핵심 내용을 자유롭게 메모해 봅시다.",
+      "layout_template": "freeform_html",
+      "html_content": "<!DOCTYPE html><html lang='ko'><head><meta charset='UTF-8'><style>@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap');body{width:1600px;margin:0;padding:40px;background:transparent;font-family:'Noto Sans KR',sans-serif;box-sizing:border-box;}.card{background:#ffffff;border-radius:40px;padding:60px;box-shadow:none;border:1px solid #eee;}.header{margin-bottom:48px;border-left:12px solid #333;padding-left:24px;}.header h1{font-size:48px;margin:0;color:#111;letter-spacing:-1px;}.header p{font-size:24px;color:#666;margin:12px 0 0 0;}.note-container{display:flex;flex-direction:column;gap:32px;}.label{font-size:22px;font-weight:700;color:#333;margin-bottom:12px;display:block;}.writing-area{background:#fff;border:3px solid #333;border-radius:24px;min-height:700px;position:relative;}.writing-area::before{content:'';position:absolute;top:0;left:0;right:0;bottom:0;background-image:linear-gradient(#eee 1px, transparent 1px);background-size:100% 48px;margin:24px;pointer-events:none;}</style></head><body><div class='card'><div class='header'><h1>오늘의 배움 기록장</h1><p>민주화와 산업화로 달라진 생활 문화를 중심으로</p></div><div class='note-container'><div><span class='label'>수업 시간 핵심 메모 (자유롭게 기록하기)</span><div class='writing-area'></div></div></div></div></body></html>",
+      "source_refs": [
+        10
+      ],
+      "student_writing_zones": [
+        {
+          "zone_id": "class_notes",
+          "label": "수업 시간 핵심 정리",
+          "input_area_type": "free-writing",
+          "min_height": 700
+        }
+      ],
+      "estimated_minutes": 15,
+      "review_status": "draft",
+      "teacher_notes": ""
+    },
+    {
+      "activity_id": "act-11-2",
+      "lesson_id": "11차시",
+      "object_role": "activity_area",
+      "lesson_flow_stage": "after",
+      "activity_type": "freeform_html",
+      "level": "on-level",
+      "learning_goal": "산업화의 결과물이 우리 삶에 미친 영향을 구체적인 사례를 통해 설명할 수 있다.",
+      "prompt_text": "우리 주변에서 산업화의 결과로 생겨난 물건이나 생활 방식을 하나 찾아보고, 그것이 우리 삶을 어떻게 바꾸었는지 분석해 봅시다.",
+      "layout_template": "freeform_html",
+      "html_content": "<!DOCTYPE html><html lang='ko'><head><meta charset='UTF-8'><style>@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap');body{width:1600px;margin:0;padding:40px;background:transparent;font-family:'Noto Sans KR',sans-serif;box-sizing:border-box;}.card{background:#ffffff;border-radius:40px;padding:60px;border:1px solid #eee;}.header{margin-bottom:48px;text-align:center;}.header h1{font-size:42px;margin:0;color:#111;background:#f0f0f0;display:inline-block;padding:12px 32px;border-radius:100px;}.grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;margin-top:40px;}.box{background:#fff;border:3px solid #333;border-radius:24px;padding:32px;display:flex;flex-direction:column;}.box-title{font-size:24px;font-weight:700;margin-bottom:20px;color:#333;display:flex;align-items:center;gap:12px;}.box-title::before{content:'';width:12px;height:12px;background:#333;border-radius:50%;}.drawing-zone{flex-grow:1;min-height:450px;border:2px dashed #ccc;border-radius:16px;background:#fafafa;display:flex;align-items:center;justify-content:center;color:#999;font-size:20px;}.text-zone{flex-grow:1;min-height:450px;font-size:22px;line-height:1.6;}</style></head><body><div class='card'><div class='header'><h1>산업화의 흔적 분석하기</h1></div><p style='font-size:24px; text-align:center; color:#444; margin-bottom:40px;'>우리 집이나 학교에서 '산업화' 덕분에 가능해진 것을 찾아보세요.</p><div class='grid'><div class='box'><div class='box-title'>내가 찾은 산업화의 결과물 (그림/사진)</div><div class='drawing-zone'>여기에 그림을 그리거나 사진을 첨부하세요</div></div><div class='box'><div class='box-title'>이것이 우리 삶을 어떻게 바꾸었나요?</div><div class='text-zone'>[과거에는 어땠을까요?]<br><br><br>[지금은 어떤 점이 편리해졌나요?]<br><br><br></div></div></div></div></body></html>",
+      "source_refs": [
+        10
+      ],
+      "student_writing_zones": [
+        {
+          "zone_id": "evidence_visual",
+          "label": "사례 시각화",
+          "input_area_type": "free-writing",
+          "min_height": 450
+        },
+        {
+          "zone_id": "impact_reasoning",
+          "label": "변화 분석",
+          "input_area_type": "free-writing",
+          "min_height": 450
+        }
+      ],
+      "estimated_minutes": 15,
+      "review_status": "draft",
+      "teacher_notes": ""
+    }
+  ]
+}

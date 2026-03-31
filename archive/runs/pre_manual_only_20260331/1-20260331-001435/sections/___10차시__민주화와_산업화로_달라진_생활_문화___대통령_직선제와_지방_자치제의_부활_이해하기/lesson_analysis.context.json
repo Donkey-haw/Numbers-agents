@@ -1,0 +1,39 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-03-30T15:19:13.359670+00:00",
+  "pdf_path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/textbook/사회/[사회]6_1_교과서.pdf",
+  "current_section": {
+    "section_key": "___10차시__민주화와_산업화로_달라진_생활_문화___대통령_직선제와_지방_자치제의_부활_이해하기",
+    "sheet_name": "10차시",
+    "lesson_title": "민주화와 산업화로 달라진 생활 문화 — 대통령 직선제와 지방 자치제의 부활 이해하기",
+    "title_query": "민주화와 산업화로 달라진 생활 문화 — 대통령 직선제와 지방 자치제의 부활 이해하기",
+    "pdf_pages": [
+      29
+    ],
+    "baseline_analysis_path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/1-20260331-001435/source/local_baseline/___10차시__민주화와_산업화로_달라진_생활_문화___대통령_직선제와_지방_자치제의_부활_이해하기.lesson_analysis.json",
+    "extracted_text": "민주화\n산업화\n생활 문화\n4.19 혁명\n5.18 민주화 운동\n6월 민주 항쟁\n  지방 자치제\n시민 의식\n중화학 공업\n생태환경\n경제성장\n시민운동\n직선제\n독재\n경공업\n1  낱말 구름을 보고, 이 주제에서 배울 내용이 무엇인지 생각해 봅시다.\n2  낱말 구름에 있는 낱말 9개를 골라서 빙고 놀이를 해 봅시다.\n우리나라에 \n본격적으로 컴퓨터가\n보급된 시기는 언제일까?\n2\n27\n2   민주화와 산업화로 달라진 생활 문화",
+    "extracted_text_truncated": false
+  },
+  "neighbor_sections": [
+    {
+      "relation": "previous",
+      "section_key": "___8-9차시__민주화와_산업화로_달라진_생활_문화___4_19_혁명_이해하기",
+      "sheet_name": "8-9차시",
+      "lesson_title": "민주화와 산업화로 달라진 생활 문화 — 4·19 혁명 이해하기",
+      "title_query": "민주화와 산업화로 달라진 생활 문화 — 4·19 혁명 이해하기",
+      "pdf_pages": [
+        29
+      ]
+    },
+    {
+      "relation": "next",
+      "section_key": "___11차시__민주화와_산업화로_달라진_생활_문화___산업화_과정_이해하기",
+      "sheet_name": "11차시",
+      "lesson_title": "민주화와 산업화로 달라진 생활 문화 — 산업화 과정 이해하기",
+      "title_query": "민주화와 산업화로 달라진 생활 문화 — 산업화 과정 이해하기",
+      "pdf_pages": [
+        10
+      ]
+    }
+  ]
+}

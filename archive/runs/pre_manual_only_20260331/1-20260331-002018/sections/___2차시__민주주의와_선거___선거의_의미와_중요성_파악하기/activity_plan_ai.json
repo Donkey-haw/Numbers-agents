@@ -1,0 +1,71 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-03-31T10:00:00+09:00",
+  "lesson_id": "2차시",
+  "activities": [
+    {
+      "activity_id": "act-2-1",
+      "lesson_id": "2차시",
+      "object_role": "activity_area",
+      "lesson_flow_stage": "during",
+      "activity_type": "freeform_html",
+      "level": "core",
+      "learning_goal": "선거의 상징적 의미를 추론하고 자신만의 방식으로 표현할 수 있다.",
+      "prompt_text": "교과서 54쪽의 몸으로 만든 기호처럼, '민주주의와 선거'를 상징하는 여러분만의 동작이나 기호를 디자인하고 그 의미를 설명해 봅시다.",
+      "layout_template": "freeform_html",
+      "html_content": "<!DOCTYPE html><html lang='ko'><head><meta charset='UTF-8'><style>@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap');body{width:1600px;margin:0;padding:40px;background:transparent;font-family:'Noto Sans KR',sans-serif;color:#333;box-sizing:border-box;}.card{background:#fff;border-radius:32px;padding:48px;box-shadow:0 10px 30px rgba(0,0,0,0.05);border:1px solid #eee;}.badge{display:inline-block;background:#E3F2FD;color:#1976D2;padding:8px 20px;border-radius:12px;font-weight:700;margin-bottom:24px;font-size:20px;}h1{font-size:36px;margin:0 0 16px 0;color:#111;}p.instruction{font-size:24px;line-height:1.6;margin-bottom:40px;color:#444;}.layout-grid{display:grid;grid-template-columns:1fr 1fr;gap:32px;}.zone-container{display:flex;flex-direction:column;}.zone-label{font-weight:700;font-size:22px;margin-bottom:12px;display:flex;align-items:center;}.zone-label::before{content:'';display:inline-block;width:8px;height:24px;background:#1976D2;margin-right:12px;border-radius:4px;}.writing-area{background:#fff;border:3px solid #333;border-radius:20px;min-height:600px;flex:1;position:relative;}.writing-area::after{content:'Apple Pencil로 이곳에 그리거나 쓰세요';position:absolute;top:20px;right:20px;font-size:14px;color:#ccc;font-style:italic;}</style></head><body><div class='card'><div class='badge'>활동: 생각 표현하기</div><h1>민주주의와 선거의 상징 디자인</h1><p class='instruction'>사람들이 몸으로 만든 기호는 어떤 의미를 담고 있을까요? '선거는 민주주의의 꽃'이라는 말처럼 여러분이 생각하는 선거의 의미를 그림과 글로 표현해 봅시다.</p><div class='layout-grid'><div class='zone-container'><div class='zone-label'>상징 기호/동작 그리기</div><div class='writing-area'></div></div><div class='zone-container'><div class='zone-label'>담긴 의미 설명하기</div><div class='writing-area'></div></div></div></div></body></html>",
+      "source_refs": [
+        54
+      ],
+      "teacher_notes": "교과서의 사진을 보고 선거가 왜 우리 사회에서 중요한 약속인지 생각해보게 유도합니다. 단순히 그림을 그리는 것보다 그 기호가 왜 선거를 대표하는지 논리적으로 설명하는 데 중점을 둡니다.",
+      "student_writing_zones": [
+        {
+          "zone_id": "symbol_drawing",
+          "label": "상징 기호/동작 그리기",
+          "input_area_type": "free-writing",
+          "min_height": 600
+        },
+        {
+          "zone_id": "meaning_explanation",
+          "label": "담긴 의미 설명하기",
+          "input_area_type": "free-writing",
+          "min_height": 600
+        }
+      ],
+      "estimated_minutes": 15,
+      "review_status": "draft"
+    },
+    {
+      "activity_id": "act-2-2",
+      "lesson_id": "2차시",
+      "object_role": "learning_note",
+      "lesson_flow_stage": "after",
+      "activity_type": "learning_note",
+      "level": "core",
+      "learning_goal": "민주주의에서 선거의 의미와 중요성을 자신의 언어로 정리할 수 있다.",
+      "prompt_text": "오늘 수업을 통해 알게 된 선거의 의미와 중요성을 핵심 키워드를 중심으로 정리해 봅시다.",
+      "layout_template": "freeform_html",
+      "html_content": "<!DOCTYPE html><html lang='ko'><head><meta charset='UTF-8'><style>@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap');body{width:1600px;margin:0;padding:40px;background:transparent;font-family:'Noto Sans KR',sans-serif;color:#333;box-sizing:border-box;}.card{background:#fff;border-radius:32px;padding:48px;border:2px solid #EEE;}.header{border-bottom:4px solid #FFD54F;padding-bottom:24px;margin-bottom:40px;}h1{font-size:40px;margin:0;color:#111;display:flex;align-items:center;}h1::before{content:'📝';margin-right:16px;}.note-section{margin-bottom:40px;}.note-title{font-size:26px;font-weight:700;margin-bottom:16px;color:#F57F17;}.writing-zone{background:#fff;border:3px solid #333;border-radius:16px;min-height:450px;padding:20px;font-size:20px;line-height:1.8;}.keyword-box{background:#FFF9C4;border:1px dashed #F57F17;padding:16px;border-radius:12px;margin-bottom:24px;font-size:18px;display:flex;gap:20px;}.keyword-item{background:#fff;padding:4px 12px;border-radius:8px;border:1px solid #F57F17;font-weight:700;}</style></head><body><div class='card'><div class='header'><h1>나의 선거 배움 기록 노트</h1></div><div class='keyword-box'><span>핵심 키워드: </span><span class='keyword-item'>주체적 참여</span><span class='keyword-item'>민주주의</span><span class='keyword-item'>대표자 선출</span><span class='keyword-item'>권리 행사</span></div><div class='note-section'><div class='note-title'>1. 민주주의에서 선거는 어떤 '의미'를 가질까?</div><div class='writing-zone'></div></div><div class='note-section'><div class='note-title'>2. 선거가 우리 생활에 꼭 '중요한 이유'는 무엇일까?</div><div class='writing-zone'></div></div></div></body></html>",
+      "source_refs": [
+        54
+      ],
+      "teacher_notes": "선거를 단순히 형식적인 절차로 보지 않고, 국민의 권리를 행사하는 주체적인 참여 과정임을 강조하여 서술하도록 지도합니다.",
+      "student_writing_zones": [
+        {
+          "zone_id": "election_meaning",
+          "label": "선거의 의미 정리",
+          "input_area_type": "free-writing",
+          "min_height": 450
+        },
+        {
+          "zone_id": "election_importance",
+          "label": "선거의 중요성 정리",
+          "input_area_type": "free-writing",
+          "min_height": 450
+        }
+      ],
+      "estimated_minutes": 10,
+      "review_status": "draft"
+    }
+  ]
+}

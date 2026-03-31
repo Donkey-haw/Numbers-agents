@@ -11,17 +11,25 @@ STAGE_STATUS_VALUES = {
     "succeeded",
     "succeeded_with_warning",
     "failed",
-    "failed_fallback_used",
     "blocked",
 }
 REVIEW_DECISION_VALUES = {"pass", "pass_with_warning", "needs_revision", "blocked"}
 RUN_FINAL_STATUS_VALUES = {"pending", "running", "success", "partial-with-warning", "textbook-only", "failed"}
 DEFAULT_STAGE_ORDER = [
-    "source_parse_agent",
+    "document_inventory_agent",
+    "pdf_extract_agent",
+    "page_index_agent",
+    "schedule_parse_agent",
+    "lesson_query_agent",
+    "page_candidate_agent",
+    "boundary_decision_agent",
+    "boundary_validation_agent",
+    "source_boundary_agent",
+    "source_validation_agent",
     "lesson_analysis_agent",
-    "review_lesson_agent",
+    "lesson_review_agent",
     "activity_plan_agent",
-    "review_activity_agent",
+    "activity_review_agent",
     "html_card_agent",
     "capture_agent",
     "numbers_compose_agent",
@@ -42,6 +50,12 @@ def sanitize_name(value: str) -> str:
     return "".join(char if char.isalnum() or char in "-_." else "_" for char in value)
 
 
+def section_artifact_stem(section: dict) -> str:
+    base = section.get("card_file") or section.get("sheet_name") or "section"
+    title = section.get("title") or section.get("sheet_name") or "untitled"
+    return sanitize_name(f"{base}__{title}")
+
+
 def build_run_id(config_stem: str) -> str:
     return f"{sanitize_name(config_stem)}-{run_timestamp()}"
 
@@ -49,7 +63,7 @@ def build_run_id(config_stem: str) -> str:
 def build_run_root(project_root: Path, run_id: str) -> Path:
     root = project_root / "artifacts" / "runs" / run_id
     root.mkdir(parents=True, exist_ok=True)
-    for name in ("source", "sections", "render", "output"):
+    for name in ("source", "sections", "render", "output", "events"):
         (root / name).mkdir(parents=True, exist_ok=True)
     return root
 
@@ -59,7 +73,14 @@ def write_json(path: Path, payload: dict | list) -> None:
     path.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
 
-def make_status_summary(stage: str, status: str = "pending", fallback_used: bool = False, warning_count: int = 0, error_count: int = 0) -> dict:
+def make_status_summary(
+    stage: str,
+    status: str = "pending",
+    fallback_used: bool = False,
+    warning_count: int = 0,
+    error_count: int = 0,
+    details: dict | None = None,
+) -> dict:
     if status not in STAGE_STATUS_VALUES:
         raise ValueError(f"Invalid stage status: {status}")
     return {
@@ -68,6 +89,7 @@ def make_status_summary(stage: str, status: str = "pending", fallback_used: bool
         "fallback_used": fallback_used,
         "warning_count": warning_count,
         "error_count": error_count,
+        "details": details or {},
     }
 
 

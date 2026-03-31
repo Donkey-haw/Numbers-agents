@@ -1,0 +1,126 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-03-30T15:57:43.531057+00:00",
+  "lesson_id": "8차시",
+  "activities": [
+    {
+      "activity_id": "act-8-1",
+      "lesson_id": "8차시",
+      "object_role": "activity_area",
+      "lesson_flow_stage": "before",
+      "activity_type": "freeform_html",
+      "level": "core",
+      "learning_goal": "낱말 구름을 통해 대단원에서 배울 핵심 개념을 예측하고 자신의 관심사를 연결할 수 있다.",
+      "prompt_text": "단원 열기 낱말 구름에서 가장 눈에 띄는 단어 3개를 골라보고, 이 단어들이 '세계'를 배우는 데 왜 중요한지 나의 생각을 적어 봅시다.",
+      "layout_template": "freeform_html",
+      "html_content": "<!DOCTYPE html><html lang='ko'><head><meta charset='UTF-8'><style>body{width:1600px;margin:0;padding:40px;background:transparent;font-family:'Apple SD Gothic Neo', sans-serif;display:flex;justify-content:center;} .card{width:1200px;background:#ffffff;border-radius:32px;padding:48px;box-shadow:0 10px 30px rgba(0,0,0,0.05);border:1px solid #eee;} .header{display:flex;align-items:center;margin-bottom:32px;} .badge{background:#4A90E2;color:#fff;padding:8px 20px;border-radius:12px;font-weight:700;font-size:1.2rem;margin-right:20px;} h1{font-size:2.2rem;color:#222;margin:0;} .instruction{font-size:1.4rem;color:#444;line-height:1.6;margin-bottom:40px;padding-left:10px;border-left:5px solid #4A90E2;} .grid{display:grid;grid-template-columns:repeat(3, 1fr);gap:24px;} .column{display:flex;flex-direction:column;gap:16px;} .word-tag{background:#f0f7ff;border:2px dashed #4A90E2;padding:15px;border-radius:12px;text-align:center;font-weight:bold;font-size:1.3rem;color:#4A90E2;} .writing-zone{background:#fff;border:3px solid #333;border-radius:20px;min-height:450px;padding:20px;font-size:1.2rem;position:relative;} .writing-zone::after{content:'여기에 생각을 기록하세요 (애플 펜슬)';position:absolute;top:20px;left:20px;color:#ccc;font-style:italic;pointer-events:none;}</style></head><body><div class='card'><div class='header'><div class='badge'>단원 열기</div><h1>내가 발견한 세계의 키워드</h1></div><p class='instruction'>교과서의 낱말 구름을 살펴보세요. 당신의 호기심을 자극하는 세 가지 단어는 무엇인가요? 단어를 적고, 그 단어를 통해 무엇을 배우게 될지 예측해 봅시다.</p><div class='grid'><div class='column'><div class='word-tag'>키워드 1</div><div class='writing-zone'></div></div><div class='column'><div class='word-tag'>키워드 2</div><div class='writing-zone'></div></div><div class='column'><div class='word-tag'>키워드 3</div><div class='writing-zone'></div></div></div></div></body></html>",
+      "source_refs": [
+        13,
+        14,
+        15
+      ],
+      "student_writing_zones": [
+        {
+          "zone_id": "keyword_prediction_1",
+          "label": "첫 번째 키워드 예측",
+          "input_area_type": "free-writing",
+          "min_height": 450
+        },
+        {
+          "zone_id": "keyword_prediction_2",
+          "label": "두 번째 키워드 예측",
+          "input_area_type": "free-writing",
+          "min_height": 450
+        },
+        {
+          "zone_id": "keyword_prediction_3",
+          "label": "세 번째 키워드 예측",
+          "input_area_type": "free-writing",
+          "min_height": 450
+        }
+      ],
+      "estimated_minutes": 15,
+      "review_status": "draft",
+      "teacher_notes": ""
+    },
+    {
+      "activity_id": "act-8-2",
+      "lesson_id": "8차시",
+      "object_role": "activity_area",
+      "lesson_flow_stage": "during",
+      "activity_type": "freeform_html",
+      "level": "on-level",
+      "learning_goal": "국회 의사당의 전등 개수에 담긴 의미를 파악하고, 공공 기관이나 상징물에 담긴 사회적 가치를 추론할 수 있다.",
+      "prompt_text": "국회 의사당 천장의 365개 전등은 어떤 약속을 상징할까요? 그 의미를 적어보고, 만약 여러분이 '세계 평화'를 상징하는 건물을 짓는다면 어떤 숫자를 사용하여 어떤 의미를 담고 싶은지 설계해 봅시다.",
+      "layout_template": "freeform_html",
+      "html_content": "<!DOCTYPE html><html lang='ko'><head><meta charset='UTF-8'><style>body{width:1600px;margin:0;padding:40px;background:transparent;font-family:'Apple SD Gothic Neo', sans-serif;} .card{background:#ffffff;border-radius:32px;padding:50px;border:2px solid #333;} .top-section{display:flex;gap:40px;margin-bottom:40px;} .story-box{flex:1;background:#fff9e6;padding:30px;border-radius:20px;border:1px solid #ffcc00;} h2{margin-top:0;color:#d4a017;} .meaning-box{flex:1;border:3px solid #333;border-radius:20px;min-height:250px;padding:20px;} .design-section{background:#f8f9fa;padding:40px;border-radius:24px;border:1px solid #ddd;} .canvas-grid{display:grid;grid-template-columns:1fr 1.5fr;gap:30px;margin-top:20px;} .input-label{font-weight:bold;font-size:1.3rem;margin-bottom:10px;display:block;} .design-draw{background:#fff;border:3px solid #333;min-height:500px;border-radius:16px;} .design-text{background:#fff;border:3px solid #333;min-height:500px;border-radius:16px;padding:20px;}</style></head><body><div class='card'><h1>숫자에 담긴 비밀스러운 약속</h1><div class='top-section'><div class='story-box'><h2>💡 365개의 전등</h2><p>국회 의사당 로비 천장에는 365개의 전등이 달려 있습니다. 1년 365일 내내 국민을 위해 일하겠다는 다짐이 담겨 있죠.</p><strong>이 숫자가 국민들에게 주는 메시지는 무엇일까요?</strong></div><div class='meaning-box'></div></div><div class='design-section'><h2>나만의 상징물 설계하기</h2><p>세계의 평화나 협력을 상징하는 건물을 상상해 보세요. 어떤 숫자를 사용하여 어떤 의미를 전달하고 싶나요?</p><div class='canvas-grid'><div><span class='input-label'>상징물 스케치 (숫자의 활용 모습)</span><div class='design-draw'></div></div><div><span class='input-label'>숫자의 의미와 건물의 이름</span><div class='design-text'></div></div></div></div></div></body></html>",
+      "source_refs": [
+        70,
+        71,
+        72
+      ],
+      "student_writing_zones": [
+        {
+          "zone_id": "symbol_meaning",
+          "label": "365 전등의 의미 추론",
+          "input_area_type": "free-writing",
+          "min_height": 250
+        },
+        {
+          "zone_id": "new_design_sketch",
+          "label": "상징물 디자인 스케치",
+          "input_area_type": "grid",
+          "min_height": 500
+        },
+        {
+          "zone_id": "new_design_logic",
+          "label": "상징 숫자의 의미 설명",
+          "input_area_type": "free-writing",
+          "min_height": 500
+        }
+      ],
+      "estimated_minutes": 20,
+      "review_status": "draft",
+      "teacher_notes": ""
+    },
+    {
+      "activity_id": "act-8-3",
+      "lesson_id": "8차시",
+      "object_role": "learning_note",
+      "lesson_flow_stage": "after",
+      "activity_type": "freeform_html",
+      "level": "core",
+      "learning_goal": "학습 대주제의 핵심 어휘를 정리하고 단원 학습에 대한 자신의 다짐을 기록할 수 있다.",
+      "prompt_text": "오늘 수업을 통해 새롭게 알게 된 '세계'에 대한 생각들을 정리하고, 앞으로의 학습에서 가장 기대되는 점을 적어 봅시다.",
+      "layout_template": "freeform_html",
+      "html_content": "<!DOCTYPE html><html lang='ko'><head><meta charset='UTF-8'><style>body{width:1600px;margin:0;padding:40px;background:transparent;font-family:'Apple SD Gothic Neo', sans-serif;} .card{background:#ffffff;border-radius:24px;padding:40px;border:1px solid #e0e0e0;box-shadow: 0 4px 6px rgba(0,0,0,0.02);} .note-header{border-bottom:4px solid #333;padding-bottom:15px;margin-bottom:30px;display:flex;justify-content:space-between;align-items:flex-end;} .note-title{font-size:2.5rem;font-weight:900;color:#333;margin:0;} .note-meta{color:#666;font-size:1.2rem;} .section-title{background:#333;color:#fff;display:inline-block;padding:8px 20px;border-radius:8px;font-size:1.3rem;margin-bottom:20px;} .writing-area{background:#fff;border:3px solid #333;border-radius:16px;min-height:420px;margin-bottom:40px;padding:25px;font-size:1.3rem;line-height:1.8;} .grid-2{display:grid;grid-template-columns:1fr 1fr;gap:30px;}</style></head><body><div class='card'><div class='note-header'><h1 class='note-title'>수업 성찰 메모: 세계를 여는 문</h1><span class='note-meta'>제1단원 도입 학습</span></div><div class='section-title'>오늘의 핵심 낱말 & 질문 정리</div><div class='writing-area'></div><div class='grid-2'><div><div class='section-title'>내가 생각하는 '세계'란?</div><div class='writing-area' style='min-height:350px;'></div></div><div><div class='section-title'>이번 단원에서 꼭 알고 싶은 것</div><div class='writing-area' style='min-height:350px;'></div></div></div></div></body></html>",
+      "source_refs": [
+        13,
+        127
+      ],
+      "student_writing_zones": [
+        {
+          "zone_id": "core_summary",
+          "label": "오늘의 핵심 정리",
+          "input_area_type": "free-writing",
+          "min_height": 420
+        },
+        {
+          "zone_id": "world_definition",
+          "label": "내가 정의하는 세계",
+          "input_area_type": "free-writing",
+          "min_height": 350
+        },
+        {
+          "zone_id": "learning_expectation",
+          "label": "학습 기대 평",
+          "input_area_type": "free-writing",
+          "min_height": 350
+        }
+      ],
+      "estimated_minutes": 10,
+      "review_status": "draft",
+      "teacher_notes": ""
+    }
+  ]
+}

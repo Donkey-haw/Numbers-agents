@@ -1,0 +1,95 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-03-31T00:00:00Z",
+  "lesson_id": "1차시",
+  "sheet_name": "1차시",
+  "lesson_title": "1단원 도입 — [단원 도입] 우리 친구는 누구?",
+  "lesson_type": "intro",
+  "pdf_pages": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "essential_question": "6학년 1학기 사회 수업에서는 어떤 내용을 배우며, 평화 통일과 민주주의는 우리 삶과 어떤 관련이 있을까?",
+  "learning_goals": [
+    "사회 교과서의 구성과 특징을 이해하고 배움의 즐거움을 느낄 수 있다.",
+    "1단원 '평화 통일을 위한 노력, 민주화와 산업화'에서 배울 핵심 주제를 낱말 구름을 통해 탐색할 수 있다.",
+    "단원 도입부의 힌트를 통해 학습의 동기를 유발하고 주요 개념에 친숙해질 수 있다."
+  ],
+  "key_concepts": [
+    "평화 통일",
+    "민주화",
+    "산업화",
+    "분단",
+    "비무장 지대",
+    "교류",
+    "남북 정상 회담"
+  ],
+  "vocabulary": [
+    "사회",
+    "한반도기",
+    "낱말 구름",
+    "우리봇",
+    "교과 역량"
+  ],
+  "misconceptions": [
+    "사회 과목이 단순히 지식을 암기하는 과목이라고 생각할 수 있다.",
+    "평화 통일이나 민주주의가 일상생활과는 거리가 먼 거대한 담론이라고만 여길 수 있다."
+  ],
+  "difficulty_band": "on-level",
+  "content_chunks": [
+    {
+      "chunk_id": "1차시-chunk-1",
+      "label": "배움 여행의 시작과 교과서 안내",
+      "content_type": "text",
+      "knowledge_type": "procedure",
+      "summary": "사회 과목의 의미와 역할에 대해 알아보고, 교과서의 구성(본문, 우리봇, 스스로/함께해 보기 등)과 특징을 파악합니다.",
+      "source_pages": [
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "chunk_id": "1차시-chunk-2",
+      "label": "대단원 및 주제 도입",
+      "content_type": "mixed",
+      "knowledge_type": "concept",
+      "summary": "1단원에서 배울 '평화 통일을 위한 노력'과 '민주화와 산업화'의 전반적인 내용을 그림과 힌트로 살펴보고 학습 목표를 확인합니다.",
+      "source_pages": [
+        8,
+        9,
+        10
+      ]
+    },
+    {
+      "chunk_id": "1차시-chunk-3",
+      "label": "낱말 구름과 빙고 놀이",
+      "content_type": "activity",
+      "knowledge_type": "application",
+      "summary": "평화, 통일, 분단 등 주제와 관련된 낱말들로 구성된 낱말 구름을 보고 빙고 놀이를 하며 주요 용어에 익숙해집니다.",
+      "source_pages": [
+        11
+      ]
+    }
+  ],
+  "source_page_refs": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "analysis_confidence": 0.9,
+  "review_status": "draft",
+  "notes": "텍스트북 컨텍스트의 추출된 내용을 바탕으로 교과서 구성 안내와 단원 도입 활동(낱말 구름 등)을 구체화하여 분석함."
+}

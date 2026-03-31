@@ -1,0 +1,47 @@
+{
+  "schema_version": "1.0.0",
+  "status": "succeeded_with_warning",
+  "blocking_issues": [],
+  "warnings": [
+    "lesson-001: boundary is low_confidence",
+    "lesson-002: start_page overlaps with previous lesson boundary",
+    "lesson-002: boundary is low_confidence",
+    "lesson-003: start_page overlaps with previous lesson boundary",
+    "lesson-003: boundary is low_confidence",
+    "lesson-004: boundary is low_confidence",
+    "lesson-005: start_page overlaps with previous lesson boundary",
+    "lesson-005: boundary is low_confidence"
+  ],
+  "entries": [
+    {
+      "lesson_id": "lesson-001",
+      "resource_id": "main",
+      "status": "low_confidence",
+      "message": "boundary is low_confidence"
+    },
+    {
+      "lesson_id": "lesson-002",
+      "resource_id": "main",
+      "status": "low_confidence",
+      "message": "boundary overlaps with previous lesson"
+    },
+    {
+      "lesson_id": "lesson-003",
+      "resource_id": "main",
+      "status": "low_confidence",
+      "message": "boundary overlaps with previous lesson"
+    },
+    {
+      "lesson_id": "lesson-004",
+      "resource_id": "main",
+      "status": "low_confidence",
+      "message": "boundary is low_confidence"
+    },
+    {
+      "lesson_id": "lesson-005",
+      "resource_id": "main",
+      "status": "low_confidence",
+      "message": "boundary overlaps with previous lesson"
+    }
+  ]
+}

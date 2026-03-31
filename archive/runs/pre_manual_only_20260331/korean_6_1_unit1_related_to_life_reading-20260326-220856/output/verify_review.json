@@ -1,0 +1,28 @@
+{
+  "schema_version": "1.0.0",
+  "stage": "review_verify_agent",
+  "lesson_id": "6-1-국어-1. 자신의 삶과 관련지어 읽어요",
+  "status": "succeeded_with_warning",
+  "decision": "pass_with_warning",
+  "findings": [
+    {
+      "severity": "info",
+      "message": "최종 Numbers 파일이 지정된 경로에 정상적으로 생성되었습니다.",
+      "evidence_refs": [
+        "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/korean_6_1_unit1_related_to_life_reading-20260326-220856/output/6-1-국어-1. 자신의 삶과 관련지어 읽어요.numbers"
+      ]
+    },
+    {
+      "severity": "warning",
+      "message": "파이프라인 실행 중 lesson_analysis_agent 및 activity_plan_agent에서 오류가 발생하여 fallback 메커니즘이 작동되었습니다. 최종 파일의 내용이 의도한 AI 분석 결과와 다를 수 있으므로 검토가 필요합니다.",
+      "evidence_refs": [
+        "run_manifest.stage_summary"
+      ]
+    }
+  ],
+  "blocking_issues": [],
+  "warnings": [
+    "lesson_analysis_agent fallback used",
+    "activity_plan_agent fallback used"
+  ]
+}

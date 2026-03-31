@@ -1,0 +1,71 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-03-31T00:00:00Z",
+  "lesson_id": "12차시",
+  "sheet_name": "12차시",
+  "lesson_title": "국가기관이 하는 일 — 법원의 구성과 하는 일 파악하기",
+  "lesson_type": "core",
+  "pdf_pages": [
+    73
+  ],
+  "essential_question": "민주 국가에서 법원은 어떤 역할을 하며, 무엇을 상징하나요?",
+  "learning_goals": [
+    "국가기관으로서 법원의 의미를 설명할 수 있다.",
+    "대법원 건물의 상징물과 대법원 입구의 문구를 통해 법원이 추구하는 가치를 파악할 수 있다."
+  ],
+  "key_concepts": [
+    "국가기관",
+    "법원",
+    "대법원",
+    "독립",
+    "정의",
+    "형평"
+  ],
+  "vocabulary": [
+    "국가기관",
+    "국회",
+    "행정부",
+    "법원",
+    "형평",
+    "대법원"
+  ],
+  "misconceptions": [
+    "국가기관이 행정부만을 의미한다고 오해할 수 있으나, 국회와 법원도 포함됨을 명시한다."
+  ],
+  "difficulty_band": "on-level",
+  "content_chunks": [
+    {
+      "chunk_id": "12차시-chunk-1",
+      "label": "국가기관의 정의",
+      "content_type": "text",
+      "knowledge_type": "concept",
+      "summary": "민주 국가에서 나랏일을 하는 국회, 행정부, 법원을 통칭하여 국가기관이라고 함을 이해한다.",
+      "source_pages": [
+        73
+      ],
+      "suggested_activity_types": [
+        "learning_note"
+      ]
+    },
+    {
+      "chunk_id": "12차시-chunk-2",
+      "label": "법원과 대법원의 상징",
+      "content_type": "mixed",
+      "knowledge_type": "concept",
+      "summary": "우리나라 최고 법원인 대법원 건물의 구조(독립, 정의, 형평 상징)와 입구의 가치(자유, 평등, 정의)를 통해 법원의 역할을 살펴본다.",
+      "source_pages": [
+        73
+      ],
+      "suggested_activity_types": [
+        "see_think_wonder",
+        "worksheet"
+      ]
+    }
+  ],
+  "source_page_refs": [
+    73
+  ],
+  "analysis_confidence": 0.95,
+  "review_status": "draft",
+  "notes": "추출된 텍스트(73쪽)를 바탕으로 법원의 정의와 대법원의 상징적 의미를 중심으로 분석을 고도화함. 기존 베이스라인의 131쪽 내용은 현재 섹션과 무관하여 수정됨."
+}

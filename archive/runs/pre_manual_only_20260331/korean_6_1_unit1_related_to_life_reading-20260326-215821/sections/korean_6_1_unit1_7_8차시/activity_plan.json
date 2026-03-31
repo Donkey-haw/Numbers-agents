@@ -1,0 +1,107 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-03-26T13:02:27.473099+00:00",
+  "lesson_id": "7-8차시",
+  "activities": [
+    {
+      "activity_id": "act-7-8-1",
+      "lesson_id": "7-8차시",
+      "object_role": "activity_area",
+      "lesson_flow_stage": "during",
+      "activity_type": "freeform_html",
+      "level": "core",
+      "learning_goal": "인물이 처한 상황에서 선택의 근거가 된 핵심 가치를 비교하고 분석할 수 있다.",
+      "prompt_text": "버들이와 나루가 다이빙대 위에서 느꼈을 마음과 각자가 중요하게 생각하는 '가치'를 비교해 봅시다.",
+      "layout_template": "freeform_html",
+      "html_content": "<!DOCTYPE html><html lang='ko'><head><meta charset='UTF-8'><style>@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap');body{width:1600px;margin:0;padding:40px;background:transparent;font-family:'Noto Sans KR',sans-serif;color:#333;box-sizing:border-box;}.card{background:#fff;padding:50px;border-radius:32px;box-shadow:none;border:none;}.header{display:flex;align-items:center;margin-bottom:40px;}.badge{background:#4A90E2;color:#fff;padding:12px 24px;border-radius:12px;font-weight:700;font-size:24px;margin-right:20px;}.title{font-size:36px;font-weight:700;}.comparison-container{display:flex;gap:40px;margin-top:20px;}.column{flex:1;display:flex;flex-direction:column;}.name-tag{font-size:28px;font-weight:700;margin-bottom:15px;padding-left:10px;border-left:8px solid #4A90E2;}.writing-zone{background:#fff;border:3px solid #333;border-radius:20px;min-height:450px;padding:25px;font-size:22px;line-height:1.6;position:relative;}.writing-zone::after{content:'이 인물이 중요하게 생각하는 것(가치)은 무엇인가요?';position:absolute;top:20px;left:25px;color:#ccc;pointer-events:none;}.label-sub{font-size:18px;color:#666;margin-top:10px;margin-bottom:20px;}</style></head><body><div class='card'><div class='header'><div class='badge'>분석하기</div><div class='title'>두 인물의 마음과 가치 비교</div></div><div class='label-sub'>이야기 속 상황에서 두 인물이 내린 결정과 그 속에 담긴 생각을 정리해 보세요.</div><div class='comparison-container'><div class='column'><div class='name-tag'>버들이 (다이빙을 선택함)</div><div class='writing-zone'></div></div><div class='column'><div class='name-tag'>나루 (걱정하고 망설임)</div><div class='writing-zone'></div></div></div></div></body></html>",
+      "source_refs": [
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36
+      ],
+      "teacher_notes": "단순히 상황을 요약하기보다, 각 인물의 선택 이면에 있는 '도전', '안전', '재미', '성실' 등의 가치 단어를 찾아내도록 유도합니다.",
+      "student_writing_zones": [
+        {
+          "zone_id": "beodeul_value",
+          "label": "버들이의 가치 분석",
+          "input_area_type": "free-writing",
+          "min_height": 450
+        },
+        {
+          "zone_id": "naru_value",
+          "label": "나루의 가치 분석",
+          "input_area_type": "free-writing",
+          "min_height": 450
+        }
+      ],
+      "estimated_minutes": 15,
+      "review_status": "draft"
+    },
+    {
+      "activity_id": "act-7-8-2",
+      "lesson_id": "7-8차시",
+      "object_role": "worksheet",
+      "lesson_flow_stage": "during",
+      "activity_type": "freeform_html",
+      "level": "core",
+      "learning_goal": "인물이 추구하는 가치를 자신의 삶과 관련지어 생각의 변화를 서술할 수 있다.",
+      "prompt_text": "버들이처럼 나에게도 용기가 필요했던 '다이빙대' 같은 순간이 있었나요? 그 경험을 통해 내가 깨달은 가치를 적어 봅시다.",
+      "layout_template": "freeform_html",
+      "html_content": "<!DOCTYPE html><html lang='ko'><head><meta charset='UTF-8'><style>@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap');body{width:1600px;margin:0;padding:40px;background:transparent;font-family:'Noto Sans KR',sans-serif;color:#333;box-sizing:border-box;}.card{background:#fff;padding:50px;border-radius:32px;border:none;}.header{display:flex;align-items:center;margin-bottom:30px;}.badge{background:#FF9F43;color:#fff;padding:12px 24px;border-radius:12px;font-weight:700;font-size:24px;margin-right:20px;}.title{font-size:36px;font-weight:700;}.question-block{margin-top:30px;}.question-text{font-size:26px;font-weight:700;margin-bottom:20px;color:#2c3e50;}.writing-area{background:#fff;border:3px solid #333;border-radius:20px;min-height:550px;padding:30px;font-size:24px;line-height:1.8;}.hint-box{background:#f8f9fa;padding:20px;border-radius:15px;margin-top:20px;border-left:6px solid #FF9F43;font-size:20px;color:#555;}</style></head><body><div class='card'><div class='header'><div class='badge'>나의 삶 연결</div><div class='title'>나의 '다이빙대'는 어디인가요?</div></div><div class='question-block'><div class='question-text'>망설여졌지만 용기를 내어 도전했던 일이나, 내가 소중하게 여기는 가치가 드러난 경험을 자유롭게 써 봅시다.</div><div class='writing-area'></div><div class='hint-box'><strong>도움말:</strong> 처음 시작한 운동, 친구에게 먼저 건넨 말, 끝까지 포기하지 않았던 숙제 등 사소한 경험도 괜찮습니다. 그 일을 통해 나는 무엇을 소중히 여기는 사람이 되었나요?</div></div></div></body></html>",
+      "source_refs": [
+        37,
+        38
+      ],
+      "teacher_notes": "학생들이 자신의 삶에서 '가치'를 발견하는 구체적인 에피소드를 떠올리도록 돕습니다.",
+      "student_writing_zones": [
+        {
+          "zone_id": "my_experience",
+          "label": "나의 경험과 가치 쓰기",
+          "input_area_type": "free-writing",
+          "min_height": 550
+        }
+      ],
+      "estimated_minutes": 20,
+      "review_status": "draft"
+    },
+    {
+      "activity_id": "act-7-8-3",
+      "lesson_id": "7-8차시",
+      "object_role": "activity_area",
+      "lesson_flow_stage": "after",
+      "activity_type": "freeform_html",
+      "level": "extension",
+      "learning_goal": "자신이 추구하는 가치를 바탕으로 인물에게 전하고 싶은 마음을 편지로 표현할 수 있다.",
+      "prompt_text": "이야기 속 인물에게 내가 발견한 가치와 응원의 마음을 담아 편지를 써 봅시다.",
+      "layout_template": "freeform_html",
+      "html_content": "<!DOCTYPE html><html lang='ko'><head><meta charset='UTF-8'><style>@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap');body{width:1600px;margin:0;padding:40px;background:transparent;font-family:'Noto Sans KR',sans-serif;color:#333;box-sizing:border-box;}.card{background:#fff;padding:60px;border-radius:32px;border:4px double #333;position:relative;}.header{text-align:center;margin-bottom:50px;}.title{font-size:42px;font-weight:700;color:#1a1a1a;border-bottom:3px solid #333;padding-bottom:15px;display:inline-block;}.letter-container{margin-top:20px;}.letter-paper{background:#fff;border:3px solid #333;border-radius:10px;min-height:750px;padding:50px;background-image:linear-gradient(#eee .1em, transparent .1em);background-size:100% 3em;line-height:3em;font-size:26px;}.stamp-zone{position:absolute;top:60px;right:60px;width:150px;height:180px;border:2px dashed #333;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;font-size:16px;color:#666;}.stamp-zone span{margin-top:10px;font-weight:700;}</style></head><body><div class='card'><div class='stamp-zone'><div style='font-size:40px;'>✉️</div><span>여기에 나만의<br>가치 인장을<br>그려보세요</span></div><div class='header'><div class='title'>가치를 담아 전하는 편지</div></div><div class='letter-container'><div class='letter-paper'></div></div></div></body></html>",
+      "source_refs": [
+        38
+      ],
+      "teacher_notes": "단순한 인사말보다는 '너의 어떤 행동에서 이런 가치를 느꼈어', '나도 이런 가치를 중요하게 생각해'라는 내용이 포함되도록 지도합니다. 우측 상단 '가치 인장' 칸에는 자신이 중요하게 생각하는 가치를 상징하는 그림을 그리게 합니다.",
+      "student_writing_zones": [
+        {
+          "zone_id": "value_letter",
+          "label": "인물에게 쓰는 편지",
+          "input_area_type": "lined",
+          "min_height": 750
+        },
+        {
+          "zone_id": "value_seal",
+          "label": "나만의 가치 인장 그리기",
+          "input_area_type": "free-writing",
+          "min_height": 180
+        }
+      ],
+      "estimated_minutes": 25,
+      "review_status": "draft"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "schema_version": "1.0.0",
+  "stage": "page_candidate_agent",
+  "lesson_id": null,
+  "status": "succeeded",
+  "run_id": "1-20260331-001115",
+  "started_at": "2026-03-30T15:11:22.660188+00:00",
+  "finished_at": "2026-03-30T15:11:22.752223+00:00",
+  "input_refs": [
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/1-20260331-001115/source/lesson_queries.json",
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/1-20260331-001115/source/main.page_index.json"
+  ],
+  "output_refs": [
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/1-20260331-001115/source/page_candidates.json",
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/1-20260331-001115/source/page_candidate.status.json"
+  ],
+  "fallback_used": false,
+  "warnings": [],
+  "errors": [],
+  "agent_spec_path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/agents/page_candidate_agent/AGENT.md",
+  "runtime_driven": true
+}

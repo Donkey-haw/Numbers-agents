@@ -1,0 +1,125 @@
+{
+  "schema_version": "1.0.0",
+  "units": [
+    {
+      "unit_id": "unit-001",
+      "title": "단원 도입",
+      "lessons": [
+        {
+          "lesson_id": "lesson-001",
+          "sheet_name": "1차시",
+          "title": "단원 도입",
+          "raw_text": "단원 도입"
+        }
+      ]
+    },
+    {
+      "unit_id": "unit-002",
+      "title": "각기둥을 알아볼까요(1)",
+      "lessons": [
+        {
+          "lesson_id": "lesson-002",
+          "sheet_name": "2-3차시",
+          "title": "각기둥을 알아볼까요(1)",
+          "raw_text": "각기둥을 알아볼까요(1)"
+        }
+      ]
+    },
+    {
+      "unit_id": "unit-003",
+      "title": "각기둥을 알아볼까요(2)",
+      "lessons": [
+        {
+          "lesson_id": "lesson-003",
+          "sheet_name": "4차시",
+          "title": "각기둥을 알아볼까요(2)",
+          "raw_text": "각기둥을 알아볼까요(2)"
+        }
+      ]
+    },
+    {
+      "unit_id": "unit-004",
+      "title": "각기둥의 전개도를 알아볼까요(1)",
+      "lessons": [
+        {
+          "lesson_id": "lesson-004",
+          "sheet_name": "5차시",
+          "title": "각기둥의 전개도를 알아볼까요(1)",
+          "raw_text": "각기둥의 전개도를 알아볼까요(1)"
+        }
+      ]
+    },
+    {
+      "unit_id": "unit-005",
+      "title": "각기둥의 전개도를 알아볼까요(2)",
+      "lessons": [
+        {
+          "lesson_id": "lesson-005",
+          "sheet_name": "6차시",
+          "title": "각기둥의 전개도를 알아볼까요(2)",
+          "raw_text": "각기둥의 전개도를 알아볼까요(2)"
+        }
+      ]
+    },
+    {
+      "unit_id": "unit-006",
+      "title": "각뿔을 알아볼까요(1)",
+      "lessons": [
+        {
+          "lesson_id": "lesson-006",
+          "sheet_name": "7차시",
+          "title": "각뿔을 알아볼까요(1)",
+          "raw_text": "각뿔을 알아볼까요(1)"
+        }
+      ]
+    },
+    {
+      "unit_id": "unit-007",
+      "title": "각뿔을 알아볼까요(2)",
+      "lessons": [
+        {
+          "lesson_id": "lesson-007",
+          "sheet_name": "8차시",
+          "title": "각뿔을 알아볼까요(2)",
+          "raw_text": "각뿔을 알아볼까요(2)"
+        }
+      ]
+    },
+    {
+      "unit_id": "unit-008",
+      "title": "하하! 놀이와 만나요",
+      "lessons": [
+        {
+          "lesson_id": "lesson-008",
+          "sheet_name": "9차시",
+          "title": "하하! 놀이와 만나요",
+          "raw_text": "하하! 놀이와 만나요"
+        }
+      ]
+    },
+    {
+      "unit_id": "unit-009",
+      "title": "와우! 세상과 만나요",
+      "lessons": [
+        {
+          "lesson_id": "lesson-009",
+          "sheet_name": "10-11차시",
+          "title": "와우! 세상과 만나요",
+          "raw_text": "와우! 세상과 만나요"
+        }
+      ]
+    },
+    {
+      "unit_id": "unit-010",
+      "title": "됐다! 마무리",
+      "lessons": [
+        {
+          "lesson_id": "lesson-010",
+          "sheet_name": "12차시",
+          "title": "됐다! 마무리",
+          "raw_text": "됐다! 마무리"
+        }
+      ]
+    }
+  ]
+}

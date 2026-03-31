@@ -1,0 +1,106 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-03-26T10:00:00+00:00",
+  "lesson_id": "12-13차시",
+  "activities": [
+    {
+      "activity_id": "act-12-13-1",
+      "lesson_id": "12-13차시",
+      "object_role": "activity_area",
+      "lesson_flow_stage": "during",
+      "activity_type": "freeform_html",
+      "level": "core",
+      "learning_goal": "인물이 추구하는 가치가 잘 드러나도록 소개 자료의 핵심 내용을 구성할 수 있다.",
+      "prompt_text": "내가 선택한 인물의 '가치'를 한눈에 보여줄 수 있는 핵심 내용을 정리해 봅시다. 단순한 줄거리보다는 그 인물이 왜 그런 행동을 했는지, 어떤 가치를 소중히 여겼는지에 집중해 보세요.",
+      "layout_template": "freeform_html",
+      "html_content": "<!DOCTYPE html><html lang='ko'><head><meta charset='UTF-8'><style>body{width:1600px;margin:0;padding:40px;background:transparent;font-family:'Noto Sans KR', sans-serif;color:#333;}.card{background:#fff;padding:50px;border-radius:32px;box-shadow:0 10px 30px rgba(0,0,0,0.05);border:1px solid #eee;}.header{display:flex;align-items:center;margin-bottom:40px;}.badge{background:#4A90E2;color:#fff;padding:8px 20px;border-radius:12px;font-weight:700;font-size:24px;margin-right:20px;}.title{font-size:36px;font-weight:800;letter-spacing:-1px;}.grid-container{display:grid;grid-template-columns:1fr 1fr;gap:30px;margin-top:20px;}.section-box{background:#f8f9fa;padding:30px;border-radius:24px;border:2px solid #e9ecef;}.section-title{font-size:24px;font-weight:700;margin-bottom:20px;color:#444;display:flex;align-items:center;}.section-title::before{content:'';display:inline-block;width:8px;height:24px;background:#4A90E2;margin-right:12px;border-radius:4px;}.writing-area{background:#fff;border:3px solid #333;border-radius:16px;min-height:220px;padding:20px;font-size:22px;line-height:1.6;}.large-area{min-height:480px;}</style></head><body><div class='card'><div class='header'><div class='badge'>인물 분석</div><div class='title'>인물의 가치가 드러나는 소개 계획 세우기</div></div><div class='grid-container'><div class='section-box'><div class='section-title'>소개할 인물과 핵심 가치</div><div class='writing-area'>인물 이름:\n\n이 인물이 가장 소중하게 여기는 가치:</div></div><div class='section-box'><div class='section-title'>가치가 잘 드러나는 결정적 장면</div><div class='writing-area'>어떤 장면에서 그 가치가 느껴졌나요?</div></div><div class='section-box' style='grid-column: span 2;'><div class='section-title'>이 인물을 친구들에게 소개하고 싶은 이유 (나의 생각)</div><div class='writing-area large-area'>그 인물의 삶이 나에게 어떤 울림을 주었는지, 친구들이 무엇을 본받았으면 좋겠는지 구체적으로 적어 보세요.</div></div></div></div></body></html>",
+      "source_refs": [
+        49
+      ],
+      "student_writing_zones": [
+        {
+          "zone_id": "character_value",
+          "label": "인물 및 가치 정의",
+          "input_area_type": "inline-answer",
+          "min_height": 220
+        },
+        {
+          "zone_id": "key_scene",
+          "label": "결정적 장면 기술",
+          "input_area_type": "free-writing",
+          "min_height": 220
+        },
+        {
+          "zone_id": "recommendation_reason",
+          "label": "소개 이유 및 가치 분석",
+          "input_area_type": "free-writing",
+          "min_height": 480
+        }
+      ],
+      "estimated_minutes": 15,
+      "review_status": "draft"
+    },
+    {
+      "activity_id": "act-12-13-2",
+      "lesson_id": "12-13차시",
+      "object_role": "activity_area",
+      "lesson_flow_stage": "during",
+      "activity_type": "freeform_html",
+      "level": "extension",
+      "learning_goal": "인물의 가치를 시각적으로 표현하는 창의적인 광고 자료를 제작할 수 있다.",
+      "prompt_text": "단순한 설명글이 아닌, 친구들의 마음을 움직일 수 있는 '가치 광고지'를 만들어 봅시다. 강렬한 문구(슬로건)와 인물의 정신을 담은 그림을 자유롭게 배치해 보세요.",
+      "layout_template": "freeform_html",
+      "html_content": "<!DOCTYPE html><html lang='ko'><head><meta charset='UTF-8'><style>body{width:1600px;margin:0;padding:40px;background:transparent;font-family:'Noto Sans KR', sans-serif;}.card{background:#fff;padding:60px;border-radius:40px;border:4px dashed #ddd;position:relative;}.label-tag{position:absolute;top:-20px;left:60px;background:#FF6B6B;color:#fff;padding:12px 30px;border-radius:30px;font-size:28px;font-weight:800;box-shadow:0 5px 15px rgba(255,107,107,0.3);}.ad-canvas{background:#fff;border:4px solid #333;min-height:1000px;border-radius:20px;margin-top:40px;display:flex;flex-direction:column;overflow:hidden;}.ad-header{border-bottom:3px solid #333;padding:30px;background:#FFF9C4;font-size:32px;font-weight:700;text-align:center;}.canvas-body{flex:1;position:relative;padding:30px;}.guide-text{color:#aaa;font-size:24px;text-align:center;margin-top:400px;border:2px dashed #eee;padding:40px;border-radius:20px;}</style></head><body><div class='card'><div class='label-tag'>CREATIVE AD DESIGN</div><div style='font-size:42px; font-weight:900; color:#333; margin-top:20px;'>가치를 전파하는 인물 광고지</div><p style='font-size:24px; color:#666;'>인물의 가치를 가장 잘 드러내는 한 문장을 먼저 정하고, 그에 어울리는 그림과 설명을 자유롭게 그려 보세요.</p><div class='ad-canvas'><div class='ad-header'>[슬로건] 여기에 인물을 관통하는 멋진 한 문장을 쓰세요!</div><div class='canvas-body'><div class='guide-text'>이곳은 여러분의 캔버스입니다.<br>Apple Pencil을 사용하여 인물의 모습, 상징적인 물건,<br>또는 가치를 시각적으로 표현하는 자유로운 그림과 글을 채워주세요.</div></div></div></div></body></html>",
+      "source_refs": [
+        49
+      ],
+      "student_writing_zones": [
+        {
+          "zone_id": "ad_slogan",
+          "label": "광고 슬로건",
+          "input_area_type": "inline-answer",
+          "min_height": 100
+        },
+        {
+          "zone_id": "ad_creative_zone",
+          "label": "광고 디자인 영역",
+          "input_area_type": "free-writing",
+          "min_height": 900
+        }
+      ],
+      "estimated_minutes": 25,
+      "review_status": "draft"
+    },
+    {
+      "activity_id": "act-12-13-3",
+      "lesson_id": "12-13차시",
+      "object_role": "learning_note",
+      "lesson_flow_stage": "after",
+      "activity_type": "freeform_html",
+      "level": "core",
+      "learning_goal": "친구들의 발표를 경청하고, 인물의 가치를 자신의 삶에 적용하려는 태도를 갖는다.",
+      "prompt_text": "친구들의 발표를 들으며 새롭게 발견한 가치나 인상 깊었던 점을 기록해 봅시다. 그리고 오늘 배운 내용을 바탕으로 나만의 '가치 실천 약속'을 세워 보세요.",
+      "layout_template": "freeform_html",
+      "html_content": "<!DOCTYPE html><html lang='ko'><head><meta charset='UTF-8'><style>body{width:1600px;margin:0;padding:40px;background:transparent;font-family:'Noto Sans KR', sans-serif;}.card{background:#fff;padding:50px;border-radius:32px;border:2px solid #E2E8F0;}.header-row{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:40px;border-bottom:4px solid #333;padding-bottom:20px;}.note-title{font-size:40px;font-weight:900;color:#1A202C;}.lesson-info{font-size:20px;color:#718096;text-align:right;}.box-container{display:flex;flex-direction:column;gap:30px;}.note-box{background:#F7FAFC;border:3px solid #333;border-radius:20px;padding:30px;}.box-label{font-size:26px;font-weight:800;margin-bottom:15px;color:#2D3748;background:#EDF2F7;display:inline-block;padding:5px 15px;border-radius:8px;}.writing-space{background:#fff;border:1px solid #CBD5E0;min-height:280px;border-radius:12px;padding:20px;font-size:22px;}</style></head><body><div class='card'><div class='header-row'><div class='note-title'>수업 성찰 및 가치 실천 노트</div><div class='lesson-info'>단원 마무리: 배운 내용 실천하기</div></div><div class='box-container'><div class='note-box'><div class='box-label'>기억에 남는 친구의 발표</div><div class='writing-space'>어떤 인물의 어떤 가치가 인상 깊었나요? 그 이유는 무엇인가요?</div></div><div class='note-box' style='background:#FFF5F5; border-color:#E53E3E;'><div class='box-label' style='background:#FEB2B2; color:#9B2C2C;'>나의 가치 실천 약속</div><div class='writing-space' style='min-height:350px; border-color:#FC8181;'>작품 속 인물이 보여준 가치를 내 삶에서 어떻게 실천할 수 있을까요?\n구체적인 행동 한 가지를 정해 봅시다.\n\n예: '정직'의 가치를 본받아, 잘못을 했을 때 숨기지 않고 바로 말하겠습니다.</div></div></div></div></body></html>",
+      "source_refs": [
+        50
+      ],
+      "student_writing_zones": [
+        {
+          "zone_id": "peer_feedback",
+          "label": "발표 경청 기록",
+          "input_area_type": "free-writing",
+          "min_height": 280
+        },
+        {
+          "zone_id": "value_pledge",
+          "label": "나의 가치 실천 약속",
+          "input_area_type": "free-writing",
+          "min_height": 350
+        }
+      ],
+      "estimated_minutes": 10,
+      "review_status": "draft"
+    }
+  ]
+}

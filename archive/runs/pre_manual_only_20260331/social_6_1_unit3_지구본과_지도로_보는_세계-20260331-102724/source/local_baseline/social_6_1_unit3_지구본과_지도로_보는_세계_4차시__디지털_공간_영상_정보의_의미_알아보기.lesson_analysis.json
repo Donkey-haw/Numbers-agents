@@ -1,0 +1,74 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-03-31T01:28:37.471018+00:00",
+  "lesson_id": "4차시",
+  "sheet_name": "4차시",
+  "lesson_title": "디지털 공간 영상 정보의 의미 알아보기",
+  "lesson_type": "core",
+  "pdf_pages": [
+    116,
+    117,
+    118,
+    119
+  ],
+  "essential_question": "디지털 공간 영상 정보의 의미 알아보기",
+  "learning_goals": [
+    "디지털 공간 영상 정보의 의미 알아보기의 핵심 내용을 설명할 수 있다."
+  ],
+  "key_concepts": [
+    "디지털",
+    "공간",
+    "영상",
+    "정보",
+    "의미"
+  ],
+  "vocabulary": [
+    "디지털",
+    "공간",
+    "영상"
+  ],
+  "misconceptions": [],
+  "difficulty_band": "on-level",
+  "content_chunks": [
+    {
+      "chunk_id": "4차시-chunk-1",
+      "label": "학습 덩어리 1",
+      "content_type": "mixed",
+      "knowledge_type": "concept",
+      "summary": "아시아 대한 민국 대한 민국 아시아 태 평 양 동해 황해 남해 3D 레이어 역사적인 이미지 지구의 과거 모습을 담은 이미지를 확인해 보세요.",
+      "source_pages": [
+        116,
+        117
+      ],
+      "suggested_activity_types": [
+        "see_think_wonder",
+        "learning_note",
+        "worksheet"
+      ]
+    },
+    {
+      "chunk_id": "4차시-chunk-2",
+      "label": "학습 덩어리 2",
+      "content_type": "mixed",
+      "knowledge_type": "comparison",
+      "summary": "창의적 사고력 정보 활용 능력 3 \u00072에서 알게 된 정보를 바탕으로 활동 자료11 에 가상 여행 일기를 써 봅시다.",
+      "source_pages": [
+        118,
+        119
+      ],
+      "suggested_activity_types": [
+        "learning_note",
+        "worksheet"
+      ]
+    }
+  ],
+  "source_page_refs": [
+    116,
+    117,
+    118,
+    119
+  ],
+  "analysis_confidence": 0.75,
+  "review_status": "draft",
+  "notes": "자동 생성 초안. lesson title, key concepts, chunks를 검토 후 승인 필요."
+}

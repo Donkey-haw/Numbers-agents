@@ -1,0 +1,297 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-03-30T15:57:25.326402+00:00",
+  "output_file": "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit4_globe_world-20260331-005325/output/사회_지구본과_지도로_보는_세계.numbers",
+  "assets": [
+    {
+      "asset_id": "social_globe_world_2_3",
+      "asset_type": "textbook_card",
+      "sheet_name": "2-3차시",
+      "insert_order": 1,
+      "html_path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit4_globe_world-20260331-005325/render/html/social_globe_world_2_3.html",
+      "image_path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit4_globe_world-20260331-005325/render/cards/social_globe_world_2_3.png",
+      "resource_id": "main",
+      "dimensions": {
+        "width": 360,
+        "height": 518
+      }
+    },
+    {
+      "asset_id": "2-3차시-see-think-wonder",
+      "asset_type": "activity_sheet",
+      "sheet_name": "2-3차시",
+      "insert_order": 2,
+      "html_path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit4_globe_world-20260331-005325/render/html/activity_2-3차시-see-think-wonder.html",
+      "image_path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit4_globe_world-20260331-005325/render/cards/activity_2-3차시-see-think-wonder.png",
+      "source_json": "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit4_globe_world-20260331-005325/sections/social_globe_world_2_3__지구본과_지도로_보는_세계___지구본의_특징_살펴보기/activity_plan.json",
+      "object_role": "activity_area",
+      "lesson_flow_stage": "during",
+      "dimensions": {
+        "width": 360,
+        "height": 180
+      }
+    },
+    {
+      "asset_id": "2-3차시-learning-note",
+      "asset_type": "activity_sheet",
+      "sheet_name": "2-3차시",
+      "insert_order": 3,
+      "html_path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit4_globe_world-20260331-005325/render/html/activity_2-3차시-learning-note.html",
+      "image_path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit4_globe_world-20260331-005325/render/cards/activity_2-3차시-learning-note.png",
+      "source_json": "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit4_globe_world-20260331-005325/sections/social_globe_world_2_3__지구본과_지도로_보는_세계___지구본의_특징_살펴보기/activity_plan.json",
+      "object_role": "learning_note",
+      "lesson_flow_stage": "during",
+      "dimensions": {
+        "width": 360,
+        "height": 218
+      }
+    },
+    {
+      "asset_id": "2-3차시-worksheet",
+      "asset_type": "activity_sheet",
+      "sheet_name": "2-3차시",
+      "insert_order": 4,
+      "html_path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit4_globe_world-20260331-005325/render/html/activity_2-3차시-worksheet.html",
+      "image_path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit4_globe_world-20260331-005325/render/cards/activity_2-3차시-worksheet.png",
+      "source_json": "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit4_globe_world-20260331-005325/sections/social_globe_world_2_3__지구본과_지도로_보는_세계___지구본의_특징_살펴보기/activity_plan.json",
+      "object_role": "worksheet",
+      "lesson_flow_stage": "after",
+      "dimensions": {
+        "width": 360,
+        "height": 136
+      }
+    },
+    {
+      "asset_id": "social_globe_world_4",
+      "asset_type": "textbook_card",
+      "sheet_name": "4차시",
+      "insert_order": 1,
+      "html_path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit4_globe_world-20260331-005325/render/html/social_globe_world_4.html",
+      "image_path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit4_globe_world-20260331-005325/render/cards/social_globe_world_4.png",
+      "resource_id": "main",
+      "dimensions": {
+        "width": 360,
+        "height": 518
+      }
+    },
+    {
+      "asset_id": "4차시-see-think-wonder",
+      "asset_type": "activity_sheet",
+      "sheet_name": "4차시",
+      "insert_order": 2,
+      "html_path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit4_globe_world-20260331-005325/render/html/activity_4차시-see-think-wonder.html",
+      "image_path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit4_globe_world-20260331-005325/render/cards/activity_4차시-see-think-wonder.png",
+      "source_json": "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit4_globe_world-20260331-005325/sections/social_globe_world_4__지구본과_지도로_보는_세계___디지털_공간_영상_정보의_의미_알아보기/activity_plan.json",
+      "object_role": "activity_area",
+      "lesson_flow_stage": "during",
+      "dimensions": {
+        "width": 360,
+        "height": 186
+      }
+    },
+    {
+      "asset_id": "4차시-learning-note",
+      "asset_type": "activity_sheet",
+      "sheet_name": "4차시",
+      "insert_order": 3,
+      "html_path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit4_globe_world-20260331-005325/render/html/activity_4차시-learning-note.html",
+      "image_path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit4_globe_world-20260331-005325/render/cards/activity_4차시-learning-note.png",
+      "source_json": "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit4_globe_world-20260331-005325/sections/social_globe_world_4__지구본과_지도로_보는_세계___디지털_공간_영상_정보의_의미_알아보기/activity_plan.json",
+      "object_role": "learning_note",
+      "lesson_flow_stage": "during",
+      "dimensions": {
+        "width": 360,
+        "height": 218
+      }
+    },
+    {
+      "asset_id": "4차시-worksheet",
+      "asset_type": "activity_sheet",
+      "sheet_name": "4차시",
+      "insert_order": 4,
+      "html_path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit4_globe_world-20260331-005325/render/html/activity_4차시-worksheet.html",
+      "image_path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit4_globe_world-20260331-005325/render/cards/activity_4차시-worksheet.png",
+      "source_json": "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit4_globe_world-20260331-005325/sections/social_globe_world_4__지구본과_지도로_보는_세계___디지털_공간_영상_정보의_의미_알아보기/activity_plan.json",
+      "object_role": "worksheet",
+      "lesson_flow_stage": "after",
+      "dimensions": {
+        "width": 360,
+        "height": 136
+      }
+    },
+    {
+      "asset_id": "social_globe_world_5",
+      "asset_type": "textbook_card",
+      "sheet_name": "5차시",
+      "insert_order": 1,
+      "html_path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit4_globe_world-20260331-005325/render/html/social_globe_world_5.html",
+      "image_path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit4_globe_world-20260331-005325/render/cards/social_globe_world_5.png",
+      "resource_id": "main",
+      "dimensions": {
+        "width": 360,
+        "height": 518
+      }
+    },
+    {
+      "asset_id": "5차시-see-think-wonder",
+      "asset_type": "activity_sheet",
+      "sheet_name": "5차시",
+      "insert_order": 2,
+      "html_path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit4_globe_world-20260331-005325/render/html/activity_5차시-see-think-wonder.html",
+      "image_path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit4_globe_world-20260331-005325/render/cards/activity_5차시-see-think-wonder.png",
+      "source_json": "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit4_globe_world-20260331-005325/sections/social_globe_world_5__지구본과_지도로_보는_세계___위도와_위선의_의미_알아보기/activity_plan.json",
+      "object_role": "activity_area",
+      "lesson_flow_stage": "during",
+      "dimensions": {
+        "width": 360,
+        "height": 180
+      }
+    },
+    {
+      "asset_id": "5차시-learning-note",
+      "asset_type": "activity_sheet",
+      "sheet_name": "5차시",
+      "insert_order": 3,
+      "html_path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit4_globe_world-20260331-005325/render/html/activity_5차시-learning-note.html",
+      "image_path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit4_globe_world-20260331-005325/render/cards/activity_5차시-learning-note.png",
+      "source_json": "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit4_globe_world-20260331-005325/sections/social_globe_world_5__지구본과_지도로_보는_세계___위도와_위선의_의미_알아보기/activity_plan.json",
+      "object_role": "learning_note",
+      "lesson_flow_stage": "during",
+      "dimensions": {
+        "width": 360,
+        "height": 218
+      }
+    },
+    {
+      "asset_id": "5차시-worksheet",
+      "asset_type": "activity_sheet",
+      "sheet_name": "5차시",
+      "insert_order": 4,
+      "html_path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit4_globe_world-20260331-005325/render/html/activity_5차시-worksheet.html",
+      "image_path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit4_globe_world-20260331-005325/render/cards/activity_5차시-worksheet.png",
+      "source_json": "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit4_globe_world-20260331-005325/sections/social_globe_world_5__지구본과_지도로_보는_세계___위도와_위선의_의미_알아보기/activity_plan.json",
+      "object_role": "worksheet",
+      "lesson_flow_stage": "after",
+      "dimensions": {
+        "width": 360,
+        "height": 130
+      }
+    },
+    {
+      "asset_id": "social_globe_world_6",
+      "asset_type": "textbook_card",
+      "sheet_name": "6차시",
+      "insert_order": 1,
+      "html_path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit4_globe_world-20260331-005325/render/html/social_globe_world_6.html",
+      "image_path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit4_globe_world-20260331-005325/render/cards/social_globe_world_6.png",
+      "resource_id": "main",
+      "dimensions": {
+        "width": 360,
+        "height": 6584
+      }
+    },
+    {
+      "asset_id": "6차시-see-think-wonder",
+      "asset_type": "activity_sheet",
+      "sheet_name": "6차시",
+      "insert_order": 2,
+      "html_path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit4_globe_world-20260331-005325/render/html/activity_6차시-see-think-wonder.html",
+      "image_path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit4_globe_world-20260331-005325/render/cards/activity_6차시-see-think-wonder.png",
+      "source_json": "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit4_globe_world-20260331-005325/sections/social_globe_world_6__지구본과_지도로_보는_세계___경도와_경선의_의미_알아보기/activity_plan.json",
+      "object_role": "activity_area",
+      "lesson_flow_stage": "during",
+      "dimensions": {
+        "width": 360,
+        "height": 180
+      }
+    },
+    {
+      "asset_id": "6차시-learning-note",
+      "asset_type": "activity_sheet",
+      "sheet_name": "6차시",
+      "insert_order": 3,
+      "html_path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit4_globe_world-20260331-005325/render/html/activity_6차시-learning-note.html",
+      "image_path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit4_globe_world-20260331-005325/render/cards/activity_6차시-learning-note.png",
+      "source_json": "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit4_globe_world-20260331-005325/sections/social_globe_world_6__지구본과_지도로_보는_세계___경도와_경선의_의미_알아보기/activity_plan.json",
+      "object_role": "learning_note",
+      "lesson_flow_stage": "during",
+      "dimensions": {
+        "width": 360,
+        "height": 221
+      }
+    },
+    {
+      "asset_id": "6차시-worksheet",
+      "asset_type": "activity_sheet",
+      "sheet_name": "6차시",
+      "insert_order": 4,
+      "html_path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit4_globe_world-20260331-005325/render/html/activity_6차시-worksheet.html",
+      "image_path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit4_globe_world-20260331-005325/render/cards/activity_6차시-worksheet.png",
+      "source_json": "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit4_globe_world-20260331-005325/sections/social_globe_world_6__지구본과_지도로_보는_세계___경도와_경선의_의미_알아보기/activity_plan.json",
+      "object_role": "worksheet",
+      "lesson_flow_stage": "after",
+      "dimensions": {
+        "width": 360,
+        "height": 130
+      }
+    },
+    {
+      "asset_id": "social_globe_world_7",
+      "asset_type": "textbook_card",
+      "sheet_name": "7차시",
+      "insert_order": 1,
+      "html_path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit4_globe_world-20260331-005325/render/html/social_globe_world_7.html",
+      "image_path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit4_globe_world-20260331-005325/render/cards/social_globe_world_7.png",
+      "resource_id": "main",
+      "dimensions": {
+        "width": 360,
+        "height": 518
+      }
+    },
+    {
+      "asset_id": "7차시-see-think-wonder",
+      "asset_type": "activity_sheet",
+      "sheet_name": "7차시",
+      "insert_order": 2,
+      "html_path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit4_globe_world-20260331-005325/render/html/activity_7차시-see-think-wonder.html",
+      "image_path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit4_globe_world-20260331-005325/render/cards/activity_7차시-see-think-wonder.png",
+      "source_json": "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit4_globe_world-20260331-005325/sections/social_globe_world_7__지구본과_지도로_보는_세계___위도와_경도를_이용해_위치를_표현하는_방법_살_펴보기/activity_plan.json",
+      "object_role": "activity_area",
+      "lesson_flow_stage": "during",
+      "dimensions": {
+        "width": 360,
+        "height": 180
+      }
+    },
+    {
+      "asset_id": "7차시-learning-note",
+      "asset_type": "activity_sheet",
+      "sheet_name": "7차시",
+      "insert_order": 3,
+      "html_path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit4_globe_world-20260331-005325/render/html/activity_7차시-learning-note.html",
+      "image_path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit4_globe_world-20260331-005325/render/cards/activity_7차시-learning-note.png",
+      "source_json": "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit4_globe_world-20260331-005325/sections/social_globe_world_7__지구본과_지도로_보는_세계___위도와_경도를_이용해_위치를_표현하는_방법_살_펴보기/activity_plan.json",
+      "object_role": "learning_note",
+      "lesson_flow_stage": "during",
+      "dimensions": {
+        "width": 360,
+        "height": 218
+      }
+    },
+    {
+      "asset_id": "7차시-worksheet",
+      "asset_type": "activity_sheet",
+      "sheet_name": "7차시",
+      "insert_order": 4,
+      "html_path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit4_globe_world-20260331-005325/render/html/activity_7차시-worksheet.html",
+      "image_path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit4_globe_world-20260331-005325/render/cards/activity_7차시-worksheet.png",
+      "source_json": "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit4_globe_world-20260331-005325/sections/social_globe_world_7__지구본과_지도로_보는_세계___위도와_경도를_이용해_위치를_표현하는_방법_살_펴보기/activity_plan.json",
+      "object_role": "worksheet",
+      "lesson_flow_stage": "after",
+      "dimensions": {
+        "width": 360,
+        "height": 136
+      }
+    }
+  ]
+}

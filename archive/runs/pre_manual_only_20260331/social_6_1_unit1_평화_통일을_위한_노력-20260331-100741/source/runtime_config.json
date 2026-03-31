@@ -1,0 +1,239 @@
+{
+  "project_root": "/Users/jonyeock/Desktop/Tool/NumbersAuto",
+  "pdf_path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/textbook/사회/[사회]6_1_교과서.pdf",
+  "template_path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/빈 넘버스 파일.numbers",
+  "output_file": "/Users/jonyeock/Desktop/Tool/NumbersAuto/output/social_6_1_unit1_평화_통일을_위한_노력.numbers",
+  "footer": "사회 6-1 · 1단원 · 평화 통일을 위한 노력",
+  "source_chart": "configs/charts/social_6_1_progress_chart.json",
+  "sections": [
+    {
+      "sheet_name": "2차시",
+      "card_file": "social_6_1_unit1_평화_통일을_위한_노력_2차시",
+      "title": "분단으로 나타난 문제점과 분단이 사회와 생활에 끼친 영향 알아보기",
+      "title_query": "분단으로 나타난 문제점과 분단이 사회와 생활에 끼친 영향 알아보기",
+      "badge": "2차시",
+      "accent": [
+        "#6366f1",
+        "#818cf8"
+      ],
+      "sources": [
+        {
+          "resource_id": "main",
+          "role": "textbook",
+          "title_query": "분단으로 나타난 문제점과 분단이 사회와 생활에 끼친 영향 알아보기",
+          "_inference": {
+            "status": "matched",
+            "start_page": 12,
+            "end_page": 15,
+            "start_query": "분단으로 나타난 문제점과 분단이 사회와 생활에 끼친 영향 알아보기",
+            "start_match_pages": [
+              12,
+              42,
+              48,
+              75,
+              126
+            ],
+            "start_match_count": 5,
+            "end_strategy": "boundary_decision_agent",
+            "end_reference_query": null,
+            "intro_boundary_page": null,
+            "reason": "Transitional heuristic: choose highest-ranked candidate and cut before next lesson candidate",
+            "confidence": 0.55
+          },
+          "pdf_pages": [
+            12,
+            13,
+            14,
+            15
+          ]
+        }
+      ],
+      "source_ranges": [
+        {
+          "resource_id": "main",
+          "role": "textbook",
+          "pdf_pages": [
+            12,
+            13,
+            14,
+            15
+          ]
+        }
+      ],
+      "pdf_pages": [
+        12,
+        13,
+        14,
+        15
+      ]
+    },
+    {
+      "sheet_name": "3차시",
+      "card_file": "social_6_1_unit1_평화_통일을_위한_노력_3차시",
+      "title": "분단의 흔적이 남아 있는 장소 알아보기",
+      "title_query": "분단의 흔적이 남아 있는 장소 알아보기",
+      "badge": "3차시",
+      "accent": [
+        "#4f46e5",
+        "#7c3aed"
+      ],
+      "sources": [
+        {
+          "resource_id": "main",
+          "role": "textbook",
+          "title_query": "분단의 흔적이 남아 있는 장소 알아보기",
+          "_inference": {
+            "status": "matched",
+            "start_page": 16,
+            "end_page": 16,
+            "start_query": "분단의 흔적이 남아 있는 장소 알아보기",
+            "start_match_pages": [
+              16,
+              18,
+              20,
+              21,
+              27
+            ],
+            "start_match_count": 5,
+            "end_strategy": "boundary_decision_agent",
+            "end_reference_query": null,
+            "intro_boundary_page": null,
+            "reason": "Transitional heuristic: choose highest-ranked candidate and cut before next lesson candidate",
+            "confidence": 0.45
+          },
+          "pdf_pages": [
+            16
+          ]
+        }
+      ],
+      "source_ranges": [
+        {
+          "resource_id": "main",
+          "role": "textbook",
+          "pdf_pages": [
+            16
+          ]
+        }
+      ],
+      "pdf_pages": [
+        16
+      ]
+    },
+    {
+      "sheet_name": "4차시",
+      "card_file": "social_6_1_unit1_평화_통일을_위한_노력_4차시",
+      "title": "분단의 장소가 평화의 장소로 바뀐 사례 알아보기",
+      "title_query": "분단의 장소가 평화의 장소로 바뀐 사례 알아보기",
+      "badge": "4차시",
+      "accent": [
+        "#0f766e",
+        "#14b8a6"
+      ],
+      "sources": [
+        {
+          "resource_id": "main",
+          "role": "textbook",
+          "title_query": "분단의 장소가 평화의 장소로 바뀐 사례 알아보기",
+          "_inference": {
+            "status": "matched",
+            "start_page": 12,
+            "end_page": 12,
+            "start_query": "분단의 장소가 평화의 장소로 바뀐 사례 알아보기",
+            "start_match_pages": [
+              12,
+              18,
+              19,
+              21,
+              27
+            ],
+            "start_match_count": 5,
+            "end_strategy": "boundary_decision_agent",
+            "end_reference_query": null,
+            "intro_boundary_page": null,
+            "reason": "Transitional heuristic: choose highest-ranked candidate and cut before next lesson candidate",
+            "confidence": 0.45
+          },
+          "pdf_pages": [
+            12
+          ]
+        }
+      ],
+      "source_ranges": [
+        {
+          "resource_id": "main",
+          "role": "textbook",
+          "pdf_pages": [
+            12
+          ]
+        }
+      ],
+      "pdf_pages": [
+        12
+      ]
+    },
+    {
+      "sheet_name": "5-6차시",
+      "card_file": "social_6_1_unit1_평화_통일을_위한_노력_5_6차시",
+      "title": "평화 통일을 위한 노력 살펴보기",
+      "title_query": "평화 통일을 위한 노력 살펴보기",
+      "badge": "5-6차시",
+      "accent": [
+        "#1d4ed8",
+        "#3b82f6"
+      ],
+      "sources": [
+        {
+          "resource_id": "main",
+          "role": "textbook",
+          "title_query": "평화 통일을 위한 노력 살펴보기",
+          "_inference": {
+            "status": "matched",
+            "start_page": 10,
+            "end_page": 10,
+            "start_query": "평화 통일을 위한 노력 살펴보기",
+            "start_match_pages": [
+              10,
+              12,
+              28,
+              51,
+              157
+            ],
+            "start_match_count": 5,
+            "end_strategy": "boundary_decision_agent",
+            "end_reference_query": null,
+            "intro_boundary_page": null,
+            "reason": "Transitional heuristic: choose highest-ranked candidate and cut before next lesson candidate",
+            "confidence": 0.45
+          },
+          "pdf_pages": [
+            10
+          ]
+        }
+      ],
+      "source_ranges": [
+        {
+          "resource_id": "main",
+          "role": "textbook",
+          "pdf_pages": [
+            10
+          ]
+        }
+      ],
+      "pdf_pages": [
+        10
+      ]
+    }
+  ],
+  "end_before_query": "민주화 운동이 일어난 이유 알아보기",
+  "pages_dir": "/Users/jonyeock/Desktop/Tool/NumbersAuto/assets/pages",
+  "cards_dir": "/Users/jonyeock/Desktop/Tool/NumbersAuto/assets/cards",
+  "html_dir": "/Users/jonyeock/Desktop/Tool/NumbersAuto/html",
+  "resources": [
+    {
+      "resource_id": "main",
+      "label": "교과서",
+      "kind": "textbook",
+      "pdf_path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/textbook/사회/[사회]6_1_교과서.pdf"
+    }
+  ]
+}

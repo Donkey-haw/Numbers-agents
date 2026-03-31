@@ -1,0 +1,44 @@
+{
+  "schema_version": "1.0.0",
+  "stage": "review_source_config",
+  "lesson_id": null,
+  "status": "succeeded_with_warning",
+  "decision": "pass_with_warning",
+  "findings": [
+    {
+      "severity": "warning",
+      "message": "14차시의 시작 쿼리가 여러 페이지에 매칭됩니다.",
+      "evidence_refs": [
+        "민주주의와 미디어"
+      ]
+    },
+    {
+      "severity": "warning",
+      "message": "15차시의 시작 쿼리가 여러 페이지에 매칭됩니다.",
+      "evidence_refs": [
+        "민주주의에서 미디어는 어떤 역할을 할까요?"
+      ]
+    },
+    {
+      "severity": "warning",
+      "message": "16차시의 시작 쿼리가 여러 페이지에 매칭됩니다.",
+      "evidence_refs": [
+        "미디어의 내용을 왜 비판적으로 분석해야 할까요?"
+      ]
+    },
+    {
+      "severity": "warning",
+      "message": "17-18차시의 시작 쿼리가 여러 페이지에 매칭됩니다.",
+      "evidence_refs": [
+        "미디어를 올바르게 이용하는 방법을 알아볼까요?"
+      ]
+    }
+  ],
+  "blocking_issues": [],
+  "warnings": [
+    "14차시: source 'main' title_query matched 5 pages",
+    "15차시: source 'main' title_query matched 5 pages",
+    "16차시: source 'main' title_query matched 5 pages",
+    "17-18차시: source 'main' title_query matched 5 pages"
+  ]
+}

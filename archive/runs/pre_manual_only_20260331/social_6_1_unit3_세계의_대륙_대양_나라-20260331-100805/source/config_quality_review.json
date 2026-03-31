@@ -1,0 +1,68 @@
+{
+  "schema_version": "1.0.0",
+  "stage": "review_source_config",
+  "lesson_id": null,
+  "status": "succeeded_with_warning",
+  "decision": "pass_with_warning",
+  "findings": [
+    {
+      "severity": "warning",
+      "message": "8차시의 시작 쿼리가 여러 페이지에 매칭됩니다.",
+      "evidence_refs": [
+        "세계의 대륙과 대양 알아보기"
+      ]
+    },
+    {
+      "severity": "warning",
+      "message": "9차시의 시작 쿼리가 여러 페이지에 매칭됩니다.",
+      "evidence_refs": [
+        "우리나라의 위치 특징 파악하기"
+      ]
+    },
+    {
+      "severity": "warning",
+      "message": "10차시의 시작 쿼리가 여러 페이지에 매칭됩니다.",
+      "evidence_refs": [
+        "아시아 주요 나라들의 위치 알아보기"
+      ]
+    },
+    {
+      "severity": "warning",
+      "message": "11차시의 시작 쿼리가 여러 페이지에 매칭됩니다.",
+      "evidence_refs": [
+        "유럽 주요 나라들의 위치 알아보기"
+      ]
+    },
+    {
+      "severity": "warning",
+      "message": "12차시의 시작 쿼리가 여러 페이지에 매칭됩니다.",
+      "evidence_refs": [
+        "북아메리카와 남아메리카 주요 나라들의 위치 알아보기"
+      ]
+    },
+    {
+      "severity": "warning",
+      "message": "13차시의 시작 쿼리가 여러 페이지에 매칭됩니다.",
+      "evidence_refs": [
+        "아프리카 주요 나라들의 위치 알아보기"
+      ]
+    },
+    {
+      "severity": "warning",
+      "message": "14차시의 시작 쿼리가 여러 페이지에 매칭됩니다.",
+      "evidence_refs": [
+        "오세아니아 주요 나라들의 위치 알아보기"
+      ]
+    }
+  ],
+  "blocking_issues": [],
+  "warnings": [
+    "8차시: source 'main' title_query matched 5 pages",
+    "9차시: source 'main' title_query matched 5 pages",
+    "10차시: source 'main' title_query matched 5 pages",
+    "11차시: source 'main' title_query matched 5 pages",
+    "12차시: source 'main' title_query matched 5 pages",
+    "13차시: source 'main' title_query matched 5 pages",
+    "14차시: source 'main' title_query matched 5 pages"
+  ]
+}

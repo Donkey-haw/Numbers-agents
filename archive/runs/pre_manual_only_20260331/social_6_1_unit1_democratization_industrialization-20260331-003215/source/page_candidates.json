@@ -1,0 +1,65 @@
+{
+  "schema_version": "1.0.0",
+  "lessons": [
+    {
+      "lesson_id": "lesson-001",
+      "resource_id": "main",
+      "candidate_pages": [
+        30,
+        50,
+        28,
+        29,
+        31
+      ],
+      "query": "민주화 운동은 왜 일어났을까요?"
+    },
+    {
+      "lesson_id": "lesson-002",
+      "resource_id": "main",
+      "candidate_pages": [
+        28,
+        12,
+        10,
+        23,
+        25
+      ],
+      "query": "민주화를 위한 노력을 살펴볼까요?"
+    },
+    {
+      "lesson_id": "lesson-003",
+      "resource_id": "main",
+      "candidate_pages": [
+        50,
+        72,
+        47,
+        28,
+        36
+      ],
+      "query": "민주화 이후 우리 사회는 어떻게 달라졌을까요?"
+    },
+    {
+      "lesson_id": "lesson-004",
+      "resource_id": "main",
+      "candidate_pages": [
+        72,
+        50,
+        41,
+        44,
+        62
+      ],
+      "query": "우리나라는 어떻게 산업화를 이루었을까요?"
+    },
+    {
+      "lesson_id": "lesson-005",
+      "resource_id": "main",
+      "candidate_pages": [
+        28,
+        46,
+        180,
+        50,
+        20
+      ],
+      "query": "산업화로 사람들의 생활은 어떻게 달라졌을까요? / 주제 마무리"
+    }
+  ]
+}

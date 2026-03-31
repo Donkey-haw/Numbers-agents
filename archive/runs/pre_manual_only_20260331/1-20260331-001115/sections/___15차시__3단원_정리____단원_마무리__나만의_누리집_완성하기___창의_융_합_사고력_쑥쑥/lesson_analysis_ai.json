@@ -1,0 +1,83 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-03-31T00:00:00Z",
+  "lesson_id": "15차시",
+  "sheet_name": "15차시",
+  "lesson_title": "3단원 정리 — [단원 마무리] 나만의 누리집 완성하기 / 창의·융 합 사고력 쑥쑥",
+  "lesson_type": "summary",
+  "pdf_pages": [
+    49
+  ],
+  "essential_question": "우리나라의 민주화와 산업화 과정에서 나타난 주요 특징과 변화는 무엇이며, 이를 어떻게 정리할 수 있을까?",
+  "learning_goals": [
+    "4·19 혁명, 5·18 민주화 운동, 6월 민주 항쟁 등 주요 민주화 운동의 의의를 정리할 수 있다.",
+    "1960년대부터 2000년대 이후까지 우리나라의 산업화 과정과 그에 따른 사회 변화를 설명할 수 있다.",
+    "산업화로 인해 발생한 문제점(주택 부족, 환경 오염, 노동 문제 등)을 파악할 수 있다."
+  ],
+  "key_concepts": [
+    "민주화 운동",
+    "산업화",
+    "경제 발전",
+    "사회 변화",
+    "산업화의 문제점"
+  ],
+  "vocabulary": [
+    "지방 자치제",
+    "경공업",
+    "중화학 공업",
+    "첨단 산업",
+    "서비스 산업"
+  ],
+  "misconceptions": [
+    "산업화가 오직 긍정적인 생활의 편리함만을 가져왔다고 오해할 수 있으므로, 그 과정에서 소외된 노동자들의 희생과 사회적 문제점도 함께 인식해야 한다."
+  ],
+  "difficulty_band": "on-level",
+  "content_chunks": [
+    {
+      "chunk_id": "15차시-chunk-1",
+      "label": "민주화 운동의 정리",
+      "content_type": "summary",
+      "knowledge_type": "concept",
+      "summary": "4·19 혁명, 5·18 민주화 운동, 6월 민주 항쟁의 흐름과 6월 민주 항쟁 이후 대통령 직선제 및 지방 자치제 부활 등의 정치적 변화를 요약함.",
+      "source_pages": [
+        49
+      ],
+      "suggested_activity_types": [
+        "concept-map",
+        "timeline"
+      ]
+    },
+    {
+      "chunk_id": "15차시-chunk-2",
+      "label": "우리나라의 산업화 과정",
+      "content_type": "text",
+      "knowledge_type": "procedure",
+      "summary": "1960년대 경공업부터 2000년대 첨단 산업까지 시기별 주요 산업 발달 과정과 수출 상품의 변화를 다룸.",
+      "source_pages": [
+        49
+      ],
+      "suggested_activity_types": [
+        "sorting-quiz"
+      ]
+    },
+    {
+      "chunk_id": "15차시-chunk-3",
+      "label": "산업화의 영향과 문제점",
+      "content_type": "mixed",
+      "knowledge_type": "cause-effect",
+      "summary": "생활의 편리함과 대중문화 향유 등 긍정적 변화와 함께 주택 부족, 환경 오염, 저임금 장시간 노동 등의 사회적 문제점을 분석함.",
+      "source_pages": [
+        49
+      ],
+      "suggested_activity_types": [
+        "discussion"
+      ]
+    }
+  ],
+  "source_page_refs": [
+    49
+  ],
+  "analysis_confidence": 0.95,
+  "review_status": "draft",
+  "notes": "추출된 텍스트를 바탕으로 민주화와 산업화의 핵심 정리 내용을 체계화함. 49페이지 하단의 '단원 게임' 및 '나만의 누리집 완성하기' 활동 맥락을 포함함."
+}

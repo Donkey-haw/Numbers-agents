@@ -1,0 +1,22 @@
+{
+  "schema_version": "1.0.0",
+  "stage": "document_inventory_agent",
+  "lesson_id": null,
+  "status": "succeeded",
+  "run_id": "social_6_1_unit2_민주주의와_선거-20260331-100649",
+  "started_at": "2026-03-31T01:06:49.771270+00:00",
+  "finished_at": "2026-03-31T01:06:49.771663+00:00",
+  "input_refs": [
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/configs/units/social/social_6_1_unit2_민주주의와_선거.json",
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/textbook/사회/[사회]6_1_교과서.pdf"
+  ],
+  "output_refs": [
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit2_민주주의와_선거-20260331-100649/source/document_inventory.json",
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit2_민주주의와_선거-20260331-100649/source/document_inventory.status.json"
+  ],
+  "fallback_used": false,
+  "warnings": [],
+  "errors": [],
+  "agent_spec_path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/agents/document_inventory_agent/AGENT.md",
+  "runtime_driven": true
+}

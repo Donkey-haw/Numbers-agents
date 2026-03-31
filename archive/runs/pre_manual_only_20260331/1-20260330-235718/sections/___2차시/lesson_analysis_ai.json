@@ -1,0 +1,112 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-03-31T09:00:00.000000+00:00",
+  "lesson_id": "2차시",
+  "sheet_name": "2차시",
+  "lesson_title": "평화 통일을 위한 노력 — 분단으로 나타난 문제점과 분단이 사회와 생활 에 끼친 영향 알아보기",
+  "lesson_type": "core",
+  "pdf_pages": [
+    12,
+    13,
+    14,
+    15
+  ],
+  "essential_question": "분단이 지속되면서 남북한의 사회와 우리들의 생활에는 어떤 변화와 문제점들이 생겨났을까요?",
+  "learning_goals": [
+    "분단으로 인한 군사적 긴장과 막대한 국방비 지출의 문제점을 설명할 수 있다.",
+    "남북한 간의 언어와 생활 방식의 차이(문화적 차이)를 사례를 통해 이해할 수 있다.",
+    "이산가족의 아픔과 자유로운 왕래가 불가능한 현실을 통해 분단의 고통을 공감할 수 있다."
+  ],
+  "key_concepts": [
+    "분단",
+    "군사적 대립",
+    "국방비",
+    "문화 차이",
+    "이산가족",
+    "자유 왕래",
+    "평화 통일"
+  ],
+  "vocabulary": [
+    "분단",
+    "이산가족",
+    "실향민",
+    "망배단",
+    "북한 이탈 주민",
+    "곽밥",
+    "단얼음"
+  ],
+  "misconceptions": [
+    "분단으로 인한 영향이 이산가족이나 특정 집단에게만 해당된다고 생각할 수 있다.",
+    "남북한의 언어 차이가 단순히 '틀린 표현'이라고 오해하거나 소통이 완전히 불가능하다고 생각할 수 있다."
+  ],
+  "difficulty_band": "on-level",
+  "content_chunks": [
+    {
+      "chunk_id": "2차시-chunk-1",
+      "label": "단원 도입: 낱말 구름과 빙고",
+      "content_type": "mixed",
+      "knowledge_type": "concept",
+      "summary": "낱말 구름을 통해 평화 통일과 관련된 주요 키워드를 살펴보고 빙고 놀이를 하며 주제에 대한 흥미를 유발한다.",
+      "source_pages": [
+        12,
+        13
+      ],
+      "suggested_activity_types": [
+        "learning_note",
+        "worksheet"
+      ]
+    },
+    {
+      "chunk_id": "2차시-chunk-2",
+      "label": "군사적 긴장과 경제적 부담",
+      "content_type": "diagram",
+      "knowledge_type": "cause-effect",
+      "summary": "남북한의 군사적 대립으로 인한 전쟁 불안감과 막대한 국방비 지출 문제를 그래프와 뉴스 속보 사례를 통해 확인한다.",
+      "source_pages": [
+        14
+      ],
+      "suggested_activity_types": [
+        "see_think_wonder",
+        "learning_note"
+      ]
+    },
+    {
+      "chunk_id": "2차시-chunk-3",
+      "label": "사회·문화적 차이와 언어 변화",
+      "content_type": "text",
+      "knowledge_type": "comparison",
+      "summary": "오랜 분단으로 인해 달라진 남북한의 언어(빙수-단얼음, 도시락-곽밥 등)와 생활 방식을 비교하고 이로 인한 어려움을 이해한다.",
+      "source_pages": [
+        14,
+        15
+      ],
+      "suggested_activity_types": [
+        "worksheet",
+        "learning_note"
+      ]
+    },
+    {
+      "chunk_id": "2차시-chunk-4",
+      "label": "이산가족의 아픔과 자유 왕래의 제한",
+      "content_type": "mixed",
+      "knowledge_type": "fact",
+      "summary": "헤어진 가족을 만나지 못하는 이산가족과 실향민의 아픔, 중단된 동해선 열차 등을 통해 자유롭게 오가지 못하는 분단의 현실을 파악한다.",
+      "source_pages": [
+        15
+      ],
+      "suggested_activity_types": [
+        "see_think_wonder",
+        "learning_note"
+      ]
+    }
+  ],
+  "source_page_refs": [
+    12,
+    13,
+    14,
+    15
+  ],
+  "analysis_confidence": 0.95,
+  "review_status": "draft",
+  "notes": "추출된 텍스트(p.10-13)와 PDF 페이지(12-15)의 대응 관계를 확인하여 작성함. 군사적, 문화적, 인도적 측면의 분단 문제점을 4개의 덩어리로 구성함."
+}

@@ -1,0 +1,21 @@
+{
+  "schema_version": "1.0.0",
+  "stage": "pdf_extract_agent",
+  "lesson_id": null,
+  "status": "succeeded",
+  "run_id": "social_6_1_unit4_globe_world-20260331-094542",
+  "started_at": "2026-03-31T00:45:42.607355+00:00",
+  "finished_at": "2026-03-31T00:45:47.985565+00:00",
+  "input_refs": [
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit4_globe_world-20260331-094542/source/document_inventory.json"
+  ],
+  "output_refs": [
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit4_globe_world-20260331-094542/source/main.page_texts.json",
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit4_globe_world-20260331-094542/source/pdf_extract.status.json"
+  ],
+  "fallback_used": false,
+  "warnings": [],
+  "errors": [],
+  "agent_spec_path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/agents/pdf_extract_agent/AGENT.md",
+  "runtime_driven": true
+}

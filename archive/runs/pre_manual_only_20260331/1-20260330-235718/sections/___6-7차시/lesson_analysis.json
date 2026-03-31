@@ -1,0 +1,69 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-03-30T15:08:17.633462+00:00",
+  "lesson_id": "6-7차시",
+  "sheet_name": "6-7차시",
+  "lesson_title": "민주주의와 선거 — 선거에 적극적으로 참여해야 하는 까닭 알아보기",
+  "lesson_type": "core",
+  "pdf_pages": [
+    32
+  ],
+  "essential_question": "부정 선거가 민주주의를 위협했을 때 시민들은 어떻게 행동했으며, 이를 통해 알 수 있는 선거 참여의 중요성은 무엇일까요?",
+  "learning_goals": [
+    "3·15 부정 선거와 4·19 혁명의 발발 원인을 이해하고, 선거의 공정성이 민주주의의 핵심임을 설명할 수 있다.",
+    "민주주의를 지키기 위해 노력한 학생과 시민들의 태도를 통해 우리가 선거에 적극적으로 참여해야 하는 까닭을 찾을 수 있다."
+  ],
+  "key_concepts": [
+    "4·19 혁명",
+    "3·15 부정 선거",
+    "민주주의",
+    "시민 참여"
+  ],
+  "vocabulary": [
+    "부정 선거",
+    "혁명",
+    "희생",
+    "민주 묘지"
+  ],
+  "misconceptions": [
+    "선거는 단순히 투표하는 행위일 뿐이며 나의 참여가 사회에 큰 영향을 주지 못한다고 오해할 수 있다.",
+    "어린이는 아직 투표권이 없으므로 민주주의를 지키는 일에 참여할 수 없다고 생각할 수 있다."
+  ],
+  "difficulty_band": "on-level",
+  "content_chunks": [
+    {
+      "chunk_id": "6-7차시-chunk-1",
+      "label": "3·15 부정 선거와 4·19 혁명",
+      "content_type": "mixed",
+      "knowledge_type": "cause-effect",
+      "summary": "이승만 정부의 3·15 부정 선거에 항의하여 학생과 시민들이 민주화 시위를 벌였고, 결국 대통령이 물러난 4·19 혁명의 전개 과정을 다룹니다.",
+      "source_pages": [
+        32
+      ],
+      "suggested_activity_types": [
+        "see_think_wonder",
+        "learning_note"
+      ]
+    },
+    {
+      "chunk_id": "6-7차시-chunk-2",
+      "label": "시와 묘지를 통해 본 참여의 가치",
+      "content_type": "mixed",
+      "knowledge_type": "opinion",
+      "summary": "초등학생의 희생을 노래한 시와 국립 4·19 민주 묘지 사례를 통해 선거의 소중함과 민주주의를 지키기 위한 적극적인 참여의 중요성을 성찰합니다.",
+      "source_pages": [
+        32
+      ],
+      "suggested_activity_types": [
+        "see_think_wonder",
+        "worksheet"
+      ]
+    }
+  ],
+  "source_page_refs": [
+    32
+  ],
+  "analysis_confidence": 0.85,
+  "review_status": "draft",
+  "notes": "제공된 텍스트(4·19 혁명)와 차시 주제(선거 참여의 까닭)를 연결하여, 부정 선거의 폐해를 통한 참여의 중요성을 강조하여 분석함."
+}

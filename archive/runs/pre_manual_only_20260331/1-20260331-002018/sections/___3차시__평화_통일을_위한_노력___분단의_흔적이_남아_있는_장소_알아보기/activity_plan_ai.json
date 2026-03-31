@@ -1,0 +1,75 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-03-31T10:00:00+09:00",
+  "lesson_id": "3차시",
+  "activities": [
+    {
+      "activity_id": "act-3-1",
+      "lesson_id": "3차시",
+      "object_role": "learning_note",
+      "lesson_flow_stage": "during",
+      "activity_type": "freeform_html",
+      "level": "core",
+      "learning_goal": "한반도 곳곳에 남아 있는 분단의 장소와 시설물의 특징을 수업 흐름에 따라 정리할 수 있다.",
+      "prompt_text": "수업을 들으며 우리 주변과 접경 지역에 남겨진 분단의 흔적들을 메모하고, 그 의미를 되새겨 봅시다.",
+      "layout_template": "freeform_html",
+      "html_content": "<!DOCTYPE html><html lang='ko'><head><meta charset='UTF-8'><style>@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700;900&display=swap');body{width:1600px;margin:0;padding:60px;background:transparent;font-family:'Noto Sans KR',sans-serif;color:#333;box-sizing:border-box;}.card{background:#fff;padding:50px;border-radius:40px;border:1px solid #e0e0e0;}.header{display:flex;align-items:center;margin-bottom:40px;}.badge{background:#4A90E2;color:#fff;padding:10px 24px;border-radius:50px;font-weight:900;font-size:24px;margin-right:20px;}.title{font-size:42px;font-weight:900;margin:0;}section{margin-bottom:50px;}.section-title{font-size:28px;font-weight:700;margin-bottom:20px;display:flex;align-items:center;}.section-title::before{content:'';display:inline-block;width:12px;height:28px;background:#4A90E2;margin-right:15px;border-radius:4px;}.note-grid{display:grid;grid-template-columns:1fr 1fr;gap:30px;}.writing-box{background:#fff;border:3px solid #333;border-radius:20px;min-height:480px;padding:25px;font-size:22px;line-height:1.6;color:#666;position:relative;}.writing-box::after{content:'여기에 자유롭게 메모하세요 (Apple Pencil)';position:absolute;top:25px;left:25px;color:#ccc;font-style:italic;pointer-events:none;}.label-tag{display:inline-block;background:#333;color:#fff;padding:6px 16px;border-radius:8px;font-size:18px;margin-bottom:15px;}</style></head><body><div class='card'><div class='header'><div class='badge'>수업 메모</div><h1 class='title'>한반도 곳곳에 남겨진 분단의 발자국</h1></div><section><div class='section-title'>일상과 일상 너머의 흔적들</div><div class='note-grid'><div class='note-item'><div class='label-tag'>아바이 마을 (생활 속의 분단)</div><div class='writing-box'></div></div><div class='note-item'><div class='label-tag'>접경 지역 (DMZ, 판문점, 군사분계선)</div><div class='writing-box'></div></div></div></section><section><div class='section-title'>우리를 가로막는 시설물과 끊어진 길</div><div class='writing-box' style='min-height:520px;'><div class='label-tag'>용치, 방호벽, 끊어진 철길 등</div></div></section></div></body></html>",
+      "source_refs": [
+        16
+      ],
+      "student_writing_zones": [
+        {
+          "zone_id": "abai_note",
+          "label": "아바이 마을 메모",
+          "input_area_type": "free-writing",
+          "min_height": 480
+        },
+        {
+          "zone_id": "border_note",
+          "label": "접경 지역 메모",
+          "input_area_type": "free-writing",
+          "min_height": 480
+        },
+        {
+          "zone_id": "infrastructure_note",
+          "label": "시설물 및 철길 메모",
+          "input_area_type": "free-writing",
+          "min_height": 520
+        }
+      ],
+      "estimated_minutes": 15,
+      "review_status": "draft"
+    },
+    {
+      "activity_id": "act-3-2",
+      "lesson_id": "3차시",
+      "object_role": "activity_area",
+      "lesson_flow_stage": "after",
+      "activity_type": "freeform_html",
+      "level": "core",
+      "learning_goal": "분단의 시설물이 평화 통일 이후 어떻게 변화할지 상상하여 그 의미를 서술할 수 있다.",
+      "prompt_text": "탱크를 막기 위해 설치된 '용치'와 '방호벽'이 평화 통일 이후에는 어떤 모습으로 바뀌면 좋을까요? 여러분의 창의적인 생각을 글과 그림으로 표현해 봅시다.",
+      "layout_template": "freeform_html",
+      "html_content": "<!DOCTYPE html><html lang='ko'><head><meta charset='UTF-8'><style>@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700;900&display=swap');body{width:1600px;margin:0;padding:60px;background:transparent;font-family:'Noto Sans KR',sans-serif;color:#333;box-sizing:border-box;}.card{background:#fff;padding:60px;border-radius:40px;border:1px solid #e0e0e0;}.header{margin-bottom:45px;text-align:center;}.badge{display:inline-block;background:#E67E22;color:#fff;padding:12px 30px;border-radius:50px;font-weight:900;font-size:26px;margin-bottom:20px;}.title{font-size:48px;font-weight:900;margin:0;letter-spacing:-1px;}.instruction{font-size:24px;color:#555;margin-top:20px;line-height:1.5;}.container{display:grid;grid-template-columns:1fr 1fr;gap:40px;margin-top:50px;}.drawing-area{border:4px dashed #ccc;background:#fcfcfc;border-radius:30px;min-height:750px;display:flex;flex-direction:column;align-items:center;justify-content:center;color:#aaa;font-size:24px;position:relative;}.writing-area{display:flex;flex-direction:column;}.box-label{font-size:24px;font-weight:700;margin-bottom:15px;color:#E67E22;}.text-input{background:#fff;border:3px solid #333;border-radius:24px;flex-grow:1;min-height:550px;padding:30px;font-size:24px;line-height:1.8;}.concept-hint{background:#fff8f0;padding:25px;border-radius:20px;margin-top:30px;border:1px solid #ffe0b2;font-size:20px;line-height:1.6;}.concept-hint strong{color:#E67E22;}</style></head><body><div class='card'><div class='header'><div class='badge'>창의 융합 활동</div><h1 class='title'>멈춰버린 '용치', 다시 피어날 '평화'</h1><div class='instruction'>적의 탱크를 막기 위해 하천이나 도로에 설치된 용치(龍齒)와 방호벽.<br>이 시설물들이 평화 통일이 된 한반도에서 어떤 새로운 역할을 할 수 있을지 제안해 봅시다.</div></div><div class='container'><div class='drawing-area'><div>이곳에 미래의 모습을 그려보세요</div><div style='font-size:18px;margin-top:10px;'>(공원, 예술 작품, 역사 기념물 등)</div></div><div class='writing-area'><div class='box-label'>변화된 모습과 그 이유 설명하기</div><div class='text-input'></div><div class='concept-hint'><strong>도움말:</strong> 용치는 용의 이빨처럼 생겼다고 해서 붙여진 이름입니다. 무시무시한 방어 시설이었던 이 장소가 통일 후 사람들에게 기쁨이나 평안을 주는 장소로 바뀐다면 어떤 모습일까요?</div></div></div></div></body></html>",
+      "source_refs": [
+        16
+      ],
+      "student_writing_zones": [
+        {
+          "zone_id": "transformation_drawing",
+          "label": "변화된 모습 드로잉",
+          "input_area_type": "grid",
+          "min_height": 750
+        },
+        {
+          "zone_id": "transformation_reasoning",
+          "label": "변화의 이유와 의미 서술",
+          "input_area_type": "free-writing",
+          "min_height": 550
+        }
+      ],
+      "estimated_minutes": 20,
+      "review_status": "draft"
+    }
+  ]
+}

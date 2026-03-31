@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0.0",
+  "stage": "page_candidate_agent",
+  "lesson_id": null,
+  "status": "succeeded_with_warning",
+  "run_id": "korean_6_1_unit1_related_to_life_reading-20260331-100038",
+  "started_at": "2026-03-31T01:00:39.181029+00:00",
+  "finished_at": "2026-03-31T01:00:39.210816+00:00",
+  "input_refs": [
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/korean_6_1_unit1_related_to_life_reading-20260331-100038/source/lesson_queries.json",
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/korean_6_1_unit1_related_to_life_reading-20260331-100038/source/main.page_index.json"
+  ],
+  "output_refs": [
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/korean_6_1_unit1_related_to_life_reading-20260331-100038/source/page_candidates.json",
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/korean_6_1_unit1_related_to_life_reading-20260331-100038/source/page_candidate.status.json"
+  ],
+  "fallback_used": false,
+  "warnings": [
+    "1 lessons did not produce candidate pages"
+  ],
+  "errors": [],
+  "agent_spec_path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/agents/page_candidate_agent/AGENT.md",
+  "runtime_driven": true
+}

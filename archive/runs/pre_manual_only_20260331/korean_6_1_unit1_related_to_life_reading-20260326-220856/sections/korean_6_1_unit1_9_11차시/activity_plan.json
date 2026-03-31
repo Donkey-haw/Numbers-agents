@@ -1,0 +1,73 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-03-26T13:13:45.407543+00:00",
+  "lesson_id": "9-11차시",
+  "activities": [
+    {
+      "activity_id": "act-9-11-1",
+      "lesson_id": "9-11차시",
+      "object_role": "activity_area",
+      "lesson_flow_stage": "during",
+      "activity_type": "freeform_html",
+      "level": "core",
+      "learning_goal": "등장인물이 추구하는 가치를 비교하고 자신의 관점으로 평가할 수 있다.",
+      "prompt_text": "「그랬다면 어땠을까」에 등장하는 인물들의 선택을 살펴봅시다. 내가 보기에 가장 '고결하거나' '늠름했던' 인물은 누구인가요? 그 인물이 소중히 여긴 가치와 나의 생각을 비교해 써 봅시다.",
+      "layout_template": "freeform_html",
+      "html_content": "<!DOCTYPE html><html lang='ko'><head><meta charset='UTF-8'><style>body{width:1600px;margin:0;padding:40px;background:transparent;font-family:'Noto Sans KR',sans-serif;color:#333;}.card{background:#fff;padding:48px;border-radius:32px;box-shadow:none;border:1px solid #eee;}.header{display:flex;align-items:center;margin-bottom:32px;}.badge{background:#4A90E2;color:#fff;padding:8px 24px;border-radius:12px;font-weight:bold;font-size:24px;margin-right:20px;}.title{font-size:36px;font-weight:800;}.content-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;margin-top:20px;}.sub-title{font-size:24px;font-weight:700;margin-bottom:16px;color:#555;}.writing-zone{background:#fff;border:3px solid #333;border-radius:20px;min-height:550px;padding:24px;font-size:20px;line-height:1.6;}.vocab-hint{margin-top:24px;padding:20px;background:#f8f9fa;border-radius:16px;border:1px dashed #ccc;}.vocab-list{display:flex;gap:15px;flex-wrap:wrap;margin-top:10px;}.vocab-item{background:#fff;padding:6px 12px;border:1px solid #ddd;border-radius:8px;font-size:18px;color:#666;}</style></head><body><div class='card'><div class='header'><div class='badge'>가치 비교</div><div class='title'>인물의 선택, 나의 저울</div></div><div class='content-grid'><div><div class='sub-title'>① 작품 속 인물의 가치 (무엇을 소중히 여겼나요?)</div><div class='writing-zone'></div></div><div><div class='sub-title'>② 나의 생각 (내가 그 인물이었다면? 혹은 내 평가는?)</div><div class='writing-zone'></div></div></div><div class='vocab-hint'><div class='sub-title' style='font-size:18px;'>💡 도움말: 이런 낱말을 사용해 볼까요?</div><div class='vocab-list'><span class='vocab-item'>고결하다</span><span class='vocab-item'>늠름하다</span><span class='vocab-item'>고단하다</span><span class='vocab-item'>탐스럽다</span><span class='vocab-item'>천산갑</span></div></div></div></body></html>",
+      "source_refs": [
+        45,
+        46
+      ],
+      "teacher_notes": "단순한 행동 요약이 아니라, 그 행동 이면에 숨은 '가치(협력, 자유, 책임 등)'를 찾아내도록 지도해 주세요.",
+      "student_writing_zones": [
+        {
+          "zone_id": "character_value",
+          "label": "인물의 가치 정리",
+          "input_area_type": "free-writing",
+          "min_height": 550
+        },
+        {
+          "zone_id": "my_judgment",
+          "label": "나의 가치 판단 및 비교",
+          "input_area_type": "free-writing",
+          "min_height": 550
+        }
+      ],
+      "estimated_minutes": 15,
+      "review_status": "draft"
+    },
+    {
+      "activity_id": "act-9-11-2",
+      "lesson_id": "9-11차시",
+      "object_role": "worksheet",
+      "lesson_flow_stage": "after",
+      "activity_type": "freeform_html",
+      "level": "core",
+      "learning_goal": "인물이 추구하는 가치와 자신의 삶을 관련지어 독서 감상문을 쓸 수 있다.",
+      "prompt_text": "인물의 삶을 통해 내가 배운 점이나 나의 삶에 적용하고 싶은 가치를 담아 독서 감상문을 써 봅시다. 줄거리 요약보다는 '나의 생각'과 '가치'가 잘 드러나야 합니다.",
+      "layout_template": "freeform_html",
+      "html_content": "<!DOCTYPE html><html lang='ko'><head><meta charset='UTF-8'><style>body{width:1600px;margin:0;padding:40px;background:transparent;font-family:'Noto Sans KR',sans-serif;}.card{background:#fff;padding:50px;border-radius:40px;border:1px solid #e0e0e0;}.header{border-bottom:4px solid #333;padding-bottom:20px;margin-bottom:40px;display:flex;justify-content:space-between;align-items:flex-end;}.title-input{font-size:28px;font-weight:bold;color:#999;border-bottom:2px solid #eee;width:600px;padding:10px;}.main-layout{display:flex;flex-direction:column;gap:30px;}.section-box{border:3px solid #333;border-radius:24px;padding:30px;background:#fff;}.section-label{font-size:22px;font-weight:800;margin-bottom:15px;display:inline-block;background:#333;color:#fff;padding:4px 16px;border-radius:8px;}.writing-area{min-height:450px;}.summary-area{min-height:180px;border-bottom:1px dashed #ccc;margin-bottom:20px;}.guide-text{font-size:18px;color:#888;margin-bottom:10px;font-style:italic;}</style></head><body><div class='card'><div class='header'><div><div style='font-size:42px; font-weight:900; margin-bottom:10px;'>생각이 살아있는 독서 감상문</div><div class='title-input'>제목: </div></div><div style='font-size:20px; color:#666;'>작품명: 그랬다면 어땠을까</div></div><div class='main-layout'><div class='section-box'><div class='section-label'>내 마음을 움직인 장면과 줄거리</div><div class='writing-area' style='min-height:220px;'></div></div><div class='section-box'><div class='section-label'>가치에 대한 나의 생각과 다짐</div><div class='guide-text'>* 인물이 소중히 여긴 가치가 내 삶에서 왜 중요한지, 나는 앞으로 어떻게 살고 싶은지 써 보세요.</div><div class='writing-area' style='min-height:580px;'></div></div></div></div></body></html>",
+      "source_refs": [
+        47,
+        48
+      ],
+      "teacher_notes": "학생들이 줄거리 요약에만 치중하지 않도록 하단부 '가치에 대한 생각' 영역을 훨씬 넓게 배치했습니다. 자신의 경험을 연결하도록 독려해 주세요.",
+      "student_writing_zones": [
+        {
+          "zone_id": "scene_summary",
+          "label": "주요 장면 및 줄거리",
+          "input_area_type": "free-writing",
+          "min_height": 220
+        },
+        {
+          "zone_id": "value_reflection",
+          "label": "가치 성찰 및 감상",
+          "input_area_type": "free-writing",
+          "min_height": 580
+        }
+      ],
+      "estimated_minutes": 25,
+      "review_status": "draft"
+    }
+  ]
+}

@@ -1,0 +1,394 @@
+{
+  "project_root": "/Users/jonyeock/Desktop/Tool/NumbersAuto",
+  "pdf_path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/textbook/국어/[국어]6_1_교과서.pdf",
+  "template_path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/빈 넘버스 파일.numbers",
+  "output_file": "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/korean_6_1_unit1_related_to_life_reading-20260326-220856/output/6-1-국어-1. 자신의 삶과 관련지어 읽어요.numbers",
+  "footer": "국어 6-1 · 1단원 · 자신의 삶과 관련지어 읽어요",
+  "end_before_query": "바르게 고쳐 써요",
+  "sections": [
+    {
+      "sheet_name": "1차시",
+      "card_file": "korean_6_1_unit1_1차시",
+      "title": "배울 내용 살펴보기",
+      "badge": "1차시",
+      "accent": [
+        "#0f766e",
+        "#5eead4"
+      ],
+      "sources": [
+        {
+          "resource_id": "main",
+          "role": "textbook",
+          "pdf_pages": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "title_query": "배울 내용 살펴보기"
+        }
+      ],
+      "source_ranges": [
+        {
+          "resource_id": "main",
+          "role": "textbook",
+          "pdf_pages": [
+            1,
+            2,
+            3,
+            4
+          ]
+        }
+      ],
+      "pdf_pages": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "sheet_name": "2-3차시",
+      "card_file": "korean_6_1_unit1_2_3차시",
+      "title": "전기문을 읽고 인물이 추구하는 가치 알기",
+      "badge": "2-3차시",
+      "accent": [
+        "#115e59",
+        "#2dd4bf"
+      ],
+      "sources": [
+        {
+          "resource_id": "main",
+          "role": "textbook",
+          "pdf_pages": [
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14
+          ],
+          "title_query": "전기문을 읽고 인물이 추구하는 가치 알기"
+        }
+      ],
+      "source_ranges": [
+        {
+          "resource_id": "main",
+          "role": "textbook",
+          "pdf_pages": [
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14
+          ]
+        }
+      ],
+      "pdf_pages": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ]
+    },
+    {
+      "sheet_name": "4-6차시",
+      "card_file": "korean_6_1_unit1_4_6차시",
+      "title": "작품을 읽고 시대적 상황과 인물이 추구하는 가치에 대하여 질문하기",
+      "badge": "4-6차시",
+      "accent": [
+        "#0f766e",
+        "#14b8a6"
+      ],
+      "sources": [
+        {
+          "resource_id": "main",
+          "role": "textbook",
+          "pdf_pages": [
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26
+          ],
+          "title_query": "작품을 읽고 시대적 상황과 인물이 추구하는 가치에 대하여 질문하기"
+        }
+      ],
+      "source_ranges": [
+        {
+          "resource_id": "main",
+          "role": "textbook",
+          "pdf_pages": [
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26
+          ]
+        }
+      ],
+      "pdf_pages": [
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26
+      ]
+    },
+    {
+      "sheet_name": "7-8차시",
+      "card_file": "korean_6_1_unit1_7_8차시",
+      "title": "인물이 추구하는 가치를 자신의 삶과 관련짓기",
+      "badge": "7-8차시",
+      "accent": [
+        "#134e4a",
+        "#0d9488"
+      ],
+      "sources": [
+        {
+          "resource_id": "main",
+          "role": "textbook",
+          "pdf_pages": [
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38
+          ],
+          "title_query": "인물이 추구하는 가치를 자신의 삶과 관련짓기"
+        }
+      ],
+      "source_ranges": [
+        {
+          "resource_id": "main",
+          "role": "textbook",
+          "pdf_pages": [
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38
+          ]
+        }
+      ],
+      "pdf_pages": [
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38
+      ]
+    },
+    {
+      "sheet_name": "9-11차시",
+      "card_file": "korean_6_1_unit1_9_11차시",
+      "title": "작품을 읽고 독서 감상문 쓰기",
+      "badge": "9-11차시",
+      "accent": [
+        "#155e75",
+        "#22d3ee"
+      ],
+      "sources": [
+        {
+          "resource_id": "main",
+          "role": "textbook",
+          "pdf_pages": [
+            39,
+            40,
+            41,
+            42,
+            43,
+            44,
+            45,
+            46,
+            47,
+            48
+          ],
+          "title_query": "작품을 읽고 독서 감상문 쓰기"
+        }
+      ],
+      "source_ranges": [
+        {
+          "resource_id": "main",
+          "role": "textbook",
+          "pdf_pages": [
+            39,
+            40,
+            41,
+            42,
+            43,
+            44,
+            45,
+            46,
+            47,
+            48
+          ]
+        }
+      ],
+      "pdf_pages": [
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48
+      ]
+    },
+    {
+      "sheet_name": "12-13차시",
+      "card_file": "korean_6_1_unit1_12_13차시",
+      "title": "배운 내용 실천하기",
+      "badge": "12-13차시",
+      "accent": [
+        "#0f766e",
+        "#99f6e4"
+      ],
+      "sources": [
+        {
+          "resource_id": "main",
+          "role": "textbook",
+          "pdf_pages": [
+            49,
+            50
+          ],
+          "title_query": "배운 내용 실천하기"
+        }
+      ],
+      "source_ranges": [
+        {
+          "resource_id": "main",
+          "role": "textbook",
+          "pdf_pages": [
+            49,
+            50
+          ]
+        }
+      ],
+      "pdf_pages": [
+        49,
+        50
+      ]
+    },
+    {
+      "sheet_name": "14차시",
+      "card_file": "korean_6_1_unit1_14차시",
+      "title": "마무리하기",
+      "badge": "14차시",
+      "accent": [
+        "#164e63",
+        "#67e8f9"
+      ],
+      "sources": [
+        {
+          "resource_id": "main",
+          "role": "textbook",
+          "pdf_pages": [
+            51,
+            52,
+            53,
+            54
+          ],
+          "title_query": "마무리하기"
+        }
+      ],
+      "source_ranges": [
+        {
+          "resource_id": "main",
+          "role": "textbook",
+          "pdf_pages": [
+            51,
+            52,
+            53,
+            54
+          ]
+        }
+      ],
+      "pdf_pages": [
+        51,
+        52,
+        53,
+        54
+      ]
+    }
+  ],
+  "pages_dir": "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/korean_6_1_unit1_related_to_life_reading-20260326-220856/render/pages",
+  "cards_dir": "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/korean_6_1_unit1_related_to_life_reading-20260326-220856/render/cards",
+  "html_dir": "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/korean_6_1_unit1_related_to_life_reading-20260326-220856/render/html",
+  "resources": [
+    {
+      "resource_id": "main",
+      "label": "교과서",
+      "kind": "textbook",
+      "pdf_path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/textbook/국어/[국어]6_1_교과서.pdf"
+    }
+  ],
+  "resources_by_id": {
+    "main": {
+      "resource_id": "main",
+      "label": "교과서",
+      "kind": "textbook",
+      "pdf_path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/textbook/국어/[국어]6_1_교과서.pdf"
+    }
+  }
+}

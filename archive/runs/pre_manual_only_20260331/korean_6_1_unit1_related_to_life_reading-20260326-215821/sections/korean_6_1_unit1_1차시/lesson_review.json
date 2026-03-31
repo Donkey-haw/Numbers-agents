@@ -1,0 +1,16 @@
+{
+  "schema_version": "1.0.0",
+  "stage": "review_lesson_agent",
+  "lesson_id": "1차시",
+  "status": "succeeded",
+  "decision": "pass",
+  "findings": [
+    {
+      "severity": "info",
+      "message": "단원의 첫 차시로 가치의 개념을 도입하고 전체 학습 흐름을 조망함. 위인과 문학 작품 속 인물을 고루 활용하여 가치에 대한 이해를 돕도록 구성함.",
+      "evidence_refs": []
+    }
+  ],
+  "blocking_issues": [],
+  "warnings": []
+}

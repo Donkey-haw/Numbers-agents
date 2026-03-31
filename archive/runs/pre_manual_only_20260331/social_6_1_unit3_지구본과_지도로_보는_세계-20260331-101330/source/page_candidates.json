@@ -1,0 +1,175 @@
+{
+  "schema_version": "1.0.0",
+  "lessons": [
+    {
+      "lesson_id": "lesson-001",
+      "resource_id": "main",
+      "candidate_pages": [
+        114,
+        150,
+        112,
+        108,
+        131
+      ],
+      "candidate_entries": [
+        {
+          "page": 114,
+          "score": 11.5
+        },
+        {
+          "page": 150,
+          "score": 7.9167
+        },
+        {
+          "page": 112,
+          "score": 5.5
+        },
+        {
+          "page": 108,
+          "score": 4.0
+        },
+        {
+          "page": 131,
+          "score": 4.0
+        }
+      ],
+      "query": "지구본의 특징 살펴보기"
+    },
+    {
+      "lesson_id": "lesson-002",
+      "resource_id": "main",
+      "candidate_pages": [
+        119,
+        118,
+        150,
+        151,
+        147
+      ],
+      "candidate_entries": [
+        {
+          "page": 119,
+          "score": 62.1667
+        },
+        {
+          "page": 118,
+          "score": 35.9167
+        },
+        {
+          "page": 150,
+          "score": 30.6667
+        },
+        {
+          "page": 151,
+          "score": 17.9167
+        },
+        {
+          "page": 147,
+          "score": 17.1667
+        }
+      ],
+      "query": "디지털 공간 영상 정보의 의미 알아보기"
+    },
+    {
+      "lesson_id": "lesson-003",
+      "resource_id": "main",
+      "candidate_pages": [
+        120,
+        128,
+        129,
+        110,
+        121
+      ],
+      "candidate_entries": [
+        {
+          "page": 120,
+          "score": 29.25
+        },
+        {
+          "page": 128,
+          "score": 25.25
+        },
+        {
+          "page": 129,
+          "score": 18.5
+        },
+        {
+          "page": 110,
+          "score": 11.75
+        },
+        {
+          "page": 121,
+          "score": 10.0
+        }
+      ],
+      "query": "위도와 위선의 의미 알아보기"
+    },
+    {
+      "lesson_id": "lesson-004",
+      "resource_id": "main",
+      "candidate_pages": [
+        128,
+        127,
+        129,
+        130,
+        154
+      ],
+      "candidate_entries": [
+        {
+          "page": 128,
+          "score": 10.0
+        },
+        {
+          "page": 127,
+          "score": 7.0
+        },
+        {
+          "page": 129,
+          "score": 7.0
+        },
+        {
+          "page": 130,
+          "score": 5.5
+        },
+        {
+          "page": 154,
+          "score": 5.0
+        }
+      ],
+      "query": "경도와 경선의 의미 알아보기"
+    },
+    {
+      "lesson_id": "lesson-005",
+      "resource_id": "main",
+      "candidate_pages": [
+        128,
+        129,
+        120,
+        110,
+        121
+      ],
+      "candidate_entries": [
+        {
+          "page": 128,
+          "score": 36.0
+        },
+        {
+          "page": 129,
+          "score": 31.5
+        },
+        {
+          "page": 120,
+          "score": 20.0
+        },
+        {
+          "page": 110,
+          "score": 16.4167
+        },
+        {
+          "page": 121,
+          "score": 10.0
+        }
+      ],
+      "query": "위도와 경도를 이용해 위치를 표현하는 방법 살펴보기"
+    }
+  ]
+}

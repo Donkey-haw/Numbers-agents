@@ -1,0 +1,21 @@
+{
+  "schema_version": "1.0.0",
+  "stage": "review_manifest_agent",
+  "lesson_id": null,
+  "status": "succeeded_with_warning",
+  "decision": "pass_with_warning",
+  "findings": [
+    {
+      "severity": "warning",
+      "message": "4-6차시 sheet exhibits an unnatural activity flow: during -> after -> before. Pedagogical flow defined in NumbersDesign.md should follow before -> during -> after sequence.",
+      "evidence_refs": [
+        "sheet: 4-6차시",
+        "assets: order 2(during), 3(after), 4(before)"
+      ]
+    }
+  ],
+  "blocking_issues": [],
+  "warnings": [
+    "4-6차시: activity flow order is not before/during/after"
+  ]
+}

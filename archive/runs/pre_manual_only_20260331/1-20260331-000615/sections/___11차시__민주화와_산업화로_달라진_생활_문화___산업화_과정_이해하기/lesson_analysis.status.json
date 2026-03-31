@@ -1,0 +1,25 @@
+{
+  "schema_version": "1.0.0",
+  "stage": "lesson_analysis_agent",
+  "lesson_id": "11차시",
+  "status": "succeeded",
+  "run_id": "1-20260331-000615",
+  "started_at": "2026-03-30T15:10:39.899765+00:00",
+  "finished_at": "2026-03-30T15:12:32.666728+00:00",
+  "input_refs": [
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/1-20260331-000615/source/schedule_draft.json",
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/1-20260331-000615/source/textbook_context.json",
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/1-20260331-000615/source/local_baseline/___11차시__민주화와_산업화로_달라진_생활_문화___산업화_과정_이해하기.lesson_analysis.json"
+  ],
+  "output_refs": [
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/1-20260331-000615/sections/___11차시__민주화와_산업화로_달라진_생활_문화___산업화_과정_이해하기/lesson_analysis_ai.json",
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/1-20260331-000615/sections/___11차시__민주화와_산업화로_달라진_생활_문화___산업화_과정_이해하기/lesson_analysis.json"
+  ],
+  "fallback_used": false,
+  "warnings": [],
+  "errors": [],
+  "model": "gemini",
+  "agent_spec_path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/agents/lesson_analysis_agent/AGENT.md",
+  "attempt_count": 1,
+  "validation_errors": []
+}

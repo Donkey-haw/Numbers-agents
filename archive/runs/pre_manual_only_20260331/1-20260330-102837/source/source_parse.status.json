@@ -1,0 +1,28 @@
+{
+  "schema_version": "1.0.0",
+  "stage": "source_parse_agent",
+  "lesson_id": null,
+  "status": "failed",
+  "run_id": "1-20260330-102837",
+  "started_at": "2026-03-30T01:28:37.627564+00:00",
+  "finished_at": "2026-03-30T01:28:43.701104+00:00",
+  "input_refs": [
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/configs/1.json"
+  ],
+  "output_refs": [
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/1-20260330-102837/source/schedule_draft.json",
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/1-20260330-102837/source/textbook_context.json",
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/1-20260330-102837/source/runtime_config.json",
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/1-20260330-102837/source/config_quality_review.json",
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/1-20260330-102837/source/boundary_review.json",
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/1-20260330-102837/source/supplement_review.json",
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/1-20260330-102837/source/source_ai_review.json"
+  ],
+  "fallback_used": false,
+  "warnings": [],
+  "errors": [
+    "Could not infer start page for section '1차시' source 'main' from query '1단원 도입 — [단원 도입] 우리 친구는 누구?'"
+  ],
+  "agent_spec_path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/agents/source_parse_agent/AGENT.md",
+  "model": "gemini"
+}

@@ -1,0 +1,72 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-03-26T13:40:00.000000+00:00",
+  "lesson_id": "12-13차시",
+  "sheet_name": "12-13차시",
+  "lesson_title": "배운 내용 실천하기",
+  "lesson_type": "core",
+  "pdf_pages": [
+    49,
+    50
+  ],
+  "essential_question": "인물이 추구하는 가치가 잘 드러나도록 인물을 소개하는 방법은 무엇일까?",
+  "learning_goals": [
+    "인물이 추구하는 가치가 드러나게 인물을 소개하는 자료를 계획하고 만들 수 있다.",
+    "자신이 만든 자료를 활용하여 인물을 소개하고 활동 소감을 나눌 수 있다."
+  ],
+  "key_concepts": [
+    "인물 소개",
+    "가치",
+    "소개 자료(광고지, 동영상 등)",
+    "실천"
+  ],
+  "vocabulary": [
+    "실천",
+    "가치",
+    "소개",
+    "광고지",
+    "동영상",
+    "소감"
+  ],
+  "misconceptions": [
+    "인물을 소개할 때 단순히 외모나 행적을 나열하는 것이 아니라, 인물의 말과 행동에 담긴 '가치'가 잘 드러나야 함을 이해해야 한다."
+  ],
+  "difficulty_band": "on-level",
+  "content_chunks": [
+    {
+      "chunk_id": "12-13차시-chunk-1",
+      "label": "인물 소개 자료 제작 계획 및 준비",
+      "content_type": "activity",
+      "knowledge_type": "procedure",
+      "summary": "친구들에게 소개할 인물을 선택하고, 인물을 선택한 까닭, 가치가 드러나는 장면, 본받고 싶은 점 등을 정리하여 소개하는 글, 광고지, 동영상 등의 자료 제작을 계획한다.",
+      "source_pages": [
+        49
+      ],
+      "suggested_activity_types": [
+        "learning_note",
+        "worksheet"
+      ]
+    },
+    {
+      "chunk_id": "12-13차시-chunk-2",
+      "label": "실천 활동 수행 및 소감 나누기",
+      "content_type": "activity",
+      "knowledge_type": "application",
+      "summary": "활동 방식(전체, 모둠, 짝, 혼자)을 정하여 직접 인물 소개 활동을 실천하고, 친구들과 발표 자료를 공유하며 활동 소감을 나눈다.",
+      "source_pages": [
+        50
+      ],
+      "suggested_activity_types": [
+        "see_think_wonder",
+        "worksheet"
+      ]
+    }
+  ],
+  "source_page_refs": [
+    49,
+    50
+  ],
+  "analysis_confidence": 0.95,
+  "review_status": "draft",
+  "notes": "교과서 49-50쪽의 텍스트 내용을 바탕으로 인물 소개 자료 제작 및 실천 활동 과정을 구체화하여 분석함."
+}

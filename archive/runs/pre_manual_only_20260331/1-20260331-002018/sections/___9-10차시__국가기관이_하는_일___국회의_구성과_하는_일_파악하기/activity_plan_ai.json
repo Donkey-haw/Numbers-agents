@@ -1,0 +1,65 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-03-31T10:00:00+09:00",
+  "lesson_id": "9-10차시",
+  "activities": [
+    {
+      "activity_id": "act-9-10-1",
+      "lesson_id": "9-10차시",
+      "object_role": "learning_note",
+      "lesson_flow_stage": "during",
+      "activity_type": "freeform_html",
+      "level": "core",
+      "learning_goal": "국회 본회의장의 구조를 통해 국회에서 이루어지는 의사 결정 과정을 설명할 수 있다.",
+      "prompt_text": "국회 본회의장의 모습을 살펴보며, 수업 시간에 들은 핵심 내용과 각 시설의 역할을 메모해 봅시다.",
+      "layout_template": "freeform_html",
+      "html_content": "<!DOCTYPE html><html lang='ko'><head><meta charset='UTF-8'><style>body{width:1200px;margin:0;padding:40px;background:transparent;font-family:'Noto Sans KR',sans-serif;color:#333;} .card{background:#fff;padding:48px;border-radius:32px;box-shadow:none;} .header{margin-bottom:32px;border-left:8px solid #3498db;padding-left:24px;} h1{font-size:36px;margin:0 0 8px 0;color:#2c3e50;} p{font-size:20px;margin:0;color:#7f8c8d;} .content-grid{display:grid;grid-template-columns:1fr 1fr;gap:32px;margin-top:32px;} .visual-aid{background:#f8f9fa;border-radius:20px;padding:24px;border:1px dashed #bdc3c7;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;} .visual-aid span{color:#95a5a6;font-size:18px;} .writing-area{background:#fff;border:3px solid #333;border-radius:20px;min-height:520px;padding:24px;} .label{font-weight:bold;font-size:22px;margin-bottom:16px;display:block;color:#2c3e50;} .badge{display:inline-block;padding:6px 16px;background:#e1f5fe;color:#01579b;border-radius:50px;font-size:16px;font-weight:bold;margin-bottom:12px;}</style></head><body><div class='card'><div class='header'><span class='badge'>수업 메모</span><h1>국회 본회의장 탐구 노트</h1><p>발언대, 의원석, 전광판 등 주요 시설의 기능과 수업 중 강조된 내용을 기록하세요.</p></div><div class='content-grid'><div class='visual-aid'><span>[여기에 국회 본회의장 사진이나<br>모식도를 배치하여 활용하세요]</span><div style='margin-top:20px;font-size:16px;color:#34495e;'>국민의 뜻이 모여 법이 만들어지는<br>최종 의사 결정의 현장입니다.</div></div><div class='writing-area'><span class='label'>오늘 수업 핵심 정리 & 메모</span></div></div></div></body></html>",
+      "source_refs": [
+        74
+      ],
+      "teacher_notes": "교과서 74쪽의 본회의장 사진을 참고하여 각 위치(의장석, 발언대, 국회의원석)에서 어떤 일이 벌어지는지 연결하여 필기하도록 지도합니다.",
+      "student_writing_zones": [
+        {
+          "zone_id": "class_notes",
+          "label": "수업 핵심 정리 및 메모",
+          "input_area_type": "free-writing",
+          "min_height": 520
+        }
+      ],
+      "estimated_minutes": 15,
+      "review_status": "draft"
+    },
+    {
+      "activity_id": "act-9-10-2",
+      "lesson_id": "9-10차시",
+      "object_role": "activity_area",
+      "lesson_flow_stage": "after",
+      "activity_type": "freeform_html",
+      "level": "extension",
+      "learning_goal": "입법의 의미를 이해하고, 우리 사회에 필요한 법을 제안하는 입법 제안서를 작성할 수 있다.",
+      "prompt_text": "내가 국회의원이라면 어떤 법을 만들고 싶나요? 우리 주변의 문제를 해결하기 위한 '나의 첫 번째 법안'을 제안해 봅시다.",
+      "layout_template": "freeform_html",
+      "html_content": "<!DOCTYPE html><html lang='ko'><head><meta charset='UTF-8'><style>body{width:1200px;margin:0;padding:40px;background:transparent;font-family:'Noto Sans KR',sans-serif;color:#333;} .card{background:#fff;padding:48px;border-radius:32px;border:1px solid #eee;} .header{text-align:center;margin-bottom:40px;} .badge{background:#2c3e50;color:#fff;padding:8px 20px;border-radius:50px;font-size:18px;font-weight:bold;margin-bottom:16px;display:inline-block;} h1{font-size:42px;margin:10px 0;} .form-section{margin-bottom:32px;} .form-label{display:block;font-size:24px;font-weight:bold;margin-bottom:12px;color:#2c3e50;border-left:6px solid #e67e22;padding-left:16px;} .input-box{background:#fff;border:3px solid #333;border-radius:16px;padding:20px;} .box-small{min-height:80px;} .box-large{min-height:480px;} .hint{font-size:16px;color:#7f8c8d;margin-top:8px;font-style:italic;}</style></head><body><div class='card'><div class='header'><span class='badge'>제22대 어린이 국회</span><h1>나의 첫 번째 입법 제안서</h1><p>국민의 행복을 위해 꼭 필요한 새로운 법을 디자인해 보세요.</p></div><div class='form-section'><span class='form-label'>1. 법안의 이름</span><div class='input-box box-small'></div><p class='hint'>예: 어린이 안전 통학로 확보에 관한 법, 교실 내 탄소 중립 실천법 등</p></div><div class='form-section'><span class='form-label'>2. 제안 이유와 기대 효과</span><div class='input-box box-large'></div><p class='hint'>이 법이 왜 필요한지, 이 법이 생기면 우리 삶이 어떻게 달라질지 구체적으로 적어보세요.</p></div></div></body></html>",
+      "source_refs": [
+        74
+      ],
+      "teacher_notes": "국회의 가장 중요한 역할이 '입법'임을 상기시키며, 단순히 규칙을 정하는 것을 넘어 '국민의 뜻'을 반영한다는 점을 강조합니다.",
+      "student_writing_zones": [
+        {
+          "zone_id": "bill_title",
+          "label": "법안의 이름",
+          "input_area_type": "inline-answer",
+          "min_height": 80
+        },
+        {
+          "zone_id": "reasoning_and_effect",
+          "label": "제안 이유와 기대 효과",
+          "input_area_type": "free-writing",
+          "min_height": 480
+        }
+      ],
+      "estimated_minutes": 20,
+      "review_status": "draft"
+    }
+  ]
+}

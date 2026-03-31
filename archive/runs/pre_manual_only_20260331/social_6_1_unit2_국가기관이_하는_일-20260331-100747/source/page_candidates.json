@@ -1,0 +1,65 @@
+{
+  "schema_version": "1.0.0",
+  "lessons": [
+    {
+      "lesson_id": "lesson-001",
+      "resource_id": "main",
+      "candidate_pages": [
+        88,
+        83,
+        114,
+        54,
+        118
+      ],
+      "query": "국가기관의 의미 알아보기"
+    },
+    {
+      "lesson_id": "lesson-002",
+      "resource_id": "main",
+      "candidate_pages": [
+        74,
+        82,
+        80,
+        81,
+        87
+      ],
+      "query": "국회의 구성과 하는 일 파악하기"
+    },
+    {
+      "lesson_id": "lesson-003",
+      "resource_id": "main",
+      "candidate_pages": [
+        82,
+        74,
+        80,
+        81,
+        87
+      ],
+      "query": "행정부의 구성과 하는 일 파악하기"
+    },
+    {
+      "lesson_id": "lesson-004",
+      "resource_id": "main",
+      "candidate_pages": [
+        82,
+        74,
+        73,
+        80,
+        81
+      ],
+      "query": "법원의 구성과 하는 일 파악하기"
+    },
+    {
+      "lesson_id": "lesson-005",
+      "resource_id": "main",
+      "candidate_pages": [
+        87,
+        54,
+        90,
+        86,
+        71
+      ],
+      "query": "권력 분립의 의미와 중요성 탐구하기"
+    }
+  ]
+}

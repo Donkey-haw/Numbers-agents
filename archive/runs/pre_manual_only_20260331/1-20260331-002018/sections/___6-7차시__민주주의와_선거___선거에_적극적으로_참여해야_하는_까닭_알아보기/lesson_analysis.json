@@ -1,0 +1,73 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-03-30T15:28:42.848650+00:00",
+  "lesson_id": "6-7차시",
+  "sheet_name": "6-7차시",
+  "lesson_title": "민주주의와 선거 — 선거에 적극적으로 참여해야 하는 까닭 알아보기",
+  "lesson_type": "core",
+  "pdf_pages": [
+    32
+  ],
+  "essential_question": "우리가 선거에 적극적으로 참여하여 민주주의를 지켜야 하는 이유는 무엇일까요?",
+  "learning_goals": [
+    "4·19 혁명의 원인과 과정을 통해 민주주의를 지키기 위한 시민들의 노력을 설명할 수 있다.",
+    "부정 선거에 맞서 민주주의를 수호하려 했던 사람들의 희생과 참여의 의미를 이해한다."
+  ],
+  "key_concepts": [
+    "4·19 혁명",
+    "3·15 부정 선거",
+    "민주화",
+    "시민 참여",
+    "민주주의 수호"
+  ],
+  "vocabulary": [
+    "혁명",
+    "부정 선거",
+    "시위",
+    "영정 사진",
+    "민주 묘지"
+  ],
+  "misconceptions": [
+    "민주주의는 저절로 얻어진 것이라고 생각할 수 있다.",
+    "초등학생은 사회 문제나 민주화 운동에 참여할 수 없다고 오해할 수 있다."
+  ],
+  "difficulty_band": "on-level",
+  "content_chunks": [
+    {
+      "chunk_id": "6-7차시-chunk-1",
+      "label": "4·19 혁명의 발단",
+      "content_type": "text",
+      "knowledge_type": "cause-effect",
+      "summary": "이승만 정부의 3·15 부정 선거에 항의하여 학생과 시민들이 민주주의를 지키기 위해 시위를 벌임.",
+      "source_pages": [
+        32
+      ]
+    },
+    {
+      "chunk_id": "6-7차시-chunk-2",
+      "label": "민주화를 위한 희생과 결과",
+      "content_type": "text",
+      "knowledge_type": "fact",
+      "summary": "경찰의 무력 진압으로 많은 희생자가 발생했으나, 초등학생을 포함한 거센 시위 끝에 이승만이 물러남.",
+      "source_pages": [
+        32
+      ]
+    },
+    {
+      "chunk_id": "6-7차시-chunk-3",
+      "label": "기억과 계승",
+      "content_type": "activity",
+      "knowledge_type": "opinion",
+      "summary": "국립 4·19 민주 묘지 방문 및 시 '나는 알아요' 읽기를 통해 민주주의를 위해 희생된 이들을 기리고 참여의 중요성 느끼기.",
+      "source_pages": [
+        32
+      ]
+    }
+  ],
+  "source_page_refs": [
+    32
+  ],
+  "analysis_confidence": 0.9,
+  "review_status": "draft",
+  "notes": "추출된 텍스트 내용(4·19 혁명 및 3·15 부정 선거)을 바탕으로 학습 목표와 청크를 구체화함. 텍스트 하단 페이지 번호가 30으로 표시되나 제공된 메타데이터에 따라 32쪽으로 유지함."
+}

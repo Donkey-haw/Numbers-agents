@@ -1,0 +1,29 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-03-30T15:48:38.659251+00:00",
+  "pdf_path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/textbook/사회/[사회]6_1_교과서.pdf",
+  "current_section": {
+    "section_key": "social_6_1_unit1_life_12-13차시__산업화로_사람들의_생활은_어떻게_달라졌을까요____주제_마무리",
+    "sheet_name": "12-13차시",
+    "lesson_title": "산업화로 사람들의 생활은 어떻게 달라졌을까요? / 주제 마무리",
+    "title_query": "산업화로 사람들의 생활은 어떻게 달라졌을까요?",
+    "pdf_pages": [
+      20
+    ],
+    "baseline_analysis_path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit1_democratization_industrialization-20260331-004801/source/local_baseline/social_6_1_unit1_life_12-13차시__산업화로_사람들의_생활은_어떻게_달라졌을까요____주제_마무리.lesson_analysis.json",
+    "extracted_text": "우리가 꿈꾸는 비무장 지대\n비무장 지대는 정전 협정 이후 오랫동안 사람들의 출입이 제한되었다. \n사람들의 발길이 끊기면서 천연기념물과 멸종 위기의 다양한 동식물이 살게 \n되었고, 생태환경이 잘 보존될 수 있었다. 또한 비무장 지대에는 전쟁의 \n흔적이 고스란히 남아 있으며, 아직 조사가 이루어지지 않은 문화유산이나 \n자연유산도 곳곳에 남아 있는 것으로 알려져 있다. \n비무장 지대의 생태계를 잘 보존해야 해.\n앞으로 백 년 정도 사람의 발길이 닿지 않게\n하고, 자연 그대로 두면 좋겠어.\n18\n1 평화 통일을 위한 노력, 민주화와 산업화",
+    "extracted_text_truncated": false
+  },
+  "neighbor_sections": [
+    {
+      "relation": "previous",
+      "section_key": "social_6_1_unit1_life_11차시__우리나라는_어떻게_산업화를_이루었을까요_",
+      "sheet_name": "11차시",
+      "lesson_title": "우리나라는 어떻게 산업화를 이루었을까요?",
+      "title_query": "우리나라는 어떻게 산업화를 이루었을까요?",
+      "pdf_pages": [
+        41
+      ]
+    }
+  ]
+}

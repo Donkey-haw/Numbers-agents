@@ -1,0 +1,19 @@
+{
+  "schema_version": "1.0.0",
+  "stage": "lesson_review_agent",
+  "lesson_id": "6-7차시",
+  "status": "succeeded",
+  "run_id": "1-20260331-002018",
+  "started_at": "2026-03-30T15:42:31.546141+00:00",
+  "finished_at": "2026-03-30T15:42:31.547015+00:00",
+  "input_refs": [
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/1-20260331-002018/sections/___6-7차시__민주주의와_선거___선거에_적극적으로_참여해야_하는_까닭_알아보기/lesson_analysis.json"
+  ],
+  "output_refs": [
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/1-20260331-002018/sections/___6-7차시__민주주의와_선거___선거에_적극적으로_참여해야_하는_까닭_알아보기/lesson_review.json"
+  ],
+  "fallback_used": false,
+  "warnings": [],
+  "errors": [],
+  "agent_spec_path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/agents/lesson_review_agent/AGENT.md"
+}

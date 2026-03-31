@@ -1,0 +1,109 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-03-30T15:14:59.787942+00:00",
+  "lesson_id": "2차시",
+  "sheet_name": "2차시",
+  "lesson_title": "평화 통일을 위한 노력 — 분단으로 나타난 문제점과 분단이 사회와 생활 에 끼친 영향 알아보기",
+  "lesson_type": "core",
+  "pdf_pages": [
+    12,
+    13,
+    14,
+    15
+  ],
+  "essential_question": "분단은 우리 사회와 생활에 어떠한 문제점을 야기하며, 왜 평화 통일이 필요할까요?",
+  "learning_goals": [
+    "분단으로 인한 군사적 대립이 국가 경제와 세계 평화에 미치는 영향을 설명할 수 있다.",
+    "남북한의 언어 및 생활 방식 차이로 인해 발생하는 사회·문화적 문제점을 이해한다.",
+    "이산가족과 북한 이탈 주민의 아픔을 통해 자유 왕래의 소중함과 통일의 필요성을 인식한다."
+  ],
+  "key_concepts": [
+    "분단",
+    "군사적 긴장",
+    "국방비",
+    "문화 차이",
+    "이산가족",
+    "자유 왕래"
+  ],
+  "vocabulary": [
+    "국방비",
+    "체제",
+    "이산가족",
+    "북한 이탈 주민",
+    "적대 관계",
+    "시범 운행"
+  ],
+  "misconceptions": [
+    "남북한은 같은 민족이므로 언어와 생활 방식이 여전히 동일할 것이다 (오랜 분단으로 인해 상당한 차이가 발생했음을 인지해야 함).",
+    "국방비 지출은 단순히 군사력을 키우기 위한 선택 사항이다 (분단으로 인한 필수적이고 막대한 경제적 부담임을 이해해야 함)."
+  ],
+  "difficulty_band": "on-level",
+  "content_chunks": [
+    {
+      "chunk_id": "2차시-chunk-1",
+      "label": "군사적 긴장과 국방비 지출",
+      "content_type": "mixed",
+      "knowledge_type": "cause-effect",
+      "summary": "남북 간 군사적 대립으로 인해 한반도는 항상 충돌 위험에 놓여 있으며, 막대한 국방비 지출로 인한 경제적 부담과 세계 평화에 대한 위협이 발생함.",
+      "source_pages": [
+        12
+      ],
+      "suggested_activity_types": [
+        "data_analysis",
+        "discussion"
+      ]
+    },
+    {
+      "chunk_id": "2차시-chunk-2",
+      "label": "남북한의 사회·문화적 차이",
+      "content_type": "text",
+      "knowledge_type": "comparison",
+      "summary": "오랜 분단과 서로 다른 체제 속에서 언어(빙수-단얼음, 도시락-곽밥 등)와 생활 방식에 차이가 생겼으며, 이는 북한 이탈 주민의 적응 과정에서 어려움을 초래함.",
+      "source_pages": [
+        13
+      ],
+      "suggested_activity_types": [
+        "vocabulary_matching",
+        "role_play"
+      ]
+    },
+    {
+      "chunk_id": "2차시-chunk-3",
+      "label": "이산가족의 아픔과 자유 왕래의 어려움",
+      "content_type": "image",
+      "knowledge_type": "fact",
+      "summary": "분단으로 인해 가족과 헤어진 이산가족들이 자유롭게 만나지 못하고 있으며, 과거 시범 운행되었던 열차가 중단되는 등 이동의 자유가 제한됨.",
+      "source_pages": [
+        13
+      ],
+      "suggested_activity_types": [
+        "empathy_writing",
+        "map_study"
+      ]
+    },
+    {
+      "chunk_id": "2차시-chunk-4",
+      "label": "평화 통일의 필요성 탐색",
+      "content_type": "summary",
+      "knowledge_type": "opinion",
+      "summary": "분단으로 인한 다양한 문제점(군사적 긴장, 자유 왕래의 어려움, 문화 차이 등)을 종합하여 평화 통일이 필요한 이유를 성찰하고 활동 자료를 통해 정리함.",
+      "source_pages": [
+        14,
+        15
+      ],
+      "suggested_activity_types": [
+        "reflective_writing",
+        "activity_sheet"
+      ]
+    }
+  ],
+  "source_page_refs": [
+    12,
+    13,
+    14,
+    15
+  ],
+  "analysis_confidence": 0.9,
+  "review_status": "draft",
+  "notes": "텍스트 분석 결과 페이지 12에 군사적 내용, 13에 문화 및 이산가족 내용이 집중되어 있음. 페이지 14-15는 활동 및 정리 단계로 구성된 것으로 판단됨."
+}

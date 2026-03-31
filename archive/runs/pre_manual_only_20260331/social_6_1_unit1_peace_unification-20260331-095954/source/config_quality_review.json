@@ -1,0 +1,44 @@
+{
+  "schema_version": "1.0.0",
+  "stage": "review_source_config",
+  "lesson_id": null,
+  "status": "succeeded_with_warning",
+  "decision": "pass_with_warning",
+  "findings": [
+    {
+      "severity": "warning",
+      "message": "2차시의 시작 쿼리가 여러 페이지에 매칭됩니다.",
+      "evidence_refs": [
+        "분단으로 어떤 문제가 발생했을까요?"
+      ]
+    },
+    {
+      "severity": "warning",
+      "message": "3차시의 시작 쿼리가 여러 페이지에 매칭됩니다.",
+      "evidence_refs": [
+        "분단의 흔적이 남아 있는 장소를 찾아볼까요?"
+      ]
+    },
+    {
+      "severity": "warning",
+      "message": "4차시의 시작 쿼리가 여러 페이지에 매칭됩니다.",
+      "evidence_refs": [
+        "분단의 장소를 평화의 장소로 바꾸려는 노력을 살펴볼까요?"
+      ]
+    },
+    {
+      "severity": "warning",
+      "message": "5-6차시의 시작 쿼리가 여러 페이지에 매칭됩니다.",
+      "evidence_refs": [
+        "평화 통일을 위해 어떤 노력을 해야 할까요?"
+      ]
+    }
+  ],
+  "blocking_issues": [],
+  "warnings": [
+    "2차시: source 'main' title_query matched 5 pages",
+    "3차시: source 'main' title_query matched 5 pages",
+    "4차시: source 'main' title_query matched 5 pages",
+    "5-6차시: source 'main' title_query matched 5 pages"
+  ]
+}

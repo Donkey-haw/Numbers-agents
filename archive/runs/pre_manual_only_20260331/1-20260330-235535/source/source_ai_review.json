@@ -1,0 +1,57 @@
+{
+  "schema_version": "1.0.0",
+  "stage": "review_source_ai_agent",
+  "lesson_id": null,
+  "status": "succeeded_with_warning",
+  "decision": "pass_with_warning",
+  "findings": [
+    {
+      "severity": "warning",
+      "message": "대부분의 차시 제목 쿼리가 여러 페이지(4~5페이지)에 중복 매칭되어 소스 매칭의 모호성이 높습니다.",
+      "evidence_refs": [
+        "source/config_quality_review.json"
+      ]
+    },
+    {
+      "severity": "warning",
+      "message": "거의 모든 차시에서 경계 판정 신뢰도가 낮음(0.45~0.55)으로 나타나며, 휴리스틱에 의존한 경계 설정이 이루어졌습니다.",
+      "evidence_refs": [
+        "source/boundary_review.json"
+      ]
+    },
+    {
+      "severity": "warning",
+      "message": "차시 간 시작 페이지가 이전 차시의 경계와 겹치는 사례가 다수 발견되었습니다.",
+      "evidence_refs": [
+        "lesson-004",
+        "lesson-005",
+        "lesson-008",
+        "lesson-010",
+        "lesson-012",
+        "lesson-014",
+        "lesson-015",
+        "lesson-016",
+        "lesson-017",
+        "lesson-019",
+        "lesson-020",
+        "lesson-021",
+        "lesson-022",
+        "lesson-025",
+        "lesson-027",
+        "lesson-030",
+        "lesson-031",
+        "lesson-033",
+        "lesson-036",
+        "lesson-038",
+        "lesson-039",
+        "lesson-040"
+      ]
+    }
+  ],
+  "blocking_issues": [],
+  "warnings": [
+    "source 'main' title_query matched 4-5 pages for most lessons",
+    "boundary is low_confidence for all lessons (0.45-0.55)",
+    "start_page overlaps with previous lesson boundary for 23 lessons"
+  ]
+}

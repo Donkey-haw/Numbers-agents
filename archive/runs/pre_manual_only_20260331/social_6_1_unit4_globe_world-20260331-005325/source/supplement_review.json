@@ -1,0 +1,11 @@
+{
+  "schema_version": "1.0.0",
+  "stage": "review_source_supplement",
+  "lesson_id": null,
+  "status": "succeeded",
+  "decision": "pass",
+  "findings": [],
+  "blocking_issues": [],
+  "warnings": [],
+  "entries": []
+}

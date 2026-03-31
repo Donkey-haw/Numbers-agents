@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0.0",
+  "stage": "html_card_agent",
+  "lesson_id": null,
+  "status": "succeeded",
+  "run_id": "social_6_1_unit4_globe_world-20260331-005325",
+  "started_at": "2026-03-30T15:56:43.011024+00:00",
+  "finished_at": "2026-03-30T15:56:43.023951+00:00",
+  "input_refs": [
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit4_globe_world-20260331-005325/sections/social_globe_world_2_3__지구본과_지도로_보는_세계___지구본의_특징_살펴보기/activity_plan.json",
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit4_globe_world-20260331-005325/sections/social_globe_world_4__지구본과_지도로_보는_세계___디지털_공간_영상_정보의_의미_알아보기/activity_plan.json",
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit4_globe_world-20260331-005325/sections/social_globe_world_5__지구본과_지도로_보는_세계___위도와_위선의_의미_알아보기/activity_plan.json",
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit4_globe_world-20260331-005325/sections/social_globe_world_6__지구본과_지도로_보는_세계___경도와_경선의_의미_알아보기/activity_plan.json",
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit4_globe_world-20260331-005325/sections/social_globe_world_7__지구본과_지도로_보는_세계___위도와_경도를_이용해_위치를_표현하는_방법_살_펴보기/activity_plan.json",
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit4_globe_world-20260331-005325/source/runtime_config.json"
+  ],
+  "output_refs": [
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit4_globe_world-20260331-005325/render/runtime_config.json",
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit4_globe_world-20260331-005325/render/html_manifest.json"
+  ],
+  "fallback_used": false,
+  "warnings": [],
+  "errors": []
+}

@@ -1,0 +1,25 @@
+{
+  "schema_version": "1.0.0",
+  "stage": "activity_plan_agent",
+  "lesson_id": "9-10차시",
+  "status": "succeeded",
+  "run_id": "1-20260331-002018",
+  "started_at": "2026-03-30T15:57:15.325283+00:00",
+  "finished_at": "2026-03-30T15:57:50.691313+00:00",
+  "input_refs": [
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/1-20260331-002018/sections/___9-10차시__국가기관이_하는_일___국회의_구성과_하는_일_파악하기/lesson_analysis.json"
+  ],
+  "output_refs": [
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/1-20260331-002018/sections/___9-10차시__국가기관이_하는_일___국회의_구성과_하는_일_파악하기/activity_plan_ai.json",
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/1-20260331-002018/sections/___9-10차시__국가기관이_하는_일___국회의_구성과_하는_일_파악하기/activity_plan.json"
+  ],
+  "fallback_used": false,
+  "fallback_category": null,
+  "fallback_reason": null,
+  "warnings": [],
+  "errors": [],
+  "agent_spec_path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/agents/activity_plan_agent/AGENT.md",
+  "attempt_count": 1,
+  "repair_attempted": false,
+  "validation_errors": []
+}

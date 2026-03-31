@@ -1,0 +1,21 @@
+{
+  "schema_version": "1.0.0",
+  "stage": "lesson_review_agent",
+  "lesson_id": "8-9차시",
+  "status": "succeeded_with_warning",
+  "run_id": "social_6_1_unit1_democratization_industrialization-20260331-004223",
+  "started_at": "2026-03-30T15:43:16.041514+00:00",
+  "finished_at": "2026-03-30T15:43:16.041963+00:00",
+  "input_refs": [
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit1_democratization_industrialization-20260331-004223/sections/social_6_1_unit1_life_8-9차시__민주화를_위한_노력을_살펴볼까요_/lesson_analysis.json"
+  ],
+  "output_refs": [
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit1_democratization_industrialization-20260331-004223/sections/social_6_1_unit1_life_8-9차시__민주화를_위한_노력을_살펴볼까요_/lesson_review.json"
+  ],
+  "fallback_used": false,
+  "warnings": [
+    "misconceptions is empty"
+  ],
+  "errors": [],
+  "agent_spec_path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/agents/lesson_review_agent/AGENT.md"
+}

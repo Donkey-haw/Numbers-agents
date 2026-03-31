@@ -1,0 +1,69 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-03-31T10:00:00+09:00",
+  "lesson_id": "7차시",
+  "activities": [
+    {
+      "activity_id": "act-7-1",
+      "lesson_id": "7차시",
+      "object_role": "learning_note",
+      "lesson_flow_stage": "during",
+      "activity_type": "freeform_html",
+      "level": "core",
+      "learning_goal": "위도와 경도의 개념을 시각화하여 정리하고 차이점을 설명할 수 있다.",
+      "prompt_text": "수업을 들으며 위도와 경도의 핵심 원리를 정리해 봅시다. 가로선과 세로선이 어떻게 다른지 나만의 그림과 글로 기록하세요.",
+      "layout_template": "freeform_html",
+      "html_content": "<!DOCTYPE html><html lang='ko'><head><meta charset='UTF-8'><style>body{width:1600px;margin:0;padding:40px;background:transparent;font-family:'Noto Sans KR',sans-serif;box-sizing:border-box;}.card{background:#fff;padding:48px;border-radius:32px;box-shadow:0 10px 30px rgba(0,0,0,0.05);border:1px solid #eee;}.header{display:flex;align-items:center;margin-bottom:40px;gap:20px;}.badge{background:#2563eb;color:#fff;padding:8px 24px;border-radius:100px;font-weight:700;font-size:24px;}.title{font-size:42px;font-weight:900;color:#111;margin:0;}.container{display:grid;grid-template-columns:1fr 1fr;gap:40px;}.section-title{font-size:28px;font-weight:700;margin-bottom:16px;padding-left:12px;border-left:8px solid #2563eb;}.writing-box{background:#fff;border:3px solid #333;border-radius:20px;min-height:600px;padding:24px;}.guide-text{color:#666;font-size:20px;margin-bottom:12px;line-height:1.5;}</style></head><body><div class='card'><div class='header'><span class='badge'>배움 메모</span><h1 class='title'>위도와 경도: 위치를 찾는 마법의 선</h1></div><div class='container'><div class='column'><div class='section-title'>위도 (Latitude)</div><p class='guide-text'>가로선, 적도(0도), 북위/남위의 특징을 그림과 글로 정리해 보세요.</p><div class='writing-box'></div></div><div class='column'><div class='section-title'>경도 (Longitude)</div><p class='guide-text'>세로선, 본초 자오선(0도), 동경/서경의 특징을 그림과 글로 정리해 보세요.</p><div class='writing-box'></div></div></div></div></body></html>",
+      "source_refs": [
+        110
+      ],
+      "student_writing_zones": [
+        {
+          "zone_id": "latitude_note",
+          "label": "위도 정리 영역",
+          "input_area_type": "free-writing",
+          "min_height": 600
+        },
+        {
+          "zone_id": "longitude_note",
+          "label": "경도 정리 영역",
+          "input_area_type": "free-writing",
+          "min_height": 600
+        }
+      ],
+      "estimated_minutes": 15,
+      "review_status": "draft"
+    },
+    {
+      "activity_id": "act-7-2",
+      "lesson_id": "7차시",
+      "object_role": "activity_area",
+      "lesson_flow_stage": "during",
+      "activity_type": "freeform_html",
+      "level": "core",
+      "learning_goal": "위도와 경도 좌표를 읽고 실제 장소를 찾아내는 과정을 논리적으로 설명할 수 있다.",
+      "prompt_text": "위치 수사관이 되어 아래 좌표가 가리키는 장소를 추론해 봅시다. 단순히 이름만 적지 말고, 어떻게 찾았는지 수사 근거를 논리적으로 적어주세요.",
+      "layout_template": "freeform_html",
+      "html_content": "<!DOCTYPE html><html lang='ko'><head><meta charset='UTF-8'><style>body{width:1600px;margin:0;padding:40px;background:transparent;font-family:'Noto Sans KR',sans-serif;box-sizing:border-box;}.card{background:#fff;padding:48px;border-radius:32px;border:4px double #333;}.header{text-align:center;margin-bottom:48px;border-bottom:2px solid #333;padding-bottom:24px;}.badge{background:#ef4444;color:#fff;padding:8px 24px;border-radius:8px;font-weight:700;font-size:24px;display:inline-block;margin-bottom:16px;}.title{font-size:48px;font-weight:900;color:#111;margin:0;letter-spacing:-1px;}.case-info{background:#f8fafc;padding:32px;border-radius:16px;margin-bottom:40px;display:flex;justify-content:center;gap:60px;border:1px solid #cbd5e1;}.coordinate-item{text-align:center;}.label{font-size:20px;color:#64748b;font-weight:700;margin-bottom:8px;}.value{font-size:36px;font-weight:900;color:#0f172a;}.investigation-grid{display:grid;grid-template-columns:1fr;gap:32px;}.investigation-box{background:#fff;border:3px solid #333;border-radius:16px;padding:24px;}.box-label{font-size:24px;font-weight:800;margin-bottom:16px;display:flex;align-items:center;}.box-label::before{content:'🔍';margin-right:10px;}.content-area{min-height:220px;}.long-content{min-height:450px;}</style></head><body><div class='card'><div class='header'><span class='badge'>TOP SECRET</span><h1 class='title'>[위치 수사 로그] 좌표 속 장소를 찾아라</h1></div><div class='case-info'><div class='coordinate-item'><div class='label'>수사 대상 좌표 A</div><div class='value'>북위 37°, 동경 127°</div></div><div class='coordinate-item'><div class='label'>수사 대상 좌표 B</div><div class='value'>북위 35°, 동경 129°</div></div></div><div class='investigation-grid'><div class='investigation-box'><div class='box-label'>수사 결과 (예상 장소)</div><div class='content-area'></div></div><div class='investigation-box'><div class='box-label'>수사 근거 및 과정 (어떻게 찾았나요?)</div><div class='long-content'></div></div></div></div></body></html>",
+      "source_refs": [
+        110
+      ],
+      "student_writing_zones": [
+        {
+          "zone_id": "investigation_result",
+          "label": "장소 이름 적기",
+          "input_area_type": "inline-answer",
+          "min_height": 220
+        },
+        {
+          "zone_id": "investigation_process",
+          "label": "수사 과정 기술",
+          "input_area_type": "free-writing",
+          "min_height": 450
+        }
+      ],
+      "estimated_minutes": 12,
+      "review_status": "draft"
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-03-31T10:00:00+00:00",
+  "lesson_id": "1차시",
+  "activities": [
+    {
+      "activity_id": "act-1-1",
+      "lesson_id": "1차시",
+      "object_role": "activity_area",
+      "lesson_flow_stage": "before",
+      "activity_type": "freeform_html",
+      "level": "core",
+      "learning_goal": "낱말 구름 속 핵심 키워드를 선택하고 자신의 삶과 연결하여 설명할 수 있다.",
+      "prompt_text": "낱말 구름 속 단어들 중 내가 가장 중요하다고 생각하는 키워드 3개를 골라, 우리 생활과 어떻게 연결되는지 적어 봅시다.",
+      "layout_template": "freeform_html",
+      "html_content": "<!DOCTYPE html><html lang='ko'><head><meta charset='UTF-8'><style>body{width:1600px;margin:0;padding:20px;background:transparent;font-family:'Noto Sans KR',sans-serif;color:#333;}.card{background:#fff;padding:40px;border-radius:32px;box-shadow:none;}.header{margin-bottom:30px;border-left:12px solid #FFD700;padding-left:24px;}h1{font-size:42px;margin:0 0 12px 0;color:#111;}p{font-size:24px;margin:0;color:#666;}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:40px;}.item{display:flex;flex-direction:column;}.label{background:#333;color:#fff;padding:12px 20px;font-size:22px;font-weight:bold;border-radius:12px 12px 0 0;width:fit-content;}.writing-zone{background:#fff;border:3px solid #333;min-height:550px;border-radius:0 16px 16px 16px;padding:20px;box-sizing:border-box;font-size:20px;line-height:1.6;}</style></head><body><div class='card'><div class='header'><h1>[키워드 연결] 역사의 낱말 구름 속 나의 단어</h1><p>민주화, 산업화, 시민 의식... 수많은 단어 중 나에게 가장 의미 있게 다가오는 3가지를 선택해 보세요.</p></div><div class='grid'><div class='item'><div class='label'>선택 1</div><div class='writing-zone'>낱말:<br><br>선택한 이유와 우리 생활과의 연결:</div></div><div class='item'><div class='label'>선택 2</div><div class='writing-zone'>낱말:<br><br>선택한 이유와 우리 생활과의 연결:</div></div><div class='item'><div class='label'>선택 3</div><div class='writing-zone'>낱말:<br><br>선택한 이유와 우리 생활과의 연결:</div></div></div></div></body></html>",
+      "source_refs": [
+        29
+      ],
+      "student_writing_zones": [
+        {
+          "zone_id": "keyword_1",
+          "label": "첫 번째 키워드와 연결",
+          "input_area_type": "free-writing",
+          "min_height": 550
+        },
+        {
+          "zone_id": "keyword_2",
+          "label": "두 번째 키워드와 연결",
+          "input_area_type": "free-writing",
+          "min_height": 550
+        },
+        {
+          "zone_id": "keyword_3",
+          "label": "세 번째 키워드와 연결",
+          "input_area_type": "free-writing",
+          "min_height": 550
+        }
+      ],
+      "estimated_minutes": 15,
+      "review_status": "draft"
+    },
+    {
+      "activity_id": "act-1-2",
+      "lesson_id": "1차시",
+      "object_role": "learning_note",
+      "lesson_flow_stage": "during",
+      "activity_type": "freeform_html",
+      "level": "core",
+      "learning_goal": "단원 도입부에서 제시된 주요 역사적 사건과 개념의 흐름을 정리할 수 있다.",
+      "prompt_text": "2단원에서 우리가 만날 '우리 사회의 변화 과정'을 선생님의 설명을 들으며 핵심 위주로 메모해 봅시다.",
+      "layout_template": "freeform_html",
+      "html_content": "<!DOCTYPE html><html lang='ko'><head><meta charset='UTF-8'><style>body{width:1600px;margin:0;padding:20px;background:transparent;font-family:'Noto Sans KR',sans-serif;color:#333;}.card{background:#fff;padding:40px;border-radius:32px;border:1px solid #eee;}.header{display:flex;align-items:center;margin-bottom:40px;}.badge{background:#4A90E2;color:#fff;padding:8px 20px;border-radius:40px;font-size:20px;font-weight:bold;margin-right:20px;}h1{font-size:38px;margin:0;color:#222;}.note-container{display:flex;flex-direction:column;gap:30px;}.section{display:flex;flex-direction:column;gap:12px;}.section-title{font-size:26px;font-weight:bold;color:#444;display:flex;align-items:center;}.section-title::before{content:'';display:inline-block;width:8px;height:24px;background:#4A90E2;margin-right:12px;border-radius:4px;}.writing-area{background:#fff;border:3px solid #333;border-radius:16px;min-height:300px;padding:24px;}.large{min-height:500px;}</style></head><body><div class='card'><div class='header'><div class='badge'>배움 메모</div><h1>2단원: 우리나라의 정치 발전과 경제 성장</h1></div><div class='note-container'><div class='section'><div class='section-title'>수업 중 핵심 키워드 (민주주의, 산업화 등)</div><div class='writing-area'></div></div><div class='section'><div class='section-title'>우리 사회의 변화 모습에 대한 나의 생각</div><div class='writing-area large'></div></div><div class='section'><div class='section-title'>단원을 시작하며 궁금한 점이나 질문</div><div class='writing-area'></div></div></div></div></body></html>",
+      "source_refs": [
+        4,
+        29
+      ],
+      "student_writing_zones": [
+        {
+          "zone_id": "core_keywords",
+          "label": "핵심 키워드 메모",
+          "input_area_type": "free-writing",
+          "min_height": 300
+        },
+        {
+          "zone_id": "main_reflection",
+          "label": "변화 모습에 대한 생각 정리",
+          "input_area_type": "free-writing",
+          "min_height": 500
+        },
+        {
+          "zone_id": "questions",
+          "label": "궁금한 점 기록",
+          "input_area_type": "free-writing",
+          "min_height": 300
+        }
+      ],
+      "estimated_minutes": 20,
+      "review_status": "draft"
+    }
+  ]
+}

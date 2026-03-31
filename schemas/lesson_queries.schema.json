@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://numbersauto.local/schemas/lesson_queries.schema.json",
+  "title": "Lesson Queries",
+  "type": "object",
+  "required": ["schema_version", "lessons"],
+  "properties": {
+    "schema_version": {
+      "type": "string"
+    },
+    "lessons": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["lesson_id", "sheet_name", "display_title", "title_query"],
+        "properties": {
+          "lesson_id": {
+            "type": "string"
+          },
+          "sheet_name": {
+            "type": "string"
+          },
+          "display_title": {
+            "type": "string"
+          },
+          "title_query": {
+            "type": "string"
+          },
+          "end_before_query": {
+            "type": ["string", "null"]
+          },
+          "resource_id": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

@@ -129,6 +129,7 @@ def build_manifest(
 ) -> dict:
     assets = []
     order_by_sheet = defaultdict(int)
+    stage_rank = {"before": 0, "during": 1, "after": 2}
 
     for textbook_asset in sorted(textbook_card_assets, key=lambda item: (item["sheet_name"], item["insert_order"])):
         order_by_sheet[textbook_asset["sheet_name"]] += 1
@@ -149,7 +150,16 @@ def build_manifest(
         )
 
     section_by_key = {lesson_key(section): section["sheet_name"] for section in config["sections"]}
-    for activity_asset in activity_assets:
+    sorted_activity_assets = sorted(
+        activity_assets,
+        key=lambda item: (
+            section_by_key.get(item["activity"]["lesson_id"], item["activity"]["lesson_id"]),
+            stage_rank.get(item["activity"].get("lesson_flow_stage", "during"), 99),
+            item["activity"].get("object_role", ""),
+            item["activity"]["activity_id"],
+        ),
+    )
+    for activity_asset in sorted_activity_assets:
         activity = activity_asset["activity"]
         sheet_name = section_by_key.get(activity["lesson_id"])
         if sheet_name is None:

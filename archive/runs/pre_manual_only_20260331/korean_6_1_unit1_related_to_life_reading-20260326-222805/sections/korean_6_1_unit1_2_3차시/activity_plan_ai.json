@@ -1,0 +1,115 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-03-26T10:00:00+09:00",
+  "lesson_id": "2-3차시",
+  "activities": [
+    {
+      "activity_id": "act-2-3-1",
+      "lesson_id": "2-3차시",
+      "object_role": "activity_area",
+      "lesson_flow_stage": "during",
+      "activity_type": "freeform_html",
+      "level": "core",
+      "learning_goal": "시대 상황과 인물의 행동을 연결하여 인물이 추구하는 가치를 도출할 수 있다.",
+      "prompt_text": "윤희순이 처한 시대적 위기 상황에서 그가 내린 결정과 그 속에 담긴 '가치'를 연결해 봅시다.",
+      "layout_template": "freeform_html",
+      "html_content": "<!DOCTYPE html><html lang='ko'><head><meta charset='UTF-8'><style>body{width:1600px;margin:0;padding:40px;background:transparent;font-family:'Noto Sans KR',sans-serif;box-sizing:border-box;}.card{background:#fff;padding:40px;border-radius:32px;border:3px solid #333;box-shadow:12px 12px 0px rgba(0,0,0,0.05);}.header{border-bottom:4px solid #333;padding-bottom:20px;margin-bottom:30px;}.header h1{margin:0;font-size:42px;color:#222;}.grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:24px;}.box-title{font-size:24px;font-weight:700;margin-bottom:12px;display:inline-block;padding:4px 12px;background:#333;color:#fff;border-radius:8px;}.writing-area{background:#fff;border:3px solid #333;border-radius:16px;min-height:500px;padding:20px;font-size:20px;line-height:1.6;}.context-card{background:#f9f9f9;border:2px dashed #666;border-radius:16px;padding:20px;margin-bottom:15px;font-weight:500;}</style></head><body><div class='card'><div class='header'><h1>시대의 파도와 인물의 선택</h1><p>을미사변, 단발령 등 긴박한 시대 상황 속에서 윤희순의 말과 행동을 분석해 보세요.</p></div><div class='grid'><div><div class='box-title'>1. 인물이 처한 상황</div><div class='writing-area'><div class='context-card'>나라가 위태롭고 일본의 침략이 본격화되던 시기 (을미사변, 단발령 등)</div><p style='color:#666;'>교과서 11-12쪽을 참고하여 당시의 구체적인 상황을 더 적어보세요.</p></div></div><div><div class='box-title'>2. 인물의 말과 행동</div><div class='writing-area'><p style='color:#666;'>윤희순이 숯을 굽고, 노래를 지어 보급하고, 의병대를 조직한 구체적인 모습을 적어보세요.</p></div></div><div><div class='box-title'>3. 발견한 가치 (Value)</div><div class='writing-area' style='background:#fff9c4;'><p style='color:#666;'>이러한 선택을 하게 만든 인물의 마음속 '가치'는 무엇일까요? (예: 나라 사랑, 용기, 책임감 등)</p></div></div></div></div></body></html>",
+      "source_refs": [
+        11,
+        12
+      ],
+      "student_writing_zones": [
+        {
+          "zone_id": "situation_detail",
+          "label": "시대 상황 상세 기록",
+          "input_area_type": "free-writing",
+          "min_height": 300
+        },
+        {
+          "zone_id": "action_detail",
+          "label": "인물의 구체적 행적",
+          "input_area_type": "free-writing",
+          "min_height": 500
+        },
+        {
+          "zone_id": "value_discovery",
+          "label": "추구하는 가치 추론",
+          "input_area_type": "free-writing",
+          "min_height": 500
+        }
+      ],
+      "estimated_minutes": 15,
+      "review_status": "draft"
+    },
+    {
+      "activity_id": "act-2-3-2",
+      "lesson_id": "2-3차시",
+      "object_role": "learning_note",
+      "lesson_flow_stage": "during",
+      "activity_type": "freeform_html",
+      "level": "core",
+      "learning_goal": "안사람 의병가의 가사를 분석하여 인물의 의지를 정리할 수 있다.",
+      "prompt_text": "수업 시간에 함께 읽은 「안사람 의병가」의 핵심 내용을 정리하고, 가사 속에 담긴 윤희순의 의지를 메모해 봅시다.",
+      "layout_template": "freeform_html",
+      "html_content": "<!DOCTYPE html><html lang='ko'><head><meta charset='UTF-8'><style>body{width:1600px;margin:0;padding:40px;background:transparent;font-family:'Noto Sans KR',sans-serif;}.card{background:#fff;padding:40px;border-radius:32px;border:3px solid #333;}.note-header{background:#e3f2fd;padding:20px;border-radius:16px;margin-bottom:30px;border:2px solid #2196f3;}.section-title{font-size:28px;font-weight:800;margin:30px 0 15px;color:#1a237e;display:flex;align-items:center;}.section-title::before{content:'';display:inline-block;width:12px;height:28px;background:#1a237e;margin-right:12px;border-radius:4px;}.memo-grid{display:grid;grid-template-columns:1fr 1fr;gap:30px;}.memo-box{border:3px solid #333;border-radius:20px;min-height:450px;padding:25px;background:#fff;}</style></head><body><div class='card'><div class='note-header'><h2>📝 수업 핵심 메모: 「안사람 의병가」 분석</h2><p>가사가 사람들에게 어떤 영향을 주었는지, 윤희순이 이 노래를 통해 전하고 싶었던 메시지는 무엇인지 적어보세요.</p></div><div class='memo-grid'><div><div class='section-title'>노래의 주요 내용 및 구절</div><div class='memo-box'></div></div><div><div class='section-title'>노래에 담긴 인물의 생각과 의지</div><div class='memo-box' style='background:#f1f8e9;'></div></div></div><div class='section-title'>오늘의 배움 한 줄 요약</div><div class='memo-box' style='min-height:120px;'></div></div></body></html>",
+      "source_refs": [
+        7,
+        8
+      ],
+      "student_writing_zones": [
+        {
+          "zone_id": "lyrics_note",
+          "label": "주요 구절 메모",
+          "input_area_type": "free-writing",
+          "min_height": 450
+        },
+        {
+          "zone_id": "will_analysis",
+          "label": "인물의 의지 분석",
+          "input_area_type": "free-writing",
+          "min_height": 450
+        },
+        {
+          "zone_id": "summary_line",
+          "label": "배움 요약",
+          "input_area_type": "inline-answer",
+          "min_height": 120
+        }
+      ],
+      "estimated_minutes": 10,
+      "review_status": "draft"
+    },
+    {
+      "activity_id": "act-2-3-3",
+      "lesson_id": "2-3차시",
+      "object_role": "worksheet",
+      "lesson_flow_stage": "after",
+      "activity_type": "freeform_html",
+      "level": "extension",
+      "learning_goal": "인물이 추구하는 가치를 자신의 삶과 연결하여 성찰할 수 있다.",
+      "prompt_text": "윤희순이 추구했던 가치를 떠올리며, 오늘날 내가 가장 소중히 여기는 가치는 무엇인지 '나의 가치 선언문'을 작성해 봅시다.",
+      "layout_template": "freeform_html",
+      "html_content": "<!DOCTYPE html><html lang='ko'><head><meta charset='UTF-8'><style>body{width:1600px;margin:0;padding:40px;background:transparent;font-family:'Noto Sans KR',sans-serif;}.card{background:#fff;padding:60px;border-radius:40px;border:4px solid #333;text-align:center;}.title{font-size:48px;font-weight:900;margin-bottom:40px;}.shield-container{display:flex;justify-content:center;gap:50px;margin-top:40px;}.writing-circle{width:600px;height:600px;border:4px solid #333;border-radius:50%;display:flex;flex-direction:column;justify-content:center;align-items:center;padding:60px;background:#fff;box-sizing:border-box;}.label{font-size:24px;font-weight:700;color:#666;margin-bottom:20px;}.main-prompt{font-size:32px;font-weight:800;border-bottom:3px solid #333;padding-bottom:10px;margin-bottom:30px;}</style></head><body><div class='card'><div class='title'>나의 가치 선언문</div><p style='font-size:22px; color:#444;'>윤희순이 '나라 사랑'과 '정의'를 위해 용기를 냈던 것처럼,<br>여러분이 삶에서 가장 중요하게 지키고 싶은 가치는 무엇인가요?</p><div class='shield-container'><div><div class='label'>인물에게서 배운 점</div><div class='writing-circle' style='border-style:dashed;'><div class='main-prompt'>윤희순의 OO 가치</div><p style='color:#999;'>인물의 삶에서 감동 깊었던 가치를 적어보세요.</p></div></div><div><div class='label'>내가 추구하는 가치</div><div class='writing-circle' style='background:#fffde7;'><div class='main-prompt'>나의 핵심 가치: [ &nbsp;&nbsp;&nbsp;&nbsp; ]</div><p style='color:#999;'>내가 소중히 여기는 가치와<br>그 이유를 자유롭게 적어보세요.</p></div></div></div></div></body></html>",
+      "source_refs": [
+        13,
+        14
+      ],
+      "student_writing_zones": [
+        {
+          "zone_id": "lesson_learned",
+          "label": "인물에게 배운 가치",
+          "input_area_type": "free-writing",
+          "min_height": 400
+        },
+        {
+          "zone_id": "my_value",
+          "label": "나의 핵심 가치와 이유",
+          "input_area_type": "free-writing",
+          "min_height": 400
+        }
+      ],
+      "estimated_minutes": 15,
+      "review_status": "draft"
+    }
+  ]
+}

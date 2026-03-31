@@ -1,0 +1,27 @@
+{
+  "schema_version": "1.0.0",
+  "stage": "lesson_analysis_agent",
+  "lesson_id": "8-9차시",
+  "status": "succeeded_with_warning",
+  "run_id": "social-small-XXXX-20260331-002850",
+  "started_at": "2026-03-30T15:28:58.490380+00:00",
+  "finished_at": "2026-03-30T15:29:13.559899+00:00",
+  "input_refs": [
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social-small-XXXX-20260331-002850/source/schedule_draft.json",
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social-small-XXXX-20260331-002850/source/textbook_context.json",
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social-small-XXXX-20260331-002850/source/local_baseline/social_6_1_unit1_life_8-9차시__민주화를_위한_노력을_살펴볼까요_.lesson_analysis.json"
+  ],
+  "output_refs": [
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social-small-XXXX-20260331-002850/sections/social_6_1_unit1_life_8-9차시__민주화를_위한_노력을_살펴볼까요_/lesson_analysis_ai.json",
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social-small-XXXX-20260331-002850/sections/social_6_1_unit1_life_8-9차시__민주화를_위한_노력을_살펴볼까요_/lesson_analysis.json"
+  ],
+  "fallback_used": true,
+  "warnings": [],
+  "errors": [
+    "Gemini CLI timed out after 15 seconds for lesson_analysis_ai"
+  ],
+  "model": "gemini",
+  "agent_spec_path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/agents/lesson_analysis_agent/AGENT.md",
+  "attempt_count": 1,
+  "validation_errors": []
+}

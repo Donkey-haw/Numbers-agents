@@ -1,0 +1,133 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-03-31T10:00:00+00:00",
+  "lesson_id": "9차시",
+  "activities": [
+    {
+      "activity_id": "act-9-1",
+      "lesson_id": "9차시",
+      "object_role": "learning_note",
+      "lesson_flow_stage": "during",
+      "activity_type": "freeform_html",
+      "level": "core",
+      "learning_goal": "위도와 경도의 기본 원리를 이해하고 수업 내용을 체계적으로 정리할 수 있다.",
+      "prompt_text": "수업 시간에 배운 위도와 경도의 핵심 내용을 나만의 언어로 정리해 봅시다.",
+      "layout_template": "freeform_html",
+      "html_content": "<!DOCTYPE html><html lang='ko'><head><meta charset='UTF-8'><style>body{width:1600px;margin:0;padding:40px;background:transparent;font-family:'Noto Sans KR',sans-serif;box-sizing:border-box;}.card{background:#ffffff;padding:48px;border-radius:32px;box-shadow:none;border:none;}.header{margin-bottom:32px;border-left:12px solid #007AFF;padding-left:24px;}.header h1{margin:0;font-size:42px;color:#1d1d1f;}label{display:block;font-size:24px;font-weight:700;margin-bottom:12px;color:#333;}.writing-container{display:grid;grid-template-columns:1fr 1fr;gap:32px;margin-top:24px;}.writing-box{background:#fff;border:3px solid #333;border-radius:20px;min-height:480px;padding:24px;font-size:20px;line-height:1.6;}.full-width{grid-column:span 2;min-height:320px;}</style></head><body><div class='card'><div class='header'><h1>수업 핵심 메모: 위도와 경도</h1></div><p style='font-size:22px; color:#666;'>선생님의 설명을 들으며 위선, 경선, 적도, 본초 자오선의 차이점을 기록해 보세요.</p><div class='writing-container'><div><label>1. 위도와 위선 (가로줄의 약속)</label><div class='writing-box'></div></div><div><label>2. 경도와 경선 (세로줄의 약속)</label><div class='writing-box'></div></div><div class='full-width'><label>3. 위치를 나타낼 때 '숫자'와 '방향'이 모두 필요한 이유</label><div class='writing-box'></div></div></div></div></body></html>",
+      "source_refs": [
+        128
+      ],
+      "teacher_notes": "학생들이 위도(북위/남위)와 경도(동경/서경)의 방향 개념을 혼동하지 않도록 기준선(적도, 본초 자오선)을 중심으로 정리하도록 안내합니다.",
+      "student_writing_zones": [
+        {
+          "zone_id": "latitude_note",
+          "label": "위도 정리",
+          "input_area_type": "free-writing",
+          "min_height": 480
+        },
+        {
+          "zone_id": "longitude_note",
+          "label": "경도 정리",
+          "input_area_type": "free-writing",
+          "min_height": 480
+        },
+        {
+          "zone_id": "reasoning_note",
+          "label": "방향의 중요성",
+          "input_area_type": "free-writing",
+          "min_height": 320
+        }
+      ],
+      "estimated_minutes": 15,
+      "review_status": "draft"
+    },
+    {
+      "activity_id": "act-9-2",
+      "lesson_id": "9차시",
+      "object_role": "activity_area",
+      "lesson_flow_stage": "during",
+      "activity_type": "freeform_html",
+      "level": "on-level",
+      "learning_goal": "디지털 지도를 활용해 특정 국가의 위치를 위도와 경도로 정확히 측정할 수 있다.",
+      "prompt_text": "내가 탐구하고 싶은 나라를 정하고, 그 나라의 네 끝(동·서·남·북) 지점의 좌표를 찾아 기록해 봅시다.",
+      "layout_template": "freeform_html",
+      "html_content": "<!DOCTYPE html><html lang='ko'><head><meta charset='UTF-8'><style>body{width:1600px;margin:0;padding:40px;background:transparent;font-family:'Noto Sans KR',sans-serif;box-sizing:border-box;}.card{background:#ffffff;padding:48px;border-radius:32px;border:none;}.header{background:#F2F2F7;padding:32px;border-radius:24px;margin-bottom:32px;}.header h2{margin:0;font-size:36px;color:#1d1d1f;}.grid-table{display:grid;grid-template-columns:repeat(2, 1fr);gap:24px;}.coord-box{border:3px solid #333;border-radius:16px;padding:24px;background:#fff;}.coord-box h3{margin-top:0;font-size:24px;color:#007AFF;border-bottom:2px solid #eee;padding-bottom:12px;}.input-area{min-height:180px;}.country-info{margin-bottom:24px;border-bottom:3px solid #333;padding-bottom:16px;}.country-input{font-size:32px;font-weight:bold;color:#333;min-height:60px;border:2px dashed #ccc;border-radius:8px;padding:10px;}</style></head><body><div class='card'><div class='header'><h2>좌표 Detective: 국가 위치 추적</h2></div><div class='country-info'><label style='font-size:24px;'>탐구할 나라 이름:</label><div class='country-input'></div></div><div class='grid-table'><div class='coord-box'><h3>북쪽 끝 (Highest Latitude)</h3><div class='input-area'></div></div><div class='coord-box'><h3>남쪽 끝 (Lowest Latitude)</h3><div class='input-area'></div></div><div class='coord-box'><h3>동쪽 끝 (Easternmost Longitude)</h3><div class='input-area'></div></div><div class='coord-box'><h3>서쪽 끝 (Westernmost Longitude)</h3><div class='input-area'></div></div></div><div style='margin-top:32px;'><label style='font-size:24px; font-weight:bold;'>찾아낸 좌표를 바탕으로 이 나라의 위치 특징을 설명해 보세요.</label><div style='border:3px solid #333; border-radius:16px; min-height:300px; margin-top:12px; padding:20px;'></div></div></div></body></html>",
+      "source_refs": [
+        129
+      ],
+      "teacher_notes": "디지털 지도(Google Earth 등)에서 마우스 커서를 움직여 우측 하단에 표시되는 좌표를 읽는 법을 먼저 지도해 주세요.",
+      "student_writing_zones": [
+        {
+          "zone_id": "country_name",
+          "label": "국가 이름",
+          "input_area_type": "inline-answer",
+          "min_height": 60
+        },
+        {
+          "zone_id": "coord_north",
+          "label": "북쪽 끝 좌표",
+          "input_area_type": "free-writing",
+          "min_height": 180
+        },
+        {
+          "zone_id": "coord_south",
+          "label": "남쪽 끝 좌표",
+          "input_area_type": "free-writing",
+          "min_height": 180
+        },
+        {
+          "zone_id": "coord_east",
+          "label": "동쪽 끝 좌표",
+          "input_area_type": "free-writing",
+          "min_height": 180
+        },
+        {
+          "zone_id": "coord_west",
+          "label": "서쪽 끝 좌표",
+          "input_area_type": "free-writing",
+          "min_height": 180
+        },
+        {
+          "zone_id": "location_summary",
+          "label": "위치 특징 요약",
+          "input_area_type": "free-writing",
+          "min_height": 300
+        }
+      ],
+      "estimated_minutes": 20,
+      "review_status": "draft"
+    },
+    {
+      "activity_id": "act-9-3",
+      "lesson_id": "9차시",
+      "object_role": "worksheet",
+      "lesson_flow_stage": "after",
+      "activity_type": "freeform_html",
+      "level": "extension",
+      "learning_goal": "표준시의 원리를 이해하고 국가 간 시차를 계산하여 실생활 문제에 적용할 수 있다.",
+      "prompt_text": "세계 여러 나라와의 시차를 계산하고, 왜 이런 시차가 발생하는지 본초 자오선을 기준으로 설명해 봅시다.",
+      "layout_template": "freeform_html",
+      "html_content": "<!DOCTYPE html><html lang='ko'><head><meta charset='UTF-8'><style>body{width:1600px;margin:0;padding:40px;background:transparent;font-family:'Noto Sans KR',sans-serif;box-sizing:border-box;}.card{background:#ffffff;padding:48px;border-radius:32px;border:4px solid #FF9500;}.header{margin-bottom:32px;}.header h2{margin:0;font-size:36px;color:#FF9500;}#scenario{background:#FFF9F0;padding:24px;border-radius:16px;font-size:22px;margin-bottom:32px;line-height:1.6;border-left:8px solid #FF9500;}.question-block{margin-bottom:32px;}.answer-box{border:3px solid #333;border-radius:16px;min-height:350px;padding:24px;margin-top:16px;background:#fff;}</style></head><body><div class='card'><div class='header'><h2>글로벌 타임 플래너 (Time Zone Challenge)</h2></div><div id='scenario'>📍 <b>상황:</b> 서울(대한민국)에서 오전 9시에 영국 런던에 있는 친구에게 화상 전화를 걸려고 합니다. <br>런던은 본초 자오선(0도)이 지나는 곳이며, 서울은 동경 135도 표준시를 사용합니다. (15도마다 1시간 차이)</div><div class='question-block'><label style='font-size:24px; font-weight:bold;'>1. 지금 런던은 몇 시일까요? 계산 과정과 함께 답을 써 보세요.</label><div class='answer-box'></div></div><div class='question-block'><label style='font-size:24px; font-weight:bold;'>2. 영토가 동서로 매우 넓은 나라(예: 미국, 러시아)는 왜 여러 개의 표준시를 사용할까요? 내 생각을 논리적으로 적어 봅시다.</label><div class='answer-box'></div></div></div></body></html>",
+      "source_refs": [
+        130
+      ],
+      "teacher_notes": "경도 15도당 1시간의 시차가 발생한다는 원리를 상기시켜 주시고, 동쪽으로 갈수록 시간이 빠르다는 점을 강조해 주세요.",
+      "student_writing_zones": [
+        {
+          "zone_id": "time_calc",
+          "label": "시차 계산 및 결과",
+          "input_area_type": "free-writing",
+          "min_height": 350
+        },
+        {
+          "zone_id": "time_reasoning",
+          "label": "다중 표준시의 이유",
+          "input_area_type": "free-writing",
+          "min_height": 350
+        }
+      ],
+      "estimated_minutes": 15,
+      "review_status": "draft"
+    }
+  ]
+}

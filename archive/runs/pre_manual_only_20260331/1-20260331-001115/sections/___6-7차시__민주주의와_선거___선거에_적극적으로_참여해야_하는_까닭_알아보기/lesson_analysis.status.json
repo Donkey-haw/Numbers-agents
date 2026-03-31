@@ -1,0 +1,25 @@
+{
+  "schema_version": "1.0.0",
+  "stage": "lesson_analysis_agent",
+  "lesson_id": "6-7차시",
+  "status": "succeeded",
+  "run_id": "1-20260331-001115",
+  "started_at": "2026-03-30T15:18:37.236374+00:00",
+  "finished_at": "2026-03-30T15:19:48.555679+00:00",
+  "input_refs": [
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/1-20260331-001115/source/schedule_draft.json",
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/1-20260331-001115/source/textbook_context.json",
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/1-20260331-001115/source/local_baseline/___6-7차시__민주주의와_선거___선거에_적극적으로_참여해야_하는_까닭_알아보기.lesson_analysis.json"
+  ],
+  "output_refs": [
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/1-20260331-001115/sections/___6-7차시__민주주의와_선거___선거에_적극적으로_참여해야_하는_까닭_알아보기/lesson_analysis_ai.json",
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/1-20260331-001115/sections/___6-7차시__민주주의와_선거___선거에_적극적으로_참여해야_하는_까닭_알아보기/lesson_analysis.json"
+  ],
+  "fallback_used": false,
+  "warnings": [],
+  "errors": [],
+  "model": "gemini",
+  "agent_spec_path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/agents/lesson_analysis_agent/AGENT.md",
+  "attempt_count": 1,
+  "validation_errors": []
+}

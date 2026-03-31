@@ -1,0 +1,56 @@
+{
+  "defaults": {
+    "runner": "python",
+    "max_parallel_jobs": 2,
+    "timeout_sec": 0,
+    "idle_timeout_sec": 180
+  },
+  "agents": {
+    "lesson_analysis_agent": {
+      "runner": "gemini",
+      "model": "gemini-2.5-pro",
+      "fallback_runner": "gemini",
+      "fallback_model": "gemini-2.5-flash",
+      "max_parallel_jobs": 2,
+      "timeout_sec": 0,
+      "idle_timeout_sec": 180
+    },
+    "lesson_review_agent": {
+      "runner": "codex",
+      "model": "gpt-5.4-mini",
+      "fallback_runner": "python",
+      "max_parallel_jobs": 4,
+      "timeout_sec": 0,
+      "idle_timeout_sec": 120
+    },
+    "activity_plan_agent": {
+      "runner": "gemini",
+      "model": "gemini-2.5-pro",
+      "fallback_runner": "gemini",
+      "fallback_model": "gemini-2.5-flash",
+      "max_parallel_jobs": 2,
+      "timeout_sec": 0,
+      "idle_timeout_sec": 240
+    },
+    "activity_review_agent": {
+      "runner": "codex",
+      "model": "gpt-5.4-mini",
+      "fallback_runner": "python",
+      "max_parallel_jobs": 4,
+      "timeout_sec": 0,
+      "idle_timeout_sec": 120
+    },
+    "html_card_agent": {
+      "runner": "python"
+    },
+    "capture_agent": {
+      "runner": "python"
+    },
+    "numbers_compose_agent": {
+      "runner": "python"
+    },
+    "verify_agent": {
+      "runner": "python"
+    }
+  }
+}

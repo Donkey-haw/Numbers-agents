@@ -1,0 +1,129 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-03-26T13:10:27.503515+00:00",
+  "lesson_id": "4-6차시",
+  "sheet_name": "4-6차시",
+  "lesson_title": "작품을 읽고 시대적 상황과 인물이 추구하는 가치에 대하여 질문하기",
+  "lesson_type": "core",
+  "pdf_pages": [
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26
+  ],
+  "essential_question": "작품 속 인물이 처한 시대적 상황을 고려할 때, 인물이 추구하는 서로 다른 가치를 어떻게 비교하고 질문할 수 있는가?",
+  "learning_goals": [
+    "조선 시대의 출판 문화(필사, 목판 인쇄술)와 시대적 배경을 설명할 수 있다.",
+    "「책 깎는 소년」에 등장하는 장호와 봉운이의 말과 행동을 통해 각자가 추구하는 가치를 비교할 수 있다.",
+    "인물이 추구하는 가치를 파악하기 위한 질문을 만들고 인물 면담 활동에 참여할 수 있다."
+  ],
+  "key_concepts": [
+    "시대적 상황",
+    "인물이 추구하는 가치",
+    "질문하기",
+    "조선 시대 출판 문화",
+    "각수",
+    "가치 비교"
+  ],
+  "vocabulary": [
+    "필사",
+    "목판 인쇄술",
+    "서포",
+    "각수",
+    "대패질",
+    "판각",
+    "이골이 나다",
+    "서계서포"
+  ],
+  "misconceptions": [
+    "인물이 추구하는 가치는 단순히 그 인물의 직업적 성공이나 꿈과 동일한 것이다.",
+    "시대적 상황은 이야기의 배경일 뿐 인물의 가치관 형성에는 영향을 주지 않는다."
+  ],
+  "difficulty_band": "on-level",
+  "content_chunks": [
+    {
+      "chunk_id": "4-6차시-chunk-1",
+      "label": "시대적 배경과 이야기의 시작",
+      "content_type": "mixed",
+      "knowledge_type": "concept",
+      "summary": "조선 시대의 출판 문화(필사, 목판 인쇄술, 서포, 각수)를 이해하고, 각수가 되고 싶어 하는 장호의 동기를 파악함.",
+      "source_pages": [
+        15,
+        16
+      ],
+      "suggested_activity_types": [
+        "see_think_wonder",
+        "learning_note"
+      ]
+    },
+    {
+      "chunk_id": "4-6차시-chunk-2",
+      "label": "장호와 봉운이의 대조적인 태도",
+      "content_type": "text",
+      "knowledge_type": "comparison",
+      "summary": "대패질이라는 기본 과정을 대하는 장호(돈과 성공 목적)와 봉운(마음을 다듬는 과정)의 서로 다른 태도를 비교함.",
+      "source_pages": [
+        17,
+        21
+      ],
+      "suggested_activity_types": [
+        "learning_note",
+        "worksheet"
+      ]
+    },
+    {
+      "chunk_id": "4-6차시-chunk-3",
+      "label": "봉운이의 첫 판각과 가치 형성",
+      "content_type": "text",
+      "knowledge_type": "cause-effect",
+      "summary": "봉운이가 각수 어른의 지도로 첫 글자를 새기며 느끼는 기쁨과 책임감, 그리고 장호와의 가치 차이가 명확해지는 과정.",
+      "source_pages": [
+        22,
+        24
+      ],
+      "suggested_activity_types": [
+        "learning_note"
+      ]
+    },
+    {
+      "chunk_id": "4-6차시-chunk-4",
+      "label": "인물의 가치 비교 및 질문하기",
+      "content_type": "activity",
+      "knowledge_type": "application",
+      "summary": "인물들의 말과 행동을 근거로 추구하는 가치를 정리하고, 인물 면담을 위한 질문을 구성하여 가치를 깊이 있게 파악함.",
+      "source_pages": [
+        25,
+        26
+      ],
+      "suggested_activity_types": [
+        "worksheet",
+        "learning_note"
+      ]
+    }
+  ],
+  "source_page_refs": [
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26
+  ],
+  "analysis_confidence": 0.95,
+  "review_status": "draft",
+  "notes": "「책 깎는 소년」 이야기를 중심으로 장호(경제적 가치/성공)와 봉운(사회적 가치/보람)의 가치 대립을 명확히 분석함. 조선 시대 출판 문화를 배경 지식으로 포함하여 시대적 상황과 가치의 연관성을 강조함."
+}

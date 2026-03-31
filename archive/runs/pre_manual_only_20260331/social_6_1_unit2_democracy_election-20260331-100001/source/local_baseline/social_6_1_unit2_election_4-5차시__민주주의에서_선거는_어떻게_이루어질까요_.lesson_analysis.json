@@ -1,0 +1,52 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-03-31T01:00:09.317756+00:00",
+  "lesson_id": "4-5차시",
+  "sheet_name": "4-5차시",
+  "lesson_title": "민주주의에서 선거는 어떻게 이루어질까요?",
+  "lesson_type": "core",
+  "pdf_pages": [
+    50
+  ],
+  "essential_question": "민주주의에서 선거는 어떻게 이루어질까요?",
+  "learning_goals": [
+    "민주주의에서 선거의 핵심 내용을 설명할 수 있다."
+  ],
+  "key_concepts": [
+    "선거",
+    "어떻게",
+    "이루어질까요",
+    "민주화",
+    "운동"
+  ],
+  "vocabulary": [
+    "선거",
+    "어떻게",
+    "이루어질까요"
+  ],
+  "misconceptions": [],
+  "difficulty_band": "on-level",
+  "content_chunks": [
+    {
+      "chunk_id": "4-5차시-chunk-1",
+      "label": "학습 덩어리 1",
+      "content_type": "mixed",
+      "knowledge_type": "concept",
+      "summary": "사고력 쑥쑥 창의ㆍ융합 단원마무리 민주화 운동을 기억하고 기념하는 물건 디자인하기 1 \u0007모둠 친구들과 함께 다음 민주화 운동 중에서 더 알고 싶은 주제를 한 가지 선택하고, 관련 누리집에 들어가 민주화 운동이 어떻게 기억되고 기념되는지 조사해 봅시다.",
+      "source_pages": [
+        50
+      ],
+      "suggested_activity_types": [
+        "see_think_wonder",
+        "learning_note",
+        "worksheet"
+      ]
+    }
+  ],
+  "source_page_refs": [
+    50
+  ],
+  "analysis_confidence": 0.75,
+  "review_status": "draft",
+  "notes": "자동 생성 초안. lesson title, key concepts, chunks를 검토 후 승인 필요."
+}

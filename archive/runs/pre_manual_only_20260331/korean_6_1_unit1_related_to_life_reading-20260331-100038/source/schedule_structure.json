@@ -1,0 +1,89 @@
+{
+  "schema_version": "1.0.0",
+  "units": [
+    {
+      "unit_id": "unit-001",
+      "title": "배울 내용 살펴보기",
+      "lessons": [
+        {
+          "lesson_id": "lesson-001",
+          "sheet_name": "1차시",
+          "title": "배울 내용 살펴보기",
+          "raw_text": "배울 내용 살펴보기"
+        }
+      ]
+    },
+    {
+      "unit_id": "unit-002",
+      "title": "전기문을 읽고 인물이 추구하는 가치 알기",
+      "lessons": [
+        {
+          "lesson_id": "lesson-002",
+          "sheet_name": "2-3차시",
+          "title": "전기문을 읽고 인물이 추구하는 가치 알기",
+          "raw_text": "전기문을 읽고 인물이 추구하는 가치 알기"
+        }
+      ]
+    },
+    {
+      "unit_id": "unit-003",
+      "title": "작품을 읽고 시대적 상황과 인물이 추구하는 가치에 대하여 질문하기",
+      "lessons": [
+        {
+          "lesson_id": "lesson-003",
+          "sheet_name": "4-6차시",
+          "title": "작품을 읽고 시대적 상황과 인물이 추구하는 가치에 대하여 질문하기",
+          "raw_text": "작품을 읽고 시대적 상황과 인물이 추구하는 가치에 대하여 질문하기"
+        }
+      ]
+    },
+    {
+      "unit_id": "unit-004",
+      "title": "인물이 추구하는 가치를 자신의 삶과 관련짓기",
+      "lessons": [
+        {
+          "lesson_id": "lesson-004",
+          "sheet_name": "7-8차시",
+          "title": "인물이 추구하는 가치를 자신의 삶과 관련짓기",
+          "raw_text": "인물이 추구하는 가치를 자신의 삶과 관련짓기"
+        }
+      ]
+    },
+    {
+      "unit_id": "unit-005",
+      "title": "작품을 읽고 독서 감상문 쓰기",
+      "lessons": [
+        {
+          "lesson_id": "lesson-005",
+          "sheet_name": "9-11차시",
+          "title": "작품을 읽고 독서 감상문 쓰기",
+          "raw_text": "작품을 읽고 독서 감상문 쓰기"
+        }
+      ]
+    },
+    {
+      "unit_id": "unit-006",
+      "title": "배운 내용 실천하기",
+      "lessons": [
+        {
+          "lesson_id": "lesson-006",
+          "sheet_name": "12-13차시",
+          "title": "배운 내용 실천하기",
+          "raw_text": "배운 내용 실천하기"
+        }
+      ]
+    },
+    {
+      "unit_id": "unit-007",
+      "title": "마무리하기",
+      "lessons": [
+        {
+          "lesson_id": "lesson-007",
+          "sheet_name": "14차시",
+          "title": "마무리하기",
+          "raw_text": "마무리하기"
+        }
+      ]
+    }
+  ]
+}

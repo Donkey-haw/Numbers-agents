@@ -16,14 +16,15 @@ def read_json(path: Path) -> dict:
 
 
 def load_run_config(run_root: Path) -> dict:
+    run_root = run_root.resolve()
     manifest = read_json(run_root / "run_manifest.json")
     config = textbook.load_config(Path(manifest["config_path"]))
     runtime_config = read_json(run_root / "source" / "runtime_config.json")
     config["sections"] = runtime_config["sections"]
-    config["output_file"] = run_root / "output" / Path(config["output_file"]).name
-    config["pages_dir"] = run_root / "render" / "pages"
-    config["cards_dir"] = run_root / "render" / "cards"
-    config["html_dir"] = run_root / "render" / "html"
+    config["output_file"] = (run_root / "output" / Path(config["output_file"]).name).resolve()
+    config["pages_dir"] = (run_root / "render" / "pages").resolve()
+    config["cards_dir"] = (run_root / "render" / "cards").resolve()
+    config["html_dir"] = (run_root / "render" / "html").resolve()
     return config
 
 

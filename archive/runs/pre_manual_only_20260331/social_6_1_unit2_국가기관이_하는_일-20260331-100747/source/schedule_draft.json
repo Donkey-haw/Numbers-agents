@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-03-31T01:07:52.365817+00:00",
+  "sections": [
+    {
+      "sheet_name": "8차시",
+      "lesson_title": "국가기관의 의미 알아보기",
+      "title_query": "국가기관의 의미 알아보기"
+    },
+    {
+      "sheet_name": "9-10차시",
+      "lesson_title": "국회의 구성과 하는 일 파악하기",
+      "title_query": "국회의 구성과 하는 일 파악하기"
+    },
+    {
+      "sheet_name": "11차시",
+      "lesson_title": "행정부의 구성과 하는 일 파악하기",
+      "title_query": "행정부의 구성과 하는 일 파악하기"
+    },
+    {
+      "sheet_name": "12차시",
+      "lesson_title": "법원의 구성과 하는 일 파악하기",
+      "title_query": "법원의 구성과 하는 일 파악하기"
+    },
+    {
+      "sheet_name": "13차시",
+      "lesson_title": "권력 분립의 의미와 중요성 탐구하기",
+      "title_query": "권력 분립의 의미와 중요성 탐구하기"
+    }
+  ]
+}

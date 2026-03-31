@@ -1,0 +1,455 @@
+{
+  "project_root": "/Users/jonyeock/Desktop/Tool/NumbersAuto",
+  "pdf_path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/textbook/사회/[사회]6_1_교과서.pdf",
+  "template_path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/빈 넘버스 파일.numbers",
+  "output_file": "/Users/jonyeock/Desktop/Tool/NumbersAuto/output/social_6_1_unit3_세계의_대륙_대양_나라.numbers",
+  "footer": "사회 6-1 · 3단원 · 세계의 대륙, 대양, 나라",
+  "source_chart": "configs/charts/social_6_1_progress_chart.json",
+  "sections": [
+    {
+      "sheet_name": "8차시",
+      "card_file": "social_6_1_unit3_세계의_대륙_대양_나라_8차시",
+      "title": "세계의 대륙과 대양 알아보기",
+      "title_query": "세계의 대륙과 대양 알아보기",
+      "badge": "8차시",
+      "accent": [
+        "#6366f1",
+        "#818cf8"
+      ],
+      "sources": [
+        {
+          "resource_id": "main",
+          "role": "textbook",
+          "title_query": "세계의 대륙과 대양 알아보기",
+          "_inference": {
+            "status": "matched",
+            "start_page": 108,
+            "end_page": 127,
+            "start_query": "세계의 대륙과 대양 알아보기",
+            "start_match_pages": [
+              108,
+              132,
+              133,
+              134,
+              135
+            ],
+            "start_match_count": 5,
+            "end_strategy": "boundary_decision_agent",
+            "end_reference_query": null,
+            "intro_boundary_page": null,
+            "reason": "Transitional heuristic: choose highest-ranked candidate and cut before next lesson candidate",
+            "confidence": 0.55
+          },
+          "pdf_pages": [
+            108,
+            109,
+            110,
+            111,
+            112,
+            113,
+            114,
+            115,
+            116,
+            117,
+            118,
+            119,
+            120,
+            121,
+            122,
+            123,
+            124,
+            125,
+            126,
+            127
+          ]
+        }
+      ],
+      "source_ranges": [
+        {
+          "resource_id": "main",
+          "role": "textbook",
+          "pdf_pages": [
+            108,
+            109,
+            110,
+            111,
+            112,
+            113,
+            114,
+            115,
+            116,
+            117,
+            118,
+            119,
+            120,
+            121,
+            122,
+            123,
+            124,
+            125,
+            126,
+            127
+          ]
+        }
+      ],
+      "pdf_pages": [
+        108,
+        109,
+        110,
+        111,
+        112,
+        113,
+        114,
+        115,
+        116,
+        117,
+        118,
+        119,
+        120,
+        121,
+        122,
+        123,
+        124,
+        125,
+        126,
+        127
+      ]
+    },
+    {
+      "sheet_name": "9차시",
+      "card_file": "social_6_1_unit3_세계의_대륙_대양_나라_9차시",
+      "title": "우리나라의 위치 특징 파악하기",
+      "title_query": "우리나라의 위치 특징 파악하기",
+      "badge": "9차시",
+      "accent": [
+        "#4f46e5",
+        "#7c3aed"
+      ],
+      "sources": [
+        {
+          "resource_id": "main",
+          "role": "textbook",
+          "title_query": "우리나라의 위치 특징 파악하기",
+          "_inference": {
+            "status": "matched",
+            "start_page": 128,
+            "end_page": 130,
+            "start_query": "우리나라의 위치 특징 파악하기",
+            "start_match_pages": [
+              128,
+              131,
+              132,
+              137,
+              151
+            ],
+            "start_match_count": 5,
+            "end_strategy": "boundary_decision_agent",
+            "end_reference_query": null,
+            "intro_boundary_page": null,
+            "reason": "Transitional heuristic: choose highest-ranked candidate and cut before next lesson candidate",
+            "confidence": 0.55
+          },
+          "pdf_pages": [
+            128,
+            129,
+            130
+          ]
+        }
+      ],
+      "source_ranges": [
+        {
+          "resource_id": "main",
+          "role": "textbook",
+          "pdf_pages": [
+            128,
+            129,
+            130
+          ]
+        }
+      ],
+      "pdf_pages": [
+        128,
+        129,
+        130
+      ]
+    },
+    {
+      "sheet_name": "10차시",
+      "card_file": "social_6_1_unit3_세계의_대륙_대양_나라_10차시",
+      "title": "아시아 주요 나라들의 위치 알아보기",
+      "title_query": "아시아 주요 나라들의 위치 알아보기",
+      "badge": "10차시",
+      "accent": [
+        "#0f766e",
+        "#14b8a6"
+      ],
+      "sources": [
+        {
+          "resource_id": "main",
+          "role": "textbook",
+          "title_query": "아시아 주요 나라들의 위치 알아보기",
+          "_inference": {
+            "status": "matched",
+            "start_page": 131,
+            "end_page": 131,
+            "start_query": "아시아 주요 나라들의 위치 알아보기",
+            "start_match_pages": [
+              131,
+              132,
+              133,
+              145,
+              147
+            ],
+            "start_match_count": 5,
+            "end_strategy": "boundary_decision_agent",
+            "end_reference_query": null,
+            "intro_boundary_page": null,
+            "reason": "Transitional heuristic: choose highest-ranked candidate and cut before next lesson candidate",
+            "confidence": 0.45
+          },
+          "pdf_pages": [
+            131
+          ]
+        }
+      ],
+      "source_ranges": [
+        {
+          "resource_id": "main",
+          "role": "textbook",
+          "pdf_pages": [
+            131
+          ]
+        }
+      ],
+      "pdf_pages": [
+        131
+      ]
+    },
+    {
+      "sheet_name": "11차시",
+      "card_file": "social_6_1_unit3_세계의_대륙_대양_나라_11차시",
+      "title": "유럽 주요 나라들의 위치 알아보기",
+      "title_query": "유럽 주요 나라들의 위치 알아보기",
+      "badge": "11차시",
+      "accent": [
+        "#1d4ed8",
+        "#3b82f6"
+      ],
+      "sources": [
+        {
+          "resource_id": "main",
+          "role": "textbook",
+          "title_query": "유럽 주요 나라들의 위치 알아보기",
+          "_inference": {
+            "status": "matched",
+            "start_page": 128,
+            "end_page": 130,
+            "start_query": "유럽 주요 나라들의 위치 알아보기",
+            "start_match_pages": [
+              128,
+              131,
+              132,
+              145,
+              147
+            ],
+            "start_match_count": 5,
+            "end_strategy": "boundary_decision_agent",
+            "end_reference_query": null,
+            "intro_boundary_page": null,
+            "reason": "Transitional heuristic: choose highest-ranked candidate and cut before next lesson candidate",
+            "confidence": 0.55
+          },
+          "pdf_pages": [
+            128,
+            129,
+            130
+          ]
+        }
+      ],
+      "source_ranges": [
+        {
+          "resource_id": "main",
+          "role": "textbook",
+          "pdf_pages": [
+            128,
+            129,
+            130
+          ]
+        }
+      ],
+      "pdf_pages": [
+        128,
+        129,
+        130
+      ]
+    },
+    {
+      "sheet_name": "12차시",
+      "card_file": "social_6_1_unit3_세계의_대륙_대양_나라_12차시",
+      "title": "북아메리카와 남아메리카 주요 나라들의 위치 알아보기",
+      "title_query": "북아메리카와 남아메리카 주요 나라들의 위치 알아보기",
+      "badge": "12차시",
+      "accent": [
+        "#d97706",
+        "#f59e0b"
+      ],
+      "sources": [
+        {
+          "resource_id": "main",
+          "role": "textbook",
+          "title_query": "북아메리카와 남아메리카 주요 나라들의 위치 알아보기",
+          "_inference": {
+            "status": "matched",
+            "start_page": 131,
+            "end_page": 131,
+            "start_query": "북아메리카와 남아메리카 주요 나라들의 위치 알아보기",
+            "start_match_pages": [
+              131,
+              132,
+              133,
+              145,
+              147
+            ],
+            "start_match_count": 5,
+            "end_strategy": "boundary_decision_agent",
+            "end_reference_query": null,
+            "intro_boundary_page": null,
+            "reason": "Transitional heuristic: choose highest-ranked candidate and cut before next lesson candidate",
+            "confidence": 0.45
+          },
+          "pdf_pages": [
+            131
+          ]
+        }
+      ],
+      "source_ranges": [
+        {
+          "resource_id": "main",
+          "role": "textbook",
+          "pdf_pages": [
+            131
+          ]
+        }
+      ],
+      "pdf_pages": [
+        131
+      ]
+    },
+    {
+      "sheet_name": "13차시",
+      "card_file": "social_6_1_unit3_세계의_대륙_대양_나라_13차시",
+      "title": "아프리카 주요 나라들의 위치 알아보기",
+      "title_query": "아프리카 주요 나라들의 위치 알아보기",
+      "badge": "13차시",
+      "accent": [
+        "#9333ea",
+        "#c084fc"
+      ],
+      "sources": [
+        {
+          "resource_id": "main",
+          "role": "textbook",
+          "title_query": "아프리카 주요 나라들의 위치 알아보기",
+          "_inference": {
+            "status": "matched",
+            "start_page": 131,
+            "end_page": 131,
+            "start_query": "아프리카 주요 나라들의 위치 알아보기",
+            "start_match_pages": [
+              131,
+              132,
+              133,
+              145,
+              147
+            ],
+            "start_match_count": 5,
+            "end_strategy": "boundary_decision_agent",
+            "end_reference_query": null,
+            "intro_boundary_page": null,
+            "reason": "Transitional heuristic: choose highest-ranked candidate and cut before next lesson candidate",
+            "confidence": 0.45
+          },
+          "pdf_pages": [
+            131
+          ]
+        }
+      ],
+      "source_ranges": [
+        {
+          "resource_id": "main",
+          "role": "textbook",
+          "pdf_pages": [
+            131
+          ]
+        }
+      ],
+      "pdf_pages": [
+        131
+      ]
+    },
+    {
+      "sheet_name": "14차시",
+      "card_file": "social_6_1_unit3_세계의_대륙_대양_나라_14차시",
+      "title": "오세아니아 주요 나라들의 위치 알아보기",
+      "title_query": "오세아니아 주요 나라들의 위치 알아보기",
+      "badge": "14차시",
+      "accent": [
+        "#6366f1",
+        "#818cf8"
+      ],
+      "sources": [
+        {
+          "resource_id": "main",
+          "role": "textbook",
+          "title_query": "오세아니아 주요 나라들의 위치 알아보기",
+          "_inference": {
+            "status": "matched",
+            "start_page": 131,
+            "end_page": 131,
+            "start_query": "오세아니아 주요 나라들의 위치 알아보기",
+            "start_match_pages": [
+              131,
+              132,
+              133,
+              145,
+              147
+            ],
+            "start_match_count": 5,
+            "end_strategy": "boundary_decision_agent",
+            "end_reference_query": null,
+            "intro_boundary_page": null,
+            "reason": "Transitional heuristic: choose highest-ranked candidate and cut before next lesson candidate",
+            "confidence": 0.45
+          },
+          "pdf_pages": [
+            131
+          ]
+        }
+      ],
+      "source_ranges": [
+        {
+          "resource_id": "main",
+          "role": "textbook",
+          "pdf_pages": [
+            131
+          ]
+        }
+      ],
+      "pdf_pages": [
+        131
+      ]
+    }
+  ],
+  "end_before_query": "15차시",
+  "pages_dir": "/Users/jonyeock/Desktop/Tool/NumbersAuto/assets/pages",
+  "cards_dir": "/Users/jonyeock/Desktop/Tool/NumbersAuto/assets/cards",
+  "html_dir": "/Users/jonyeock/Desktop/Tool/NumbersAuto/html",
+  "resources": [
+    {
+      "resource_id": "main",
+      "label": "교과서",
+      "kind": "textbook",
+      "pdf_path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/textbook/사회/[사회]6_1_교과서.pdf"
+    }
+  ]
+}

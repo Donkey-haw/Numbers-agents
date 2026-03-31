@@ -1,0 +1,77 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-03-31T10:00:00+00:00",
+  "lesson_id": "11차시",
+  "activities": [
+    {
+      "activity_id": "act-11-1",
+      "lesson_id": "11차시",
+      "object_role": "learning_note",
+      "lesson_flow_stage": "during",
+      "activity_type": "freeform_html",
+      "level": "core",
+      "learning_goal": "우리나라 산업화의 주요 흐름과 1990년대 경제 성장의 핵심 사건을 정리할 수 있다.",
+      "prompt_text": "수업을 들으며 우리나라 경제가 어떻게 성장했는지 핵심 내용을 메모해 봅시다.",
+      "layout_template": "freeform_html",
+      "html_content": "<!DOCTYPE html><html lang='ko'><head><meta charset='UTF-8'><style>@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap');body{width:1600px;margin:0;padding:40px;background:transparent;font-family:'Noto Sans KR',sans-serif;display:flex;justify-content:center;}.card{width:1400px;background:#fff;padding:48px;border-radius:32px;box-shadow:0 10px 30px rgba(0,0,0,0.05);border:1px solid #eee;}.header{display:flex;align-items:center;margin-bottom:32px;border-left:12px solid #333;padding-left:24px;}.header h1{margin:0;font-size:42px;color:#111;}.header p{margin:8px 0 0;font-size:22px;color:#666;}.note-container{display:flex;gap:32px;}.main-note{flex:2;}.side-note{flex:1;display:flex;flex-direction:column;gap:32px;}.writing-area{background:#fff;border:3px solid #333;border-radius:20px;padding:24px;position:relative;}.writing-area::before{content:attr(data-label);position:absolute;top:-18px;left:24px;background:#333;color:#fff;padding:4px 16px;border-radius:8px;font-weight:bold;font-size:18px;}.main-box{min-height:700px;}.side-box{min-height:320px;}</style></head><body><div class='card'><div class='header'><h1>오늘 수업 핵심 정리</h1><p>우리나라 산업화의 과정과 1990년대 경제 성장에 대해 들은 내용을 자유롭게 기록하세요.</p></div><div class='note-container'><div class='main-note'><div class='writing-area main-box' data-label='수업 내용 메모 (구조도, 글, 그림 등)'></div></div><div class='side-note'><div class='writing-area side-box' data-label='핵심 단어 (키워드)'></div><div class='writing-area side-box' data-label='더 궁금한 점 / 질문'></div></div></div></div></body></html>",
+      "source_refs": [
+        41
+      ],
+      "teacher_notes": "학생들이 수업 흐름에 따라 스스로 구조화하여 필기하도록 유도합니다.",
+      "student_writing_zones": [
+        {
+          "zone_id": "lecture_memo",
+          "label": "수업 내용 메모",
+          "input_area_type": "free-writing",
+          "min_height": 700
+        },
+        {
+          "zone_id": "keywords",
+          "label": "핵심 단어",
+          "input_area_type": "inline-answer",
+          "min_height": 320
+        }
+      ],
+      "estimated_minutes": 15,
+      "review_status": "draft"
+    },
+    {
+      "activity_id": "act-11-2",
+      "lesson_id": "11차시",
+      "object_role": "activity_area",
+      "lesson_flow_stage": "after",
+      "activity_type": "freeform_html",
+      "level": "extension",
+      "learning_goal": "OECD 가입이 우리나라 경제와 국민의 삶에 미친 영향을 다각도로 분석할 수 있다.",
+      "prompt_text": "1996년 OECD 가입이라는 사건이 우리 사회에 가져온 변화를 '기회'와 '도전'의 관점에서 분석해 봅시다.",
+      "layout_template": "freeform_html",
+      "html_content": "<!DOCTYPE html><html lang='ko'><head><meta charset='UTF-8'><style>@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap');body{width:1600px;margin:0;padding:40px;background:transparent;font-family:'Noto Sans KR',sans-serif;}.card{background:#fff;padding:50px;border-radius:32px;border:1px solid #ddd;}.title-section{text-align:center;margin-bottom:40px;}.title-section h2{font-size:38px;color:#2c3e50;margin-bottom:10px;}.analysis-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;}.box{border:3px solid #333;border-radius:24px;padding:30px;background:#fff;}.box h3{margin-top:0;font-size:26px;display:flex;align-items:center;gap:12px;}.writing-zone{min-height:500px;margin-top:20px;border-top:1px dashed #ccc;}.summary-zone{grid-column:1 / span 2;border:3px solid #333;border-radius:24px;padding:30px;margin-top:40px;min-height:250px;background:#f8f9fa;}</style></head><body><div class='card'><div class='title-section'><h2>OECD 가입: 경제 선진국으로의 도약</h2><p>1996년 경제협력개발기구(OECD) 가입이 우리에게 어떤 의미였는지 생각해 봅시다.</p></div><div class='analysis-grid'><div class='box'><h3><span>🌟</span> 긍정적 변화 (기회)</h3><p style='color:#666;'>세계 시장과의 연결, 선진 경제 시스템 도입 등</p><div class='writing-zone'></div></div><div class='box'><h3><span>⚠️</span> 예상치 못한 어려움 (도전)</h3><p style='color:#666;'>시장의 전면 개방, 경쟁 심화, 규제 변화 등</p><div class='writing-zone'></div></div><div class='summary-zone'><h3 style='margin:0;'>나의 생각: 가입 이후 우리나라는 어떻게 달라졌을까요?</h3><div style='min-height:180px;'></div></div></div></div></body></html>",
+      "source_refs": [
+        41
+      ],
+      "teacher_notes": "단순한 성장 기록을 넘어 경제 기구 가입의 양면성을 비판적으로 사고하도록 돕습니다.",
+      "student_writing_zones": [
+        {
+          "zone_id": "opportunity_analysis",
+          "label": "긍정적 변화 분석",
+          "input_area_type": "free-writing",
+          "min_height": 500
+        },
+        {
+          "zone_id": "challenge_analysis",
+          "label": "도전 과제 분석",
+          "input_area_type": "free-writing",
+          "min_height": 500
+        },
+        {
+          "zone_id": "overall_opinion",
+          "label": "종합 의견",
+          "input_area_type": "free-writing",
+          "min_height": 180
+        }
+      ],
+      "estimated_minutes": 20,
+      "review_status": "draft"
+    }
+  ]
+}

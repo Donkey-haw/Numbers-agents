@@ -1,0 +1,27 @@
+{
+  "schema_version": "1.0.0",
+  "stage": "activity_plan_agent",
+  "lesson_id": "4차시",
+  "status": "succeeded_with_warning",
+  "run_id": "social_6_1_unit4_globe_world-20260331-094503",
+  "started_at": "2026-03-31T00:45:13.904619+00:00",
+  "finished_at": "2026-03-31T00:45:13.910014+00:00",
+  "input_refs": [
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit4_globe_world-20260331-094503/sections/social_globe_world_4__지구본과_지도로_보는_세계___디지털_공간_영상_정보의_의미_알아보기/lesson_analysis.json"
+  ],
+  "output_refs": [
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit4_globe_world-20260331-094503/sections/social_globe_world_4__지구본과_지도로_보는_세계___디지털_공간_영상_정보의_의미_알아보기/activity_plan_ai.json",
+    "/Users/jonyeock/Desktop/Tool/NumbersAuto/artifacts/runs/social_6_1_unit4_globe_world-20260331-094503/sections/social_globe_world_4__지구본과_지도로_보는_세계___디지털_공간_영상_정보의_의미_알아보기/activity_plan.json"
+  ],
+  "fallback_used": true,
+  "fallback_category": "timeout",
+  "fallback_reason": "Gemini CLI timed out after 0 seconds for activity_plan_ai",
+  "warnings": [],
+  "errors": [
+    "Gemini CLI timed out after 0 seconds for activity_plan_ai"
+  ],
+  "agent_spec_path": "/Users/jonyeock/Desktop/Tool/NumbersAuto/agents/activity_plan_agent/AGENT.md",
+  "attempt_count": 1,
+  "repair_attempted": false,
+  "validation_errors": []
+}

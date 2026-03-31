@@ -1,0 +1,76 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-03-31T00:10:00.000000+00:00",
+  "lesson_id": "5-6차시",
+  "sheet_name": "5-6차시",
+  "lesson_title": "평화 통일을 위한 노력 — 평화 통일을 위한 노력 살펴보기",
+  "lesson_type": "core",
+  "pdf_pages": [
+    10,
+    11,
+    12
+  ],
+  "essential_question": "평화 통일을 위해 우리가 할 수 있는 일에는 무엇이 있으며, 분단된 한반도를 평화의 장소로 바꾸기 위해 어떤 노력이 필요한가?",
+  "learning_goals": [
+    "분단으로 생겨난 문제점과 평화 통일의 필요성을 설명할 수 있다.",
+    "분단과 관련된 장소를 평화의 장소로 만들려는 노력을 찾아볼 수 있다.",
+    "평화 통일을 위해 우리가 할 수 있는 일을 탐색할 수 있다."
+  ],
+  "key_concepts": [
+    "평화 통일",
+    "분단 문제",
+    "평화의 장소",
+    "생활 문화",
+    "통일 캠페인"
+  ],
+  "vocabulary": [
+    "분단",
+    "평화 통일",
+    "민주화",
+    "산업화",
+    "한반도기"
+  ],
+  "misconceptions": [
+    "평화 통일 노력이 국가 차원의 거창한 일로만 한정된다고 생각할 수 있으나, 일상에서의 캠페인이나 장소의 의미 변화 등 우리 주변의 노력도 포함됨을 이해해야 한다."
+  ],
+  "difficulty_band": "on-level",
+  "content_chunks": [
+    {
+      "chunk_id": "5-6차시-chunk-1",
+      "label": "주제 도입 및 학습 목표",
+      "content_type": "mixed",
+      "knowledge_type": "concept",
+      "summary": "평화 통일을 위한 노력, 민주화와 산업화로 달라진 생활 문화 등 대단원과 주제의 핵심 학습 목표를 확인하고 분단 문제에 대한 인식을 공유함.",
+      "source_pages": [
+        10
+      ],
+      "suggested_activity_types": [
+        "see_think_wonder",
+        "learning_note"
+      ]
+    },
+    {
+      "chunk_id": "5-6차시-chunk-2",
+      "label": "평화 통일 캠페인과 우리 친구 찾기",
+      "content_type": "mixed",
+      "knowledge_type": "application",
+      "summary": "평화 통일 캠페인 전시관, 가발 만들기 체험 등 구체적인 활동 사례를 통해 단원 학습을 함께할 인물(친구)을 찾으며 주제에 몰입함.",
+      "source_pages": [
+        11,
+        12
+      ],
+      "suggested_activity_types": [
+        "learning_note",
+        "worksheet"
+      ]
+    }
+  ],
+  "source_page_refs": [
+    10,
+    11,
+    12
+  ],
+  "analysis_confidence": 0.9,
+  "review_status": "draft",
+  "notes": "추출된 텍스트의 학습 목표(이 주제를 배우면 나는)를 반영하여 분석을 정교화함. 페이지 10의 도입부 내용과 11-12의 인물 찾기/캠페인 맥락을 연결함."
+}

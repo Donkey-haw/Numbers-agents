@@ -1,0 +1,16 @@
+{
+  "schema_version": "1.0.0",
+  "stage": "lesson_review_agent",
+  "lesson_id": "12-13차시",
+  "status": "succeeded",
+  "decision": "pass",
+  "findings": [
+    {
+      "severity": "info",
+      "message": "추출된 텍스트는 10-15쪽(분단과 통일)에 집중되어 있으나, 전체 페이지 범위(10-48)와 차시 제목을 고려하여 산업화 관련 내용을 포함하여 분석함. 12-13차시는 분단 문제 이해에서 시작하여 산업화로 인한 사회 변화까지를 아우르는 대단위 학습 구간으로 판단됨.",
+      "evidence_refs": []
+    }
+  ],
+  "blocking_issues": [],
+  "warnings": []
+}

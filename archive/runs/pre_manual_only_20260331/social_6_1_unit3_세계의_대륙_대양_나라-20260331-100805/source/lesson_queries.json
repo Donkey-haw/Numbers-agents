@@ -1,0 +1,61 @@
+{
+  "schema_version": "1.0.0",
+  "lessons": [
+    {
+      "lesson_id": "lesson-001",
+      "sheet_name": "8차시",
+      "display_title": "세계의 대륙과 대양 알아보기",
+      "title_query": "세계의 대륙과 대양 알아보기",
+      "end_before_query": "우리나라의 위치 특징 파악하기",
+      "resource_id": "main"
+    },
+    {
+      "lesson_id": "lesson-002",
+      "sheet_name": "9차시",
+      "display_title": "우리나라의 위치 특징 파악하기",
+      "title_query": "우리나라의 위치 특징 파악하기",
+      "end_before_query": "아시아 주요 나라들의 위치 알아보기",
+      "resource_id": "main"
+    },
+    {
+      "lesson_id": "lesson-003",
+      "sheet_name": "10차시",
+      "display_title": "아시아 주요 나라들의 위치 알아보기",
+      "title_query": "아시아 주요 나라들의 위치 알아보기",
+      "end_before_query": "유럽 주요 나라들의 위치 알아보기",
+      "resource_id": "main"
+    },
+    {
+      "lesson_id": "lesson-004",
+      "sheet_name": "11차시",
+      "display_title": "유럽 주요 나라들의 위치 알아보기",
+      "title_query": "유럽 주요 나라들의 위치 알아보기",
+      "end_before_query": "북아메리카와 남아메리카 주요 나라들의 위치 알아보기",
+      "resource_id": "main"
+    },
+    {
+      "lesson_id": "lesson-005",
+      "sheet_name": "12차시",
+      "display_title": "북아메리카와 남아메리카 주요 나라들의 위치 알아보기",
+      "title_query": "북아메리카와 남아메리카 주요 나라들의 위치 알아보기",
+      "end_before_query": "아프리카 주요 나라들의 위치 알아보기",
+      "resource_id": "main"
+    },
+    {
+      "lesson_id": "lesson-006",
+      "sheet_name": "13차시",
+      "display_title": "아프리카 주요 나라들의 위치 알아보기",
+      "title_query": "아프리카 주요 나라들의 위치 알아보기",
+      "end_before_query": "오세아니아 주요 나라들의 위치 알아보기",
+      "resource_id": "main"
+    },
+    {
+      "lesson_id": "lesson-007",
+      "sheet_name": "14차시",
+      "display_title": "오세아니아 주요 나라들의 위치 알아보기",
+      "title_query": "오세아니아 주요 나라들의 위치 알아보기",
+      "end_before_query": null,
+      "resource_id": "main"
+    }
+  ]
+}

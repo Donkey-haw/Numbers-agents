@@ -1,0 +1,111 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-03-26T12:41:08.096137+00:00",
+  "lesson_id": "2-3차시",
+  "sheet_name": "2-3차시",
+  "lesson_title": "전기문을 읽고 인물이 추구하는 가치 알기",
+  "lesson_type": "core",
+  "pdf_pages": [
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14
+  ],
+  "essential_question": "전기문을 읽고 인물의 말과 행동을 통해 인물이 추구하는 가치를 어떻게 파악할 수 있을까요?",
+  "learning_goals": [
+    "전기문에 나타난 인물의 말과 행동을 통해 인물이 추구하는 가치를 파악할 수 있다.",
+    "인물이 처한 시대 상황과 관련지어 인물의 삶을 이해하고 가치를 도출할 수 있다."
+  ],
+  "key_concepts": [
+    "전기문",
+    "가치",
+    "시대 상황",
+    "인물의 말과 행동",
+    "애국심"
+  ],
+  "vocabulary": [
+    "전기문",
+    "의병",
+    "가치",
+    "애국심",
+    "단발령",
+    "망명"
+  ],
+  "misconceptions": [
+    "인물이 추구하는 가치는 글에 직접적으로 명시되어야만 알 수 있다고 생각한다.",
+    "전기문은 단순히 인물의 업적만을 나열한 글이라고 오해한다."
+  ],
+  "difficulty_band": "on-level",
+  "content_chunks": [
+    {
+      "chunk_id": "2-3차시-chunk-1",
+      "label": "윤희순의 생애와 의병 활동",
+      "content_type": "mixed",
+      "knowledge_type": "fact",
+      "summary": "여성 의병장 윤희순의 생애를 살펴보고, 을미사변과 단발령에 항거하여 의병 활동에 참여하고 독립운동가를 양성한 업적을 파악한다.",
+      "source_pages": [
+        5
+      ],
+      "suggested_activity_types": [
+        "learning_note",
+        "see_think_wonder"
+      ]
+    },
+    {
+      "chunk_id": "2-3차시-chunk-2",
+      "label": "「의병장 윤희순」 읽기 및 사건 파악",
+      "content_type": "text",
+      "knowledge_type": "concept",
+      "summary": "윤희순이 숯을 구워 의병을 돕고 '안사람 의병가'를 만들어 사람들의 마음을 모으는 과정을 읽으며 시간의 흐름에 따라 사건을 정리한다.",
+      "source_pages": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "suggested_activity_types": [
+        "learning_note",
+        "worksheet"
+      ]
+    },
+    {
+      "chunk_id": "2-3차시-chunk-3",
+      "label": "시대 상황과 가치 파악",
+      "content_type": "mixed",
+      "knowledge_type": "application",
+      "summary": "인물의 말과 행동을 통해 당시의 시대 상황(일제의 국권 침탈)을 짐작하고, 인물이 위기를 극복하려 노력한 태도에서 애국심 등의 가치를 파악한다.",
+      "source_pages": [
+        12,
+        13,
+        14
+      ],
+      "suggested_activity_types": [
+        "worksheet",
+        "learning_note"
+      ]
+    }
+  ],
+  "source_page_refs": [
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14
+  ],
+  "analysis_confidence": 0.95,
+  "review_status": "draft",
+  "notes": "윤희순의 전기문을 통해 인물의 삶과 시대 상황을 연결하여 가치를 도출하는 핵심 차시입니다. '안사람 의병가'의 가사와 윤희순의 결단력 있는 행동(숯 장사 등)을 중심으로 가치를 파악하도록 구성되었습니다."
+}
